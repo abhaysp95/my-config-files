@@ -215,7 +215,7 @@ notify-send "zsh settings reloaded" -a zsh -t 2000
 bindkey '^T' fzf-completion
 bindkey '^I' $fzf_default_completion
 
-# get colored man page
+# get colorful man page
 #export PAGER="most"
 
 man () {
