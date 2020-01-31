@@ -1,0 +1,64 @@
+
+icons = "awesome"
+
+[theme]
+name = "slick"
+[theme.overrides]
+idle_bg = "#1d1f21"
+idle_fg = "#f0c674"
+
+[[block]]
+block = "custom"
+command = "mpc | head -1 -c 25"
+interval = 1
+on_click = "mpc pause"
+
+[[block]]
+block = "net"
+device = "wlp5s0"
+ssid = true
+signal_strength = true
+speed_up = false
+speed_down = true
+graph_down = true
+interval = 1
+
+[[block]]
+block = "net"
+device = "enp0s18u1u1"
+ssid = true
+speed_down = true
+
+[[block]]
+block = "pacman"
+interval = 10
+
+[[block]]
+block = "memory"
+display_type = "memory"
+icons = true
+clickable = true
+format_mem = "{Mup}%"
+format_swap = "{SUp}%"
+
+[[block]]
+block = "cpu"
+interval = 1
+format = "{utilization}% {frequency}GHz"
+
+[[block]]
+block = "load"
+interval = 1
+format = "{1m}"
+
+[[block]]
+block = "sound"
+driver = "pulseaudio"
+step_width = 5
+on_click = "st -e pulsemixer"
+
+[[block]]
+block = "time"
+interval = 60
+format = "%a %d/%m %R"
+on_click = "st -e calcurse"
