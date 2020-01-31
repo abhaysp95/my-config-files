@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+#(find ~/Videos -name "*mp4" && find ~/Videos -name "*mkv" && find ~/Videos -name "*webm" && find ~/Downloads -name "*mp4" && find ~/Downloads -name "*webm" && find ~/Downloads -name "*mkv") | rofi -dmenu -lines 20 -i | xargs -I {} mpv "{}"
+
+#(find ~/Videos -name "*mp4" -o -name "*webm" -o -name "*mkv" && find ~/Downloads -name "*mkv" -o -name "*mp4" -o -name "*webm") | rofi -dmenu -lines 20 -i | xargs -I {} mpv "{}"
+
+(find ~/Videos ~/Downloads -name "*mp4" -o -name "*mkv" -o -name "*webm" ) | rofi -dmenu -lines 20 -i -matching fuzzy | xargs -I {} mpv "{}"

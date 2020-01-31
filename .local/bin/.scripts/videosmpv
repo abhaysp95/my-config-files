@@ -1,0 +1,17 @@
+#!/bin/sh
+
+#mpv "$(ls -R ~/Videos | dmenu -l 20 -i)"
+#ls -R ~/Videos | dmenu -l 20 -i | xargs -I {} mpv "{}"
+#above one isn't working
+
+#[[ "$BROWSER" == "brave" ]] && echo "It's brave"   This is bashism willn't run of Posix shell
+
+#mpv "$(ls ~/Videos/* | dmenu -l 20 -i)" #This one uses less memory but more cpu
+
+#(find ~/Videos -name "*mp4" && find ~/Videos -name "*mkv") | dmenu -l 20 -i | xargs -I {} mpv "{}"     #This one uses somewhat more memory and less cpu then previous one
+
+# also ls doesn't gives absolute path
+
+#❯ mpv "$((ls -R ~/Videos/* && ls -R ~/Downloads/*) | dmenu -l 20 -i)"      this doesn't works so bottom one
+
+(find ~/Videos ~/Downloads -name "*mp4" -o -name "*mkv" -o -name "*.webm") | dmenu -l 20 -i -nb '#282828' -sf '#282828' -nf '#ebdbb2' -sb '#b8bb26' -fn "FuraCode Nerd Font 09"| xargs -I {} mpv "{}"

@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+#diff <(pacman -Q) <(pacman -Qn)
+
+(find ~/Downloads ~/dox -name "*pdf*") | dmenu -l 20 -i -nb '#282828' -sf '#282828' -nf '#ebdbb2' -sb '#b8bb26' -fn "FuraCode Nerd Font 09"| xargs -I {} zathura "{}"
+#ls -R ~/Documents | grep .pdf | dmenu -l 20 -i | xargs -I {} zathura "{}"
+#ls -R $HOME/Documents/pdf/* | dmenu -l 20 -i | xargs -I {} zathura "{}"
