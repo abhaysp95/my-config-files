@@ -1,0 +1,123 @@
+
+alias zshc="nvim ~/.zshrc"
+alias i3conf="nvim ~/.config/i3/config"
+alias stconf="nvim ~/st/.Xdefaults"
+alias titconf="nvim ~/.config/termite/config"
+alias szsh="source ~/.zshrc"
+alias p="sudo pacman"
+alias ..="cd .."
+alias ..2="cd ../.."
+alias ..3="cd ../../.."
+alias ..4="cd ../../../.."
+alias nwi="nmcli device"
+alias nwiwr="nmcli device wifi rescan"
+alias nwiwl="nmcli device wifi list"
+alias nwiwc="nmcli device wifi connect"
+alias nwidw="nmcli device disconnect wlp5s0"
+alias v="nvim"
+alias clcr="calcurse"
+
+#already set rofi-theme-selector to gruvbox-dark, else use -theme {name}
+alias rfi='rofi -combi-modi window,drun,ssh -font "FuraCode Nerd Font 10" -lines 20 -show-icons -length 80 -show combi'
+alias rman="$HOME/.local/bin/.scripts/manbyrofi"
+alias rvid="$HOME/.local/bin/.scripts/videosbyrofi"
+alias rpdf="$HOME/.local/bin/.scripts/pdfbyrofi"
+alias dman="$HOME/.local/bin/.scripts/mansplain"
+alias dpdf="$HOME/.local/bin/.scripts/pdfdmenu"
+alias dvid="$HOME/.local/bin/.scripts/videosmpv"
+
+alias ls='ls -FhN -a --color=auto --group-directories-first'
+alias ll='ls -lah --group-directories-first'
+	alias grep='grep --colour=auto'
+	alias egrep='egrep --colour=auto'
+	alias fgrep='fgrep --colour=auto'
+alias cp="cp -i"
+alias df="df -h"
+alias sv="sudo nvim"
+alias chat="telegram-desktop"
+alias mkd="mkdir -pv"
+alias gr="ranger"
+alias vrc="nvim ~/.config/nvim/init.vim"
+alias brc="nvim ~/.bashrc"
+alias ffx="firefox"
+alias battery="cat /sys/class/power_supply/BAT0/capacity"
+#alias ps = "ps l --USER raytracer --forest"
+alias nn="mpc next"
+alias pp="mpc prev"
+alias ss="mpc stop"
+alias sp="mpc pause"
+alias mp="mpc play"
+alias ss..="xset r rate 400 60"
+
+#alias rfw="rofi -show window"
+#alias lgoff="sudo killall Xorg"
+alias lgoff='i3-msg exit'
+
+alias diskspace="du -S | sort -n -r |less"
+
+alias -s {c,java}=nvim
+
+alias -g G='| grep -i'
+
+alias -g lct='| lolcat -t'
+
+alias fig3d="figlet -f /usr/share/fonts/figlet-fonts/3d.flf"
+
+#light-dm
+alias lock="dm-tool lock"
+
+alias diff="colordiff"
+
+alias mount='mount | column -t'
+alias j="jobs -l"
+
+alias style='"-fmarkdown-implicit_figures -o" --from=markdown -V geometry.margin=.4in --toc --highlight-sytle=zenburn'
+# some other highlight-sytles for pandoc = default,espresso,haddock,kate,monochrome,pygments,tango,zenburn,breezedark
+
+
+alias path='echo -e ${PATH//:/\\n}'
+alias now='date +"%T"'
+alias nowtime=now
+alias nowdate='date +"%d-%m-%Y"'
+
+alias ping='ping -c 5'
+alias fastping='ping -c 50 -s 1'
+
+alias ports='netstat -tulanp'
+
+alias rm='rm -I --preserve-root'
+
+alias mv='mv -i'
+alias cp='cp -i'
+alias ln='ln -i'
+
+alias su='sudo -i'
+
+alias meminfo='free -m -l -t'
+alias psmem='ps auxf | sort -nr -k 4'
+alias psmem10='ps auxf | sort -nr -k 4 | head -10'
+
+alias pscpu='ps auxf | sort -nr -k 3'
+alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
+
+#alias cpuinfo='lscpu'
+alias cpuinfo='less /proc/cpuinfo'
+
+alias wget='wget -c'
+
+alias df='df -H'
+alias du='du -ch'
+
+alias top='atop'
+#alias brght='xrandr --output eDP1 --brightness'
+alias -g brt=' | sudo tee /sys/class/backlight/intel_backlight/brightness'
+alias bright='xbacklight -set'
+
+#functions
+
+se () { du -a ~/.local/bin/* ~/.config/* | awk '{print $2}' | fzf | xargs -r $EDITOR ;}
+vf () { fzf | xargs -r -I % $EDITOR % ;}
+
+alias tknow='tldr -l | sed s/,/\\n/g | fzf | xargs -I {} tldr "{}"'
+alias shdn="shutdown now"
+alias Scripts="cd ~/.local/bin/.scripts"

@@ -1,0 +1,137 @@
+!! Colors
+! special
+/* *.foreground:   #c5c8c6 */
+/* *.background:   #1d1f21 */
+/* *.cursorColor:  #c5c8c6 */
+
+/* ! black */
+/* *.color0:       #282a2e */
+/* *.color8:       #373b41 */
+
+/* ! red */
+/* *.color1:       #a54242 */
+/* *.color9:       #cc6666 */
+
+/* ! green */
+/* *.color2:       #8c9440 */
+/* *.color10:      #b5bd68 */
+
+/* ! yellow */
+/* *.color3:       #de935f */
+/* *.color11:      #f0c674 */
+
+/* ! blue */
+/* *.color4:       #5f819d */
+/* *.color12:      #81a2be */
+
+/* ! magenta */
+/* *.color5:       #85678f */
+/* *.color13:      #b294bb */
+
+/* ! cyan */
+/* *.color6:       #5e8d87 */
+/* *.color14:      #8abeb7 */
+
+/* ! white */
+/* *.color7:       #707880 */
+/* *.color15:      #c5c8c6 */
+
+!! URxvt.color12: rgb:5c/5c/ff
+
+/* !!gruvbox */
+/*  hard contrast: *background: #1d2021 */
+/* *background: #282828 */
+/* ! soft contrast: *background: #32302f */
+/* *foreground: #ebdbb2 */
+/* ! Black + DarkGrey */
+/* *color0:  #282828 */
+/* *color8:  #928374 */
+/* ! DarkRed + Red */
+/* *color1:  #cc241d */
+/* *color9:  #fb4934 */
+/* ! DarkGreen + Green */
+/* *color2:  #98971a */
+/* *color10: #b8bb26 */
+/* ! DarkYellow + Yellow */
+/* *color3:  #d79921 */
+/* *color11: #fabd2f */
+/* ! DarkBlue + Blue */
+/* *color4:  #458588 */
+/* *color12: #83a598 */
+/* ! DarkMagenta + Magenta */
+/* *color5:  #b16286 */
+/* *color13: #d3869b */
+/* ! DarkCyan + Cyan */
+/* *color6:  #689d6a */
+/* *color14: #8ec07c */
+/* ! LightGrey + White */
+/* *color7:  #a89984 */
+/* *color15: #ebdbb2 */
+
+! Base16 Gruvbox dark, hard
+! Scheme: Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
+
+#define base00 #1d2021
+#define base01 #3c3836
+#define base02 #504945
+#define base03 #665c54
+#define base04 #bdae93
+#define base05 #d5c4a1
+#define base06 #ebdbb2
+#define base07 #fbf1c7
+#define base08 #fb4934
+#define base09 #fe8019
+#define base0A #fabd2f
+#define base0B #b8bb26
+#define base0C #8ec07c
+#define base0D #83a598
+#define base0E #d3869b
+#define base0F #d65d0e
+
+*foreground:   base05
+#ifdef background_opacity
+*background:   [background_opacity]base00
+#else
+*background:   base00
+#endif
+*cursorColor:  base05
+
+*color0:       base00
+*color1:       base08
+*color2:       base0B
+*color3:       base0A
+*color4:       base0D
+*color5:       base0E
+*color6:       base0C
+*color7:       base05
+
+*color8:       base03
+*color9:       base09
+*color10:      base01
+*color11:      base02
+*color12:      base04
+*color13:      base06
+*color14:      base0F
+*color15:      base07
+
+URxvt.perl-ext-common: resize-font,default,clipboard,url-select,keyboard-select
+
+URxvt.url-select.launcher: brave
+URxvt.url-select.underline: true
+
+!! URxvt Appearance
+URxvt.font: xft:Fira Code Retina:size=10:style=Regular
+URxvt.boldFont: xft:Fira Code:size=10:style=Bold
+URxvt.italicFont: xft:FuraCode Nerd Font:size=10:style=Italic
+URxvt.boldItalicfont: xft:FuraCode Nerd Font:size=10:style=Bold Italic
+URxvt.scrollBar: false
+URxvt.letterSpace: -1
+URxvt.lineSpace: 0
+URxvt.geometry: 92*24
+URxvt.internalBorder: 20
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: false
+URxvt.saveline: 3072
+URxvt.urgentOnBell: true
+URxvt.depth: 24
+
