@@ -1,0 +1,89 @@
+#basic bindings
+
+super + return
+    termite
+super + shift +t
+    st
+super + shift + q
+    kill -9 'xdotool getwindowfocus getwindowpid'
+super + m
+    termite -e ncmpcpp
+super + v
+    st -e nvim -c VimwikiIndex
+#super + c
+#    termite -e mpv --no-osc --no-input-default-bindings --input-conf=/dev/null --title='mpvfloat' /dev/video0
+super + b:{f,p,c,s,n,b}
+    {firefox,pcmanfm,telegram-desktop,stacer,nautilus,brave}
+super+n
+    st -e calcurse
+#super+o
+#   /home/raytracer/.scripts/manbyrofi
+super + x
+    /home/raytracer/.local/bin/.scripts/i3lock.sh ; mpc pause ;
+#    /home/raytracer/.config/i3/blurlock.sh
+super + d;{d,f}
+    {dmenu_run -i -nb '#282828' -sf '#282828' -nf '#ebdbb2' -sb '#b8bb26' -fn "Iosevka Nerd Font Medium 11",rofi -show drun -i -font "Iosevka Nerd Font Medium 11" -lines 25 -show-icons -width 80 -bg '#1d1f21' -bgalt '#1d1f21' -hlbg '#7cafc2' -fg '#d8d8d8' -hlfg '#1d1f21'}
+
+#notifications
+super+n:{w,l,m,t}
+	{notify-send --icon=network-wireless "Status" "`nmcli device status`",notify-send --icon=network-wireless "Wifi list" "`nmcli device wifi list`",notify-send --icon=audio-headphones -t 3000 "Now Playing" "`mpc`",notify-send -t 3000 "Temperature" "`sensors | grep temp1 | head -1 && sensors | grep temp1 | tail -1`"}
+super+i:{m,p,v,d}
+	{manbyrofi,pdfbyrofi,videosbyrofi,caffeine_like}
+
+#i3resize
+#super + shift + {y,u,i,o}
+#    /home/raytracer/.local/bin/.scripts/i3resize {left,down,up,right}
+
+#screenshot and recording
+Print
+    scrot && dunstify -t 2000 "Full screen captured"
+shift + Print
+    scrot -u && dunstify -t 2000 "Current screen captured"
+super + Print
+    /home/raytracer/.local/bin/.scripts/dmenurecord
+super + Delete
+    /home/raytracer/.local/bin/.scripts/dmenurecord kill
+
+#pause/play song
+super + p
+    mpc toggle && notify-send --icon=audio-headphones -t 3000 "Music played/paused\nCurrent Song" "`mpc | head -1`"
+#pause song,video
+super + shift +p
+    mpc pause;pauseallmpv
+#change song
+super + {comma,period}
+    mpc {prev && notify-send --icon=audio-headphones -t 3000 "Current Song" "`mpc | head -1`" ,next && notify-send --icon=audio-headphones -t 3000 "Current Song" "`mpc | head -1`" }
+#restart track
+super + shift + less
+    mpc seek 0% && notify-send --icon=audio-headphones -t 3000 "Current Song" "`mpc | head -1`"
+#seek forward in song
+super + {_,shift + } bracketright
+    mpc seek +{10,120}
+#seek backward in song
+super + {_,shift + } bracketleft
+    mpc seek -{10,120}
+#increase volume
+super + {_,shift + } equal
+    pulsemixer --change-volume +{5,15}
+#decrease volume
+super + {_,shift +} minus
+    pulsemixer --change-volume -{5,15}
+#mute
+super + shift +m
+    pulsemixer --toggle-mute && notify-send --icon=auio-volume-muted -t 3000 "Volume Muted"
+
+# Audiokeys
+XF86AudioMute
+    pulsemixer --toggle-mute
+XF86Audio{Raise,Lower}Volume
+    pulsemixer --change-volume {+5,-5}
+XF86Audio{Next,Prev}
+	mpc {next,prev}
+XF86Audio{Pause,Play,Stop}
+	mpc {pause,play,stop}
+XF86Audio{Rewind,Forward}
+	mpc seek {-,+}10
+#XF86AudioRecord
+#dmenurecord
+XF86AudioMedia
+	$TERMINAL -e ncmpcpp
