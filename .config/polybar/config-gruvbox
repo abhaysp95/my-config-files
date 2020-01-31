@@ -1,0 +1,316 @@
+[colors]
+background = #ed282828
+foreground = #ebdbb2
+red        = #fb4934
+green      = #b8bb26
+yellow     = #fabd2f
+blue       = #83a598
+purple     = #d3869b
+teal       = #8ec07c
+orange     = #fe8019
+gray       = #a89984
+
+[bar/top]
+; Size
+width  = 97%
+height = 25
+
+; Offset
+offset-x = 29
+offset-y = 05
+
+; Position
+bottom = false
+
+; Radius
+radius = 0
+
+; Align modules fixed to middle
+fixed-center = true
+
+; Colors
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+; Underline
+line-size  = 2
+line-color = ${colors.foreground}
+
+; Border
+border-size  = 0
+border-color = ${colors.background}
+
+; Padding
+padding-left  = 0
+padding-right = 0
+
+; Margin of modules
+module-margin-left  = 0
+module-margin-right = 0
+
+; Font
+font-0 = Fura Code Nerd Font:size=10;2
+font-1 = Font Awesome 5 Free Solid:size=11;2
+
+; Modlues
+modules-left   = i3
+modules-center = wlan weather time date
+modules-right  = memory battery temperature pulseaudio lock logout poweroff
+
+tray-position = right
+tray-padding = 0
+
+override-redirect = true
+
+; Cursor actions
+cursor-click  = pointer
+cursor-scroll = ns-resize
+
+[module/i3]
+type = internal/i3
+
+; Mouse click
+enable-click = true
+
+; Mouse scroll
+enable-scroll = false
+
+; Sort
+index-sort = true
+
+; Display icons
+;fuzzy-match = true
+
+; Icons
+
+ws-icon-1 = Terminal;
+ws-icon-2 = Web;
+ws-icon-3 = Music;
+ws-icon-4 = Videos;
+ws-icon-5 = Term2;
+ws-icon-6 = Code;
+ws-icon-7 = Chat;
+ws-icon-8 = Random;
+ws-icon-9 = Read;
+ws-icon-0 = "Free;
+
+;ws-icon-default = 
+
+; Focused label
+label-focused            = %name%
+label-focused-background = ${colors.green}
+label-focused-foreground = ${colors.background}
+label-focused-padding    = 1
+
+; Unfocused labels
+label-unfocused            = %icon% %name%
+label-unfocused-foreground = ${colors.foreground}
+label-unfocused-padding    = 1
+
+; Visible labels
+label-visible            = %icon% %name%
+label-visible-foreground = ${colors.foreground}
+label-visible-padding    = 1
+
+; Urgent labels
+label-urgent            = %icon% %name%
+label-urgent-foreground = ${colors.red}
+label-urgent-padding    = 1
+
+[module/weather]
+type = custom/script
+
+; Script
+;exec = /home/enindu/.config/polybar/scripts/weather.sh
+
+; Update interval
+interval = 600
+
+; Label
+label            = %output%
+label-foreground = ${colors.foreground}
+label-padding    = 1
+
+[module/mpd]
+type = internal/mpd
+format-online = <label-song> <label-time>
+
+click-left = termite -e ncmpcpp
+click-right = mpc toggle
+
+label-song = 𝄞  %title% - %artist%
+label-song-maxlen = 30
+label-song-ellipsis = true
+
+format-paused-foreground = ${colors.green}
+
+label-offline = 🎜 mpd is offline
+
+
+[module/wlan]
+type = internal/network
+interface = wlp5s0
+interval = 1.0
+
+format-connected = 直 <ramp-signal> <label-connected>
+format-connected-underline = ${colors.darkmagenta}
+label-connected = %essid%
+
+;format-disconnected =
+format-disconnected = <label-disconnected>
+format-disconnected-underline = ${self.format-connected-underline}
+;label-disconnected = %ifname% disconnected
+label-disconnected = 睊no wifi
+label-disconnected-foreground = ${colors.white}
+
+; <ramp-signal>
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+ramp-signal-3 = 
+ramp-signal-4 = 
+ramp-signal-foreground = ${colors.yellow}
+
+
+[module/time]
+type = internal/date
+
+; Update interval
+interval = 1.0
+
+; Format
+time = %I:%M%P
+
+; Label
+label            =  %time%
+label-foreground = ${colors.foreground}
+label-padding    = 1
+
+[module/date]
+type = internal/date
+
+; Update interval
+interval = 1.0
+
+; Format
+date = %A, %d %B
+
+; Label
+label            =  %date%
+label-foreground = ${colors.foreground}
+label-padding    = 1
+
+[module/battery]
+type = internal/battery
+
+; Full battery level
+full-at = 96
+
+; Battery and adapter
+battery = BAT0
+adapter = AC0
+
+; Charging label
+label-charging            =  %percentage%%
+label-charging-background = ${colors.teal}
+label-charging-foreground = ${colors.foreground}
+label-charging-padding    = 1
+
+; Discharging label
+label-discharging            =  %percentage%%
+label-discharging-background = ${colors.red}
+label-discharging-foreground = ${colors.foreground}
+label-discharging-padding    = 1
+
+; Full label
+label-full            =  100%
+label-full-background = ${colors.teal}
+label-full-foreground = ${colors.foreground}
+label-full-padding    = 1
+
+[module/temperature]
+type = internal/temperature
+
+; Label
+label            =  %temperature%
+label-background = ${colors.purple}
+label-foreground = ${colors.foreground}
+label-padding    = 1
+
+; Warning label
+label-warn            =  %temperature%
+label-warn-background = ${colors.red}
+label-warn-foreground = ${colors.foreground}
+label-warn-padding    = 1
+
+[module/memory]
+type = internal/memory
+interval = 1
+
+;label
+label =  %percentage_used%%
+label-background = ${colors.green}
+label-foreground = ${colors.foreground}
+label-padding = 1
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+; Volume label
+label-volume            =  %percentage%%
+label-volume-background = ${colors.blue}
+label-volume-foreground = ${colors.foreground}
+label-volume-padding    = 1
+
+; Muted label
+label-muted            =  Muted
+label-muted-background = ${colors.red}
+label-muted-foreground = ${colors.foreground}
+label-muted-padding    = 1
+
+[module/lock]
+type = custom/text
+
+; Label
+content = 
+content-background = ${colors.yellow}
+content-foreground = ${colors.foreground}
+content-padding    = 1
+
+; Mouse click
+click-left = slock
+
+[module/logout]
+type = custom/text
+
+; Label
+content            = 
+content-background = ${colors.green}
+content-foreground = ${colors.foreground}
+content-padding    = 1
+
+; Mouse click
+click-left = i3-msg exit
+
+[module/poweroff]
+type = custom/text
+
+; Label
+content            = 
+content-background = ${colors.red}
+content-foreground = ${colors.foreground}
+content-padding    = 1
+
+; Mouse click
+click-left = poweroff
+
+[settings]
+screenchange-reload     = true
+;compositing-background = xor
+;compositing-foreground = source
+;compositing-border     = over
+;pseudo-transparency    = false
+
+[global/wm]
+margin-top    = 10
+margin-bottom = 10

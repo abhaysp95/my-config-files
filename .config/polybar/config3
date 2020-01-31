@@ -1,0 +1,397 @@
+;===================================================================
+;                    ██          ██
+;  ██████           ░██  ██   ██░██
+; ░██░░░██  ██████  ░██ ░░██ ██ ░██       ██████   ██████
+; ░██  ░██ ██░░░░██ ░██  ░░███  ░██████  ░░░░░░██ ░░██░░█
+; ░██████ ░██   ░██ ░██   ░██   ░██░░░██  ███████  ░██ ░
+; ░██░░░  ░██   ░██ ░██   ██    ░██  ░██ ██░░░░██  ░██
+; ░██     ░░██████  ███  ██     ░██████ ░░████████░███
+; ░░       ░░░░░░  ░░░  ░░      ░░░░░    ░░░░░░░░ ░░░
+;==================================================================
+
+
+[colors]
+black = ${xrdb:color0:#272822}
+darkred = ${xrdb:color1:#f92672}
+darkgreen = ${xrdb:color2:#a6e22e}
+darkyellow = ${xrdb:color3:#f4bf75}
+darkblue = ${xrdb:color4:#66d9ef}
+darkmagenta = ${xrdb:color5:#ae81ff}
+darkcyan = ${xrdb:color6:#a1efe4}
+lightgray = ${xrdb:color7:#f8f8f2}
+gray = ${xrdb:color8:#f9f8f5}
+red = ${xrdb:color9:#f92672}
+green = ${xrdb:color10:#a6e22e}
+yellow = ${xrdb:color11:#f4bf75}
+blue = ${xrdb:color12:#66d9ef}
+magenta = ${xrdb:color13:#ae81ff}
+cyan = ${xrdb:color14:#a1efe4}
+white = ${xrdb:color15:#c5c8c6}
+background = ${xrdb:color256:#272822}
+foreground = ${xrdb:color257:#f8f8f2}
+
+[bar/default]
+;monitor = ${env:MONITOR:LVDS-1}
+;monitor = ${env:MONITOR:HDMI-1}
+enable-ipc = true
+width = 100%
+height = 20
+;offset-x = 1%
+;offset-y = 1%
+;radius = 1.0
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+line-color = {$xrdb:red}
+
+border-size = 0
+border-color = ${colors.white}
+
+padding-left = 2
+padding-right = 1
+
+module-margin-left = 1.5
+module-margin-right = 1.5
+
+font-0 = hack:pixelsize=9;1
+font-1 = Inconsolata Nerd Font:size=10;1
+font-2 = Noto Color Emoji:scale=10:style=Regular;2
+font-3 = Symbola:pixelsize=9;1
+
+; Other modules: xkeyboard filesystem xbacklight backlight-acpi cpu memory temperature powermenu weather
+modules-left = date wlan xwindow
+modules-center = i3
+modules-right = mpd volume bat cpu memory  temperature mutt-wizard eth powermenu
+
+tray-position = left
+tray-padding = 0
+
+wm-restack = i3
+
+;override-redirect = true
+
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:35:...%
+format-foreground = ${colors.green}
+
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+
+format-prefix = " "
+format-prefix-foreground = ${colors.gray}
+format-prefix-underline = ${colors.darkmagenta}
+
+label-layout = %layout%
+label-layout-underline = ${colors.darkmagenta}
+
+label-indicator-padding = 2
+label-indicator-margin = 1
+label-indicator-background = ${colors.darkmagenta}
+label-indicator-underline = ${colors.darkmagenta}
+
+[module/filesystem]
+type = internal/fs
+interval = 25
+
+mount-0 = /
+mount-1 = /home
+
+label-mounted-underline = ${colors.cyan}
+label-mounted = /: %percentage_used%%
+label-unmounted = %mountpoint% not mounted
+label-unmounted-foreground = ${colors.gray}
+
+[module/i3]
+type = internal/i3
+
+;pin-workspaces = true
+;strip-wsnumbers = true
+index-sort = true
+
+enable-click = true
+enable-scroll = true
+wrapping-scroll = true
+reverse-scroll = true
+
+ws-icon-1 = 1: 
+ws-icon-2 = 2: 
+ws-icon-3 = 3: 
+ws-icon-4 = 4: 
+ws-icon-5 = 5: 
+ws-icon-6 = 6: 
+ws-icon-7 = 7: 
+ws-icon-8 = 8: 
+ws-icon-9 = 9: 
+ws-icon-0 = "0: 
+
+label-dimmed-underline = ${colors.background}
+
+format = <label-state> <label-mode>
+
+label-mode = %mode%
+label-mode-padding = 0
+label-mode-background = ${colors.darkyellow}
+
+label-focused = %name%
+label-focused-foreground = ${colors.background}
+label-focused-background = ${colors.green}
+label-focused-underline = ${colors.darkgreen}
+label-focused-padding = 1
+
+label-unfocused = %name%
+label-unfocused-padding = 1
+
+label-visible = %index%
+label-visible-underline = ${colors.red}
+label-visible-padding = 1
+
+label-urgent = %name%
+label-urgent-foreground = ${colors.black}
+label-urgent-background = ${colors.darkred}
+label-urgent-padding = 2
+
+label-separator = |
+laberl-separator-padding = 0
+label-separator-foreground = ${colors.darkgreen}
+
+[module/mpd]
+type = internal/mpd
+format-online = <label-song> <label-time>
+
+click-left = termite -e ncmpcpp
+click-right = mpc toggle
+
+label-song = 𝄞  %title% - %artist%
+label-song-maxlen = 30
+label-song-ellipsis = true
+
+format-paused-foreground = ${colors.green}
+
+label-offline = 🎜 mpd is offline
+
+
+[module/xbacklight]
+type = internal/xbacklight
+
+format = <label> <bar>
+label = ﯧ
+
+bar-width = 10
+bar-indicator = |
+bar-indicator-foreground = #ff
+bar-indicator-font = 2
+bar-fill = ─
+bar-fill-font = 2
+bar-fill-foreground = #9f78e1
+bar-empty = ─
+bar-empty-font = 2
+bar-empty-foreground = ${colors.gray}
+
+[module/backlight-acpi]
+inherit = module/xbacklight
+type = internal/backlight
+card = intel_backlight
+
+[module/cpu]
+type = internal/cpu
+interval = 1
+format-prefix = "🌡 "
+format-prefix-foreground = ${colors.gray}
+format-underline = ${colors.red}
+label = %percentage%%
+
+[module/memory]
+type = internal/memory
+interval = 1
+format-prefix = "🧠 "
+format-prefix-foreground = ${colors.gray}
+format-underline = ${colors.darkcyan}
+label = %percentage_used%%
+
+[module/wlan]
+type = internal/network
+interface = wlp5s0
+interval = 1.0
+
+format-connected = 直 <ramp-signal> <label-connected>
+format-connected-underline = ${colors.darkmagenta}
+label-connected = %essid%
+
+;format-disconnected =
+format-disconnected = <label-disconnected>
+format-disconnected-underline = ${self.format-connected-underline}
+;label-disconnected = %ifname% disconnected
+label-disconnected = 睊no wifi
+label-disconnected-foreground = ${colors.white}
+
+; <ramp-signal>
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+ramp-signal-3 = 
+ramp-signal-4 = 
+ramp-signal-foreground = ${colors.yellow}
+
+[module/eth]
+type = internal/network
+interface = enp0s25
+interval = 3.0
+
+format-connected-underline = ${colors.darkgreen}
+;format-connected-underline = ${colors.green}
+format-connected-prefix = " "
+format-connected-prefix-foreground = ${colors.gray}
+label-connected = %local_ip%
+
+;format-disconnected =
+format-disconnected = <label-disconnected>
+format-disconnected-underline = ${self.format-connected-underline}
+label-disconnected =  %ifname%
+label-disconnected-foreground = ${colors.gray}
+
+[module/date]
+type = internal/date
+interval = 60
+
+date = "%b %d (%a)"
+time = "%H:%M"
+
+# If you're not living in a country where AM and PM is used you can add -alt to the time above this line and comment it using ;, then you can remove the -alt to the time under this line and uncomment it.
+;time-alt = " at %H:%M"
+;time-alt = %H:%M:%S
+time-alt = %H:%M:%S
+
+format-prefix = " "
+format-prefix-foreground = ${colors.white}
+format-underline = ${colors.darkcyan}
+
+label = %date% %time%
+
+[module/volume]
+type = internal/alsa
+
+format-volume = <label-volume> <bar-volume>
+;<bar-volume>
+label-volume =  %percentage%%
+label-volume-foreground = ${root.foreground}
+
+format-muted-prefix = " "
+format-muted-foreground = ${colors.white}
+label-muted = muted
+
+bar-volume-width = 10
+bar-volume-foreground-0 = ${colors.blue}
+bar-volume-foreground-1 = ${colors.blue}
+bar-volume-foreground-2 = ${colors.green}
+bar-volume-foreground-3 = ${colors.red}
+bar-volume-foreground-4 = ${colors.red}
+bar-volume-foreground-5 = ${colors.yellow}
+bar-volume-foreground-6 = ${colors.green}
+bar-volume-gradient = false
+bar-volume-indicator = |
+bar-volume-indicator-font = 2
+bar-volume-fill = =
+bar-volume-fill-font = 2
+bar-volume-empty = =
+bar-volume-empty-font = 2
+bar-volume-empty-foreground = ${colors.gray}
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = ADP1
+full-at = 98
+
+;format-charging = Charging... <label-charging>
+format-charging = <animation-charging> <label-charging>
+format-charging-underline = ${colors.darkyellow}
+
+;format-discharging = <label-discharging>
+format-discharging = <ramp-capacity> <label-discharging>
+format-discharging-underline = ${self.format-charging-underline}
+
+format-full-prefix = " "
+format-full-prefix-foreground = ${colors.white}
+format-full-underline = ${self.format-charging-underline}
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+ramp-capacity-foreground = ${colors.gray}
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-foreground = ${colors.gray}
+animation-charging-framerate = 500
+
+[module/temperature]
+type = internal/temperature
+thermal-zone = 0
+warn-temperature = 60
+
+format = <ramp> <label>
+format-underline = ${colors.red}
+format-warn = <ramp> <label-warn>
+format-warn-underline = ${self.format-underline}
+
+label = %temperature-c%
+label-warn = %temperature-c%
+label-warn-foreground = ${colors.darkmagenta}
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-3 = 
+ramp-4 = 
+ramp-foreground = ${colors.white}
+
+[module/powermenu]
+type = custom/menu
+
+format-spacing = 1
+
+label-open = 
+label-open-foreground = ${colors.darkmagenta}
+label-close =  cancel
+label-close-foreground = ${colors.darkmagenta}
+label-separator = |
+label-separator-foreground = ${colors.gray}
+
+menu-0-0 = reboot
+menu-0-0-exec = menu-open-1
+menu-0-1 = power off
+menu-0-1-exec = menu-open-2
+
+menu-1-0 = cancel
+menu-1-0-exec = menu-open-0
+menu-1-1 = reboot
+menu-1-1-exec = sudo reboot
+
+menu-2-0 = power off
+menu-2-0-exec = sudo poweroff
+menu-2-1 = cancel
+menu-2-1-exec = menu-open-0
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+
+[global/wm]
+margin-top = 5
+margin-bottom = 5
