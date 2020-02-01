@@ -24,6 +24,10 @@ super + x
 super + d;{d,f}
     {dmenu_run -i -nb '#282828' -sf '#282828' -nf '#ebdbb2' -sb '#b8bb26' -fn "Iosevka Nerd Font Medium 11",rofi -show drun -i -font "Iosevka Nerd Font Medium 11" -lines 25 -show-icons -width 80 -bg '#1d1f21' -bgalt '#1d1f21' -hlbg '#7cafc2' -fg '#d8d8d8' -hlfg '#1d1f21'}
 
+# brightness
+super + ctrl + {minus,equal}
+	{sudo light -U 10 && dunstify -t 2000 "  current brightness->"`light -G`,sudo light -A 10 && dunstify -t 2000 "  current brightness is ->"`light -G`}
+
 #notifications
 super+n:{w,l,m,t}
 	{notify-send --icon=network-wireless "Status" "`nmcli device status`",notify-send --icon=network-wireless "Wifi list" "`nmcli device wifi list`",notify-send --icon=audio-headphones -t 3000 "Now Playing" "`mpc`",notify-send -t 3000 "Temperature" "`sensors | grep temp1 | head -1 && sensors | grep temp1 | tail -1`"}
