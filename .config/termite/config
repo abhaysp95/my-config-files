@@ -43,11 +43,11 @@ cursor_shape = underline
 # "off", "left" or "right"
 scrollbar = off
 
-[colors]
+#[colors]
 # If both of these are unset, cursor falls back to the foreground color,
 # and cursor_foreground falls back to the background color.
-cursor = #dcdccc
-cursor_foreground = #dcdccc
+#cursor = #dcdccc
+#cursor_foreground = #dcdccc
 
 #foreground = #dcdccc
 #foreground_bold = #ffffff
@@ -428,7 +428,7 @@ highlight = #2f2f2f
 
 foreground          = #d5c4a1
 foreground_bold     = #ebdbb2
-cursor              = #ebdbb2
+cursor              = #fabd2f
 cursor_foreground   = #1d2021
 background          = rgba(29, 32, 33)
 

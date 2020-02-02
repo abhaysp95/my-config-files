@@ -56,7 +56,7 @@ bindsym XF86AudioPrev exec playerctl previous
 
 
 ##---Basic Bindings---##
-bindsym $mod+Shift+Return         exec --no-startup-id st
+bindsym $mod+Shift+Return         exec --no-startup-id alacritty
 
 bindsym $mod+Shit+t               exec --no-startup-id st
 
@@ -67,7 +67,7 @@ bindsym $mod+Escape               workspace prev
 bindsym $mod+Shift+Escape         exec --no-startup-id prompt "Exit i3?" "i3-msg exit"
 
 #STOP/HIDE everything:
-bindsym $mod+Shift+Delete         exec --no-startup-id lmc truemate ; exec --no-startup-id lmc pause ; exec --no-startup-id pauseallmpv; workspace Manage:; exec $TERM -e htop ; exec urxvt -e ranger
+bindsym $mod+Shift+Delete         exec --no-startup-id lmc truemate ; exec --no-startup-id lmc pause ; exec --no-startup-id pauseallmpv; workspace Manage:; exec $TERM -e htop ; exec alacritty -e ranger
 
 ##---Letter key Bindings---##
 bindsym $mod+q                     [con_id="__focused__" instance="^(?!dropdown_).*$"] kill
@@ -156,7 +156,7 @@ bindsym $mod_Shift+XF86Back       move container to workspace prev
 bindsym $mod+XF86Forward          workspace next
 bindsym $mod+Shift+XF86Forward    move container to workspace next
 bindsym $mod+semicolon            workspace next
-bindsym $mod+Shift+semicolon      exec --no-startup-id urxvt -e ranger
+bindsym $mod+Shift+semicolon      exec --no-startup-id alacritty -e ranger
 bindsym $mod+apostrophe           split horizontal ;; exec termite
 bindsym $mod+slash                split vertical ;; exec termite
 bindsym $mod+Shift+slash          kill
@@ -396,7 +396,7 @@ exec_always --no-startup-id /home/raytracer/.config/polybar/./launch.sh
 #--color "$base01"
 
 exec termite
-exec_always feh --bg-scale /home/raytracer/pix/641578.jpg
+exec_always feh --bg-scale /home/raytracer/pix/wp2179303.jpg
 
 #exec_always feh --bg-scale /home/raytracer/Pictures/Saved\ Pictures/816720.jpg
 
