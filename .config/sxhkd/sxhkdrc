@@ -26,7 +26,7 @@ super + d;{d,f}
 
 # brightness
 super + ctrl + {minus,equal}
-	{light -U 5 && dunstify -t 2000 "  current brightness->"`light -G`,light -A 5 && dunstify -t 2000 "  current brightness is ->"`light -G`}
+	{light -U 5 && dunstify -t 500 "  current brightness->"`light -G`,light -A 5 && dunstify -t 500 "  current brightness is ->"`light -G`}
 
 #notifications
 super+n:{w,l,m,t}
