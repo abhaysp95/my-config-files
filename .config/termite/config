@@ -428,7 +428,7 @@ highlight = #2f2f2f
 
 foreground          = #d5c4a1
 foreground_bold     = #ebdbb2
-cursor              = #fabd2f
+cursor              = #83a598
 cursor_foreground   = #1d2021
 background          = rgba(29, 32, 33)
 
