@@ -165,3 +165,5 @@ export LESS_TERMCAP_se=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[1;30m'
 export LESS_TERMCAP_ue=$'\E[0m'
 
+
+source /home/raytracer/.config/broot/launcher/bash/br

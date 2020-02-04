@@ -122,3 +122,6 @@ alias tknow='tldr -l | sed s/,/\\n/g | fzf | xargs -I {} tldr "{}"'
 alias shdn="shutdown now"
 alias Scripts="cd ~/.local/bin/.scripts"
 alias pingarch='ping -c6 archlinux.org'
+
+# some aliases for broot(br)
+alias bll='br -dph'

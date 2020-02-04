@@ -229,3 +229,5 @@ man () {
 }
 
 
+
+source /home/raytracer/.config/broot/launcher/bash/br
