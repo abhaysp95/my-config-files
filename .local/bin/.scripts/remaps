@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+# changes right alt to right super using caps2esc so not changed caps to esc here
+
+xmodmap -e 'keycode 108 = Super_R'
