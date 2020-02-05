@@ -45,7 +45,7 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # Screen brightness control
-bindsym F2 exec xbacklight -inc 20
+#bindsym F2 exec xbacklight -inc 20
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20
 
 # Media control
@@ -135,8 +135,10 @@ bindsym $mod+c                    exec --no-startup-id cabl
 
 bindsym $mod+v                    exec --no-startup-id termite -e nvim -c "vimiwiki"
 
-bindsym $mod+m                    exec --no-startup-id termite -t 'ncmpcpp' -e "ncmpcpp --slave-screen visualizer"
-for_window [title="ncmpcpp"] floating enable
+# bindsym $mod+m                    exec --no-startup-id termite -t 'ncmpcpp' -e "ncmpcpp --slave-screen visualizer"
+# for_window [title="ncmpcpp"] floating enable
+bindsym $mod+m						exec --no-startup-id termite -e "ncmpcpp --slave-screen visualizer" ;; exec --no-startup-id termite -e cava ;; exec --no-startup-id i3-msg focus right ;; exec --no-startup-id i3-msg move down ;; exec --no-startup-id i3-msg resize shrink height 120 px or 120 ppt
+#for_window [title="cava"] i3-msg focus i3-msg move down ;; i3-msg shrink height 120px
 
 bindsym $mod+Shift+b              floating toggle; sticky toggle; exec --no-startup-id hover left
 bindsym $mod+Shift+n              floating toggle; sticky toggle; exec --no-startup-id hover right
@@ -396,13 +398,14 @@ exec_always --no-startup-id /home/raytracer/.config/polybar/./launch.sh
 #--color "$base01"
 
 exec termite
-exec_always feh --bg-scale /home/raytracer/pix/wp2179303.jpg
+exec_always feh --bg-scale /home/raytracer/pix/641582.jpg
 
 #exec_always feh --bg-scale /home/raytracer/Pictures/Saved\ Pictures/816720.jpg
 
 
 
 exec mpd
+exec_always remaps
 exec_always picom
 exec_always xset r rate 400 60
 # exec_always xset s off
