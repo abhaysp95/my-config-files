@@ -6,8 +6,9 @@ super + shift +t
     st
 super + shift + q
     kill -9 'xdotool getwindowfocus getwindowpid'
-super + m
-    termite -e ncmpcpp
+#super + m
+	# music_setup
+	#termite -e ncmpcpp
 super + v
     st -e nvim -c VimwikiIndex
 #super + c

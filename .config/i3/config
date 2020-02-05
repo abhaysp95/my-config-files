@@ -404,14 +404,14 @@ exec_always feh --bg-scale /home/raytracer/pix/641582.jpg
 
 
 
-exec mpd
-exec_always remaps
-exec_always picom
-exec_always xset r rate 400 60
-# exec_always xset s off
-# exec_always xset -dpms
-exec_always sxhkd
-exec_always dunst
+exec_always --no-startup-id termite -e ~/.xprofile # exec mpd
+# exec_always remaps
+# exec_always picom
+# exec_always xset r rate 400 60
+# # exec_always xset s off
+# # exec_always xset -dpms
+# exec_always sxhkd
+# exec_always dunst
 exec_always notify-send "Welcome to Raytracer's Machine. Enjoy" -a Raytracer -t 3500
 
 bindsym $mod+w							exec /home/raytracer/.local/bin/.scripts/dtest

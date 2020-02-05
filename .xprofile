@@ -1,8 +1,10 @@
 #!/usr/bin/env sh
 
 # sourcing this file to .xinitrc, contains some basic things
+mpd &
 remaps &		# remaps script for changing Multi_key to super
 #setbg &
+sxhkd &
 picom &
 dunst &
 xset r rate 400 60 &
