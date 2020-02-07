@@ -120,10 +120,10 @@ URxvt.url-select.launcher: brave
 URxvt.url-select.underline: true
 
 !! URxvt Appearance
-URxvt.font: xft:Fira Code Retina:size=10:style=Regular
-URxvt.boldFont: xft:Fira Code:size=10:style=Bold
-URxvt.italicFont: xft:FuraCode Nerd Font:size=10:style=Italic
-URxvt.boldItalicfont: xft:FuraCode Nerd Font:size=10:style=Bold Italic
+URxvt.font: xft:Source Code Pro:size=10:style=Semibold
+URxvt.boldFont: xft:Source Code Pro:size=10:style=Bold
+URxvt.italicFont: xft:Source Code Pro:size=10:style=Italic
+URxvt.boldItalicfont: xft:Source Code Pro:size=10:style=Bold Italic
 URxvt.scrollBar: false
 URxvt.letterSpace: -1
 URxvt.lineSpace: 0

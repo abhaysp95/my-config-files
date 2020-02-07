@@ -52,11 +52,12 @@ precmd(){   # run before each prompt
 setopt PROMPT_SUBST     # allow funky stuff in prompt
 color="yellow"
 if [ "$USER" = "root" ]; then
-    color="red"     # root is red, user is blue
+    color="red"     # root⌚Ɀ‽⚠ i➞s→ rՀed, user is blue
 fi;
-prompt="%{$fg_bold[$color]%}< %{$fg[red]%}%B%~%b%{$fg_bold[$color]%} > "
 #%{$fg_bold[$color]>%{$reset_color%}"
 RPROMPT='${vim_mode} ${vcs_info_msg_0_}'
+prompt="%{$fg_bold[$color]%}╭─ %{$fg_bold[green]%}%B%~%b%{$fg_bold[red]%}  Ѽ  %?%{$fg_bold[blue]%}  ⌚ %T %{$fg_bold[green]%} Ɀ %! %{$fg_bold[$color]%}
+╰─➤ "
 # %! -> tells command no.
 # %T -> time
 

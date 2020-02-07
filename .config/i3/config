@@ -2,7 +2,7 @@
 ##---Basic Definitions---##
 for_window [class="^.*"] border pixel 2
 hide_edge_borders smart
-gaps inner 0
+gaps inner 10
 gaps outer 0
 new_float none
 set $mod Mod4
@@ -398,13 +398,14 @@ exec_always --no-startup-id /home/raytracer/.config/polybar/./launch.sh
 #--color "$base01"
 
 exec termite
-exec_always feh --bg-scale /home/raytracer/pix/641582.jpg
+exec_always feh --bg-scale /home/raytracer/pix/john-abraham-5120x2880-bollywood-5k-519.jpg
 
 #exec_always feh --bg-scale /home/raytracer/Pictures/Saved\ Pictures/816720.jpg
 
 
 
-exec_always --no-startup-id termite -e ~/.xprofile # exec mpd
+exec_always --no-startup-id /home/raytracer/./.xprofile # contains startup services
+# exec mpd
 # exec_always remaps
 # exec_always picom
 # exec_always xset r rate 400 60
