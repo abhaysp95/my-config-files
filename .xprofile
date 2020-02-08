@@ -8,4 +8,4 @@ sxhkd &
 picom &
 dunst &
 xset r rate 400 60 &
-notify-send "Welcome to Server of Abhay" "Enjoy!"
+notify-send "Welcome to region of raytracer" "Enjoy!"

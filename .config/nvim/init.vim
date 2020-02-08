@@ -98,7 +98,7 @@ endif
 " let g:minimap_highlight='Visual'
 
 " enbale highlighting current line
-set cursorline
+"set cursorline
 
 " Limelight configuration
     let g:limelight_conceal_ctermbg='dark-gray'
@@ -143,6 +143,7 @@ set modelines=2
 set noerrorbells visualbell t_vb=
 set noshiftround
 set nospell
+set nohls
 set nostartofline
 set regexpengine=1
 set scrolloff=3
@@ -700,4 +701,4 @@ let g:fzf_files_options =
 
 " ----------------------- emmet plugin ------------------"
 "" redefine default trigger key <C-y> followed by , "
-let g:user_emmet_leader_key='/'
+"let g:user_emmet_leader_key='/'
