@@ -166,4 +166,5 @@ export LESS_TERMCAP_us=$'\E[1;30m'
 export LESS_TERMCAP_ue=$'\E[0m'
 
 
+source /home/raytracer/.gem/ruby/2.7.0/gems/colorls-1.3.3/lib/tab_complete.sh
 source /home/raytracer/.config/broot/launcher/bash/br

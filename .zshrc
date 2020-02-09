@@ -233,3 +233,4 @@ man () {
 
 
 source /home/raytracer/.config/broot/launcher/bash/br
+source /home/raytracer/.gem/ruby/2.7.0/gems/colorls-1.3.3/lib/tab_complete.sh

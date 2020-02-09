@@ -125,3 +125,10 @@ alias pingarch='ping -c6 archlinux.org'
 
 # some aliases for broot(br)
 alias bll='br -dph'
+alias cls='colorls -a --sd --report --gs'
+alias cll='colorls -la --sd --gs'
+
+alias gis='git status'
+alias gcm='git commit -m'
+alias gia='git add'
+alias gip='git push'
