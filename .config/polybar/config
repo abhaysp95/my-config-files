@@ -1,17 +1,17 @@
 [colors]
-background = #ed1d2021
-foreground = #fbf1c7
-red        = #fb4934
-blue       = #83a598
-teal       = #8ec07c
+background = #282828
+foreground = #ebdbb2
+red        = #cc241d
+blue       = #458588
+teal       = #689d6a
 green      = #b8bb26
-purple     = #d3869b
-orange     = #fabd2f
+purple     = #b16286
+orange     = #fb4934
 indigo     = #d3869b
-black      = #1d2021
-white      = #fbf1c7
+black      = #282828
+white      = #ebdbb2
 yellow     = #fabd2f
-brown      = #fb4934
+brown      = #969896
 
 [bar/top]
 ; Size
@@ -149,7 +149,7 @@ ws-icon-0 = "Free;
 
 ; Focused label
 label-focused            = %name%
-label-focused-background = ${colors.yellow}
+label-focused-background = ${colors.blue}
 label-focused-foreground = ${colors.background}
 label-focused-padding    = 1
 
@@ -171,7 +171,8 @@ label-urgent-padding    = 1
 [module/xwindow]
 type = internal/xwindow
 label = %title:0:50:...%
-format-foreground = ${colors.yellow}
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
 label-padding = 2
 
 [module/weather]
@@ -200,13 +201,13 @@ adapter = AC0
 
 ; Charging label
 label-charging            =  %percentage%%
-label-charging-background = ${colors.teal}
+label-charging-background = ${colors.yellow}
 label-charging-foreground = ${colors.background}
 label-charging-padding    = 2
 
 ; Discharging label
 label-discharging            =  %percentage%%
-label-discharging-background = ${colors.red}
+label-discharging-background = ${colors.blue}
 label-discharging-foreground = ${colors.background}
 label-discharging-padding    = 2
 
@@ -236,7 +237,7 @@ type = internal/pulseaudio
 
 ; Volume label
 label-volume            =  %percentage%%
-label-volume-background = ${colors.blue}
+label-volume-background = ${colors.green}
 label-volume-foreground = ${colors.background}
 label-volume-padding    = 2
 
@@ -258,6 +259,7 @@ time = %I:%M:%S %p
 ; Label
 label            =  %time%
 label-foreground = ${colors.foreground}
+label-background = ${colors.background}
 label-padding    = 1
 
 [module/lock]
@@ -289,7 +291,7 @@ type = custom/text
 
 ; Label
 content            = 
-content-background = ${colors.blue}
+content-background = ${colors.yellow}
 content-foreground = ${colors.background}
 content-padding    = 2
 
@@ -301,7 +303,7 @@ type = custom/text
 
 ; Label
 content            = 
-content-background = ${colors.red}
+content-background = ${colors.orange}
 content-foreground = ${colors.background}
 content-padding    = 2
 

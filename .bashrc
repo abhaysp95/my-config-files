@@ -72,7 +72,7 @@ if ${use_color} ; then
 	if [[ ${EUID} == 0 ]] ; then
 		PS1='\[\033[01;31m\][\h\[\033[01;36m\] \W\[\033[01;31m\]]\$\[\033[00m\] '
 	else
-		PS1='\[\033[01;32m\][\u@\h\[->$? \]\[\033[01;37m\] \W\[\033[01;32m\]]\$\[\033[00m\] '
+		PS1='\[\033[01;34m\][\u@\h\[->$? \]\[\033[01;37m\] \W\[\033[01;34m\]]\$\[\033[00m\] '
 	fi
 
 	alias ls='ls --color=auto'
@@ -168,3 +168,9 @@ export LESS_TERMCAP_ue=$'\E[0m'
 
 source /home/raytracer/.gem/ruby/2.7.0/gems/colorls-1.3.3/lib/tab_complete.sh
 source /home/raytracer/.config/broot/launcher/bash/br
+
+### insultor ###
+
+if [ -f /etc/bash.command-not-found ]; then
+    . /etc/bash.command-not-found
+fi

@@ -40,7 +40,7 @@ select-word-style bash      # ctrl+w on bash
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable git svn     # use vcs_info_printsys to check more
 zstyle ':vcs_info:*' check-for-changes true
-zstyle ':vcs_info:*' formats "%{$fg_bold[yellow]%}%c%{$fg_bold[green]%}%u%{$reset_color%} [%{$fg_bold[blue]%}%b%{$reset_color%}] %{$fg_bold[yellow]%}%s%{$reset_color%}:%r"
+zstyle ':vcs_info:*' formats "%{$fg_bold[yellow]%}%c%{$fg_bold[green]%}%u%{$reset_color%} [%{$fg_bold[blue]%}%b%{$reset_color%}]%{$fg_bold[yellow]%}%s%{$fg_bold[green]%}:%r%{$reset_color%}"
 
 precmd(){   # run before each prompt
     vcs_info
@@ -50,14 +50,13 @@ precmd(){   # run before each prompt
 #Prompt
 ##
 setopt PROMPT_SUBST     # allow funky stuff in prompt
-color="yellow"
+color="blue"
 if [ "$USER" = "root" ]; then
-    color="red"     # root⌚Ɀ‽⚠ i➞s→ rՀed, user is blue
+    color="yellow"     # root⌚Ɀ‽⚠ i➞s→ rՀed, user is blue
 fi;
 #%{$fg_bold[$color]>%{$reset_color%}"
 RPROMPT='${vim_mode} ${vcs_info_msg_0_}'
-prompt="
-%{$fg_bold[$color]%}╭─ %{$fg_bold[green]%}%B%~%b%{$fg_bold[red]%}  Ѽ  %?%{$fg_bold[blue]%}  ⌚ %T %{$fg_bold[green]%} Ɀ %! %{$fg_bold[$color]%}
+prompt="%{$fg_bold[$color]%}╭─ %{$fg_bold[yellow]%}%B%~%b%{$fg_bold[red]%}  Ѽ  %?%{$fg_bold[blue]%}  ⌚ %T %{$fg_bold[green]%} Ɀ %! %{$fg_bold[$color]%}
 ╰─➤ "
 # %! -> tells command no.
 # %T -> time
@@ -184,7 +183,7 @@ WATCHFMT="%n from %M has %a tty%1 at %T %W"
 #Show vim mode in your prompt
 ##
 vim_ins_mode="%{$fg_bold[yellow]%}[ins]%{$reset_color%}"
-vim_cmd_mode="%{$fg_bold[teal]%}[cmd-%?]%{$reset_color%}"
+vim_cmd_mode="%{$fg_bold[blue]%}[cmd-%?]%{$reset_color%}"
 vim_mode=$vim_ins_mode
 
 function zle-keymap-select {
@@ -205,11 +204,6 @@ source ~/.aliases                                      # aliases
 
 export PATH="$HOME/.local/bin/.scripts:$PATH"
 
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-#ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#ff00ff,bg=cyan,bold,underline"
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#585858,bg=#181818,bold,underline"
-source /home/raytracer/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 notify-send "zsh settings reloaded" -a zsh -t 2000
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -219,6 +213,7 @@ bindkey '^I' $fzf_default_completion
 
 # get colorful man page
 #export PAGER="most"
+source /home/raytracer/.gem/ruby/2.7.0/gems/colorls-1.3.3/lib/tab_complete.sh
 
 man () {
 	LESS_TERMCAP_md=$'\e[01;33m' \
@@ -232,5 +227,16 @@ man () {
 
 
 
+### broot ###
 source /home/raytracer/.config/broot/launcher/bash/br
-source /home/raytracer/.gem/ruby/2.7.0/gems/colorls-1.3.3/lib/tab_complete.sh
+
+### insultor ###
+if [ -f /etc/bash.command-not-found ]; then
+	. /etc/bash.command-not-found
+fi
+
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+#ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#ff00ff,bg=cyan,bold,underline"
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#585858,bg=#181818,bold,underline"
+source /home/raytracer/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+

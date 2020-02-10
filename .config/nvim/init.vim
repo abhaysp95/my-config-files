@@ -83,11 +83,12 @@ Plug 'scrooloose/nerdtree'
 
 call plug#end()
 
-"set colorcolumn=100
+set colorcolumn=110
+highlight ColorColumn ctermbg=darkgray
 set textwidth=0
-if exists('&colorcolumn')
-	set colorcolumn=100
-endif
+" if exists('&colorcolumn')
+" 	set colorcolumn=100
+" endif
 
 "highlight ColorColumn ctermbg=NONE guibg=red
 
@@ -289,7 +290,7 @@ let g:UltiSnipsEditSplit="vertical"
 
 "
 " colorscheme configuration
-	colorscheme base16-gruvbox-dark-hard
+	colorscheme gruvbox
     let base16colorspace=256
 	set background=dark
     " source this to your profile
@@ -456,7 +457,7 @@ let g:coc_global_extensions = [
 " Vim-Airline configuration
    let g:airline#extensions#tabline#enabled=1
    let g:airline_powerline_fonts=1
-   let g:airline_theme='base16_gruvbox_dark_hard'
+   let g:airline_theme='gruvbox'
    let g:hybrid_custom_term_colors=1
    let g:hybrid_reduced_contrast=1
 
@@ -621,15 +622,15 @@ endif
 " plasticboy/vim-markdown
 ".........................................................................
 
-autocmd FileType markdown set conceallevel=1
-autocmd FileType markdown normal zR
+" autocmd FileType markdown set conceallevel=2
+" autocmd FileType markdown normal zR
 
 ".........................................................................
 " iamcco/markdown-preview.nvim
 ".........................................................................
 
-let g:mkdp_refresh_slow=0
-let g:mkdp_markdown_css='/home/raytracer/dox/markdown/github-markdown-css/github-markdown.css'
+" let g:mkdp_refresh_slow=0
+" let g:mkdp_markdown_css='/home/raytracer/dox/markdown/github-markdown-css/github-markdown.css'
 
 ".......................................................................
 " vim-instant-markdown
@@ -649,40 +650,40 @@ let g:mkdp_markdown_css='/home/raytracer/dox/markdown/github-markdown-css/github
 "
 
 " Notetaking
-command! -nargs=1 Ngrep vimgrep "<args>" /home/raytracer/vimwiki/**/*.md
-nnoremap <leader>[ :Ngrep
+" command! -nargs=1 Ngrep vimgrep "<args>" /home/raytracer/vimwiki/**/*.md
+" nnoremap <leader>[ :Ngrep
 
-au BufRead,BufNewFile *.wiki set filetype=markdown
-:autocmd FileType vimwiki map <leader>d :VimwikiMakeDiaryNote
-function! ToggleCalendar()
-  execute ":Calendar"
-  if exists("g:calendar_open")
-    if g:calendar_open == 1
-      execute "q"
-      unlet g:calendar_open
-    else
-      g:calendar_open = 1
-    end
-  else
-    let g:calendar_open = 1
-  end
-endfunction
-:autocmd FileType vimwiki map <leader>cl :call ToggleCalendar() set ft=markdown
+" au BufRead,BufNewFile *.wiki set filetype=markdown
+" :autocmd FileType vimwiki map <leader>d :VimwikiMakeDiaryNote
+" function! ToggleCalendar()
+"   execute ":Calendar"
+"   if exists("g:calendar_open")
+"     if g:calendar_open == 1
+"       execute "q"
+"       unlet g:calendar_open
+"     else
+"       g:calendar_open = 1
+"     end
+"   else
+"     let g:calendar_open = 1
+"   end
+" endfunction
+" :autocmd FileType vimwiki map <leader>cl :call ToggleCalendar() set ft=markdown
 
-" Markdown codeblock highlight syntax
-let g:markdown_fenced_languages = ['c', 'bash', 'python']
+" " Markdown codeblock highlight syntax
+" let g:markdown_fenced_languages = ['c', 'bash', 'python']
 
-" Vimwiki settings and ensures files are read as what is wanted:
-    let g:vimwiki_ext2syntax = {'.Rmd': 'markdown', '.rmd': 'markdown', '.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
+" " Vimwiki settings and ensures files are read as what is wanted:
+"     " let g:vimwiki_ext2syntax = {'.Rmd': 'markdown', '.rmd': 'markdown', '.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
 
-    map <leader>v :set ft=markdown<CR>
+"     map <leader>v :set ft=markdown<CR>
 let g:vimwiki_list = [{'path': '~/vimwiki/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
-    autocmd BufRead,BufNewFile /tmp/calcurse*,~/.calcurse/notes/* set filetype=markdown
+"     autocmd BufRead,BufNewFile /tmp/calcurse*,~/.calcurse/notes/* set filetype=markdown
 
-    augroup FILETYPES
-        autocmd FileType markdown let b:indentLine_enabled = 0
-    augroup END
+"     augroup FILETYPES
+"         autocmd FileType markdown let b:indentLine_enabled = 0
+"     augroup END
 
 
 " ----------------- settings for fzf --------------------- "
@@ -702,3 +703,14 @@ let g:fzf_files_options =
 " ----------------------- emmet plugin ------------------"
 "" redefine default trigger key <C-y> followed by , "
 "let g:user_emmet_leader_key='/'
+"
+
+" ------------- Using vimwiki settings from opensource.com(Manuel Dewald) ----
+"
+" let wiki_1 = {}
+" " let wiki_1.path = '~/vimwiki/'
+" let wiki_1.syntax = 'markdown'
+" let wiki_1.ext = '.md'
+
+" let g:vimwiki_list = [wiki_1]
+" let g:vimwiki_ext2syntax = {}
