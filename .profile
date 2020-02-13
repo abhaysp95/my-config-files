@@ -8,3 +8,4 @@ export BROWSER="firefox"
 
 # Add ~/.local/bin/.scripts and all the subdirectories to the PATH
 export PATH="$PATH:$(du "$HOME/.local/bin/.scripts/" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
+export PATH="$PATH:/home/raytracer/.gem/ruby/2.7.0/bin"

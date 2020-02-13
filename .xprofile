@@ -2,7 +2,8 @@
 
 # sourcing this file to .xinitrc, contains some basic things
 mpd &
-remaps &		# remaps script for changing Multi_key to super
+# remaps &		# remaps script for changing Multi_key to super
+# xmodmap -e 'keycode 108 = Super_R'
 #setbg &
 sxhkd &
 picom &

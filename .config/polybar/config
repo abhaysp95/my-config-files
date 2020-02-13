@@ -9,7 +9,7 @@ purple     = #b16286
 orange     = #fb4934
 indigo     = #d3869b
 black      = #282828
-white      = #ebdbb2
+white      = #a89984
 yellow     = #fabd2f
 brown      = #969896
 
@@ -149,18 +149,18 @@ ws-icon-0 = "Free;
 
 ; Focused label
 label-focused            = %name%
-label-focused-background = ${colors.blue}
+label-focused-background = ${colors.white}
 label-focused-foreground = ${colors.background}
 label-focused-padding    = 1
 
 ; Unfocused labels
 label-unfocused            = %icon% %name%
-label-unfocused-foreground = ${colors.foreground}
+label-unfocused-foreground = ${colors.white}
 label-unfocused-padding    = 1
 
 ; Visible labels
 label-visible            = %icon% %name%
-label-visible-foreground = ${colors.foreground}
+label-visible-foreground = ${colors.white}
 label-visible-padding    = 1
 
 ; Urgent labels
@@ -207,7 +207,7 @@ label-charging-padding    = 2
 
 ; Discharging label
 label-discharging            =  %percentage%%
-label-discharging-background = ${colors.blue}
+label-discharging-background = ${colors.white}
 label-discharging-foreground = ${colors.background}
 label-discharging-padding    = 2
 
@@ -222,13 +222,13 @@ type = internal/temperature
 
 ; Label
 label            =  %temperature%
-label-background = ${colors.orange}
+label-background = ${colors.white}
 label-foreground = ${colors.background}
 label-padding    = 2
 
 ; Warning label
 label-warn            =  %temperature%
-label-warn-background = ${colors.red}
+label-warn-background = ${colors.white}
 label-warn-foreground = ${colors.background}
 label-warn-padding    = 2
 
@@ -237,7 +237,7 @@ type = internal/pulseaudio
 
 ; Volume label
 label-volume            =  %percentage%%
-label-volume-background = ${colors.green}
+label-volume-background = ${colors.white}
 label-volume-foreground = ${colors.background}
 label-volume-padding    = 2
 
@@ -267,7 +267,7 @@ type = custom/text
 
 ; Label
 content = 
-content-background = ${colors.teal}
+content-background = ${colors.white}
 content-foreground = ${colors.background}
 content-padding    = 2
 
@@ -279,7 +279,7 @@ type = custom/text
 
 ; Label
 content            = 
-content-background = ${colors.purple}
+content-background = ${colors.white}
 content-foreground = ${colors.background}
 content-padding    = 2
 
@@ -291,7 +291,7 @@ type = custom/text
 
 ; Label
 content            = 
-content-background = ${colors.yellow}
+content-background = ${colors.white}
 content-foreground = ${colors.background}
 content-padding    = 2
 
@@ -303,7 +303,7 @@ type = custom/text
 
 ; Label
 content            = 
-content-background = ${colors.orange}
+content-background = ${colors.white}
 content-foreground = ${colors.background}
 content-padding    = 2
 

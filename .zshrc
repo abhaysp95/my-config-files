@@ -235,6 +235,8 @@ if [ -f /etc/bash.command-not-found ]; then
 	. /etc/bash.command-not-found
 fi
 
+mapp
+
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 #ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#ff00ff,bg=cyan,bold,underline"
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#585858,bg=#181818,bold,underline"

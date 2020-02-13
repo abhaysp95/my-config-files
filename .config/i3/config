@@ -1,6 +1,6 @@
 
 ##---Basic Definitions---##
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 1
 hide_edge_borders smart
 gaps inner 10
 gaps outer 0
@@ -295,7 +295,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 #   client.urgent           $base02 $base08    $base00 $base0F
 
 ## Customize colors-gruvbox
-client.focused          #458588 #458588 #ebdbb2 #458588 #458588
+client.focused          #a89984 #a89984 #ebdbb2 #a89984 #a89984
 client.focused_inactive #282828 #282828 #ebdbb2 #282828 #282828
 client.unfocused        #282828 #282828 #ebdbb2 #282828 #282828
 client.urgent           #282828 #282828 #fb4934 #282828 #282828
@@ -398,13 +398,13 @@ exec_always --no-startup-id /home/raytracer/.config/polybar/./launch.sh
 #--color "$base01"
 
 exec termite
-exec_always feh --bg-scale /home/raytracer/Pictures/121411.jpg
+exec_always feh --bg-scale /home/raytracer/Pictures/pMAiU.jpg
 
 #exec_always feh --bg-scale /home/raytracer/Pictures/Saved\ Pictures/816720.jpg
 
 
 
-exec_always --no-startup-id /home/raytracer/./.xprofile # contains startup services
+# exec_always --no-startup-id /home/raytracer/./.xprofile # contains startup services
 # exec mpd
 # exec_always remaps
 # exec_always picom
@@ -413,6 +413,6 @@ exec_always --no-startup-id /home/raytracer/./.xprofile # contains startup servi
 # # exec_always xset -dpms
 # exec_always sxhkd
 # exec_always dunst
-exec_always notify-send "Welcome to Raytracer's Machine. Enjoy" -a Raytracer -t 3500
+# exec_always notify-send "Welcome to Raytracer's Machine. Enjoy" -a Raytracer -t 3500
 
 bindsym $mod+w							exec /home/raytracer/.local/bin/.scripts/dtest
