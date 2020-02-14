@@ -163,6 +163,7 @@ set undofile
 set virtualedit=block
 set whichwrap=b,s,<,>
 set wrap
+set modifiable
 highlight SpecialKey guifg=#ffffff guibg=#116611
 
 hi SpellBad cterm=underline ctermfg=9
@@ -714,3 +715,6 @@ let g:fzf_files_options =
 
 " let g:vimwiki_list = [wiki_1]
 " let g:vimwiki_ext2syntax = {}
+
+" ---------------------
+autocmd BufEnter * lcd %:p:h

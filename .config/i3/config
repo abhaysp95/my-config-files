@@ -398,7 +398,7 @@ exec_always --no-startup-id /home/raytracer/.config/polybar/./launch.sh
 #--color "$base01"
 
 exec termite
-exec_always feh --bg-scale /home/raytracer/Pictures/pMAiU.jpg
+exec_always feh --bg-scale /home/raytracer/Pictures/Wood.jpg
 
 #exec_always feh --bg-scale /home/raytracer/Pictures/Saved\ Pictures/816720.jpg
 
