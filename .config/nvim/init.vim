@@ -83,9 +83,9 @@ Plug 'scrooloose/nerdtree'
 
 call plug#end()
 
-set colorcolumn=110
-highlight ColorColumn ctermbg=darkgray
-set textwidth=0
+" set colorcolumn=110
+" highlight ColorColumn ctermbg=darkgray
+" set textwidth=0
 " if exists('&colorcolumn')
 " 	set colorcolumn=100
 " endif

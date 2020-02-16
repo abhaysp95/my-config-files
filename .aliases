@@ -136,4 +136,4 @@ alias gps='git push'
 alias gpl='git pull'
 
 alias mapp='xmodmap ~/.Xmodmap'
-alias twatch='watch -n1 "date '+%D%n%T' | figlet -k"'
+alias twatch='watch -n1 "date '+%b\/%a%n%D%n%T' | figlet -k"'

@@ -38,9 +38,9 @@ select-word-style bash      # ctrl+w on bash
 #Vcs info
 ##
 autoload -Uz vcs_info
-zstyle ':vcs_info:*' enable git svn     # use vcs_info_printsys to check more
-zstyle ':vcs_info:*' check-for-changes true
-zstyle ':vcs_info:*' formats "%{$fg_bold[yellow]%}%c%{$fg_bold[green]%}%u%{$reset_color%} [%{$fg_bold[blue]%}%b%{$reset_color%}]%{$fg_bold[yellow]%}%s%{$fg_bold[green]%}:%r%{$reset_color%}"
+# zstyle ':vcs_info:*' enable git svn     # use vcs_info_printsys to check more
+# zstyle ':vcs_info:*' check-for-changes true
+# zstyle ':vcs_info:*' formats "%{$fg_bold[yellow]%}%c%{$fg_bold[green]%}%u%{$reset_color%} [%{$fg_bold[blue]%}%b%{$reset_color%}]%{$fg_bold[yellow]%}%s%{$fg_bold[green]%}:%r%{$reset_color%}"
 
 precmd(){   # run before each prompt
     vcs_info
@@ -55,9 +55,10 @@ if [ "$USER" = "root" ]; then
     color="yellow"     # root⌚Ɀ‽⚠ i➞s→ rՀed, user is blue
 fi;
 #%{$fg_bold[$color]>%{$reset_color%}"
-RPROMPT='${vim_mode} ${vcs_info_msg_0_}'
-prompt="%{$fg_bold[$color]%}╭─ %{$fg_bold[yellow]%}%B%~%b%{$fg_bold[red]%}  Ѽ  %?%{$fg_bold[blue]%}  ⌚ %T %{$fg_bold[green]%} Ɀ %! %{$fg_bold[$color]%}
-╰─➤ "
+# RPROMPT='${vim_mode} ${vcs_info_msg_0_}'
+# prompt="
+# %{$fg_bold[$color]%}╭─ %{$fg_bold[yellow]%}%B%~%b%{$fg_bold[red]%}  Ѽ  %?%{$fg_bold[blue]%}  ⌚ %T %{$fg_bold[green]%} Ɀ %! %{$fg_bold[$color]%}
+# ╰─➤ "
 # %! -> tells command no.
 # %T -> time
 
@@ -182,9 +183,8 @@ WATCHFMT="%n from %M has %a tty%1 at %T %W"
 ##
 #Show vim mode in your prompt
 ##
-vim_ins_mode="%{$fg_bold[yellow]%}[ins]%{$reset_color%}"
-vim_cmd_mode="%{$fg_bold[blue]%}[cmd-%?]%{$reset_color%}"
-vim_mode=$vim_ins_mode
+# vim_ins_mode="%{$fg_bold[yellow]%}[ins]%{$reset_color%}" vim_cmd_mode="%{$fg_bold[blue]%}[cmd-%?]%{$reset_color%}"
+# vim_mode=$vim_ins_mode
 
 function zle-keymap-select {
     vim_mode="${${KEYMAP/vicmd/${vim_cmd_mode}}/(main|viins)/${vim_ins_mode}}"
@@ -242,3 +242,79 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#585858,bg=#181818,bold,underline"
 source /home/raytracer/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+## spaceship prompt configuration ##
+SPACESHIP_PROMPT_ORDER=(
+	user
+	dir
+	host
+	git
+	hg
+	package
+	node
+	ruby
+	elixir
+	xcode
+	swift
+	golang
+	php
+	rust
+	haskell
+	julia
+	docker
+	aws
+	venv
+	conda
+	pyenv
+	dotnet
+	ember
+	kubectl
+	terraform
+	exec_time
+	line_sep
+	jobs
+	char
+)
+
+SPACESHIP_RPROMPT_ORDER=(
+	battery
+	time
+	vi_mode
+)
+
+SPACESHIP_PROMPT_ADD_NEWLINE=true
+SPACESHIP_PROMPT_SEPARATE_LINE=	true
+SPACESHIP_CHAR_COLOR_SUCCESS='green'
+SPACESHIP_CHAR_COLOR_FAILURE='red'
+SPACESHIP_CHAR_COLOR_SECONDARY='yellow'
+SPACESHIP_TIME_SHOW=true
+SPACESHIP_USER_COLOR_ROOT='red'
+SPACESHIP_PACKAGE_SHOW=false
+SPACESHIP_RUBY_SHOW=false
+SPACESHIP_ELM_SHOW=false
+SPACESHIP_ELIXIR_SHOW=false
+SPACESHIP_SWIFT_SHOW_LOCAL=false
+SPACESHIP_HASKELL_SHOW=true
+SPACESHIP_JULIA_SHOW=false
+SPACESHIP_AWS_SHOW=false
+SPACESHIP_VENV_SHOW=false
+SPACESHIP_CONDA_SHOW=false
+SPACESHIP_DOTNET_SHOW=false
+SPACESHIP_EMBER_SHOW=false
+SPACESHIP_KUBECTL_SHOW=false
+SPACESHIP_TERRAFORM_SHOW=false
+SPACESHIP_EXEC_TIME_SHOW=true
+SPACESHIP_EXEC_TIME_PREFIX='consumed '
+SPACESHIP_EXEC_TIME_ELAPSED='0'
+SPACESHIP_BATTERY_SHOW=true
+SPACESHIP_BATTERY_THRESHOLD='101'
+SPACESHIP_VI_MODE_SHOW=true
+SPACESHIP_VI_MODE_PREFIX='in '
+SPACESHIP_VI_MODE_INSERT='[Ins]'
+SPACESHIP_VI_MODE_NORMAL='[Norm]'
+SPACESHIP_VI_MODE_COLOR='cyan'
+SPACESHIP_EXIT_CODE_SHOW=true
+
+## Spaceship prompt ##
+
+autoload -U promptinit; promptinit
+prompt spaceship
