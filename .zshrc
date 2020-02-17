@@ -219,7 +219,7 @@ man () {
 	LESS_TERMCAP_md=$'\e[01;33m' \
 	LESS_TERMCAP_me=$'\e[0m' \
 	LESS_TERMCAP_se=$'\e[0m' \
-	LESS_TERMCAP_so=$'\e[01;44;30m' \
+	LESS_TERMCAP_so=$'\e[01;44;32m' \
 	LESS_TERMCAP_ue=$'\e[0m' \
 	LESS_TERMCAP_us=$'\e[01;31m' \
 	command man "$@"
@@ -243,6 +243,13 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#585858,bg=#181818,bold,underline"
 source /home/raytracer/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ## spaceship prompt configuration ##
+
+SPACESHIP_RPROMPT_ORDER=(
+	battery
+	time
+	vi_mode
+)
+
 SPACESHIP_PROMPT_ORDER=(
 	user
 	dir
@@ -273,12 +280,7 @@ SPACESHIP_PROMPT_ORDER=(
 	line_sep
 	jobs
 	char
-)
-
-SPACESHIP_RPROMPT_ORDER=(
-	battery
-	time
-	vi_mode
+	# exit_code
 )
 
 SPACESHIP_PROMPT_ADD_NEWLINE=true

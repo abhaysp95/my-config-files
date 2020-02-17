@@ -6,7 +6,7 @@ mpd &
 # xmodmap -e 'keycode 108 = Super_R'
 #setbg &
 sxhkd &
-picom &
+compton &
 dunst &
 xset r rate 400 60 &
 notify-send "Welcome to region of raytracer" "Enjoy!"

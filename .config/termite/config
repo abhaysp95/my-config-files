@@ -9,6 +9,7 @@ dynamic_title = true
 #font = JetBrains Mono,Medium 10
 #font = Source Code Pro,Semibold 11
 font = Mononoki Nerd Font mono, 11
+#font = FantasqueSansMono Nerd Font Mono, 12
 #font = Fira Code Retina 11
 #font = Monospace 10
 fullscreen = true

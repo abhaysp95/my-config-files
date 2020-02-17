@@ -195,7 +195,7 @@ set t_Co=256
 
 	autocmd FileType html inoremap ;i <em></em><Space><++><Esc>FeT>i
 	autocmd FileType html inoremap ;b <b></b><Space><++><Esc>FbT>i
-    autocmd FileType c inoremap ;c void(<++>)<Space>{<CR><++><CR>}<CR><CR><++><Esc>%3kdei
+    autocmd FileType c inoremap ;c (<++>)<Space>{<CR><++><CR>}<CR><CR><++><Esc>4kI
     autocmd FileType markdown inoremap ;c <!---<Space><Space>--><CR><CR><++><Esc>2kf<Space>a
     autocmd FileType html inoremap ;c <!---<Space><Space>--><CR><CR><++><Esc>2kf<Space>a
 	autocmd FileType markdown inoremap ;sh ```sh<CR>```<CR><CR><++><Esc>2kO<C-i>
