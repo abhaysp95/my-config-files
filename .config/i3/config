@@ -2,7 +2,7 @@
 ##---Basic Definitions---##
 for_window [class="^.*"] border pixel 1
 hide_edge_borders smart
-gaps inner 0
+gaps inner 10
 gaps outer 0
 new_float none
 set $mod Mod4
@@ -58,7 +58,7 @@ bindsym XF86AudioPrev exec playerctl previous
 ##---Basic Bindings---##
 bindsym $mod+Shift+Return         exec --no-startup-id alacritty
 
-bindsym $mod+Shit+t               exec --no-startup-id st
+#bindsym $mod+Shit+t               exec --no-startup-id
 
 bindsym $mod+Shift+space          floating toggle
 bindsym $mod+space                focus mode_toggle
@@ -398,7 +398,7 @@ exec_always --no-startup-id /home/raytracer/.config/polybar/./launch.sh
 #--color "$base01"
 
 exec $TERMINAL
-exec_always feh --bg-scale /home/raytracer/Pictures/648149.jpg
+exec_always feh --bg-scale /home/raytracer/Pictures/john-abraham__546134.jpg
 
 #exec_always feh --bg-scale /home/raytracer/Pictures/Saved\ Pictures/816720.jpg
 

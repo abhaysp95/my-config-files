@@ -481,7 +481,7 @@ foreground        = #ebdbb2
 foreground_bold   = #ebdbb2
 cursor            = #b8bb26
 cursor_foreground = #ebdbb2
-background        = #282828
+background        = #181818
 
 # Black
 color0  = #3c3836

@@ -472,7 +472,7 @@ let g:coc_global_extensions = [
 "---------------------------------------------------------------------------
 " scrooloose/nerdtree
 "---------------------------------------------------------------------------
-let g:NERDTreeShowHidden=1
+let g:NERDTreeShowHidden=0
 let g:NERDTreeAutoDeleteBuffer=1
 " NERDTree conf
     map <leader>N :NERDTreeToggle<CR>
@@ -651,31 +651,31 @@ endif
 "
 
 " Notetaking
-" command! -nargs=1 Ngrep vimgrep "<args>" /home/raytracer/vimwiki/**/*.md
-" nnoremap <leader>[ :Ngrep
+command! -nargs=1 Ngrep vimgrep "<args>" /home/raytracer/vimwiki/**/*.md
+nnoremap <leader>[ :Ngrep
 
-" au BufRead,BufNewFile *.wiki set filetype=markdown
-" :autocmd FileType vimwiki map <leader>d :VimwikiMakeDiaryNote
-" function! ToggleCalendar()
-"   execute ":Calendar"
-"   if exists("g:calendar_open")
-"     if g:calendar_open == 1
-"       execute "q"
-"       unlet g:calendar_open
-"     else
-"       g:calendar_open = 1
-"     end
-"   else
-"     let g:calendar_open = 1
-"   end
-" endfunction
-" :autocmd FileType vimwiki map <leader>cl :call ToggleCalendar() set ft=markdown
+au BufRead,BufNewFile *.wiki set filetype=markdown
+:autocmd FileType vimwiki map <leader>d :VimwikiMakeDiaryNote
+function! ToggleCalendar()
+  execute ":Calendar"
+  if exists("g:calendar_open")
+    if g:calendar_open == 1
+      execute "q"
+      unlet g:calendar_open
+    else
+      g:calendar_open = 1
+    end
+  else
+    let g:calendar_open = 1
+  end
+endfunction
+:autocmd FileType vimwiki map <leader>cl :call ToggleCalendar() set ft=markdown
 
-" " Markdown codeblock highlight syntax
-" let g:markdown_fenced_languages = ['c', 'bash', 'python']
+" Markdown codeblock highlight syntax
+let g:markdown_fenced_languages = ['c', 'bash', 'python']
 
-" " Vimwiki settings and ensures files are read as what is wanted:
-"     " let g:vimwiki_ext2syntax = {'.Rmd': 'markdown', '.rmd': 'markdown', '.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
+" Vimwiki settings and ensures files are read as what is wanted:
+    " let g:vimwiki_ext2syntax = {'.Rmd': 'markdown', '.rmd': 'markdown', '.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
 
 "     map <leader>v :set ft=markdown<CR>
 let g:vimwiki_list = [{'path': '~/vimwiki/',
@@ -688,12 +688,13 @@ let g:vimwiki_list = [{'path': '~/vimwiki/',
 
 
 " ----------------- settings for fzf --------------------- "
-map <leader>f :Files<CR>
+map <leader>ff :Files<CR>
+map <leader>fc :Files ~/.config/<CR>
 "can also use :Files instead of :FZF
 map <leader>gf :Files
 
-nnoremap <C-b>b :Buffers<CR>
-nnoremap <C-b>c :Commands<CR>
+nnoremap <leader>bb :Buffers<CR>
+nnoremap <leader>bc :Commands<CR>
 nnoremap cq: :History:<CR>
 
 command! -nargs=1 Locate call fzf#run( \ {'source': 'locate <q-args>', 'sink': 'e', 'options': '-m'})

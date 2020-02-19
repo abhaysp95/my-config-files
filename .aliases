@@ -134,6 +134,7 @@ alias gic='git commit -m'
 alias gia='git add'
 alias gps='git push'
 alias gpl='git pull'
+alias gpls='git pull && git push'
 
 alias mapp='xmodmap ~/.Xmodmap'
 alias twatch='watch -n1 "date '+%b\/%a%n%D%n%T' | figlet -k"'
