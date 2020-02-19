@@ -1,7 +1,7 @@
 export QT_QPA_PLATFORMTHEME="qt5ct"
 export EDITOR=/usr/bin/nvim
 export TERMINAL="termite"
-export TERMINAL2="termite"
+export TERMINAL2="alacritty"
 export READER="zathura"
 export FILE="ranger"
 export FILE_MANAGER="pcmanfm"
