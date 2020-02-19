@@ -116,7 +116,7 @@ alias bright='xbacklight -set'
 #functions
 
 se () { du -a ~/.local/bin/* ~/.config/* | awk '{print $2}' | fzf | xargs -r $EDITOR ;}
-vf () { fzf | xargs -r -I % $EDITOR % ;}
+vf () { ls -l | fzf | xargs -r -I % $EDITOR % ;}
 
 alias tknow='tldr -l | sed s/,/\\n/g | fzf | xargs -I {} tldr "{}"'
 alias shdn="shutdown now"
