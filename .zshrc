@@ -215,16 +215,29 @@ bindkey '^I' $fzf_default_completion
 #export PAGER="most"
 source /home/raytracer/.gem/ruby/2.7.0/gems/colorls-1.3.3/lib/tab_complete.sh
 
-man () {
-	LESS_TERMCAP_md=$'\e[01;33m' \
-	LESS_TERMCAP_me=$'\e[0m' \
-	LESS_TERMCAP_se=$'\e[0m' \
-	LESS_TERMCAP_so=$'\e[01;44;30m' \
-	LESS_TERMCAP_ue=$'\e[0m' \
-	LESS_TERMCAP_us=$'\e[01;31m' \
-	command man "$@"
-}
+# man () {
+# 	LESS_TERMCAP_md=$'\e[01;33m' \
+# 	LESS_TERMCAP_me=$'\e[0m' \
+# 	LESS_TERMCAP_se=$'\e[0m' \
+# 	LESS_TERMCAP_so=$'\e[01;44;32m' \
+# 	LESS_TERMCAP_ue=$'\e[0m' \
+# 	LESS_TERMCAP_us=$'\e[01;31m' \
+# 	command man "$@"
+# }
 
+## coloring man pages
+# start blinking
+export LESS_TERMCAP_mb=$(tput bold; tput setaf 2)	# green
+# start bold
+export LESS_TERMCAP_md=$(tput bold; tput setaf 2)	# green
+# start stand out
+export LESS_TERMCAP_so=$(tput bold; tput setaf 3)	# yellow
+# end standout
+export LESS_TERMCAP_se=$(tput rmso; tput sgr0)
+# start underline
+export LESS_TERMCAP_us=$(tput smul; tput bold; tput setaf 1)	# red
+# end bold, blinking, standout, underline
+export LESS_TERMCAP_me=$(tput sgr0)
 
 
 ### broot ###
@@ -243,6 +256,13 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#585858,bg=#181818,bold,underline"
 source /home/raytracer/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ## spaceship prompt configuration ##
+
+SPACESHIP_RPROMPT_ORDER=(
+	battery
+	time
+	vi_mode
+)
+
 SPACESHIP_PROMPT_ORDER=(
 	user
 	dir
@@ -273,12 +293,7 @@ SPACESHIP_PROMPT_ORDER=(
 	line_sep
 	jobs
 	char
-)
-
-SPACESHIP_RPROMPT_ORDER=(
-	battery
-	time
-	vi_mode
+	# exit_code
 )
 
 SPACESHIP_PROMPT_ADD_NEWLINE=true

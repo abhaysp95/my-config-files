@@ -9,6 +9,7 @@ dynamic_title = true
 #font = JetBrains Mono,Medium 10
 #font = Source Code Pro,Semibold 11
 font = Mononoki Nerd Font mono, 11
+#font = FantasqueSansMono Nerd Font Mono, 12
 #font = Fira Code Retina 11
 #font = Monospace 10
 fullscreen = true
@@ -480,7 +481,7 @@ foreground        = #ebdbb2
 foreground_bold   = #ebdbb2
 cursor            = #b8bb26
 cursor_foreground = #ebdbb2
-background        = #282828
+background        = #181818
 
 # Black
 color0  = #3c3836

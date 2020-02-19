@@ -58,7 +58,7 @@ bindsym XF86AudioPrev exec playerctl previous
 ##---Basic Bindings---##
 bindsym $mod+Shift+Return         exec --no-startup-id alacritty
 
-bindsym $mod+Shit+t               exec --no-startup-id st
+#bindsym $mod+Shit+t               exec --no-startup-id
 
 bindsym $mod+Shift+space          floating toggle
 bindsym $mod+space                focus mode_toggle
@@ -84,7 +84,7 @@ bindsym $mod+Shift+y              resize grow width 5 px or 5 ppt
 
 # bindsym $mod+u                    exec --no-startup-id ddspawn tmuxdd
 #bindsym $mod+u                    exec --no-startup-id st
-bindsym $mod+u								exec --no-startup-id termite -t 'fzf-menu' -e 'i3-dmenu-desktop --dmenu=fzf'
+bindsym $mod+u								exec --no-startup-id $TERMINAL -t 'fzf-menu' -e 'i3-dmenu-desktop --dmenu=fzf'
 for_window [title="fzf-menu"] floating enable
 #bindsym $mod+Shift+u              exec --no-startup-id i3resize down
 bindsym $mod+Shift+u              resize shrink height 5 px or 5 ppt
@@ -133,11 +133,11 @@ bindsym $mod+Shift+z              gaps outer current minus 5
 
 bindsym $mod+c                    exec --no-startup-id cabl
 
-bindsym $mod+v                    exec --no-startup-id termite -e nvim -c "vimiwiki"
+bindsym $mod+v                    exec --no-startup-id $TERMINAL -e nvim -c "vimiwiki"
 
-# bindsym $mod+m                    exec --no-startup-id termite -t 'ncmpcpp' -e "ncmpcpp --slave-screen visualizer"
+# bindsym $mod+m                    exec --no-startup-id $TERMINAL -t 'ncmpcpp' -e "ncmpcpp --slave-screen visualizer"
 # for_window [title="ncmpcpp"] floating enable
-bindsym $mod+m						exec --no-startup-id termite -e "ncmpcpp --slave-screen visualizer" ;; exec --no-startup-id termite -e cava ;; exec --no-startup-id i3-msg focus right ;; exec --no-startup-id i3-msg move down ;; exec --no-startup-id i3-msg resize shrink height 120 px or 120 ppt
+bindsym $mod+m						exec --no-startup-id $TERMINAL -e "ncmpcpp --slave-screen visualizer" ;; exec --no-startup-id $TERMINAL -e cava ;; exec --no-startup-id i3-msg focus right ;; exec --no-startup-id i3-msg move down ;; exec --no-startup-id i3-msg resize shrink height 120 px or 120 ppt
 #for_window [title="cava"] i3-msg focus i3-msg move down ;; i3-msg shrink height 120px
 
 bindsym $mod+Shift+b              floating toggle; sticky toggle; exec --no-startup-id hover left
@@ -159,8 +159,8 @@ bindsym $mod+XF86Forward          workspace next
 bindsym $mod+Shift+XF86Forward    move container to workspace next
 bindsym $mod+semicolon            workspace next
 bindsym $mod+Shift+semicolon      exec --no-startup-id alacritty -e ranger
-bindsym $mod+apostrophe           split horizontal ;; exec termite
-bindsym $mod+slash                split vertical ;; exec termite
+bindsym $mod+apostrophe           split horizontal ;; exec $TERMINAL
+bindsym $mod+slash                split vertical ;; exec $TERMINAL
 bindsym $mod+Shift+slash          kill
 bindsym $mod+backslash            workspace back_and_forth
 
@@ -168,7 +168,7 @@ bindsym $mod+backslash            workspace back_and_forth
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec termite
+bindsym $mod+Return exec $TERMINAL
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run -nb '$base01' -sf '$base01' -nf '#ebdbb2' -sb '$base02' -fn "FuraCode Nerd Font 09"
@@ -314,7 +314,7 @@ client.placeholder      #282828 #282828 #ebdbb2 #282828 #282828
 
 assign [class="firefox"] $ws2
 assign [class="Brave-browser"] $ws2
-# assign [class="Termite"] $ws1
+# assign [class="$TERMINAL"] $ws1
 assign [class="Rhythmbox"] $ws3
 assign [class="Pcmanfm"] $ws8
 assign [class="Nautilus"] $ws8
@@ -397,8 +397,8 @@ exec_always --no-startup-id /home/raytracer/.config/polybar/./launch.sh
 # bindsym $mod+x exec i3lock -i /home/raytracer/Pictures/Screenshot_20191227_104507.png
 #--color "$base01"
 
-exec termite
-exec_always feh --bg-scale /home/raytracer/Pictures/Wood.jpg
+exec $TERMINAL
+exec_always feh --bg-scale /home/raytracer/Pictures/john-abraham__546134.jpg
 
 #exec_always feh --bg-scale /home/raytracer/Pictures/Saved\ Pictures/816720.jpg
 
