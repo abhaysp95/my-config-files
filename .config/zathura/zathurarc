@@ -1,6 +1,6 @@
-set recolor
+#set recolor
 #set recolor-darkcolor "#1d2021"
-set recolor-lightcolor "#282828"
+set recolor-lightcolor "#181818"
 #set default-bg #1d2021
 
 set statusbar-h-padding 0
@@ -19,4 +19,4 @@ map R rotate
 map K zoom in
 map J zoom out
 
-#map n recolor
+map n recolor

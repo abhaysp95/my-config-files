@@ -1,0 +1,9 @@
+# Basic Settings
+
+set preview false
+set previewer ~/.config/lf/preview_file
+set hidden true
+set color265 true
+set drawbox true
+set icons true
+set ignorecase true

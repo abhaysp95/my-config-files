@@ -1,9 +1,9 @@
 
 ##---Basic Definitions---##
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 2
 hide_edge_borders smart
-gaps inner 10
-gaps outer 0
+gaps inner 15
+gaps outer 10
 new_float none
 set $mod Mod4
 

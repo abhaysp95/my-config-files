@@ -5,7 +5,7 @@ export TERMINAL2="termite"
 export READER="zathura"
 export FILE="ranger"
 export FILE_MANAGER="pcmanfm"
-export BROWSER="firefox"
+export BROWSER="brave"
 
 # Add ~/.local/bin/.scripts and all the subdirectories to the PATH
 export PATH="$PATH:$(du "$HOME/.local/bin/.scripts/" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"

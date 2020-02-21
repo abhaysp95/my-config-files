@@ -74,7 +74,7 @@ Plug 'vimwiki/vimwiki'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-commentary'
 Plug 'kovetskiy/sxhkd-vim'
-"Plug 'xuhdev/vim-latex-live-preview', {'for':'tex'}
+Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 "Plug 'roxma/nvim-completion-manager'
 "Plug 'tpope/vim-surround'
 Plug 'SirVer/ultisnips'
@@ -457,7 +457,7 @@ let g:coc_global_extensions = [
 
 " Vim-Airline configuration
    let g:airline#extensions#tabline#enabled=1
-   let g:airline_powerline_fonts=1
+   let g:airline_powerline_fonts=0
    let g:airline_theme='gruvbox'
    let g:hybrid_custom_term_colors=1
    let g:hybrid_reduced_contrast=1
@@ -485,7 +485,7 @@ let g:NERDTreeAutoDeleteBuffer=1
     set path+=**
 
 " Settings for vim latex live preview(needs working)
-    " let g:livepreview_previewer = 'zathura'
+    let g:livepreview_previewer = 'mupdf'
     "can also specify generator for latex
 
 " Create the 'tags' file(install ctags)
@@ -719,3 +719,5 @@ let g:fzf_files_options =
 
 " ---------------------
 autocmd BufEnter * lcd %:p:h
+
+"----------- vim live latex previewer -------------------------"
