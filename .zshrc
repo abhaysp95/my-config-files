@@ -257,11 +257,11 @@ source /home/raytracer/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ## spaceship prompt configuration ##
 
-SPACESHIP_RPROMPT_ORDER=(
-	battery
-	time
-	vi_mode
-)
+# SPACESHIP_RPROMPT_ORDER=(
+# 	battery
+# 	time
+# 	vi_mode
+# )
 
 SPACESHIP_PROMPT_ORDER=(
 	user
@@ -291,6 +291,7 @@ SPACESHIP_PROMPT_ORDER=(
 	terraform
 	exec_time
 	line_sep
+	vi_mode
 	jobs
 	char
 	# exit_code
@@ -323,7 +324,7 @@ SPACESHIP_EXEC_TIME_ELAPSED='0'
 SPACESHIP_BATTERY_SHOW=true
 SPACESHIP_BATTERY_THRESHOLD='101'
 SPACESHIP_VI_MODE_SHOW=true
-SPACESHIP_VI_MODE_PREFIX='in '
+#SPACESHIP_VI_MODE_PREFIX='in '
 SPACESHIP_VI_MODE_INSERT='[Ins]'
 SPACESHIP_VI_MODE_NORMAL='[Norm]'
 SPACESHIP_VI_MODE_COLOR='cyan'

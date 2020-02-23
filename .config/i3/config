@@ -84,7 +84,7 @@ bindsym $mod+Shift+y              resize grow width 5 px or 5 ppt
 
 # bindsym $mod+u                    exec --no-startup-id ddspawn tmuxdd
 #bindsym $mod+u                    exec --no-startup-id st
-bindsym $mod+u								exec --no-startup-id $TERMINAL -t 'fzf-menu' -e 'i3-dmenu-desktop --dmenu=fzf'
+#bindsym $mod+u								exec --no-startup-id $TERMINAL -t 'fzf-menu' -e 'i3-dmenu-desktop --dmenu=fzf'
 for_window [title="fzf-menu"] floating enable
 #bindsym $mod+Shift+u              exec --no-startup-id i3resize down
 bindsym $mod+Shift+u              resize shrink height 5 px or 5 ppt

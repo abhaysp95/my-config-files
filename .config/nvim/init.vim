@@ -699,9 +699,11 @@ nnoremap cq: :History:<CR>
 
 command! -nargs=1 Locate call fzf#run( \ {'source': 'locate <q-args>', 'sink': 'e', 'options': '-m'})
 
-let g:fzf_files_options =
-			\ '--preview "(codearay {} || cat {}) 2> /dev/null | head -' .&lines.'"'
+" let g:fzf_files_options =
+" 			\ '--preview "(codearay {} || cat {}) 2> /dev/null | head -' .&lines.'"'
 
+let g:fzf_files_options =
+			\ '--preview="pistol {}"'
 " ----------------------- emmet plugin ------------------"
 "" redefine default trigger key <C-y> followed by , "
 "let g:user_emmet_leader_key='/'

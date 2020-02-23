@@ -117,7 +117,11 @@ super + Delete
 
 #pause/play song
 super + p
-    mpc toggle && notify-send --icon=audio-headphones -t 3000 "Music played/paused\nCurrent Song" "`mpc | head -1`"
+	mpc toggle && notify-send --icon=audio-headphones -t 3000 "Music played/paused\nCurrent Song" "`mpc | head -1`"
+	#/home/raytracer/.local/bin/.scripts/music.sh
+super + u
+	/home/raytracer/.local/bin/.scripts/music.sh
+
 #pause song,video
 super + shift +p
     mpc pause;pauseallmpv

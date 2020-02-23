@@ -54,6 +54,7 @@ module-margin-left  = 0
 module-margin-right = 0
 
 ; Font
+;font-0 = JetBrains Mono:style=Bold:size=9;3
 font-0 = Fura Code Nerd Font:style=Bold:size=9;3
 font-1 = Font Awesome 5 Free Solid:size=11;3
 
@@ -203,19 +204,19 @@ adapter = AC0
 label-charging            =  %percentage%%
 label-charging-background = ${colors.yellow}
 label-charging-foreground = ${colors.background}
-label-charging-padding    = 2
+label-charging-padding    = 1
 
 ; Discharging label
 label-discharging            =  %percentage%%
 label-discharging-background = ${colors.white}
 label-discharging-foreground = ${colors.background}
-label-discharging-padding    = 2
+label-discharging-padding    = 1
 
 ; Full label
 label-full            =  100%
 label-full-background = ${colors.orange}
 label-full-foreground = ${colors.background}
-label-full-padding    = 2
+label-full-padding    = 1
 
 [module/temperature]
 type = internal/temperature
@@ -224,13 +225,13 @@ type = internal/temperature
 label            =  %temperature%
 label-background = ${colors.white}
 label-foreground = ${colors.background}
-label-padding    = 2
+label-padding    = 1
 
 ; Warning label
 label-warn            =  %temperature%
 label-warn-background = ${colors.white}
 label-warn-foreground = ${colors.background}
-label-warn-padding    = 2
+label-warn-padding    = 1
 
 [module/pulseaudio]
 type = internal/pulseaudio
@@ -239,13 +240,13 @@ type = internal/pulseaudio
 label-volume            =  %percentage%%
 label-volume-background = ${colors.white}
 label-volume-foreground = ${colors.background}
-label-volume-padding    = 2
+label-volume-padding    = 1
 
 ; Muted label
 label-muted            =  Muted
 label-muted-background = ${colors.red}
 label-muted-foreground = ${colors.background}
-label-muted-padding    = 2
+label-muted-padding    = 1
 
 [module/date]
 type = internal/date
@@ -269,7 +270,7 @@ type = custom/text
 content = 
 content-background = ${colors.white}
 content-foreground = ${colors.background}
-content-padding    = 2
+content-padding    = 1
 
 ; Mouse click
 click-left = slock
@@ -281,7 +282,7 @@ type = custom/text
 content            = 
 content-background = ${colors.white}
 content-foreground = ${colors.background}
-content-padding    = 2
+content-padding    = 1
 
 ; Mouse click
 click-left = i3-msg exit
@@ -293,7 +294,7 @@ type = custom/text
 content            = 
 content-background = ${colors.white}
 content-foreground = ${colors.background}
-content-padding    = 2
+content-padding    = 1
 
 ; Mouse click
 click-left = reboot
@@ -305,7 +306,7 @@ type = custom/text
 content            = 
 content-background = ${colors.white}
 content-foreground = ${colors.background}
-content-padding    = 2
+content-padding    = 1
 
 ; Mouse click
 click-left = poweroff
@@ -317,7 +318,7 @@ type = custom/text
 content            = 
 content-background = ${colors.orange}
 content-foreground = ${colors.background}
-content-padding    = 2
+content-padding    = 1
 
 ; Mouse click
 click-left = firefox &
@@ -329,7 +330,7 @@ type = custom/text
 content            = 
 content-background = ${colors.purple}
 content-foreground = ${colors.foreground}
-content-padding    = 2
+content-padding    = 1
 
 ; Mouse click
 click-left = code &
@@ -341,7 +342,7 @@ type = custom/text
 content            = 
 content-background = ${colors.brown}
 content-foreground = ${colors.foreground}
-content-padding    = 2
+content-padding    = 1
 
 ; Mouse click
 click-left = gimp &
@@ -353,7 +354,7 @@ type = custom/text
 content            = 
 content-background = ${colors.teal}
 content-foreground = ${colors.foreground}
-content-padding    = 2
+content-padding    = 1
 
 ; Mouse click
 click-left = termite &
@@ -365,7 +366,7 @@ type = custom/text
 content            = 
 content-background = ${colors.red}
 content-foreground = ${colors.foreground}
-content-padding    = 2
+content-padding    = 1
 
 ; Mouse click
 click-left = Thunar&
@@ -380,3 +381,5 @@ screenchange-reload     = true
 [global/wm]
 margin-top    = 10
 margin-bottom = 10
+
+;set ft=dosini
