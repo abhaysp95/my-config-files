@@ -200,6 +200,7 @@ zle -N zle-line-finish
 source ~/.aliases                                      # aliases
 
 #neofetch | lolcat -t
+pfetch
 #figlet -f /usr/share/fonts/figlet-fonts/ANSI\ Shadow.flf "zsh ready" | lolcat -t
 
 export PATH="$HOME/.local/bin/.scripts:$PATH"

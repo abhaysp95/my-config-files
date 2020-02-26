@@ -398,7 +398,8 @@ exec_always --no-startup-id /home/raytracer/.config/polybar/./launch.sh
 #--color "$base01"
 
 exec $TERMINAL
-exec_always feh --bg-scale /home/raytracer/Pictures/john-abraham__546134.jpg
+#exec_always feh --bg-scale /home/raytracer/Pictures/john-abraham__546134.jpg
+exec_always feh --bg-scale /home/raytracer/temp/wallpaper.png
 
 #exec_always feh --bg-scale /home/raytracer/Pictures/Saved\ Pictures/816720.jpg
 

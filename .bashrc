@@ -188,3 +188,5 @@ source /home/raytracer/.config/broot/launcher/bash/br
 if [ -f /etc/bash.command-not-found ]; then
     . /etc/bash.command-not-found
 fi
+
+pfetch

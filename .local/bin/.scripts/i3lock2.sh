@@ -18,7 +18,7 @@ scrot "$screenshot"
 
 # add the lock icon to swirled and blurred image:
 [[ -f "$icon" ]] &&
-	convert "$screenshot" -paint 1 -swirl 180 "$screenshot"
+	convert "$screenshot" -quality 10 -paint 1 -sharpen 5x5 -colors 16 -swirl 180 "$screenshot"
 	convert "$screenshot" -gravity center "$icon" -composite -matte "$screenshot"
 
 # pause music

@@ -86,7 +86,7 @@ super+n
 #super+o
 #   /home/raytracer/.scripts/manbyrofi
 super + x
-    /home/raytracer/.local/bin/.scripts/i3lock.sh ; mpc pause ;
+    /home/raytracer/.local/bin/.scripts/i3lock2.sh ; mpc pause ;
 #    /home/raytracer/.config/i3/blurlock.sh
 super + d;{d,f,k}
     {dmenu_run -i -nb '#282828' -sf '#282828' -nf '#ebdbb2' -sb '#b8bb26' -fn "Iosevka Nerd Font Medium 11",rofi -show drun -i,kill $(pidof compton) && compton && dunstify -t 2000 "compton reloaded"}
@@ -118,9 +118,7 @@ super + Delete
 #pause/play song
 super + p
 	mpc toggle && notify-send --icon=audio-headphones -t 3000 "Music played/paused\nCurrent Song" "`mpc | head -1`"
-	#/home/raytracer/.local/bin/.scripts/music.sh
-super + u
-	/home/raytracer/.local/bin/.scripts/music.sh
+#/home/raytracer/.local/bin/.scripts/audio_set/./music.sh
 
 #pause song,video
 super + shift +p

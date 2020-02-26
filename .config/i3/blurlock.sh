@@ -12,6 +12,7 @@
 
 IMAGE=/tmp/i3lock.png
 SCREENSHOT="scrot $IMAGE" # 0.46s
+lock_image="$HOME/temp/download-removebg-preview.png"
 
 # Alternate screenshot method with imagemagick. NOTE: it is much slower
 # SCREENSHOT="import -window root $IMAGE" # 1.35s
@@ -28,6 +29,6 @@ BLURTYPE="2x8" # 2.90s
 
 # Get the screenshot, add the blur and lock the screen with it
 $SCREENSHOT
-convert $IMAGE -blur $BLURTYPE $IMAGE
+convert $IMAGE -blur $BLURTYPE -gravity center "$lock_image" -composite -matte $IMAGE
 i3lock -i $IMAGE
-rm $IMAGE
+#rm $IMAGE
