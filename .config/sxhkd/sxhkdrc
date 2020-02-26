@@ -3,7 +3,7 @@
 super + Return
     $TERMINAL
 super + shift +t
-    alacritty
+    termite
 super + shift + q
     kill -9 'xdotool getwindowfocus getwindowpid'
 
@@ -86,10 +86,10 @@ super+n
 #super+o
 #   /home/raytracer/.scripts/manbyrofi
 super + x
-    /home/raytracer/.local/bin/.scripts/i3lock.sh ; mpc pause ;
+    /home/raytracer/.local/bin/.scripts/i3lock2.sh ; mpc pause ;
 #    /home/raytracer/.config/i3/blurlock.sh
 super + d;{d,f,k}
-    {dmenu_run -i -nb '#282828' -sf '#282828' -nf '#ebdbb2' -sb '#b8bb26' -fn "Iosevka Nerd Font Medium 11",rofi -show drun -i,kill $(pidof compton) && compton && dunstify -t 2000 "compton reloaded"}
+    {dmenu_run -i -nb '#282828' -sf '#282828' -nf '#ebdbb2' -sb '#b8bb26' -fn "Iosevka Nerd Font Medium 11",rofi -show run -i -show-icons, kill $(pidof picom) && picom && dunstify -t 2000 "picom reloaded"}
 
 # brightness
 super + ctrl + {minus,equal}
@@ -116,27 +116,25 @@ super + Delete
     /home/raytracer/.local/bin/.scripts/dmenurecord kill
 
 #pause/play song
+# super + p
+#     mpc toggle && notify-send --icon=audio-headphones -t 3000 "Music played/paused\nCurrent Song" "`mpc | head -1`"
 super + p
-	mpc toggle && notify-send --icon=audio-headphones -t 3000 "Music played/paused\nCurrent Song" "`mpc | head -1`"
-	#/home/raytracer/.local/bin/.scripts/music.sh
-super + u
-	/home/raytracer/.local/bin/.scripts/music.sh
-
+	/home/raytracer/.local/bin/.scripts/audio_setup/music.sh
 #pause song,video
 super + shift +p
     mpc pause;pauseallmpv
 #change song
 super + {comma,period}
-    mpc {prev && notify-send --icon=audio-headphones -t 3000 "Current Song" "`mpc | head -1`" ,next && notify-send --icon=audio-headphones -t 3000 "Current Song" "`mpc | head -1`" }
+	{/home/raytracer/.local/bin/.scripts/audio_setup/music_prev.sh,/home/raytracer/.local/bin/.scripts/audio_setup/music_next.sh}
 #restart track
 super + shift + less
-    mpc seek 0% && notify-send --icon=audio-headphones -t 3000 "Current Song" "`mpc | head -1`"
+	/home/raytracer/.local/bin/.scripts/audio_setup/music_seek_start.sh
 #seek forward in song
 super + {_,shift + } bracketright
-    mpc seek +{10,120}
+	{/home/raytracer/.local/bin/.scripts/audio_setup/music_seek_next1.sh,/home/raytracer/.local/bin/.scripts/audio_setup/music_seek_next2.sh}
 #seek backward in song
 super + {_,shift + } bracketleft
-    mpc seek -{10,120}
+	{/home/raytracer/.local/bin/.scripts/audio_setup/music_seek_prev1.sh,/home/raytracer/.local/bin/.scripts/audio_setup/music_seek_prev2.sh}
 #increase volume
 super + {_,shift + } equal
     pulsemixer --change-volume +{5,15}
