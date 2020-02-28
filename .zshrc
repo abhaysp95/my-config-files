@@ -335,3 +335,6 @@ SPACESHIP_EXIT_CODE_SHOW=true
 
 autoload -U promptinit; promptinit
 prompt spaceship
+
+# source solarized8
+#source $HOME/.config/nvim/plugged/vim-solarized8/scripts/solarized8.sh

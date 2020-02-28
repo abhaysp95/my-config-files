@@ -1,14 +1,14 @@
 [colors]
-background = #181818
-foreground = #ebdbb2
-red        = #cc241d
-blue       = #458588
-teal       = #689d6a
-green      = #b8bb26
-purple     = #b16286
-orange     = #fb4934
-indigo     = #d3869b
-black      = #282828
+background = #ed002b36
+foreground = #fdf6e3
+red        = #dc322f
+blue       = #268bd2
+teal       = #2aa198
+green      = #859900
+purple     = #6c71c4
+orange     = #dc322f
+indigo     = #6c71c4
+black      = #181818
 white      = #a89984
 yellow     = #fabd2f
 brown      = #969896

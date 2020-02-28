@@ -295,11 +295,11 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 #   client.urgent           $base02 $base08    $base00 $base0F
 
 ## Customize colors-gruvbox
-client.focused          #a89984 #a89984 #ebdbb2 #a89984 #a89984
-client.focused_inactive #282828 #282828 #ebdbb2 #282828 #282828
-client.unfocused        #282828 #282828 #ebdbb2 #282828 #282828
-client.urgent           #282828 #282828 #fb4934 #282828 #282828
-client.placeholder      #282828 #282828 #ebdbb2 #282828 #282828
+# client.focused          #a89984 #a89984 #ebdbb2 #a89984 #a89984
+# client.focused_inactive #282828 #282828 #ebdbb2 #282828 #282828
+# client.unfocused        #282828 #282828 #ebdbb2 #282828 #282828
+# client.urgent           #282828 #282828 #fb4934 #282828 #282828
+# client.placeholder      #282828 #282828 #ebdbb2 #282828 #282828
 # hide_edge_borders both
 
 ## Customize colors-papirus
@@ -310,6 +310,13 @@ client.placeholder      #282828 #282828 #ebdbb2 #282828 #282828
 # client.unfocused        #1d2021 #1d2021 #eeeeee #1d2021 #1d2021
 # client.urgent           #1d2021 #1d2021 #e25252 #1d2021 #1d2021
 # client.placeholder      #1d2021 #1d2021 #eeeeee #1d2021 #1d2021
+
+## solarized-light
+client.focused          #93a1a1 #93a1a1 #ebdbb2 #93a1a1 #93a1a1
+client.focused_inactive #002b36 #002b36 #ebdbb2 #002b36 #002b36
+client.unfocused        #002b36 #002b36 #ebdbb2 #002b36 #002b36
+client.urgent           #002b36 #002b36 #fb4934 #002b36 #002b36
+client.placeholder      #002b36 #002b36 #ebdbb2 #002b36 #002b36
 
 
 assign [class="firefox"] $ws2
@@ -399,7 +406,7 @@ exec_always --no-startup-id /home/raytracer/.config/polybar/./launch.sh
 
 exec $TERMINAL
 #exec_always feh --bg-scale /home/raytracer/Pictures/john-abraham__546134.jpg
-exec_always feh --bg-scale /home/raytracer/temp/wallpaper.png
+exec_always feh --bg-fill /home/raytracer/temp/test1.jpg
 
 #exec_always feh --bg-scale /home/raytracer/Pictures/Saved\ Pictures/816720.jpg
 

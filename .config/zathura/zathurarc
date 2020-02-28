@@ -1,6 +1,6 @@
 #set recolor
 #set recolor-darkcolor "#1d2021"
-set recolor-lightcolor "#181818"
+set recolor-lightcolor "#002b36"
 #set default-bg #1d2021
 
 set statusbar-h-padding 0

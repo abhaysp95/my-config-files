@@ -44,6 +44,8 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
 " Theme / Interface
 "Plug 'Yggdroot/indentLine'
 "Plug 'AnsiEsc.vim'
+Plug 'ayu-theme/ayu-vim'
+Plug 'lifepillar/vim-solarized8'
 Plug 'ryanoasis/vim-devicons'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -291,7 +293,6 @@ let g:UltiSnipsEditSplit="vertical"
 
 "
 " colorscheme configuration
-	colorscheme gruvbox
     let base16colorspace=256
 	set background=dark
     " source this to your profile
@@ -311,6 +312,10 @@ let g:UltiSnipsEditSplit="vertical"
     "highlight Normal ctermbg=NONE
 	let g:spacegray_underline_search = 1
 	let g:spacegray_italicize_comments = 1
+	let ayucolor="light"
+	"let ayucolor="mirage"
+	"let ayucolor="dark"
+	colorscheme solarized8
     set go=a
     highlight Comment cterm=italic gui=italic
     highlight Search ctermbg=black ctermfg=yellow term=underline
@@ -458,7 +463,7 @@ let g:coc_global_extensions = [
 " Vim-Airline configuration
    let g:airline#extensions#tabline#enabled=1
    let g:airline_powerline_fonts=0
-   let g:airline_theme='gruvbox'
+   let g:airline_theme='solarized_flood'
    let g:hybrid_custom_term_colors=1
    let g:hybrid_reduced_contrast=1
 
@@ -485,7 +490,7 @@ let g:NERDTreeAutoDeleteBuffer=1
     set path+=**
 
 " Settings for vim latex live preview(needs working)
-    let g:livepreview_previewer = 'mupdf'
+    let g:livepreview_previewer = 'zathura'
     "can also specify generator for latex
 
 " Create the 'tags' file(install ctags)
@@ -721,5 +726,3 @@ let g:fzf_files_options =
 
 " ---------------------
 autocmd BufEnter * lcd %:p:h
-
-"----------- vim live latex previewer -------------------------"

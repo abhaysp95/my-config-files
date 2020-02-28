@@ -1,6 +1,0 @@
-#!/usr/bin/env sh
-
-ncmpcpp --slave-screen visualizer &
-cava &
-i3-msg move down &
-i3-msg shrink height 120px
