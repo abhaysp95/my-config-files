@@ -116,6 +116,8 @@ super + Delete
     /home/raytracer/.local/bin/.scripts/dmenurecord kill
 
 #pause/play song
+# super + p
+#     mpc toggle && notify-send --icon=audio-headphones -t 3000 "Music played/paused\nCurrent Song" "`mpc | head -1`"
 super + p
 	/home/raytracer/.local/bin/.scripts/audio_setup/music.sh
 #pause song,video
