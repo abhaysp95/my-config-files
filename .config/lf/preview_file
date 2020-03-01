@@ -11,6 +11,7 @@ case "$1" in
 	*.tar) tar -tvf "$1";;
 	*.rar) unrar l "$1";;
 	*.7z) 7z l "$1";;
-	*.zsh|*.bash|*.git*|*.sh|*.conf|*rc|*config) bat "$1";;		# check for pistol script
-	*) highlight "$1" -O ansi --force;;
+	*.zsh|*.bash|*.git*|*.sh|*.conf|*rc|*config) pistol "$1";;		# check for pistol script
+	#*) highlight "$1" -O ansi --force;;
+	*) pistol "$1";;
 esac

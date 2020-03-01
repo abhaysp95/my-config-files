@@ -3,7 +3,7 @@
 for_window [class="^.*"] border pixel 2
 hide_edge_borders smart
 gaps inner 15
-gaps outer 10
+gaps outer 0
 new_float none
 set $mod Mod4
 
@@ -71,7 +71,7 @@ bindsym $mod+Shift+Delete         exec --no-startup-id lmc truemate ; exec --no-
 
 ##---Letter key Bindings---##
 bindsym $mod+q                     [con_id="__focused__" instance="^(?!dropdown_).*$"] kill
-bindsym $mod+Shift+q               [con_id="__focused__" instance="^(?!dropdown_).*$"] exec --no-startup-id kill -9 `xdotool getwindowfocus getwindowpid`
+#bindsym $mod+Shift+q               [con_id="__focused__" instance="^(?!dropdown_).*$"] exec --no-startup-id kill -9 `xdotool getwindowfocus getwindowpid`
 
 bindsym $mod+Shift+r              exec --no-startup-id winresize
 
@@ -312,12 +312,27 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 # client.placeholder      #1d2021 #1d2021 #eeeeee #1d2021 #1d2021
 
 ## solarized-light
-client.focused          #93a1a1 #93a1a1 #ebdbb2 #93a1a1 #93a1a1
-client.focused_inactive #002b36 #002b36 #ebdbb2 #002b36 #002b36
-client.unfocused        #002b36 #002b36 #ebdbb2 #002b36 #002b36
-client.urgent           #002b36 #002b36 #fb4934 #002b36 #002b36
-client.placeholder      #002b36 #002b36 #ebdbb2 #002b36 #002b36
+# client.focused          #93a1a1 #93a1a1 #ebdbb2 #93a1a1 #93a1a1
+# client.focused_inactive #002b36 #002b36 #ebdbb2 #002b36 #002b36
+# client.unfocused        #002b36 #002b36 #ebdbb2 #002b36 #002b36
+# client.urgent           #002b36 #002b36 #fb4934 #002b36 #002b36
+# client.placeholder      #002b36 #002b36 #ebdbb2 #002b36 #002b36
 
+# ## base16-dracula
+# client.focused          #00f769 #00f769 #ebdbb2 #00f769 #00f769
+# client.focused_inactive #282936 #282936 #ebdbb2 #282936 #282936
+# client.unfocused        #282936 #282936 #ebdbb2 #282936 #282936
+# client.urgent           #282936 #282936 #fb4934 #282936 #282936
+# client.placeholder      #282936 #282936 #ebdbb2 #282936 #282936
+
+## dracula
+# class                 border  bground text    indicator child_border
+client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
+client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
+client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
+client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
+client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
+client.background       #F8F8F2
 
 assign [class="firefox"] $ws2
 assign [class="Brave-browser"] $ws2
@@ -406,7 +421,7 @@ exec_always --no-startup-id /home/raytracer/.config/polybar/./launch.sh
 
 exec $TERMINAL
 #exec_always feh --bg-scale /home/raytracer/Pictures/john-abraham__546134.jpg
-exec_always feh --bg-fill /home/raytracer/temp/test1.jpg
+exec_always feh --bg-fill /home/raytracer/Pictures/wall/0230.jpg
 
 #exec_always feh --bg-scale /home/raytracer/Pictures/Saved\ Pictures/816720.jpg
 

@@ -125,10 +125,13 @@ alias pingarch='ping -c6 archlinux.org'
 
 # some aliases for broot(br)
 alias bll='br -dph'
+
+# for colorls(might remove them)
 alias cls='colorls -a --sd --report --gs'
 alias cll='colorls -la --sd --gs'
 alias clt='colorls --tree -a --sd'
 
+# some git aliases
 alias gis='git status'
 alias gic='git commit -m'
 alias gia='git add'
@@ -137,4 +140,10 @@ alias gpl='git pull'
 alias gpls='git pull && git push'
 
 alias mapp='xmodmap ~/.Xmodmap'
+
+# a neat terminal watch
 alias twatch='watch -n1 "date '+%b\/%a%n%D%n%T' | figlet -k"'
+
+# lsd(ls deluxe)
+alias lsd='lsd -Fa --group-dirs first'
+alias lsdl='lsd -laF --group-dirs first --date relative'

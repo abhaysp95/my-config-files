@@ -1,16 +1,16 @@
 [colors]
-background = #ed002b36
-foreground = #fdf6e3
-red        = #dc322f
-blue       = #268bd2
-teal       = #2aa198
-green      = #859900
-purple     = #6c71c4
-orange     = #dc322f
-indigo     = #6c71c4
+background = #282936
+foreground = #f7f7fb
+red        = #ea51b2
+blue       = #62d6e8
+teal       = #a1efe4
+green      = #00f769
+purple     = #b46bcf
+orange     = #ea51b2
+indigo     = #b46bcf
 black      = #181818
-white      = #a89984
-yellow     = #fabd2f
+white      = #e9e9f4
+yellow     = #ebff87
 brown      = #969896
 
 [bar/top]
@@ -60,7 +60,7 @@ font-1 = Font Awesome 5 Free Solid:size=11;3
 
 ; Modlues
 modules-left   = i3
-modules-center = date xwindow
+modules-center = date time xwindow
 modules-right  = battery pulseaudio temperature lock logout reboot poweroff
 
 ; Cursor actions
@@ -150,13 +150,13 @@ ws-icon-0 = "Free;
 
 ; Focused label
 label-focused            = %name%
-label-focused-background = ${colors.white}
-label-focused-foreground = ${colors.background}
+label-focused-background = ${colors.background}
+label-focused-foreground = ${colors.green}
 label-focused-padding    = 1
 
 ; Unfocused labels
 label-unfocused            = %icon% %name%
-label-unfocused-foreground = ${colors.white}
+label-unfocused-foreground = ${colors.purple}
 label-unfocused-padding    = 1
 
 ; Visible labels
@@ -202,20 +202,20 @@ adapter = AC0
 
 ; Charging label
 label-charging            =  %percentage%%
-label-charging-background = ${colors.yellow}
-label-charging-foreground = ${colors.background}
+label-charging-background = ${colors.background}
+label-charging-foreground = ${colors.yellow}
 label-charging-padding    = 1
 
 ; Discharging label
 label-discharging            =  %percentage%%
-label-discharging-background = ${colors.white}
-label-discharging-foreground = ${colors.background}
+label-discharging-background = ${colors.background}
+label-discharging-foreground = ${colors.red}
 label-discharging-padding    = 1
 
 ; Full label
 label-full            =  100%
-label-full-background = ${colors.orange}
-label-full-foreground = ${colors.background}
+label-full-background = ${colors.background}
+label-full-foreground = ${colors.green}
 label-full-padding    = 1
 
 [module/temperature]
@@ -223,14 +223,14 @@ type = internal/temperature
 
 ; Label
 label            =  %temperature%
-label-background = ${colors.white}
-label-foreground = ${colors.background}
+label-background = ${colors.background}
+label-foreground = ${colors.red}
 label-padding    = 1
 
 ; Warning label
 label-warn            =  %temperature%
-label-warn-background = ${colors.white}
-label-warn-foreground = ${colors.background}
+label-warn-background = ${colors.background}
+label-warn-foreground = ${colors.white}
 label-warn-padding    = 1
 
 [module/pulseaudio]
@@ -238,15 +238,28 @@ type = internal/pulseaudio
 
 ; Volume label
 label-volume            =  %percentage%%
-label-volume-background = ${colors.white}
-label-volume-foreground = ${colors.background}
+label-volume-background = ${colors.background}
+label-volume-foreground = ${colors.blue}
 label-volume-padding    = 1
 
 ; Muted label
 label-muted            =  Muted
-label-muted-background = ${colors.red}
-label-muted-foreground = ${colors.background}
+label-muted-background = ${colors.background}
+label-muted-foreground = ${colors.red}
 label-muted-padding    = 1
+
+[module/time]
+type = internal/date
+
+; Update interval
+interval = 1.0
+
+; Format
+time = %I:%M%P
+
+; Label
+label         =   %time%
+label-padding = 2
 
 [module/date]
 type = internal/date
@@ -255,21 +268,34 @@ type = internal/date
 interval = 1.0
 
 ; Format
-time = %I:%M:%S %p
+date = %A, %d %B
 
 ; Label
-label            =  %time%
-label-foreground = ${colors.foreground}
-label-background = ${colors.background}
-label-padding    = 1
+label         =   %date%
+label-padding = 2
+
+; [module/date]
+; type = internal/date
+
+; ; Update interval
+; interval = 1.0
+
+; ; Format
+; time = %I:%M:%S %p
+
+; ; Label
+; label            =  %time%
+; label-foreground = ${colors.foreground}
+; label-background = ${colors.background}
+; label-padding    = 1
 
 [module/lock]
 type = custom/text
 
 ; Label
 content = 
-content-background = ${colors.white}
-content-foreground = ${colors.background}
+content-background = ${colors.background}
+content-foreground = ${colors.green}
 content-padding    = 1
 
 ; Mouse click
@@ -280,8 +306,8 @@ type = custom/text
 
 ; Label
 content            = 
-content-background = ${colors.white}
-content-foreground = ${colors.background}
+content-background = ${colors.background}
+content-foreground = ${colors.cyan}
 content-padding    = 1
 
 ; Mouse click
@@ -292,8 +318,8 @@ type = custom/text
 
 ; Label
 content            = 
-content-background = ${colors.white}
-content-foreground = ${colors.background}
+content-background = ${colors.background}
+content-foreground = ${colors.teal}
 content-padding    = 1
 
 ; Mouse click
@@ -304,8 +330,8 @@ type = custom/text
 
 ; Label
 content            = 
-content-background = ${colors.white}
-content-foreground = ${colors.background}
+content-background = ${colors.background}
+content-foreground = ${colors.red}
 content-padding    = 1
 
 ; Mouse click

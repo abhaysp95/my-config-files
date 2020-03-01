@@ -45,6 +45,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
 "Plug 'Yggdroot/indentLine'
 "Plug 'AnsiEsc.vim'
 Plug 'ayu-theme/ayu-vim'
+Plug 'dracula/vim',{'as':'dracula'}
 Plug 'lifepillar/vim-solarized8'
 Plug 'ryanoasis/vim-devicons'
 Plug 'vim-airline/vim-airline'
@@ -315,7 +316,7 @@ let g:UltiSnipsEditSplit="vertical"
 	let ayucolor="light"
 	"let ayucolor="mirage"
 	"let ayucolor="dark"
-	colorscheme solarized8
+	colorscheme dracula
     set go=a
     highlight Comment cterm=italic gui=italic
     highlight Search ctermbg=black ctermfg=yellow term=underline
@@ -462,8 +463,8 @@ let g:coc_global_extensions = [
 
 " Vim-Airline configuration
    let g:airline#extensions#tabline#enabled=1
-   let g:airline_powerline_fonts=0
-   let g:airline_theme='solarized_flood'
+   let g:airline_powerline_fonts=1
+   let g:airline_theme='hybrid'
    let g:hybrid_custom_term_colors=1
    let g:hybrid_reduced_contrast=1
 
@@ -695,6 +696,7 @@ let g:vimwiki_list = [{'path': '~/vimwiki/',
 " ----------------- settings for fzf --------------------- "
 map <leader>ff :Files<CR>
 map <leader>fc :Files ~/.config/<CR>
+map <leader>fs :Files ~/.local/bin/.scripts/<CR>
 "can also use :Files instead of :FZF
 map <leader>gf :Files
 
