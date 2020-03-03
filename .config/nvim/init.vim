@@ -12,11 +12,12 @@ let mapleader =","
 call plug#begin()
 Plug 'vim-syntastic/syntastic' "error checker for languages and scripts
 Plug 'dense-analysis/ale'
-Plug 'tmux-plugins/vim-tmux-focus-events'
-Plug 'tmux-plugins/vim-tmux'
+"Plug 'tmux-plugins/vim-tmux-focus-events'
+"Plug 'tmux-plugins/vim-tmux'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'mattn/emmet-vim'			" for html
 Plug 'tpope/vim-git'
+Plug 'tpope/vim-surround'
 Plug 'vim-python/python-syntax'
 "Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -35,9 +36,10 @@ Plug 'junegunn/fzf.vim'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'mattn/calendar-vim'
+Plug 'terryma/vim-multiple-cursors'
 "Plug 'gabrielelana/vim-markdown'
 "Plug 'vim-pandoc/vim-pandoc'
-"Plug 'vim-pandoc/vim-pandoc-syntax'
+Plug 'vim-pandoc/vim-pandoc-syntax'
 "Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
 
@@ -45,6 +47,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
 "Plug 'Yggdroot/indentLine'
 "Plug 'AnsiEsc.vim'
 Plug 'ayu-theme/ayu-vim'
+Plug 'tomasiser/vim-code-dark'
 Plug 'dracula/vim',{'as':'dracula'}
 Plug 'lifepillar/vim-solarized8'
 Plug 'ryanoasis/vim-devicons'
@@ -83,6 +86,9 @@ Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'scrooloose/nerdtree'
+
+" display colors
+Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 
 call plug#end()
 
@@ -464,7 +470,7 @@ let g:coc_global_extensions = [
 " Vim-Airline configuration
    let g:airline#extensions#tabline#enabled=1
    let g:airline_powerline_fonts=1
-   let g:airline_theme='hybrid'
+   let g:airline_theme='dracula'
    let g:hybrid_custom_term_colors=1
    let g:hybrid_reduced_contrast=1
 
@@ -728,3 +734,23 @@ let g:fzf_files_options =
 
 " ---------------------
 autocmd BufEnter * lcd %:p:h
+
+" ---- vim-pandoc-syntax(without vim-pandoc) ------- "
+augroup pandoc_syntax
+	au! BufNewFile,BufFilePre,BufRead *.md set filetype=markdown.pandoc
+augroup END
+
+" Vim Hexokinase
+let g:Hexokinase_optInPatterns = [
+			\	'full_hex',
+			\	'triple_hex',
+			\	'rgb',
+			\	'rgba',
+			\	'hsl',
+			\	'hsla',
+			\	'colour_names'
+			\]
+let g:Hexokinase_highlighters = ['backgroundfull']
+
+" Reenable hexokinase on enter
+autocmd VimEnter * HexokinaseTurnOn

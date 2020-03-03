@@ -421,7 +421,7 @@ exec_always --no-startup-id /home/raytracer/.config/polybar/./launch.sh
 
 exec $TERMINAL
 #exec_always feh --bg-scale /home/raytracer/Pictures/john-abraham__546134.jpg
-exec_always feh --bg-fill /home/raytracer/Pictures/wall/0230.jpg
+exec_always feh --bg-fill /home/raytracer/Downloads/git-materials/gitlab/wallpapers/0041.jpg
 
 #exec_always feh --bg-scale /home/raytracer/Pictures/Saved\ Pictures/816720.jpg
 

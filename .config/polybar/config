@@ -25,7 +25,7 @@ offset-y = 5
 ;override-redirect = true
 
 ; Position
-bottom = true
+bottom = false
 
 ; Radius
 radius = 0
