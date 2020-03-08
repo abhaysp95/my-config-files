@@ -1,18 +1,30 @@
 [colors]
-background = #282936
-foreground = #f7f7fb
-red        = #ea51b2
-blue       = #62d6e8
-teal       = #a1efe4
-green      = #00f769
-purple     = #b46bcf
-orange     = #ea51b2
-indigo     = #b46bcf
-black      = #181818
-white      = #e9e9f4
-yellow     = #ebff87
-brown      = #969896
+background = #282828
+foreground = #ebdbb2
+red        = #cc241d
+blue       = #458588
+teal       = #689d6a
+green      = #98971a
+purple     = #b16286
+orange     = #d65d0e
+indigo     = #d3869b
+black      = #3c3836
+white      = #ebdbb2
+yellow     = #d79921
+brown      = #fb4934
 
+/* foreground = #f7f7fb */
+/* red        = #ea51b2 */
+/* blue       = #62d6e8 */
+/* teal       = #a1efe4 */
+/* green      = #00f769 */
+/* purple     = #b46bcf */
+/* orange     = #ea51b2 */
+/* indigo     = #b46bcf */
+/* black      = #181818 */
+/* white      = #e9e9f4 */
+/* yellow     = #ebff87 */
+/* brown      = #969896 */
 [bar/top]
 ; Size
 width  = 100%
@@ -62,6 +74,9 @@ font-1 = Font Awesome 5 Free Solid:size=11;3
 modules-left   = i3
 modules-center = date time xwindow
 modules-right  = battery pulseaudio temperature lock logout reboot poweroff
+
+;tray-position = right
+;tray-padding = 2
 
 ; Cursor actions
 cursor-click  = pointer
@@ -151,12 +166,12 @@ ws-icon-0 = "Free;
 ; Focused label
 label-focused            = %name%
 label-focused-background = ${colors.background}
-label-focused-foreground = ${colors.green}
+label-focused-foreground = ${colors.yellow}
 label-focused-padding    = 1
 
 ; Unfocused labels
 label-unfocused            = %icon% %name%
-label-unfocused-foreground = ${colors.purple}
+label-unfocused-foreground = ${colors.blue}
 label-unfocused-padding    = 1
 
 ; Visible labels

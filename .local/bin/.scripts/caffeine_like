@@ -8,10 +8,10 @@ status=`xset -q | grep 'DPMS is' | awk '{print $3 }'`
 # used = and == due to some posix related issue which I don't understand currently
 if [ "$status" = 'Enabled' ]; then
 	xset -dpms && \
-	xset s off
-	dunstify -t 2000 'Screen suspend is disabled.'
+		xset s off && \
+			dunstify -t 2000 'Screen suspend is disabled.'
 else
 	xset +dpms && \
-	xset s on
-	dunstify -t 2000 'Screen suspend is enabled.'
+		xset s on && \
+			dunstify -t 2000 'Screen suspend is enabled.'
 fi

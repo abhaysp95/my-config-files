@@ -8,5 +8,5 @@ mpd &
 sxhkd &
 compton &
 dunst &
-xset r rate 400 60 &
+xset r rate 350 70 &
 notify-send "Welcome to region of raytracer" "Enjoy!"

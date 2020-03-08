@@ -6,11 +6,16 @@ bold_is_bright = true
 #cell_width_scale = 1.0
 clickable_url = true
 dynamic_title = true
-#font = JetBrains Mono, 10.8
+font = JetBrains Mono, 10.8
 #font = Source Code Pro,Semibold 11
-font = Mononoki Nerd Font Mono, 12
-#font = FantasqueSansMono Nerd Font Mono,Bold Italic 12
-#font = Fira Code Retina 11
+#font = Mononoki Nerd Font Mono, 12
+#font = Hack Nerd Font Mono, 11
+#font = DejaVu SansMono Nerd Font, Book 11
+#font = FantasqueSansMono Nerd Font Mono, 13
+#font = Fira Code, Medium 11
+#font = TSCu_Comic, 13
+#font = Monaco 11
+#font = SpaceMono Nerd Font Mono, 10.8
 #font = Monospace 10
 fullscreen = true
 #icon_name = terminal
@@ -476,66 +481,66 @@ highlight = #2f2f2f
 #
 
 ## gruvbox
-#[colors]
-#foreground        = #ebdbb2
-#foreground_bold   = #ebdbb2
-##cursor            = #b8bb26
-##cursor_foreground = #ebdbb2
-#background        = #181818
+[colors]
+foreground        = #ebdbb2
+foreground_bold   = #ebdbb2
+#cursor            = #b8bb26
+#cursor_foreground = #ebdbb2
+background        = #282828
 
-## Black
-#color0  = #3c3836
+# Black
+color0  = #3c3836
 
-## Black dark
-#color18 = #282828
+# Black dark
+color18 = #282828
 
-## White
-#color15 = #ebdbb2
+# White
+color15 = #ebdbb2
 
-## Grey
-#color8  = #928374
+# Grey
+color8  = #928374
 
-## Grey light
-#color20 = #a89984
+# Grey light
+color20 = #a89984
 
-## Gray lighter
-#color21 = #a89984
+# Gray lighter
+color21 = #a89984
 
-## Grey lightest
-#color7  = #bdae93
+# Grey lightest
+color7  = #bdae93
 
-## Red
-#color1  = #cc241d
-#color9  = #fb4934
+# Red
+color1  = #cc241d
+color9  = #fb4934
 
-## Green
-#color2  = #98971a
-#color10 = #b8bb26
+# Green
+color2  = #98971a
+color10 = #b8bb26
 
-## Yellow
-#color3  = #d79921
-#color11 = #fabd2f
+# Yellow
+color3  = #d79921
+color11 = #fabd2f
 
-## Blue
-#color4  = #458588
-#color12 = #83a598
+# Blue
+color4  = #458588
+color12 = #83a598
 
-## Purple
-#color5  = #b16286
-#color13 = #d3869b
+# Purple
+color5  = #b16286
+color13 = #d3869b
 
-## Teal
-#color6  = #689d6a
-#color14 = #8ec07c
+# Teal
+color6  = #689d6a
+color14 = #8ec07c
 
-## Orange
-#color16 = #d65d0e
+# Orange
+color16 = #d65d0e
 
-## Cyan
-#color17 = #689d6a
+# Cyan
+color17 = #689d6a
 
-## Blue Grey
-#color19 = #83a598
+# Blue Grey
+color19 = #83a598
 
 ## google-dark
 
@@ -735,42 +740,43 @@ highlight = #2f2f2f
 # Copyright 2013-present, All rights reserved
 # Code licensed under the MIT license
 
-[colors]
+#[colors]
 
-# special
-foreground      = #f8f8f2
-foreground_bold = #f8f8f2
-cursor          = #f8f8f2
-background      = #282a36
+## special
+#foreground      = #f8f8f2
+#foreground_bold = #f8f8f2
+##cursor          = #f8f8f2
+#background      = #282a36
+##background		= rgba(00, 05, 10, 1)
 
-# black
-color0  = #000000
-color8  = #4d4d4d
+## black
+#color0  = #000000
+#color8  = #4d4d4d
 
-# red
-color1  = #ff5555
-color9  = #ff6e67
+## red
+#color1  = #ff5555
+#color9  = #ff6e67
 
-# green
-color2  = #50fa7b
-color10 = #5af78e
+## green
+#color2  = #50fa7b
+#color10 = #5af78e
 
-# yellow
-color3  = #f1fa8c
-color11 = #f4f99d
+## yellow
+#color3  = #f1fa8c
+#color11 = #f4f99d
 
-# blue
-color4  = #bd93f9
-color12 = #caa9fa
+## blue
+#color4  = #bd93f9
+#color12 = #caa9fa
 
-# magenta
-color5  = #ff79c6
-color13 = #ff92d0
+## magenta
+#color5  = #ff79c6
+#color13 = #ff92d0
 
-# cyan
-color6  = #8be9fd
-color14 = #9aedfe
+## cyan
+#color6  = #8be9fd
+#color14 = #9aedfe
 
-# white
-color7  = #bfbfbf
-color15 = #e6e6e6
+## white
+#color7  = #bfbfbf
+#color15 = #e6e6e6

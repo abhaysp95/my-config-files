@@ -41,7 +41,7 @@
     # The transparency of the window.  Range: [0; 100].
     # This option will only work if a compositing window manager is
     # present (e.g. xcompmgr, compiz, etc.).
-    transparency = 5
+    transparency = 0
 
     # The height of the entire notification.  If the height is smaller
     # than the font height and padding combined, it will be raised
@@ -183,7 +183,8 @@
     dmenu = /usr/bin/dmenu -p dunst:
 
     # Browser for opening urls in context menu.
-    browser = /usr/bin/firefox -new-tab
+    # browser = /usr/bin/firefox -new-tab
+	browser = /usr/share/sensible-browser
 
     # Always run rule-defined scripts, even if the notification is suppressed
     always_run_script = true
@@ -282,7 +283,7 @@
     #icon = /path/to/icon
 
 [urgency_normal]
-    background = "#282936"
+    background = "#282828"
     foreground = "#f7f7fb"
     timeout = 10
     # Icon for notifications with normal urgency, uncomment to enable

@@ -4,7 +4,201 @@ set preview false
 set previewer ~/.config/lf/preview_file
 #set previewer /usr/bin/pistol
 set hidden true
-set color265 true
+set color256 true
 set drawbox true
 set icons true
 set ignorecase true
+
+# custom Functions
+cmd open ${{
+	case $(file --mime-type "$f" -bL) in
+	text/*|application/json) $EDITOR "$f";;
+	video/*|image/*/application/pdf) xdg-open "$f" & disown;;
+	*) xdg-open "$f";;
+	esac
+}}
+
+cmd mkdir ${{
+	printf "Directory name: "
+	read ans
+	mkdir $ans
+}}
+
+cmd mkfile ${{
+	printf "File name: "
+	read ans
+	touch $ans
+}}
+
+cmd mkopenfile ${{
+	printf "File name to make and open: "
+	read ans
+	$EDITOR $ans
+}}
+
+cmd chmod ${{
+	printf "Mode bits: "
+	read ans
+
+	for file in "$fx"; do
+		chmod $ans $file
+	done
+}}
+
+cmd sudomkfile ${{
+	printf "File name(sudo): "
+	read ans
+	sudo touch $ans
+}}
+
+cmd sudomkopenfile ${{
+	printf "File name to create and open(root): "
+	read ans
+	sudo $EDITOR $ans
+}}
+
+# think something for wallpaper
+
+cmd fzf_jump ${{
+	res="$(find . -maxdepth 3 | fzf --reverse --header='Jump to location')"
+	if [ -f "$res" ]; then
+		cmd="select"
+	elif [ -d "$res" ]; then
+		cmd="cd"
+	fi
+	lf -remote "send $id $cmd \"$res\""
+}}
+
+cmd broot_jump ${{
+	f=$(mktemp)
+	res="$(broot --outcmd $f && cat $f | sed 's/cd //')"
+	rm -f "$f"
+	if [ -f "$res" ]; then
+		cmd="select"
+	elif [-d "$res" ]; then
+		cmd="cd"
+	fi
+	lf -remote "send $id $cmd \"$res\""
+}}
+
+# something related to bookmark
+
+# somethings with dragon tool(I think I don't need it)
+
+# Archive bindings
+cmd unarchive ${{
+	case "$f" in
+		*.zip) unzip "$f";;
+		*.tar.gz) tar -xzvf "$f";;
+		*.tar.bz2) tar -xjvf "$f";;
+		*.tar) tar -xvf "$f";;
+		*) echo "Undefined format in config";;
+	esac
+}}
+
+cmd zip %zip -r "$f" "$f"
+cmd tar %tar cvf "$f.tar" "$f"
+cmd targz %tar cvzf "$f.tar.gz" "$f"
+cmd tarbz2 %tar cjvf "$f.tar.bz2" "$f"
+
+# Trash cli bindings
+cmd trash ${{
+	files=$(echo "$fx" | sed "s/ /\\\ /g;s/\[/\\\[/g;s/\]/\\\]/g")
+	IFS=$'\n'
+	for file in $files
+	do
+		trash-put "$(basename "$file")"
+	done
+}}
+
+cmd clear_trash %trash-empty
+
+cmd restore_trash ${{
+	trash-restore
+}}
+
+cmd stripcase %stripcase "$f"
+
+# Bindings
+# Remove some defaults
+map m
+map o
+map n
+map "'"
+map '"'
+map d
+map c
+map e
+map f
+
+# File openers
+map ee $$EDITOR "$f"
+map es $sudo $EDITOR "$f"
+map u $view "$f"
+
+# Archive mappings
+map az zip
+map at tar
+map ag targz
+map ab targz
+map au unarchive
+
+# Trash mappings
+map dd trash
+map tc clear_trash
+map tr restore_trash
+
+# Broot Mapping
+map f broot_jump
+
+# Dragon Mapping
+# not done yet
+
+map ss stripcase
+
+# Basic Functions
+map . set hidden!
+map DD delete
+map p paste
+map x cut
+map y copy
+map <enter> open
+map mf mkfile
+map mfo mkopenfile
+map mr sudomkfile
+map mro sudomkopenfile
+map md mkdir
+map ms $mkscript
+map ch chmod
+#map bg setwallpaper
+map o open_config
+map r rename
+map H top
+map L bottom
+map R reload
+map C clear
+map U unselect
+
+# Movement
+map gtr cd ~/.local/share/Trash/files
+map gusb cd /run/media/raytracer
+
+map gv. cd ~/Videos
+map gvy ~/Videos/youtube
+
+map gp. cd ~/Pictures
+map gpw cd ~/Pictures/Camera_Roll/wall
+
+map gtc cd ~/dox/nc/
+map gtp cd ~/dox/npython
+map gts cd ~/dox/nshell
+map gt. cd ~/dox/pdf
+
+map gd cd ~/Downloads
+map gdg cd ~/Downloads/git-materials
+
+map gc cd ~/.config
+map gC cd ~/cell
+map gE cd /etc
+map gU cd /usr
+map gUs cd /usr/share

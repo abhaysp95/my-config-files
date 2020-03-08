@@ -1,6 +1,6 @@
 
 # Colors
-set titlecolor brightwhite,green
+set titlecolor black,blue
 set statuscolor brightwhite,green
 set errorcolor brightwhite,red
 set selectedcolor brightwhite,red

@@ -12,8 +12,8 @@ let mapleader =","
 call plug#begin()
 Plug 'vim-syntastic/syntastic' "error checker for languages and scripts
 Plug 'dense-analysis/ale'
-"Plug 'tmux-plugins/vim-tmux-focus-events'
-"Plug 'tmux-plugins/vim-tmux'
+Plug 'tmux-plugins/vim-tmux-focus-events'
+Plug 'tmux-plugins/vim-tmux'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'mattn/emmet-vim'			" for html
 Plug 'tpope/vim-git'
@@ -322,7 +322,7 @@ let g:UltiSnipsEditSplit="vertical"
 	let ayucolor="light"
 	"let ayucolor="mirage"
 	"let ayucolor="dark"
-	colorscheme dracula
+	colorscheme gruvbox
     set go=a
     highlight Comment cterm=italic gui=italic
     highlight Search ctermbg=black ctermfg=yellow term=underline
@@ -469,8 +469,8 @@ let g:coc_global_extensions = [
 
 " Vim-Airline configuration
    let g:airline#extensions#tabline#enabled=1
-   let g:airline_powerline_fonts=1
-   let g:airline_theme='dracula'
+   let g:airline_powerline_fonts=0
+   let g:airline_theme='gruvbox'
    let g:hybrid_custom_term_colors=1
    let g:hybrid_reduced_contrast=1
 
@@ -534,10 +534,14 @@ let g:NERDTreeAutoDeleteBuffer=1
 " disables arrow movement, resize splits instead
     let g:elite_mode=1
     if get(g:, 'elite_mode')
-        nnoremap <Up>       :resize +2<CR>
-        nnoremap <Down>     :resize -2<CR>
-        nnoremap <Left>     :vertical resize +2<CR>
-        nnoremap <Right>    :vertical resize -2<CR>
+        " nnoremap <Up>       :resize +2<CR>
+        " nnoremap <Down>     :resize -2<CR>
+        " nnoremap <Left>     :vertical resize +2<CR>
+        " nnoremap <Right>    :vertical resize -2<CR>
+		nnoremap <M-k>		:resize +2<CR>
+		nnoremap <M-j>		:resize -2<CR>
+		nnoremap <M-l>		:vertical resize +2<CR>
+		nnoremap <M-h>		:vertical resize -2<CR>
     endif
 
     autocmd BufRead,BufNewFile *.ms,*.me,*.mom,*.man set filetype=groff

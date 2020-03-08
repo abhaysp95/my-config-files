@@ -295,12 +295,12 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 #   client.urgent           $base02 $base08    $base00 $base0F
 
 ## Customize colors-gruvbox
-# client.focused          #a89984 #a89984 #ebdbb2 #a89984 #a89984
-# client.focused_inactive #282828 #282828 #ebdbb2 #282828 #282828
-# client.unfocused        #282828 #282828 #ebdbb2 #282828 #282828
-# client.urgent           #282828 #282828 #fb4934 #282828 #282828
-# client.placeholder      #282828 #282828 #ebdbb2 #282828 #282828
-# hide_edge_borders both
+client.focused          #a89984 #a89984 #ebdbb2 #a89984 #a89984
+client.focused_inactive #282828 #282828 #ebdbb2 #282828 #282828
+client.unfocused        #282828 #282828 #ebdbb2 #282828 #282828
+client.urgent           #282828 #282828 #fb4934 #282828 #282828
+client.placeholder      #282828 #282828 #ebdbb2 #282828 #282828
+hide_edge_borders both
 
 ## Customize colors-papirus
 
@@ -327,12 +327,12 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 ## dracula
 # class                 border  bground text    indicator child_border
-client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
-client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
-client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
-client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
-client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
-client.background       #F8F8F2
+# client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
+# client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
+# client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
+# client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
+# client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
+# client.background       #F8F8F2
 
 assign [class="firefox"] $ws2
 assign [class="Brave-browser"] $ws2
@@ -421,7 +421,7 @@ exec_always --no-startup-id /home/raytracer/.config/polybar/./launch.sh
 
 exec $TERMINAL
 #exec_always feh --bg-scale /home/raytracer/Pictures/john-abraham__546134.jpg
-exec_always feh --bg-fill /home/raytracer/Downloads/git-materials/gitlab/wallpapers/0041.jpg
+exec_always feh --bg-fill /home/raytracer/Downloads/git-materials/gitlab/wallpapers/0018.jpg
 
 #exec_always feh --bg-scale /home/raytracer/Pictures/Saved\ Pictures/816720.jpg
 
