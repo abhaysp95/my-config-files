@@ -264,77 +264,80 @@ source /home/raytracer/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # 	vi_mode
 # )
 
-SPACESHIP_PROMPT_ORDER=(
-	user
-	dir
-	host
-	git
-	hg
-	package
-	node
-	ruby
-	elixir
-	xcode
-	swift
-	golang
-	php
-	rust
-	haskell
-	julia
-	docker
-	aws
-	venv
-	conda
-	pyenv
-	dotnet
-	ember
-	kubectl
-	terraform
-	exec_time
-	line_sep
-	vi_mode
-	jobs
-	char
-	# exit_code
-)
+#SPACESHIP_PROMPT_ORDER=(
+#	user
+#	dir
+#	host
+#	git
+#	hg
+#	package
+#	node
+#	ruby
+#	elixir
+#	xcode
+#	swift
+#	golang
+#	php
+#	rust
+#	haskell
+#	julia
+#	docker
+#	aws
+#	venv
+#	conda
+#	pyenv
+#	dotnet
+#	ember
+#	kubectl
+#	terraform
+#	exec_time
+#	line_sep
+#	vi_mode
+#	jobs
+#	char
+#	# exit_code
+#)
 
-SPACESHIP_PROMPT_ADD_NEWLINE=true
-SPACESHIP_PROMPT_SEPARATE_LINE=	true
-SPACESHIP_CHAR_COLOR_SUCCESS='green'
-SPACESHIP_CHAR_COLOR_FAILURE='red'
-SPACESHIP_CHAR_COLOR_SECONDARY='yellow'
-SPACESHIP_TIME_SHOW=true
-SPACESHIP_USER_COLOR_ROOT='red'
-SPACESHIP_PACKAGE_SHOW=false
-SPACESHIP_RUBY_SHOW=false
-SPACESHIP_ELM_SHOW=false
-SPACESHIP_ELIXIR_SHOW=false
-SPACESHIP_SWIFT_SHOW_LOCAL=false
-SPACESHIP_HASKELL_SHOW=true
-SPACESHIP_JULIA_SHOW=false
-SPACESHIP_AWS_SHOW=false
-SPACESHIP_VENV_SHOW=false
-SPACESHIP_CONDA_SHOW=false
-SPACESHIP_DOTNET_SHOW=false
-SPACESHIP_EMBER_SHOW=false
-SPACESHIP_KUBECTL_SHOW=false
-SPACESHIP_TERRAFORM_SHOW=false
-SPACESHIP_EXEC_TIME_SHOW=true
-SPACESHIP_EXEC_TIME_PREFIX='consumed '
-SPACESHIP_EXEC_TIME_ELAPSED='0'
-SPACESHIP_BATTERY_SHOW=true
-SPACESHIP_BATTERY_THRESHOLD='101'
-SPACESHIP_VI_MODE_SHOW=true
-#SPACESHIP_VI_MODE_PREFIX='in '
-SPACESHIP_VI_MODE_INSERT='[Ins]'
-SPACESHIP_VI_MODE_NORMAL='[Norm]'
-SPACESHIP_VI_MODE_COLOR='cyan'
-SPACESHIP_EXIT_CODE_SHOW=true
+#SPACESHIP_PROMPT_ADD_NEWLINE=true
+#SPACESHIP_PROMPT_SEPARATE_LINE=	true
+#SPACESHIP_CHAR_COLOR_SUCCESS='green'
+#SPACESHIP_CHAR_COLOR_FAILURE='red'
+#SPACESHIP_CHAR_COLOR_SECONDARY='yellow'
+#SPACESHIP_TIME_SHOW=true
+#SPACESHIP_USER_COLOR_ROOT='red'
+#SPACESHIP_PACKAGE_SHOW=false
+#SPACESHIP_RUBY_SHOW=false
+#SPACESHIP_ELM_SHOW=false
+#SPACESHIP_ELIXIR_SHOW=false
+#SPACESHIP_SWIFT_SHOW_LOCAL=false
+#SPACESHIP_HASKELL_SHOW=true
+#SPACESHIP_JULIA_SHOW=false
+#SPACESHIP_AWS_SHOW=false
+#SPACESHIP_VENV_SHOW=false
+#SPACESHIP_CONDA_SHOW=false
+#SPACESHIP_DOTNET_SHOW=false
+#SPACESHIP_EMBER_SHOW=false
+#SPACESHIP_KUBECTL_SHOW=false
+#SPACESHIP_TERRAFORM_SHOW=false
+#SPACESHIP_EXEC_TIME_SHOW=true
+#SPACESHIP_EXEC_TIME_PREFIX='consumed '
+#SPACESHIP_EXEC_TIME_ELAPSED='0'
+#SPACESHIP_BATTERY_SHOW=true
+#SPACESHIP_BATTERY_THRESHOLD='101'
+#SPACESHIP_VI_MODE_SHOW=true
+##SPACESHIP_VI_MODE_PREFIX='in '
+#SPACESHIP_VI_MODE_INSERT='[Ins]'
+#SPACESHIP_VI_MODE_NORMAL='[Norm]'
+#SPACESHIP_VI_MODE_COLOR='cyan'
+#SPACESHIP_EXIT_CODE_SHOW=true
 
-## Spaceship prompt ##
+### Spaceship prompt ##
 
-autoload -U promptinit; promptinit
-prompt spaceship
+#autoload -U promptinit; promptinit
+#prompt spaceship
 
 # source solarized8
 #source $HOME/.config/nvim/plugged/vim-solarized8/scripts/solarized8.sh
+
+## liquidprompt
+[[ $- = *i* ]] && source ~/Downloads/git-materials/liquidprompt/liquidprompt
