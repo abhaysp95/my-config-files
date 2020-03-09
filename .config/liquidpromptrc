@@ -19,7 +19,7 @@ LP_BATTERY_THRESHOLD=95
 
 # Display the load average when the load is above this threshold.
 # Recommended value is 60
-LP_LOAD_THRESHOLD=6
+LP_LOAD_THRESHOLD=10
 
 # Display the temperature when the temperate is above this threshold (in
 # degrees Celsius).
