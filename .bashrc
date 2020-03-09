@@ -190,3 +190,6 @@ if [ -f /etc/bash.command-not-found ]; then
 fi
 
 pfetch
+
+# liquid prompt
+[[ $- = *i* ]] && source ~/Downloads/git-materials/liquidprompt/liquidprompt
