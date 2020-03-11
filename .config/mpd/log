@@ -12366,3 +12366,6 @@ Mar 09 11:09 : client: [320] opened from 127.0.0.1:53492
 Mar 09 11:09 : client: [320] closed
 Mar 09 11:09 : client: [321] opened from 127.0.0.1:53496
 Mar 09 11:09 : client: [321] closed
+Mar 11 17:33 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 11 17:33 : exception: Failed to access /home/raytracer/Music/got: Too many levels of symbolic links
+Mar 11 17:33 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted

@@ -44,7 +44,7 @@ Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
 
 " Theme / Interface
-"Plug 'Yggdroot/indentLine'
+Plug 'Yggdroot/indentLine'
 "Plug 'AnsiEsc.vim'
 Plug 'ayu-theme/ayu-vim'
 Plug 'tomasiser/vim-code-dark'
@@ -86,13 +86,14 @@ Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " display colors
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 
 call plug#end()
 
-" set colorcolumn=110
+set colorcolumn=0
 " highlight ColorColumn ctermbg=darkgray
 " set textwidth=0
 " if exists('&colorcolumn')
@@ -488,6 +489,7 @@ let g:NERDTreeShowHidden=0
 let g:NERDTreeAutoDeleteBuffer=1
 " NERDTree conf
     map <leader>N :NERDTreeToggle<CR>
+	autocmd vimenter * NERDTree
     autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
     " map <C-m> :TagbarToggle<CR>
@@ -618,11 +620,11 @@ noremap <Leader>P "+p
     nnoremap <leader>i :setlocal list!<CR>:setlocal list?<CR>
 
 " indentLine Pluging customization
-      " let g:indentLine_bgcolor_term = 202
-      " let g:indentLine_color_term = 208
-      " let g:indentLine_char = '┃'
+      let g:indentLine_bgcolor_term = 202
+      let g:indentLine_color_term = 208
+      let g:indentLine_char = '┃'
 	" augroup FILETYPES
-		" autocmd FileType markdown let b:indentLine_setConceal=0
+	" 	autocmd FileType markdown let b:indentLine_setConceal=0
 	" augroup END
 
 
@@ -754,7 +756,7 @@ let g:Hexokinase_optInPatterns = [
 			\	'hsla',
 			\	'colour_names'
 			\]
-let g:Hexokinase_highlighters = ['backgroundfull']
+let g:Hexokinase_highlighters = ['virtual']
 
 " Reenable hexokinase on enter
 autocmd VimEnter * HexokinaseTurnOn

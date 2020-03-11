@@ -80,7 +80,7 @@ alias now='date +"%T"'
 alias nowtime=now
 alias nowdate='date +"%d-%m-%Y"'
 
-alias ping='ping -c 5'
+alias ping='ping -c 10'
 alias fastping='ping -c 50 -s 1'
 
 alias ports='netstat -tulanp'
@@ -121,7 +121,7 @@ vf () { ls -l | fzf --layout=reverse --preview='pistol {}'| xargs -r -I % $EDITO
 alias tknow='tldr -l | sed s/,/\\n/g | fzf | xargs -I {} tldr "{}"'
 alias shdn="shutdown now"
 alias Scripts="cd ~/.local/bin/.scripts"
-alias pingarch='ping -c6 archlinux.org'
+alias pingarch='ping -c10 archlinux.org'
 
 # some aliases for broot(br)
 alias bll='br -dph'
