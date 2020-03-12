@@ -77,7 +77,7 @@ Plug 'junegunn/goyo.vim'
 "Plug 'lukesmithxyz/vimling'
 Plug 'vimwiki/vimwiki'
 "Plug 'bling/vim-airline'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release', 'tag': '*', 'do': { -> coc#util#install()}}
 Plug 'tpope/vim-commentary'
 Plug 'kovetskiy/sxhkd-vim'
 Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
@@ -254,51 +254,6 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
-" " Autocompletion for parenthesis and others(not active)
-" 	inoremap ( ()<Esc>:let leavechar=")"<CR>i
-" 	inoremap [ []<Esc>:let leavechar="]"<CR>i
-" 	inoremap { {}<Esc>:let leavechar="}"<CR>i
-" 	autocmd Syntax html,vim inoremap < <lt>><Esc>i| inoremap > <c-r>=ClosePair('>')<CR>
-" 	inoremap ) <c-r>=ClosePair(')')<CR>
-" 	inoremap ] <c-r>=ClosePair(']')<CR>
-" 	inoremap } <c-r>=CloseBracket('}')<CR>
-
-" (	 inoremap <" <c-r>=QuoteDelim('"')<CR>	) 	delete < to use
-	 " inoremap <' <c-r>=QuoteDelim("'")<CR>
-	 " inoremap <` <c-r>=QuoteDelim('`')<CR>
-
-" function ClosePair(char)
- " if getline('.')[col('.') - 1] == a:char
-	"  return <"\<Right>"	delete first < to use
- " else
-	"  return a:char
- " endif
-" endf
-
-" function CloseBracket()
- " if match(getline(line('.') + 1), '\s*}') < 0
-	"  return <"\<CR>}"	delete first < to use
- " else
-	"  return <"\<Esc>j0f}a"	delete first < to use
- " endif
-" endf
-
-"function QuoteDelim(char)
-" let line = getline('.')
-" let col = col('.')
-" if line[col - 2] == <"\\">	Delete the <> in last to use
-" "Inserting a quoted quotation mark into the string
-" return a:char
-" elseif line[col - 1] == a:char
-" "Escaping out of the string
-" return <"\<Right>"	delete first < to use
-" else
-" "Starting a string
-" return a:char.a:char."\<Esc>i"
-" endif
-"endf
-"	imap <C-j> <Esc>:exec <"normal f" . leavechar<CR>a	delete < of "normal f
-
 "
 " colorscheme configuration
     let base16colorspace=256
@@ -347,22 +302,135 @@ let g:UltiSnipsEditSplit="vertical"
 
 " coc config
 let g:coc_global_extensions = [
+  \ 'coc-emoji',
+  \ 'coc-css',
+  \ 'coc-pyls',
+  \ 'coc-yaml',
   \ 'coc-snippets',
   \ 'coc-pairs',
   \ 'coc-tsserver',
-  \ 'coc-eslint',
   \ 'coc-prettier',
   \ 'coc-json',
+  \ 'coc-markdownlint',
+  \ 'coc-markmap',
+  \ 'coc-syntax',
+  \ 'coc-java',
+  \ 'coc-html',
+  \ 'coc-sh',
+  \ 'coc-css',
+  \ 'coc-ultisnips'
   \ ]
+  " \ 'coc-tslint',
+  " \ 'coc-tslint-plugin',
+  " \ 'coc-eslint',
+
+" Better display for messages
+set cmdheight=2
+" Smaller updatetime for cursorhold & cursorholdI
+set updatetime=300
+" don't give |ins-completion-menu| messages
+" set shortmess+=c
+" always show signcolums
+set signcolumn=yes
+
+" Use `lp` and `ln` for navigate diagnostics
+nmap <silent> <leader>lp <Plug>(coc-diagnostic-prev)
+nmap <silent> <leader>ln <Plug>(coc-diagnostic-next)
+
+" Remap keys for gotos
+nmap <silent> <leader>ld <Plug>(coc-definiton)
+nmap <silent> <leader>lt <Plug>(coc-type-definiton)
+nmap <silent> <leader>li <Plug>(coc-implementation)
+nmap <silent> <leader>lf <Plug>(coc-references)
+
+" Remap for rename current word
+nmap <leader>lr <Plug>(coc-rename)
+
+" Use K for show documentation in preview window
+nnoremap <silent> <leader>K :call <SID>show_documentation()<CR>
+
+function! s:show_documentation()
+	if &filetype == 'vim'
+		execute 'h '.expand('<cword>')
+	else
+		call CocAction('doHover')
+	endif
+endfunction
+
+" Use <c-space> to trigger completion.
+inoremap <silent><expr> <c-space> coc#refresh()
+
+
+" Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
+" Coc only does snippet and additional edit on confirm.
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+" Or use `complete_info` if your vim support it, like:
+" inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
+
+" Remap for format selected region
+xmap <leader>v  <Plug>(coc-format-selected)
+nmap <leader>v  <Plug>(coc-format-selected)
+
+augroup mygroup
+  autocmd!
+  " Setup formatexpr specified filetype(s).
+  autocmd FileType typescript,json,c,python setl formatexpr=CocAction('formatSelected')
+  " Update signature help on jump placeholder
+  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
+augroup end
+
+" Remap for do codeAction of selected region, ex: `<leader>aap` for current paragraph
+xmap <leader>a  <Plug>(coc-codeaction-selected)
+nmap <leader>a  <Plug>(coc-codeaction-selected)
+
+" Remap for do codeAction of current line
+nmap <leader>ac  <Plug>(coc-codeaction)
+" Fix autofix problem of current line
+nmap <leader>qf  <Plug>(coc-fix-current)
+
+
+" Use <C-d> for select selections ranges, needs server support, like: coc-tsserver, coc-python
+nmap <silent> <C-c> <Plug>(coc-range-select)
+xmap <silent> <C-c> <Plug>(coc-range-select)
+
+" Use `:Format` to format current buffer
+command! -nargs=0 Format :call CocAction('format')
+
+" Use `:Fold` to fold current buffer
+command! -nargs=? Fold :call     CocAction('fold', <f-args>)
+
+" use `:OR` for organize import of current buffer
+command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
+
+" prettier command for coc
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " Higlight symbol under cursor on CursorHold
     autocmd CursorHold * silent call CocActionAsync('highlight')
+
+" Using CocList
+" Show all diagnostics
+nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>
+" Manage extensions
+nnoremap <silent> <space>e  :<C-u>CocList extensions<cr>
+" Show commands
+nnoremap <silent> <space>c  :<C-u>CocList commands<cr>
+" Find symbol of current document
+nnoremap <silent> <space>o  :<C-u>CocList outline<cr>
+" Search workspace symbols
+nnoremap <silent> <space>s  :<C-u>CocList -I symbols<cr>
+" Do default action for next item.
+nnoremap <silent> <space>j  :<C-u>CocNext<CR>
+" Do default action for previous item.
+nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
+" Resume latest coc list
+nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 " set width for codi
 "   let g:coid#width=50.0
 "
 " Syntastic Configuration   #Check :help Syntastic
-	set statusline^=%{coc#status()}
+	set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
     set statusline+=%#warningmsg#
     set statusline+=%{SystasticStatuslineFlag()}
     set statusline+=%*
@@ -490,7 +558,25 @@ let g:NERDTreeAutoDeleteBuffer=1
 " NERDTree conf
     map <leader>N :NERDTreeToggle<CR>
 	autocmd vimenter * NERDTree
+	" jump to main window
+	autocmd VimEnter * wincmd p
     autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" sync open file with NERDTree
+" " Chech if NERDTree is open or active
+function! IsNERDTreeOpen()
+	return exists("t:NERDTreeBufName") && (bufwinnr(t:NERDTreeBufName) != -1)
+endfunction
+
+" Call NERDTreeFind if NERDTree is active, current window contains a modifiable file, not vimdiff
+function! SyncTree()
+	if &modifiable && IsNERDTreeOpen() && strlen(expand('%')) > 0 && !&diff
+		NERDTreeFind
+		wincmd p
+	endif
+endfunction
+
+" Higlight currently open buffer in NERDTree
+autocmd BufEnter * call SyncTree()
 
     " map <C-m> :TagbarToggle<CR>
 
@@ -623,9 +709,9 @@ noremap <Leader>P "+p
       let g:indentLine_bgcolor_term = 202
       let g:indentLine_color_term = 208
       let g:indentLine_char = '┃'
-	" augroup FILETYPES
-	" 	autocmd FileType markdown let b:indentLine_setConceal=0
-	" augroup END
+	augroup FILETYPES
+		autocmd FileType markdown let b:indentLine_setConceal=0
+	augroup END
 
 
 """ Using templates
