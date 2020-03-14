@@ -905,7 +905,7 @@ nmap <Leader>- <Plug>(GitGutterUndoHunk)
 " -- undotree ----"
 let g:undotree_HighlightChangedWithSign = 0
 let g:undotree_WindowLayout             = 3
-nnoremap <leader>u :UndotreeToggle<CR>
+nnoremap <leader>U :UndotreeToggle<CR>
 
 " ----- vim-fugitive ----- "
 nnoremap <silent> <leader>B :Gblame<CR>
