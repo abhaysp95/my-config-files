@@ -112,10 +112,10 @@ set colorcolumn=0
 "set cursorline
 
 " Limelight configuration
-    let g:limelight_conceal_ctermbg='dark-gray'
-    let g:limelight_conceal_ctermfg=240
-    let g:limelight_default_coefficient=0.5
-    let g:limelight_paragraph_span=1
+    let g:limelight_conceal_ctermbg     = 'dark-gray'
+    let g:limelight_conceal_ctermfg     = 240
+    let g:limelight_default_coefficient = 0.5
+    let g:limelight_paragraph_span      = 1
 
 " python syntax
 	let g:python_highlight_all = 1
@@ -846,3 +846,56 @@ let g:Hexokinase_highlighters = ['virtual']
 
 " Reenable hexokinase on enter
 autocmd VimEnter * HexokinaseTurnOn
+
+" -- vim grepper --"
+let g:grepper       = {}
+let g:grepper.tools = ["rg"]
+runtime autoload/grepper.vim
+let g:grepper.jump  = 1
+nnoremap <leader>/ :GrepperRg<Space>
+nnoremap gs :Grepper -cword -noprompt<CR>
+xmap gs <Plug>(GrepperOperator)
+
+" --- ale pluging ----- "
+let g:ale_sign_error                               = '●'
+let g:ale_sign_warning                             = '!-'
+"let g:ale_linters_explicit                        = 1
+"let g:ale_open_list                               = 1
+let g:ale_lint_on_enter                            = 0
+" if you want to show after opening file save file
+let g:ale_lint_on_save                             = 1
+"let g:ale_lint_on_filetype_changed                = 0
+let g:ale_lint_on_insert_leave                     = 0
+"let g:ale_lint_on_text_changed                    = 'never'
+" nmap <leader>El	<Plug>(ale_lint)
+" nmap <leader>E	<Plug>(ale_fix)
+" nmap <leader><BS>		<Plug>(ale_reset_buffer)
+
+" ---- vim-lion -----"
+let g:lion_squeeze_spaces = 1
+
+
+" --- vim-gitgutter ----"
+let g:gitgutter_grep                    = 'rg'
+let g:gitgutter_map_keys                = 0
+let g:gitgutter_map_keys                = 0
+let g:gitgutter_sign_added              = '▎'
+let g:gitgutter_sign_modified           = '▎'
+let g:gitgutter_sign_modified_removed   = '▶'
+let g:gitgutter_sign_removed            = '▶'
+let g:gitgutter_sign_removed_first_line = '◥'
+nmap [g <Plug>(GitGutterPrevHunkzz)
+nmap ]g <Plug>(GitGutterNextHunkzz)
+nmap <Leader>gp <Plug>(GitGutterPreviewHunk)
+nmap <Leader>+ <Plug>(GitGutterStageHunk)
+nmap <Leader>- <Plug>(GitGutterUndoHunk)
+
+" -- undotree ----"
+let g:undotree_HighlightChangedWithSign = 0
+let g:undotree_WindowLayout             = 4
+nnoremap <leader>u :UndotreeToggle<CR>
+
+" ----- vim-fugitive ----- "
+nnoremap <silent> <leader>B :Gblame<CR>
+nnoremap <silent> <leader>C :Gclog %<CR>
+nnoremap <silent> <leader>G :Gstatus<CR>
