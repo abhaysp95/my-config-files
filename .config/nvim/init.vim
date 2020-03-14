@@ -655,24 +655,40 @@ autocmd BufEnter * call SyncTree()
 
 " folding settings
 
+" toggle foldcolumn <<<
+function! ToggleFoldColumn()
+	if &foldcolumn
+		setlocal foldcolumn=0
+	else
+		setlocal foldcolumn=4
+	endif
+endfunction
+" >>>
+
 " old
 " +--  7 lines: set foldmethod=indent··············
 "
 " new ⏤⏤⏤⏤► [7 lines]: set foldmethod=indent ⏤⏤⏤⏤⏤⏤⏤⏤⏤⏤
-    function! Foldtext() abort
-        let l:start_arrow = '⏤⏤⏤⏤► '
-        return l:start_arrow . l:lines . ': ' . l:first_line . ' '
-    endfunction
 
-    if has('folding')
-        " set foldmethod=indent     #check out :h foldmethod
-        set foldlevelstart=10
-        if has('windows')
-            " use wider line for folding
-            set fillchars+=fold:⏤
-            set foldtext=Foldtext()
-        endif
-    endif
+	set foldcolumn=0
+	set foldmarker=<<<,>>>
+	set foldmethod=marker
+	set fillchars=vert:╏,fold:━
+    " function! Foldtext() abort
+    "     " let l:start_arrow = '⏤⏤⏤⏤► '
+    "     let l:start_arrow = '+---- '
+    "     return l:start_arrow . l:lines . ': ' . l:first_line . ' '
+    " endfunction
+
+    " if has('folding')
+    "     " set foldmethod=indent     #check out :h foldmethod
+    "     set foldlevelstart=10
+    "     if has('windows')
+    "         " use wider line for folding
+    "         set fillchars+=fold:⏤
+    "         set foldtext=Foldtext()
+    "     endif
+    " endif
     autocmd BufWinLeave *.* mkview
     autocmd BufWinEnter *.* silent! loadview
 
