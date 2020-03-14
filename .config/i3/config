@@ -60,7 +60,7 @@ bindsym $mod+Shift+Return         exec --no-startup-id alacritty
 
 #bindsym $mod+Shit+t               exec --no-startup-id
 
-bindsym $mod+Shift+space          floating toggle; resize set width 1000px; resize set height 500px; move position center
+bindsym $mod+Shift+space          floating toggle; resize set width 1000px; resize set height 450px; move position center
 bindsym $mod+space                focus mode_toggle
 
 bindsym $mod+Escape               workspace prev
@@ -421,7 +421,7 @@ exec_always --no-startup-id /home/raytracer/.config/polybar/./launch.sh
 
 exec $TERMINAL
 #exec_always feh --bg-scale /home/raytracer/Pictures/john-abraham__546134.jpg
-exec_always feh --bg-fill /home/raytracer/Downloads/git-materials/gitlab/wallpapers/0010.jpg
+exec_always feh --bg-fill /home/raytracer/Downloads/git-materials/gitlab/wallpapers/0054.jpg
 
 #exec_always feh --bg-scale /home/raytracer/Pictures/Saved\ Pictures/816720.jpg
 

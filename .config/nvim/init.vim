@@ -14,10 +14,12 @@ Plug 'vim-syntastic/syntastic' "error checker for languages and scripts
 Plug 'dense-analysis/ale'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'tmux-plugins/vim-tmux'
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+"Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'mattn/emmet-vim'			" for html
-Plug 'tpope/vim-git'
+"Plug 'tpope/vim-git'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-unimpaired'
 Plug 'vim-python/python-syntax'
 "Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -33,7 +35,7 @@ Plug 'junegunn/fzf.vim'
 "Plug 'tpope/vim-endwise'
 "Plug 'jadercorrea/elixir_generator.vim'
 "
-Plug 'godlygeek/tabular'
+"Plug 'godlygeek/tabular
 Plug 'plasticboy/vim-markdown'
 Plug 'mattn/calendar-vim'
 Plug 'terryma/vim-multiple-cursors'
@@ -44,7 +46,7 @@ Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
 
 " Theme / Interface
-Plug 'Yggdroot/indentLine'
+"Plug 'Yggdroot/indentLine'
 "Plug 'AnsiEsc.vim'
 Plug 'ayu-theme/ayu-vim'
 Plug 'tomasiser/vim-code-dark'
@@ -88,6 +90,13 @@ Plug 'honza/vim-snippets'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
+Plug 'mhinz/vim-grepper'
+Plug 'sheerun/vim-polyglot'
+Plug 'tommcdo/vim-lion'
+Plug 'airblade/vim-gitgutter'
+Plug 'mbbill/undotree'
+Plug 'tpope/vim-fugitive'
+
 " display colors
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 
@@ -118,8 +127,8 @@ set colorcolumn=0
     let g:limelight_paragraph_span      = 1
 
 " python syntax
-	let g:python_highlight_all = 1
-	let g:python_slow_sync = 0
+	let g:python_highlight_all          = 1
+	let g:python_slow_sync              = 0
 
 " Goyo configuration
     autocmd! User GoyoEnter Limelight
@@ -175,7 +184,6 @@ set whichwrap=b,s,<,>
 set wrap
 set modifiable
 highlight SpecialKey guifg=#ffffff guibg=#116611
-
 hi SpellBad cterm=underline ctermfg=9
 hi SpellLocal cterm=underline ctermfg=9
 hi SpellRare cterm=underline ctermfg=9
@@ -214,17 +222,17 @@ set t_Co=256
 nnoremap <S-Tab> <C-w>w
 
 " Clear search highlights
-map <Leader><Space> :let @/=''<CR>
+map <Leader><Space>                 : let @/=''<CR>
 
 " Edit vim config file in a new tab
-map <Leader>ev :tabnew $MYVIMRC<CR>
+map <Leader>ev                      : tabnew $MYVIMRC<CR>
 
 " Source vim config file
-map <Leader>sv :source $MYVIMRC<CR>
+map <Leader>sv                      : source $MYVIMRC<CR>
 
 " Toggle relative line number
-nmap <F5> :set invrelativenumber number<CR>
-nmap <leader>n :set nonumber norelativenumber<CR>
+nmap <F5>                           : set invrelativenumber number<CR>
+nmap <leader>n                      : set nonumber norelativenumber<CR>
 
 " Spell-check set to <leader>o, 'o' for 'orthography':
     map <F6> :setlocal spell! spelllang=en_us<CR>
@@ -256,10 +264,10 @@ let g:UltiSnipsEditSplit="vertical"
 
 "
 " colorscheme configuration
+" source "$HOME/.config/nvim/plugged/gruvbox/gruvbox_256palette.sh"
     let base16colorspace=256
 	set background=dark
     " source this to your profile
-" source "$HOME/.config/nvim/plugged/gruvbox/gruvbox_256palette.sh"
     let g:gruvbox_bold='1'
     let g:gruvbox_italic='1'
     let g:gruvbox_undercurl='1'
@@ -575,6 +583,10 @@ function! SyncTree()
 	endif
 endfunction
 
+" changing opening and closing arrow of NERDTree
+let g:NERDTreeDirArrowExpandable  = "▷"
+let g:NERDTreeDirArrowCollapsible = "◢"
+
 " Higlight currently open buffer in NERDTree
 autocmd BufEnter * call SyncTree()
 
@@ -706,9 +718,9 @@ noremap <Leader>P "+p
     nnoremap <leader>i :setlocal list!<CR>:setlocal list?<CR>
 
 " indentLine Pluging customization
-      let g:indentLine_bgcolor_term = 202
-      let g:indentLine_color_term = 208
-      let g:indentLine_char = '┃'
+      " let g:indentLine_bgcolor_term = 202
+      " let g:indentLine_color_term = 208
+      " let g:indentLine_char = '┃'
 	augroup FILETYPES
 		autocmd FileType markdown let b:indentLine_setConceal=0
 	augroup END
@@ -892,7 +904,7 @@ nmap <Leader>- <Plug>(GitGutterUndoHunk)
 
 " -- undotree ----"
 let g:undotree_HighlightChangedWithSign = 0
-let g:undotree_WindowLayout             = 4
+let g:undotree_WindowLayout             = 3
 nnoremap <leader>u :UndotreeToggle<CR>
 
 " ----- vim-fugitive ----- "
