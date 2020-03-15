@@ -6,8 +6,8 @@ bold_is_bright = true
 #cell_width_scale = 1.0
 clickable_url = true
 dynamic_title = true
-font = JetBrains Mono, 10
-#font = Source Code Pro,Semibold 11
+#font = JetBrains Mono, 10
+font = Source Code Pro,Medium 10.4
 #font = Mononoki Nerd Font Mono, 12
 #font = Hack Nerd Font Mono, 11
 #font = DejaVu SansMono Nerd Font, Book 11
@@ -120,8 +120,8 @@ highlight = #2f2f2f
 #color14 = #8ec07c
 #color15 = #ebdbb2
 
+# Base16 OneDark <<<
 #[colors]
-# Base16 OneDark
 ## Author: Lalit Magant (http://github.com/tilal6991)
 #
 #foreground          = #abb2bf
@@ -169,9 +169,10 @@ highlight = #2f2f2f
 #color19 = #3e4451
 #color20 = #565c64
 #color21 = #b6bdca
+# >>>
 
+## Base16 Default Dark <<<
 #[colors]
-## Base16 Default Dark
 ## Author: Chris Kempson (http://chriskempson.com)
 #
 #foreground          = #d8d8d8
@@ -219,6 +220,7 @@ highlight = #2f2f2f
 #color19 = #383838
 #color20 = #b8b8b8
 #color21 = #e8e8e8
+# >>>
 
 #[colors]
 #
@@ -480,13 +482,13 @@ highlight = #2f2f2f
 # color21 = #ebdbb2
 #
 
-## gruvbox
+## gruvbox <<<
 [colors]
-foreground        = #ebdbb2
-foreground_bold   = #ebdbb2
+foreground         = #ebdbb2
+foreground_bold    = #ebdbb2
 #cursor            = #b8bb26
 #cursor_foreground = #ebdbb2
-background        = #282828
+background         = #282828
 
 # Black
 color0  = #3c3836
@@ -541,6 +543,7 @@ color17 = #689d6a
 
 # Blue Grey
 color19 = #83a598
+# >>>
 
 ## google-dark
 

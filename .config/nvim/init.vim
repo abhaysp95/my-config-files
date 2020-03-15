@@ -5,6 +5,7 @@
 "  ╚██╗ ██╔╝██║██║╚██╔╝██║██╔══██╗██║
 "██╗╚████╔╝ ██║██║ ╚═╝ ██║██║  ██║╚██████╗
 "╚═╝ ╚═══╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝
+"				--> Abhay Shanker Pathak
 
 let mapleader =","
 
@@ -213,7 +214,7 @@ set t_Co=256
 
 	autocmd FileType html inoremap ;i <em></em><Space><++><Esc>FeT>i
 	autocmd FileType html inoremap ;b <b></b><Space><++><Esc>FbT>i
-    autocmd FileType c inoremap ;c (<++>)<Space>{<CR><++><CR>}<CR><CR><++><Esc>4kI
+    autocmd FileType c inoremap ;c // <++> <<<<CR><++>()<Space>{<CR><++><CR>}<CR>// >>><CR><CR><++><Esc>7kI
     autocmd FileType markdown inoremap ;c <!---<Space><Space>--><CR><CR><++><Esc>2kf<Space>a
     autocmd FileType html inoremap ;c <!---<Space><Space>--><CR><CR><++><Esc>2kf<Space>a
 	autocmd FileType markdown inoremap ;sh ```sh<CR>```<CR><CR><++><Esc>2kO<C-i>
@@ -570,7 +571,7 @@ let g:NERDTreeAutoDeleteBuffer=1
 	autocmd VimEnter * wincmd p
     autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " sync open file with NERDTree
-" " Chech if NERDTree is open or active
+" " Check if NERDTree is open or active
 function! IsNERDTreeOpen()
 	return exists("t:NERDTreeBufName") && (bufwinnr(t:NERDTreeBufName) != -1)
 endfunction

@@ -295,7 +295,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 #   client.urgent           $base02 $base08    $base00 $base0F
 
 ## Customize colors-gruvbox
-client.focused          #a89984 #a89984 #ebdbb2 #a89984 #a89984
+client.focused          #928374 #928374 #ebdbb2 #928374 #928374
 client.focused_inactive #282828 #282828 #ebdbb2 #282828 #282828
 client.unfocused        #282828 #282828 #ebdbb2 #282828 #282828
 client.urgent           #282828 #282828 #fb4934 #282828 #282828
@@ -421,7 +421,7 @@ exec_always --no-startup-id /home/raytracer/.config/polybar/./launch.sh
 
 exec $TERMINAL
 #exec_always feh --bg-scale /home/raytracer/Pictures/john-abraham__546134.jpg
-exec_always feh --bg-fill /home/raytracer/Downloads/git-materials/gitlab/wallpapers/0054.jpg
+# exec_always feh --bg-fill /home/raytracer/Downloads/git-materials/gitlab/wallpapers/0054.jpg
 
 #exec_always feh --bg-scale /home/raytracer/Pictures/Saved\ Pictures/816720.jpg
 
