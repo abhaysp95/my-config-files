@@ -57,7 +57,7 @@ scrollbar = off
 #cursor_foreground = #dcdccc
 
 #foreground = #dcdccc
-#foreground_bold = #ffffff
+#foreground_bold = rgba(40, 30, 40, 1)
 #background = #3f3f3f
 
 # 20% background transparency (requires a compositor)
@@ -84,7 +84,7 @@ highlight = #2f2f2f
 #color12 = #94bff3
 #color13 = #ec93d3
 #color14 = #93e0e3
-#color15 = #ffffff
+#color15 = #afffff
 
 #[hints]
 #font = Monospace 12

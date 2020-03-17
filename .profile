@@ -1,4 +1,5 @@
-export QT_QPA_PLATFORMTHEME="qt5ct"
+export QT_QPA_PLATFORMTHEME="gtk3"
+# export QT_QPA_PLATFORMTHEME="qt5ct"
 export EDITOR=/usr/bin/nvim
 export TERMINAL="termite"
 export TERMINAL2="alacritty"
@@ -19,7 +20,7 @@ export S_COLORS=
 # for dust
 export PATH="$PATH:$HOME/.cargo/bin"
 
-## coloring man pages
+## coloring man pages <<<
 # start blinking
 export LESS_TERMCAP_mb=$(tput bold; tput setaf 2)	# green
 # start bold
@@ -32,3 +33,4 @@ export LESS_TERMCAP_se=$(tput rmso; tput sgr0)
 export LESS_TERMCAP_us=$(tput smul; tput bold; tput setaf 1)	# red
 # end bold, blinking, standout, underline
 export LESS_TERMCAP_me=$(tput sgr0)
+# >>>

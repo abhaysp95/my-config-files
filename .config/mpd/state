@@ -2,8 +2,8 @@ sw_volume: 100
 audio_device_state:1:pulse audio
 audio_device_state:1:toggle_visualizer
 state: play
-current: 1065
-time: 4.109000
+current: 867
+time: 4.225000
 random: 1
 repeat: 0
 single: 0
@@ -1707,4 +1707,5 @@ playlist_begin
 1692:Tamma Tamma Again-(Mr-Jatt.com).mp3
 1693:Sultan_Mirza_new_haryanvi_song_by_sandeep_chandal_aage_pache_bullet_chale_or_bic.mp3
 1694:Dabangg 3_ Hud Hud Song _ Salman Khan _ Sonakshi Sinha _Divya Kumar,Shabab Sabri,Sajid _ Sajid Wajid.mp3
+1695:youtube/LYRICAL_ Tu Hi Toh Meri Dost Hain _ Yuvvraaj _ Salman Khan, Katrina Kaif _  A.R. Rahman _ T-Series.mp3
 playlist_end

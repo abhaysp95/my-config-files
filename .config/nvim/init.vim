@@ -103,14 +103,17 @@ Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 
 call plug#end()
 
-set colorcolumn=0
-" highlight ColorColumn ctermbg=darkgray
-" set textwidth=0
-" if exists('&colorcolumn')
-" 	set colorcolumn=100
-" endif
-
-"highlight ColorColumn ctermbg=NONE guibg=red
+" set runtime to load some other plugins
+set runtimepath^=~/.config/nvim/plugged/dragvisuals
+" Colorcolumn settings <<<
+highlight ColorColumn ctermbg=red
+" although this is working, color isn't changing to red, it's still grey
+" set colorcolumn=81
+call matchadd('ColorColumn', '\%81v', 100)
+" have some fun
+" highlight ColorColumn ctermbg=red ctermfg=blue
+" exec 'set colorcolumn=' . join(range(2,80,3), ',')
+" >>>
 
 
 " always display status line
@@ -135,12 +138,18 @@ set colorcolumn=0
     autocmd! User GoyoEnter Limelight
     autocmd! User GoyoLeave Limelight!
 
+" reduces stretching of hand
+" map : to ; and ; to :
+" nnoremap ;	:
+" nnoremap :	;
+
 " Set Proper Tabs
 set tabstop=4
 set shiftwidth=4
 set smarttab
 set noexpandtab
-set list lcs=tab:\ \ ,trail:-,extends:>,precedes:<,nbsp:+
+set listchars=eol:↲,tab:↦\ ,nbsp:␣,extends:…,trail:⋅
+set list
 set autoindent
 set autoread
 set backspace=indent,eol,start
@@ -164,7 +173,7 @@ set modelines=2
 set noerrorbells visualbell t_vb=
 set noshiftround
 set nospell
-set nohls
+"set nohls
 set nostartofline
 set regexpengine=1
 set scrolloff=3
@@ -184,11 +193,82 @@ set virtualedit=block
 set whichwrap=b,s,<,>
 set wrap
 set modifiable
+
+" better search in vim
+set hlsearch
+set incsearch
+nnoremap <M-;> :noh<CR>:<backspace>
+
 highlight SpecialKey guifg=#ffffff guibg=#116611
 hi SpellBad cterm=underline ctermfg=9
 hi SpellLocal cterm=underline ctermfg=9
 hi SpellRare cterm=underline ctermfg=9
 hi SpellCap cterm=underline
+
+"-------- highlight search funtion <<<
+	" This rewires n and N to dot the highlighting
+	" nnoremap <silent> n		n:call HLNext(0.4)<cr>
+	" nnoremap <silent> N		N:call HLNext(0.4)<cr>
+
+" This one highlights whole line in which you are in
+	" function! HLNext (blinktime)
+	" 	set invcursorline
+	" 	redraw
+	" 	exec 'sleep' . float2nr(a:blinktime * 1000) . 'm'
+	" 	redraw
+	" endfunction
+	"
+" This one rings the match
+	" function! HLNext (blinktime)
+	" 	highlight RedOnRed ctermfg=red ctermbg=red
+	" 	let [bufnum, lnum, col, off] = getpos('.')
+	" 	let matchlen = strlen(matchstr(strpart(getline('.'),col - 1),@/))
+	" 	echo matchlen
+	" 	let ring_pat = (lnum > 1 ? '\%'.(lnum - 1).'l\%>'.max([col-4,1]) .'v\%<'.(col+matchlen+3).'v.\|' : '')
+	" 				\ . '\%'.lnum.'l\%>'.max([col-4,1]) . 'v\%<'.col.'v.'
+	" 				\ . '\|'
+	" 				\ . '\%'.lnum.'l\%>'.max([col+matchlen-1,1]) .'v\%<'.(col+matchlen+3).'v.'
+	" 				\ . '\|'
+	" 				\ . '\%'.(lnum+1).'l\%>'.max([col-4,1]) .'v\%<'.(col+matchlen+3).'v.'
+	" 	let ring = matchadd('RedOnRed', ring_pat, 101)
+	" 	redraw
+	" 	exec 'sleep ' . float2nr(a:blinktime * 1000) . 'm'
+	" 	call matchdelete(ring)
+	" 	redraw
+	" endfunction
+	"
+" briefly hide everything except the match
+	" function! HLNext (blinktime)
+	" 	highlight BlackOnBlack ctermfg=black ctermbg=black
+	" 	let [bufnum, lnum, col, off] = getpos('.')
+	" 	let matchlen = strlen(matchstr(strpart(getline('.'),col-1),@/))
+	" 	let hide_pat = '\%<'.lnum.'l.'
+	" 			\ . '\|'
+	" 			\ . '\%'.lnum.'l\%'.col.'v.'
+	" 			\ . '\|'
+	" 			\ . '\%'.lnum.'l\%>'.(col+matchlen-1).'v.'
+	" 			\ . '\|'
+	" 			\ . '\%>'.lnum.'l.'
+	" 	let ring = matchadd('BlackOnBlack', hide_pat, 101)
+	" 	redraw
+	" 	exec 'sleep ' . float2nr(a:blinktime * 1000) . 'm'
+	" 	call matchdelete(ring)
+	" 	redraw
+	" endfunction
+	"
+" OR highlight match in red...
+    " function! HLNext (blinktime)
+    "     let [bufnum, lnum, col, off] = getpos('.')
+    "     let matchlen = strlen(matchstr(strpart(getline('.'),col-1),@/))
+    "     let target_pat = '\c\%#\%('.@/.'\)'
+    "     let ring = matchadd('WhiteOnRed', target_pat, 101)
+    "     redraw
+    "     exec 'sleep ' . float2nr(a:blinktime * 1000) . 'm'
+    "     call matchdelete(ring)
+    "     redraw
+    " endfunction
+" facing issue of INVALID ID: -1(must be greater than or equal to 1)
+" >>>
 
 " enable autocompletion
 	set wildmode=longest,list,full
@@ -657,13 +737,13 @@ autocmd BufEnter * call SyncTree()
 " folding settings
 
 " toggle foldcolumn <<<
-function! ToggleFoldColumn()
-	if &foldcolumn
-		setlocal foldcolumn=0
-	else
-		setlocal foldcolumn=4
-	endif
-endfunction
+" function! ToggleFoldColumn()
+" 	if &foldcolumn
+" 		setlocal foldcolumn=0
+" 	else
+" 		setlocal foldcolumn=4
+" 	endif
+" endfunction
 " >>>
 
 " old
@@ -862,6 +942,7 @@ augroup pandoc_syntax
 augroup END
 
 " Vim Hexokinase
+let g:Hexokinase_refreshEvents = ['TextChanged', 'InsertLeave']
 let g:Hexokinase_optInPatterns = [
 			\	'full_hex',
 			\	'triple_hex',
@@ -871,7 +952,7 @@ let g:Hexokinase_optInPatterns = [
 			\	'hsla',
 			\	'colour_names'
 			\]
-let g:Hexokinase_highlighters = ['virtual']
+let g:Hexokinase_highlighters = ['backgroundfull']
 
 " Reenable hexokinase on enter
 autocmd VimEnter * HexokinaseTurnOn
@@ -928,3 +1009,19 @@ nnoremap <leader>U :UndotreeToggle<CR>
 nnoremap <silent> <leader>B :Gblame<CR>
 nnoremap <silent> <leader>C :Gclog %<CR>
 nnoremap <silent> <leader>G :Gstatus<CR>
+
+"" --- move visual block(dragvisual.vim)
+vmap  <expr>  <LEFT>   DVB_Drag('left')
+vmap  <expr>  <RIGHT>  DVB_Drag('right')
+vmap  <expr>  <DOWN>   DVB_Drag('down')
+vmap  <expr>  <UP>     DVB_Drag('up')
+vmap  <expr>  D        DVB_Duplicate()
+
+" Remove any introduced trailing whitespace after moving...     ##
+let g:DVB_TrimWS = 1
+
+" operations related to foldmethod = marker
+vnoremap af:<C-U>silent! normal! [zV]z<CR>
+onoremap af:normal Vaf<CR>
+vnoremap if:<C-U>silent! normal! [zjV]zk<CR>
+onoremap if:normal Vif<CR>

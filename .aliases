@@ -147,3 +147,7 @@ alias twatch='watch -n1 "date '+%b\/%a%n%D%n%T' | figlet -k"'
 # lsd(ls deluxe)
 alias lsd='lsd -Fa --group-dirs first'
 alias lsdl='lsd -laF --group-dirs first --date relative'
+
+# udisks2/udiskie
+alias udkm='udisksctl mount -b'
+alias udku='udisksctl unmount -b'

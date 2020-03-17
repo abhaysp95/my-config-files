@@ -75,7 +75,7 @@ modules-left   = i3
 modules-center = date time xwindow
 modules-right  = battery pulseaudio temperature lock logout reboot poweroff
 
-;tray-position = right
+;tray-position = left
 ;tray-padding = 2
 
 ; Cursor actions
