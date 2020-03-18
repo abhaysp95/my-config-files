@@ -7,6 +7,7 @@ super + shift +t
 super + shift + q
     kill -9 'xdotool getwindowfocus getwindowpid'
 
+# some bspwm related settings <<<
 # super + F2
 # 	bspc wm -r
 # super + {_,shift + }q
@@ -69,6 +70,7 @@ super + shift + q
 # 	bspc node focused -t \~floating ; hover right
 # super + shift + b
 # 	bspc node focused -t \~floating ; hover left
+# >>>
 
 #  super + shift +x
 #  	killandnotify "sxhkd" "sxhkd config reloaded" && sxhkd &
@@ -98,6 +100,7 @@ super + ctrl + {minus,equal}
 #notifications
 super+n:{w,l,m,t}
 	{notify-send --icon=network-wireless "Status" "`nmcli device status`",notify-send --icon=network-wireless "Wifi list" "`nmcli device wifi list`",notify-send --icon=audio-headphones -t 3000 "Now Playing" "`mpc`",notify-send -t 3000 "Temperature" "`sensors | grep temp1 | head -1 && sensors | grep temp1 | tail -1`"}
+
 super+i:{m,p,v,d}
 	{manbyrofi,pdfbyrofi,videosbyrofi,caffeine_like}
 
@@ -105,7 +108,7 @@ super+i:{m,p,v,d}
 #super + shift + {y,u,i,o}
 #    /home/raytracer/.local/bin/.scripts/i3resize {left,down,up,right}
 
-#screenshot and recording
+# screenshot and recording <<<
 Print
     scrot && dunstify -t 2000 "Full screen captured"
 shift + Print
@@ -114,8 +117,9 @@ super + Print
     /home/raytracer/.local/bin/.scripts/dmenurecord
 super + Delete
     /home/raytracer/.local/bin/.scripts/dmenurecord kill
+# >>>
 
-#pause/play song
+# audio related key-bindings <<<
 # super + p
 #     mpc toggle && notify-send --icon=audio-headphones -t 3000 "Music played/paused\nCurrent Song" "`mpc | head -1`"
 super + p
@@ -144,6 +148,7 @@ super + {_,shift +} minus
 #mute
 super + shift +m
     pulsemixer --toggle-mute && notify-send --icon=auio-volume-muted -t 3000 "Volume Muted"
+# >>>
 
 # Audiokeys
 XF86AudioMute

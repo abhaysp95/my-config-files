@@ -15,40 +15,22 @@ Plug 'vim-syntastic/syntastic' "error checker for languages and scripts
 Plug 'dense-analysis/ale'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'tmux-plugins/vim-tmux'
-"Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'mattn/emmet-vim'			" for html
-"Plug 'tpope/vim-git'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-unimpaired'
 Plug 'vim-python/python-syntax'
-"Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-"Elixir support
-"Plug 'elixir-editors/vim-elixir'
-"Plug 'avdgaag/vim-phoenix'
-"Plug 'mmorearty/elixir-ctags'
-"Plug 'mattreduce/vim-mix'
-"Plug 'BjRo/vim-extest'
-"Plug 'frost/vim-eh-docs'
-"Plug 'slashmili/alchemist.vim'
-"Plug 'tpope/vim-endwise'
-"Plug 'jadercorrea/elixir_generator.vim'
-"
-"Plug 'godlygeek/tabular
+
 Plug 'plasticboy/vim-markdown'
 Plug 'mattn/calendar-vim'
 Plug 'terryma/vim-multiple-cursors'
-"Plug 'gabrielelana/vim-markdown'
-"Plug 'vim-pandoc/vim-pandoc'
+
 Plug 'vim-pandoc/vim-pandoc-syntax'
-"Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
 
 " Theme / Interface
-"Plug 'Yggdroot/indentLine'
-"Plug 'AnsiEsc.vim'
 Plug 'ayu-theme/ayu-vim'
 Plug 'tomasiser/vim-code-dark'
 Plug 'dracula/vim',{'as':'dracula'}
@@ -74,18 +56,12 @@ Plug 'atelierbram/Base2Tone-vim'
 Plug 'colepeters/spacemacs-theme.vim'
 
 Plug 'junegunn/goyo.vim'
-"Plug 'PotatoesMaster/i3-vim-syntax'
-"Plug 'metakirby5/codi.vim'
-"Plug 'jreybert/vimagit'
-"Plug 'lukesmithxyz/vimling'
 Plug 'vimwiki/vimwiki'
-"Plug 'bling/vim-airline'
 Plug 'neoclide/coc.nvim', {'branch': 'release', 'tag': '*', 'do': { -> coc#util#install()}}
 Plug 'tpope/vim-commentary'
 Plug 'kovetskiy/sxhkd-vim'
 Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
-"Plug 'roxma/nvim-completion-manager'
-"Plug 'tpope/vim-surround'
+
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'scrooloose/nerdtree'
@@ -94,12 +70,54 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'mhinz/vim-grepper'
 Plug 'sheerun/vim-polyglot'
 Plug 'tommcdo/vim-lion'
+
+" shows diff signs in vim's signcolumn
 Plug 'airblade/vim-gitgutter'
 Plug 'mbbill/undotree'
 Plug 'tpope/vim-fugitive'
+Plug 'majutsushi/tagbar'
 
 " display colors
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
+
+" Modify * to also work with visual selections
+Plug 'nelstrom/vim-visual-star-search'
+
+"Plug 'mhinz/vim-signify'
+"Plug 'tpope/vim-git'
+"Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+"Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
+"Plug 'tpope/vim-git'
+"Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+"Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
+
+"Elixir support
+"Plug 'elixir-editors/vim-elixir'
+"Plug 'avdgaag/vim-phoenix'
+"Plug 'mmorearty/elixir-ctags'
+"Plug 'mattreduce/vim-mix'
+"Plug 'BjRo/vim-extest'
+"Plug 'frost/vim-eh-docs'
+"Plug 'slashmili/alchemist.vim'
+"Plug 'tpope/vim-endwise'
+"Plug 'jadercorrea/elixir_generator.vim'
+
+"Plug 'godlygeek/tabular
+"Plug 'gabrielelana/vim-markdown'
+"Plug 'vim-pandoc/vim-pandoc'
+"Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
+
+" Theme / Interface
+"Plug 'Yggdroot/indentLine'
+"Plug 'AnsiEsc.vim'
+
+"Plug 'PotatoesMaster/i3-vim-syntax'
+"Plug 'metakirby5/codi.vim'
+"Plug 'jreybert/vimagit'
+"Plug 'lukesmithxyz/vimling'
+"Plug 'bling/vim-airline'
+"Plug 'roxma/nvim-completion-manager'
+"Plug 'tpope/vim-surround'
 
 call plug#end()
 
@@ -193,11 +211,39 @@ set virtualedit=block
 set whichwrap=b,s,<,>
 set wrap
 set modifiable
+set wrap
 
-" better search in vim
+" better search in vim ------------
 set hlsearch
 set incsearch
 nnoremap <M-;> :noh<CR>:<backspace>
+
+" replacement of words ----------------
+" press * then press a mapping below to replace all instances
+nnoremap <leader>ro :s///g<Left><Left>
+nnoremap <leader>ra :%s///g<Left><Left>
+nnoremap <leader>rc :%s///gc<Left><Left><Left>
+
+" same as above but works on visual selection with *(requires vim-visual-star-search plugin)
+
+xnoremap <leader>ro :s///g<Left><Left>
+xnoremap <leader>ra :%s///g<Left><Left>
+xnoremap <leader>rc :%s///gc<Left><Left><Left>
+
+" keep cursor at the bottom of the visual selection after you yank it
+vmap y ygv<Esc>
+
+" type replacement term and press '.' to repeat the
+" replacement.(somewhat like vim-multiple-cursor plugin)
+nnoremap <silent> <leader>s* :let@/='\<'.expand('<cword>').'\>'<CR>cgn
+" you might as well can search the word and then do 'ce' to replace that word. Depends on how you need it
+xnoremap <silent> <leader>s* "sy:let @/=@s<CR>cgn
+
+
+" ---- format paragraph ------ "
+" format paragraph (selected or not) to 80 character lines
+nnoremap <leader>gp gqap
+xnoremap <leader>gp gqa
 
 highlight SpecialKey guifg=#ffffff guibg=#116611
 hi SpellBad cterm=underline ctermfg=9
@@ -217,6 +263,9 @@ hi SpellCap cterm=underline
 	" 	exec 'sleep' . float2nr(a:blinktime * 1000) . 'm'
 	" 	redraw
 	" endfunction
+	"
+" This one rings the match
+	" function! HLNext (blinktime)
 	"
 " This one rings the match
 	" function! HLNext (blinktime)
@@ -302,9 +351,6 @@ set t_Co=256
 " Cycle through splits
 nnoremap <S-Tab> <C-w>w
 
-" Clear search highlights
-map <Leader><Space>                 : let @/=''<CR>
-
 " Edit vim config file in a new tab
 map <Leader>ev                      : tabnew $MYVIMRC<CR>
 
@@ -313,7 +359,7 @@ map <Leader>sv                      : source $MYVIMRC<CR>
 
 " Toggle relative line number
 nmap <F5>                           : set invrelativenumber number<CR>
-nmap <leader>n                      : set nonumber norelativenumber<CR>
+nmap <leader>N                      : set nonumber norelativenumber<CR>
 
 " Spell-check set to <leader>o, 'o' for 'orthography':
     map <F6> :setlocal spell! spelllang=en_us<CR>
@@ -420,7 +466,7 @@ set updatetime=300
 " don't give |ins-completion-menu| messages
 " set shortmess+=c
 " always show signcolums
-set signcolumn=yes
+set signcolumn=auto
 
 " Use `lp` and `ln` for navigate diagnostics
 nmap <silent> <leader>lp <Plug>(coc-diagnostic-prev)
@@ -642,36 +688,41 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 "---------------------------------------------------------------------------
 " scrooloose/nerdtree
 "---------------------------------------------------------------------------
-let g:NERDTreeShowHidden=0
+let g:NERDTreeShowHidden=1
 let g:NERDTreeAutoDeleteBuffer=1
 " NERDTree conf
-    map <leader>N :NERDTreeToggle<CR>
-	autocmd vimenter * NERDTree
-	" jump to main window
-	autocmd VimEnter * wincmd p
-    autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-" sync open file with NERDTree
-" " Check if NERDTree is open or active
-function! IsNERDTreeOpen()
-	return exists("t:NERDTreeBufName") && (bufwinnr(t:NERDTreeBufName) != -1)
-endfunction
 
-" Call NERDTreeFind if NERDTree is active, current window contains a modifiable file, not vimdiff
-function! SyncTree()
-	if &modifiable && IsNERDTreeOpen() && strlen(expand('%')) > 0 && !&diff
-		NERDTreeFind
-		wincmd p
-	endif
-endfunction
+" Open nerdtree at the current file or close nerd tree if pressed again
+nnoremap <silent> <expr> <leader>n g:NERDTree.IsOpen() ? "\:NERDTreeClose<CR>" : bufexists(expand('%')) ? "\:NERDTreeFind<CR>" : "\:NERDTree<CR>"
 
-" changing opening and closing arrow of NERDTree
+" --------- settings below slows down vim opening for a second
+
+	" " autocmd vimenter * NERDTree
+	" " " jump to main window
+	" autocmd VimEnter * wincmd p
+    " autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" " " sync open file with NERDTree
+" " " " Check if NERDTree is open or active
+" function! IsNERDTreeOpen()
+" 	return exists("t:NERDTreeBufName") && (bufwinnr(t:NERDTreeBufName) != -1)
+" endfunction
+
+" " " " Call NERDTreeFind if NERDTree is active, current window contains a modifiable file, not vimdiff
+" function! SyncTree()
+" 	if &modifiable && IsNERDTreeOpen() && strlen(expand('%')) > 0 && !&diff
+" 		NERDTreeFind
+" 		wincmd p
+" 	endif
+" endfunction
+
+" " changing opening and closing arrow of NERDTree
 let g:NERDTreeDirArrowExpandable  = "▷"
 let g:NERDTreeDirArrowCollapsible = "◢"
 
-" Higlight currently open buffer in NERDTree
-autocmd BufEnter * call SyncTree()
-
-    " map <C-m> :TagbarToggle<CR>
+" " Higlight currently open buffer in NERDTree
+" autocmd BufEnter * call SyncTree()
+" ----------------------------------------------------------------------------------------------
+" ----------------------------------------------------------------------------------------------
 
 " searches down into subfolders
 " provides tab-completion for all file-related tasks
@@ -695,13 +746,6 @@ autocmd BufEnter * call SyncTree()
 
 " Check file in shellcheck:
     map <leader>S :!clear && shellcheck %<CR>
-
-" Open bibliography file in split(haven't created yet):
-    " map <leader>b :vsp<space>$BIB<CR>
-    " map <leader>r :vsp<space>$REFER<CR>
-
-" Replace all is aliased to S, so using <leader>s
-    map <leader>s :%s//g<Left><Left>
 
 " Compile document, for groff/LaTeX/markdown etc.
     map <leader>c :w! \| !compiler <c-r>%<CR>
@@ -755,9 +799,6 @@ autocmd BufEnter * call SyncTree()
 	set foldmarker=<<<,>>>
 	set foldmethod=marker
 	set fillchars=vert:╏,fold:━
-    " function! Foldtext() abort
-    "     " let l:start_arrow = '⏤⏤⏤⏤► '
-    "     let l:start_arrow = '+---- '
     "     return l:start_arrow . l:lines . ': ' . l:first_line . ' '
     " endfunction
 
@@ -867,7 +908,7 @@ endif
 command! -nargs=1 Ngrep vimgrep "<args>" /home/raytracer/vimwiki/**/*.md
 nnoremap <leader>[ :Ngrep
 
-au BufRead,BufNewFile *.wiki set filetype=markdown
+au BufRead,BufNewFile *wiki set filetype=markdown
 :autocmd FileType vimwiki map <leader>d :VimwikiMakeDiaryNote
 function! ToggleCalendar()
   execute ":Calendar"
@@ -885,10 +926,10 @@ endfunction
 :autocmd FileType vimwiki map <leader>cl :call ToggleCalendar() set ft=markdown
 
 " Markdown codeblock highlight syntax
-let g:markdown_fenced_languages = ['c', 'bash', 'python']
+" let g:markdown_fenced_languages = ['c', 'bash', 'python']
 
 " Vimwiki settings and ensures files are read as what is wanted:
-    " let g:vimwiki_ext2syntax = {'.Rmd': 'markdown', '.rmd': 'markdown', '.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
+    let g:vimwiki_ext2syntax = {'.Rmd': 'markdown', '.rmd': 'markdown', '.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
 
 "     map <leader>v :set ft=markdown<CR>
 let g:vimwiki_list = [{'path': '~/vimwiki/',
@@ -904,8 +945,10 @@ let g:vimwiki_list = [{'path': '~/vimwiki/',
 map <leader>ff :Files<CR>
 map <leader>fc :Files ~/.config/<CR>
 map <leader>fs :Files ~/.local/bin/.scripts/<CR>
+map <leader>fl :Lines<CR>
+map <leader>fw :Windows<CR>
 "can also use :Files instead of :FZF
-map <leader>gf :Files
+map <leader>fg :Files
 
 nnoremap <leader>bb :Buffers<CR>
 nnoremap <leader>bc :Commands<CR>
@@ -940,6 +983,8 @@ autocmd BufEnter * lcd %:p:h
 augroup pandoc_syntax
 	au! BufNewFile,BufFilePre,BufRead *.md set filetype=markdown.pandoc
 augroup END
+"----------------------------------------------------------------
+"----------------------------------------------------------------
 
 " Vim Hexokinase
 let g:Hexokinase_refreshEvents = ['TextChanged', 'InsertLeave']
@@ -956,6 +1001,8 @@ let g:Hexokinase_highlighters = ['backgroundfull']
 
 " Reenable hexokinase on enter
 autocmd VimEnter * HexokinaseTurnOn
+"----------------------------------------------------------------
+"----------------------------------------------------------------
 
 " -- vim grepper --"
 let g:grepper       = {}
@@ -965,6 +1012,24 @@ let g:grepper.jump  = 1
 nnoremap <leader>/ :GrepperRg<Space>
 nnoremap gs :Grepper -cword -noprompt<CR>
 xmap gs <Plug>(GrepperOperator)
+
+" After searching for text, press this mapping to do a project wide find and
+" replace. It's similar to <leader>r except this one applies to all matches
+" across all files instead of just the current file.
+nnoremap <Leader>R
+  \ :let @s='\<'.expand('<cword>').'\>'<CR>
+  \ :Grepper -cword -noprompt<CR>
+  \ :cfdo %s/<C-r>s//g \| update
+  \<Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left>
+
+" The same as above except it works with a visual selection.
+xmap <Leader>R
+    \ "sy
+    \ gvgr
+    \ :cfdo %s/<C-r>s//g \| update
+     \<Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left>
+"----------------------------------------------------------------
+"----------------------------------------------------------------
 
 " --- ale pluging ----- "
 let g:ale_sign_error                               = '●'
@@ -980,35 +1045,46 @@ let g:ale_lint_on_insert_leave                     = 0
 " nmap <leader>El	<Plug>(ale_lint)
 " nmap <leader>E	<Plug>(ale_fix)
 " nmap <leader><BS>		<Plug>(ale_reset_buffer)
+"----------------------------------------------------------------
+"----------------------------------------------------------------
 
 " ---- vim-lion -----"
 let g:lion_squeeze_spaces = 1
+"----------------------------------------------------------------
+"----------------------------------------------------------------
 
 
 " --- vim-gitgutter ----"
 let g:gitgutter_grep                    = 'rg'
 let g:gitgutter_map_keys                = 0
 let g:gitgutter_map_keys                = 0
-let g:gitgutter_sign_added              = '▎'
-let g:gitgutter_sign_modified           = '▎'
-let g:gitgutter_sign_modified_removed   = '▶'
-let g:gitgutter_sign_removed            = '▶'
-let g:gitgutter_sign_removed_first_line = '◥'
-nmap [g <Plug>(GitGutterPrevHunkzz)
-nmap ]g <Plug>(GitGutterNextHunkzz)
+" let g:gitgutter_sign_added              = '▎'
+" let g:gitgutter_sign_modified           = '▎'
+" let g:gitgutter_sign_modified_removed   = '▶'
+" let g:gitgutter_sign_removed            = '▶'
+" let g:gitgutter_sign_removed_first_line = '◥'
+nmap [g <Plug>(GitGutterPrevHunk)
+nmap ]g <Plug>(GitGutterNextHunk)
 nmap <Leader>gp <Plug>(GitGutterPreviewHunk)
 nmap <Leader>+ <Plug>(GitGutterStageHunk)
 nmap <Leader>- <Plug>(GitGutterUndoHunk)
+nmap <leader>gs :set signcolumn=
+"----------------------------------------------------------------
+"----------------------------------------------------------------
 
 " -- undotree ----"
 let g:undotree_HighlightChangedWithSign = 0
 let g:undotree_WindowLayout             = 3
 nnoremap <leader>U :UndotreeToggle<CR>
+"----------------------------------------------------------------
+"----------------------------------------------------------------
 
 " ----- vim-fugitive ----- "
 nnoremap <silent> <leader>B :Gblame<CR>
 nnoremap <silent> <leader>C :Gclog %<CR>
 nnoremap <silent> <leader>G :Gstatus<CR>
+"----------------------------------------------------------------
+"----------------------------------------------------------------
 
 "" --- move visual block(dragvisual.vim)
 vmap  <expr>  <LEFT>   DVB_Drag('left')
@@ -1016,6 +1092,8 @@ vmap  <expr>  <RIGHT>  DVB_Drag('right')
 vmap  <expr>  <DOWN>   DVB_Drag('down')
 vmap  <expr>  <UP>     DVB_Drag('up')
 vmap  <expr>  D        DVB_Duplicate()
+"----------------------------------------------------------------
+"----------------------------------------------------------------
 
 " Remove any introduced trailing whitespace after moving...     ##
 let g:DVB_TrimWS = 1
@@ -1025,3 +1103,16 @@ vnoremap af:<C-U>silent! normal! [zV]z<CR>
 onoremap af:normal Vaf<CR>
 vnoremap if:<C-U>silent! normal! [zjV]zk<CR>
 onoremap if:normal Vif<CR>
+"----------------------------------------------------------------
+"----------------------------------------------------------------
+
+" ----- majutsushi/tagbar ----- "
+nmap <F8> :TagbarToggle<CR>
+"----------------------------------------------------------------
+"----------------------------------------------------------------
+
+" ---- vim-signify ---------- "
+" nmap [g <plug>(signify-prev-hunk)
+" nmap ]g <plug>(signify-next-hunk)
+" nmap <leader>gJ 9999<leader>gj
+" nmap <leader>gK 9999<leader>gk
