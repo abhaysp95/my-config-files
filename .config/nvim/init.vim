@@ -127,7 +127,7 @@ set runtimepath^=~/.config/nvim/plugged/dragvisuals
 highlight ColorColumn ctermbg=red
 " although this is working, color isn't changing to red, it's still grey
 " set colorcolumn=81
-call matchadd('ColorColumn', '\%81v', 100)
+call matchadd('ColorColumn', '\%101v', 100)
 " have some fun
 " highlight ColorColumn ctermbg=red ctermfg=blue
 " exec 'set colorcolumn=' . join(range(2,80,3), ',')
@@ -242,8 +242,8 @@ xnoremap <silent> <leader>s* "sy:let @/=@s<CR>cgn
 
 " ---- format paragraph ------ "
 " format paragraph (selected or not) to 80 character lines
-nnoremap <leader>gp gqap
-xnoremap <leader>gp gqa
+nnoremap <leader>gP gqap
+xnoremap <leader>gP gqa
 
 highlight SpecialKey guifg=#ffffff guibg=#116611
 hi SpellBad cterm=underline ctermfg=9
@@ -347,6 +347,10 @@ set t_Co=256
     autocmd FileType markdown inoremap ;c <!---<Space><Space>--><CR><CR><++><Esc>2kf<Space>a
     autocmd FileType html inoremap ;c <!---<Space><Space>--><CR><CR><++><Esc>2kf<Space>a
 	autocmd FileType markdown inoremap ;sh ```sh<CR>```<CR><CR><++><Esc>2kO<C-i>
+	autocmd FileType markdown, vimwiki inoremap ;p ```python<CR>```<Esc>O
+	autocmd FileType markdown, vimwiki inoremap ;c ```c<CR>```<Esc>O
+	autocmd FileType vimwiki inoremap ;p ```python<CR>```<Esc>O
+	autocmd FileType vimwiki inoremap ;c ```c<CR>```<Esc>O
 
 " Cycle through splits
 nnoremap <S-Tab> <C-w>w
