@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+# makes screen standby
+
 #requires xorg-xset to work
 
 status=`xset -q | grep 'DPMS is' | awk '{print $3 }'`

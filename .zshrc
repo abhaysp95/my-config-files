@@ -207,10 +207,11 @@ export PATH="$HOME/.local/bin/.scripts:$PATH"
 
 notify-send "zsh settings reloaded" -a zsh -t 2000
 
+export FZF_DEFAULT_COMMAND="rg --files --hidden --follow"
+# export FZF_COMPLETION_TRIGGER=''
+# bindkey '^T' fzf-completion
+# bindkey '^I' $fzf_default_completion
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-#export FZF_COMPLETION_TRIGGER=''
-bindkey '^T' fzf-completion
-bindkey '^I' $fzf_default_completion
 
 # get colorful man page
 #export PAGER="most"
