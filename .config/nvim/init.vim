@@ -1054,7 +1054,7 @@ let g:lion_squeeze_spaces = 1
 "----------------------------------------------------------------
 
 
-" --- vim-gitgutter ----"
+" --- vim-gitgutter ----"(only using because of staging feature)
 let g:gitgutter_grep                    = 'rg'
 let g:gitgutter_map_keys                = 0
 let g:gitgutter_map_keys                = 0
@@ -1111,7 +1111,7 @@ nmap <F8> :TagbarToggle<CR>
 "----------------------------------------------------------------
 "----------------------------------------------------------------
 
-" ---- vim-signify ---------- "
+" ---- vim-signify ---------- "(first giving some try to vim-gitgutter)
 " nmap [g <plug>(signify-prev-hunk)
 " nmap ]g <plug>(signify-next-hunk)
 " nmap <leader>gJ 9999<leader>gj
