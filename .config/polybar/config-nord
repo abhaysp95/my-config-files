@@ -1,0 +1,365 @@
+; ======
+; Colors
+; ======
+[colors]
+background = #2E3440
+foreground = #D8DEE9
+black      = #4C566A
+red        = #BF616A
+green      = #A3BE8C
+yellow     = #EBCB8B
+blue       = #5E81AC
+magenta    = #B48EAD
+cyan       = #8FBCBB
+white      = #D8DEE9
+orange     = #D08770
+
+; =======
+; Top Bar
+; =======
+[bar/top]
+; Size
+width  = 100%
+height = 16
+
+; Offset
+;offset-x = 50%
+;offset-y = 50%
+
+; Position
+bottom = false
+
+; Radius
+radius = 0
+
+; Align modules fixed to middle
+fixed-center = true
+
+; Colors
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+; Underline
+line-size  = 4
+line-color = ${colors.white}
+
+; Border
+border-size  = 0
+
+; Padding
+padding-left  = 0
+padding-right = 0
+
+; Margin of modules
+module-margin-left  = 0
+module-margin-right = 0
+
+; Font
+font-0 = Roboto:size=8;2
+font-1 = Fira Code:size=11;3
+
+; Modlues
+;modules-left   = ra5 ra3 bspwm ra1 ra3 ra4
+;modules-center = la4 la3 la1 weather la3 la2 time ra2 ra3 date ra1 ra3 ra4
+;modules-right  = la4 la3 la1 audio network la3 la2 lock logout poweroff la6 la5
+
+modules-left   = i3
+modules-center = date time xwindow
+modules-right  = battery temperature audio network la3 la2 lock logout poweroff la6 la5
+
+; Cursor actions
+cursor-click  = pointer
+cursor-scroll = ns-resize
+
+; Separator
+separator =
+
+; ============
+; bspwm Module
+; ============
+[module/bspwm]
+type = internal/bspwm
+
+; Mouse click
+enable-click = false
+
+; Mouse scroll
+enable-scroll  = false
+reverse-scroll = false
+
+; Separator
+label-separator =
+
+; Dimmed label
+label-dimmed         = %name%
+label-dimmed-padding = 2
+
+; Focused label
+label-focused            = %name%
+label-focused-foreground = ${colors.blue}
+label-focused-background = ${colors.cyan}
+label-focused-padding    = 2
+
+; Occupied label
+label-occupied            = ‣ %name%
+label-occupied-foreground = ${colors.black}
+label-occupied-background = ${colors.cyan}
+label-occupied-padding    = 2
+
+; Empty labels
+label-empty            = %name%
+label-empty-foreground = ${colors.black}
+label-empty-background = ${colors.cyan}
+label-empty-padding    = 2
+
+; Urgent labels
+label-urgent            = %name%
+label-urgent-foreground = ${colors.red}
+label-urgent-background = ${colors.cyan}
+label-urgent-padding    = 2
+
+; ===========
+; Time Module
+; ===========
+[module/time]
+type = internal/date
+
+; Update interval
+interval = 1.0
+
+; Format
+time = %I:%M:%S %p
+
+; Label
+label            = %time%
+label-foreground = ${colors.white}
+label-background = ${colors.blue}
+label-padding    = 2
+
+; ===========
+; Date Module
+; ===========
+[module/date]
+type = internal/date
+
+; Update interval
+interval = 1.0
+
+; Format
+date = %A, %d
+
+; Label
+label            = %date%
+label-foreground = ${colors.black}
+label-background = ${colors.cyan}
+label-padding    = 2
+
+; ==============
+; Weather Module
+; ==============
+[module/weather]
+type = custom/script
+
+; Script
+exec = /home/enindu/.config/polybar/scripts/weather.sh
+
+; Update interval
+interval = 600
+
+; Label
+label            = %output%
+label-foreground = ${colors.black}
+label-background = ${colors.cyan}
+label-padding    = 2
+
+; ============
+; Audio Module
+; ============
+[module/audio]
+type = internal/pulseaudio
+
+; Volume label
+label-volume            = Volume: %percentage%%
+label-volume-foreground = ${colors.black}
+label-volume-background = ${colors.cyan}
+label-volume-padding    = 2
+
+; Muted label
+label-muted            = Muted
+label-muted-foreground = ${colors.black}
+label-muted-background = ${colors.cyan}
+label-muted-padding    = 2
+
+; ==============
+; Network Module
+; ==============
+[module/network]
+type = internal/network
+
+; Interface
+interface = enp2s0
+
+; Connected label
+label-connected            = Download: %downspeed%
+label-connected-foreground = ${colors.black}
+label-connected-background = ${colors.cyan}
+label-connected-padding    = 2
+
+; Disconnected label
+label-disconnected            = Disconnected
+label-disconnected-foreground = ${colors.black}
+label-disconnected-background = ${colors.cyan}
+label-disconnected-padding    = 2
+
+; ===========
+; Lock Module
+; ===========
+[module/lock]
+type = custom/text
+
+; Label
+content            = Lock
+content-foreground = ${colors.white}
+content-background = ${colors.blue}
+content-padding    = 2
+
+; Mouse click
+click-left = slock
+
+; =============
+; Logout Module
+; =============
+[module/logout]
+type = custom/text
+
+; Label
+content            = Logout
+content-foreground = ${colors.white}
+content-background = ${colors.blue}
+content-padding    = 2
+
+; Mouse click
+click-left = bspc quit
+
+; ===============
+; Poweroff Module
+; ===============
+[module/poweroff]
+type = custom/text
+
+; Label
+content            = Poweroff
+content-foreground = ${colors.white}
+content-background = ${colors.blue}
+content-padding    = 2
+
+; Mouse click
+click-left = poweroff
+
+; ======
+; Arrows
+; ======
+[module/la1]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.cyan}
+content-background = ${colors.background}
+
+[module/la2]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.blue}
+content-background = ${colors.background}
+
+[module/la3]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.background}
+content-background = ${colors.cyan}
+
+[module/la4]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.cyan}
+content-background = ${colors.background}
+
+[module/la5]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.red}
+content-background = ${colors.background}
+
+[module/la6]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.background}
+content-background = ${colors.blue}
+
+[module/ra1]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.cyan}
+content-background = ${colors.background}
+
+[module/ra2]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.blue}
+content-background = ${colors.background}
+
+[module/ra3]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.background}
+content-background = ${colors.cyan}
+
+[module/ra4]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.cyan}
+content-background = ${colors.background}
+
+[module/ra5]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.red}
+content-background = ${colors.background}
+
+; =====
+; Other
+; =====
+[settings]
+screenchange-reload     = true
+;compositing-background = xor
+;compositing-foreground = source
+;compositing-border     = over
+pseudo-transparency     = true
+
+; ==
+; WM
+; ==
+[global/wm]
+margin-top    = 0
+margin-bottom = 0

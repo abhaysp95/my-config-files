@@ -14236,3 +14236,133 @@ Mar 18 16:21 : client: [867] opened from 127.0.0.1:59396
 Mar 18 16:21 : client: [867] closed
 Mar 18 16:21 : client: [868] opened from 127.0.0.1:59400
 Mar 18 16:21 : client: [868] closed
+Mar 18 22:09 : client: [869] opened from 127.0.0.1:33372
+Mar 18 22:09 : client: [869] closed
+Mar 18 22:09 : client: [870] opened from 127.0.0.1:33376
+Mar 18 22:09 : client: [870] closed
+Mar 18 22:09 : client: [871] opened from 127.0.0.1:33380
+Mar 18 22:09 : client: [871] closed
+Mar 18 22:09 : client: [872] opened from 127.0.0.1:33384
+Mar 18 22:09 : client: [872] closed
+Mar 18 22:09 : client: [873] opened from 127.0.0.1:33388
+Mar 18 22:09 : client: [873] closed
+Mar 18 22:09 : client: [874] opened from 127.0.0.1:33392
+Mar 18 22:09 : client: [874] closed
+Mar 19 00:22 : client: [875] opened from 127.0.0.1:33410
+Mar 19 00:22 : client: [875] closed
+Mar 19 00:22 : client: [876] opened from 127.0.0.1:33414
+Mar 19 00:22 : client: [876] closed
+Mar 19 11:06 : player: played "Major_Lazer__Watch_Out_For_This_(Bumaye)__feat_Busy_Signal,_The_Flexican___FS_Gr.m4a"
+Mar 19 11:16 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 19 11:16 : exception: Failed to access /home/raytracer/Music/got: Too many levels of symbolic links
+Mar 19 11:16 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 19 11:30 : client: [0] opened from 127.0.0.1:52964
+Mar 19 11:30 : exception: Failed to open /home/raytracer/.config/mpd/playlists: No such file or directory
+Mar 19 11:30 : client: [1] opened from 127.0.0.1:52968
+Mar 19 11:30 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 19 11:30 : client: [1] closed
+Mar 19 11:30 : client: [2] opened from 127.0.0.1:52972
+Mar 19 11:30 : client: [2] closed
+Mar 19 11:31 : client: [3] opened from 127.0.0.1:52976
+Mar 19 11:31 : client: [3] closed
+Mar 19 11:31 : client: [4] opened from 127.0.0.1:52980
+Mar 19 11:31 : client: [4] closed
+Mar 19 11:34 : client: [5] opened from 127.0.0.1:52984
+Mar 19 11:34 : client: [5] closed
+Mar 19 11:34 : client: [6] opened from 127.0.0.1:52988
+Mar 19 11:34 : client: [6] closed
+Mar 19 11:34 : client: [7] opened from 127.0.0.1:52992
+Mar 19 11:34 : client: [7] closed
+Mar 19 11:34 : client: [8] opened from 127.0.0.1:52996
+Mar 19 11:34 : client: [8] closed
+Mar 19 11:34 : client: [9] opened from 127.0.0.1:53000
+Mar 19 11:34 : client: [9] closed
+Mar 19 11:34 : client: [10] opened from 127.0.0.1:53004
+Mar 19 11:34 : client: [10] closed
+Mar 19 11:34 : client: [11] opened from 127.0.0.1:53008
+Mar 19 11:34 : client: [11] closed
+Mar 19 11:34 : client: [12] opened from 127.0.0.1:53012
+Mar 19 11:34 : client: [12] closed
+Mar 19 11:38 : client: [13] opened from 127.0.0.1:53130
+Mar 19 11:38 : client: [13] closed
+Mar 19 11:38 : client: [14] opened from 127.0.0.1:53134
+Mar 19 11:38 : client: [14] closed
+Mar 19 11:40 : client: [15] opened from 127.0.0.1:53144
+Mar 19 11:40 : client: [15] closed
+Mar 19 11:40 : client: [16] opened from 127.0.0.1:53148
+Mar 19 11:40 : client: [16] closed
+Mar 19 11:41 : player: played "Uncha Lamba Kad-(Mr-Jatt.com).mp3"
+Mar 19 11:45 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Mar 19 11:45 : player: played "10 Malhari (Bajirao Mastani) 192Kbps.mp3"
+Mar 19 11:48 : player: played "Imagine Dragons - Natural [0I647GU3Jsc].m4a"
+Mar 19 11:52 : player: played "The Weeknd - Hurt You Ft. Gesaffelstein (DawnFoxes.com).mp3"
+Mar 19 11:54 : player: played "youtube/_Kabhi Jo Badal Barse_ Song Video Jackpot _ Arijit Singh _ Sachiin J Joshi, Sunny Leone.mp3"
+Mar 19 11:55 : client: [17] opened from 127.0.0.1:53206
+Mar 19 11:55 : client: [17] closed
+Mar 19 11:55 : client: [18] opened from 127.0.0.1:53210
+Mar 19 11:55 : client: [18] closed
+Mar 19 11:55 : client: [19] opened from 127.0.0.1:53214
+Mar 19 11:55 : client: [19] closed
+Mar 19 11:55 : client: [20] opened from 127.0.0.1:53218
+Mar 19 11:55 : client: [20] closed
+Mar 19 11:59 : client: [21] opened from 127.0.0.1:53226
+Mar 19 11:59 : client: [21] closed
+Mar 19 11:59 : client: [22] opened from 127.0.0.1:53230
+Mar 19 11:59 : client: [22] closed
+Mar 19 12:15 : client: [23] opened from 127.0.0.1:53260
+Mar 19 12:15 : client: [23] closed
+Mar 19 12:15 : client: [24] opened from 127.0.0.1:53264
+Mar 19 12:15 : client: [24] closed
+Mar 19 12:16 : player: played "Vilen - Ek Raat.mp3"
+Mar 19 12:17 : client: [25] opened from 127.0.0.1:53286
+Mar 19 12:17 : client: [25] closed
+Mar 19 12:17 : client: [26] opened from 127.0.0.1:53290
+Mar 19 12:17 : client: [26] closed
+Mar 19 12:17 : client: [27] opened from 127.0.0.1:53294
+Mar 19 12:17 : client: [27] closed
+Mar 19 12:17 : client: [28] opened from 127.0.0.1:53298
+Mar 19 12:17 : client: [28] closed
+Mar 19 12:17 : client: [29] opened from 127.0.0.1:53302
+Mar 19 12:17 : client: [29] closed
+Mar 19 12:17 : client: [30] opened from 127.0.0.1:53306
+Mar 19 12:17 : client: [30] closed
+Mar 19 12:17 : client: [31] opened from 127.0.0.1:53310
+Mar 19 12:17 : client: [31] closed
+Mar 19 12:17 : client: [32] opened from 127.0.0.1:53314
+Mar 19 12:17 : client: [32] closed
+Mar 19 12:17 : client: [33] opened from 127.0.0.1:53318
+Mar 19 12:17 : client: [33] closed
+Mar 19 12:17 : client: [34] opened from 127.0.0.1:53322
+Mar 19 12:17 : client: [34] closed
+Mar 19 12:17 : client: [35] opened from 127.0.0.1:53326
+Mar 19 12:17 : client: [35] closed
+Mar 19 12:17 : client: [36] opened from 127.0.0.1:53330
+Mar 19 12:17 : client: [36] closed
+Mar 19 12:17 : client: [37] opened from 127.0.0.1:53334
+Mar 19 12:17 : client: [37] closed
+Mar 19 12:17 : client: [38] opened from 127.0.0.1:53338
+Mar 19 12:17 : client: [38] closed
+Mar 19 12:17 : client: [39] opened from 127.0.0.1:53342
+Mar 19 12:17 : client: [39] closed
+Mar 19 12:17 : client: [40] opened from 127.0.0.1:53346
+Mar 19 12:17 : client: [40] closed
+Mar 19 12:17 : client: [41] opened from 127.0.0.1:53350
+Mar 19 12:17 : client: [41] closed
+Mar 19 12:17 : client: [42] opened from 127.0.0.1:53354
+Mar 19 12:17 : client: [42] closed
+Mar 19 12:17 : client: [43] opened from 127.0.0.1:53358
+Mar 19 12:17 : client: [43] closed
+Mar 19 12:17 : client: [44] opened from 127.0.0.1:53362
+Mar 19 12:17 : client: [44] closed
+Mar 19 12:17 : client: [45] opened from 127.0.0.1:53366
+Mar 19 12:17 : client: [45] closed
+Mar 19 12:17 : client: [46] opened from 127.0.0.1:53370
+Mar 19 12:17 : client: [46] closed
+Mar 19 12:17 : client: [47] opened from 127.0.0.1:53374
+Mar 19 12:17 : client: [48] opened from 127.0.0.1:53378
+Mar 19 12:17 : client: [47] closed
+Mar 19 12:17 : client: [48] closed
+Mar 19 12:19 : client: [49] opened from 127.0.0.1:53390
+Mar 19 12:19 : client: [49] closed
+Mar 19 12:19 : client: [50] opened from 127.0.0.1:53394
+Mar 19 12:19 : client: [50] closed

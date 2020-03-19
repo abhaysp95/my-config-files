@@ -173,7 +173,7 @@ bindsym $mod+Return exec $TERMINAL
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run -nb '$base01' -sf '$base01' -nf '#ebdbb2' -sb '$base02' -fn "FuraCode Nerd Font 09"
 # start rofi
- # bindsym $mod+Shift+d exec rofi -show drun -font "FuraCode Nerd Font 10" - lines 25 -show-icons -width 80 -bgalt '#282828' -opacity "85"
+ # bindsym $mod+Shift+d exec rofi -show drun -font "FuraCode Nerd Font 10" - lines 25 -show-icons -width 80 -bgalt '#2e3440' -opacity "85"
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -232,7 +232,7 @@ bindsym $mod+a focus parent
 
 # color variables
 set $base00 #101218
-set $base01 #282828
+set $base01 #2e3440
 set $base02 #b8bb26
 set $base03 #75715e
 set $base04 #C0C5CE
@@ -296,10 +296,17 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 ## Customize colors-gruvbox
 client.focused          #928374 #928374 #ebdbb2 #928374 #928374
-client.focused_inactive #282828 #282828 #ebdbb2 #282828 #282828
-client.unfocused        #282828 #282828 #ebdbb2 #282828 #282828
-client.urgent           #282828 #282828 #fb4934 #282828 #282828
-client.placeholder      #282828 #282828 #ebdbb2 #282828 #282828
+client.focused_inactive #2e3440 #2e3440 #ebdbb2 #2e3440 #2e3440
+client.unfocused        #2e3440 #2e3440 #ebdbb2 #2e3440 #2e3440
+client.urgent           #2e3440 #2e3440 #fb4934 #2e3440 #2e3440
+client.placeholder      #2e3440 #2e3440 #ebdbb2 #2e3440 #2e3440
+hide_edge_borders both
+
+client.focused          #bf616a #bf616a #ebdbb2 #bf616a #bf616a
+client.focused_inactive #2e3440 #2e3440 #ebdbb2 #2e3440 #2e3440
+client.unfocused        #2e3440 #2e3440 #ebdbb2 #2e3440 #2e3440
+client.urgent           #2e3440 #2e3440 #fb4934 #2e3440 #2e3440
+client.placeholder      #2e3440 #2e3440 #ebdbb2 #2e3440 #2e3440
 hide_edge_borders both
 
 ## Customize colors-papirus

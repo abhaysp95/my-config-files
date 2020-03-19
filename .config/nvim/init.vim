@@ -23,15 +23,14 @@ Plug 'vim-python/python-syntax'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
-Plug 'plasticboy/vim-markdown'
 Plug 'mattn/calendar-vim'
 Plug 'terryma/vim-multiple-cursors'
 
 Plug 'vim-pandoc/vim-pandoc-syntax'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
 
 " Theme / Interface
 Plug 'ayu-theme/ayu-vim'
+Plug 'arcticicestudio/nord-vim'
 Plug 'tomasiser/vim-code-dark'
 Plug 'dracula/vim',{'as':'dracula'}
 Plug 'lifepillar/vim-solarized8'
@@ -70,9 +69,9 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'mhinz/vim-grepper'
 Plug 'sheerun/vim-polyglot'
 Plug 'tommcdo/vim-lion'
+Plug 'mhinz/vim-signify'
 
 " shows diff signs in vim's signcolumn
-Plug 'airblade/vim-gitgutter'
 Plug 'mbbill/undotree'
 Plug 'tpope/vim-fugitive'
 Plug 'majutsushi/tagbar'
@@ -83,7 +82,9 @@ Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 " Modify * to also work with visual selections
 Plug 'nelstrom/vim-visual-star-search'
 
-"Plug 'mhinz/vim-signify'
+" Plug 'plasticboy/vim-markdown'	(overrides your foldmethod to fdm=expr)
+" Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
+" Plug 'airblade/vim-gitgutter'
 "Plug 'tpope/vim-git'
 "Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 "Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
@@ -347,8 +348,8 @@ set t_Co=256
     autocmd FileType markdown inoremap ;c <!---<Space><Space>--><CR><CR><++><Esc>2kf<Space>a
     autocmd FileType html inoremap ;c <!---<Space><Space>--><CR><CR><++><Esc>2kf<Space>a
 	autocmd FileType markdown inoremap ;sh ```sh<CR>```<CR><CR><++><Esc>2kO<C-i>
-	autocmd FileType markdown, vimwiki inoremap ;p ```python<CR>```<Esc>O
-	autocmd FileType markdown, vimwiki inoremap ;c ```c<CR>```<Esc>O
+	autocmd FileType markdown inoremap ;p ```python<CR>```<Esc>O
+	autocmd FileType markdown inoremap ;c ```c<CR>```<Esc>O
 	autocmd FileType vimwiki inoremap ;p ```python<CR>```<Esc>O
 	autocmd FileType vimwiki inoremap ;c ```c<CR>```<Esc>O
 
@@ -415,9 +416,18 @@ let g:UltiSnipsEditSplit="vertical"
 	let g:spacegray_underline_search = 1
 	let g:spacegray_italicize_comments = 1
 	let ayucolor="light"
+	" nord colorscheme settings"
+	let g:nord_cursor_line_number_background = 0
+	let g:nord_uniform_status_line = 0
+	let g:nord_bold_vertical_split_line = 0
+	let g:nord_uniform_diff_background = 0
+	let g:nord_bold = 1
+	let g:nord_italic = 1
+	let g:nord_italic_comments = 1
+	let g:nord_underline = 1
 	"let ayucolor="mirage"
 	"let ayucolor="dark"
-	colorscheme gruvbox
+	colorscheme nord
     set go=a
     highlight Comment cterm=italic gui=italic
     highlight Search ctermbg=black ctermfg=yellow term=underline
@@ -449,9 +459,8 @@ let g:coc_global_extensions = [
   \ 'coc-pairs',
   \ 'coc-tsserver',
   \ 'coc-prettier',
-  \ 'coc-json',
-  \ 'coc-markdownlint',
   \ 'coc-markmap',
+  \ 'coc-json',
   \ 'coc-syntax',
   \ 'coc-java',
   \ 'coc-html',
@@ -459,6 +468,7 @@ let g:coc_global_extensions = [
   \ 'coc-css',
   \ 'coc-ultisnips'
   \ ]
+  " \ 'coc-markdownlint',
   " \ 'coc-tslint',
   " \ 'coc-tslint-plugin',
   " \ 'coc-eslint',
@@ -678,7 +688,7 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 " Vim-Airline configuration
    let g:airline#extensions#tabline#enabled=1
    let g:airline_powerline_fonts=0
-   let g:airline_theme='gruvbox'
+   let g:airline_theme='nord'
    let g:hybrid_custom_term_colors=1
    let g:hybrid_reduced_contrast=1
 
@@ -782,18 +792,6 @@ let g:NERDTreeDirArrowCollapsible = "◢"
 " breaks line beautifully instead of last fitting character
     set linebreak
 
-" folding settings
-
-" toggle foldcolumn <<<
-" function! ToggleFoldColumn()
-" 	if &foldcolumn
-" 		setlocal foldcolumn=0
-" 	else
-" 		setlocal foldcolumn=4
-" 	endif
-" endfunction
-" >>>
-
 " old
 " +--  7 lines: set foldmethod=indent··············
 "
@@ -803,18 +801,12 @@ let g:NERDTreeDirArrowCollapsible = "◢"
 	set foldmarker=<<<,>>>
 	set foldmethod=marker
 	set fillchars=vert:╏,fold:━
-    "     return l:start_arrow . l:lines . ': ' . l:first_line . ' '
-    " endfunction
+"
+	" I don't know why aren't they following this: "
+	autocmd FileType vimwiki set foldmethod=marker
+	autocmd FileType vimwiki set ft=markdown
+	autocmd FileType markdown set foldmethod=marker
 
-    " if has('folding')
-    "     " set foldmethod=indent     #check out :h foldmethod
-    "     set foldlevelstart=10
-    "     if has('windows')
-    "         " use wider line for folding
-    "         set fillchars+=fold:⏤
-    "         set foldtext=Foldtext()
-    "     endif
-    " endif
     autocmd BufWinLeave *.* mkview
     autocmd BufWinEnter *.* silent! loadview
 
@@ -822,7 +814,7 @@ let g:NERDTreeDirArrowCollapsible = "◢"
 "Markdown
 
 autocmd FileType markdown map <F7> :!pandoc<Space><C-r>%<space>-o<Space><C-r>%.pdf<Enter><Enter>
- autocmd FileType rmd map <F7> :!echo<space>"require(rmarkdown);<space>render('<c-r>%')"<space>\|<space>R<space>--vanilla<enter>
+autocmd FileType rmd map <F7> :!echo<space>"require(rmarkdown);<space>render('<c-r>%')"<space>\|<space>R<space>--vanilla<enter>
 
 " Automatically deletes all whitespace on save
     autocmd BufWritePre * %s/\s\+$//e
@@ -1059,19 +1051,19 @@ let g:lion_squeeze_spaces = 1
 
 
 " --- vim-gitgutter ----"(only using because of staging feature)
-let g:gitgutter_grep                    = 'rg'
-let g:gitgutter_map_keys                = 0
-let g:gitgutter_map_keys                = 0
+" let g:gitgutter_grep                    = 'rg'
+" let g:gitgutter_map_keys                = 0
+" let g:gitgutter_map_keys                = 0
 " let g:gitgutter_sign_added              = '▎'
 " let g:gitgutter_sign_modified           = '▎'
 " let g:gitgutter_sign_modified_removed   = '▶'
 " let g:gitgutter_sign_removed            = '▶'
 " let g:gitgutter_sign_removed_first_line = '◥'
-nmap [g <Plug>(GitGutterPrevHunk)
-nmap ]g <Plug>(GitGutterNextHunk)
-nmap <Leader>gp <Plug>(GitGutterPreviewHunk)
-nmap <Leader>+ <Plug>(GitGutterStageHunk)
-nmap <Leader>- <Plug>(GitGutterUndoHunk)
+" nmap [g <Plug>(GitGutterPrevHunk)
+" nmap ]g <Plug>(GitGutterNextHunk)
+" nmap <Leader>gp <Plug>(GitGutterPreviewHunk)
+" nmap <Leader>+ <Plug>(GitGutterStageHunk)
+" nmap <Leader>- <Plug>(GitGutterUndoHunk)
 nmap <leader>gs :set signcolumn=
 "----------------------------------------------------------------
 "----------------------------------------------------------------
@@ -1116,7 +1108,7 @@ nmap <F8> :TagbarToggle<CR>
 "----------------------------------------------------------------
 
 " ---- vim-signify ---------- "(first giving some try to vim-gitgutter)
-" nmap [g <plug>(signify-prev-hunk)
-" nmap ]g <plug>(signify-next-hunk)
-" nmap <leader>gJ 9999<leader>gj
-" nmap <leader>gK 9999<leader>gk
+nmap [g <plug>(signify-prev-hunk)
+nmap ]g <plug>(signify-next-hunk)
+nmap <leader>gJ 9999<leader>gj
+nmap <leader>gK 9999<leader>gk

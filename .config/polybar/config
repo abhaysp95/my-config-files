@@ -1,17 +1,18 @@
 [colors]
-background = #de282828
-foreground = #ebdbb2
-red        = #cc241d
-blue       = #458588
-teal       = #689d6a
-green      = #98971a
-purple     = #b16286
-orange     = #d65d0e
-indigo     = #d3869b
-black      = #3c3836
-white      = #ebdbb2
-yellow     = #d79921
-brown      = #fb4934
+foreground = #d8dee9
+background = #2e3440
+red        = #bf616a
+blue       = #81a1c1
+teal       = #88c0d0
+green      = #a3be8c
+purple     = #b48ead
+orange     = #ffa500
+indigo     = #4c566a
+black      = #000000
+white      = #e5e9f0
+yellow     = #ebcb8b
+brown      = #a52a2a
+lightbackground = #3b4252
 
 /* foreground = #f7f7fb */
 /* red        = #ea51b2 */
@@ -72,8 +73,8 @@ font-1 = Font Awesome 5 Free Solid:size=11;3
 
 ; Modlues
 modules-left   = i3
-modules-center = date time xwindow
-modules-right  = battery pulseaudio temperature lock logout reboot poweroff
+modules-center = time xwindow
+modules-right  = temperature pulseaudio battery lock logout reboot poweroff
 
 ;tray-position = left
 ;tray-padding = 2
@@ -165,13 +166,14 @@ ws-icon-0 = "Free;
 
 ; Focused label
 label-focused            = %name%
-label-focused-background = ${colors.background}
-label-focused-foreground = ${colors.yellow}
+label-focused-background = ${colors.red}
+label-focused-foreground = ${colors.background}
 label-focused-padding    = 1
 
 ; Unfocused labels
 label-unfocused            = %icon% %name%
-label-unfocused-foreground = ${colors.blue}
+label-unfocused-foreground = ${colors.background}
+label-unfocused-background = ${colors.indigo}
 label-unfocused-padding    = 1
 
 ; Visible labels
@@ -188,7 +190,7 @@ label-urgent-padding    = 1
 type = internal/xwindow
 label = %title:0:50:...%
 format-foreground = ${colors.foreground}
-format-background = ${colors.background}
+format-background = ${colors.lightbackground}
 label-padding = 2
 
 [module/weather]
@@ -216,51 +218,56 @@ battery = BAT0
 adapter = AC0
 
 ; Charging label
-label-charging            =  %percentage%%
-label-charging-background = ${colors.background}
-label-charging-foreground = ${colors.yellow}
+;label-charging           =  %percentage%%
+label-charging            = bat: %percentage%%
+label-charging-background = ${colors.yellow}
+label-charging-foreground = ${colors.background}
 label-charging-padding    = 1
 
 ; Discharging label
-label-discharging            =  %percentage%%
-label-discharging-background = ${colors.background}
-label-discharging-foreground = ${colors.red}
+;label-discharging            =  %percentage%%
+label-discharging            = bat: %percentage%%
+label-discharging-background = ${colors.teal}
+label-discharging-foreground = ${colors.background}
 label-discharging-padding    = 1
 
 ; Full label
-label-full            =  100%
-label-full-background = ${colors.background}
-label-full-foreground = ${colors.green}
+;label-full           =  100%
+label-full            = bat: 100%
+label-full-background = ${colors.green}
+label-full-foreground = ${colors.background}
 label-full-padding    = 1
 
 [module/temperature]
 type = internal/temperature
 
 ; Label
-label            =  %temperature%
-label-background = ${colors.background}
-label-foreground = ${colors.red}
+;label           =  %temperature%
+label            = temp: %temperature%
+label-background = ${colors.blue}
+label-foreground = ${colors.background}
 label-padding    = 1
 
 ; Warning label
-label-warn            =  %temperature%
-label-warn-background = ${colors.background}
-label-warn-foreground = ${colors.white}
+;label-warn           =  %temperature%
+label-warn            = temp: %temperature%
+label-warn-background = ${colors.white}
+label-warn-foreground = ${colors.background}
 label-warn-padding    = 1
 
 [module/pulseaudio]
 type = internal/pulseaudio
 
 ; Volume label
-label-volume            =  %percentage%%
-label-volume-background = ${colors.background}
-label-volume-foreground = ${colors.blue}
+label-volume            = vol: %percentage%%
+label-volume-background = ${colors.green}
+label-volume-foreground = ${colors.background}
 label-volume-padding    = 1
 
 ; Muted label
-label-muted            =  Muted
-label-muted-background = ${colors.background}
-label-muted-foreground = ${colors.red}
+label-muted            = vol: Muted
+label-muted-background = ${colors.red}
+label-muted-foreground = ${colors.background}
 label-muted-padding    = 1
 
 [module/time]
@@ -270,11 +277,15 @@ type = internal/date
 interval = 1.0
 
 ; Format
-time = %I:%M%P
+time = %I:%M %P
+date = %A, %d %B
 
 ; Label
-label         =   %time%
-label-padding = 2
+;label            =  %time%
+label            = time: %time%		date: %date%
+label-foreground = ${colors.foreground}
+label-background = ${colors.lightbackground}
+label-padding    = 2
 
 [module/date]
 type = internal/date
@@ -286,8 +297,10 @@ interval = 1.0
 date = %A, %d %B
 
 ; Label
-label         =   %date%
-label-padding = 2
+;label            =  %date%
+label-foreground = ${colors.foreground}
+label-background = ${colors.lightbackgrounds}
+label-padding    = 2
 
 ; [module/date]
 ; type = internal/date
@@ -308,9 +321,10 @@ label-padding = 2
 type = custom/text
 
 ; Label
-content = 
-content-background = ${colors.background}
-content-foreground = ${colors.green}
+;content = 
+content = lock
+content-background = ${colors.yellow}
+content-foreground = ${colors.background}
 content-padding    = 1
 
 ; Mouse click
@@ -320,9 +334,10 @@ click-left = slock
 type = custom/text
 
 ; Label
-content            = 
-content-background = ${colors.background}
-content-foreground = ${colors.cyan}
+;content            = 
+content		= logoff
+content-background = ${colors.cyan}
+content-foreground = ${colors.background}
 content-padding    = 1
 
 ; Mouse click
@@ -332,9 +347,10 @@ click-left = i3-msg exit
 type = custom/text
 
 ; Label
-content            = 
-content-background = ${colors.background}
-content-foreground = ${colors.teal}
+;content            = 
+content			= reboot
+content-background = ${colors.green}
+content-foreground = ${colors.background}
 content-padding    = 1
 
 ; Mouse click
@@ -344,9 +360,10 @@ click-left = reboot
 type = custom/text
 
 ; Label
-content            = 
-content-background = ${colors.background}
-content-foreground = ${colors.red}
+;content            = 
+content			= shdn
+content-background = ${colors.blue}
+content-foreground = ${colors.background}
 content-padding    = 1
 
 ; Mouse click
@@ -423,4 +440,4 @@ screenchange-reload     = true
 margin-top    = 10
 margin-bottom = 10
 
-;set ft=dosini
+; vim: set ft=dosini
