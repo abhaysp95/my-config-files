@@ -318,7 +318,7 @@ date = %A, %d %B
 
 ; Label
 ;label            =  %time%
-label            = time: %time%		date: %date%
+label            = time: %time%.date: %date%
 label-foreground = ${colors.foreground}
 label-background = ${colors.lightbackground}
 label-padding    = 2
