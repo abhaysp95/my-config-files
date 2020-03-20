@@ -2,6 +2,8 @@
 
 These are some of the config files and dot files which I use daily
 
+All the `scripts` are in `~/.local/bin/.scripts`
+
 ## Window Manager
 Using `i3wm` as my window manager
 
