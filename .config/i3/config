@@ -2,8 +2,8 @@
 ##---Basic Definitions---##
 for_window [class="^.*"] border pixel 2
 hide_edge_borders smart
-gaps inner 15
-gaps outer 0
+gaps inner 22
+gaps outer 8
 new_float none
 set $mod Mod4
 
@@ -67,7 +67,7 @@ bindsym $mod+Escape               workspace prev
 bindsym $mod+Shift+Escape         exec --no-startup-id prompt "Exit i3?" "i3-msg exit"
 
 #STOP/HIDE everything:
-bindsym $mod+Shift+Delete         exec --no-startup-id lmc truemate ; exec --no-startup-id lmc pause ; exec --no-startup-id pauseallmpv; workspace Manage:; exec $TERM -e htop ; exec alacritty -e ranger
+bindsym $mod+Shift+Delete         exec --no-startup-id lmc truemate ; exec --no-startup-id lmc pause ; exec --no-startup-id pauseallmpv; workspace Manage:; exec $TERM -e htop ; exec urxvt -e ranger
 
 ##---Letter key Bindings---##
 bindsym $mod+q                     [con_id="__focused__" instance="^(?!dropdown_).*$"] kill
@@ -158,7 +158,7 @@ bindsym $mod_Shift+XF86Back       move container to workspace prev
 bindsym $mod+XF86Forward          workspace next
 bindsym $mod+Shift+XF86Forward    move container to workspace next
 bindsym $mod+semicolon            workspace next
-bindsym $mod+Shift+semicolon      exec --no-startup-id alacritty -e ranger
+bindsym $mod+Shift+semicolon      exec --no-startup-id urxvt -e ranger
 bindsym $mod+apostrophe           split horizontal ;; exec $TERMINAL
 bindsym $mod+slash                split vertical ;; exec $TERMINAL
 bindsym $mod+Shift+slash          kill

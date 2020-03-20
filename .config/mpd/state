@@ -1,9 +1,9 @@
 sw_volume: 100
 audio_device_state:1:pulse audio
 audio_device_state:1:toggle_visualizer
-state: pause
-current: 1490
-time: 169.004000
+state: play
+current: 1698
+time: 4.097000
 random: 1
 repeat: 0
 single: 0
@@ -1708,4 +1708,7 @@ playlist_begin
 1693:Sultan_Mirza_new_haryanvi_song_by_sandeep_chandal_aage_pache_bullet_chale_or_bic.mp3
 1694:Dabangg 3_ Hud Hud Song _ Salman Khan _ Sonakshi Sinha _Divya Kumar,Shabab Sabri,Sajid _ Sajid Wajid.mp3
 1695:youtube/LYRICAL_ Tu Hi Toh Meri Dost Hain _ Yuvvraaj _ Salman Khan, Katrina Kaif _  A.R. Rahman _ T-Series.mp3
+1696:converted/Yaar-Beli-Guri-Ft.Deep-Jandu_Parmish_Verma.mp3
+1697:converted/_Raghupati_Raghav_Krrish_3__Full_Video_Song___Hrithik_Roshan,_Priyanka_Chopra_(_720_X_1280_).mp3
+1698:converted/Ud-daa_Punjab_-_Full_Video___Udta_Punjab___Vishal_Dadlani_&_Amit_Trivedi___Shahid_Kapoor_(_720_X_720_).mp3
 playlist_end

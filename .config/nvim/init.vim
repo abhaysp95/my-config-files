@@ -6,6 +6,8 @@
 "██╗╚████╔╝ ██║██║ ╚═╝ ██║██║  ██║╚██████╗
 "╚═╝ ╚═══╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝
 "				--> Abhay Shanker Pathak
+"
+
 
 let mapleader =","
 
@@ -174,7 +176,7 @@ set autoread
 set backspace=indent,eol,start
 set clipboard+=unnamedplus
 set complete+=kspell
-set completeopt=menuone,preview
+set completeopt=menuone,preview,longest
 " set cryptmethod=blowfish2
 set encoding=utf-8
 "set formatoptions=tcqrn1
@@ -381,7 +383,7 @@ function! QuickFix_toggle()
 
     copen
 endfunction
-nnoremap <silent><Leader>C :call QuickFix_toggle()<CR>
+nnoremap <silent><Leader>tq :call QuickFix_toggle()<CR>
 nmap <leader>ic :set noic<CR>
 
 "---------------------------------------------------------------------------
@@ -516,6 +518,42 @@ inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 " Or use `complete_info` if your vim support it, like:
 " inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
 
+" it doesn't take this much time to open a nvim file(recording is affecting)
+"
+" saw this? what type of completion was this and the one which is happening as I'm typing is just a general completion, right?
+
+" now see this,
+
+" saw that i pressed <C-space> to open the second type of completion menu, what was that? Also noticed that it had already selected the first one.
+
+" not selected, I had to press <C-n>
+
+" now, see
+" saw already selected first one
+
+" tying to improve completion pop-up menu: -----------------------
+" in first one, <c-n> works normally, however when completion menu appears the <Down> key is simulated.
+" this keeps the menu item always highlighted so that you can hit enter anytime to insert it.
+inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
+		\ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+" these two mappings are supposed to do show.
+" this one stimulates <C-x><C-o> to bring omni-completion menu, the stimulates <C-n><C-p> to remove longest common text
+" then finally stimulates <Down> again to keep match highlighted
+inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
+		\ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+
+" here's another example of set of mappings that first close any popups that are open which means you seamlessly switch between omni and user completions.
+" if the menu is visible, use the above trick to keep the text you typed and select first
+" open omni completion menu closing previous if open and opening new menu without changing the text
+inoremap <expr> <C-space> (pumvisible() ? (col('.') > 1 ? '<Esc>i<Right>' : '<Esc>i') : '') .
+			\ '<C-x><C-o><C-r>=pumvisible() ? "\<lt>C-n>\<lt>C-p>\<lt>Down>" : ""<CR>'
+" open user completion menu closing previous if open an opening new menu without changing the text
+inoremap <expr> <S-space> (pumvisible() ? (col('.') > 1 ? '<Esc>i<Right>' : '<Esc>i') : '') .
+			\ '<C-x><C-u><C-r>=pumvisible() ? "\<lt>C-n>\<lt>C-p>\<lt>Down>" : ""<CR>'
+
+" --------------------------------------------------------------------------------------------------
+" --------------------------------------------------------------------------------------------------
+
 " Remap for format selected region
 xmap <leader>v  <Plug>(coc-format-selected)
 nmap <leader>v  <Plug>(coc-format-selected)
@@ -592,7 +630,7 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
     let g:syntastic_check_on_wq=0
     " let g:syntastic_enable_elixir_checker = 1
     " let g:syntastic_elixir_checkers = ["elixir"]
-        map <leader>t :Errors<cr>
+        map <leader>te :Errors<cr>
         map <leader>T :SynstasticToggleMode<CR>
         " map <leader>t :SyntasticCheck
 
@@ -687,7 +725,7 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 " Vim-Airline configuration
    let g:airline#extensions#tabline#enabled=1
-   let g:airline_powerline_fonts=0
+   let g:airline_powerline_fonts=1
    let g:airline_theme='nord'
    let g:hybrid_custom_term_colors=1
    let g:hybrid_reduced_contrast=1
@@ -762,7 +800,7 @@ let g:NERDTreeDirArrowCollapsible = "◢"
     map <leader>S :!clear && shellcheck %<CR>
 
 " Compile document, for groff/LaTeX/markdown etc.
-    map <leader>c :w! \| !compiler <c-r>%<CR>
+    " map <leader>c :w! \| !compiler <c-r>%<CR>
 
 " Open corresponding .pdf/.html or preview
     map <leader>p :!opout <c-r>%<CR><CR>
@@ -787,7 +825,7 @@ let g:NERDTreeDirArrowCollapsible = "◢"
     autocmd BufRead,BufNewFile *.tex set filetype=tex
 
 " Save file as sudo on files that require root permission
-    cnoremap w! !execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
+    " cnoremap w! !execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 
 " breaks line beautifully instead of last fitting character
     set linebreak
@@ -856,7 +894,7 @@ noremap <Leader>P "+p
       " let g:indentLine_color_term = 208
       " let g:indentLine_char = '┃'
 	augroup FILETYPES
-		autocmd FileType markdown let b:indentLine_setConceal=0
+		autocmd FileType markdown let b:indentLine_setConceal=1
 	augroup END
 
 
@@ -1004,7 +1042,7 @@ autocmd VimEnter * HexokinaseTurnOn
 let g:grepper       = {}
 let g:grepper.tools = ["rg"]
 runtime autoload/grepper.vim
-let g:grepper.jump  = 1
+let g:grepper.jumps  = -1
 nnoremap <leader>/ :GrepperRg<Space>
 nnoremap gs :Grepper -cword -noprompt<CR>
 xmap gs <Plug>(GrepperOperator)

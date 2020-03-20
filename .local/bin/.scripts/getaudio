@@ -1,0 +1,29 @@
+#!/usr/bin/env sh
+
+# Author: Abhay Shanker Pathak
+# Date: 2020-03-20
+# Description: Convert to audio using ffmpeg
+# Email: abhaysp9955@gmail.com
+# Github: https://github.com/CoolAbhayS
+# Last Edited: 2020-03-20
+
+# using ffmpge to convert video to audio
+
+# Default path is $HOME/Music/converted
+
+echo 'Enter music format: '
+read -r music_format
+
+name=$(echo "$*" | cut -d'.' -f1)."$music_format"
+
+
+# base_file_name=$(basename -- "$name")
+
+music_name=$(basename -- "$name" | sed 's/ /\_/g')
+
+printf "Converting %s\nto\n%s" "$*" "$HOME/Music/converted/$music_name"
+
+# echo "converting $* to $music_name"
+
+ffmpeg -i "$*" "$HOME"/Music/converted/"$music_name"
+

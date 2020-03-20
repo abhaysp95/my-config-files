@@ -14366,3 +14366,412 @@ Mar 19 12:19 : client: [49] opened from 127.0.0.1:53390
 Mar 19 12:19 : client: [49] closed
 Mar 19 12:19 : client: [50] opened from 127.0.0.1:53394
 Mar 19 12:19 : client: [50] closed
+Mar 19 13:20 : client: [51] opened from 127.0.0.1:53548
+Mar 19 13:20 : client: [51] closed
+Mar 19 13:20 : client: [52] opened from 127.0.0.1:53552
+Mar 19 13:20 : client: [52] closed
+Mar 19 13:20 : client: [53] opened from 127.0.0.1:53556
+Mar 19 13:20 : client: [53] closed
+Mar 19 13:20 : client: [54] opened from 127.0.0.1:53560
+Mar 19 13:20 : client: [54] closed
+Mar 19 13:20 : client: [55] opened from 127.0.0.1:53564
+Mar 19 13:20 : client: [55] closed
+Mar 19 13:20 : client: [56] opened from 127.0.0.1:53568
+Mar 19 13:20 : client: [56] closed
+Mar 19 13:20 : client: [57] opened from 127.0.0.1:53572
+Mar 19 13:20 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 19 13:20 : client: [57] closed
+Mar 19 13:20 : client: [58] opened from 127.0.0.1:53576
+Mar 19 13:20 : client: [58] closed
+Mar 19 13:20 : client: [59] opened from 127.0.0.1:53580
+Mar 19 13:20 : client: [59] closed
+Mar 19 13:20 : client: [60] opened from 127.0.0.1:53584
+Mar 19 13:20 : client: [60] closed
+Mar 19 13:20 : client: [61] opened from 127.0.0.1:53588
+Mar 19 13:20 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Mar 19 13:20 : client: [61] closed
+Mar 19 13:20 : client: [62] opened from 127.0.0.1:53592
+Mar 19 13:20 : client: [62] closed
+Mar 19 13:20 : client: [63] opened from 127.0.0.1:53596
+Mar 19 13:20 : client: [63] closed
+Mar 19 13:20 : client: [64] opened from 127.0.0.1:53600
+Mar 19 13:20 : client: [64] closed
+Mar 19 13:20 : client: [65] opened from 127.0.0.1:53604
+Mar 19 13:20 : client: [65] closed
+Mar 19 13:20 : client: [66] opened from 127.0.0.1:53608
+Mar 19 13:20 : client: [66] closed
+Mar 19 13:20 : client: [67] opened from 127.0.0.1:53612
+Mar 19 13:20 : client: [67] closed
+Mar 19 13:20 : client: [68] opened from 127.0.0.1:53616
+Mar 19 13:20 : client: [68] closed
+Mar 19 13:24 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Mar 19 13:24 : player: played "Thor__Ragnarok_Song___God_Of_Thunder___#NerdOut_[Prod._by_Boston].m4a"
+Mar 19 13:27 : player: played "KIKI DO YOU LOVE ME DRAKE [Lyrics Video] [EmpNfW1N2dE].m4a"
+Mar 19 13:28 : client: [69] opened from 127.0.0.1:53676
+Mar 19 13:28 : client: [69] closed
+Mar 19 13:28 : client: [70] opened from 127.0.0.1:53680
+Mar 19 13:28 : client: [70] closed
+Mar 19 13:31 : player: played "Camila Cabello - Havana Ft. Young Thug (DawnFoxes.com).mp3"
+Mar 19 13:32 : client: [71] opened from 127.0.0.1:53690
+Mar 19 13:32 : client: [71] closed
+Mar 19 13:32 : client: [72] opened from 127.0.0.1:53694
+Mar 19 13:32 : client: [72] closed
+Mar 19 13:32 : client: [73] opened from 127.0.0.1:53698
+Mar 19 13:32 : client: [73] closed
+Mar 19 13:32 : client: [74] opened from 127.0.0.1:53702
+Mar 19 13:32 : client: [74] closed
+Mar 19 13:35 : player: played "Sapna Choudhary - TERI LAT LAG JAGI  Rikky Raaj Ruchika Jangid  Popular Haryanvi Dj Songs 2017.mp3"
+Mar 19 13:39 : player: played "Ed Sheeran - Hearts Don t Break Around Here (DawnFoxes.com).mp3"
+Mar 19 13:42 : player: played "Sam Smith, Normani - Dancing With A Stranger.mp3"
+Mar 19 13:46 : player: played "Camila Cabello - Consequences - orchestra.mp3"
+Mar 19 13:50 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Mar 19 13:50 : player: played "Rita Ora - How We Do (Party)  (DawnFoxes.com).mp3"
+Mar 19 13:53 : player: played "Chaar Churiyan (Full Song)  Inder Nagra Feat. Badshah  Latest Punjabi Songs 2016  Speed Records [w8IjTNtO-aE].m4a"
+Mar 19 13:56 : player: played "New York Theme - www.Pagalworld.com.mp3"
+Mar 19 13:59 : player: played "04. Nicki Minaj, Anuel AA & Bantu - Familia (Spider-Man- Into the Spider-Verse).mp3"
+Mar 19 14:03 : player: played "Crash - Usher (DJJOhAL.Com).mp3"
+Mar 19 14:07 : player: played "Arz asif hasan.mp3"
+Mar 19 14:10 : player: played "Iggy_Azalea_-_Change_Your_Life_(Explicit)_ft._T.I..m4a"
+Mar 19 14:14 : client: [75] opened from 127.0.0.1:54128
+Mar 19 14:14 : client: [75] closed
+Mar 19 14:14 : client: [76] opened from 127.0.0.1:54132
+Mar 19 14:14 : client: [76] closed
+Mar 19 17:24 : client: [77] opened from 127.0.0.1:54140
+Mar 19 17:24 : client: [77] closed
+Mar 19 17:24 : client: [78] opened from 127.0.0.1:54144
+Mar 19 17:24 : client: [78] closed
+Mar 19 17:24 : player: played "01. Blackway & Black Caviar - What's Up Danger.mp3"
+Mar 19 17:24 : client: [79] opened from 127.0.0.1:54148
+Mar 19 17:24 : client: [79] closed
+Mar 19 17:24 : client: [80] opened from 127.0.0.1:54152
+Mar 19 17:24 : client: [80] closed
+Mar 19 17:59 : client: [81] opened from 127.0.0.1:54156
+Mar 19 17:59 : client: [81] closed
+Mar 19 17:59 : client: [82] opened from 127.0.0.1:54160
+Mar 19 17:59 : client: [82] closed
+Mar 19 21:04 : client: [83] opened from 127.0.0.1:54594
+Mar 19 21:04 : client: [83] closed
+Mar 19 21:04 : client: [84] opened from 127.0.0.1:54598
+Mar 19 21:04 : client: [84] closed
+Mar 19 21:07 : client: [85] opened from 127.0.0.1:54606
+Mar 19 21:07 : client: [85] closed
+Mar 19 21:07 : client: [86] opened from 127.0.0.1:54610
+Mar 19 21:07 : client: [86] closed
+Mar 19 23:28 : client: [87] opened from 127.0.0.1:55642
+Mar 19 23:28 : client: [87] closed
+Mar 19 23:28 : client: [88] opened from 127.0.0.1:55646
+Mar 19 23:28 : client: [88] closed
+Mar 20 11:10 : client: [89] opened from 127.0.0.1:57756
+Mar 20 11:10 : client: [89] closed
+Mar 20 11:10 : client: [90] opened from 127.0.0.1:57760
+Mar 20 11:10 : client: [90] closed
+Mar 20 11:10 : client: [91] opened from 127.0.0.1:57764
+Mar 20 11:10 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 20 11:10 : client: [91] closed
+Mar 20 11:10 : client: [92] opened from 127.0.0.1:57768
+Mar 20 11:10 : client: [92] closed
+Mar 20 11:13 : client: [93] opened from 127.0.0.1:57772
+Mar 20 11:13 : client: [93] closed
+Mar 20 11:13 : client: [94] opened from 127.0.0.1:57776
+Mar 20 11:13 : client: [94] closed
+Mar 20 12:47 : client: [95] opened from 127.0.0.1:57780
+Mar 20 12:47 : client: [95] closed
+Mar 20 12:47 : client: [96] opened from 127.0.0.1:57784
+Mar 20 12:47 : client: [96] closed
+Mar 20 15:58 : client: [97] opened from 127.0.0.1:57956
+Mar 20 15:58 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Mar 20 15:58 : client: [97] closed
+Mar 20 15:58 : client: [98] opened from 127.0.0.1:57960
+Mar 20 15:58 : client: [98] closed
+Mar 20 15:58 : client: [99] opened from 127.0.0.1:57964
+Mar 20 15:58 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 20 15:58 : client: [99] closed
+Mar 20 15:58 : client: [100] opened from 127.0.0.1:57968
+Mar 20 15:58 : client: [100] closed
+Mar 20 15:58 : client: [101] opened from 127.0.0.1:57972
+Mar 20 15:58 : client: [101] closed
+Mar 20 15:58 : client: [102] opened from 127.0.0.1:57976
+Mar 20 15:58 : client: [102] closed
+Mar 20 15:58 : client: [103] opened from 127.0.0.1:57980
+Mar 20 15:58 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 20 15:58 : client: [103] closed
+Mar 20 15:58 : client: [104] opened from 127.0.0.1:57984
+Mar 20 15:58 : client: [104] closed
+Mar 20 15:58 : client: [105] opened from 127.0.0.1:57988
+Mar 20 15:58 : client: [105] closed
+Mar 20 15:58 : client: [106] opened from 127.0.0.1:57992
+Mar 20 15:58 : client: [106] closed
+Mar 20 15:58 : client: [107] opened from 127.0.0.1:57996
+Mar 20 15:58 : client: [107] closed
+Mar 20 15:58 : client: [108] opened from 127.0.0.1:58000
+Mar 20 15:58 : client: [108] closed
+Mar 20 15:58 : client: [109] opened from 127.0.0.1:58004
+Mar 20 15:58 : client: [109] closed
+Mar 20 15:58 : client: [110] opened from 127.0.0.1:58008
+Mar 20 15:58 : client: [110] closed
+Mar 20 15:58 : client: [111] opened from 127.0.0.1:58012
+Mar 20 15:58 : client: [111] closed
+Mar 20 15:58 : client: [112] opened from 127.0.0.1:58016
+Mar 20 15:58 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 20 15:58 : client: [112] closed
+Mar 20 15:58 : client: [113] opened from 127.0.0.1:58020
+Mar 20 15:58 : client: [113] closed
+Mar 20 15:58 : client: [114] opened from 127.0.0.1:58024
+Mar 20 15:58 : client: [114] closed
+Mar 20 15:58 : client: [115] opened from 127.0.0.1:58028
+Mar 20 15:58 : client: [115] closed
+Mar 20 15:58 : client: [116] opened from 127.0.0.1:58032
+Mar 20 15:58 : client: [116] closed
+Mar 20 15:58 : client: [117] opened from 127.0.0.1:58036
+Mar 20 15:58 : client: [117] closed
+Mar 20 18:41 : client: [118] opened from 127.0.0.1:59462
+Mar 20 18:41 : client: [118] closed
+Mar 20 18:41 : client: [119] opened from 127.0.0.1:59466
+Mar 20 18:41 : client: [119] closed
+Mar 20 18:42 : client: [120] opened from 127.0.0.1:59470
+Mar 20 18:42 : client: [120] closed
+Mar 20 18:42 : client: [121] opened from 127.0.0.1:59474
+Mar 20 18:42 : client: [121] closed
+Mar 20 18:42 : client: [122] opened from 127.0.0.1:59478
+Mar 20 18:42 : client: [122] closed
+Mar 20 18:42 : client: [123] opened from 127.0.0.1:59482
+Mar 20 18:42 : client: [123] closed
+Mar 20 18:42 : client: [124] opened from 127.0.0.1:59486
+Mar 20 18:42 : client: [124] closed
+Mar 20 18:42 : client: [125] opened from 127.0.0.1:59490
+Mar 20 18:42 : client: [125] closed
+Mar 20 18:42 : client: [126] opened from 127.0.0.1:59494
+Mar 20 18:42 : client: [126] closed
+Mar 20 18:42 : client: [127] opened from 127.0.0.1:59498
+Mar 20 18:42 : client: [127] closed
+Mar 20 18:42 : client: [128] opened from 127.0.0.1:59502
+Mar 20 18:42 : client: [128] closed
+Mar 20 18:42 : client: [129] opened from 127.0.0.1:59506
+Mar 20 18:42 : client: [129] closed
+Mar 20 18:42 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 20 18:42 : client: [130] opened from 127.0.0.1:59510
+Mar 20 18:42 : client: [130] closed
+Mar 20 18:42 : client: [131] opened from 127.0.0.1:59514
+Mar 20 18:42 : client: [131] closed
+Mar 20 18:42 : client: [132] opened from 127.0.0.1:59518
+Mar 20 18:42 : client: [132] closed
+Mar 20 18:42 : client: [133] opened from 127.0.0.1:59522
+Mar 20 18:42 : client: [133] closed
+Mar 20 18:42 : client: [134] opened from 127.0.0.1:59526
+Mar 20 18:42 : client: [134] closed
+Mar 20 18:42 : client: [135] opened from 127.0.0.1:59530
+Mar 20 18:42 : client: [135] closed
+Mar 20 18:42 : client: [136] opened from 127.0.0.1:59534
+Mar 20 18:42 : client: [136] closed
+Mar 20 18:42 : client: [137] opened from 127.0.0.1:59538
+Mar 20 18:42 : client: [137] closed
+Mar 20 18:42 : client: [138] opened from 127.0.0.1:59542
+Mar 20 18:42 : client: [138] closed
+Mar 20 18:42 : client: [139] opened from 127.0.0.1:59546
+Mar 20 18:42 : client: [139] closed
+Mar 20 18:42 : client: [140] opened from 127.0.0.1:59550
+Mar 20 18:42 : client: [140] closed
+Mar 20 18:42 : client: [141] opened from 127.0.0.1:59554
+Mar 20 18:42 : client: [141] closed
+Mar 20 18:42 : client: [142] opened from 127.0.0.1:59558
+Mar 20 18:42 : client: [142] closed
+Mar 20 18:42 : client: [143] opened from 127.0.0.1:59562
+Mar 20 18:42 : client: [143] closed
+Mar 20 18:42 : client: [144] opened from 127.0.0.1:59566
+Mar 20 18:42 : client: [144] closed
+Mar 20 18:42 : client: [145] opened from 127.0.0.1:59570
+Mar 20 18:42 : client: [145] closed
+Mar 20 18:42 : client: [146] opened from 127.0.0.1:59574
+Mar 20 18:42 : client: [146] closed
+Mar 20 18:42 : client: [147] opened from 127.0.0.1:59578
+Mar 20 18:42 : client: [147] closed
+Mar 20 18:42 : client: [148] opened from 127.0.0.1:59582
+Mar 20 18:42 : client: [148] closed
+Mar 20 18:42 : client: [149] opened from 127.0.0.1:59586
+Mar 20 18:42 : client: [149] closed
+Mar 20 18:44 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 20 18:44 : player: played "Shape_of_you__7C_Mercy__7C_Cheap_Thrills__7C_Chez_Badi_Hai_Mast_Mast__7C_A_Fusion_Dance_.mp3"
+Mar 20 18:47 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Mar 20 18:47 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Mar 20 18:47 : player: played "Prada - JASS MANAK  Satti Dhillon  Latest Punjabi Song 2018  GK.DIGITAL  Geet MP3 [PjTU0DmBWiU].webm"
+Mar 20 18:51 : player: played "Zee Music Company - Sare Karo Dab - Official Music Video  Zero To Infinity  Raftaar  Sonu Kakkar  Mu [zIPTP3TKUSg].m4a"
+Mar 20 18:54 : client: [150] opened from 127.0.0.1:59720
+Mar 20 18:54 : client: [150] closed
+Mar 20 18:54 : client: [151] opened from 127.0.0.1:59724
+Mar 20 18:54 : client: [151] closed
+Mar 20 19:12 : client: [152] opened from 127.0.0.1:59940
+Mar 20 19:12 : client: [152] closed
+Mar 20 19:12 : client: [153] opened from 127.0.0.1:59944
+Mar 20 19:12 : client: [153] closed
+Mar 20 19:12 : player: played "H.E.R. - Every Kind of Way (DawnFoxes.com).mp3"
+Mar 20 19:16 : player: played "Alicia_Keys_-_Fallin_.mp3"
+Mar 20 19:16 : client: [154] opened from 127.0.0.1:59950
+Mar 20 19:16 : client: [154] closed
+Mar 20 19:16 : client: [155] opened from 127.0.0.1:59954
+Mar 20 19:16 : client: [155] closed
+Mar 20 19:18 : client: [156] opened from 127.0.0.1:59958
+Mar 20 19:18 : client: [156] closed
+Mar 20 19:18 : client: [157] opened from 127.0.0.1:59962
+Mar 20 19:18 : client: [157] closed
+Mar 20 19:23 : player: played "P!nk - Beautiful Trauma (Official Video).mp3"
+Mar 20 19:24 : client: [158] opened from 127.0.0.1:59966
+Mar 20 19:24 : client: [158] closed
+Mar 20 19:24 : client: [159] opened from 127.0.0.1:59970
+Mar 20 19:24 : client: [159] closed
+Mar 20 19:24 : client: [160] opened from 127.0.0.1:59974
+Mar 20 19:24 : client: [160] closed
+Mar 20 19:24 : client: [161] opened from 127.0.0.1:59978
+Mar 20 19:24 : client: [161] closed
+Mar 20 19:24 : client: [162] opened from 127.0.0.1:59982
+Mar 20 19:24 : client: [162] closed
+Mar 20 19:24 : client: [163] opened from 127.0.0.1:59986
+Mar 20 19:24 : client: [163] closed
+Mar 20 19:27 : client: [164] opened from 127.0.0.1:59990
+Mar 20 19:27 : client: [164] closed
+Mar 20 19:27 : client: [165] opened from 127.0.0.1:59994
+Mar 20 19:27 : client: [165] closed
+Mar 20 19:27 : client: [166] opened from 127.0.0.1:59998
+Mar 20 19:27 : client: [167] opened from 127.0.0.1:60002
+Mar 20 19:27 : client: [166] closed
+Mar 20 19:27 : client: [167] closed
+Mar 20 19:27 : client: [168] opened from 127.0.0.1:60006
+Mar 20 19:27 : client: [168] closed
+Mar 20 19:27 : client: [169] opened from 127.0.0.1:60010
+Mar 20 19:27 : client: [169] closed
+Mar 20 19:31 : client: [170] opened from 127.0.0.1:60014
+Mar 20 19:31 : client: [170] closed
+Mar 20 19:31 : client: [171] opened from 127.0.0.1:60018
+Mar 20 19:31 : client: [171] closed
+Mar 20 19:35 : player: played "🐻 Jordan Schor X Harley Bird - Home (Lyrics Video).mp3"
+Mar 20 19:38 : player: played "Alan_Walker_-_Alone.mp3"
+Mar 20 19:38 : client: [172] opened from 127.0.0.1:60022
+Mar 20 19:38 : client: [172] closed
+Mar 20 19:38 : client: [173] opened from 127.0.0.1:60026
+Mar 20 19:38 : client: [173] closed
+Mar 20 19:38 : client: [174] opened from 127.0.0.1:60030
+Mar 20 19:38 : client: [174] closed
+Mar 20 19:38 : client: [175] opened from 127.0.0.1:60038
+Mar 20 19:38 : client: [176] opened from 127.0.0.1:60040
+Mar 20 19:38 : client: [175] closed
+Mar 20 19:38 : client: [176] closed
+Mar 20 19:38 : client: [177] opened from 127.0.0.1:60044
+Mar 20 19:38 : client: [177] closed
+Mar 20 19:38 : client: [178] opened from 127.0.0.1:60048
+Mar 20 19:38 : client: [178] closed
+Mar 20 19:38 : client: [179] opened from 127.0.0.1:60052
+Mar 20 19:38 : client: [179] closed
+Mar 20 19:38 : client: [180] opened from 127.0.0.1:60056
+Mar 20 19:38 : client: [181] opened from 127.0.0.1:60060
+Mar 20 19:38 : client: [180] closed
+Mar 20 19:38 : client: [181] closed
+Mar 20 19:38 : client: [182] opened from 127.0.0.1:60064
+Mar 20 19:38 : client: [182] closed
+Mar 20 19:38 : client: [183] opened from 127.0.0.1:60068
+Mar 20 19:38 : client: [183] closed
+Mar 20 19:38 : client: [184] opened from 127.0.0.1:60072
+Mar 20 19:38 : client: [184] closed
+Mar 20 19:38 : client: [185] opened from 127.0.0.1:60076
+Mar 20 19:38 : client: [185] closed
+Mar 20 19:38 : client: [186] opened from 127.0.0.1:60080
+Mar 20 19:38 : client: [186] closed
+Mar 20 19:38 : client: [187] opened from 127.0.0.1:60084
+Mar 20 19:38 : client: [187] closed
+Mar 20 19:42 : client: [188] opened from 127.0.0.1:60088
+Mar 20 19:42 : client: [188] closed
+Mar 20 19:42 : client: [189] opened from 127.0.0.1:60092
+Mar 20 19:42 : client: [189] closed
+Mar 20 19:44 : client: [190] opened from 127.0.0.1:60096
+Mar 20 19:44 : client: [190] closed
+Mar 20 19:44 : client: [191] opened from 127.0.0.1:60100
+Mar 20 19:44 : client: [191] closed
+Mar 20 20:15 : client: [192] opened from 127.0.0.1:60104
+Mar 20 20:15 : client: [192] closed
+Mar 20 20:15 : client: [193] opened from 127.0.0.1:60108
+Mar 20 20:15 : client: [193] closed
+Mar 20 20:17 : player: played "Major_Lazer_-_Night_Riders__28Need_For_Speed_Official__E3_Trailer_Soundtrack_29.m4a"
+Mar 20 20:22 : player: played "Justin_Bieber_-_What_Do_You_Mean_(1).m4a"
+Mar 20 20:25 : client: [194] opened from 127.0.0.1:60112
+Mar 20 20:25 : client: [194] closed
+Mar 20 20:25 : client: [195] opened from 127.0.0.1:60116
+Mar 20 20:25 : client: [195] closed
+Mar 20 20:25 : client: [196] opened from 127.0.0.1:60120
+Mar 20 20:25 : client: [196] closed
+Mar 20 20:25 : client: [197] opened from 127.0.0.1:60124
+Mar 20 20:25 : client: [197] closed
+Mar 20 20:25 : client: [198] opened from 127.0.0.1:60128
+Mar 20 20:25 : client: [198] closed
+Mar 20 20:25 : client: [199] opened from 127.0.0.1:60132
+Mar 20 20:25 : client: [199] closed
+Mar 20 20:25 : client: [200] opened from 127.0.0.1:60136
+Mar 20 20:25 : client: [200] closed
+Mar 20 20:25 : client: [201] opened from 127.0.0.1:60140
+Mar 20 20:25 : client: [201] closed
+Mar 20 20:25 : client: [202] opened from 127.0.0.1:60144
+Mar 20 20:25 : client: [202] closed
+Mar 20 20:25 : client: [203] opened from 127.0.0.1:60148
+Mar 20 20:25 : client: [203] closed
+Mar 20 20:38 : exception: Failed to access /home/raytracer/Music/got: Too many levels of symbolic links
+Mar 20 20:38 : exception: Failed to open /home/raytracer/.config/mpd/playlists: No such file or directory
+Mar 20 20:43 : update: added converted/Yaar-Beli-Guri-Ft.Deep-Jandu_Parmish_Verma.mp3
+Mar 20 20:43 : exception: Failed to open /home/raytracer/.config/mpd/playlists: No such file or directory
+Mar 20 20:43 : client: [204] opened from 127.0.0.1:60326
+Mar 20 20:43 : client: [204] closed
+Mar 20 20:43 : client: [205] opened from 127.0.0.1:60330
+Mar 20 20:43 : client: [205] closed
+Mar 20 20:43 : client: [206] opened from 127.0.0.1:60334
+Mar 20 20:43 : client: [206] closed
+Mar 20 20:43 : client: [207] opened from 127.0.0.1:60338
+Mar 20 20:43 : client: [207] closed
+Mar 20 20:43 : client: [208] opened from 127.0.0.1:60342
+Mar 20 20:43 : client: [208] closed
+Mar 20 20:43 : exception: Failed to open /home/raytracer/.config/mpd/playlists: No such file or directory
+Mar 20 21:45 : update: added converted/_Raghupati_Raghav_Krrish_3__Full_Video_Song___Hrithik_Roshan,_Priyanka_Chopra_(_720_X_1280_).mp3
+Mar 20 21:45 : client: [209] opened from 127.0.0.1:60530
+Mar 20 21:45 : client: [209] closed
+Mar 20 21:45 : client: [210] opened from 127.0.0.1:60534
+Mar 20 21:45 : client: [210] closed
+Mar 20 21:45 : client: [211] opened from 127.0.0.1:60538
+Mar 20 21:45 : client: [211] closed
+Mar 20 21:45 : client: [212] opened from 127.0.0.1:60542
+Mar 20 21:45 : client: [212] closed
+Mar 20 21:45 : client: [213] opened from 127.0.0.1:60546
+Mar 20 21:45 : client: [213] closed
+Mar 20 21:45 : client: [214] opened from 127.0.0.1:60550
+Mar 20 21:45 : client: [214] closed
+Mar 20 21:49 : exception: Failed to open /home/raytracer/.config/mpd/playlists: No such file or directory
+Mar 20 21:53 : update: added converted/Justin_Bieber_-_Baby_ft.mp3
+Mar 20 22:04 : client: [215] opened from 127.0.0.1:60554
+Mar 20 22:04 : client: [215] closed
+Mar 20 22:07 : player: played "converted/Yaar-Beli-Guri-Ft.Deep-Jandu_Parmish_Verma.mp3"
+Mar 20 22:11 : client: [216] opened from 127.0.0.1:60580
+Mar 20 22:11 : client: [216] closed
+Mar 20 22:11 : client: [217] opened from 127.0.0.1:60584
+Mar 20 22:11 : client: [217] closed
+Mar 20 22:11 : client: [218] opened from 127.0.0.1:60588
+Mar 20 22:11 : client: [218] closed
+Mar 20 22:11 : client: [219] opened from 127.0.0.1:60592
+Mar 20 22:11 : client: [219] closed
+Mar 20 22:11 : player: played "Teri Pyari Pyari Do Akhiyan🔥❤ BASS BOOSTEDSUBSCRIBE PLSSSSSSS🔥 technical guruji....mp3"
+Mar 20 22:13 : update: added converted/Ud-daa_Punjab_-_Full_Video___Udta_Punjab___Vishal_Dadlani_&_Amit_Trivedi___Shahid_Kapoor_(_720_X_720_).mp3
+Mar 20 22:14 : client: [220] opened from 127.0.0.1:60602
+Mar 20 22:14 : client: [220] closed
+Mar 20 22:14 : client: [221] opened from 127.0.0.1:60606
+Mar 20 22:14 : client: [221] closed
+Mar 20 22:16 : client: [222] opened from 127.0.0.1:60610
+Mar 20 22:16 : client: [222] closed
+Mar 20 22:16 : client: [223] opened from 127.0.0.1:60614
+Mar 20 22:16 : client: [223] closed
+Mar 20 22:17 : client: [224] opened from 127.0.0.1:60618
+Mar 20 22:17 : client: [224] closed
+Mar 20 22:17 : client: [225] opened from 127.0.0.1:60622
+Mar 20 22:17 : client: [225] closed
+Mar 20 22:21 : client: [226] opened from 127.0.0.1:60632
+Mar 20 22:21 : client: [226] closed
+Mar 20 22:21 : client: [227] opened from 127.0.0.1:60636
+Mar 20 22:21 : client: [227] closed
+Mar 20 22:21 : client: [228] opened from 127.0.0.1:60640
+Mar 20 22:21 : client: [228] closed
+Mar 20 22:21 : client: [229] opened from 127.0.0.1:60644
+Mar 20 22:21 : client: [229] closed
+Mar 20 22:21 : client: [230] opened from 127.0.0.1:60648
+Mar 20 22:21 : client: [230] closed
