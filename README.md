@@ -39,4 +39,4 @@ I'm using `liquidprompt`, right now
 ![liquidprompt](temp/screenshots/liquidpromptss.png)
 
 ## Corona Update
-![corona](temp/corona_check.png)
+![corona](temp/screenshots/corona_check.png)
