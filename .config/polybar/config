@@ -47,7 +47,7 @@ radius = 0
 fixed-center = true
 
 ; Colors
-background = ${colors.background}
+background = ${colors.red}
 foreground = ${colors.foreground}
 
 ; Underline
@@ -140,7 +140,7 @@ cursor-scroll = ns-resize
 type = custom/text
 
 content = ""
-content-foreground = ${colors.red}
+content-foreground = ${colors.background}
 
 [module/d]
 type = custom/text
@@ -152,14 +152,14 @@ content-prefix-background  ${colors.yellow}
 [module/i3]
 type = internal/i3
 
-format-prefix = "%{T3}%{T-}"
-format-prefix-foreground = ${colors.red}
-format-prefix-background = ${colors.indigo}
+; format-prefix = "%{T3}%{T-}"
+; format-prefix-foreground = ${colors.indigo}
+; format-prefix-background = ${colors.red}
 
 ;format-suffix = 
 format-suffix = "%{T3}%{T-}"
-format-suffix-foreground = ${colors.indigo}
-format-suffix-background = ${colors.background}
+format-suffix-foreground = ${colors.background}
+format-suffix-background = ${colors.red}
 
 ; Mouse click
 enable-click = true
@@ -190,14 +190,14 @@ ws-icon-0 = "Free;
 
 ; Focused label
 label-focused            = %name%
-label-focused-background = ${colors.red}
-label-focused-foreground = ${colors.background}
+label-focused-background = ${colors.background}
+label-focused-foreground = ${colors.red}
 label-focused-padding    = 1
 
 ; Unfocused labels
 label-unfocused            = %icon% %name%
 label-unfocused-foreground = ${colors.background}
-label-unfocused-background = ${colors.indigo}
+label-unfocused-background = ${colors.red}
 label-unfocused-padding    = 1
 
 ; Visible labels
@@ -213,13 +213,13 @@ label-urgent-padding    = 1
 [module/xwindow]
 
 format-suffix = "%{T3}%{T-}"
-format-suffix-foreground = ${colors.lightbackground}
-format-suffix-background = ${colors.background}
+format-suffix-foreground = ${colors.background}
+format-suffix-background = ${colors.red}
 
 type = internal/xwindow
 label = %title:0:50:...%
 format-foreground = ${colors.foreground}
-format-background = ${colors.lightbackground}
+format-background = ${colors.background}
 label-padding = 2
 
 [module/weather]
@@ -248,7 +248,7 @@ adapter = AC0
 
 ; Charging label
 ;label-charging           =  %percentage%%
-label-charging            = bat: %percentage%%
+label-charging            = bat: %percentage%% ¦
 label-charging-background = ${colors.yellow}
 label-charging-foreground = ${colors.background}
 label-charging-padding    = 1
@@ -256,7 +256,7 @@ label-charging-padding    = 1
 ; Discharging label
 ;label-discharging            =  %percentage%%
 label-discharging            = bat: %percentage%%
-label-discharging-background = ${colors.teal}
+label-discharging-background = ${colors.red}
 label-discharging-foreground = ${colors.background}
 label-discharging-padding    = 1
 
@@ -271,12 +271,16 @@ label-full-padding    = 1
 type = internal/temperature
 
 format-prefix = "%{T3}%{T-}"
-format-prefix-foreground = ${colors.teal}
-format-prefix-background = ${colors.background}
+format-prefix-foreground = ${colors.background}
+format-prefix-background = ${colors.red}
+
+format-suffix = ¦
+format-suffix-foreground = ${colors.background}
+format-suffix-background = ${colors.red}
 ; Label
 ;label           =  %temperature%
 label            = temp: %temperature%
-label-background = ${colors.blue}
+label-background = ${colors.red}
 label-foreground = ${colors.background}
 label-padding    = 1
 
@@ -291,8 +295,8 @@ label-warn-padding    = 1
 type = internal/pulseaudio
 
 ; Volume label
-label-volume            = vol: %percentage%%
-label-volume-background = ${colors.green}
+label-volume            = vol: %percentage%% ¦
+label-volume-background = ${colors.red}
 label-volume-foreground = ${colors.background}
 label-volume-padding    = 1
 
@@ -306,8 +310,8 @@ label-muted-padding    = 1
 type = internal/date
 
 format-prefix = "%{T3}%{T-}"
-format-prefix-foreground = ${colors.lightbackground}
-format-prefix-background = ${colors.background}
+format-prefix-foreground = ${colors.background}
+format-prefix-background = ${colors.red}
 
 ; Update interval
 interval = 1.0
@@ -320,7 +324,7 @@ date = %A, %d %B
 ;label            =  %time%
 label            = time: %time%.date: %date%
 label-foreground = ${colors.foreground}
-label-background = ${colors.lightbackground}
+label-background = ${colors.background}
 label-padding    = 2
 
 [module/date]
@@ -358,8 +362,8 @@ type = custom/text
 
 ; Label
 ;content = 
-content = lock
-content-background = ${colors.yellow}
+content = lock ¦
+content-background = ${colors.red}
 content-foreground = ${colors.background}
 content-padding    = 1
 
@@ -384,8 +388,8 @@ type = custom/text
 
 ; Label
 ;content            = 
-content			= reboot
-content-background = ${colors.green}
+content			= reboot ¦
+content-background = ${colors.red}
 content-foreground = ${colors.background}
 content-padding    = 1
 
@@ -398,7 +402,7 @@ type = custom/text
 ; Label
 ;content            = 
 content			= shdn
-content-background = ${colors.blue}
+content-background = ${colors.red}
 content-foreground = ${colors.background}
 content-padding    = 1
 
