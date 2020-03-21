@@ -231,6 +231,7 @@ nnoremap <leader>rc :%s///gc<Left><Left><Left>
 " same as above but works on visual selection with *(requires vim-visual-star-search plugin)
 
 xnoremap <leader>ro :s///g<Left><Left>
+xnoremap <leader>rd :s//
 xnoremap <leader>ra :%s///g<Left><Left>
 xnoremap <leader>rc :%s///gc<Left><Left><Left>
 
