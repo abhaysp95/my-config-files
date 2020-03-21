@@ -37,3 +37,6 @@ I'm using `liquidprompt`, right now
 
 `Screenshot liquidprompt`
 ![liquidprompt](temp/screenshots/liquidpromptss.png)
+
+## Corona Update
+![corona](temp/corona_check.png)
