@@ -122,7 +122,8 @@ module-margin-left  = 0
 module-margin-right = 0
 
 ; Font
-font-0 = Fira Code:style=Bold:size=10;3
+;font-0 = Fira Code:style=Bold:size=10;3
+font-0 = SFMono Nerd Font:style=Bold:size=10;3
 font-1 = Font Awesome 5 Free Solid:size=12;3
 
 ; Modlues
@@ -157,9 +158,9 @@ type = internal/i3
 ; format-prefix-background = ${colors.red}
 
 ;format-suffix = 
-format-suffix = "%{T3}%{T-}"
-format-suffix-foreground = ${colors.background}
-format-suffix-background = ${colors.red}
+;format-suffix = "%{T3}%{T-}"
+;format-suffix-foreground = ${colors.background}
+;format-suffix-background = ${colors.red}
 
 ; Mouse click
 enable-click = true
@@ -175,16 +176,27 @@ index-sort = true
 
 ; Icons
 
-ws-icon-1 = Terminal;
-ws-icon-2 = Web;
-ws-icon-3 = Music;
-ws-icon-4 = Videos;
-ws-icon-5 = Term2;
-ws-icon-6 = Code;
-ws-icon-7 = Chat;
-ws-icon-8 = Random;
-ws-icon-9 = Read;
-ws-icon-0 = "Free;
+;ws-icon-1 = Terminal;
+;ws-icon-2 = Web;
+;ws-icon-3 = Music;
+;ws-icon-4 = Videos;
+;ws-icon-5 = Term2;
+;ws-icon-6 = Code;
+;ws-icon-7 = Chat;
+;ws-icon-8 = Random;
+;ws-icon-9 = Read;
+;ws-icon-0 = "Free;
+
+ws-icon-1 = 1
+ws-icon-2 = 2
+ws-icon-3 = 3
+ws-icon-4 = 4
+ws-icon-5 = 5
+ws-icon-6 = 6
+ws-icon-7 = 7
+ws-icon-8 = 8
+ws-icon-9 = 9
+ws-icon-0 = 0
 
 ;ws-icon-default = 
 
@@ -221,6 +233,18 @@ label = %title:0:50:...%
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 label-padding = 2
+
+[module/corona]
+type = custom/script
+
+; Script
+exec = /home/raytracer/.local/bin/.scripts/corona_check
+
+; update interval
+interval = 300
+
+; Label
+label = %output%
 
 [module/weather]
 type = custom/script
@@ -270,9 +294,9 @@ label-full-padding    = 1
 [module/temperature]
 type = internal/temperature
 
-format-prefix = "%{T3}%{T-}"
-format-prefix-foreground = ${colors.background}
-format-prefix-background = ${colors.red}
+;format-prefix = "%{T3}%{T-}"
+;format-prefix-foreground = ${colors.background}
+;format-prefix-background = ${colors.red}
 
 format-suffix = ¦
 format-suffix-foreground = ${colors.background}
