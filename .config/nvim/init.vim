@@ -224,6 +224,7 @@ nnoremap <M-;> :noh<CR>:<backspace>
 " replacement of words ----------------
 " press * then press a mapping below to replace all instances
 nnoremap <leader>ro :s///g<Left><Left>
+nnoremap <leader>rd :s//
 nnoremap <leader>ra :%s///g<Left><Left>
 nnoremap <leader>rc :%s///gc<Left><Left><Left>
 

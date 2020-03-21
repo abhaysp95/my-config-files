@@ -1,9 +1,9 @@
 sw_volume: 100
 audio_device_state:1:pulse audio
 audio_device_state:1:toggle_visualizer
-state: play
-current: 1698
-time: 4.097000
+state: pause
+current: 1020
+time: 212.459000
 random: 1
 repeat: 0
 single: 0
@@ -1711,4 +1711,5 @@ playlist_begin
 1696:converted/Yaar-Beli-Guri-Ft.Deep-Jandu_Parmish_Verma.mp3
 1697:converted/_Raghupati_Raghav_Krrish_3__Full_Video_Song___Hrithik_Roshan,_Priyanka_Chopra_(_720_X_1280_).mp3
 1698:converted/Ud-daa_Punjab_-_Full_Video___Udta_Punjab___Vishal_Dadlani_&_Amit_Trivedi___Shahid_Kapoor_(_720_X_720_).mp3
+1699:converted/Justin_Bieber_-_Baby_ft.mp3
 playlist_end
