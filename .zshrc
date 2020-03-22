@@ -200,7 +200,7 @@ zle -N zle-line-finish
 source ~/.aliases                                      # aliases
 
 #neofetch | lolcat -t
-pfetch
+#pfetch
 #figlet -f /usr/share/fonts/figlet-fonts/ANSI\ Shadow.flf "zsh ready" | lolcat -t
 
 export PATH="$HOME/.local/bin/.scripts:$PATH"
@@ -339,6 +339,9 @@ source /home/raytracer/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # source solarized8
 #source $HOME/.config/nvim/plugged/vim-solarized8/scripts/solarized8.sh
+
+# corona_check
+corona_check &
 
 ## liquidprompt
 [[ $- = *i* ]] && source ~/Downloads/git-materials/liquidprompt/liquidprompt
