@@ -47,8 +47,8 @@ radius = 0
 fixed-center = true
 
 ; Colors
-background = ${colors.red}
-foreground = ${colors.foreground}
+background = ${colors.background}
+foreground = ${colors.red}
 
 ; Underline
 line-size  = 2
@@ -72,8 +72,8 @@ font-0 = Fura Code Nerd Font:style=Bold:size=9;3
 font-1 = Font Awesome 5 Free Solid:size=12;3
 
 ; Modlues
-modules-left   = i3
-modules-center = time xwindow
+modules-left   = i3 xwindow
+modules-center = time
 modules-right  = temperature pulseaudio battery lock logout reboot poweroff
 
 ;tray-position = left
@@ -202,14 +202,14 @@ ws-icon-0 = 0
 
 ; Focused label
 label-focused            = %name%
-label-focused-background = ${colors.background}
-label-focused-foreground = ${colors.red}
+label-focused-foreground = ${colors.background}
+label-focused-background = ${colors.red}
 label-focused-padding    = 1
 
 ; Unfocused labels
 label-unfocused            = %icon% %name%
-label-unfocused-foreground = ${colors.background}
-label-unfocused-background = ${colors.red}
+label-unfocused-foreground = ${colors.red}
+label-unfocused-background = ${colors.background}
 label-unfocused-padding    = 1
 
 ; Visible labels
@@ -219,32 +219,34 @@ label-visible-padding    = 1
 
 ; Urgent labels
 label-urgent            = %icon% %name%
-label-urgent-foreground = ${colors.red}
+label-urgent-foreground = ${colors.background}
+label-urgent-background = ${colors.yellow}
 label-urgent-padding    = 1
 
 [module/xwindow]
 
 format-suffix = "%{T3}%{T-}"
-format-suffix-foreground = ${colors.background}
-format-suffix-background = ${colors.red}
+format-suffix-foreground = ${colors.red}
+format-suffix-background = ${colors.background}
 
 type = internal/xwindow
-label = %title:0:50:...%
-format-foreground = ${colors.foreground}
-format-background = ${colors.background}
+label = %title:0:40:...%
+format-foreground = ${colors.background}
+format-background = ${colors.red}
 label-padding = 2
 
 [module/corona]
 type = custom/script
 
 ; Script
-exec = /home/raytracer/.local/bin/.scripts/corona_check
+exec = /home/raytracer/.config/polybar/corona_check
 
 ; update interval
 interval = 300
 
 ; Label
 label = %output%
+label-foreground = ${colors.foreground}
 
 [module/weather]
 type = custom/script
@@ -280,8 +282,8 @@ label-charging-padding    = 1
 ; Discharging label
 ;label-discharging            =  %percentage%%
 label-discharging            = bat: %percentage%%
-label-discharging-background = ${colors.red}
-label-discharging-foreground = ${colors.background}
+label-discharging-background = ${colors.background}
+label-discharging-foreground = ${colors.red}
 label-discharging-padding    = 1
 
 ; Full label
@@ -295,17 +297,17 @@ label-full-padding    = 1
 type = internal/temperature
 
 ;format-prefix = "%{T3}%{T-}"
-;format-prefix-foreground = ${colors.background}
-;format-prefix-background = ${colors.red}
+;format-prefix-foreground = ${colors.red}
+;format-prefix-background = ${colors.background}
 
 format-suffix = ¦
-format-suffix-foreground = ${colors.background}
-format-suffix-background = ${colors.red}
+format-suffix-foreground = ${colors.red}
+format-suffix-background = ${colors.background}
 ; Label
 ;label           =  %temperature%
 label            = temp: %temperature%
-label-background = ${colors.red}
-label-foreground = ${colors.background}
+label-background = ${colors.background}
+label-foreground = ${colors.red}
 label-padding    = 1
 
 ; Warning label
@@ -320,8 +322,8 @@ type = internal/pulseaudio
 
 ; Volume label
 label-volume            = vol: %percentage%% ¦
-label-volume-background = ${colors.red}
-label-volume-foreground = ${colors.background}
+label-volume-background = ${colors.background}
+label-volume-foreground = ${colors.red}
 label-volume-padding    = 1
 
 ; Muted label
@@ -334,8 +336,12 @@ label-muted-padding    = 1
 type = internal/date
 
 format-prefix = "%{T3}%{T-}"
-format-prefix-foreground = ${colors.background}
-format-prefix-background = ${colors.red}
+format-prefix-foreground = ${colors.red}
+format-prefix-background = ${colors.background}
+
+format-suffix = "%{T3}%{T-}"
+format-suffix-foreground = ${colors.red}
+format-suffix-background = ${colors.background}
 
 ; Update interval
 interval = 1.0
@@ -347,8 +353,8 @@ date = %A, %d %B
 ; Label
 ;label            =  %time%
 label            = time: %time%.date: %date%
-label-foreground = ${colors.foreground}
-label-background = ${colors.background}
+label-foreground = ${colors.background}
+label-background = ${colors.red}
 label-padding    = 2
 
 [module/date]
@@ -387,8 +393,8 @@ type = custom/text
 ; Label
 ;content = 
 content = lock ¦
-content-background = ${colors.red}
-content-foreground = ${colors.background}
+content-background = ${colors.background}
+content-foreground = ${colors.red}
 content-padding    = 1
 
 ; Mouse click
@@ -400,8 +406,8 @@ type = custom/text
 ; Label
 ;content            = 
 content		= logoff
-content-background = ${colors.cyan}
-content-foreground = ${colors.background}
+content-background = ${colors.background}
+content-foreground = ${colors.red}
 content-padding    = 1
 
 ; Mouse click
@@ -413,8 +419,8 @@ type = custom/text
 ; Label
 ;content            = 
 content			= reboot ¦
-content-background = ${colors.red}
-content-foreground = ${colors.background}
+content-background = ${colors.background}
+content-foreground = ${colors.red}
 content-padding    = 1
 
 ; Mouse click
@@ -426,8 +432,8 @@ type = custom/text
 ; Label
 ;content            = 
 content			= shdn
-content-background = ${colors.red}
-content-foreground = ${colors.background}
+content-background = ${colors.background}
+content-foreground = ${colors.red}
 content-padding    = 1
 
 ; Mouse click

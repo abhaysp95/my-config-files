@@ -1,0 +1,22 @@
+
+\begin{table}[htpb!]
+	\centering
+	\begin{tabular}{ ||>{\bfseries} l || c | c | c || c | c | c || c | c | c ||}
+		\cline{1-10}	% we could use \hline here, this is just to know
+		& \multicolumn{3}{ | c || }{\textbf{Allocated}} & \multicolumn{3}{ | c || }{\textbf{Maximum}} & \multicolumn{3}{ | c || }{\textbf{Available}} \\
+		\hline
+		PID & R1 & R2 & R3 & R1 & R2 & R3 & R1 & R2 & R3 \\
+		\hline
+		P1 & 1 & 1 & 2 & 4 & 3 & 3 & 3 & 1 & 0 \\
+		\hline
+		P2 & 2 & 1 & 2 & 3 & 2 & 2 \\
+		\hline
+		P3 & 4 & 0 & 1 & 9 & 0 & 2 \\
+		\hline
+		P4 & 0 & 2 & 0 & 7 & 5 & 3 \\
+		\hline
+		P5 & 1 & 1 & 2 & 11 & 2 & 3 \\
+		\hline
+	\end{tabular}
+	\caption{Data to solve with Banker's Algorithm}
+\end{table}
