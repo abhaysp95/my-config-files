@@ -48,7 +48,7 @@ fixed-center = true
 
 ; Colors
 background = ${colors.background}
-foreground = ${colors.red}
+foreground = ${colors.blue}
 
 ; Underline
 line-size  = 2
@@ -155,12 +155,12 @@ type = internal/i3
 
 ; format-prefix = "%{T3}%{T-}"
 ; format-prefix-foreground = ${colors.indigo}
-; format-prefix-background = ${colors.red}
+; format-prefix-background = ${colors.blue}
 
 ;format-suffix = 
 ;format-suffix = "%{T3}%{T-}"
 ;format-suffix-foreground = ${colors.background}
-;format-suffix-background = ${colors.red}
+;format-suffix-background = ${colors.blue}
 
 ; Mouse click
 enable-click = true
@@ -203,12 +203,12 @@ ws-icon-0 = 0
 ; Focused label
 label-focused            = %name%
 label-focused-foreground = ${colors.background}
-label-focused-background = ${colors.red}
+label-focused-background = ${colors.blue}
 label-focused-padding    = 1
 
 ; Unfocused labels
 label-unfocused            = %icon% %name%
-label-unfocused-foreground = ${colors.red}
+label-unfocused-foreground = ${colors.blue}
 label-unfocused-background = ${colors.background}
 label-unfocused-padding    = 1
 
@@ -226,13 +226,13 @@ label-urgent-padding    = 1
 [module/xwindow]
 
 format-suffix = "%{T3}%{T-}"
-format-suffix-foreground = ${colors.red}
+format-suffix-foreground = ${colors.blue}
 format-suffix-background = ${colors.background}
 
 type = internal/xwindow
 label = %title:0:40:...%
 format-foreground = ${colors.background}
-format-background = ${colors.red}
+format-background = ${colors.blue}
 label-padding = 2
 
 [module/corona]
@@ -283,7 +283,7 @@ label-charging-padding    = 1
 ;label-discharging            =  %percentage%%
 label-discharging            = bat: %percentage%%
 label-discharging-background = ${colors.background}
-label-discharging-foreground = ${colors.red}
+label-discharging-foreground = ${colors.blue}
 label-discharging-padding    = 1
 
 ; Full label
@@ -297,17 +297,17 @@ label-full-padding    = 1
 type = internal/temperature
 
 ;format-prefix = "%{T3}%{T-}"
-;format-prefix-foreground = ${colors.red}
+;format-prefix-foreground = ${colors.blue}
 ;format-prefix-background = ${colors.background}
 
 format-suffix = ¦
-format-suffix-foreground = ${colors.red}
+format-suffix-foreground = ${colors.blue}
 format-suffix-background = ${colors.background}
 ; Label
 ;label           =  %temperature%
 label            = temp: %temperature%
 label-background = ${colors.background}
-label-foreground = ${colors.red}
+label-foreground = ${colors.blue}
 label-padding    = 1
 
 ; Warning label
@@ -323,12 +323,12 @@ type = internal/pulseaudio
 ; Volume label
 label-volume            = vol: %percentage%% ¦
 label-volume-background = ${colors.background}
-label-volume-foreground = ${colors.red}
+label-volume-foreground = ${colors.blue}
 label-volume-padding    = 1
 
 ; Muted label
 label-muted            = vol: Muted
-label-muted-background = ${colors.red}
+label-muted-background = ${colors.blue}
 label-muted-foreground = ${colors.background}
 label-muted-padding    = 1
 
@@ -336,11 +336,11 @@ label-muted-padding    = 1
 type = internal/date
 
 format-prefix = "%{T3}%{T-}"
-format-prefix-foreground = ${colors.red}
+format-prefix-foreground = ${colors.blue}
 format-prefix-background = ${colors.background}
 
 format-suffix = "%{T3}%{T-}"
-format-suffix-foreground = ${colors.red}
+format-suffix-foreground = ${colors.blue}
 format-suffix-background = ${colors.background}
 
 ; Update interval
@@ -354,7 +354,7 @@ date = %A, %d %B
 ;label            =  %time%
 label            = time: %time%.date: %date%
 label-foreground = ${colors.background}
-label-background = ${colors.red}
+label-background = ${colors.blue}
 label-padding    = 2
 
 [module/date]
@@ -394,7 +394,7 @@ type = custom/text
 ;content = 
 content = lock ¦
 content-background = ${colors.background}
-content-foreground = ${colors.red}
+content-foreground = ${colors.blue}
 content-padding    = 1
 
 ; Mouse click
@@ -407,7 +407,7 @@ type = custom/text
 ;content            = 
 content		= logoff
 content-background = ${colors.background}
-content-foreground = ${colors.red}
+content-foreground = ${colors.blue}
 content-padding    = 1
 
 ; Mouse click
@@ -420,7 +420,7 @@ type = custom/text
 ;content            = 
 content			= reboot ¦
 content-background = ${colors.background}
-content-foreground = ${colors.red}
+content-foreground = ${colors.blue}
 content-padding    = 1
 
 ; Mouse click
@@ -433,7 +433,7 @@ type = custom/text
 ;content            = 
 content			= shdn
 content-background = ${colors.background}
-content-foreground = ${colors.red}
+content-foreground = ${colors.blue}
 content-padding    = 1
 
 ; Mouse click

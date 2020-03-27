@@ -341,7 +341,7 @@ source /home/raytracer/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #source $HOME/.config/nvim/plugged/vim-solarized8/scripts/solarized8.sh
 
 # corona_check
-corona_check &
+#corona_check &
 
 ## liquidprompt
 [[ $- = *i* ]] && source ~/Downloads/git-materials/liquidprompt/liquidprompt

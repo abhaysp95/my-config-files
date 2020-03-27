@@ -83,15 +83,15 @@ super + v
 #    termite -e mpv --no-osc --no-input-default-bindings --input-conf=/dev/null --title='mpvfloat' /dev/video0
 super + b:{f,p,c,s,n,b}
     {firefox,pcmanfm,telegram-desktop,stacer,nautilus,brave}
-super+n
-    st -e calcurse
+super+ctrl+n
+    termite -e calcurse
 #super+o
 #   /home/raytracer/.scripts/manbyrofi
 super + x
     /home/raytracer/.local/bin/.scripts/i3lock2.sh ; mpc pause ;
 #    /home/raytracer/.config/i3/blurlock.sh
-super + d;{d,f,k}
-    {dmenu_run -i -nb '#282828' -sf '#282828' -nf '#ebdbb2' -sb '#b8bb26' -fn "Iosevka Nerd Font Medium 11",rofi -show run -i -show-icons, kill $(pidof picom) && picom && dunstify -t 2000 "picom reloaded"}
+super + d:{d,f,k}
+    {dmenu_run -i -nb '#282828' -sf '#282828' -nf '#ebdbb2' -sb '#b8bb26' -fn "Iosevka Nerd Font Medium 11",rofi -show run -i -show-icons, ((pidof compton && kill $(pidof compton)) || compton) & dunstify -t 2000 'compton toggled'}
 
 # brightness
 super + ctrl + {minus,equal}

@@ -1,10 +1,10 @@
 sw_volume: 100
 audio_device_state:1:pulse audio
 audio_device_state:1:toggle_visualizer
-state: play
-current: 1208
-time: 4.040000
-random: 1
+state: pause
+current: 1700
+time: 65.658000
+random: 0
 repeat: 0
 single: 0
 consume: 0
@@ -1708,8 +1708,29 @@ playlist_begin
 1693:Sultan_Mirza_new_haryanvi_song_by_sandeep_chandal_aage_pache_bullet_chale_or_bic.mp3
 1694:Dabangg 3_ Hud Hud Song _ Salman Khan _ Sonakshi Sinha _Divya Kumar,Shabab Sabri,Sajid _ Sajid Wajid.mp3
 1695:youtube/LYRICAL_ Tu Hi Toh Meri Dost Hain _ Yuvvraaj _ Salman Khan, Katrina Kaif _  A.R. Rahman _ T-Series.mp3
-1696:converted/Yaar-Beli-Guri-Ft.Deep-Jandu_Parmish_Verma.mp3
-1697:converted/_Raghupati_Raghav_Krrish_3__Full_Video_Song___Hrithik_Roshan,_Priyanka_Chopra_(_720_X_1280_).mp3
-1698:converted/Ud-daa_Punjab_-_Full_Video___Udta_Punjab___Vishal_Dadlani_&_Amit_Trivedi___Shahid_Kapoor_(_720_X_720_).mp3
-1699:converted/Justin_Bieber_-_Baby_ft.mp3
+1696:tseries-remix/'Ik junoon' paint it red remix (full video song) 'Zindagi na milegi dobara'.m4a
+1697:tseries-remix/Ban Ja Rani Remix _ Guru Randhawa, Shraddha Vajpayee _  DJ Chetas _ Remix 2017.m4a
+1698:tseries-remix/Bolo Har Har (Remix) - Shivaay _ DJ VERONIKA and Mafiya Munda _ T-Series.m4a
+1699:tseries-remix/Guru Randhawa - 'High Rated Gabru Remix' _ DJ Chetas _ T-Series.m4a
+1700:tseries-remix/High Heels Te Nachche REMIX Video Song _ KI & KA _ Dj Chetas  _ T-Series.m4a
+1701:tseries-remix/Kabir Singh - Tera Ban Jaunga Remix Song _ Tulsi Kumar, Akhil Sachdeva _ DJ YOGII.m4a
+1702:tseries-remix/Love Mashup 2019 _ DJ YOGII _ Best Hindi Romantic Songs _  Hindi Love Songs _ T-Series.m4a
+1703:tseries-remix/Mere Rashke Qamar (Remix) Full Audio Song _ Baadshaho _ DJ Chetas _ Ajay Devgn  Ileana D'Cruz.m4a
+1704:tseries-remix/OFFICIAL - Abhi Toh Party Shuru Hui Hai (REMIX) by DJ CHETAS & DJ NYK.m4a
+1705:tseries-remix/Remix  - Badri Ki Dulhania _ DJ CHETAS _  Varun, Alia, _ 'Badrinath Ki Dulhania'.m4a
+1706:tseries-remix/Remix  - Tutak Tutak Tutiya Title Song _ DRUNX _ Prabhudeva, Sonu Sood and Tamannaah..m4a
+1707:tseries-remix/Remix - Chogada _ Loveyatri _ Aayush Sharma, Warina Hussain _ Darshan, Tanishk B _ DJ Chetas, DJ LIJO.m4a
+1708:tseries-remix/REMIX - Kaise Hua Song _ DJ Shadow _ Kabir Singh _ Remix 2020 Hindi _ T-Series.m4a
+1709:tseries-remix/REMIX - KAR HAR MAIDAAN FATEH _ Sanju _ Ranbir Kapoor _ Dj Shadow _  Rajkumar Hirani.m4a
+1710:tseries-remix/Remix - Lahore _ Guru Randhawa _ DJ Shadow Dubai  _  Remix 2018 _ T-Series.m4a
+1711:tseries-remix/Remix - NAZAR LAG JAYEGI _ Millind Gaba, Kamal Raja _ DJ Shadow _ T-Series.m4a
+1712:tseries-remix/Remix - SANAM HO JA Video Song _ Arjun _ Dj Shadow _ Remix 2017 Hindi  _ T-Series.m4a
+1713:tseries-remix/REMIX - Tera Yaar Hoon Main _ Sonu Ke Titu Ki Sweety _ Arijit Singh _ DJ Chetas & DJ NYK.m4a
+1714:tseries-remix/Sooraj Dooba Hain REMIX (VIDEO) by DJ KIRAN KAMATH _ Roy _ Amaal Mallik _ T-SERIES.m4a
+1715:tseries-remix/Suno Na Sangemarmar-Remix _ Full Video Song _ Arijit Singh _ Jackky Bhagnani _ Neha Sharma.m4a
+1716:tseries-remix/Tamma Tamma Again Remix _ Remix 2017 _ DJ Ali Merchant _ Varun , Alia _ 'Badrinath Ki Dulhania'.m4a
+1717:tseries-remix/Tanu Weds Manu Jugni Remix Video Song _ Kangna Ranaut.m4a
+1718:tseries-remix/Teri Meri Remix Song _ Arjun Feat. Priti Menon _ Bodyguard.m4a
+1719:tseries-remix/Tulsi Kumar Mashup _ DJ YOGII _ Best Hindi Romantic Songs _  Hindi Love Songs _ T-Series.m4a
+1720:tseries-remix/'All Black Song' Refix _ Sukhe Ft. Raftaar _ Dance Arena _ Episode 2 _ Tatva K _ T-Series.m4a
 playlist_end

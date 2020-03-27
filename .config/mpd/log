@@ -14775,3 +14775,59 @@ Mar 20 22:21 : client: [229] opened from 127.0.0.1:60644
 Mar 20 22:21 : client: [229] closed
 Mar 20 22:21 : client: [230] opened from 127.0.0.1:60648
 Mar 20 22:21 : client: [230] closed
+Mar 27 09:49 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 27 09:49 : exception: Failed to access /home/raytracer/Music/got: Too many levels of symbolic links
+Mar 27 09:49 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 27 11:09 : client: [0] opened from 127.0.0.1:53300
+Mar 27 11:09 : exception: Failed to open /home/raytracer/.config/mpd/playlists: No such file or directory
+Mar 27 11:17 : client: [1] opened from 127.0.0.1:53308
+Mar 27 11:17 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 27 11:17 : client: [1] closed
+Mar 27 11:17 : client: [2] opened from 127.0.0.1:53312
+Mar 27 11:17 : client: [2] closed
+Mar 27 11:18 : client: [3] opened from 127.0.0.1:53316
+Mar 27 11:18 : client: [3] closed
+Mar 27 11:21 : player: played "tseries-remix/REMIX - Tera Yaar Hoon Main _ Sonu Ke Titu Ki Sweety _ Arijit Singh _ DJ Chetas & DJ NYK.m4a"
+Mar 27 11:23 : client: [4] opened from 127.0.0.1:53406
+Mar 27 11:23 : client: [4] closed
+Mar 27 11:23 : client: [5] opened from 127.0.0.1:53410
+Mar 27 11:23 : client: [5] closed
+Mar 27 11:23 : client: [6] opened from 127.0.0.1:53414
+Mar 27 11:23 : client: [6] closed
+Mar 27 11:23 : client: [7] opened from 127.0.0.1:53418
+Mar 27 11:23 : client: [7] closed
+Mar 27 11:24 : client: [8] opened from 127.0.0.1:53422
+Mar 27 11:24 : client: [8] closed
+Mar 27 11:24 : client: [9] opened from 127.0.0.1:53426
+Mar 27 11:24 : client: [9] closed
+Mar 27 16:45 : client: [10] opened from 127.0.0.1:54218
+Mar 27 16:45 : client: [10] closed
+Mar 27 16:45 : client: [11] opened from 127.0.0.1:54222
+Mar 27 16:45 : client: [11] closed
+Mar 27 16:48 : player: played "tseries-remix/REMIX - Tera Yaar Hoon Main _ Sonu Ke Titu Ki Sweety _ Arijit Singh _ DJ Chetas & DJ NYK.m4a"
+Mar 27 16:48 : client: [12] opened from 127.0.0.1:54390
+Mar 27 16:48 : client: [12] closed
+Mar 27 16:48 : client: [13] opened from 127.0.0.1:54394
+Mar 27 16:48 : client: [13] closed
+Mar 27 16:48 : client: [14] opened from 127.0.0.1:54398
+Mar 27 16:48 : client: [14] closed
+Mar 27 16:48 : client: [15] opened from 127.0.0.1:54402
+Mar 27 16:48 : client: [15] closed
+Mar 27 16:48 : client: [16] opened from 127.0.0.1:54406
+Mar 27 16:48 : client: [16] closed
+Mar 27 16:48 : client: [17] opened from 127.0.0.1:54410
+Mar 27 16:48 : client: [17] closed
+Mar 27 16:48 : client: [18] opened from 127.0.0.1:54414
+Mar 27 16:48 : client: [19] opened from 127.0.0.1:54418
+Mar 27 16:48 : client: [18] closed
+Mar 27 16:48 : client: [19] closed
+Mar 27 16:48 : client: [20] opened from 127.0.0.1:54422
+Mar 27 16:48 : client: [20] closed
+Mar 27 16:48 : client: [21] opened from 127.0.0.1:54426
+Mar 27 16:48 : client: [21] closed
+Mar 27 16:48 : client: [22] opened from 127.0.0.1:54430
+Mar 27 16:48 : client: [22] closed
+Mar 27 16:50 : client: [23] opened from 127.0.0.1:54434
+Mar 27 16:50 : client: [23] closed
+Mar 27 16:50 : client: [24] opened from 127.0.0.1:54438
+Mar 27 16:50 : client: [24] closed

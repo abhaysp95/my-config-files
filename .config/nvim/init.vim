@@ -478,7 +478,7 @@ let g:coc_global_extensions = [
   " \ 'coc-eslint',
 
 " Better display for messages
-set cmdheight=2
+set cmdheight=1
 " Smaller updatetime for cursorhold & cursorholdI
 set updatetime=300
 " don't give |ins-completion-menu| messages
