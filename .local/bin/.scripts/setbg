@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+
+# set wallpaper
+
+[ -f "$*" ] && cp "$*" ~/.config/wall.png && notify-send -i "$HOME/.config/wall.png" "Wallpaper changed"
+
+[ -d "$1" ] && mv "$(find "$1" -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -type f | shuf -n 1)" ~/.config/wall.png && notify-send -i "$HOME/.config/wall.png" "Random Wallpaper Choosen"
+
+# getting proper screen size
+# convert ~/.config/wall.png -resize 1366x768 ~/.config/wall.png
+# convert ~/.config/wall.png -gravity center -background white -extent 177%x100 ~/.config/wall.png
+
+# xwallpaper --zoom ~/.config/wall.png
+nitrogen --set-scaled ~/.config/wall.png

@@ -197,7 +197,7 @@ function zle-line-finish {
 }
 zle -N zle-line-finish
 
-source ~/.aliases                                      # aliases
+source ~/.config/.aliases            # aliases
 
 #neofetch | lolcat -t
 #pfetch
@@ -205,7 +205,7 @@ source ~/.aliases                                      # aliases
 
 export PATH="$HOME/.local/bin/.scripts:$PATH"
 
-notify-send "zsh settings reloaded" -a zsh -t 2000
+notify-send --icon=~/.cache/notify-icons/terminal.png "zsh settings reloaded" -a zsh -t 2000
 
 export FZF_DEFAULT_COMMAND="rg --files --hidden --follow"
 # export FZF_COMPLETION_TRIGGER=''
@@ -345,3 +345,20 @@ source /home/raytracer/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ## liquidprompt
 [[ $- = *i* ]] && source ~/Downloads/git-materials/liquidprompt/liquidprompt
+
+# use lf to switch directories and bind to ctrl-o
+
+lfcd() {
+	tmp="$(mktemp)"
+	lf -last-dir-path="$tmp" "$@"
+	if [ -f "$tmp" ]; then
+		dir="$(cat "$tmp")"
+		rm -f "$tmp"
+		if [ -d "$dir" ]; then
+			if [ "$dir" != "$(pwd)" ]; then
+				cd "$dir"
+			fi
+		fi
+	fi
+}
+bindkey -s '^o' 'lfcd\n' # zsh

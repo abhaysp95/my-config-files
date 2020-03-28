@@ -1,4 +1,8 @@
+# use neovim for vim if present
+command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
+alias sv="sudo nvim"
 
+alias vla="nvim ~/.config/.aliases"
 alias zshc="nvim ~/.zshrc"
 alias i3conf="nvim ~/.config/i3/config"
 alias stconf="nvim ~/st/.Xdefaults"
@@ -14,7 +18,9 @@ alias nwiwr="nmcli device wifi rescan"
 alias nwiwl="nmcli device wifi list"
 alias nwiwc="nmcli device wifi connect"
 alias nwidw="nmcli device disconnect wlp5s0"
-alias v="nvim"
+alias v="$EDITOR"
+alias e="$EDITOR"
+alias f="$FILE"
 alias clcr="calcurse"
 
 #already set rofi-theme-selector to gruvbox-dark, else use -theme {name}
@@ -33,10 +39,9 @@ alias ll='ls -lah --group-directories-first'
 	alias fgrep='fgrep --colour=auto'
 alias cp="cp -i"
 alias df="df -h"
-alias sv="sudo nvim"
+
 alias chat="telegram-desktop"
 alias mkd="mkdir -pv"
-alias gr="ranger"
 alias vrc="nvim ~/.config/nvim/init.vim"
 alias brc="nvim ~/.bashrc"
 alias ffx="firefox"
@@ -85,10 +90,10 @@ alias fastping='ping -c 50 -s 1'
 
 alias ports='netstat -tulanp'
 
-alias rm='rm -I --preserve-root'
+alias rm='rm -Iv --preserve-root'
 
 alias mv='mv -i'
-alias cp='cp -i'
+alias cp='cp -iv'
 alias ln='ln -i'
 
 alias su='sudo -i'
@@ -120,7 +125,6 @@ vf () { ls -l | fzf --layout=reverse --preview='pistol {}'| xargs -r -I % $EDITO
 
 alias tknow='tldr -l | sed s/,/\\n/g | fzf | xargs -I {} tldr "{}"'
 alias shdn="shutdown now"
-alias Scripts="cd ~/.local/bin/.scripts"
 alias pingarch='ping -c10 archlinux.org'
 
 # some aliases for broot(br)
@@ -151,3 +155,41 @@ alias lsdl='lsd -laF --group-dirs first --date relative'
 # udisks2/udiskie
 alias udkm='udisksctl mount -b'
 alias udku='udisksctl unmount -b'
+
+# youtube-dl
+yt="youtube-dl --add-metadata -i"
+yta="yt -x -f bestaudio\best"
+
+# random backgound
+sbga='setbg ~/Pictures/bgwallpapers'
+
+# directory specific
+alias gtr='cd ~/.local/share/Trash/files'
+alias gusb='cd /run/media/raytracer && lsd'
+
+alias gv.='cd ~/Videos && lsd'
+alias gvy='cd ~/Videos/youtube && lsd'
+
+alias gm='cd ~/Music && lsd'
+
+alias gp.='cd ~/Pictures && lsd'
+alias gbg='cd ~/Pictures/bgwallpapers && lsd'
+alias gss='cd ~/Pictures/Screenshots && lsd'
+
+alias gd='cd ~/Documents && lsd'
+alias gtc='cd ~/Documents/nc/ && lsd'
+alias gtp='cd ~/Documents/npython && lsd'
+alias gts='cd ~/Documents/nshell && lsd'
+alias gt.='cd ~/Documents/pdf && lsd'
+
+alias gD='cd ~/Downloads && lsd'
+alias gdg='cd ~/Downloads/git-materials && lsd'
+alias gdgg='cd ~/Downloads/git-materials/gitlab && lsd'
+
+alias gc.='cd ~/.config && lsd'
+alias gC='cd ~/.cache/cell && lsd'
+alias gE='cd /etc && lsd'
+alias gU='cd /usr && lsd'
+alias gUs='cd /usr/share && lsd'
+
+alias sc='cd ~/.local/bin/.scripts && lsd'

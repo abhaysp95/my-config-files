@@ -91,7 +91,7 @@ super + x
     /home/raytracer/.local/bin/.scripts/i3lock2.sh ; mpc pause ;
 #    /home/raytracer/.config/i3/blurlock.sh
 super + d:{d,f,k}
-    {dmenu_run -i -nb '#282828' -sf '#282828' -nf '#ebdbb2' -sb '#b8bb26' -fn "Iosevka Nerd Font Medium 11",rofi -show run -i -show-icons, ((pidof compton && kill $(pidof compton)) || compton) & dunstify -t 2000 'compton toggled'}
+    {dmenu_run -i -nb '#2e3440' -sf '#2e3440' -nf '#d8dee9' -sb '#81a1c1' -fn "Mononoki Nerd Font Mono 12",rofi -show run -i -show-icons, ((pidof compton && kill $(pidof compton)) || compton) & dunstify -t 2000 'compton toggled'}
 
 # brightness
 super + ctrl + {minus,equal}
@@ -110,9 +110,9 @@ super+i:{m,p,v,d}
 
 # screenshot and recording <<<
 Print
-    scrot && dunstify -t 2000 "Full screen captured"
+    scrot -q 100 && dunstify --icon="$(readlink -f $(ls -u $HOME | grep -v / | head -n 1))" -t 2000 "$(printf "Fullscreen type\nScreenshot Captured")" && mv "$(echo $(ls -u $HOME | grep -v / | head -n 1) | awk '{print "/home/raytracer/" $1}')" ~/Pictures/Screenshots
 shift + Print
-    scrot -u && dunstify -t 2000 "Current screen captured"
+    scrot -q 100 -u && dunstify --icon="$(readlink -f $(ls -u $HOME | grep -v / | head -n 1))" -t 2000 "Current screen captured"
 super + Print
     /home/raytracer/.local/bin/.scripts/dmenurecord
 super + Delete
@@ -147,7 +147,7 @@ super + {_,shift +} minus
     pulsemixer --change-volume -{5,15}
 #mute
 super + shift +m
-    pulsemixer --toggle-mute && notify-send --icon=auio-volume-muted -t 3000 "Volume Muted"
+    pulsemixer --toggle-mute && notify-send --icon=~/.cache/notify-icons/mute.png -t 3000 "Volume Toggled"
 # >>>
 
 # Audiokeys

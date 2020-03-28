@@ -138,7 +138,7 @@ ex ()
   fi
 }
 
-source ~/.aliases
+source ~/.config/.aliases
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # vi-mode

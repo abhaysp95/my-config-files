@@ -1,0 +1,3 @@
+bf ~/.config/files
+bd ~/.config/directories
+gca ~/.config/.aliases

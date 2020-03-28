@@ -8,10 +8,10 @@
 # Last Edited: 2020-02-26
 
 if [ -n "$(pidof mpd)" ]; then
-	mpc next && notify-send --icon=audio-headphones -t 3000 "Music played/paused\nCurrent Song" "$(mpc | head -1)"
+	mpc next && notify-send --icon=~/.cache/notify-icons/next-1.png -t 3000 "Music played/paused\nCurrent Song" "$(mpc | head -1)"
 else
 	if [ -n "$(pidof cmus)" ]; then
-		cmus-remote -n && notify-send --icon=audio-headphones -t 3000 "Music played/paused\nCurrent Song" "$(cmus-remote -Q | head -n 2 | grep file | cut -c 22-)"
+		cmus-remote -n && notify-send --icon=~/.cache/notify-icons/next-1.png -t 3000 "Music played/paused\nCurrent Song" "$(cmus-remote -Q | head -n 2 | grep file | cut -c 22-)"
 	else
 		dunstify "cmus not running"
 	fi

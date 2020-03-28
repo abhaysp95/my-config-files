@@ -119,8 +119,8 @@ cmd restore_trash ${{
 
 cmd stripcase %stripcase "$f"
 
-# Bindings
-# Remove some defaults
+#   Bindings
+#   Remove some defaults
 map m
 map o
 map "'"
@@ -130,22 +130,22 @@ map c
 map e
 map f
 
-# File openers
-map ee $$EDITOR "$f"
-map es $sudo $EDITOR "$f"
-map u $view "$f"
+#   File openers
+map ee   $$EDITOR "$f"
+map es   $sudo    $EDITOR "$f"
+map u    $view    "$f"
 
-# Archive mappings
-map az zip
-map at tar
-map ag targz
-map ab targz
-map au unarchive
+#   Archive mappings
+map az      zip
+map at      tar
+map ag      targz
+map ab      targz
+map au      unarchive
 
-# Trash mappings
-map dd trash
-map tc clear_trash
-map tr restore_trash
+#   Trash mappings
+map dd    trash
+map tc    clear_trash
+map tr    restore_trash
 
 # Broot Mapping
 map f broot_jump
@@ -155,49 +155,56 @@ map f broot_jump
 
 map ss stripcase
 
-# Basic Functions
-map . set hidden!
-map DD delete
-map p paste
-map x cut
-map y copy
-map <enter> open
-map mf mkfile
-map mfo mkopenfile
-map mr sudomkfile
-map mro sudomkopenfile
-map md mkdir
-map ms $mkscript
-map ch chmod
-#map bg setwallpaper
-map o open_config
-map r rename
-map H top
-map L bottom
-map R reload
-map C clear
-map U unselect
+#    Basic   Functions
+map  .       set hidden!
+map  DD      delete
+map  p       paste
+map  x       cut
+map  y       copy
+map  <enter> open
+map  mf      mkfile
+map  mfo     mkopenfile
+map  mr      sudomkfile
+map  mro     sudomkopenfile
+map  md      mkdir
+map  ms      $mkscript
+map  ch      chmod
+#map bg      setwallpaper
+map  o       open_config
+map  r       rename
+map  H       top
+map  L       bottom
+map  R       reload
+map  C       clear
+map  U       unselect
 
-# Movement
-map gtr cd ~/.local/share/Trash/files
+#   Movement
+map gtr  cd ~/.local/share/Trash/files
 map gusb cd /run/media/raytracer
 
 map gv. cd ~/Videos
-map gvy ~/Videos/youtube
+map gvy cd ~/Videos/youtube
+
+map gm cd ~/Music
 
 map gp. cd ~/Pictures
-map gpw cd ~/Pictures/Camera_Roll/wall
+map gbg cd ~/Pictures/bgwallpapers
+map gss cd ~/Pictures/Screenshots
 
-map gtc cd ~/dox/nc/
-map gtp cd ~/dox/npython
-map gts cd ~/dox/nshell
-map gt. cd ~/dox/pdf
+map gd  cd ~/Documents
+map gtc cd ~/Documents/nc/
+map gtp cd ~/Documents/npython
+map gts cd ~/Documents/nshell
+map gt. cd ~/Documents/pdf
 
-map gd cd ~/Downloads
-map gdg cd ~/Downloads/git-materials
+map gD   cd ~/Downloads
+map gdg  cd ~/Downloads/git-materials
+map gdgg cd ~/Downloads/git-materials/gitlab
 
-map gc cd ~/.config
-map gC cd ~/cell
-map gE cd /etc
-map gU cd /usr
+map gc.  cd ~/.config
+map gC  cd ~/.cache/cell
+map gE  cd /etc
+map gU  cd /usr
 map gUs cd /usr/share
+
+map sc cd ~/.local/bin/.scripts

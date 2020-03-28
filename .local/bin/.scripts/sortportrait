@@ -1,0 +1,22 @@
+#!/bin/bash
+
+[ ! -d ~/Pictures/portrait_wall ] && mkdir ~/Pictures/portrait_wall
+
+for name in `ls`
+do
+	# echo "$name"
+	width="$(echo "$name" | awk -Fx '{print $1}')"
+	height="$(echo "$name" | awk -Fx '{print $2}')"
+	# echo "width is $width"
+	# echo "height is $height"
+	if [[ "$height" -gt "$width" ]]
+	then
+		# echo "$name"
+		# echo "height greater than width, name $name"
+		echo "moving $name to ~/Pictures/"
+		mv "$name" ~/Pictures/portrait_wall
+		# move to portrait
+	# else
+	# 	echo "width greater than height"
+	fi
+done
