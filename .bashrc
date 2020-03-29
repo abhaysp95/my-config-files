@@ -72,7 +72,8 @@ if ${use_color} ; then
 	if [[ ${EUID} == 0 ]] ; then
 		PS1='\[\033[01;31m\][\h\[\033[01;36m\] \W\[\033[01;31m\]]\$\[\033[00m\] '
 	else
-		PS1='\[\033[01;34m\][\u@\h\[->$? \]\[\033[01;37m\] \W\[\033[01;34m\]]\$\[\033[00m\] '
+		PS1='\[\033[01;34m\][\u@\h\[ -> $? \]\[\033[01;37m\] \W\[\033[01;34m\]]\$\[\033[00m\] '
+		# PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M ${$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b"
 	fi
 
 	alias ls='ls --color=auto'
@@ -192,4 +193,4 @@ fi
 pfetch
 
 # liquid prompt
-[[ $- = *i* ]] && source ~/Downloads/git-materials/liquidprompt/liquidprompt
+# [[ $- = *i* ]] && source ~/Downloads/git-materials/liquidprompt/liquidprompt
