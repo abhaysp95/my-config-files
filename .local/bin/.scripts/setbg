@@ -11,4 +11,4 @@
 # convert ~/.config/wall.png -gravity center -background white -extent 177%x100 ~/.config/wall.png
 
 # xwallpaper --zoom ~/.config/wall.png
-nitrogen --set-scaled ~/.config/wall.png
+nitrogen --set-zoom-fill ~/.config/wall.png

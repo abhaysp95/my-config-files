@@ -88,10 +88,10 @@ super+ctrl+n
 #super+o
 #   /home/raytracer/.scripts/manbyrofi
 super + x
-    /home/raytracer/.local/bin/.scripts/i3lock2.sh ; mpc pause ;
+    /home/raytracer/.local/bin/.scripts/i3lock.sh ; mpc pause ;
 #    /home/raytracer/.config/i3/blurlock.sh
 super + d:{d,f,k}
-    {dmenu_run -i -nb '#2e3440' -sf '#2e3440' -nf '#d8dee9' -sb '#81a1c1' -fn "Mononoki Nerd Font Mono 12",rofi -show run -i -show-icons, ((pidof compton && kill $(pidof compton)) || compton) & dunstify -t 2000 'compton toggled'}
+    {dmenu_run -i -nb '#282828' -sf '#282828' -nf '#ebdbb2' -sb '#458588' -fn "Mononoki Nerd Font Mono 12",rofi -show run -i -show-icons, ((pidof compton && kill $(pidof compton)) || compton) & dunstify -t 2000 'compton toggled'}
 
 # brightness
 super + ctrl + {minus,equal}
@@ -110,9 +110,9 @@ super+i:{m,p,v,d}
 
 # screenshot and recording <<<
 Print
-    scrot -q 100 && dunstify --icon="$(readlink -f $(ls -u $HOME | grep -v / | head -n 1))" -t 2000 "$(printf "Fullscreen type\nScreenshot Captured")" && mv "$(echo $(ls -u $HOME | grep -v / | head -n 1) | awk '{print "/home/raytracer/" $1}')" ~/Pictures/Screenshots
+	/home/raytracer/.local/bin/.scripts/fscrnshot
 shift + Print
-    scrot -q 100 -u && dunstify --icon="$(readlink -f $(ls -u $HOME | grep -v / | head -n 1))" -t 2000 "Current screen captured"
+	/home/raytracer/.local/bin/.scripts/fscrnushot
 super + Print
     /home/raytracer/.local/bin/.scripts/dmenurecord
 super + Delete

@@ -16287,3 +16287,1161 @@ Mar 28 20:01 : client: [128] opened from 127.0.0.1:34544
 Mar 28 20:01 : client: [128] closed
 Mar 28 20:01 : client: [129] opened from 127.0.0.1:34548
 Mar 28 20:01 : client: [129] closed
+Mar 28 22:47 : client: [130] opened from 127.0.0.1:34560
+Mar 28 22:47 : client: [130] closed
+Mar 28 22:47 : client: [131] opened from 127.0.0.1:34564
+Mar 28 22:47 : client: [131] closed
+Mar 28 22:47 : client: [132] opened from 127.0.0.1:34568
+Mar 28 22:47 : client: [132] closed
+Mar 28 22:47 : client: [133] opened from 127.0.0.1:34572
+Mar 28 22:47 : client: [133] closed
+Mar 28 22:48 : client: [134] opened from 127.0.0.1:34576
+Mar 28 22:48 : client: [134] closed
+Mar 28 22:49 : client: [135] opened from 127.0.0.1:34580
+Mar 28 22:49 : client: [135] closed
+Mar 28 22:49 : client: [136] opened from 127.0.0.1:34584
+Mar 28 22:49 : client: [136] closed
+Mar 28 22:49 : client: [137] opened from 127.0.0.1:34588
+Mar 28 22:49 : client: [137] closed
+Mar 28 22:50 : client: [138] opened from 127.0.0.1:34592
+Mar 28 22:50 : client: [138] closed
+Mar 28 23:04 : client: [139] opened from 127.0.0.1:34596
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Chura Ke Dil Mera Goriya Chali Full Video Song  Main Khiladi Tu Anari  Akshay Kumar Shilpa Shetty [G_qyLs1SJbQ].webm
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Chura Ke Dil Mera Goriya Chali Full Video Song  Main Khiladi Tu Anari  Akshay Kumar Shilpa Shetty [G_qyLs1SJbQ].webm': No such file or directory
+Mar 28 23:04 : player: played "Chura Ke Dil Mera Goriya Chali Full Video Song  Main Khiladi Tu Anari  Akshay Kumar Shilpa Shetty [G_qyLs1SJbQ].webm"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Chura Ke Dil Mera Goriya Chali Full Video Song  Main Khiladi Tu Anari  Akshay Kumar Shilpa Shetty [G_qyLs1SJbQ].webm
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Chura Ke Dil Mera Goriya Chali Full Video Song  Main Khiladi Tu Anari  Akshay Kumar Shilpa Shetty [G_qyLs1SJbQ].webm': No such file or directory
+Mar 28 23:04 : client: [139] closed
+Mar 28 23:04 : client: [140] opened from 127.0.0.1:34600
+Mar 28 23:04 : exception: Not playing
+Mar 28 23:04 : client: [140] closed
+Mar 28 23:04 : client: [141] opened from 127.0.0.1:34604
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Chura Ke Dil Mera Goriya Chali Full Video Song  Main Khiladi Tu Anari  Akshay Kumar Shilpa Shetty [G_qyLs1SJbQ].webm
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Chura Ke Dil Mera Goriya Chali Full Video Song  Main Khiladi Tu Anari  Akshay Kumar Shilpa Shetty [G_qyLs1SJbQ].webm': No such file or directory
+Mar 28 23:04 : player: played "Chura Ke Dil Mera Goriya Chali Full Video Song  Main Khiladi Tu Anari  Akshay Kumar Shilpa Shetty [G_qyLs1SJbQ].webm"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Aankh_Maare_O_Ladka_Aankh_Maare_[Full_Song]_Tere_Mere_Sapne_Arshad_Warsi.m4a
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Aankh_Maare_O_Ladka_Aankh_Maare_[Full_Song]_Tere_Mere_Sapne_Arshad_Warsi.m4a': No such file or directory
+Mar 28 23:04 : player: played "Aankh_Maare_O_Ladka_Aankh_Maare_[Full_Song]_Tere_Mere_Sapne_Arshad_Warsi.m4a"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Lo Jill - Kahani Video.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Lo Jill - Kahani Video.mp3': No such file or directory
+Mar 28 23:04 : player: played "Lo Jill - Kahani Video.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/The_Beach_Boys_-_Let_s_Go_Away_For_Awhile_(Baby_Driver_OST).m4a
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/The_Beach_Boys_-_Let_s_Go_Away_For_Awhile_(Baby_Driver_OST).m4a': No such file or directory
+Mar 28 23:04 : player: played "The_Beach_Boys_-_Let_s_Go_Away_For_Awhile_(Baby_Driver_OST).m4a"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/03-OUT~1.MP3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/03-OUT~1.MP3': No such file or directory
+Mar 28 23:04 : player: played "03-OUT~1.MP3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Yaaran_Da_Group___Dilpreet_Dhillon___Parmish_Verma___Narinder_Batth___Desi_Crew_.m4a
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Yaaran_Da_Group___Dilpreet_Dhillon___Parmish_Verma___Narinder_Batth___Desi_Crew_.m4a': No such file or directory
+Mar 28 23:04 : player: played "Yaaran_Da_Group___Dilpreet_Dhillon___Parmish_Verma___Narinder_Batth___Desi_Crew_.m4a"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Cute Vol 1-(Mr-Jatt.com).mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Cute Vol 1-(Mr-Jatt.com).mp3': No such file or directory
+Mar 28 23:04 : player: played "Cute Vol 1-(Mr-Jatt.com).mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Skrillex_and_Diplo_-__Where_Are_Ü_Now__with_Justin_Bieber_(Official_Video)(1).m4a
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Skrillex_and_Diplo_-__Where_Are_Ü_Now__with_Justin_Bieber_(Official_Video)(1).m4a': No such file or directory
+Mar 28 23:04 : player: played "Skrillex_and_Diplo_-__Where_Are_Ü_Now__with_Justin_Bieber_(Official_Video)(1).m4a"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Queens_Of_The_Stone_Age_-_No_One_Knows.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Queens_Of_The_Stone_Age_-_No_One_Knows.mp3': No such file or directory
+Mar 28 23:04 : player: played "Queens_Of_The_Stone_Age_-_No_One_Knows.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Full Video_ Ek Do Teen Film Version _ Baaghi 2 _ Jacqueline F _Tiger S _ Disha P_ Ahmed K _ Sajid N.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Full Video_ Ek Do Teen Film Version _ Baaghi 2 _ Jacqueline F _Tiger S _ Disha P_ Ahmed K _ Sajid N.mp3': No such file or directory
+Mar 28 23:04 : player: played "Full Video_ Ek Do Teen Film Version _ Baaghi 2 _ Jacqueline F _Tiger S _ Disha P_ Ahmed K _ Sajid N.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Post Malone - Better Now [-yHoa4MR0W4].m4a
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Post Malone - Better Now [-yHoa4MR0W4].m4a': No such file or directory
+Mar 28 23:04 : player: played "Post Malone - Better Now [-yHoa4MR0W4].m4a"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/music circle - Guru Randhawa LAHORE Lyrics  Bhushan Kumar  Vee Music  DirectorGifty  T-Series [dZ0fwJojhrs] (1).m4a
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/music circle - Guru Randhawa LAHORE Lyrics  Bhushan Kumar  Vee Music  DirectorGifty  T-Series [dZ0fwJojhrs] (1).m4a': No such file or directory
+Mar 28 23:04 : player: played "music circle - Guru Randhawa LAHORE Lyrics  Bhushan Kumar  Vee Music  DirectorGifty  T-Series [dZ0fwJojhrs] (1).m4a"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Ye Baarish - Darshan Raval 190Kbps.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Ye Baarish - Darshan Raval 190Kbps.mp3': No such file or directory
+Mar 28 23:04 : player: played "Ye Baarish - Darshan Raval 190Kbps.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/8 Parche _ Baani Sandhu _ Gur Sidhu _ Gurneet Dosanjh _ New Punjabi Song 2019 _ White Hill Music.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/8 Parche _ Baani Sandhu _ Gur Sidhu _ Gurneet Dosanjh _ New Punjabi Song 2019 _ White Hill Music.mp3': No such file or directory
+Mar 28 23:04 : player: played "8 Parche _ Baani Sandhu _ Gur Sidhu _ Gurneet Dosanjh _ New Punjabi Song 2019 _ White Hill Music.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Good Life(Djjohal.Com).mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Good Life(Djjohal.Com).mp3': No such file or directory
+Mar 28 23:04 : player: played "Good Life(Djjohal.Com).mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/SANJUBaba Bolta Hain Bas Ho Gaya Extended Version  Ranbir  Sanjay Dutt  Rajkumar Hirani  Papon.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/SANJUBaba Bolta Hain Bas Ho Gaya Extended Version  Ranbir  Sanjay Dutt  Rajkumar Hirani  Papon.mp3': No such file or directory
+Mar 28 23:04 : player: played "SANJUBaba Bolta Hain Bas Ho Gaya Extended Version  Ranbir  Sanjay Dutt  Rajkumar Hirani  Papon.mp3"
+Mar 28 23:04 : client: [141] closed
+Mar 28 23:04 : client: [142] opened from 127.0.0.1:34608
+Mar 28 23:04 : client: [142] closed
+Mar 28 23:04 : client: [143] opened from 127.0.0.1:34612
+Mar 28 23:04 : client: [143] closed
+Mar 28 23:04 : client: [144] opened from 127.0.0.1:34616
+Mar 28 23:04 : client: [144] closed
+Mar 28 23:04 : client: [145] opened from 127.0.0.1:34620
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/City Slums - Raja Kumari ft. DIVINE _ Official Video.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/City Slums - Raja Kumari ft. DIVINE _ Official Video.mp3': No such file or directory
+Mar 28 23:04 : player: played "City Slums - Raja Kumari ft. DIVINE _ Official Video.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/City Slums - Raja Kumari ft. DIVINE _ Official Video.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/City Slums - Raja Kumari ft. DIVINE _ Official Video.mp3': No such file or directory
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Ed Sheeran - Barcelona (DawnFoxes.com).mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Ed Sheeran - Barcelona (DawnFoxes.com).mp3': No such file or directory
+Mar 28 23:04 : player: played "Ed Sheeran - Barcelona (DawnFoxes.com).mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Jalwa Tera Jalwa - Hindustan Ki Kasam.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Jalwa Tera Jalwa - Hindustan Ki Kasam.mp3': No such file or directory
+Mar 28 23:04 : player: played "Jalwa Tera Jalwa - Hindustan Ki Kasam.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Felix Jaehn Jasmine Thompson - Aint Nobody (RAFO Remix) (Mp3goo.com).mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Felix Jaehn Jasmine Thompson - Aint Nobody (RAFO Remix) (Mp3goo.com).mp3': No such file or directory
+Mar 28 23:04 : player: played "Felix Jaehn Jasmine Thompson - Aint Nobody (RAFO Remix) (Mp3goo.com).mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/La Habana (feat. El Taiger)(Djjohal.Com).mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/La Habana (feat. El Taiger)(Djjohal.Com).mp3': No such file or directory
+Mar 28 23:04 : player: played "La Habana (feat. El Taiger)(Djjohal.Com).mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Pehla Nasha - Sanam_64(wapking.fm)-1.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Pehla Nasha - Sanam_64(wapking.fm)-1.mp3': No such file or directory
+Mar 28 23:04 : player: played "Pehla Nasha - Sanam_64(wapking.fm)-1.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/05 Shivam - Bahubali 2 - 190Kbps.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/05 Shivam - Bahubali 2 - 190Kbps.mp3': No such file or directory
+Mar 28 23:04 : player: played "05 Shivam - Bahubali 2 - 190Kbps.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Khaas Bande (Full Song) _ Gagan Kokri Ft. Bohemia _ New Songs 2019 _ White Hill Music.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Khaas Bande (Full Song) _ Gagan Kokri Ft. Bohemia _ New Songs 2019 _ White Hill Music.mp3': No such file or directory
+Mar 28 23:04 : player: played "Khaas Bande (Full Song) _ Gagan Kokri Ft. Bohemia _ New Songs 2019 _ White Hill Music.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Kabir Singh_  Tera Ban Jaunga _ Shahid K, Kiara A, Sandeep V _ Tulsi Kumar, Akhil Sachdeva _ Kumaar.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Kabir Singh_  Tera Ban Jaunga _ Shahid K, Kiara A, Sandeep V _ Tulsi Kumar, Akhil Sachdeva _ Kumaar.mp3': No such file or directory
+Mar 28 23:04 : player: played "Kabir Singh_  Tera Ban Jaunga _ Shahid K, Kiara A, Sandeep V _ Tulsi Kumar, Akhil Sachdeva _ Kumaar.mp3"
+Mar 28 23:04 : client: [145] closed
+Mar 28 23:04 : client: [146] opened from 127.0.0.1:34624
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Kabir Singh_  Tera Ban Jaunga _ Shahid K, Kiara A, Sandeep V _ Tulsi Kumar, Akhil Sachdeva _ Kumaar.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Kabir Singh_  Tera Ban Jaunga _ Shahid K, Kiara A, Sandeep V _ Tulsi Kumar, Akhil Sachdeva _ Kumaar.mp3': No such file or directory
+Mar 28 23:04 : player: played "Kabir Singh_  Tera Ban Jaunga _ Shahid K, Kiara A, Sandeep V _ Tulsi Kumar, Akhil Sachdeva _ Kumaar.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Kabir Singh_  Tera Ban Jaunga _ Shahid K, Kiara A, Sandeep V _ Tulsi Kumar, Akhil Sachdeva _ Kumaar.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Kabir Singh_  Tera Ban Jaunga _ Shahid K, Kiara A, Sandeep V _ Tulsi Kumar, Akhil Sachdeva _ Kumaar.mp3': No such file or directory
+Mar 28 23:04 : client: [146] closed
+Mar 28 23:04 : client: [147] opened from 127.0.0.1:34628
+Mar 28 23:04 : client: [147] closed
+Mar 28 23:04 : client: [148] opened from 127.0.0.1:34632
+Mar 28 23:04 : client: [148] closed
+Mar 28 23:04 : client: [149] opened from 127.0.0.1:34636
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/13 - Turn Down For What - Fast & Furious 7 - [Songspk.CC].mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/13 - Turn Down For What - Fast & Furious 7 - [Songspk.CC].mp3': No such file or directory
+Mar 28 23:04 : player: played "13 - Turn Down For What - Fast & Furious 7 - [Songspk.CC].mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/13 - Turn Down For What - Fast & Furious 7 - [Songspk.CC].mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/13 - Turn Down For What - Fast & Furious 7 - [Songspk.CC].mp3': No such file or directory
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Speakerbox feat Ohana Bam Lafa Taylor F8 Remix - Bassnectar (DJJOhAL.Com).mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Speakerbox feat Ohana Bam Lafa Taylor F8 Remix - Bassnectar (DJJOhAL.Com).mp3': No such file or directory
+Mar 28 23:04 : player: played "Speakerbox feat Ohana Bam Lafa Taylor F8 Remix - Bassnectar (DJJOhAL.Com).mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Migos - MotorSport Ft. Nicki Minaj   Cardi B (DawnFoxes.com).mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Migos - MotorSport Ft. Nicki Minaj   Cardi B (DawnFoxes.com).mp3': No such file or directory
+Mar 28 23:04 : player: played "Migos - MotorSport Ft. Nicki Minaj   Cardi B (DawnFoxes.com).mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Manne_pal_pal_yaad_Teri_____Hit_haryanvi_song____DC_Madana.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Manne_pal_pal_yaad_Teri_____Hit_haryanvi_song____DC_Madana.mp3': No such file or directory
+Mar 28 23:04 : player: played "Manne_pal_pal_yaad_Teri_____Hit_haryanvi_song____DC_Madana.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Sucker For Pain - Lil Wayne  Wiz Khalifa  Imagine Dragons (DJJOhAL.Com).mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Sucker For Pain - Lil Wayne  Wiz Khalifa  Imagine Dragons (DJJOhAL.Com).mp3': No such file or directory
+Mar 28 23:04 : player: played "Sucker For Pain - Lil Wayne  Wiz Khalifa  Imagine Dragons (DJJOhAL.Com).mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Shawn Mendes - Imagination (DawnFoxes.com).mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Shawn Mendes - Imagination (DawnFoxes.com).mp3': No such file or directory
+Mar 28 23:04 : player: played "Shawn Mendes - Imagination (DawnFoxes.com).mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/All We Know(mp3rule.com).mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/All We Know(mp3rule.com).mp3': No such file or directory
+Mar 28 23:04 : player: played "All We Know(mp3rule.com).mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Magic_Mike_XXL_Soundtrack_-_Pure_Sin_(Dactyl).m4a
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Magic_Mike_XXL_Soundtrack_-_Pure_Sin_(Dactyl).m4a': No such file or directory
+Mar 28 23:04 : player: played "Magic_Mike_XXL_Soundtrack_-_Pure_Sin_(Dactyl).m4a"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Everybody (David Correy) - 320 Kbps - (BossMp3.Me).mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Everybody (David Correy) - 320 Kbps - (BossMp3.Me).mp3': No such file or directory
+Mar 28 23:04 : player: played "Everybody (David Correy) - 320 Kbps - (BossMp3.Me).mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Tera Hone Laga Hoon Lyrical Video - Ajab Prem Ki Ghazab Kahani _ Atif Aslam _ Ranbir, Katrina Kaif.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Tera Hone Laga Hoon Lyrical Video - Ajab Prem Ki Ghazab Kahani _ Atif Aslam _ Ranbir, Katrina Kaif.mp3': No such file or directory
+Mar 28 23:04 : player: played "Tera Hone Laga Hoon Lyrical Video - Ajab Prem Ki Ghazab Kahani _ Atif Aslam _ Ranbir, Katrina Kaif.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Koi Vi Nahi (Full Video) - Shirley Setia  Gurnazar  Rajat Nagpal Latest Songs 2018  Speed Records.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Koi Vi Nahi (Full Video) - Shirley Setia  Gurnazar  Rajat Nagpal Latest Songs 2018  Speed Records.mp3': No such file or directory
+Mar 28 23:04 : player: played "Koi Vi Nahi (Full Video) - Shirley Setia  Gurnazar  Rajat Nagpal Latest Songs 2018  Speed Records.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Trending Nakhra (Full Video)  Amrit Maan ft. Ginni Kapoor  Intense  Latest Songs 2018 [nqzIQh2D_Es].m4a
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Trending Nakhra (Full Video)  Amrit Maan ft. Ginni Kapoor  Intense  Latest Songs 2018 [nqzIQh2D_Es].m4a': No such file or directory
+Mar 28 23:04 : player: played "Trending Nakhra (Full Video)  Amrit Maan ft. Ginni Kapoor  Intense  Latest Songs 2018 [nqzIQh2D_Es].m4a"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Calvin Harris - Feels (Official Video) ft. Pharrell Williams, Katy Perry, Big Sean.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Calvin Harris - Feels (Official Video) ft. Pharrell Williams, Katy Perry, Big Sean.mp3': No such file or directory
+Mar 28 23:04 : player: played "Calvin Harris - Feels (Official Video) ft. Pharrell Williams, Katy Perry, Big Sean.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/09._The_Midas_Touch___Real_Steel_-_Soundtrack.m4a
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/09._The_Midas_Touch___Real_Steel_-_Soundtrack.m4a': No such file or directory
+Mar 28 23:04 : player: played "09._The_Midas_Touch___Real_Steel_-_Soundtrack.m4a"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/[Fast & Furious 6] We Own It - 2 Chainz & Wiz Khalifa (Full HD).mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/[Fast & Furious 6] We Own It - 2 Chainz & Wiz Khalifa (Full HD).mp3': No such file or directory
+Mar 28 23:04 : player: played "[Fast & Furious 6] We Own It - 2 Chainz & Wiz Khalifa (Full HD).mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Maroon_5_-_Don_t_Wanna_Know.m4a
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Maroon_5_-_Don_t_Wanna_Know.m4a': No such file or directory
+Mar 28 23:04 : player: played "Maroon_5_-_Don_t_Wanna_Know.m4a"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Ed Sheeran - Perfect Duet Ft. Beyonce (DawnFoxes.com).mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Ed Sheeran - Perfect Duet Ft. Beyonce (DawnFoxes.com).mp3': No such file or directory
+Mar 28 23:04 : player: played "Ed Sheeran - Perfect Duet Ft. Beyonce (DawnFoxes.com).mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Garaari  - YoYo Honey Singh [SongsMp3.Com] (SongsMp3.Com).mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Garaari  - YoYo Honey Singh [SongsMp3.Com] (SongsMp3.Com).mp3': No such file or directory
+Mar 28 23:04 : player: played "Garaari  - YoYo Honey Singh [SongsMp3.Com] (SongsMp3.Com).mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Khaab -  AKHIL  PARMISH VERMA  NEW PUNJABI SONG 2018  CROWN RECORDS .mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Khaab -  AKHIL  PARMISH VERMA  NEW PUNJABI SONG 2018  CROWN RECORDS .mp3': No such file or directory
+Mar 28 23:04 : client: [149] closed
+Mar 28 23:04 : player: played "Khaab -  AKHIL  PARMISH VERMA  NEW PUNJABI SONG 2018  CROWN RECORDS .mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Justin Bieber - Friends Ft. BloodPop (DawnFoxes.com).mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Justin Bieber - Friends Ft. BloodPop (DawnFoxes.com).mp3': No such file or directory
+Mar 28 23:04 : player: played "Justin Bieber - Friends Ft. BloodPop (DawnFoxes.com).mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Lupe_Fiasco__26_Guy_Sebastian_-_Battle_Scars__5BOfficial_Music_Video_5D.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Lupe_Fiasco__26_Guy_Sebastian_-_Battle_Scars__5BOfficial_Music_Video_5D.mp3': No such file or directory
+Mar 28 23:04 : player: played "Lupe_Fiasco__26_Guy_Sebastian_-_Battle_Scars__5BOfficial_Music_Video_5D.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Flint J - Ishq  Latest Punjabi Song 2015.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Flint J - Ishq  Latest Punjabi Song 2015.mp3': No such file or directory
+Mar 28 23:04 : player: played "Flint J - Ishq  Latest Punjabi Song 2015.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Housefull 4 - Shaitan Ka Saala Video _ Akshay Kumar _ Sohail Sen Feat. Vishal Dadlani-oCBDl58lBoU.m4a
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Housefull 4 - Shaitan Ka Saala Video _ Akshay Kumar _ Sohail Sen Feat. Vishal Dadlani-oCBDl58lBoU.m4a': No such file or directory
+Mar 28 23:04 : player: played "Housefull 4 - Shaitan Ka Saala Video _ Akshay Kumar _ Sohail Sen Feat. Vishal Dadlani-oCBDl58lBoU.m4a"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Pitch_Perfect_Soundtrack_-_Just_The_Way_You_Are⁄Just_A_Dream_(Pool_Mashup).m4a
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Pitch_Perfect_Soundtrack_-_Just_The_Way_You_Are⁄Just_A_Dream_(Pool_Mashup).m4a': No such file or directory
+Mar 28 23:04 : player: played "Pitch_Perfect_Soundtrack_-_Just_The_Way_You_Are⁄Just_A_Dream_(Pool_Mashup).m4a"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/10 - Atif Aslam (Mashup) - DJ Chetas (SongsMp3.Com).mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/10 - Atif Aslam (Mashup) - DJ Chetas (SongsMp3.Com).mp3': No such file or directory
+Mar 28 23:04 : player: played "10 - Atif Aslam (Mashup) - DJ Chetas (SongsMp3.Com).mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Car Nachdi - Gippy Grewal n Bohemia 190Kbps.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Car Nachdi - Gippy Grewal n Bohemia 190Kbps.mp3': No such file or directory
+Mar 28 23:04 : player: played "Car Nachdi - Gippy Grewal n Bohemia 190Kbps.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/PYAAR_KIYA_TO_NIBHANA-NEW_VERSION____BRIDE_OF_WATER_GOD____KOREAN_MIX.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/PYAAR_KIYA_TO_NIBHANA-NEW_VERSION____BRIDE_OF_WATER_GOD____KOREAN_MIX.mp3': No such file or directory
+Mar 28 23:04 : player: played "PYAAR_KIYA_TO_NIBHANA-NEW_VERSION____BRIDE_OF_WATER_GOD____KOREAN_MIX.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Maroon_5_-_Don_t_Wanna_Know.m4a
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Maroon_5_-_Don_t_Wanna_Know.m4a': No such file or directory
+Mar 28 23:04 : player: played "Maroon_5_-_Don_t_Wanna_Know.m4a"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Raja Kumari - KARMA.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Raja Kumari - KARMA.mp3': No such file or directory
+Mar 28 23:04 : player: played "Raja Kumari - KARMA.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Human Perceptions Understanding People.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Human Perceptions Understanding People.mp3': No such file or directory
+Mar 28 23:04 : player: played "Human Perceptions Understanding People.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Charlie Puth - One Call Away (DawnFoxes.com).mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Charlie Puth - One Call Away (DawnFoxes.com).mp3': No such file or directory
+Mar 28 23:04 : player: played "Charlie Puth - One Call Away (DawnFoxes.com).mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Superstar - Sukh-E Muzical Doctorz 190Kbps.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Superstar - Sukh-E Muzical Doctorz 190Kbps.mp3': No such file or directory
+Mar 28 23:04 : player: played "Superstar - Sukh-E Muzical Doctorz 190Kbps.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/G-Eazy - No Limit (remix) Ft. A$AP Rocky  Cardi B  French Montana  Juicy J .mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/G-Eazy - No Limit (remix) Ft. A$AP Rocky  Cardi B  French Montana  Juicy J .mp3': No such file or directory
+Mar 28 23:04 : player: played "G-Eazy - No Limit (remix) Ft. A$AP Rocky  Cardi B  French Montana  Juicy J .mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Jonas Blue - Rise ft. Jack & Jack [btrzs54s1Rc].m4a
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Jonas Blue - Rise ft. Jack & Jack [btrzs54s1Rc].m4a': No such file or directory
+Mar 28 23:04 : player: played "Jonas Blue - Rise ft. Jack & Jack [btrzs54s1Rc].m4a"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/August Alsina - Benediction  Ft. Rick Ross (DawnFoxes.com).mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/August Alsina - Benediction  Ft. Rick Ross (DawnFoxes.com).mp3': No such file or directory
+Mar 28 23:04 : player: played "August Alsina - Benediction  Ft. Rick Ross (DawnFoxes.com).mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Eminem - Rap God (Explicit) [XbGs_qK2PQA] (1).m4a
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Eminem - Rap God (Explicit) [XbGs_qK2PQA] (1).m4a': No such file or directory
+Mar 28 23:04 : player: played "Eminem - Rap God (Explicit) [XbGs_qK2PQA] (1).m4a"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Tutti Yaari - Inder Chahal Song  Ranjha Yaar  Sucha Yaar  Latest Punjabi Sad Songs 2018.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Tutti Yaari - Inder Chahal Song  Ranjha Yaar  Sucha Yaar  Latest Punjabi Sad Songs 2018.mp3': No such file or directory
+Mar 28 23:04 : player: played "Tutti Yaari - Inder Chahal Song  Ranjha Yaar  Sucha Yaar  Latest Punjabi Sad Songs 2018.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Ed Sheeran - What Do I Know (DawnFoxes.com).mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Ed Sheeran - What Do I Know (DawnFoxes.com).mp3': No such file or directory
+Mar 28 23:04 : player: played "Ed Sheeran - What Do I Know (DawnFoxes.com).mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Zilla Hilela - Jabariya Jodi (PagalWorldMp3.co).mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Zilla Hilela - Jabariya Jodi (PagalWorldMp3.co).mp3': No such file or directory
+Mar 28 23:04 : player: played "Zilla Hilela - Jabariya Jodi (PagalWorldMp3.co).mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/01 Hug Me - Beiimaan Love (Kanika Kapoor) 190Kbps.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/01 Hug Me - Beiimaan Love (Kanika Kapoor) 190Kbps.mp3': No such file or directory
+Mar 28 23:04 : player: played "01 Hug Me - Beiimaan Love (Kanika Kapoor) 190Kbps.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Fifth_Harmony_-_Worth_It_ft._Kid_Ink.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Fifth_Harmony_-_Worth_It_ft._Kid_Ink.mp3': No such file or directory
+Mar 28 23:04 : player: played "Fifth_Harmony_-_Worth_It_ft._Kid_Ink.mp3"
+Mar 28 23:04 : client: [150] opened from 127.0.0.1:34640
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Fifth_Harmony_-_Worth_It_ft._Kid_Ink.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Fifth_Harmony_-_Worth_It_ft._Kid_Ink.mp3': No such file or directory
+Mar 28 23:04 : player: played "Fifth_Harmony_-_Worth_It_ft._Kid_Ink.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Fifth_Harmony_-_Worth_It_ft._Kid_Ink.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Fifth_Harmony_-_Worth_It_ft._Kid_Ink.mp3': No such file or directory
+Mar 28 23:04 : client: [150] closed
+Mar 28 23:04 : client: [151] opened from 127.0.0.1:34644
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Fifth_Harmony_-_Worth_It_ft._Kid_Ink.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Fifth_Harmony_-_Worth_It_ft._Kid_Ink.mp3': No such file or directory
+Mar 28 23:04 : player: played "Fifth_Harmony_-_Worth_It_ft._Kid_Ink.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Fifth_Harmony_-_Worth_It_ft._Kid_Ink.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Fifth_Harmony_-_Worth_It_ft._Kid_Ink.mp3': No such file or directory
+Mar 28 23:04 : client: [151] closed
+Mar 28 23:04 : client: [152] opened from 127.0.0.1:34648
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Fifth_Harmony_-_Worth_It_ft._Kid_Ink.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Fifth_Harmony_-_Worth_It_ft._Kid_Ink.mp3': No such file or directory
+Mar 28 23:04 : player: played "Fifth_Harmony_-_Worth_It_ft._Kid_Ink.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Fifth_Harmony_-_Worth_It_ft._Kid_Ink.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Fifth_Harmony_-_Worth_It_ft._Kid_Ink.mp3': No such file or directory
+Mar 28 23:04 : client: [152] closed
+Mar 28 23:04 : client: [153] opened from 127.0.0.1:34652
+Mar 28 23:04 : client: [153] closed
+Mar 28 23:04 : client: [154] opened from 127.0.0.1:34656
+Mar 28 23:04 : client: [154] closed
+Mar 28 23:04 : client: [155] opened from 127.0.0.1:34660
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Fifth_Harmony_-_Worth_It_ft._Kid_Ink.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Fifth_Harmony_-_Worth_It_ft._Kid_Ink.mp3': No such file or directory
+Mar 28 23:04 : player: played "Fifth_Harmony_-_Worth_It_ft._Kid_Ink.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Fifth_Harmony_-_Worth_It_ft._Kid_Ink.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Fifth_Harmony_-_Worth_It_ft._Kid_Ink.mp3': No such file or directory
+Mar 28 23:04 : client: [155] closed
+Mar 28 23:04 : client: [156] opened from 127.0.0.1:34664
+Mar 28 23:04 : exception: Not playing
+Mar 28 23:04 : client: [156] closed
+Mar 28 23:04 : client: [157] opened from 127.0.0.1:34668
+Mar 28 23:04 : exception: Not playing
+Mar 28 23:04 : client: [157] closed
+Mar 28 23:04 : client: [158] opened from 127.0.0.1:34672
+Mar 28 23:04 : exception: Not playing
+Mar 28 23:04 : client: [158] closed
+Mar 28 23:04 : client: [159] opened from 127.0.0.1:34676
+Mar 28 23:04 : exception: Not playing
+Mar 28 23:04 : client: [159] closed
+Mar 28 23:04 : client: [160] opened from 127.0.0.1:34680
+Mar 28 23:04 : exception: Not playing
+Mar 28 23:04 : client: [160] closed
+Mar 28 23:04 : client: [161] opened from 127.0.0.1:34684
+Mar 28 23:04 : exception: Not playing
+Mar 28 23:04 : client: [161] closed
+Mar 28 23:04 : client: [162] opened from 127.0.0.1:34688
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Fifth_Harmony_-_Worth_It_ft._Kid_Ink.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Fifth_Harmony_-_Worth_It_ft._Kid_Ink.mp3': No such file or directory
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/DJ_Khaled__All_I_Do_Is_Win__feat._Ludacris,_Rick_Ross,_T-Pain___Snoop_Dogg___Vic.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/DJ_Khaled__All_I_Do_Is_Win__feat._Ludacris,_Rick_Ross,_T-Pain___Snoop_Dogg___Vic.mp3': No such file or directory
+Mar 28 23:04 : player: played "Fifth_Harmony_-_Worth_It_ft._Kid_Ink.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/DJ_Khaled__All_I_Do_Is_Win__feat._Ludacris,_Rick_Ross,_T-Pain___Snoop_Dogg___Vic.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/DJ_Khaled__All_I_Do_Is_Win__feat._Ludacris,_Rick_Ross,_T-Pain___Snoop_Dogg___Vic.mp3': No such file or directory
+Mar 28 23:04 : player: played "DJ_Khaled__All_I_Do_Is_Win__feat._Ludacris,_Rick_Ross,_T-Pain___Snoop_Dogg___Vic.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Garfield - Baha Men Holla with lyrics (192 kbps).mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Garfield - Baha Men Holla with lyrics (192 kbps).mp3': No such file or directory
+Mar 28 23:04 : player: played "Garfield - Baha Men Holla with lyrics (192 kbps).mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Ed Sheeran - Perfect (DawnFoxes.com).mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Ed Sheeran - Perfect (DawnFoxes.com).mp3': No such file or directory
+Mar 28 23:04 : player: played "Ed Sheeran - Perfect (DawnFoxes.com).mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Pitch_Perfect_Soundtrack_1_(2_videos).m4a
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Pitch_Perfect_Soundtrack_1_(2_videos).m4a': No such file or directory
+Mar 28 23:04 : player: played "Pitch_Perfect_Soundtrack_1_(2_videos).m4a"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Boga-_Nowhere_to_run_(_Baby_Driver_trailer_soundtrack).m4a
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Boga-_Nowhere_to_run_(_Baby_Driver_trailer_soundtrack).m4a': No such file or directory
+Mar 28 23:04 : player: played "Boga-_Nowhere_to_run_(_Baby_Driver_trailer_soundtrack).m4a"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Nakhra Nawabi - Ashok Mastie Feat. Badshah_64(wapking.fm).mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Nakhra Nawabi - Ashok Mastie Feat. Badshah_64(wapking.fm).mp3': No such file or directory
+Mar 28 23:04 : player: played "Nakhra Nawabi - Ashok Mastie Feat. Badshah_64(wapking.fm).mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Rapper Mashup By DJ Devil Dubai.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Rapper Mashup By DJ Devil Dubai.mp3': No such file or directory
+Mar 28 23:04 : player: played "Rapper Mashup By DJ Devil Dubai.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Let s Talk About Sex   Salt-N-Pepa  .mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Let s Talk About Sex   Salt-N-Pepa  .mp3': No such file or directory
+Mar 28 23:04 : player: played "Let s Talk About Sex   Salt-N-Pepa  .mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/12 Kaam Bhaari - Gully Boy.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/12 Kaam Bhaari - Gully Boy.mp3': No such file or directory
+Mar 28 23:04 : player: played "12 Kaam Bhaari - Gully Boy.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Full Video Kamariya  STREE  Nora Fatehi  Rajkummar Rao  Aastha Gill Divya Kumar Sachin- Jigar.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Full Video Kamariya  STREE  Nora Fatehi  Rajkummar Rao  Aastha Gill Divya Kumar Sachin- Jigar.mp3': No such file or directory
+Mar 28 23:04 : player: played "Full Video Kamariya  STREE  Nora Fatehi  Rajkummar Rao  Aastha Gill Divya Kumar Sachin- Jigar.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Gaal_Ni_Kadni___Parmish_Verma___Desi_Crew___Latest_Punjabi_Songs_2017___Speed_Records-mc.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Gaal_Ni_Kadni___Parmish_Verma___Desi_Crew___Latest_Punjabi_Songs_2017___Speed_Records-mc.mp3': No such file or directory
+Mar 28 23:04 : player: played "Gaal_Ni_Kadni___Parmish_Verma___Desi_Crew___Latest_Punjabi_Songs_2017___Speed_Records-mc.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Rabb Jane - Garry Sandhu 190Kbps.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Rabb Jane - Garry Sandhu 190Kbps.mp3': No such file or directory
+Mar 28 23:04 : player: played "Rabb Jane - Garry Sandhu 190Kbps.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Kola Laka Vellari-(Mr-Jatt.com).mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Kola Laka Vellari-(Mr-Jatt.com).mp3': No such file or directory
+Mar 28 23:04 : player: played "Kola Laka Vellari-(Mr-Jatt.com).mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Rockabye__28The_Megamix_29__E2_80_93_Rihanna__E2_80_A2_Justin_Bieber__E2_80_A2_AGrande__26_More__28T10MO_29.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Rockabye__28The_Megamix_29__E2_80_93_Rihanna__E2_80_A2_Justin_Bieber__E2_80_A2_AGrande__26_More__28T10MO_29.mp3': No such file or directory
+Mar 28 23:04 : player: played "Rockabye__28The_Megamix_29__E2_80_93_Rihanna__E2_80_A2_Justin_Bieber__E2_80_A2_AGrande__26_More__28T10MO_29.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/ZAYN,_Taylor_Swift_-_I_Don’t_Wanna_Live_Forever_(Fifty_Shades_Darker).m4a
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/ZAYN,_Taylor_Swift_-_I_Don’t_Wanna_Live_Forever_(Fifty_Shades_Darker).m4a': No such file or directory
+Mar 28 23:04 : player: played "ZAYN,_Taylor_Swift_-_I_Don’t_Wanna_Live_Forever_(Fifty_Shades_Darker).m4a"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/13. Vince Staples - Home.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/13. Vince Staples - Home.mp3': No such file or directory
+Mar 28 23:04 : player: played "13. Vince Staples - Home.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Bajrang_Dal_Trance_Music_2018.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Bajrang_Dal_Trance_Music_2018.mp3': No such file or directory
+Mar 28 23:04 : player: played "Bajrang_Dal_Trance_Music_2018.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Song Of The End - Theme-(Mr-Jatt.com).mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Song Of The End - Theme-(Mr-Jatt.com).mp3': No such file or directory
+Mar 28 23:04 : player: played "Song Of The End - Theme-(Mr-Jatt.com).mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Aankh_Maare_O_Ladka_Aankh_Maare_[Full_Song]_Tere_Mere_Sapne_Arshad_Warsi.m4a
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Aankh_Maare_O_Ladka_Aankh_Maare_[Full_Song]_Tere_Mere_Sapne_Arshad_Warsi.m4a': No such file or directory
+Mar 28 23:04 : player: played "Aankh_Maare_O_Ladka_Aankh_Maare_[Full_Song]_Tere_Mere_Sapne_Arshad_Warsi.m4a"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Charlie Puth - One Call Away (DawnFoxes.com).mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Charlie Puth - One Call Away (DawnFoxes.com).mp3': No such file or directory
+Mar 28 23:04 : client: [162] closed
+Mar 28 23:04 : player: played "Charlie Puth - One Call Away (DawnFoxes.com).mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/ravinder verma - Hindi Song Badan Per Sitare Lapete Hue O Jane Tamana Kahain Ja Rahi Ho Jara Paas AA.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/ravinder verma - Hindi Song Badan Per Sitare Lapete Hue O Jane Tamana Kahain Ja Rahi Ho Jara Paas AA.mp3': No such file or directory
+Mar 28 23:04 : player: played "ravinder verma - Hindi Song Badan Per Sitare Lapete Hue O Jane Tamana Kahain Ja Rahi Ho Jara Paas AA.mp3"
+Mar 28 23:04 : client: [163] opened from 127.0.0.1:34692
+Mar 28 23:04 : client: [163] closed
+Mar 28 23:04 : client: [164] opened from 127.0.0.1:34696
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Taylor_Swift_-_Blank_Space-mc.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Taylor_Swift_-_Blank_Space-mc.mp3': No such file or directory
+Mar 28 23:04 : player: played "Taylor_Swift_-_Blank_Space-mc.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Taylor_Swift_-_Blank_Space-mc.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Taylor_Swift_-_Blank_Space-mc.mp3': No such file or directory
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Avicii, Aloe Blacc – SOS (Lyrics) 🎵.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Avicii, Aloe Blacc – SOS (Lyrics) 🎵.mp3': No such file or directory
+Mar 28 23:04 : player: played "Avicii, Aloe Blacc – SOS (Lyrics) 🎵.mp3"
+Mar 28 23:04 : client: [164] closed
+Mar 28 23:04 : client: [165] opened from 127.0.0.1:34700
+Mar 28 23:04 : client: [165] closed
+Mar 28 23:04 : client: [166] opened from 127.0.0.1:34704
+Mar 28 23:04 : client: [166] closed
+Mar 28 23:04 : client: [167] opened from 127.0.0.1:34708
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/01 Hug Me - Beiimaan Love (Kanika Kapoor) 190Kbps.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/01 Hug Me - Beiimaan Love (Kanika Kapoor) 190Kbps.mp3': No such file or directory
+Mar 28 23:04 : player: played "01 Hug Me - Beiimaan Love (Kanika Kapoor) 190Kbps.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/01 Hug Me - Beiimaan Love (Kanika Kapoor) 190Kbps.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/01 Hug Me - Beiimaan Love (Kanika Kapoor) 190Kbps.mp3': No such file or directory
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Arjun - Shoulda Met Me First [49pqKCV5h2U] (1).m4a
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Arjun - Shoulda Met Me First [49pqKCV5h2U] (1).m4a': No such file or directory
+Mar 28 23:04 : player: played "Arjun - Shoulda Met Me First [49pqKCV5h2U] (1).m4a"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Barry_White_-_Never,_Never_Gonna_Give_Ya_Up_(Baby_Driver_Soundtrack).m4a
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Barry_White_-_Never,_Never_Gonna_Give_Ya_Up_(Baby_Driver_Soundtrack).m4a': No such file or directory
+Mar 28 23:04 : player: played "Barry_White_-_Never,_Never_Gonna_Give_Ya_Up_(Baby_Driver_Soundtrack).m4a"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Justin_Bieber_-_What_Do_You_Mean_3F-mc.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Justin_Bieber_-_What_Do_You_Mean_3F-mc.mp3': No such file or directory
+Mar 28 23:04 : player: played "Justin_Bieber_-_What_Do_You_Mean_3F-mc.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Sochta_Hoon_Ke_Wo_Kitne_Masoom_The___New_College_Love_Story___Latest_Song_2017__.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Sochta_Hoon_Ke_Wo_Kitne_Masoom_The___New_College_Love_Story___Latest_Song_2017__.mp3': No such file or directory
+Mar 28 23:04 : player: played "Sochta_Hoon_Ke_Wo_Kitne_Masoom_The___New_College_Love_Story___Latest_Song_2017__.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Gabbar_Is_Back_feat_Arijit_Singh_Teri_Mere_Kaha.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Gabbar_Is_Back_feat_Arijit_Singh_Teri_Mere_Kaha.mp3': No such file or directory
+Mar 28 23:04 : player: played "Gabbar_Is_Back_feat_Arijit_Singh_Teri_Mere_Kaha.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/SIMMBA Aankh Marey  Ranveer Singh Sara Ali Khan  Tanishk Bagchi Mika Neha Kakkar  Kumar Sanu.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/SIMMBA Aankh Marey  Ranveer Singh Sara Ali Khan  Tanishk Bagchi Mika Neha Kakkar  Kumar Sanu.mp3': No such file or directory
+Mar 28 23:04 : player: played "SIMMBA Aankh Marey  Ranveer Singh Sara Ali Khan  Tanishk Bagchi Mika Neha Kakkar  Kumar Sanu.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Main Hoon Na(MyMp3Song).mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Main Hoon Na(MyMp3Song).mp3': No such file or directory
+Mar 28 23:04 : player: played "Main Hoon Na(MyMp3Song).mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Tu_hi_tu_har_jagah_aaj_kal_kyun_hai!!_Hindi_Song_!!_Romantic_!!_Cute.m4a
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Tu_hi_tu_har_jagah_aaj_kal_kyun_hai!!_Hindi_Song_!!_Romantic_!!_Cute.m4a': No such file or directory
+Mar 28 23:04 : player: played "Tu_hi_tu_har_jagah_aaj_kal_kyun_hai!!_Hindi_Song_!!_Romantic_!!_Cute.m4a"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/07 Nai Jaana - Neha Bhasin (DJ Shadow Remix) 190Kbps.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/07 Nai Jaana - Neha Bhasin (DJ Shadow Remix) 190Kbps.mp3': No such file or directory
+Mar 28 23:04 : player: played "07 Nai Jaana - Neha Bhasin (DJ Shadow Remix) 190Kbps.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/03. Jaden Smith - Way Up.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/03. Jaden Smith - Way Up.mp3': No such file or directory
+Mar 28 23:04 : player: played "03. Jaden Smith - Way Up.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Kaam 25_ DIVINE _ Sacred Games _ Netflix.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Kaam 25_ DIVINE _ Sacred Games _ Netflix.mp3': No such file or directory
+Mar 28 23:04 : player: played "Kaam 25_ DIVINE _ Sacred Games _ Netflix.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/The_Jon_Spencer_Blues_Explosion_-_Bellbottoms.m4a
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/The_Jon_Spencer_Blues_Explosion_-_Bellbottoms.m4a': No such file or directory
+Mar 28 23:04 : player: played "The_Jon_Spencer_Blues_Explosion_-_Bellbottoms.m4a"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Robin Hustin x TobiMorrow - Light It Up (feat. Jex) _NCS Release_.mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Robin Hustin x TobiMorrow - Light It Up (feat. Jex) _NCS Release_.mp3': No such file or directory
+Mar 28 23:04 : player: played "Robin Hustin x TobiMorrow - Light It Up (feat. Jex) _NCS Release_.mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/07 Ghagra (Yeh Jawaani Hai Deewani).mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/07 Ghagra (Yeh Jawaani Hai Deewani).mp3': No such file or directory
+Mar 28 23:04 : player: played "07 Ghagra (Yeh Jawaani Hai Deewani).mp3"
+Mar 28 23:04 : exception: Failed to decode /home/raytracer/Music/Pyaar Tere Da Assar-(Mr-Jatt.com).mp3
+Mar 28 23:04 : exception: nested: Failed to open '/home/raytracer/Music/Pyaar Tere Da Assar-(Mr-Jatt.com).mp3': No such file or directory
+Mar 28 23:04 : player: played "Pyaar Tere Da Assar-(Mr-Jatt.com).mp3"
+Mar 28 23:04 : client: [167] closed
+Mar 28 23:04 : client: [168] opened from 127.0.0.1:34712
+Mar 28 23:04 : client: [168] closed
+Mar 28 23:04 : client: [169] opened from 127.0.0.1:34716
+Mar 28 23:04 : client: [169] closed
+Mar 28 23:05 : client: [170] opened from 127.0.0.1:34720
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Murder (Remix) [feat. 21 Savage](Djjohal.Com).mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Murder (Remix) [feat. 21 Savage](Djjohal.Com).mp3': No such file or directory
+Mar 28 23:05 : player: played "Murder (Remix) [feat. 21 Savage](Djjohal.Com).mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Murder (Remix) [feat. 21 Savage](Djjohal.Com).mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Murder (Remix) [feat. 21 Savage](Djjohal.Com).mp3': No such file or directory
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Chamkelu Sheeshan Jaisan _ Bhojpuri New Full Song _ Pawan Singh, Akshara Singh.mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Chamkelu Sheeshan Jaisan _ Bhojpuri New Full Song _ Pawan Singh, Akshara Singh.mp3': No such file or directory
+Mar 28 23:05 : player: played "Chamkelu Sheeshan Jaisan _ Bhojpuri New Full Song _ Pawan Singh, Akshara Singh.mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Cute Vol 1-(Mr-Jatt.com).mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Cute Vol 1-(Mr-Jatt.com).mp3': No such file or directory
+Mar 28 23:05 : player: played "Cute Vol 1-(Mr-Jatt.com).mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Mein Tera Boyfriend - VDJ Shaan n DJ Nafizz Remix.mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Mein Tera Boyfriend - VDJ Shaan n DJ Nafizz Remix.mp3': No such file or directory
+Mar 28 23:05 : player: played "Mein Tera Boyfriend - VDJ Shaan n DJ Nafizz Remix.mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/08._Give_It_a_Go___Real_Steel_-_Soundtrack.m4a
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/08._Give_It_a_Go___Real_Steel_-_Soundtrack.m4a': No such file or directory
+Mar 28 23:05 : player: played "08._Give_It_a_Go___Real_Steel_-_Soundtrack.m4a"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Move_The_Chains.m4a
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Move_The_Chains.m4a': No such file or directory
+Mar 28 23:05 : player: played "Move_The_Chains.m4a"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Fort Minor - Remember the Name.mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Fort Minor - Remember the Name.mp3': No such file or directory
+Mar 28 23:05 : player: played "Fort Minor - Remember the Name.mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Selena_Gomez_-_Fetish__28Audio_29_ft._Gucci_Mane.mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Selena_Gomez_-_Fetish__28Audio_29_ft._Gucci_Mane.mp3': No such file or directory
+Mar 28 23:05 : player: played "Selena_Gomez_-_Fetish__28Audio_29_ft._Gucci_Mane.mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Major_Lazer___DJ_Snake_-_Lean_On_(feat._MØ)_(Official_Music_Video).mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Major_Lazer___DJ_Snake_-_Lean_On_(feat._MØ)_(Official_Music_Video).mp3': No such file or directory
+Mar 28 23:05 : player: played "Major_Lazer___DJ_Snake_-_Lean_On_(feat._MØ)_(Official_Music_Video).mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Magic_Mike_XXL_Soundtrack_-_Marry_You_(cover_by_THE_UNITED).m4a
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Magic_Mike_XXL_Soundtrack_-_Marry_You_(cover_by_THE_UNITED).m4a': No such file or directory
+Mar 28 23:05 : player: played "Magic_Mike_XXL_Soundtrack_-_Marry_You_(cover_by_THE_UNITED).m4a"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Empire Of The Sun - High And Low (Official Video).mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Empire Of The Sun - High And Low (Official Video).mp3': No such file or directory
+Mar 28 23:05 : player: played "Empire Of The Sun - High And Low (Official Video).mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Justin Bieber  Quavo M The One.mp3 (Mp3goo.com).mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Justin Bieber  Quavo M The One.mp3 (Mp3goo.com).mp3': No such file or directory
+Mar 28 23:05 : player: played "Justin Bieber  Quavo M The One.mp3 (Mp3goo.com).mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Aa-Ante-Amalapuram-(Maximum)-(Pagalworld.Com).mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Aa-Ante-Amalapuram-(Maximum)-(Pagalworld.Com).mp3': No such file or directory
+Mar 28 23:05 : player: played "Aa-Ante-Amalapuram-(Maximum)-(Pagalworld.Com).mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/The_Chainsmokers_-_Paris.m4a
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/The_Chainsmokers_-_Paris.m4a': No such file or directory
+Mar 28 23:05 : player: played "The_Chainsmokers_-_Paris.m4a"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Hellberg_Rich_Edwards_-_Hands_of_Time_feat._Jonny_Rose_(mp3.pm).mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Hellberg_Rich_Edwards_-_Hands_of_Time_feat._Jonny_Rose_(mp3.pm).mp3': No such file or directory
+Mar 28 23:05 : player: played "Hellberg_Rich_Edwards_-_Hands_of_Time_feat._Jonny_Rose_(mp3.pm).mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/The Haryanvi Mashup 6 - Lokesh Gurjar _ Gurmeet Bhadana _ Desi King _ Totaram, Baba _ Priyanka Nagar.mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/The Haryanvi Mashup 6 - Lokesh Gurjar _ Gurmeet Bhadana _ Desi King _ Totaram, Baba _ Priyanka Nagar.mp3': No such file or directory
+Mar 28 23:05 : player: played "The Haryanvi Mashup 6 - Lokesh Gurjar _ Gurmeet Bhadana _ Desi King _ Totaram, Baba _ Priyanka Nagar.mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/पागल बनाइबे Pagal Banaibe _ Dabangg Sarkar _ Khesari Lal Yadav & Priyanka Singh.mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/पागल बनाइबे Pagal Banaibe _ Dabangg Sarkar _ Khesari Lal Yadav & Priyanka Singh.mp3': No such file or directory
+Mar 28 23:05 : player: played "पागल बनाइबे Pagal Banaibe _ Dabangg Sarkar _ Khesari Lal Yadav & Priyanka Singh.mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Post Malone - Better Now [-yHoa4MR0W4].m4a
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Post Malone - Better Now [-yHoa4MR0W4].m4a': No such file or directory
+Mar 28 23:05 : player: played "Post Malone - Better Now [-yHoa4MR0W4].m4a"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Laila_Mika_Singh_-_ MzcWap.CoM .mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Laila_Mika_Singh_-_ MzcWap.CoM .mp3': No such file or directory
+Mar 28 23:05 : player: played "Laila_Mika_Singh_-_ MzcWap.CoM .mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Janelle_Monáe_–_Make_Me_Feel_[Official_Music_Video].mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Janelle_Monáe_–_Make_Me_Feel_[Official_Music_Video].mp3': No such file or directory
+Mar 28 23:05 : player: played "Janelle_Monáe_–_Make_Me_Feel_[Official_Music_Video].mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Raftaar x Brodha V - Naachne Ka Shaunq.mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Raftaar x Brodha V - Naachne Ka Shaunq.mp3': No such file or directory
+Mar 28 23:05 : player: played "Raftaar x Brodha V - Naachne Ka Shaunq.mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Thor_Ragnarok_Soundtrack__Trailer_Song_Music_Theme_Song.m4a
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Thor_Ragnarok_Soundtrack__Trailer_Song_Music_Theme_Song.m4a': No such file or directory
+Mar 28 23:05 : player: played "Thor_Ragnarok_Soundtrack__Trailer_Song_Music_Theme_Song.m4a"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Forgiveness (El Perd�n) - Nicky Jam  Enrique Iglesias (DJJOhAL.Com).mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Forgiveness (El Perd�n) - Nicky Jam  Enrique Iglesias (DJJOhAL.Com).mp3': No such file or directory
+Mar 28 23:05 : player: played "Forgiveness (El Perd�n) - Nicky Jam  Enrique Iglesias (DJJOhAL.Com).mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/The_Detroit_Emeralds____Baby_let_me_take_you_,_1972.m4a
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/The_Detroit_Emeralds____Baby_let_me_take_you_,_1972.m4a': No such file or directory
+Mar 28 23:05 : player: played "The_Detroit_Emeralds____Baby_let_me_take_you_,_1972.m4a"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Collateral_Beauty_Soundtrack_-_Way_Down_We_Go_(Kaleo)_(Remix_by_DiPap).m4a
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Collateral_Beauty_Soundtrack_-_Way_Down_We_Go_(Kaleo)_(Remix_by_DiPap).m4a': No such file or directory
+Mar 28 23:05 : player: played "Collateral_Beauty_Soundtrack_-_Way_Down_We_Go_(Kaleo)_(Remix_by_DiPap).m4a"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Jonas Blue - Rise ft. Jack & Jack [btrzs54s1Rc].m4a
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Jonas Blue - Rise ft. Jack & Jack [btrzs54s1Rc].m4a': No such file or directory
+Mar 28 23:05 : client: [170] closed
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/mera bhola hai bhandari Dj ( new song ) DJ remix __ ni3.com __.mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/mera bhola hai bhandari Dj ( new song ) DJ remix __ ni3.com __.mp3': No such file or directory
+Mar 28 23:05 : player: played "Jonas Blue - Rise ft. Jack & Jack [btrzs54s1Rc].m4a"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/mera bhola hai bhandari Dj ( new song ) DJ remix __ ni3.com __.mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/mera bhola hai bhandari Dj ( new song ) DJ remix __ ni3.com __.mp3': No such file or directory
+Mar 28 23:05 : player: played "mera bhola hai bhandari Dj ( new song ) DJ remix __ ni3.com __.mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Kellee_Maize_-_Shining.mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Kellee_Maize_-_Shining.mp3': No such file or directory
+Mar 28 23:05 : player: played "Kellee_Maize_-_Shining.mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Nick Jonas - Close ft. Tove Lo.mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Nick Jonas - Close ft. Tove Lo.mp3': No such file or directory
+Mar 28 23:05 : player: played "Nick Jonas - Close ft. Tove Lo.mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Kendrick Lamar - LOYALTY. Ft. RIHANNA. (DawnFoxes.com).mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Kendrick Lamar - LOYALTY. Ft. RIHANNA. (DawnFoxes.com).mp3': No such file or directory
+Mar 28 23:05 : player: played "Kendrick Lamar - LOYALTY. Ft. RIHANNA. (DawnFoxes.com).mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/iron man.mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/iron man.mp3': No such file or directory
+Mar 28 23:05 : player: played "iron man.mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Teri Kami (Full Song)  Akhil  Latest Punjabi Songs 2016  Speed Records.mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Teri Kami (Full Song)  Akhil  Latest Punjabi Songs 2016  Speed Records.mp3': No such file or directory
+Mar 28 23:05 : player: played "Teri Kami (Full Song)  Akhil  Latest Punjabi Songs 2016  Speed Records.mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Major_Lazer__Watch_Out_For_This_(Bumaye)__feat_Busy_Signal,_The_Flexican___FS_Gr.m4a
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Major_Lazer__Watch_Out_For_This_(Bumaye)__feat_Busy_Signal,_The_Flexican___FS_Gr.m4a': No such file or directory
+Mar 28 23:05 : player: played "Major_Lazer__Watch_Out_For_This_(Bumaye)__feat_Busy_Signal,_The_Flexican___FS_Gr.m4a"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Hugh Jackman   Zac Efron - The Other Side (DawnFoxes.com).mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Hugh Jackman   Zac Efron - The Other Side (DawnFoxes.com).mp3': No such file or directory
+Mar 28 23:05 : player: played "Hugh Jackman   Zac Efron - The Other Side (DawnFoxes.com).mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Warna Gabbar Aa Jayega-(Mr-Jatt.com).mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Warna Gabbar Aa Jayega-(Mr-Jatt.com).mp3': No such file or directory
+Mar 28 23:05 : player: played "Warna Gabbar Aa Jayega-(Mr-Jatt.com).mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Raftaar - Panasonic Mobile MTV Spoken Word presents Swag Mera Desi feat Manj Musik [yW63GZHF1wQ] (1).m4a
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Raftaar - Panasonic Mobile MTV Spoken Word presents Swag Mera Desi feat Manj Musik [yW63GZHF1wQ] (1).m4a': No such file or directory
+Mar 28 23:05 : player: played "Raftaar - Panasonic Mobile MTV Spoken Word presents Swag Mera Desi feat Manj Musik [yW63GZHF1wQ] (1).m4a"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/TOP_10_Workout_SONGS_2017_-_BEAST_MODE_ON_!.m4a
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/TOP_10_Workout_SONGS_2017_-_BEAST_MODE_ON_!.m4a': No such file or directory
+Mar 28 23:05 : player: played "TOP_10_Workout_SONGS_2017_-_BEAST_MODE_ON_!.m4a"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Hook Up Song -  Student Of The Year 2 _ Tiger Shroff & Alia _ Vishal and Shekhar _Neha Kakkar_Kumaar.mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Hook Up Song -  Student Of The Year 2 _ Tiger Shroff & Alia _ Vishal and Shekhar _Neha Kakkar_Kumaar.mp3': No such file or directory
+Mar 28 23:05 : player: played "Hook Up Song -  Student Of The Year 2 _ Tiger Shroff & Alia _ Vishal and Shekhar _Neha Kakkar_Kumaar.mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/02 Beech Beech Mein (Arijit Singh) 190Kbps.mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/02 Beech Beech Mein (Arijit Singh) 190Kbps.mp3': No such file or directory
+Mar 28 23:05 : player: played "02 Beech Beech Mein (Arijit Singh) 190Kbps.mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Car Vich Munda Badnam Ho Gaya.mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Car Vich Munda Badnam Ho Gaya.mp3': No such file or directory
+Mar 28 23:05 : player: played "Car Vich Munda Badnam Ho Gaya.mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Oh Raja Jaan Hoon Main _ ओ राजा जान हूं मैं _ Naagraaj ( नागराज ) Bhojpuri Hit Song _ - VIDEO SONG.mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Oh Raja Jaan Hoon Main _ ओ राजा जान हूं मैं _ Naagraaj ( नागराज ) Bhojpuri Hit Song _ - VIDEO SONG.mp3': No such file or directory
+Mar 28 23:05 : player: played "Oh Raja Jaan Hoon Main _ ओ राजा जान हूं मैं _ Naagraaj ( नागराज ) Bhojpuri Hit Song _ - VIDEO SONG.mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Pyar-Hamen-Kis-Mod-Pe-(RaagSong.Com).mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Pyar-Hamen-Kis-Mod-Pe-(RaagSong.Com).mp3': No such file or directory
+Mar 28 23:05 : player: played "Pyar-Hamen-Kis-Mod-Pe-(RaagSong.Com).mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Justin Bieber - Overboard (feat Jessica Jarrell)(music.naij.com).mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Justin Bieber - Overboard (feat Jessica Jarrell)(music.naij.com).mp3': No such file or directory
+Mar 28 23:05 : player: played "Justin Bieber - Overboard (feat Jessica Jarrell)(music.naij.com).mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Mere Rashke Qamar (Baadshaho) - Nusrat Fateh Ali Khan (DjPunjab.Com).mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Mere Rashke Qamar (Baadshaho) - Nusrat Fateh Ali Khan (DjPunjab.Com).mp3': No such file or directory
+Mar 28 23:05 : player: played "Mere Rashke Qamar (Baadshaho) - Nusrat Fateh Ali Khan (DjPunjab.Com).mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Alessia Cara - Seventeen (DawnFoxes.com).mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Alessia Cara - Seventeen (DawnFoxes.com).mp3': No such file or directory
+Mar 28 23:05 : player: played "Alessia Cara - Seventeen (DawnFoxes.com).mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Banjaara_-_Full_Song__Ek_Tha_Tiger__Salman_Khan__Katrina_Kaif__Sukhwinder_Singh.m4a
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Banjaara_-_Full_Song__Ek_Tha_Tiger__Salman_Khan__Katrina_Kaif__Sukhwinder_Singh.m4a': No such file or directory
+Mar 28 23:05 : player: played "Banjaara_-_Full_Song__Ek_Tha_Tiger__Salman_Khan__Katrina_Kaif__Sukhwinder_Singh.m4a"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Atif Aslam  Darasal Full Video Song  Raabta  Sushant Singh Rajput & Kriti Sanon.mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Atif Aslam  Darasal Full Video Song  Raabta  Sushant Singh Rajput & Kriti Sanon.mp3': No such file or directory
+Mar 28 23:05 : player: played "Atif Aslam  Darasal Full Video Song  Raabta  Sushant Singh Rajput & Kriti Sanon.mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/LYRICS_ Jiya Tu Bihar Ke Lala _ Gangs Of Wasseypur _ Manoj Bajpai, Huma Qureshi and Others.mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/LYRICS_ Jiya Tu Bihar Ke Lala _ Gangs Of Wasseypur _ Manoj Bajpai, Huma Qureshi and Others.mp3': No such file or directory
+Mar 28 23:05 : player: played "LYRICS_ Jiya Tu Bihar Ke Lala _ Gangs Of Wasseypur _ Manoj Bajpai, Huma Qureshi and Others.mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Magic_Mike_XXL_Soundtrack_-_My_Pony_(Ginuwine).m4a
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Magic_Mike_XXL_Soundtrack_-_My_Pony_(Ginuwine).m4a': No such file or directory
+Mar 28 23:05 : player: played "Magic_Mike_XXL_Soundtrack_-_My_Pony_(Ginuwine).m4a"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Eminem Ft. John Cena - My Time Is Now.mp3 (Mp3goo.com).mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Eminem Ft. John Cena - My Time Is Now.mp3 (Mp3goo.com).mp3': No such file or directory
+Mar 28 23:05 : player: played "Eminem Ft. John Cena - My Time Is Now.mp3 (Mp3goo.com).mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/09._The_Midas_Touch___Real_Steel_-_Soundtrack.m4a
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/09._The_Midas_Touch___Real_Steel_-_Soundtrack.m4a': No such file or directory
+Mar 28 23:05 : player: played "09._The_Midas_Touch___Real_Steel_-_Soundtrack.m4a"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Cardi B - Best Life Ft. Chance The Rapper (DawnFoxes.com).mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Cardi B - Best Life Ft. Chance The Rapper (DawnFoxes.com).mp3': No such file or directory
+Mar 28 23:05 : player: played "Cardi B - Best Life Ft. Chance The Rapper (DawnFoxes.com).mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Aashiq Surrender Hua - DJ Omkar Remix.mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Aashiq Surrender Hua - DJ Omkar Remix.mp3': No such file or directory
+Mar 28 23:05 : player: played "Aashiq Surrender Hua - DJ Omkar Remix.mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Ankhian nu chain na aave .mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Ankhian nu chain na aave .mp3': No such file or directory
+Mar 28 23:05 : player: played "Ankhian nu chain na aave .mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Using The Zeigarnik Effect For Productivity And Personal Growth.mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Using The Zeigarnik Effect For Productivity And Personal Growth.mp3': No such file or directory
+Mar 28 23:05 : player: played "Using The Zeigarnik Effect For Productivity And Personal Growth.mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Zara_Larsson_-_Lush_Life.mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Zara_Larsson_-_Lush_Life.mp3': No such file or directory
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Camila Cabello - All these Years (DawnFoxes.com).mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Camila Cabello - All these Years (DawnFoxes.com).mp3': No such file or directory
+Mar 28 23:05 : player: played "Zara_Larsson_-_Lush_Life.mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Camila Cabello - All these Years (DawnFoxes.com).mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Camila Cabello - All these Years (DawnFoxes.com).mp3': No such file or directory
+Mar 28 23:05 : player: played "Camila Cabello - All these Years (DawnFoxes.com).mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/Akcent - Boca Linda (feat. Tamy N Reea) - (BossMp3.Me).mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/Akcent - Boca Linda (feat. Tamy N Reea) - (BossMp3.Me).mp3': No such file or directory
+Mar 28 23:05 : player: played "Akcent - Boca Linda (feat. Tamy N Reea) - (BossMp3.Me).mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/03 Allah Duhai Hai - Race 3 (iTunesRip).mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/03 Allah Duhai Hai - Race 3 (iTunesRip).mp3': No such file or directory
+Mar 28 23:05 : player: played "03 Allah Duhai Hai - Race 3 (iTunesRip).mp3"
+Mar 28 23:05 : exception: Failed to decode /home/raytracer/Music/03 Allah Duhai Hai - Race 3 (iTunesRip).mp3
+Mar 28 23:05 : exception: nested: Failed to open '/home/raytracer/Music/03 Allah Duhai Hai - Race 3 (iTunesRip).mp3': No such file or directory
+Mar 28 23:05 : player: played "03 Allah Duhai Hai - Race 3 (iTunesRip).mp3"
+Mar 28 23:05 : client: [171] opened from 127.0.0.1:34724
+Mar 28 23:05 : client: [171] closed
+Mar 28 23:05 : client: [172] opened from 127.0.0.1:34728
+Mar 28 23:05 : client: [172] closed
+Mar 28 23:06 : client: [173] opened from 127.0.0.1:34732
+Mar 28 23:06 : exception: Failed to decode /home/raytracer/Music/03 Allah Duhai Hai - Race 3 (iTunesRip).mp3
+Mar 28 23:06 : exception: nested: Failed to open '/home/raytracer/Music/03 Allah Duhai Hai - Race 3 (iTunesRip).mp3': No such file or directory
+Mar 28 23:06 : player: played "03 Allah Duhai Hai - Race 3 (iTunesRip).mp3"
+Mar 28 23:06 : exception: Failed to decode /home/raytracer/Music/03 Allah Duhai Hai - Race 3 (iTunesRip).mp3
+Mar 28 23:06 : exception: nested: Failed to open '/home/raytracer/Music/03 Allah Duhai Hai - Race 3 (iTunesRip).mp3': No such file or directory
+Mar 28 23:06 : client: [173] closed
+Mar 28 23:06 : client: [174] opened from 127.0.0.1:34736
+Mar 28 23:06 : exception: Failed to decode /home/raytracer/Music/02 Superman - Zorawar - Yo Yo Honey Singh 190Kbps.mp3
+Mar 28 23:06 : exception: nested: Failed to open '/home/raytracer/Music/02 Superman - Zorawar - Yo Yo Honey Singh 190Kbps.mp3': No such file or directory
+Mar 28 23:06 : player: played "02 Superman - Zorawar - Yo Yo Honey Singh 190Kbps.mp3"
+Mar 28 23:06 : exception: Failed to decode /home/raytracer/Music/02 Superman - Zorawar - Yo Yo Honey Singh 190Kbps.mp3
+Mar 28 23:06 : exception: nested: Failed to open '/home/raytracer/Music/02 Superman - Zorawar - Yo Yo Honey Singh 190Kbps.mp3': No such file or directory
+Mar 28 23:06 : exception: Failed to decode /home/raytracer/Music/Zilla Hilela - Jabariya Jodi (PagalWorldMp3.co).mp3
+Mar 28 23:06 : exception: nested: Failed to open '/home/raytracer/Music/Zilla Hilela - Jabariya Jodi (PagalWorldMp3.co).mp3': No such file or directory
+Mar 28 23:06 : player: played "Zilla Hilela - Jabariya Jodi (PagalWorldMp3.co).mp3"
+Mar 28 23:06 : exception: Failed to decode /home/raytracer/Music/Liam Payne - Strip That Down Ft. Quavo (DawnFoxes.com).mp3
+Mar 28 23:06 : exception: nested: Failed to open '/home/raytracer/Music/Liam Payne - Strip That Down Ft. Quavo (DawnFoxes.com).mp3': No such file or directory
+Mar 28 23:06 : player: played "Liam Payne - Strip That Down Ft. Quavo (DawnFoxes.com).mp3"
+Mar 28 23:06 : exception: Failed to decode /home/raytracer/Music/Luis_Fonsi,_Demi_Lovato_-_Échame_La_Culpa_(Video_Oficial)-mc.mp3
+Mar 28 23:06 : exception: nested: Failed to open '/home/raytracer/Music/Luis_Fonsi,_Demi_Lovato_-_Échame_La_Culpa_(Video_Oficial)-mc.mp3': No such file or directory
+Mar 28 23:06 : player: played "Luis_Fonsi,_Demi_Lovato_-_Échame_La_Culpa_(Video_Oficial)-mc.mp3"
+Mar 28 23:06 : exception: Failed to decode /home/raytracer/Music/Magic_Mike_XXL_Soundtrack_-_Feel_It_(Jacquees).m4a
+Mar 28 23:06 : exception: nested: Failed to open '/home/raytracer/Music/Magic_Mike_XXL_Soundtrack_-_Feel_It_(Jacquees).m4a': No such file or directory
+Mar 28 23:06 : player: played "Magic_Mike_XXL_Soundtrack_-_Feel_It_(Jacquees).m4a"
+Mar 28 23:06 : exception: Failed to decode /home/raytracer/Music/Dabangg 3_ Hud Hud Song _ Salman Khan _ Sonakshi Sinha _Divya Kumar,Shabab Sabri,Sajid _ Sajid Wajid.mp3
+Mar 28 23:06 : exception: nested: Failed to open '/home/raytracer/Music/Dabangg 3_ Hud Hud Song _ Salman Khan _ Sonakshi Sinha _Divya Kumar,Shabab Sabri,Sajid _ Sajid Wajid.mp3': No such file or directory
+Mar 28 23:06 : player: played "Dabangg 3_ Hud Hud Song _ Salman Khan _ Sonakshi Sinha _Divya Kumar,Shabab Sabri,Sajid _ Sajid Wajid.mp3"
+Mar 28 23:06 : client: [174] closed
+Mar 28 23:06 : client: [175] opened from 127.0.0.1:34740
+Mar 28 23:06 : exception: Failed to decode /home/raytracer/Music/Dabangg 3_ Hud Hud Song _ Salman Khan _ Sonakshi Sinha _Divya Kumar,Shabab Sabri,Sajid _ Sajid Wajid.mp3
+Mar 28 23:06 : exception: nested: Failed to open '/home/raytracer/Music/Dabangg 3_ Hud Hud Song _ Salman Khan _ Sonakshi Sinha _Divya Kumar,Shabab Sabri,Sajid _ Sajid Wajid.mp3': No such file or directory
+Mar 28 23:06 : player: played "Dabangg 3_ Hud Hud Song _ Salman Khan _ Sonakshi Sinha _Divya Kumar,Shabab Sabri,Sajid _ Sajid Wajid.mp3"
+Mar 28 23:06 : exception: Failed to decode /home/raytracer/Music/Dabangg 3_ Hud Hud Song _ Salman Khan _ Sonakshi Sinha _Divya Kumar,Shabab Sabri,Sajid _ Sajid Wajid.mp3
+Mar 28 23:06 : exception: nested: Failed to open '/home/raytracer/Music/Dabangg 3_ Hud Hud Song _ Salman Khan _ Sonakshi Sinha _Divya Kumar,Shabab Sabri,Sajid _ Sajid Wajid.mp3': No such file or directory
+Mar 28 23:06 : client: [175] closed
+Mar 28 23:06 : client: [176] opened from 127.0.0.1:34744
+Mar 28 23:06 : exception: Failed to decode /home/raytracer/Music/Dabangg 3_ Hud Hud Song _ Salman Khan _ Sonakshi Sinha _Divya Kumar,Shabab Sabri,Sajid _ Sajid Wajid.mp3
+Mar 28 23:06 : exception: nested: Failed to open '/home/raytracer/Music/Dabangg 3_ Hud Hud Song _ Salman Khan _ Sonakshi Sinha _Divya Kumar,Shabab Sabri,Sajid _ Sajid Wajid.mp3': No such file or directory
+Mar 28 23:06 : player: played "Dabangg 3_ Hud Hud Song _ Salman Khan _ Sonakshi Sinha _Divya Kumar,Shabab Sabri,Sajid _ Sajid Wajid.mp3"
+Mar 28 23:06 : exception: Failed to decode /home/raytracer/Music/Dabangg 3_ Hud Hud Song _ Salman Khan _ Sonakshi Sinha _Divya Kumar,Shabab Sabri,Sajid _ Sajid Wajid.mp3
+Mar 28 23:06 : exception: nested: Failed to open '/home/raytracer/Music/Dabangg 3_ Hud Hud Song _ Salman Khan _ Sonakshi Sinha _Divya Kumar,Shabab Sabri,Sajid _ Sajid Wajid.mp3': No such file or directory
+Mar 28 23:06 : client: [177] opened from 127.0.0.1:34748
+Mar 28 23:06 : client: [176] closed
+Mar 28 23:06 : exception: Failed to decode /home/raytracer/Music/Dabangg 3_ Hud Hud Song _ Salman Khan _ Sonakshi Sinha _Divya Kumar,Shabab Sabri,Sajid _ Sajid Wajid.mp3
+Mar 28 23:06 : exception: nested: Failed to open '/home/raytracer/Music/Dabangg 3_ Hud Hud Song _ Salman Khan _ Sonakshi Sinha _Divya Kumar,Shabab Sabri,Sajid _ Sajid Wajid.mp3': No such file or directory
+Mar 28 23:06 : player: played "Dabangg 3_ Hud Hud Song _ Salman Khan _ Sonakshi Sinha _Divya Kumar,Shabab Sabri,Sajid _ Sajid Wajid.mp3"
+Mar 28 23:06 : exception: Failed to decode /home/raytracer/Music/Dabangg 3_ Hud Hud Song _ Salman Khan _ Sonakshi Sinha _Divya Kumar,Shabab Sabri,Sajid _ Sajid Wajid.mp3
+Mar 28 23:06 : exception: nested: Failed to open '/home/raytracer/Music/Dabangg 3_ Hud Hud Song _ Salman Khan _ Sonakshi Sinha _Divya Kumar,Shabab Sabri,Sajid _ Sajid Wajid.mp3': No such file or directory
+Mar 28 23:06 : client: [177] closed
+Mar 28 23:06 : client: [178] opened from 127.0.0.1:34752
+Mar 28 23:06 : client: [178] closed
+Mar 28 23:06 : client: [179] opened from 127.0.0.1:34756
+Mar 28 23:06 : client: [179] closed
+Mar 29 00:05 : client: [180] opened from 127.0.0.1:34760
+Mar 29 00:05 : client: [180] closed
+Mar 29 00:05 : client: [181] opened from 127.0.0.1:34764
+Mar 29 00:05 : client: [181] closed
+Mar 29 00:05 : client: [182] opened from 127.0.0.1:34768
+Mar 29 00:05 : client: [182] closed
+Mar 29 00:05 : client: [183] opened from 127.0.0.1:34772
+Mar 29 00:05 : client: [183] closed
+Mar 29 00:05 : client: [184] opened from 127.0.0.1:34776
+Mar 29 00:05 : exception: Failed to decode /home/raytracer/Music/Dabangg 3_ Hud Hud Song _ Salman Khan _ Sonakshi Sinha _Divya Kumar,Shabab Sabri,Sajid _ Sajid Wajid.mp3
+Mar 29 00:05 : exception: nested: Failed to open '/home/raytracer/Music/Dabangg 3_ Hud Hud Song _ Salman Khan _ Sonakshi Sinha _Divya Kumar,Shabab Sabri,Sajid _ Sajid Wajid.mp3': No such file or directory
+Mar 29 00:05 : player: played "Dabangg 3_ Hud Hud Song _ Salman Khan _ Sonakshi Sinha _Divya Kumar,Shabab Sabri,Sajid _ Sajid Wajid.mp3"
+Mar 29 00:05 : exception: Failed to decode /home/raytracer/Music/Dabangg 3_ Hud Hud Song _ Salman Khan _ Sonakshi Sinha _Divya Kumar,Shabab Sabri,Sajid _ Sajid Wajid.mp3
+Mar 29 00:05 : exception: nested: Failed to open '/home/raytracer/Music/Dabangg 3_ Hud Hud Song _ Salman Khan _ Sonakshi Sinha _Divya Kumar,Shabab Sabri,Sajid _ Sajid Wajid.mp3': No such file or directory
+Mar 29 00:05 : client: [184] closed
+Mar 29 00:05 : client: [185] opened from 127.0.0.1:34780
+Mar 29 00:05 : exception: Failed to decode /home/raytracer/Music/Spider-Man_ Far From Home Soundtrack - Back in Black by AC_DC.mp3
+Mar 29 00:05 : exception: nested: Failed to open '/home/raytracer/Music/Spider-Man_ Far From Home Soundtrack - Back in Black by AC_DC.mp3': No such file or directory
+Mar 29 00:05 : player: played "Spider-Man_ Far From Home Soundtrack - Back in Black by AC_DC.mp3"
+Mar 29 00:05 : exception: Failed to decode /home/raytracer/Music/Spider-Man_ Far From Home Soundtrack - Back in Black by AC_DC.mp3
+Mar 29 00:05 : exception: nested: Failed to open '/home/raytracer/Music/Spider-Man_ Far From Home Soundtrack - Back in Black by AC_DC.mp3': No such file or directory
+Mar 29 00:05 : exception: Failed to decode /home/raytracer/Music/Namo Namo - Full Audio _ Kedarnath _ Sushant Rajput _ Sara Ali Khan _ Abhishek K _ Amit T_ Amitabh B.mp3
+Mar 29 00:05 : exception: nested: Failed to open '/home/raytracer/Music/Namo Namo - Full Audio _ Kedarnath _ Sushant Rajput _ Sara Ali Khan _ Abhishek K _ Amit T_ Amitabh B.mp3': No such file or directory
+Mar 29 00:05 : player: played "Namo Namo - Full Audio _ Kedarnath _ Sushant Rajput _ Sara Ali Khan _ Abhishek K _ Amit T_ Amitabh B.mp3"
+Mar 29 00:05 : exception: Failed to decode /home/raytracer/Music/The Chainsmokers - Hope ft. Winona Oak (Lyric Video).mp3
+Mar 29 00:05 : exception: nested: Failed to open '/home/raytracer/Music/The Chainsmokers - Hope ft. Winona Oak (Lyric Video).mp3': No such file or directory
+Mar 29 00:05 : player: played "The Chainsmokers - Hope ft. Winona Oak (Lyric Video).mp3"
+Mar 29 00:05 : exception: Failed to decode /home/raytracer/Music/Ed Sheeran - Perfect Duet Ft. Beyonce (DawnFoxes.com).mp3
+Mar 29 00:05 : exception: nested: Failed to open '/home/raytracer/Music/Ed Sheeran - Perfect Duet Ft. Beyonce (DawnFoxes.com).mp3': No such file or directory
+Mar 29 00:05 : player: played "Ed Sheeran - Perfect Duet Ft. Beyonce (DawnFoxes.com).mp3"
+Mar 29 00:05 : exception: Failed to decode /home/raytracer/Music/Major_Lazer___DJ_Snake_-_Lean_On_(feat._MØ)_(Official_Music_Video).mp3
+Mar 29 00:05 : exception: nested: Failed to open '/home/raytracer/Music/Major_Lazer___DJ_Snake_-_Lean_On_(feat._MØ)_(Official_Music_Video).mp3': No such file or directory
+Mar 29 00:05 : player: played "Major_Lazer___DJ_Snake_-_Lean_On_(feat._MØ)_(Official_Music_Video).mp3"
+Mar 29 00:05 : exception: Failed to decode /home/raytracer/Music/Girl Power -  Nindy Kaur  Raftaar  Manj Musik  Full Video  Latest Punjabi Song  AmanPreet Singh.mp3
+Mar 29 00:05 : exception: nested: Failed to open '/home/raytracer/Music/Girl Power -  Nindy Kaur  Raftaar  Manj Musik  Full Video  Latest Punjabi Song  AmanPreet Singh.mp3': No such file or directory
+Mar 29 00:05 : player: played "Girl Power -  Nindy Kaur  Raftaar  Manj Musik  Full Video  Latest Punjabi Song  AmanPreet Singh.mp3"
+Mar 29 00:05 : exception: Failed to decode /home/raytracer/Music/Tu_Dua_Hai_Dua.mp3
+Mar 29 00:05 : exception: nested: Failed to open '/home/raytracer/Music/Tu_Dua_Hai_Dua.mp3': No such file or directory
+Mar 29 00:05 : player: played "Tu_Dua_Hai_Dua.mp3"
+Mar 29 00:05 : exception: Failed to decode /home/raytracer/Music/Best Of EDM 2018 Rewind Mix - 50 Tracks in 14 Minutes.mp3
+Mar 29 00:05 : exception: nested: Failed to open '/home/raytracer/Music/Best Of EDM 2018 Rewind Mix - 50 Tracks in 14 Minutes.mp3': No such file or directory
+Mar 29 00:05 : player: played "Best Of EDM 2018 Rewind Mix - 50 Tracks in 14 Minutes.mp3"
+Mar 29 00:05 : exception: Failed to decode /home/raytracer/Music/Imran Khan - Satisfya (Official Music Video).mp3
+Mar 29 00:05 : exception: nested: Failed to open '/home/raytracer/Music/Imran Khan - Satisfya (Official Music Video).mp3': No such file or directory
+Mar 29 00:05 : player: played "Imran Khan - Satisfya (Official Music Video).mp3"
+Mar 29 00:05 : exception: Failed to decode /home/raytracer/Music/Justin Bieber - Favorite Girl - Lyrics.mp3
+Mar 29 00:05 : exception: nested: Failed to open '/home/raytracer/Music/Justin Bieber - Favorite Girl - Lyrics.mp3': No such file or directory
+Mar 29 00:05 : player: played "Justin Bieber - Favorite Girl - Lyrics.mp3"
+Mar 29 00:05 : exception: Failed to decode /home/raytracer/Music/Justin_Bieber_-_What_Do_You_Mean_3F.mp3
+Mar 29 00:05 : exception: nested: Failed to open '/home/raytracer/Music/Justin_Bieber_-_What_Do_You_Mean_3F.mp3': No such file or directory
+Mar 29 00:05 : player: played "Justin_Bieber_-_What_Do_You_Mean_3F.mp3"
+Mar 29 00:05 : exception: Failed to decode /home/raytracer/Music/Charlie Puth - Beautiful Corruption (DawnFoxes.com).mp3
+Mar 29 00:05 : exception: nested: Failed to open '/home/raytracer/Music/Charlie Puth - Beautiful Corruption (DawnFoxes.com).mp3': No such file or directory
+Mar 29 00:05 : player: played "Charlie Puth - Beautiful Corruption (DawnFoxes.com).mp3"
+Mar 29 00:05 : client: [185] closed
+Mar 29 00:05 : client: [186] opened from 127.0.0.1:34784
+Mar 29 00:05 : client: [186] closed
+Mar 29 00:05 : client: [187] opened from 127.0.0.1:34788
+Mar 29 00:05 : client: [187] closed
+Mar 29 00:07 : client: [188] opened from 127.0.0.1:34792
+Mar 29 00:07 : exception: Failed to decode /home/raytracer/Music/Charlie Puth - Beautiful Corruption (DawnFoxes.com).mp3
+Mar 29 00:07 : exception: nested: Failed to open '/home/raytracer/Music/Charlie Puth - Beautiful Corruption (DawnFoxes.com).mp3': No such file or directory
+Mar 29 00:07 : player: played "Charlie Puth - Beautiful Corruption (DawnFoxes.com).mp3"
+Mar 29 00:07 : exception: Failed to decode /home/raytracer/Music/Charlie Puth - Beautiful Corruption (DawnFoxes.com).mp3
+Mar 29 00:07 : exception: nested: Failed to open '/home/raytracer/Music/Charlie Puth - Beautiful Corruption (DawnFoxes.com).mp3': No such file or directory
+Mar 29 00:07 : client: [188] closed
+Mar 29 00:07 : client: [189] opened from 127.0.0.1:34796
+Mar 29 00:07 : exception: Failed to decode /home/raytracer/Music/Charlie Puth - Beautiful Corruption (DawnFoxes.com).mp3
+Mar 29 00:07 : exception: nested: Failed to open '/home/raytracer/Music/Charlie Puth - Beautiful Corruption (DawnFoxes.com).mp3': No such file or directory
+Mar 29 00:07 : player: played "Charlie Puth - Beautiful Corruption (DawnFoxes.com).mp3"
+Mar 29 00:07 : exception: Failed to decode /home/raytracer/Music/Charlie Puth - Beautiful Corruption (DawnFoxes.com).mp3
+Mar 29 00:07 : exception: nested: Failed to open '/home/raytracer/Music/Charlie Puth - Beautiful Corruption (DawnFoxes.com).mp3': No such file or directory
+Mar 29 00:07 : client: [189] closed
+Mar 29 00:07 : client: [190] opened from 127.0.0.1:34800
+Mar 29 00:07 : exception: Failed to decode /home/raytracer/Music/Badnam__Mankirt_Aulakh_Feat_Dj_Flow__Sukh_Sanghera__Singga__Speed_Records.m4a
+Mar 29 00:07 : exception: nested: Failed to open '/home/raytracer/Music/Badnam__Mankirt_Aulakh_Feat_Dj_Flow__Sukh_Sanghera__Singga__Speed_Records.m4a': No such file or directory
+Mar 29 00:07 : player: played "Badnam__Mankirt_Aulakh_Feat_Dj_Flow__Sukh_Sanghera__Singga__Speed_Records.m4a"
+Mar 29 00:07 : exception: Failed to decode /home/raytracer/Music/Badnam__Mankirt_Aulakh_Feat_Dj_Flow__Sukh_Sanghera__Singga__Speed_Records.m4a
+Mar 29 00:07 : exception: nested: Failed to open '/home/raytracer/Music/Badnam__Mankirt_Aulakh_Feat_Dj_Flow__Sukh_Sanghera__Singga__Speed_Records.m4a': No such file or directory
+Mar 29 00:07 : exception: Failed to decode /home/raytracer/Music/Alicia Keys - If I Ain't Got You (Official Music Video).mp3
+Mar 29 00:07 : exception: nested: Failed to open '/home/raytracer/Music/Alicia Keys - If I Ain't Got You (Official Music Video).mp3': No such file or directory
+Mar 29 00:07 : player: played "Alicia Keys - If I Ain't Got You (Official Music Video).mp3"
+Mar 29 00:07 : exception: Failed to decode /home/raytracer/Music/Akcent - Serai (feat. Lidia Buble) - (BossMp3.Me).mp3
+Mar 29 00:07 : exception: nested: Failed to open '/home/raytracer/Music/Akcent - Serai (feat. Lidia Buble) - (BossMp3.Me).mp3': No such file or directory
+Mar 29 00:07 : player: played "Akcent - Serai (feat. Lidia Buble) - (BossMp3.Me).mp3"
+Mar 29 00:07 : exception: Failed to decode /home/raytracer/Music/11 Kab Se Kab Tak - Gully Boy.mp3
+Mar 29 00:07 : exception: nested: Failed to open '/home/raytracer/Music/11 Kab Se Kab Tak - Gully Boy.mp3': No such file or directory
+Mar 29 00:07 : player: played "11 Kab Se Kab Tak - Gully Boy.mp3"
+Mar 29 00:07 : exception: Failed to decode /home/raytracer/Music/#DILBAR_8D_AUDIO.m4a
+Mar 29 00:07 : exception: nested: Failed to open '/home/raytracer/Music/#DILBAR_8D_AUDIO.m4a': No such file or directory
+Mar 29 00:07 : player: played "#DILBAR_8D_AUDIO.m4a"
+Mar 29 00:07 : exception: Failed to decode /home/raytracer/Music/Mary_J_Blige_-_Mary_Jane_(_All_Night_long_).mp3
+Mar 29 00:07 : exception: nested: Failed to open '/home/raytracer/Music/Mary_J_Blige_-_Mary_Jane_(_All_Night_long_).mp3': No such file or directory
+Mar 29 00:07 : player: played "Mary_J_Blige_-_Mary_Jane_(_All_Night_long_).mp3"
+Mar 29 00:07 : exception: Failed to decode /home/raytracer/Music/Thor__Ragnarok_Song___God_Of_Thunder___#NerdOut_[Prod._by_Boston].m4a
+Mar 29 00:07 : exception: nested: Failed to open '/home/raytracer/Music/Thor__Ragnarok_Song___God_Of_Thunder___#NerdOut_[Prod._by_Boston].m4a': No such file or directory
+Mar 29 00:07 : player: played "Thor__Ragnarok_Song___God_Of_Thunder___#NerdOut_[Prod._by_Boston].m4a"
+Mar 29 00:07 : exception: Failed to decode /home/raytracer/Music/Justin Bieber - I’ll Show You (DawnFoxes.com).mp3
+Mar 29 00:07 : exception: nested: Failed to open '/home/raytracer/Music/Justin Bieber - I’ll Show You (DawnFoxes.com).mp3': No such file or directory
+Mar 29 00:07 : player: played "Justin Bieber - I’ll Show You (DawnFoxes.com).mp3"
+Mar 29 00:07 : exception: Failed to decode /home/raytracer/Music/Kevin Ross - Dont Go [MukZsRnOmtk] (1).m4a
+Mar 29 00:07 : exception: nested: Failed to open '/home/raytracer/Music/Kevin Ross - Dont Go [MukZsRnOmtk] (1).m4a': No such file or directory
+Mar 29 00:07 : player: played "Kevin Ross - Dont Go [MukZsRnOmtk] (1).m4a"
+Mar 29 00:07 : exception: Failed to decode /home/raytracer/Music/Do Din - Darshan Raval _ Akanksha Sharma _ Latest Hits 2018.mp3
+Mar 29 00:07 : exception: nested: Failed to open '/home/raytracer/Music/Do Din - Darshan Raval _ Akanksha Sharma _ Latest Hits 2018.mp3': No such file or directory
+Mar 29 00:07 : player: played "Do Din - Darshan Raval _ Akanksha Sharma _ Latest Hits 2018.mp3"
+Mar 29 00:07 : exception: Failed to decode /home/raytracer/Music/Veervaar  Sardaarji  Diljit Dosanjh  Neeru Bajwa  Mandy Takhar  Releasing 2.m4a
+Mar 29 00:07 : exception: nested: Failed to open '/home/raytracer/Music/Veervaar  Sardaarji  Diljit Dosanjh  Neeru Bajwa  Mandy Takhar  Releasing 2.m4a': No such file or directory
+Mar 29 00:07 : player: played "Veervaar  Sardaarji  Diljit Dosanjh  Neeru Bajwa  Mandy Takhar  Releasing 2.m4a"
+Mar 29 00:07 : exception: Failed to decode /home/raytracer/Music/Haryanvi Top Mashup 3  _ Gaurav Bhati _ Monika Chauhan _ Ghanu Music _ Haryanvi Top DJ Song 2018.mp3
+Mar 29 00:07 : exception: nested: Failed to open '/home/raytracer/Music/Haryanvi Top Mashup 3  _ Gaurav Bhati _ Monika Chauhan _ Ghanu Music _ Haryanvi Top DJ Song 2018.mp3': No such file or directory
+Mar 29 00:07 : player: played "Haryanvi Top Mashup 3  _ Gaurav Bhati _ Monika Chauhan _ Ghanu Music _ Haryanvi Top DJ Song 2018.mp3"
+Mar 29 00:07 : exception: Failed to decode /home/raytracer/Music/01 Lagdi Hai Thaai - Simran (Guru R) 190Kbps.mp3
+Mar 29 00:07 : exception: nested: Failed to open '/home/raytracer/Music/01 Lagdi Hai Thaai - Simran (Guru R) 190Kbps.mp3': No such file or directory
+Mar 29 00:07 : player: played "01 Lagdi Hai Thaai - Simran (Guru R) 190Kbps.mp3"
+Mar 29 00:07 : exception: Failed to decode /home/raytracer/Music/Kendrick Lamar - LOYALTY. Ft. RIHANNA. (DawnFoxes.com).mp3
+Mar 29 00:07 : exception: nested: Failed to open '/home/raytracer/Music/Kendrick Lamar - LOYALTY. Ft. RIHANNA. (DawnFoxes.com).mp3': No such file or directory
+Mar 29 00:07 : player: played "Kendrick Lamar - LOYALTY. Ft. RIHANNA. (DawnFoxes.com).mp3"
+Mar 29 00:07 : exception: Failed to decode /home/raytracer/Music/Prada (Duro Duro)- The Doorbeen _ Alia Bhatt _ Shreya Sharma _ Latest Hits 2019.mp3
+Mar 29 00:07 : exception: nested: Failed to open '/home/raytracer/Music/Prada (Duro Duro)- The Doorbeen _ Alia Bhatt _ Shreya Sharma _ Latest Hits 2019.mp3': No such file or directory
+Mar 29 00:07 : player: played "Prada (Duro Duro)- The Doorbeen _ Alia Bhatt _ Shreya Sharma _ Latest Hits 2019.mp3"
+Mar 29 00:07 : exception: Failed to decode /home/raytracer/Music/Welcome Back Mashup (Kiran Kamath).mp3
+Mar 29 00:07 : exception: nested: Failed to open '/home/raytracer/Music/Welcome Back Mashup (Kiran Kamath).mp3': No such file or directory
+Mar 29 00:07 : player: played "Welcome Back Mashup (Kiran Kamath).mp3"
+Mar 29 00:07 : exception: Failed to decode /home/raytracer/Music/Tutti Yaari (Full Song) A-Kay  Latest Punjabi Songs  Speed Records.mp3
+Mar 29 00:07 : exception: nested: Failed to open '/home/raytracer/Music/Tutti Yaari (Full Song) A-Kay  Latest Punjabi Songs  Speed Records.mp3': No such file or directory
+Mar 29 00:07 : player: played "Tutti Yaari (Full Song) A-Kay  Latest Punjabi Songs  Speed Records.mp3"
+Mar 29 00:07 : exception: Failed to decode /home/raytracer/Music/Charlie_Puth_(feat._Boyz_II_Men)_-_If_You_Leave_Me_Now_(Studio_Session).m4a
+Mar 29 00:07 : exception: nested: Failed to open '/home/raytracer/Music/Charlie_Puth_(feat._Boyz_II_Men)_-_If_You_Leave_Me_Now_(Studio_Session).m4a': No such file or directory
+Mar 29 00:07 : player: played "Charlie_Puth_(feat._Boyz_II_Men)_-_If_You_Leave_Me_Now_(Studio_Session).m4a"
+Mar 29 00:07 : exception: Failed to decode /home/raytracer/Music/Maluma_-_Sin_Contrato_(Official_Video).mp3
+Mar 29 00:07 : exception: nested: Failed to open '/home/raytracer/Music/Maluma_-_Sin_Contrato_(Official_Video).mp3': No such file or directory
+Mar 29 00:07 : player: played "Maluma_-_Sin_Contrato_(Official_Video).mp3"
+Mar 29 00:07 : exception: Failed to decode /home/raytracer/Music/Goli chal javegi - Dj Vinay (DJJOhAL.Com).mp3
+Mar 29 00:07 : exception: nested: Failed to open '/home/raytracer/Music/Goli chal javegi - Dj Vinay (DJJOhAL.Com).mp3': No such file or directory
+Mar 29 00:07 : client: [190] closed
+Mar 29 00:07 : player: played "Goli chal javegi - Dj Vinay (DJJOhAL.Com).mp3"
+Mar 29 00:08 : client: [191] opened from 127.0.0.1:34804
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/02 Hawa Hawa - Mubarakan (Mika) 190Kbps.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/02 Hawa Hawa - Mubarakan (Mika) 190Kbps.mp3': No such file or directory
+Mar 29 00:08 : player: played "02 Hawa Hawa - Mubarakan (Mika) 190Kbps.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/02 Hawa Hawa - Mubarakan (Mika) 190Kbps.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/02 Hawa Hawa - Mubarakan (Mika) 190Kbps.mp3': No such file or directory
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Wiz Khalifa - See You Again ft. Charlie Puth [] Furious 7 Soundtrack.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Wiz Khalifa - See You Again ft. Charlie Puth [] Furious 7 Soundtrack.mp3': No such file or directory
+Mar 29 00:08 : player: played "Wiz Khalifa - See You Again ft. Charlie Puth [] Furious 7 Soundtrack.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Bruno Mars  - Versace On The Floor (DawnFoxes.com).mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Bruno Mars  - Versace On The Floor (DawnFoxes.com).mp3': No such file or directory
+Mar 29 00:08 : player: played "Bruno Mars  - Versace On The Floor (DawnFoxes.com).mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Charlie Puth - How Long (DawnFoxes.com).mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Charlie Puth - How Long (DawnFoxes.com).mp3': No such file or directory
+Mar 29 00:08 : player: played "Charlie Puth - How Long (DawnFoxes.com).mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Yo Yo Honey Singh Aankhon Aankhon (Film Version) FULL VIDEO Song  Bhaag Johnny   T-Series.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Yo Yo Honey Singh Aankhon Aankhon (Film Version) FULL VIDEO Song  Bhaag Johnny   T-Series.mp3': No such file or directory
+Mar 29 00:08 : player: played "Yo Yo Honey Singh Aankhon Aankhon (Film Version) FULL VIDEO Song  Bhaag Johnny   T-Series.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/01 Mubarakan - Title Song (Badshah) 190Kbps.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/01 Mubarakan - Title Song (Badshah) 190Kbps.mp3': No such file or directory
+Mar 29 00:08 : player: played "01 Mubarakan - Title Song (Badshah) 190Kbps.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Ed Sheeran - Photograph (DawnFoxes.com).mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Ed Sheeran - Photograph (DawnFoxes.com).mp3': No such file or directory
+Mar 29 00:08 : player: played "Ed Sheeran - Photograph (DawnFoxes.com).mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Rita Ora - I'm Right Here (DawnFoxes.com).mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Rita Ora - I'm Right Here (DawnFoxes.com).mp3': No such file or directory
+Mar 29 00:08 : player: played "Rita Ora - I'm Right Here (DawnFoxes.com).mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Zac Efron & Zendaya - Rewrite The Stars (DawnFoxes.com).mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Zac Efron & Zendaya - Rewrite The Stars (DawnFoxes.com).mp3': No such file or directory
+Mar 29 00:08 : player: played "Zac Efron & Zendaya - Rewrite The Stars (DawnFoxes.com).mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Aao Raja (Gabbar Is Back) Yo Yo Honey Singh 190Kbps.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Aao Raja (Gabbar Is Back) Yo Yo Honey Singh 190Kbps.mp3': No such file or directory
+Mar 29 00:08 : player: played "Aao Raja (Gabbar Is Back) Yo Yo Honey Singh 190Kbps.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Tu Laung Main Elaachi - Luka Chuppi.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Tu Laung Main Elaachi - Luka Chuppi.mp3': No such file or directory
+Mar 29 00:08 : player: played "Tu Laung Main Elaachi - Luka Chuppi.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Zendaya__Neverland__Lyric_Video.m4a
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Zendaya__Neverland__Lyric_Video.m4a': No such file or directory
+Mar 29 00:08 : player: played "Zendaya__Neverland__Lyric_Video.m4a"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Tandav - Dino James Ft. Girish Nakod _Official Music Video_.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Tandav - Dino James Ft. Girish Nakod _Official Music Video_.mp3': No such file or directory
+Mar 29 00:08 : player: played "Tandav - Dino James Ft. Girish Nakod _Official Music Video_.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Daru_Badnaam___Kamal_Kahlon___Param_Singh___Official_Video___Latest_Punjabi_Vira.m4a
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Daru_Badnaam___Kamal_Kahlon___Param_Singh___Official_Video___Latest_Punjabi_Vira.m4a': No such file or directory
+Mar 29 00:08 : player: played "Daru_Badnaam___Kamal_Kahlon___Param_Singh___Official_Video___Latest_Punjabi_Vira.m4a"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Shape_of_you__7C_Mercy__7C_Cheap_Thrills__7C_Chez_Badi_Hai_Mast_Mast__7C_A_Fusion_Dance_.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Shape_of_you__7C_Mercy__7C_Cheap_Thrills__7C_Chez_Badi_Hai_Mast_Mast__7C_A_Fusion_Dance_.mp3': No such file or directory
+Mar 29 00:08 : player: played "Shape_of_you__7C_Mercy__7C_Cheap_Thrills__7C_Chez_Badi_Hai_Mast_Mast__7C_A_Fusion_Dance_.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Yaaran_Da_Group___Dilpreet_Dhillon___Parmish_Verma___Narinder_Batth___Desi_Crew_.m4a
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Yaaran_Da_Group___Dilpreet_Dhillon___Parmish_Verma___Narinder_Batth___Desi_Crew_.m4a': No such file or directory
+Mar 29 00:08 : player: played "Yaaran_Da_Group___Dilpreet_Dhillon___Parmish_Verma___Narinder_Batth___Desi_Crew_.m4a"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Itni Si Baat Hain-(Mr-Jatt.com).mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Itni Si Baat Hain-(Mr-Jatt.com).mp3': No such file or directory
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Gabbroo (Full Song) - Jassi Gill  Preet Hundal  Latest Punjabi Song 2016  Speed Records [FLkQJi_vvJQ].webm
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Gabbroo (Full Song) - Jassi Gill  Preet Hundal  Latest Punjabi Song 2016  Speed Records [FLkQJi_vvJQ].webm': No such file or directory
+Mar 29 00:08 : player: played "Itni Si Baat Hain-(Mr-Jatt.com).mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Gabbroo (Full Song) - Jassi Gill  Preet Hundal  Latest Punjabi Song 2016  Speed Records [FLkQJi_vvJQ].webm
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Gabbroo (Full Song) - Jassi Gill  Preet Hundal  Latest Punjabi Song 2016  Speed Records [FLkQJi_vvJQ].webm': No such file or directory
+Mar 29 00:08 : player: played "Gabbroo (Full Song) - Jassi Gill  Preet Hundal  Latest Punjabi Song 2016  Speed Records [FLkQJi_vvJQ].webm"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Arz asif hasan.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Arz asif hasan.mp3': No such file or directory
+Mar 29 00:08 : client: [191] closed
+Mar 29 00:08 : player: played "Arz asif hasan.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Munda_Iphone_Warga-A-Kay-www.Mp3Mad.Com.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Munda_Iphone_Warga-A-Kay-www.Mp3Mad.Com.mp3': No such file or directory
+Mar 29 00:08 : player: played "Munda_Iphone_Warga-A-Kay-www.Mp3Mad.Com.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Alessia Cara - Seventeen (DawnFoxes.com).mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Alessia Cara - Seventeen (DawnFoxes.com).mp3': No such file or directory
+Mar 29 00:08 : player: played "Alessia Cara - Seventeen (DawnFoxes.com).mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Zara Larsson - Never Forget You (Mark Ralph Club Mix) (DawnFoxes.com).mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Zara Larsson - Never Forget You (Mark Ralph Club Mix) (DawnFoxes.com).mp3': No such file or directory
+Mar 29 00:08 : player: played "Zara Larsson - Never Forget You (Mark Ralph Club Mix) (DawnFoxes.com).mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Kalesh Song  Millind Gaba Mika Singh  DirectorGifty  New Hindi Songs 2018 [p8T5psA_HRY].m4a
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Kalesh Song  Millind Gaba Mika Singh  DirectorGifty  New Hindi Songs 2018 [p8T5psA_HRY].m4a': No such file or directory
+Mar 29 00:08 : player: played "Kalesh Song  Millind Gaba Mika Singh  DirectorGifty  New Hindi Songs 2018 [p8T5psA_HRY].m4a"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Zayn Malik - Dusk Till Dawn  (DawnFoxes.com).mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Zayn Malik - Dusk Till Dawn  (DawnFoxes.com).mp3': No such file or directory
+Mar 29 00:08 : player: played "Zayn Malik - Dusk Till Dawn  (DawnFoxes.com).mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Duaa Cover _ Shanghai _ by Maham Waqar.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Duaa Cover _ Shanghai _ by Maham Waqar.mp3': No such file or directory
+Mar 29 00:08 : player: played "Duaa Cover _ Shanghai _ by Maham Waqar.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Teri Mitti-(Mr-Jatt.com).mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Teri Mitti-(Mr-Jatt.com).mp3': No such file or directory
+Mar 29 00:08 : player: played "Teri Mitti-(Mr-Jatt.com).mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Alessia Cara - Scars To Your Beautiful (DawnFoxes.com).mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Alessia Cara - Scars To Your Beautiful (DawnFoxes.com).mp3': No such file or directory
+Mar 29 00:08 : player: played "Alessia Cara - Scars To Your Beautiful (DawnFoxes.com).mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/J Balvin - X Ft. Nicky Jam (DawnFoxes.com).mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/J Balvin - X Ft. Nicky Jam (DawnFoxes.com).mp3': No such file or directory
+Mar 29 00:08 : player: played "J Balvin - X Ft. Nicky Jam (DawnFoxes.com).mp3"
+Mar 29 00:08 : client: [192] opened from 127.0.0.1:34808
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Beyonce - Sorry (DawnFoxes.com).mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Beyonce - Sorry (DawnFoxes.com).mp3': No such file or directory
+Mar 29 00:08 : player: played "Beyonce - Sorry (DawnFoxes.com).mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Beyonce - Sorry (DawnFoxes.com).mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Beyonce - Sorry (DawnFoxes.com).mp3': No such file or directory
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Mainu Tu Leja Kithe Door (Full Hd Song) Badshah Ft. Astha gill  New Songs 2018.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Mainu Tu Leja Kithe Door (Full Hd Song) Badshah Ft. Astha gill  New Songs 2018.mp3': No such file or directory
+Mar 29 00:08 : player: played "Mainu Tu Leja Kithe Door (Full Hd Song) Badshah Ft. Astha gill  New Songs 2018.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/The Wakhra Song - Judgementall Hai Kya _Kangana R & Rajkummar R_Tanishk,Navv Inder,Lisa,Raja Kumari.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/The Wakhra Song - Judgementall Hai Kya _Kangana R & Rajkummar R_Tanishk,Navv Inder,Lisa,Raja Kumari.mp3': No such file or directory
+Mar 29 00:08 : player: played "The Wakhra Song - Judgementall Hai Kya _Kangana R & Rajkummar R_Tanishk,Navv Inder,Lisa,Raja Kumari.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Tutti_Bole_Wedding_Di-Ambarish-www.Mp3Mad.Com.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Tutti_Bole_Wedding_Di-Ambarish-www.Mp3Mad.Com.mp3': No such file or directory
+Mar 29 00:08 : player: played "Tutti_Bole_Wedding_Di-Ambarish-www.Mp3Mad.Com.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Naina_Song__-_Dangal___Aamir_Khan___Arijit_Singh__.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Naina_Song__-_Dangal___Aamir_Khan___Arijit_Singh__.mp3': No such file or directory
+Mar 29 00:08 : player: played "Naina_Song__-_Dangal___Aamir_Khan___Arijit_Singh__.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Shawn_Mendes_-_Stitches_(Official_Video).mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Shawn_Mendes_-_Stitches_(Official_Video).mp3': No such file or directory
+Mar 29 00:08 : player: played "Shawn_Mendes_-_Stitches_(Official_Video).mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Full Video Song -  Sultan _ KGF _ Yash _ Srinidhi Shetty _ Ravi Basrur _ T-Series-Ek-2VWEvQkQ.m4a
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Full Video Song -  Sultan _ KGF _ Yash _ Srinidhi Shetty _ Ravi Basrur _ T-Series-Ek-2VWEvQkQ.m4a': No such file or directory
+Mar 29 00:08 : player: played "Full Video Song -  Sultan _ KGF _ Yash _ Srinidhi Shetty _ Ravi Basrur _ T-Series-Ek-2VWEvQkQ.m4a"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Ed Sheeran - Hearts Don t Break Around Here (DawnFoxes.com).mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Ed Sheeran - Hearts Don t Break Around Here (DawnFoxes.com).mp3': No such file or directory
+Mar 29 00:08 : player: played "Ed Sheeran - Hearts Don t Break Around Here (DawnFoxes.com).mp3"
+Mar 29 00:08 : client: [192] closed
+Mar 29 00:08 : client: [193] opened from 127.0.0.1:34812
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/13 Ek Hee Raasta - Gully Boy.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/13 Ek Hee Raasta - Gully Boy.mp3': No such file or directory
+Mar 29 00:08 : player: played "13 Ek Hee Raasta - Gully Boy.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/13 Ek Hee Raasta - Gully Boy.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/13 Ek Hee Raasta - Gully Boy.mp3': No such file or directory
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/03 Ye Aan Tiranga Hai - www.downloadming.com.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/03 Ye Aan Tiranga Hai - www.downloadming.com.mp3': No such file or directory
+Mar 29 00:08 : player: played "03 Ye Aan Tiranga Hai - www.downloadming.com.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/SZA - Love Galore Ft. Travis Scott  (DawnFoxes.com).mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/SZA - Love Galore Ft. Travis Scott  (DawnFoxes.com).mp3': No such file or directory
+Mar 29 00:08 : player: played "SZA - Love Galore Ft. Travis Scott  (DawnFoxes.com).mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/03 Ik Vaari Aa - Raabta (DJ Shadow Remix) 190Kbps.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/03 Ik Vaari Aa - Raabta (DJ Shadow Remix) 190Kbps.mp3': No such file or directory
+Mar 29 00:08 : player: played "03 Ik Vaari Aa - Raabta (DJ Shadow Remix) 190Kbps.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/H.E.R. - Every Kind of Way (DawnFoxes.com).mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/H.E.R. - Every Kind of Way (DawnFoxes.com).mp3': No such file or directory
+Mar 29 00:08 : player: played "H.E.R. - Every Kind of Way (DawnFoxes.com).mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/I Took A Pill In Ibiza(Seeb Remix) (Mp3Goo.com).mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/I Took A Pill In Ibiza(Seeb Remix) (Mp3Goo.com).mp3': No such file or directory
+Mar 29 00:08 : player: played "I Took A Pill In Ibiza(Seeb Remix) (Mp3Goo.com).mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Antim shlok geet _ Grand semifinal  _ M T V Hustle_ Shloka Rap.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Antim shlok geet _ Grand semifinal  _ M T V Hustle_ Shloka Rap.mp3': No such file or directory
+Mar 29 00:08 : player: played "Antim shlok geet _ Grand semifinal  _ M T V Hustle_ Shloka Rap.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Usher - Yeah! (Official Music Video) ft. Lil Jon, Ludacris.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Usher - Yeah! (Official Music Video) ft. Lil Jon, Ludacris.mp3': No such file or directory
+Mar 29 00:08 : player: played "Usher - Yeah! (Official Music Video) ft. Lil Jon, Ludacris.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/G-Eazy - Sober  ft. Charlie Puth [8OARiNiJ_w8].webm
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/G-Eazy - Sober  ft. Charlie Puth [8OARiNiJ_w8].webm': No such file or directory
+Mar 29 00:08 : player: played "G-Eazy - Sober  ft. Charlie Puth [8OARiNiJ_w8].webm"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Calvin_Harris_-_Summer.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Calvin_Harris_-_Summer.mp3': No such file or directory
+Mar 29 00:08 : player: played "Calvin_Harris_-_Summer.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Fifth_Harmony_-_All_In_My_Head_(Flex)_ft._Fetty_Wap.m4a
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Fifth_Harmony_-_All_In_My_Head_(Flex)_ft._Fetty_Wap.m4a': No such file or directory
+Mar 29 00:08 : player: played "Fifth_Harmony_-_All_In_My_Head_(Flex)_ft._Fetty_Wap.m4a"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/As Long As You Love Me (B.O Beatz Remix).mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/As Long As You Love Me (B.O Beatz Remix).mp3': No such file or directory
+Mar 29 00:08 : player: played "As Long As You Love Me (B.O Beatz Remix).mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Magic_Mike_XXL_OST_-_All_The_Time_(Jeremih_feat._Lil__Wayne___Natasha_Mosley).m4a
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Magic_Mike_XXL_OST_-_All_The_Time_(Jeremih_feat._Lil__Wayne___Natasha_Mosley).m4a': No such file or directory
+Mar 29 00:08 : player: played "Magic_Mike_XXL_OST_-_All_The_Time_(Jeremih_feat._Lil__Wayne___Natasha_Mosley).m4a"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Jaane Jana - Bohemia J Hind 190Kbps.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Jaane Jana - Bohemia J Hind 190Kbps.mp3': No such file or directory
+Mar 29 00:08 : player: played "Jaane Jana - Bohemia J Hind 190Kbps.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/PagalWorldmp3.in (Hanuman Chalisa).mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/PagalWorldmp3.in (Hanuman Chalisa).mp3': No such file or directory
+Mar 29 00:08 : player: played "PagalWorldmp3.in (Hanuman Chalisa).mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/ZAYN - Let Me (Lyrics  Lyric Video)  Official  Original  HD  2018  [5f4DLtLgu2M].m4a
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/ZAYN - Let Me (Lyrics  Lyric Video)  Official  Original  HD  2018  [5f4DLtLgu2M].m4a': No such file or directory
+Mar 29 00:08 : client: [193] closed
+Mar 29 00:08 : player: played "ZAYN - Let Me (Lyrics  Lyric Video)  Official  Original  HD  2018  [5f4DLtLgu2M].m4a"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Kevin Ross - Dont Go [MukZsRnOmtk].m4a
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Kevin Ross - Dont Go [MukZsRnOmtk].m4a': No such file or directory
+Mar 29 00:08 : player: played "Kevin Ross - Dont Go [MukZsRnOmtk].m4a"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Shawn_Mendes_-_Stitches_(Official_Video).mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Shawn_Mendes_-_Stitches_(Official_Video).mp3': No such file or directory
+Mar 29 00:08 : player: played "Shawn_Mendes_-_Stitches_(Official_Video).mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Mere Desh Ki Dharti - Upkaar.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Mere Desh Ki Dharti - Upkaar.mp3': No such file or directory
+Mar 29 00:08 : player: played "Mere Desh Ki Dharti - Upkaar.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Akcent_-how_deep_is_your_love_(Official_Video)_(720p).mp3.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Akcent_-how_deep_is_your_love_(Official_Video)_(720p).mp3.mp3': No such file or directory
+Mar 29 00:08 : player: played "Akcent_-how_deep_is_your_love_(Official_Video)_(720p).mp3.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Taylor Swift - You Belong with Me.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Taylor Swift - You Belong with Me.mp3': No such file or directory
+Mar 29 00:08 : player: played "Taylor Swift - You Belong with Me.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Blues Saraceno - The River (Dubstep Remix) Riverdale Promo.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Blues Saraceno - The River (Dubstep Remix) Riverdale Promo.mp3': No such file or directory
+Mar 29 00:08 : player: played "Blues Saraceno - The River (Dubstep Remix) Riverdale Promo.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Teri Galiyon Mein Mohabbat Hogi _ Naam Nikle Ga Tera Edited Video Song - Romantic.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Teri Galiyon Mein Mohabbat Hogi _ Naam Nikle Ga Tera Edited Video Song - Romantic.mp3': No such file or directory
+Mar 29 00:08 : player: played "Teri Galiyon Mein Mohabbat Hogi _ Naam Nikle Ga Tera Edited Video Song - Romantic.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Daft Punk - Contact (Official Audio).mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Daft Punk - Contact (Official Audio).mp3': No such file or directory
+Mar 29 00:08 : player: played "Daft Punk - Contact (Official Audio).mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Ed Sheeran - Remember The Name (feat. Eminem & 50 Cent) _Official Lyric Video_.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Ed Sheeran - Remember The Name (feat. Eminem & 50 Cent) _Official Lyric Video_.mp3': No such file or directory
+Mar 29 00:08 : player: played "Ed Sheeran - Remember The Name (feat. Eminem & 50 Cent) _Official Lyric Video_.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/One_Direction_-_Drag_Me_Down_(Official_Video).mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/One_Direction_-_Drag_Me_Down_(Official_Video).mp3': No such file or directory
+Mar 29 00:08 : player: played "One_Direction_-_Drag_Me_Down_(Official_Video).mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Fifth Harmony - Angel (DawnFoxes.com).mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Fifth Harmony - Angel (DawnFoxes.com).mp3': No such file or directory
+Mar 29 00:08 : player: played "Fifth Harmony - Angel (DawnFoxes.com).mp3"
+Mar 29 00:08 : client: [194] opened from 127.0.0.1:34816
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Alicia_Keys_-_If_I_Ain_t_Got_You.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Alicia_Keys_-_If_I_Ain_t_Got_You.mp3': No such file or directory
+Mar 29 00:08 : player: played "Alicia_Keys_-_If_I_Ain_t_Got_You.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Alicia_Keys_-_If_I_Ain_t_Got_You.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Alicia_Keys_-_If_I_Ain_t_Got_You.mp3': No such file or directory
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Imaginary-Imran_Khan-www.Mp3Mad.Com.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Imaginary-Imran_Khan-www.Mp3Mad.Com.mp3': No such file or directory
+Mar 29 00:08 : player: played "Imaginary-Imran_Khan-www.Mp3Mad.Com.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Lady_Antebellum___Darius_Rucker_-_Summer_Plays_On_Tour.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Lady_Antebellum___Darius_Rucker_-_Summer_Plays_On_Tour.mp3': No such file or directory
+Mar 29 00:08 : player: played "Lady_Antebellum___Darius_Rucker_-_Summer_Plays_On_Tour.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Teri Pyari Pyari Do Akhiyan🔥❤ BASS BOOSTEDSUBSCRIBE PLSSSSSSS🔥 technical guruji....mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Teri Pyari Pyari Do Akhiyan🔥❤ BASS BOOSTEDSUBSCRIBE PLSSSSSSS🔥 technical guruji....mp3': No such file or directory
+Mar 29 00:08 : player: played "Teri Pyari Pyari Do Akhiyan🔥❤ BASS BOOSTEDSUBSCRIBE PLSSSSSSS🔥 technical guruji....mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/The_Chainsmokers__26_Coldplay_-_Something_Just_Like_This__28Lyric_29.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/The_Chainsmokers__26_Coldplay_-_Something_Just_Like_This__28Lyric_29.mp3': No such file or directory
+Mar 29 00:08 : player: played "The_Chainsmokers__26_Coldplay_-_Something_Just_Like_This__28Lyric_29.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Ed Sheeran - Perfect (DawnFoxes.com).mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Ed Sheeran - Perfect (DawnFoxes.com).mp3': No such file or directory
+Mar 29 00:08 : player: played "Ed Sheeran - Perfect (DawnFoxes.com).mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Ellie_Goulding_-_Burn.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Ellie_Goulding_-_Burn.mp3': No such file or directory
+Mar 29 00:08 : player: played "Ellie_Goulding_-_Burn.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Fifth Harmony - Messy (DawnFoxes.com).mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Fifth Harmony - Messy (DawnFoxes.com).mp3': No such file or directory
+Mar 29 00:08 : player: played "Fifth Harmony - Messy (DawnFoxes.com).mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/01 Tareefan - Veere Di Wedding - Badshah 320Kbps.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/01 Tareefan - Veere Di Wedding - Badshah 320Kbps.mp3': No such file or directory
+Mar 29 00:08 : player: played "01 Tareefan - Veere Di Wedding - Badshah 320Kbps.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/JKLS - Aa Bhi Ja Mere Mehermaan.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/JKLS - Aa Bhi Ja Mere Mehermaan.mp3': No such file or directory
+Mar 29 00:08 : player: played "JKLS - Aa Bhi Ja Mere Mehermaan.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Bruno Mars  - Versace On The Floor (DawnFoxes.com).mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Bruno Mars  - Versace On The Floor (DawnFoxes.com).mp3': No such file or directory
+Mar 29 00:08 : player: played "Bruno Mars  - Versace On The Floor (DawnFoxes.com).mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/I Am King - Impossible.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/I Am King - Impossible.mp3': No such file or directory
+Mar 29 00:08 : player: played "I Am King - Impossible.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/J Balvin - Dime Ft. De La Ghetto , Arcangel, Revol , Bad Bunny (DawnFoxes.com).mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/J Balvin - Dime Ft. De La Ghetto , Arcangel, Revol , Bad Bunny (DawnFoxes.com).mp3': No such file or directory
+Mar 29 00:08 : player: played "J Balvin - Dime Ft. De La Ghetto , Arcangel, Revol , Bad Bunny (DawnFoxes.com).mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/PagalWorldmp3.in (Mahabali Maharudra).mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/PagalWorldmp3.in (Mahabali Maharudra).mp3': No such file or directory
+Mar 29 00:08 : player: played "PagalWorldmp3.in (Mahabali Maharudra).mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Maroon_5_-_Don_t_Wanna_Know.m4a
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Maroon_5_-_Don_t_Wanna_Know.m4a': No such file or directory
+Mar 29 00:08 : player: played "Maroon_5_-_Don_t_Wanna_Know.m4a"
+Mar 29 00:08 : client: [194] closed
+Mar 29 00:08 : client: [195] opened from 127.0.0.1:34820
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/- Flashup By Knox Artiste _ - 14SONGSON1BEAT _ Mi Gente _ J. Balvin x Willy William.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/- Flashup By Knox Artiste _ - 14SONGSON1BEAT _ Mi Gente _ J. Balvin x Willy William.mp3': No such file or directory
+Mar 29 00:08 : player: played "- Flashup By Knox Artiste _ - 14SONGSON1BEAT _ Mi Gente _ J. Balvin x Willy William.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/- Flashup By Knox Artiste _ - 14SONGSON1BEAT _ Mi Gente _ J. Balvin x Willy William.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/- Flashup By Knox Artiste _ - 14SONGSON1BEAT _ Mi Gente _ J. Balvin x Willy William.mp3': No such file or directory
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Becky G. & Natti Natasha - Sin Pijama [zEf423kYfqk] (1).m4a
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Becky G. & Natti Natasha - Sin Pijama [zEf423kYfqk] (1).m4a': No such file or directory
+Mar 29 00:08 : player: played "Becky G. & Natti Natasha - Sin Pijama [zEf423kYfqk] (1).m4a"
+Mar 29 00:08 : client: [195] closed
+Mar 29 00:08 : client: [196] opened from 127.0.0.1:34824
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Adele - Someone Like You - Copy.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Adele - Someone Like You - Copy.mp3': No such file or directory
+Mar 29 00:08 : player: played "Adele - Someone Like You - Copy.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Adele - Someone Like You - Copy.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Adele - Someone Like You - Copy.mp3': No such file or directory
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/3_Peg_Sharry_Mann_(Full_Video)__Mista_Baaz__Parmish_Verma__Latest_Punjabi_Songs_2016__T-Series.m4a
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/3_Peg_Sharry_Mann_(Full_Video)__Mista_Baaz__Parmish_Verma__Latest_Punjabi_Songs_2016__T-Series.m4a': No such file or directory
+Mar 29 00:08 : player: played "3_Peg_Sharry_Mann_(Full_Video)__Mista_Baaz__Parmish_Verma__Latest_Punjabi_Songs_2016__T-Series.m4a"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/06.__Till_I_Collapse___Real_Steel_-_Soundtrack.m4a
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/06.__Till_I_Collapse___Real_Steel_-_Soundtrack.m4a': No such file or directory
+Mar 29 00:08 : player: played "06.__Till_I_Collapse___Real_Steel_-_Soundtrack.m4a"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/16 - Whip Bonus Track - Fast & Furious 7 - [Songspk.CC].mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/16 - Whip Bonus Track - Fast & Furious 7 - [Songspk.CC].mp3': No such file or directory
+Mar 29 00:08 : player: played "16 - Whip Bonus Track - Fast & Furious 7 - [Songspk.CC].mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Taylor Swift - Look What You Made Me Do.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Taylor Swift - Look What You Made Me Do.mp3': No such file or directory
+Mar 29 00:08 : player: played "Taylor Swift - Look What You Made Me Do.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Samajh_Mein_Aaya_Kya_Emiway_c9f993ee48c17b23e458d063741b4fb3_320.mp3
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Samajh_Mein_Aaya_Kya_Emiway_c9f993ee48c17b23e458d063741b4fb3_320.mp3': No such file or directory
+Mar 29 00:08 : player: played "Samajh_Mein_Aaya_Kya_Emiway_c9f993ee48c17b23e458d063741b4fb3_320.mp3"
+Mar 29 00:08 : exception: Failed to decode /home/raytracer/Music/Fevicol_Se_Full_Video_Song_Dabangg_2__28Official_29__E2_98_85_Kareena_Kapoor__E2_98_85_Salman_Khan-mc.m4a
+Mar 29 00:08 : exception: nested: Failed to open '/home/raytracer/Music/Fevicol_Se_Full_Video_Song_Dabangg_2__28Official_29__E2_98_85_Kareena_Kapoor__E2_98_85_Salman_Khan-mc.m4a': No such file or directory
+Mar 29 00:08 : player: played "Fevicol_Se_Full_Video_Song_Dabangg_2__28Official_29__E2_98_85_Kareena_Kapoor__E2_98_85_Salman_Khan-mc.m4a"
+Mar 29 00:08 : client: [196] closed
+Mar 29 00:08 : client: [197] opened from 127.0.0.1:34828
+Mar 29 00:08 : client: [197] closed
+Mar 29 00:08 : client: [198] opened from 127.0.0.1:34832
+Mar 29 00:08 : client: [198] closed
+Mar 29 00:09 : player: played "youtube/8 Parche _ Baani Sandhu _ Gur Sidhu _ Gurneet Dosanjh _ New Punjabi Song 2019 _ White Hill Music.mp3"
+Mar 29 00:09 : exception: Failed to open /home/raytracer/.config/mpd/playlists: No such file or directory
+Mar 29 00:09 : client: [199] opened from 127.0.0.1:34836
+Mar 29 00:09 : client: [199] closed
+Mar 29 00:09 : client: [200] opened from 127.0.0.1:34840
+Mar 29 00:09 : client: [200] closed
+Mar 29 00:09 : client: [201] opened from 127.0.0.1:34844
+Mar 29 00:09 : client: [201] closed
+Mar 29 00:09 : client: [202] opened from 127.0.0.1:34848
+Mar 29 00:09 : client: [202] closed
+Mar 29 00:09 : client: [203] opened from 127.0.0.1:34852
+Mar 29 00:09 : client: [203] closed
+Mar 29 00:10 : player: played "mp3/Tere Wargi Nai Ae - Raftaar.mp3"
+Mar 29 06:54 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 29 06:54 : exception: Failed to access /home/raytracer/Music/got: Too many levels of symbolic links
+Mar 29 06:54 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 29 08:44 : client: [0] opened from 127.0.0.1:43262
+Mar 29 08:44 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 29 08:44 : client: [0] closed
+Mar 29 08:44 : client: [1] opened from 127.0.0.1:43266
+Mar 29 08:44 : client: [1] closed
+Mar 29 08:46 : client: [2] opened from 127.0.0.1:43272
+Mar 29 08:46 : client: [2] closed
+Mar 29 08:46 : client: [3] opened from 127.0.0.1:43276
+Mar 29 08:46 : client: [3] closed
+Mar 29 11:56 : client: [4] opened from 127.0.0.1:44178
+Mar 29 11:56 : client: [4] closed
+Mar 29 11:56 : client: [5] opened from 127.0.0.1:44182
+Mar 29 11:56 : client: [5] closed
+Mar 29 11:56 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 29 11:57 : player: played "mp3/Tere Wargi Nai Ae - Raftaar.mp3"
+Mar 29 11:57 : client: [6] opened from 127.0.0.1:44196
+Mar 29 11:57 : exception: Failed to open /home/raytracer/.config/mpd/playlists: No such file or directory
+Mar 29 12:04 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Mar 29 12:04 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Mar 29 12:04 : player: played "webm/Chura Ke Dil Mera Goriya Chali Full Video Song  Main Khiladi Tu Anari  Akshay Kumar Shilpa Shetty [G_qyLs1SJbQ].webm"
+Mar 29 12:08 : player: played "m4a/Cardi B Bad Bunny & J Balvin - I Like It [bIFog12aGls] (1).m4a"
+Mar 29 12:11 : player: played "m4a/Charlie_Puth_-_Done_For_Me_(feat._Kehlani)_[Official_Audio].m4a"
+Mar 29 12:15 : player: played "mp3/Alicia_Keys_-_It’s_On_Again_(from_The_Amazing_Spider-Man_2)_ft._Kendrick_Lamar.mp3"

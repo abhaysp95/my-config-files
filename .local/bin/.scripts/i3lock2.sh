@@ -8,7 +8,7 @@
 # Last Edited: 2020-02-25
 
 screenshot=/tmp/screenshot.png
-icon=$HOME/temp/download-removebg-preview.png
+icon=$HOME/.cache/temp/download-removebg-preview.png
 
 if [ -f "$screenshot" ]; then
 	rm /tmp/screenshot.png

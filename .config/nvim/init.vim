@@ -84,6 +84,9 @@ Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 " Modify * to also work with visual selections
 Plug 'nelstrom/vim-visual-star-search'
 
+" learn using f/F & t/T
+Plug 'unblevable/quick-scope'
+
 " Plug 'plasticboy/vim-markdown'	(overrides your foldmethod to fdm=expr)
 " Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
 " Plug 'airblade/vim-gitgutter'
@@ -431,7 +434,7 @@ let g:UltiSnipsEditSplit="vertical"
 	let g:nord_underline = 1
 	"let ayucolor="mirage"
 	"let ayucolor="dark"
-	colorscheme nord
+	colorscheme gruvbox
     set go=a
     highlight Comment cterm=italic gui=italic
     highlight Search ctermbg=black ctermfg=yellow term=underline
@@ -728,7 +731,7 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 " Vim-Airline configuration
    let g:airline#extensions#tabline#enabled=1
    let g:airline_powerline_fonts=1
-   let g:airline_theme='nord'
+   let g:airline_theme='gruvbox'
    let g:hybrid_custom_term_colors=1
    let g:hybrid_reduced_contrast=1
 
@@ -833,14 +836,15 @@ let g:NERDTreeDirArrowCollapsible = "◢"
     set linebreak
 
 " old
-" +--  7 lines: set foldmethod=indent··············
+" +--  7 lines: set foldmethod=indent··············━
+	"●
 "
 " new ⏤⏤⏤⏤► [7 lines]: set foldmethod=indent ⏤⏤⏤⏤⏤⏤⏤⏤⏤⏤
 
 	set foldcolumn=0
 	set foldmarker=<<<,>>>
 	set foldmethod=marker
-	set fillchars=vert:╏,fold:━
+	set fillchars=vert:╏,fold:•
 "
 	" I don't know why aren't they following this: "
 	autocmd FileType vimwiki set foldmethod=marker
@@ -1152,3 +1156,8 @@ nmap [g <plug>(signify-prev-hunk)
 nmap ]g <plug>(signify-next-hunk)
 nmap <leader>gJ 9999<leader>gj
 nmap <leader>gK 9999<leader>gk
+
+" ----- vim - quickscope ------------------- "
+let g:qs_highlight_on_keys = ['f', 't', 'F', 'T']
+highlight QuickScopePrimary guifg='#afff5f' gui=underline ctermfg=155 cterm=underline
+highlight QuickScopeSecondary guifg='#5fffff' gui=underline ctermfg=81 cterm=underline

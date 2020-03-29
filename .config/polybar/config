@@ -1,31 +1,48 @@
 [colors]
-foreground = #d8dee9
-background = #cc2e3440
-red        = #bf616a
-blue       = #81a1c1
-teal       = #88c0d0
-green      = #a3be8c
-purple     = #b48ead
-orange     = #ffa500
-indigo     = #4c566a
-black      = #000000
-white      = #e5e9f0
-yellow     = #ebcb8b
-brown      = #a52a2a
-lightbackground = #3b4252
+foreground = #ebdbb2
+background = #282828
+red        = #cc241d
+blue       = #458588
+teal       = #689d6a
+green      = #98971a
+purple     = #b16286
+orange     = #d65d0e
+indigo      = #83a598
+black = #000000
+yellow     = #d79921
+white      = #ebdbb2
+cyan       = #689d6a
+brown      = #fb4934
 
-/* foreground = #f7f7fb */
-/* red        = #ea51b2 */
-/* blue       = #62d6e8 */
-/* teal       = #a1efe4 */
-/* green      = #00f769 */
-/* purple     = #b46bcf */
-/* orange     = #ea51b2 */
-/* indigo     = #b46bcf */
-/* black      = #181818 */
-/* white      = #e9e9f4 */
-/* yellow     = #ebff87 */
-/* brown      = #969896 */
+; nord scheme
+;[colors]
+;foreground = #d8dee9
+;background = #cc2e3440
+;red        = #bf616a
+;blue       = #81a1c1
+;teal       = #88c0d0
+;green      = #a3be8c
+;purple     = #b48ead
+;orange     = #ffa500
+;indigo     = #4c566a
+;black      = #000000
+;white      = #e5e9f0
+;yellow     = #ebcb8b
+;brown      = #a52a2a
+;lightbackground = #3b4252
+
+;/* foreground = #f7f7fb */
+;/* red        = #ea51b2 */
+;/* blue       = #62d6e8 */
+;/* teal       = #a1efe4 */
+;/* green      = #00f769 */
+;/* purple     = #b46bcf */
+;/* orange     = #ea51b2 */
+;/* indigo     = #b46bcf */
+;/* black      = #181818 */
+;/* white      = #e9e9f4 */
+;/* yellow     = #ebff87 */
+;/* brown      = #969896 */
 [bar/top]
 ; Size
 width  = 100%

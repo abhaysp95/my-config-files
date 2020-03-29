@@ -306,20 +306,20 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 #   client.unfocused        $base01 $base01    $base03 $base0F
 #   client.urgent           $base02 $base08    $base00 $base0F
 
-## Customize colors-gruvbox
-# client.focused          #928374 #928374 #ebdbb2 #928374 #928374
+# Customize colors-gruvbox
+client.focused          #458588 #458588 #ebdbb2 #458588 #458588
+client.focused_inactive #282828 #282828 #ebdbb2 #282828 #282828
+client.unfocused        #282828 #282828 #ebdbb2 #282828 #282828
+client.urgent           #282828 #282828 #fb4934 #282828 #282828
+client.placeholder      #282828 #282828 #ebdbb2 #282828 #282828
+hide_edge_borders both
+
+# client.focused          #81a1c1 #81a1c1 #ebdbb2 #81a1c1 #81a1c1
 # client.focused_inactive #2e3440 #2e3440 #ebdbb2 #2e3440 #2e3440
 # client.unfocused        #2e3440 #2e3440 #ebdbb2 #2e3440 #2e3440
 # client.urgent           #2e3440 #2e3440 #fb4934 #2e3440 #2e3440
 # client.placeholder      #2e3440 #2e3440 #ebdbb2 #2e3440 #2e3440
 # hide_edge_borders both
-
-client.focused          #81a1c1 #81a1c1 #ebdbb2 #81a1c1 #81a1c1
-client.focused_inactive #2e3440 #2e3440 #ebdbb2 #2e3440 #2e3440
-client.unfocused        #2e3440 #2e3440 #ebdbb2 #2e3440 #2e3440
-client.urgent           #2e3440 #2e3440 #fb4934 #2e3440 #2e3440
-client.placeholder      #2e3440 #2e3440 #ebdbb2 #2e3440 #2e3440
-hide_edge_borders both
 
 ## Customize colors-papirus
 
