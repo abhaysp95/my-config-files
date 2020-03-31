@@ -523,7 +523,7 @@ main_window_color = white
 #
 progressbar_color = black:b
 #
-progressbar_elapsed_color = green:b
+progressbar_elapsed_color = white:u
 #
 statusbar_color = red
 #

@@ -72,8 +72,7 @@ if ${use_color} ; then
 	if [[ ${EUID} == 0 ]] ; then
 		PS1='\[\033[01;31m\][\h\[\033[01;36m\] \W\[\033[01;31m\]]\$\[\033[00m\] '
 	else
-		PS1='\[\033[01;34m\][\u@\h\[ -> $? \]\[\033[01;37m\] \W\[\033[01;34m\]]\$\[\033[00m\] '
-		# PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M ${$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b"
+	 PS1="\[\033[m\]|\[\033[1;35m\]\t\[\033[m\]|\[\e[1m\]\u\[\e[1;36m\]\[\033[m\]@\[\e[1;36m\]\h\[\033[m\]:\[\e[0m\]\[\e[1;32m\][\W]> \[\e[0m\]"
 	fi
 
 	alias ls='ls --color=auto'
@@ -166,7 +165,7 @@ set -o vi
 # export LESS_TERMCAP_us=$'\E[1;30m'
 # export LESS_TERMCAP_ue=$'\E[0m'
 
-## coloring man pages
+## coloring man pages -------------------------------------
 # start blinking
 export LESS_TERMCAP_mb=$(tput bold; tput setaf 2)	# green
 # start bold
@@ -179,6 +178,7 @@ export LESS_TERMCAP_se=$(tput rmso; tput sgr0)
 export LESS_TERMCAP_us=$(tput smul; tput bold; tput setaf 1)	# red
 # end bold, blinking, standout, underline
 export LESS_TERMCAP_me=$(tput sgr0)
+# ------------------------------------------------------------
 
 
 source /home/raytracer/.gem/ruby/2.7.0/gems/colorls-1.3.3/lib/tab_complete.sh
@@ -194,3 +194,42 @@ pfetch
 
 # liquid prompt
 # [[ $- = *i* ]] && source ~/Downloads/git-materials/liquidprompt/liquidprompt
+
+# a custom prompt
+source ~/.config/custom_bashprompt
+
+# using z.lua ------------------------------------------------
+eval "$(lua ~/.zsh/z.lua/z.lua --init bash enhanced once fzf)"
+export _ZL_ECHO=1
+# ------------------------------------------------------------
+
+# setting dynamic title according to the directory
+# -----------------------------------------------------
+# not working correctly in bash
+# case $TERM in
+# 	xterm*)
+# 		HOST=`hostname`
+# 		HOST=${HOST%%.*}
+# 		PS1='^[]0;%${USER}@${HOST}: ${PWD##${HOME}/}^Gbash$ '
+# 		;;
+# esac
+
+# ---------------------------------------------------------
+# set dynamic title upon the previous executed command
+# ---------------------------------------------------------
+function settitle () {
+	export PREV_COMMAND=${PREV_COMMAND}${@}
+	echo -ne "\033]0;${PREV_COMMAND}\007"
+	export PREV_COMMAND=${PREV_COMMAND}' | '
+}
+
+export PROMPT_COMMAND=${PROMPT_COMMAND}';export PREV_COMMAND=""'
+
+trap 'settitle "$BASH_COMMAND"' DEBUG
+# ------------------------------------------------------------
+
+# ------------------------------------------------------------
+# some other PS1 prompts
+		# PS1='\[\033[01;34m\][\u@\h\[ -> $? \]\[\033[01;37m\] \W\[\033[01;34m\]]\$\[\033[00m\] '
+		# PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M ${$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b"
+# ----------------------------------------------------------------

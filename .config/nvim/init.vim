@@ -18,12 +18,12 @@ Plug 'dense-analysis/ale'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'tmux-plugins/vim-tmux'
 Plug 'mattn/emmet-vim'			" for html
-Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-unimpaired'
 Plug 'vim-python/python-syntax'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'machakann/vim-sandwich'
 
 Plug 'mattn/calendar-vim'
 Plug 'terryma/vim-multiple-cursors'
@@ -37,9 +37,10 @@ Plug 'tomasiser/vim-code-dark'
 Plug 'dracula/vim',{'as':'dracula'}
 Plug 'lifepillar/vim-solarized8'
 Plug 'ryanoasis/vim-devicons'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
+" Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'sjl/badwolf'
+Plug 'rbgrouleff/bclose.vim'
 Plug 'tomasr/molokai'
 Plug 'morhetz/gruvbox'
 Plug 'zenorocha/dracula-theme', {'rtp': 'vim/'}
@@ -65,6 +66,7 @@ Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'ptzz/lf.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
@@ -87,6 +89,9 @@ Plug 'nelstrom/vim-visual-star-search'
 " learn using f/F & t/T
 Plug 'unblevable/quick-scope'
 
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
+" Plug 'tpope/vim-surround'
 " Plug 'plasticboy/vim-markdown'	(overrides your foldmethod to fdm=expr)
 " Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
 " Plug 'airblade/vim-gitgutter'
@@ -185,8 +190,17 @@ set encoding=utf-8
 "set formatoptions=tcqrn1
 set hidden
 set termguicolors
+
+	if exists('+termguicolors')
+	let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+	let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+	set termguicolors
+	endif
+
 set ruler
+set title	" sets title for document in terminal"
 set hlsearch
+set noshowmode " isn't working right now
 set ignorecase
 set incsearch
 set laststatus=2
@@ -401,7 +415,35 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
-"
+" lightline configuration
+let g:lightline = {
+      \ 'colorscheme': 'gruvbox',
+	\ 'active': {
+		  \   'left': [ [ 'mode', 'paste' ],
+		  \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+		  \ },
+		  \ 'component_function': {
+		  \   'gitbranch': 'FugitiveHead',
+		  \ 'mode': 'LightlineMode',
+		  \ 'filename': 'LightlineFilename'
+		  \ },
+\ }
+
+	function! LightlineMode()
+		return expand('%:t') =~# '^__Tagbar__' ? 'Tagbar':
+					\ expand('%:t') ==# 'ControlP' ? 'CtrlP' :
+					\ &filetype ==# 'unite' ? 'Unite' :
+					\ &filetype ==# 'vimfiler' ? 'VimFiler' :
+					\ &filetype ==# 'vimshell' ? 'VimShell' :
+					\ lightline#mode()
+	endfunction
+
+	function! LightlineFilename()
+	  let filename = expand('%:t') !=# '' ? expand('%:t') : '[No Name]'
+	  let modified = &modified ? ' +' : ''
+	  return filename . modified
+	endfunction
+
 " colorscheme configuration
 " source "$HOME/.config/nvim/plugged/gruvbox/gruvbox_256palette.sh"
     let base16colorspace=256
@@ -729,11 +771,11 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 
 " Vim-Airline configuration
-   let g:airline#extensions#tabline#enabled=1
-   let g:airline_powerline_fonts=1
-   let g:airline_theme='gruvbox'
-   let g:hybrid_custom_term_colors=1
-   let g:hybrid_reduced_contrast=1
+   " let g:airline#extensions#tabline#enabled=1
+   " let g:airline_powerline_fonts=1
+   " let g:airline_theme='gruvbox'
+   " let g:hybrid_custom_term_colors=1
+   " let g:hybrid_reduced_contrast=1
 
 " newtree(tweeks for browsing)
     let g:netrw_banner=0                "disables banner at top
@@ -994,6 +1036,9 @@ nnoremap <leader>bb :Buffers<CR>
 nnoremap <leader>bc :Commands<CR>
 nnoremap cq: :History:<CR>
 
+" open terminal in new split
+nnoremap <leader>ct :vsplit term://zsh<CR>
+
 command! -nargs=1 Locate call fzf#run( \ {'source': 'locate <q-args>', 'sink': 'e', 'options': '-m'})
 
 " let g:fzf_files_options =
@@ -1161,3 +1206,7 @@ nmap <leader>gK 9999<leader>gk
 let g:qs_highlight_on_keys = ['f', 't', 'F', 'T']
 highlight QuickScopePrimary guifg='#afff5f' gui=underline ctermfg=155 cterm=underline
 highlight QuickScopeSecondary guifg='#5fffff' gui=underline ctermfg=81 cterm=underline
+
+" ------- ptzz/lf.vim -------------------- "
+let g:lf_map_keys=0
+nnoremap <leader>fl :vsplit \| Lf<CR>

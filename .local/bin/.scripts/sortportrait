@@ -2,13 +2,22 @@
 
 [ ! -d ~/Pictures/portrait_wall ] && mkdir ~/Pictures/portrait_wall
 
-for name in `ls`
+echo "Enter path(doesn't need to include \$HOME): "
+
+read -r foldername
+
+folder_name="$HOME/$foldername"
+
+for name in "$folder_name"/*
 do
 	# echo "$name"
-	width="$(echo "$name" | awk -Fx '{print $1}')"
-	height="$(echo "$name" | awk -Fx '{print $2}')"
+	width="$(basename "$name" | awk -Fx '{print $1}')"
+	height="$(basename "$name" | awk -Fx '{print $2}')"
 	# echo "width is $width"
 	# echo "height is $height"
+
+	# could also use [ "$height" -gt "$width" ],
+	# [[ ]] provides advanced comparision
 	if [[ "$height" -gt "$width" ]]
 	then
 		# echo "$name"

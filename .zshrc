@@ -346,6 +346,25 @@ source /home/raytracer/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ## liquidprompt
 [[ $- = *i* ]] && source ~/Downloads/git-materials/liquidprompt/liquidprompt
 
+# pure prompt
+# fpath+=~/.zsh/pure
+# autoload -U promptinit; promptinit
+# prompt pure
+# PURE_CMD_MAX_EXEC_TIME=1
+
+# using z.lua
+eval "$(lua ~/.zsh/z.lua/z.lua --init enhanced once zsh)"
+
+# setting dynamic title as working directory ------------------
+case $TERM in
+	xterm*)
+		precmd () {print -Pn "\e]0;%~\a"}
+		# \e]0; and \a are escape character,
+		# you can also use like \033]0; and \007 respectively
+		;;
+esac
+# -------------------------------------------------------------
+
 # use lf to switch directories and bind to ctrl-o
 
 lfcd() {

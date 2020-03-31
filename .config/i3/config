@@ -9,17 +9,29 @@ set $mod Mod4
 
 ##---Dropdown Windows---##
 #order can matter
-for_window [instance="dropdown_*"] floating enable
-for_window [instance="dropdown_*"] move scratchpad
-for_window [instance="dropdown_*"] sticky enable
-for_window [instance="dropdown_*"] scratchpad show
+#for_window [instance="dropdown_*"] floating enable
+#for_window [instance="dropdown_*"] move scratchpad
+#for_window [instance="dropdown_*"] sticky enable
+#for_window [instance="dropdown_*"] scratchpad show
 
-##still to create
-# for_window [instance="dropdown_tmuxdd"] resize set 625 450
-# for_window [instance="dropdown_dropdowncalc"] resize set 800 300
-# for_window [instance="dropdown_tmuxdd"] border pixel 3
-# for_window [instance="dropdown_dropdowncalc"] border pixel 2
-for_window [instance="dropdown_*"] move position center
+###still to create
+#for_window [instance="dropdown_tmuxdd"] resize set 625 450
+#for_window [instance="dropdown_dropdowncalc"] resize set 800 300
+#for_window [instance="dropdown_tmuxdd"] border pixel 3
+#for_window [instance="dropdown_dropdowncalc"] border pixel 2
+#for_window [instance="dropdown_*"] move position center
+
+for_window [instance="dropdown"] floating enable
+for_window [instance="dropdown"] resize set 625 400
+for_window [instance="dropdown"] move scratchpad
+for_window [instance="dropdown"] border pixel 4
+exec --no-startup-id $TERMINAL --name dropdown -e tmux
+
+for_window [instance="clc"] floating enable
+for_window [instance="clc"] resize set 800 300
+for_window [instance="clc"] move scratchpad
+for_window [instance="clc"] border pixel 4
+exec --no-startup-id $TERMINAL --name clc -e bpython
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -82,8 +94,6 @@ bindsym $mod+Shift+t              bar mode toggle
 # bindsym $mod+Shift+y              exec --no-startup-id i3resize left
 bindsym $mod+Shift+y              resize grow width 5 px or 5 ppt
 
-# bindsym $mod+u                    exec --no-startup-id ddspawn tmuxdd
-#bindsym $mod+u                    exec --no-startup-id st
 #bindsym $mod+u								exec --no-startup-id $TERMINAL -t 'fzf-menu' -e 'i3-dmenu-desktop --dmenu=fzf'
 for_window [title="fzf-menu"] floating enable
 #bindsym $mod+Shift+u              exec --no-startup-id i3resize down
@@ -96,7 +106,8 @@ bindsym $mod+o                    sticky toggle ;; exec --no-startup-id notify-s
 # bindsym $mod+Shift+o              exec --no-startup-id i3resize right
 bindsym $mod+Shift+o              resize shrink width 5 px or 5 ppt
 
-# bindsym $mod+a                    exec --no-startup-id ddspawn dropdown_dropdowncalc -f mono:pixelsize=24
+bindsym $mod+a					[instance="clc"] scratchpad show; [instance="clc"] move position center
+bindsym $mod+u					[instance="dropdown"] scratchpad show; [instance="dropdown"] move position center
 
 bindsym $mod+s                    gaps inner current plus 5
 bindsym $mod+Shift+s              gaps inner current minus 5
@@ -225,7 +236,7 @@ bindsym $mod+Shift+Right                move right
 # bindsym $mod+e layout toggle split
 
 # focus the parent container
-bindsym $mod+a focus parent
+# bindsym $mod+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -307,11 +318,11 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 #   client.urgent           $base02 $base08    $base00 $base0F
 
 # Customize colors-gruvbox
-client.focused          #458588 #458588 #ebdbb2 #458588 #458588
-client.focused_inactive #282828 #282828 #ebdbb2 #282828 #282828
-client.unfocused        #282828 #282828 #ebdbb2 #282828 #282828
-client.urgent           #282828 #282828 #fb4934 #282828 #282828
-client.placeholder      #282828 #282828 #ebdbb2 #282828 #282828
+client.focused          #d7d7d8 #d7d7d8 #ebdbb2 #d7d7d8 #d7d7d8
+client.focused_inactive #181818 #181818 #ebdbb2 #181818 #181818
+client.unfocused        #181818 #181818 #ebdbb2 #181818 #181818
+client.urgent           #181818 #181818 #fb4934 #181818 #181818
+client.placeholder      #181818 #181818 #ebdbb2 #181818 #181818
 hide_edge_borders both
 
 # client.focused          #81a1c1 #81a1c1 #ebdbb2 #81a1c1 #81a1c1

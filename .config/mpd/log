@@ -17463,3 +17463,412 @@ Mar 29 15:17 : client: [14] opened from 127.0.0.1:44360
 Mar 29 15:17 : client: [14] closed
 Mar 29 15:17 : client: [15] opened from 127.0.0.1:44364
 Mar 29 15:17 : client: [15] closed
+Mar 30 00:16 : client: [16] opened from 127.0.0.1:45504
+Mar 30 00:16 : client: [16] closed
+Mar 30 08:23 : client: [6] closed
+Mar 30 08:23 : client: [17] opened from 127.0.0.1:46326
+Mar 30 08:23 : exception: Failed to open /home/raytracer/.config/mpd/playlists: No such file or directory
+Mar 30 08:23 : client: [18] opened from 127.0.0.1:46330
+Mar 30 08:23 : client: [18] closed
+Mar 30 08:23 : client: [19] opened from 127.0.0.1:46334
+Mar 30 08:23 : client: [19] closed
+Mar 30 08:23 : client: [20] opened from 127.0.0.1:46338
+Mar 30 08:23 : client: [20] closed
+Mar 30 08:23 : client: [21] opened from 127.0.0.1:46342
+Mar 30 08:23 : client: [21] closed
+Mar 30 12:16 : client: [22] opened from 127.0.0.1:47364
+Mar 30 12:16 : client: [22] closed
+Mar 30 12:26 : client: [23] opened from 127.0.0.1:47368
+Mar 30 12:26 : client: [23] closed
+Mar 30 12:26 : client: [24] opened from 127.0.0.1:47372
+Mar 30 12:26 : client: [24] closed
+Mar 30 12:26 : client: [25] opened from 127.0.0.1:47376
+Mar 30 12:26 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Mar 30 12:26 : client: [25] closed
+Mar 30 12:26 : client: [26] opened from 127.0.0.1:47380
+Mar 30 12:26 : client: [26] closed
+Mar 30 12:30 : player: played "m4a/Bebe Rexha - Im A Mess (Official Music Video) [LdH7aFjDzjI].m4a"
+Mar 30 12:31 : client: [27] opened from 127.0.0.1:47384
+Mar 30 12:31 : client: [27] closed
+Mar 30 12:31 : client: [28] opened from 127.0.0.1:47388
+Mar 30 12:31 : client: [28] closed
+Mar 30 12:31 : player: played "mp3/04 Raabta Tile Song (DJ Shadow DJ Parsh Remix) 190Kbps.mp3"
+Mar 30 15:18 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 30 15:18 : exception: Failed to access /home/raytracer/Music/got: Too many levels of symbolic links
+Mar 30 15:18 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 30 18:02 : client: [0] opened from 127.0.0.1:60730
+Mar 30 18:02 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 30 18:02 : client: [0] closed
+Mar 30 18:02 : client: [1] opened from 127.0.0.1:60734
+Mar 30 18:02 : client: [1] closed
+Mar 30 18:02 : client: [2] opened from 127.0.0.1:60738
+Mar 30 18:02 : client: [2] closed
+Mar 30 18:02 : client: [3] opened from 127.0.0.1:60742
+Mar 30 18:02 : client: [3] closed
+Mar 30 18:02 : client: [4] opened from 127.0.0.1:60746
+Mar 30 18:02 : client: [4] closed
+Mar 30 18:02 : client: [5] opened from 127.0.0.1:60750
+Mar 30 18:02 : client: [5] closed
+Mar 30 18:02 : client: [6] opened from 127.0.0.1:60754
+Mar 30 18:02 : client: [6] closed
+Mar 30 18:02 : client: [7] opened from 127.0.0.1:60758
+Mar 30 18:02 : client: [7] closed
+Mar 30 18:02 : client: [8] opened from 127.0.0.1:60762
+Mar 30 18:02 : client: [8] closed
+Mar 30 18:02 : client: [9] opened from 127.0.0.1:60766
+Mar 30 18:02 : exception: Failed to open /home/raytracer/.config/mpd/playlists: No such file or directory
+Mar 30 18:05 : client: [9] closed
+Mar 30 18:05 : client: [10] opened from 127.0.0.1:60770
+Mar 30 18:05 : client: [10] closed
+Mar 30 18:05 : client: [11] opened from 127.0.0.1:60774
+Mar 30 18:05 : client: [11] closed
+Mar 30 18:09 : player: played "mp3/Challa (Main Lad Jaana) Uri - The Surgical Strike_192(Mymp3g.com).mp3"
+Mar 30 18:11 : player: played "mp3/Title Song(MyMp3Song.Com).mp3"
+Mar 30 18:11 : client: [12] opened from 127.0.0.1:60778
+Mar 30 18:11 : client: [12] closed
+Mar 30 18:11 : client: [13] opened from 127.0.0.1:60782
+Mar 30 18:11 : client: [13] closed
+Mar 30 23:44 : client: [14] opened from 127.0.0.1:33448
+Mar 30 23:44 : client: [14] closed
+Mar 31 08:35 : client: [15] opened from 127.0.0.1:34214
+Mar 31 08:35 : client: [15] closed
+Mar 31 08:35 : client: [16] opened from 127.0.0.1:34218
+Mar 31 08:35 : client: [16] closed
+Mar 31 08:35 : client: [17] opened from 127.0.0.1:34222
+Mar 31 08:35 : client: [17] closed
+Mar 31 08:35 : client: [18] opened from 127.0.0.1:34226
+Mar 31 08:35 : client: [18] closed
+Mar 31 08:41 : player: played "mp3/Shiva Tandava Stotram -  Original Powerful & Best Trance.mp3"
+Mar 31 08:45 : player: played "mp3/Singh And Kaur Singh Is Bliing -(Mr-Jatt.com).mp3"
+Mar 31 08:48 : player: played "mp3/05 Kaun Hain Voh - Baahubali (Kailash Kher) 320Kbps.mp3"
+Mar 31 08:52 : player: played "mp3/Lady Gaga, Bradley Cooper - Shallow (A Star Is Born).mp3"
+Mar 31 08:52 : client: [19] opened from 127.0.0.1:34776
+Mar 31 08:52 : exception: Failed to open /home/raytracer/.config/mpd/playlists: No such file or directory
+Mar 31 08:52 : client: [20] opened from 127.0.0.1:34780
+Mar 31 08:52 : client: [20] closed
+Mar 31 08:52 : client: [21] opened from 127.0.0.1:34784
+Mar 31 08:52 : client: [21] closed
+Mar 31 08:52 : client: [22] opened from 127.0.0.1:34788
+Mar 31 08:52 : client: [22] closed
+Mar 31 08:52 : client: [23] opened from 127.0.0.1:34792
+Mar 31 08:52 : client: [23] closed
+Mar 31 08:53 : client: [24] opened from 127.0.0.1:34796
+Mar 31 08:53 : client: [24] closed
+Mar 31 08:53 : client: [25] opened from 127.0.0.1:34800
+Mar 31 08:53 : client: [25] closed
+Mar 31 08:53 : client: [26] opened from 127.0.0.1:34804
+Mar 31 08:53 : client: [26] closed
+Mar 31 08:53 : client: [27] opened from 127.0.0.1:34808
+Mar 31 08:53 : client: [27] closed
+Mar 31 08:53 : client: [28] opened from 127.0.0.1:34812
+Mar 31 08:53 : client: [28] closed
+Mar 31 08:53 : client: [29] opened from 127.0.0.1:34816
+Mar 31 08:53 : client: [29] closed
+Mar 31 08:53 : client: [30] opened from 127.0.0.1:34820
+Mar 31 08:53 : client: [30] closed
+Mar 31 08:56 : player: played "mp3/Garaari  - YoYo Honey Singh [SongsMp3.Com] (SongsMp3.Com).mp3"
+Mar 31 08:57 : client: [31] opened from 127.0.0.1:34826
+Mar 31 08:57 : client: [31] closed
+Mar 31 08:57 : client: [32] opened from 127.0.0.1:34830
+Mar 31 08:57 : client: [32] closed
+Mar 31 08:57 : client: [33] opened from 127.0.0.1:34834
+Mar 31 08:57 : client: [33] closed
+Mar 31 08:57 : client: [34] opened from 127.0.0.1:34838
+Mar 31 08:57 : client: [34] closed
+Mar 31 08:57 : client: [35] opened from 127.0.0.1:34842
+Mar 31 08:57 : client: [35] closed
+Mar 31 08:57 : client: [36] opened from 127.0.0.1:34846
+Mar 31 08:57 : client: [36] closed
+Mar 31 08:57 : client: [37] opened from 127.0.0.1:34850
+Mar 31 08:57 : client: [37] closed
+Mar 31 08:57 : client: [38] opened from 127.0.0.1:34854
+Mar 31 08:57 : client: [38] closed
+Mar 31 08:57 : client: [39] opened from 127.0.0.1:34858
+Mar 31 08:57 : client: [39] closed
+Mar 31 08:57 : client: [40] opened from 127.0.0.1:34862
+Mar 31 08:57 : client: [40] closed
+Mar 31 08:57 : client: [41] opened from 127.0.0.1:34866
+Mar 31 08:57 : client: [41] closed
+Mar 31 09:17 : client: [42] opened from 127.0.0.1:34870
+Mar 31 09:17 : client: [42] closed
+Mar 31 09:17 : client: [43] opened from 127.0.0.1:34874
+Mar 31 09:17 : client: [43] closed
+Mar 31 09:17 : client: [44] opened from 127.0.0.1:34878
+Mar 31 09:17 : client: [44] closed
+Mar 31 09:17 : client: [45] opened from 127.0.0.1:34882
+Mar 31 09:17 : client: [45] closed
+Mar 31 09:30 : client: [46] opened from 127.0.0.1:34886
+Mar 31 09:30 : client: [46] closed
+Mar 31 09:30 : client: [47] opened from 127.0.0.1:34890
+Mar 31 09:30 : client: [47] closed
+Mar 31 09:32 : client: [48] opened from 127.0.0.1:34894
+Mar 31 09:32 : client: [48] closed
+Mar 31 09:32 : client: [49] opened from 127.0.0.1:34898
+Mar 31 09:32 : client: [49] closed
+Mar 31 09:33 : client: [19] closed
+Mar 31 09:33 : client: [50] opened from 127.0.0.1:34902
+Mar 31 09:33 : exception: Failed to open /home/raytracer/.config/mpd/playlists: No such file or directory
+Mar 31 09:33 : client: [51] opened from 127.0.0.1:34906
+Mar 31 09:33 : client: [51] closed
+Mar 31 09:33 : client: [52] opened from 127.0.0.1:34910
+Mar 31 09:33 : client: [52] closed
+Mar 31 09:33 : client: [53] opened from 127.0.0.1:34914
+Mar 31 09:33 : client: [53] closed
+Mar 31 09:33 : client: [54] opened from 127.0.0.1:34918
+Mar 31 09:33 : client: [54] closed
+Mar 31 09:33 : client: [50] closed
+Mar 31 09:33 : client: [55] opened from 127.0.0.1:34922
+Mar 31 09:33 : exception: Failed to open /home/raytracer/.config/mpd/playlists: No such file or directory
+Mar 31 09:33 : client: [56] opened from 127.0.0.1:34926
+Mar 31 09:33 : client: [56] closed
+Mar 31 09:33 : client: [57] opened from 127.0.0.1:34930
+Mar 31 09:33 : client: [57] closed
+Mar 31 09:34 : client: [58] opened from 127.0.0.1:34934
+Mar 31 09:34 : client: [58] closed
+Mar 31 09:34 : client: [59] opened from 127.0.0.1:34938
+Mar 31 09:34 : client: [59] closed
+Mar 31 09:35 : client: [55] closed
+Mar 31 09:35 : client: [60] opened from 127.0.0.1:34942
+Mar 31 09:35 : exception: Failed to open /home/raytracer/.config/mpd/playlists: No such file or directory
+Mar 31 09:35 : client: [61] opened from 127.0.0.1:34946
+Mar 31 09:35 : client: [61] closed
+Mar 31 09:35 : client: [62] opened from 127.0.0.1:34950
+Mar 31 09:35 : client: [62] closed
+Mar 31 09:35 : client: [63] opened from 127.0.0.1:34954
+Mar 31 09:35 : client: [63] closed
+Mar 31 09:35 : client: [64] opened from 127.0.0.1:34958
+Mar 31 09:35 : client: [64] closed
+Mar 31 09:35 : client: [65] opened from 127.0.0.1:34962
+Mar 31 09:35 : client: [65] closed
+Mar 31 09:35 : client: [66] opened from 127.0.0.1:34966
+Mar 31 09:35 : client: [66] closed
+Mar 31 09:35 : client: [67] opened from 127.0.0.1:34970
+Mar 31 09:35 : client: [67] closed
+Mar 31 09:35 : client: [60] closed
+Mar 31 09:35 : client: [68] opened from 127.0.0.1:34974
+Mar 31 09:35 : exception: Failed to open /home/raytracer/.config/mpd/playlists: No such file or directory
+Mar 31 09:35 : client: [69] opened from 127.0.0.1:34978
+Mar 31 09:35 : client: [69] closed
+Mar 31 09:35 : client: [70] opened from 127.0.0.1:34982
+Mar 31 09:35 : client: [70] closed
+Mar 31 09:35 : client: [71] opened from 127.0.0.1:34986
+Mar 31 09:35 : client: [71] closed
+Mar 31 09:35 : client: [72] opened from 127.0.0.1:34990
+Mar 31 09:35 : client: [72] closed
+Mar 31 09:35 : client: [73] opened from 127.0.0.1:34994
+Mar 31 09:35 : client: [73] closed
+Mar 31 09:35 : client: [74] opened from 127.0.0.1:34998
+Mar 31 09:35 : client: [74] closed
+Mar 31 09:35 : client: [75] opened from 127.0.0.1:35002
+Mar 31 09:35 : client: [75] closed
+Mar 31 09:35 : client: [76] opened from 127.0.0.1:35006
+Mar 31 09:35 : client: [76] closed
+Mar 31 09:35 : client: [77] opened from 127.0.0.1:35010
+Mar 31 09:35 : client: [77] closed
+Mar 31 09:35 : client: [78] opened from 127.0.0.1:35014
+Mar 31 09:35 : client: [78] closed
+Mar 31 09:35 : client: [79] opened from 127.0.0.1:35018
+Mar 31 09:35 : client: [79] closed
+Mar 31 09:35 : client: [80] opened from 127.0.0.1:35022
+Mar 31 09:35 : client: [80] closed
+Mar 31 09:35 : client: [81] opened from 127.0.0.1:35026
+Mar 31 09:35 : client: [81] closed
+Mar 31 09:35 : client: [82] opened from 127.0.0.1:35030
+Mar 31 09:35 : client: [82] closed
+Mar 31 09:35 : client: [83] opened from 127.0.0.1:35034
+Mar 31 09:35 : client: [83] closed
+Mar 31 09:35 : client: [84] opened from 127.0.0.1:35038
+Mar 31 09:35 : client: [84] closed
+Mar 31 09:35 : client: [85] opened from 127.0.0.1:35042
+Mar 31 09:35 : client: [85] closed
+Mar 31 09:35 : client: [86] opened from 127.0.0.1:35046
+Mar 31 09:35 : client: [86] closed
+Mar 31 09:35 : client: [87] opened from 127.0.0.1:35050
+Mar 31 09:35 : client: [87] closed
+Mar 31 09:35 : client: [88] opened from 127.0.0.1:35054
+Mar 31 09:35 : client: [88] closed
+Mar 31 09:35 : client: [89] opened from 127.0.0.1:35058
+Mar 31 09:35 : client: [89] closed
+Mar 31 09:35 : client: [90] opened from 127.0.0.1:35062
+Mar 31 09:35 : client: [90] closed
+Mar 31 09:35 : client: [91] opened from 127.0.0.1:35066
+Mar 31 09:35 : client: [91] closed
+Mar 31 09:35 : client: [92] opened from 127.0.0.1:35070
+Mar 31 09:35 : client: [92] closed
+Mar 31 09:35 : client: [68] closed
+Mar 31 09:35 : client: [93] opened from 127.0.0.1:35074
+Mar 31 09:35 : exception: Failed to open /home/raytracer/.config/mpd/playlists: No such file or directory
+Mar 31 09:35 : client: [94] opened from 127.0.0.1:35078
+Mar 31 09:35 : client: [94] closed
+Mar 31 09:35 : client: [95] opened from 127.0.0.1:35082
+Mar 31 09:35 : client: [95] closed
+Mar 31 09:35 : client: [96] opened from 127.0.0.1:35086
+Mar 31 09:35 : client: [96] closed
+Mar 31 09:35 : client: [97] opened from 127.0.0.1:35090
+Mar 31 09:35 : client: [97] closed
+Mar 31 09:35 : client: [98] opened from 127.0.0.1:35094
+Mar 31 09:35 : client: [98] closed
+Mar 31 09:35 : client: [99] opened from 127.0.0.1:35098
+Mar 31 09:35 : client: [99] closed
+Mar 31 09:35 : client: [100] opened from 127.0.0.1:35102
+Mar 31 09:35 : client: [100] closed
+Mar 31 09:35 : client: [101] opened from 127.0.0.1:35106
+Mar 31 09:35 : client: [101] closed
+Mar 31 09:35 : client: [102] opened from 127.0.0.1:35110
+Mar 31 09:35 : client: [102] closed
+Mar 31 09:35 : client: [103] opened from 127.0.0.1:35114
+Mar 31 09:35 : client: [103] closed
+Mar 31 09:35 : client: [104] opened from 127.0.0.1:35118
+Mar 31 09:35 : client: [104] closed
+Mar 31 09:35 : client: [105] opened from 127.0.0.1:35122
+Mar 31 09:35 : client: [105] closed
+Mar 31 09:36 : client: [106] opened from 127.0.0.1:35126
+Mar 31 09:36 : client: [106] closed
+Mar 31 09:36 : client: [107] opened from 127.0.0.1:35130
+Mar 31 09:36 : client: [107] closed
+Mar 31 09:36 : client: [108] opened from 127.0.0.1:35134
+Mar 31 09:36 : client: [108] closed
+Mar 31 09:36 : client: [109] opened from 127.0.0.1:35138
+Mar 31 09:36 : client: [109] closed
+Mar 31 10:37 : client: [110] opened from 127.0.0.1:35142
+Mar 31 10:37 : client: [110] closed
+Mar 31 10:37 : client: [111] opened from 127.0.0.1:35146
+Mar 31 10:37 : client: [111] closed
+Mar 31 10:39 : client: [112] opened from 127.0.0.1:35150
+Mar 31 10:39 : client: [112] closed
+Mar 31 10:39 : client: [113] opened from 127.0.0.1:35154
+Mar 31 10:39 : client: [113] closed
+Mar 31 10:39 : client: [114] opened from 127.0.0.1:35158
+Mar 31 10:39 : client: [114] closed
+Mar 31 10:42 : player: played "mp3/Balvir Boparai Yug Trete Ton (Full Song) Prince Ghuman  Latest Punjabi Songs 2019.mp3"
+Mar 31 10:44 : client: [115] opened from 127.0.0.1:35262
+Mar 31 10:44 : client: [115] closed
+Mar 31 10:44 : client: [116] opened from 127.0.0.1:35266
+Mar 31 10:44 : client: [116] closed
+Mar 31 11:39 : client: [117] opened from 127.0.0.1:35446
+Mar 31 11:39 : client: [117] closed
+Mar 31 11:39 : client: [118] opened from 127.0.0.1:35450
+Mar 31 11:39 : client: [118] closed
+Mar 31 11:40 : client: [119] opened from 127.0.0.1:35454
+Mar 31 11:40 : client: [119] closed
+Mar 31 11:40 : client: [120] opened from 127.0.0.1:35458
+Mar 31 11:40 : client: [120] closed
+Mar 31 11:40 : client: [121] opened from 127.0.0.1:35462
+Mar 31 11:40 : client: [121] closed
+Mar 31 11:40 : client: [122] opened from 127.0.0.1:35466
+Mar 31 11:40 : client: [122] closed
+Mar 31 11:40 : client: [123] opened from 127.0.0.1:35470
+Mar 31 11:40 : client: [123] closed
+Mar 31 11:40 : client: [124] opened from 127.0.0.1:35474
+Mar 31 11:40 : client: [124] closed
+Mar 31 11:40 : client: [125] opened from 127.0.0.1:35478
+Mar 31 11:40 : client: [125] closed
+Mar 31 11:40 : client: [126] opened from 127.0.0.1:35482
+Mar 31 11:40 : client: [126] closed
+Mar 31 11:41 : client: [127] opened from 127.0.0.1:35486
+Mar 31 11:41 : client: [127] closed
+Mar 31 11:41 : client: [128] opened from 127.0.0.1:35490
+Mar 31 11:41 : client: [128] closed
+Mar 31 11:41 : client: [129] opened from 127.0.0.1:35494
+Mar 31 11:41 : client: [129] closed
+Mar 31 11:41 : client: [130] opened from 127.0.0.1:35498
+Mar 31 11:41 : client: [130] closed
+Mar 31 11:41 : client: [131] opened from 127.0.0.1:35502
+Mar 31 11:41 : client: [131] closed
+Mar 31 11:41 : client: [132] opened from 127.0.0.1:35506
+Mar 31 11:41 : client: [132] closed
+Mar 31 11:41 : client: [133] opened from 127.0.0.1:35510
+Mar 31 11:41 : client: [133] closed
+Mar 31 11:41 : client: [134] opened from 127.0.0.1:35514
+Mar 31 11:41 : client: [134] closed
+Mar 31 11:41 : client: [135] opened from 127.0.0.1:35518
+Mar 31 11:41 : client: [135] closed
+Mar 31 11:42 : client: [136] opened from 127.0.0.1:35522
+Mar 31 11:42 : client: [136] closed
+Mar 31 11:42 : client: [137] opened from 127.0.0.1:35526
+Mar 31 11:42 : client: [137] closed
+Mar 31 12:06 : client: [138] opened from 127.0.0.1:35530
+Mar 31 12:06 : client: [138] closed
+Mar 31 12:06 : client: [139] opened from 127.0.0.1:35534
+Mar 31 12:06 : client: [139] closed
+Mar 31 12:08 : player: played "mp3/08. Thutmose - Memories.mp3"
+Mar 31 12:12 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Mar 31 12:12 : player: played "mp3/Six Days (Remix) - Dj Shadow (Furious 7).mp3"
+Mar 31 12:13 : player: played "tseries-remix/Remix - Chogada _ Loveyatri _ Aayush Sharma, Warina Hussain _ Darshan, Tanishk B _ DJ Chetas, DJ LIJO.m4a"
+Mar 31 12:17 : player: played "mp3/Naja_Naja_mitra_to_dur_-_Female_version____Korean_mix.mp3"
+Mar 31 12:21 : player: played "mp3/Major_Lazer__Watch_Out_For_This_(Bumaye)__feat_Busy_Signal,_The_Flexican___FS_Gr.mp3"
+Mar 31 12:22 : client: [140] opened from 127.0.0.1:35538
+Mar 31 12:22 : client: [140] closed
+Mar 31 12:22 : client: [141] opened from 127.0.0.1:35542
+Mar 31 12:22 : client: [141] closed
+Mar 31 12:23 : client: [142] opened from 127.0.0.1:35546
+Mar 31 12:23 : client: [142] closed
+Mar 31 12:23 : client: [143] opened from 127.0.0.1:35550
+Mar 31 12:23 : client: [143] closed
+Mar 31 12:26 : player: played "mp3/Sohnea (Full Song) _ Miss Pooja Feat. Millind Gaba _ Latest Punjabi Songs 2017 _ Speed Records.mp3"
+Mar 31 12:28 : client: [144] opened from 127.0.0.1:35554
+Mar 31 12:28 : client: [144] closed
+Mar 31 12:28 : client: [145] opened from 127.0.0.1:35558
+Mar 31 12:28 : client: [145] closed
+Mar 31 12:33 : client: [146] opened from 127.0.0.1:35562
+Mar 31 12:33 : client: [146] closed
+Mar 31 12:33 : client: [147] opened from 127.0.0.1:35566
+Mar 31 12:33 : client: [147] closed
+Mar 31 12:33 : client: [148] opened from 127.0.0.1:35570
+Mar 31 12:33 : client: [148] closed
+Mar 31 12:33 : client: [149] opened from 127.0.0.1:35574
+Mar 31 12:33 : client: [149] closed
+Mar 31 12:35 : client: [150] opened from 127.0.0.1:35578
+Mar 31 12:35 : client: [150] closed
+Mar 31 12:35 : client: [151] opened from 127.0.0.1:35582
+Mar 31 12:35 : client: [151] closed
+Mar 31 12:39 : player: played "mp3/Aankhein Khuli - Full Song  Mohabbatein  Shah Rukh Khan  Aishwarya Rai.mp3"
+Mar 31 12:43 : player: played "m4a/07._One_Man_Army___Real_Steel_-_Soundtrack.m4a"
+Mar 31 12:44 : client: [152] opened from 127.0.0.1:35586
+Mar 31 12:44 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Mar 31 12:44 : client: [152] closed
+Mar 31 12:44 : client: [153] opened from 127.0.0.1:35590
+Mar 31 12:44 : client: [153] closed
+Mar 31 12:44 : client: [154] opened from 127.0.0.1:35594
+Mar 31 12:44 : client: [154] closed
+Mar 31 12:44 : client: [155] opened from 127.0.0.1:35598
+Mar 31 12:44 : client: [155] closed
+Mar 31 12:47 : player: played "mp3/तागड़ी -  Tagdi -  Ajay Hooda -  New DJ Song 2018 -  Gagan & Anu Kadyan -  Mor Music.mp3"
+Mar 31 12:50 : player: played "mp3/O Meri Laila  Laila Majnu  Atif Aslam & Jyotica Tangri  Avinash Tiwary & Tripti Dimri.mp3"
+Mar 31 12:50 : client: [156] opened from 127.0.0.1:35602
+Mar 31 12:50 : client: [156] closed
+Mar 31 12:50 : client: [157] opened from 127.0.0.1:35606
+Mar 31 12:50 : client: [157] closed
+Mar 31 12:54 : player: played "mp3/GAGAN KOKRI  Silent Tears  Sukh Sanghera  Latest Punjabi Song 2016  SagaHits.mp3"
+Mar 31 12:58 : player: played "mp3/Alessia Cara - My Song (DawnFoxes.com).mp3"
+Mar 31 12:59 : client: [158] opened from 127.0.0.1:35610
+Mar 31 12:59 : client: [158] closed
+Mar 31 12:59 : client: [159] opened from 127.0.0.1:35614
+Mar 31 12:59 : client: [159] closed
+Mar 31 12:59 : client: [160] opened from 127.0.0.1:35618
+Mar 31 12:59 : client: [160] closed
+Mar 31 12:59 : client: [161] opened from 127.0.0.1:35622
+Mar 31 12:59 : client: [161] closed
+Mar 31 13:03 : player: played "mp3/Justin Bieber - Overboard (feat Jessica Jarrell)(music.naij.com).mp3"
+Mar 31 13:03 : client: [162] opened from 127.0.0.1:35626
+Mar 31 13:03 : client: [162] closed
+Mar 31 13:03 : client: [163] opened from 127.0.0.1:35630
+Mar 31 13:03 : client: [163] closed
+Mar 31 13:24 : client: [164] opened from 127.0.0.1:35634
+Mar 31 13:24 : client: [164] closed
+Mar 31 13:24 : client: [165] opened from 127.0.0.1:35638
+Mar 31 13:24 : client: [165] closed
+Mar 31 13:25 : client: [166] opened from 127.0.0.1:35642
+Mar 31 13:25 : client: [166] closed
+Mar 31 13:25 : client: [167] opened from 127.0.0.1:35646
+Mar 31 13:25 : client: [167] closed
+Mar 31 13:27 : client: [168] opened from 127.0.0.1:35650
+Mar 31 13:27 : client: [168] closed
+Mar 31 13:27 : client: [169] opened from 127.0.0.1:35654
+Mar 31 13:27 : client: [169] closed
+Mar 31 13:30 : player: played "mp3/Allah Maaf Kare.mp3"
+Mar 31 13:32 : client: [170] opened from 127.0.0.1:35662
+Mar 31 13:32 : client: [170] closed
+Mar 31 13:32 : client: [171] opened from 127.0.0.1:35666
+Mar 31 13:32 : client: [171] closed
+Mar 31 13:35 : player: played "mp3/Akcent - Serai (feat. Lidia Buble) - (BossMp3.Me).mp3"

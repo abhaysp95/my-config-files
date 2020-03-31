@@ -12,7 +12,7 @@ save_path="$HOME/Pictures/Screenshots/$dir"
 
 [ ! -d "$save_path" ] && mkd -p "$save_path"
 
-message="$(printf "Fullscreen type\nScreenshot Captured")"
+message="$(printf "Window type\nScreenshot Captured")"
 
 img="$(readlink -f "$latest_file")"
 notify-send --icon="$img" -t 3000 "$message"

@@ -103,8 +103,8 @@ highlight = #2f2f2f
 #foreground = #ebdbb2
 #
 #foreground_bold = #ebdbb2
-##background = #282828
-#color0 = #282828
+##background = #181818
+#color0 = #181818
 #color1 = #705050
 #color2 = #98971a
 #color3 = #d79921
@@ -217,7 +217,7 @@ highlight = #2f2f2f
 ## Extra colors
 #color16 = #dc9656
 #color17 = #a16946
-#color18 = #282828
+#color18 = #181818
 #color19 = #383838
 #color20 = #b8b8b8
 #color21 = #e8e8e8
@@ -489,13 +489,13 @@ foreground         = #ebdbb2
 foreground_bold    = #ebdbb2
 #cursor            = #b8bb26
 #cursor_foreground = #ebdbb2
-background         = #282828
+background         = #181818
 
 # Black
 color0  = #3c3836
 
 # Black dark
-color18 = #282828
+color18 = #181818
 
 # White
 color15 = #ebdbb2

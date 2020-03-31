@@ -32,7 +32,8 @@ alias dman="$HOME/.local/bin/.scripts/mansplain"
 alias dpdf="$HOME/.local/bin/.scripts/pdfdmenu"
 alias dvid="$HOME/.local/bin/.scripts/videosmpv"
 
-alias ls='ls -FhN -a --color=auto --group-directories-first'
+# removed -a option from ls
+alias ls='ls -FhN --color=auto --group-directories-first'
 alias ll='ls -lah --group-directories-first'
 	alias grep='grep --colour=auto'
 	alias egrep='egrep --colour=auto'
@@ -45,7 +46,7 @@ alias mkd="mkdir -pv"
 alias vrc="nvim ~/.config/nvim/init.vim"
 alias brc="nvim ~/.bashrc"
 alias ffx="firefox"
-alias battery="cat /sys/class/power_supply/BAT0/capacity"
+# alias battery="cat /sys/class/power_supply/BAT0/capacity"
 #alias ps = "ps l --USER raytracer --forest"
 alias nn="mpc next"
 alias pp="mpc prev"
@@ -161,7 +162,7 @@ yt="youtube-dl --add-metadata -i"
 yta="yt -x -f bestaudio\best"
 
 # random backgound
-sbga='setbg ~/Pictures/bgwallpapers'
+alias sbga='setbg ~/Pictures/bgwallpapers'
 
 # directory specific
 alias gtr='cd ~/.local/share/Trash/files'
@@ -193,3 +194,5 @@ alias gU='cd /usr && lsd'
 alias gUs='cd /usr/share && lsd'
 
 alias sc='cd ~/.local/bin/.scripts && lsd'
+
+alias exag='exa -la --git --header'

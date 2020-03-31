@@ -6,12 +6,12 @@ scrot -q 100
 
 latest_file="$(fd -d 1 -u scrot -e png "$HOME")"
 
-dir="$(basename "$(echo "$latest_file" | awk -F- '{print $1 "-" $2}')")"	# this line doesn't works in zsh shell, bad mathematical expression: operand expected
+moveto="$(basename "$(echo "$latest_file" | awk -F- '{print $1 "-" $2}')")"	# this line doesn't works in zsh shell, bad mathematical expression: operand expected
 # gives bad math expression, operand expected
 
-save_path="$HOME/Pictures/Screenshots/$dir"
+save_path="$HOME/Pictures/Screenshots/$moveto"
 
-[ ! -d "$save_path" ] && mkd -p "$save_path"
+[ ! -d "$save_path" ] && mkdir -p "$save_path"
 
 message="$(printf "Fullscreen type\nScreenshot Captured")"
 
