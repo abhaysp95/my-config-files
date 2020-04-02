@@ -186,6 +186,7 @@ map gv. cd ~/Videos
 map gvy cd ~/Videos/youtube
 
 map gm cd ~/Music
+map gmy cd ~/Music/youtube
 
 map gp. cd ~/Pictures
 map gbg cd ~/Pictures/bgwallpapers

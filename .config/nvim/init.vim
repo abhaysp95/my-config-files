@@ -425,7 +425,9 @@ let g:lightline = {
 		  \ 'component_function': {
 		  \   'gitbranch': 'FugitiveHead',
 		  \ 'mode': 'LightlineMode',
-		  \ 'filename': 'LightlineFilename'
+		  \ 'filename': 'LightlineFilename',
+		  \ 'fileformat': 'LightlineFileformat',
+		  \ 'filetype': 'LightlineFiletype'
 		  \ },
 \ }
 
@@ -443,6 +445,15 @@ let g:lightline = {
 	  let modified = &modified ? ' +' : ''
 	  return filename . modified
 	endfunction
+
+	function! LightlineFileformat()
+		return winwidth(0) > 70 ? &fileformat : ''
+	endfunction
+
+	function! LightlineFiletype()
+		return winwidth(0) > 70 ? (&filetype !=# '' ? &filetype : 'no ft') : ''
+	endfunction
+
 
 " colorscheme configuration
 " source "$HOME/.config/nvim/plugged/gruvbox/gruvbox_256palette.sh"
@@ -614,8 +625,8 @@ augroup mygroup
 augroup end
 
 " Remap for do codeAction of selected region, ex: `<leader>aap` for current paragraph
-xmap <leader>a  <Plug>(coc-codeaction-selected)
-nmap <leader>a  <Plug>(coc-codeaction-selected)
+xmap <leader>ca  <Plug>(coc-codeaction-selected)
+nmap <leader>ca  <Plug>(coc-codeaction-selected)
 
 " Remap for do codeAction of current line
 nmap <leader>ac  <Plug>(coc-codeaction)

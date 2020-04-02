@@ -33,8 +33,8 @@ alias dpdf="$HOME/.local/bin/.scripts/pdfdmenu"
 alias dvid="$HOME/.local/bin/.scripts/videosmpv"
 
 # removed -a option from ls
-alias ls='ls -FhN --color=auto --group-directories-first'
-alias ll='ls -lah --group-directories-first'
+# alias ls='ls -FhN --color=auto --group-directories-first'
+# alias ll='ls -lah --group-directories-first'
 	alias grep='grep --colour=auto'
 	alias egrep='egrep --colour=auto'
 	alias fgrep='fgrep --colour=auto'
@@ -159,40 +159,45 @@ alias udku='udisksctl unmount -b'
 
 # youtube-dl
 yt="youtube-dl --add-metadata -i"
-yta="yt -x -f bestaudio\best"
+yta="yt -x -f bestaudio/best"
 
 # random backgound
 alias sbga='setbg ~/Pictures/bgwallpapers'
 
 # directory specific
 alias gtr='cd ~/.local/share/Trash/files'
-alias gusb='cd /run/media/raytracer && lsd'
+alias gusb='cd /run/media/raytracer && ls'
 
-alias gv.='cd ~/Videos && lsd'
-alias gvy='cd ~/Videos/youtube && lsd'
+alias gv.='cd ~/Videos && ls'
+alias gvy='cd ~/Videos/youtube && ls'
 
-alias gm='cd ~/Music && lsd'
+alias gm='cd ~/Music && ls'
+alias gmy='cd ~/Music/youtube && ls'
 
-alias gp.='cd ~/Pictures && lsd'
-alias gbg='cd ~/Pictures/bgwallpapers && lsd'
-alias gss='cd ~/Pictures/Screenshots && lsd'
+alias gp.='cd ~/Pictures && ls'
+alias gbg='cd ~/Pictures/bgwallpapers && ls'
+alias gss='cd ~/Pictures/Screenshots && ls'
 
-alias gd='cd ~/Documents && lsd'
-alias gtc='cd ~/Documents/nc/ && lsd'
-alias gtp='cd ~/Documents/npython && lsd'
-alias gts='cd ~/Documents/nshell && lsd'
-alias gt.='cd ~/Documents/pdf && lsd'
+alias gd='cd ~/Documents && ls'
+alias gtc='cd ~/Documents/nc/ && ls'
+alias gtp='cd ~/Documents/npython && ls'
+alias gts='cd ~/Documents/nshell && ls'
+alias gt.='cd ~/Documents/pdf && ls'
 
-alias gD='cd ~/Downloads && lsd'
-alias gdg='cd ~/Downloads/git-materials && lsd'
-alias gdgg='cd ~/Downloads/git-materials/gitlab && lsd'
+alias gD='cd ~/Downloads && ls'
+alias gdg='cd ~/Downloads/git-materials && ls'
+alias gdgg='cd ~/Downloads/git-materials/gitlab && ls'
 
-alias gc.='cd ~/.config && lsd'
-alias gC='cd ~/.cache/cell && lsd'
-alias gE='cd /etc && lsd'
-alias gU='cd /usr && lsd'
-alias gUs='cd /usr/share && lsd'
+alias gc.='cd ~/.config && ls'
+alias gC='cd ~/.cache/cell && ls'
+alias gE='cd /etc && ls'
+alias gU='cd /usr && ls'
+alias gUs='cd /usr/share && ls'
 
-alias sc='cd ~/.local/bin/.scripts && lsd'
+alias sc='cd ~/.local/bin/.scripts && ls'
 
-alias exag='exa -la --git --header'
+# using exa as ls
+alias ls='exa --grid -F --group-directories-first'
+alias lsa='exa --grid -Fa --group-directories-first'
+alias ll='exa -lFa --color-scale --git'
+alias tree='exa -TaF --git'
