@@ -38,7 +38,6 @@ Plug 'dracula/vim',{'as':'dracula'}
 Plug 'lifepillar/vim-solarized8'
 Plug 'ryanoasis/vim-devicons'
 Plug 'itchyny/lightline.vim'
-" Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'sjl/badwolf'
 Plug 'rbgrouleff/bclose.vim'
 Plug 'tomasr/molokai'

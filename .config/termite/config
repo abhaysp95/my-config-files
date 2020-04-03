@@ -485,8 +485,8 @@ highlight = #2f2f2f
 
 ## gruvbox <<<
 [colors]
-foreground         = #ebdbb2
-foreground_bold    = #ebdbb2
+foreground         = #d7d7d8
+foreground_bold    = #d7d7d8
 #cursor            = #b8bb26
 #cursor_foreground = #ebdbb2
 background         = #181818

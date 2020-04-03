@@ -58,7 +58,7 @@ LP_PS1_POSTFIX=""
 # Set to a null string "" if you do not want color.
 
 # Current working directory
-LP_COLOR_PATH="$BOLD_WHITE"         # as normal user
+LP_COLOR_PATH="$BOLD_BLUE"         # as normal user
 LP_COLOR_PATH_ROOT="$BOLD_GREEN"   # as root
 
 # Color of the proxy mark
