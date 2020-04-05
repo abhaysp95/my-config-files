@@ -381,3 +381,21 @@ lfcd() {
 	fi
 }
 bindkey -s '^o' 'lfcd\n' # zsh
+
+# shortcut keys ---------------------------------------------
+
+# git pull (ctrl-g+p)
+function gitpull() { echo "git pull"; git pull; zle reset-prompt; zle redisplay}
+# echos then, runs command then reset prompt then redisplay prompt
+zle -N gitpull # defining widget
+bindkey '^gp' gitpull # defining shortcut to widget
+
+# pushd (alt-p+d)
+function viewdirs() {echo "dirs -v"; dirs -v; zle redisplay}
+zle -N viewdirs
+bindkey '^[pd' viewdirs
+
+# popd (alt-p+l)
+function popdir() {echo "popd"; popd; zle redisplay}
+zle -N popdir
+bindkey '^[pl' popdir

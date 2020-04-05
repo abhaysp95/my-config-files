@@ -6,14 +6,15 @@ bold_is_bright = true
 #cell_width_scale = 1.0
 clickable_url = true
 dynamic_title = true
-#font = JetBrains Mono, 10
-#font = Source Code Pro,SemiBold 10.4
+#font = JetBrains Mono, 11.4
+font = Source Code Pro,Medium 11.8
 #font = SFMono Nerd Font,SemiBold 11.8
-font = Mononoki Nerd Font Mono, 12
+# font = Mononoki Nerd Font Mono, 12
 #font = Hack Nerd Font Mono, 11
 #font = DejaVu SansMono Nerd Font, Book 11
 #font = FantasqueSansMono Nerd Font Mono, 13
 #font = Fira Code, Medium 11
+#font = Fura Code Nerd Font,Medium 11.4
 #font = TSCu_Comic, 13
 #font = Monaco 11
 #font = SpaceMono Nerd Font Mono, 10.8
@@ -485,8 +486,8 @@ highlight = #2f2f2f
 
 ## gruvbox <<<
 [colors]
-foreground         = #d7d7d8
-foreground_bold    = #d7d7d8
+foreground         = #bbaaab
+foreground_bold    = #bbaaab
 #cursor            = #b8bb26
 #cursor_foreground = #ebdbb2
 background         = #181818

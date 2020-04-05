@@ -86,7 +86,6 @@ alias now='date +"%T"'
 alias nowtime=now
 alias nowdate='date +"%d-%m-%Y"'
 
-alias ping='ping -c 10'
 alias fastping='ping -c 50 -s 1'
 
 alias ports='netstat -tulanp'
@@ -182,6 +181,7 @@ alias gd='cd ~/Documents && ls'
 alias gtc='cd ~/Documents/nc/ && ls'
 alias gtp='cd ~/Documents/npython && ls'
 alias gts='cd ~/Documents/nshell && ls'
+alias gth='cd ~/Documents/nhtml && ls'
 alias gt.='cd ~/Documents/pdf && ls'
 
 alias gD='cd ~/Downloads && ls'

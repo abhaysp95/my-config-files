@@ -233,3 +233,9 @@ trap 'settitle "$BASH_COMMAND"' DEBUG
 		# PS1='\[\033[01;34m\][\u@\h\[ -> $? \]\[\033[01;37m\] \W\[\033[01;34m\]]\$\[\033[00m\] '
 		# PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M ${$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b"
 # ----------------------------------------------------------------
+
+# shortcut keys --------------------------------------------------
+
+# clear screen
+# bind '"^L"':"\"clear\""
+# "^L": clear-screen

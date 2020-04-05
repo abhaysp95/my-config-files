@@ -1,6 +1,6 @@
 [colors]
 ;foreground = #ebdbb2
-foreground = #d7d7d8
+foreground = #bbaaab
 background = #181818
 red        = #cc241d
 ; changing blue with orange and vice-versa
@@ -349,8 +349,8 @@ label-padding    = 1
 ; Warning label
 ;label-warn           =  %temperature%
 label-warn            = temp: %temperature%
-label-warn-background = ${colors.white}
-label-warn-foreground = ${colors.foreground}
+label-warn-background = ${colors.red}
+label-warn-foreground = ${colors.background}
 label-warn-padding    = 1
 
 [module/cpu]

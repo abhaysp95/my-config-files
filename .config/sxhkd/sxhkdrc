@@ -81,8 +81,8 @@ super + v
     st -e nvim -c VimwikiIndex
 #super + c
 #    termite -e mpv --no-osc --no-input-default-bindings --input-conf=/dev/null --title='mpvfloat' /dev/video0
-super + b:{f,p,c,s,n,b}
-    {firefox,pcmanfm,telegram-desktop,stacer,nautilus,brave}
+super + b:{f,p,c,s,n,b,v}
+    {firefox,pcmanfm,telegram-desktop,stacer,nautilus,brave,vivaldi-stable}
 super+ctrl+n
     termite -e calcurse
 #super+o
@@ -113,6 +113,8 @@ Print
 	/home/raytracer/.local/bin/.scripts/fscrnshot
 shift + Print
 	/home/raytracer/.local/bin/.scripts/fscrnushot
+super + ctrl + Print
+	/home/raytracer/.local/bin/.scripts/fscrnsshot
 super + Print
     /home/raytracer/.local/bin/.scripts/dmenurecord
 super + Delete

@@ -18585,3 +18585,438 @@ Apr 03 12:38 : client: [503] opened from 127.0.0.1:33304
 Apr 03 12:38 : client: [503] closed
 Apr 03 12:38 : client: [504] opened from 127.0.0.1:33308
 Apr 03 12:38 : client: [504] closed
+Apr 03 12:39 : client: [505] opened from 127.0.0.1:33312
+Apr 03 12:39 : client: [505] closed
+Apr 03 12:39 : client: [506] opened from 127.0.0.1:33316
+Apr 03 12:39 : client: [506] closed
+Apr 03 12:43 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Apr 03 12:43 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Apr 03 12:43 : player: played "mp3/love karke bhaga hai Bihar Laut ke Na aayenge DJ song 2019 DJ samir.mp3"
+Apr 03 12:48 : player: played "m4a/Calum_von_Moger_-_Beast_Workout_Motivation (2)-mc.m4a"
+Apr 03 12:48 : client: [507] opened from 127.0.0.1:33334
+Apr 03 12:48 : client: [507] closed
+Apr 03 12:48 : client: [508] opened from 127.0.0.1:33338
+Apr 03 12:48 : client: [508] closed
+Apr 03 12:51 : client: [509] opened from 127.0.0.1:33342
+Apr 03 12:51 : client: [509] closed
+Apr 03 12:51 : client: [510] opened from 127.0.0.1:33346
+Apr 03 12:51 : client: [510] closed
+Apr 03 12:51 : client: [511] opened from 127.0.0.1:33350
+Apr 03 12:51 : client: [511] closed
+Apr 03 12:51 : client: [512] opened from 127.0.0.1:33354
+Apr 03 12:51 : client: [512] closed
+Apr 03 12:52 : client: [513] opened from 127.0.0.1:33358
+Apr 03 12:52 : client: [513] closed
+Apr 03 12:52 : client: [514] opened from 127.0.0.1:33362
+Apr 03 12:52 : client: [514] closed
+Apr 03 12:58 : player: played "mp3/French Kiss.mp3"
+Apr 03 16:18 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 03 16:18 : exception: Failed to access /home/raytracer/Music/got: Too many levels of symbolic links
+Apr 03 16:18 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 03 18:28 : client: [0] opened from 127.0.0.1:49834
+Apr 03 18:28 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 03 18:28 : client: [0] closed
+Apr 03 18:28 : client: [1] opened from 127.0.0.1:49838
+Apr 03 18:28 : client: [1] closed
+Apr 03 18:31 : client: [2] opened from 127.0.0.1:49842
+Apr 03 18:31 : client: [2] closed
+Apr 03 18:31 : client: [3] opened from 127.0.0.1:49846
+Apr 03 18:31 : client: [3] closed
+Apr 03 22:56 : client: [4] opened from 127.0.0.1:51236
+Apr 03 22:56 : exception: Failed to open /home/raytracer/.config/mpd/playlists: No such file or directory
+Apr 03 22:56 : client: [5] opened from 127.0.0.1:51240
+Apr 03 22:56 : client: [5] closed
+Apr 03 22:56 : client: [6] opened from 127.0.0.1:51244
+Apr 03 22:56 : client: [6] closed
+Apr 03 22:57 : client: [7] opened from 127.0.0.1:51248
+Apr 03 22:57 : client: [7] closed
+Apr 03 22:57 : client: [8] opened from 127.0.0.1:51252
+Apr 03 22:57 : client: [8] closed
+Apr 03 22:57 : client: [9] opened from 127.0.0.1:51256
+Apr 03 22:57 : client: [9] closed
+Apr 03 22:57 : client: [10] opened from 127.0.0.1:51260
+Apr 03 22:57 : client: [10] closed
+Apr 03 22:57 : client: [11] opened from 127.0.0.1:51264
+Apr 03 22:57 : client: [11] closed
+Apr 03 22:57 : client: [12] opened from 127.0.0.1:51268
+Apr 03 22:57 : client: [12] closed
+Apr 03 22:57 : client: [13] opened from 127.0.0.1:51272
+Apr 03 22:57 : client: [13] closed
+Apr 03 22:57 : client: [14] opened from 127.0.0.1:51276
+Apr 03 22:57 : client: [14] closed
+Apr 03 22:57 : client: [15] opened from 127.0.0.1:51280
+Apr 03 22:57 : client: [15] closed
+Apr 03 22:57 : client: [16] opened from 127.0.0.1:51284
+Apr 03 22:57 : client: [16] closed
+Apr 03 22:58 : client: [17] opened from 127.0.0.1:51288
+Apr 03 22:58 : client: [17] closed
+Apr 03 22:58 : client: [18] opened from 127.0.0.1:51292
+Apr 03 22:58 : client: [18] closed
+Apr 03 23:01 : client: [19] opened from 127.0.0.1:51296
+Apr 03 23:01 : client: [19] closed
+Apr 04 08:12 : client: [20] opened from 127.0.0.1:51544
+Apr 04 08:12 : client: [20] closed
+Apr 04 08:13 : client: [21] opened from 127.0.0.1:51548
+Apr 04 08:13 : client: [21] closed
+Apr 04 08:13 : client: [22] opened from 127.0.0.1:51552
+Apr 04 08:13 : client: [22] closed
+Apr 04 08:13 : client: [23] opened from 127.0.0.1:51556
+Apr 04 08:13 : client: [23] closed
+Apr 04 08:13 : client: [24] opened from 127.0.0.1:51560
+Apr 04 08:13 : client: [24] closed
+Apr 04 08:22 : client: [25] opened from 127.0.0.1:51568
+Apr 04 08:22 : client: [25] closed
+Apr 04 08:22 : client: [26] opened from 127.0.0.1:51572
+Apr 04 08:22 : client: [26] closed
+Apr 04 08:24 : client: [27] opened from 127.0.0.1:51576
+Apr 04 08:24 : client: [27] closed
+Apr 04 08:24 : client: [28] opened from 127.0.0.1:51580
+Apr 04 08:24 : client: [28] closed
+Apr 04 11:10 : client: [29] opened from 127.0.0.1:52084
+Apr 04 11:10 : client: [29] closed
+Apr 04 11:10 : client: [30] opened from 127.0.0.1:52088
+Apr 04 11:10 : client: [30] closed
+Apr 04 11:10 : client: [31] opened from 127.0.0.1:52092
+Apr 04 11:10 : client: [31] closed
+Apr 04 11:10 : client: [32] opened from 127.0.0.1:52096
+Apr 04 11:10 : client: [32] closed
+Apr 04 11:31 : client: [33] opened from 127.0.0.1:52266
+Apr 04 11:31 : client: [33] closed
+Apr 04 11:31 : client: [34] opened from 127.0.0.1:52270
+Apr 04 11:31 : client: [34] closed
+Apr 04 11:33 : player: played "mp3/01 Main Hoon Hero Tera (Salman Khan) (SongsMp3.Com).mp3"
+Apr 04 11:34 : player: played "mp3/Shiv_Tandav_Sanskrit(www.SongPK.mobi).mp3"
+Apr 04 11:34 : client: [35] opened from 127.0.0.1:52304
+Apr 04 11:34 : client: [35] closed
+Apr 04 11:34 : client: [36] opened from 127.0.0.1:52308
+Apr 04 11:34 : client: [36] closed
+Apr 04 12:15 : client: [37] opened from 127.0.0.1:55126
+Apr 04 12:15 : client: [37] closed
+Apr 04 12:15 : client: [38] opened from 127.0.0.1:55130
+Apr 04 12:15 : client: [38] closed
+Apr 04 12:15 : client: [39] opened from 127.0.0.1:55134
+Apr 04 12:15 : client: [39] closed
+Apr 04 12:15 : client: [40] opened from 127.0.0.1:55138
+Apr 04 12:15 : client: [40] closed
+Apr 04 12:15 : client: [41] opened from 127.0.0.1:55142
+Apr 04 12:15 : client: [41] closed
+Apr 04 12:15 : client: [42] opened from 127.0.0.1:55146
+Apr 04 12:15 : client: [42] closed
+Apr 04 12:15 : client: [43] opened from 127.0.0.1:55150
+Apr 04 12:15 : client: [43] closed
+Apr 04 12:19 : player: played "mp3/Zedd, Katy Perry - 365 (Official).mp3"
+Apr 04 12:22 : client: [44] opened from 127.0.0.1:55324
+Apr 04 12:22 : client: [44] closed
+Apr 04 12:22 : client: [45] opened from 127.0.0.1:55328
+Apr 04 12:22 : client: [45] closed
+Apr 04 12:22 : client: [46] opened from 127.0.0.1:55332
+Apr 04 12:22 : client: [46] closed
+Apr 04 12:22 : client: [47] opened from 127.0.0.1:55336
+Apr 04 12:22 : client: [47] closed
+Apr 04 12:23 : client: [48] opened from 127.0.0.1:55340
+Apr 04 12:23 : client: [48] closed
+Apr 04 12:23 : client: [49] opened from 127.0.0.1:55344
+Apr 04 12:23 : client: [49] closed
+Apr 04 12:23 : client: [50] opened from 127.0.0.1:55348
+Apr 04 12:23 : client: [50] closed
+Apr 04 12:23 : client: [51] opened from 127.0.0.1:55352
+Apr 04 12:23 : client: [51] closed
+Apr 04 12:23 : client: [52] opened from 127.0.0.1:55356
+Apr 04 12:23 : client: [52] closed
+Apr 04 12:23 : client: [53] opened from 127.0.0.1:55360
+Apr 04 12:23 : client: [53] closed
+Apr 04 12:23 : client: [54] opened from 127.0.0.1:55364
+Apr 04 12:23 : client: [54] closed
+Apr 04 12:26 : player: played "mp3/J._Balvin_-_Ginza-mc.mp3"
+Apr 04 12:30 : player: played "mp3/Dr. Dre - Lyrical Gangbang - The Chronic.mp3"
+Apr 04 12:30 : client: [55] opened from 127.0.0.1:55526
+Apr 04 12:30 : client: [55] closed
+Apr 04 12:30 : client: [56] opened from 127.0.0.1:55530
+Apr 04 12:30 : client: [56] closed
+Apr 04 16:02 : client: [57] opened from 127.0.0.1:55642
+Apr 04 16:02 : client: [57] closed
+Apr 04 16:02 : client: [58] opened from 127.0.0.1:55646
+Apr 04 16:02 : client: [58] closed
+Apr 04 16:06 : player: played "m4a/Barry_White_-_Never,_Never_Gonna_Give_Ya_Up_(Baby_Driver_Soundtrack).m4a"
+Apr 04 16:10 : player: played "mp3/Calvin_Harris_-_Summer.mp3"
+Apr 04 16:15 : player: played "mp3/The__What_A_Time_To_Be_Alive__Medley_by_SoMo.mp3"
+Apr 04 16:19 : player: played "mp3/Zara Larsson - Ain't My Fault (J HUS & FRED VIP Remix) (DawnFoxes.com).mp3"
+Apr 04 16:19 : client: [59] opened from 127.0.0.1:56386
+Apr 04 16:19 : client: [59] closed
+Apr 04 16:19 : client: [60] opened from 127.0.0.1:56390
+Apr 04 16:19 : client: [60] closed
+Apr 04 16:24 : client: [61] opened from 127.0.0.1:56754
+Apr 04 16:24 : client: [61] closed
+Apr 04 16:24 : client: [62] opened from 127.0.0.1:56758
+Apr 04 16:24 : client: [62] closed
+Apr 04 16:29 : player: played "mp3/ravinder verma - Hindi Song Badan Per Sitare Lapete Hue O Jane Tamana Kahain Ja Rahi Ho Jara Paas AA.mp3"
+Apr 04 16:32 : player: played "mp3/Bas Kar (Official Video) Mankirt Aulakh ft Monica Singh  G.sidhu  Avex  New Punjabi Songs 2019.mp3"
+Apr 04 16:36 : player: played "mp3/Nira_Ishq_Guri_21802b195295e4a670b534835583a073_128.mp3"
+Apr 04 16:46 : player: played "mp3/CokeStudio - Atif Aslam Tajdar-e-Haram Coke Studio Season 8 Episode 1.mp3"
+Apr 04 16:50 : player: played "mp3/Gang Up - Young Thug 2 Chainz Wiz Khalifa PnB Rock (DJJOhAL.Com).mp3"
+Apr 04 16:53 : player: played "mp3/Aastha Gill - Saara India _ Priyank Sharma _ Mixsingh _ Arvindr Khaira _ Nikk.mp3"
+Apr 04 16:55 : client: [63] opened from 127.0.0.1:57112
+Apr 04 16:55 : client: [63] closed
+Apr 04 16:55 : client: [64] opened from 127.0.0.1:57116
+Apr 04 16:55 : client: [64] closed
+Apr 04 18:25 : client: [65] opened from 127.0.0.1:59694
+Apr 04 18:25 : client: [65] closed
+Apr 04 18:25 : client: [66] opened from 127.0.0.1:59698
+Apr 04 18:25 : client: [66] closed
+Apr 04 18:26 : player: played "tseries-remix/Tulsi Kumar Mashup _ DJ YOGII _ Best Hindi Romantic Songs _  Hindi Love Songs _ T-Series.m4a"
+Apr 04 18:26 : client: [67] opened from 127.0.0.1:59702
+Apr 04 18:26 : client: [67] closed
+Apr 04 18:26 : client: [68] opened from 127.0.0.1:59706
+Apr 04 18:26 : client: [68] closed
+Apr 04 18:26 : client: [69] opened from 127.0.0.1:59710
+Apr 04 18:26 : client: [69] closed
+Apr 04 18:26 : client: [70] opened from 127.0.0.1:59714
+Apr 04 18:26 : client: [70] closed
+Apr 04 18:26 : client: [71] opened from 127.0.0.1:59718
+Apr 04 18:26 : client: [71] closed
+Apr 04 18:26 : client: [72] opened from 127.0.0.1:59722
+Apr 04 18:26 : client: [72] closed
+Apr 04 18:26 : client: [73] opened from 127.0.0.1:59726
+Apr 04 18:26 : client: [73] closed
+Apr 04 18:26 : client: [74] opened from 127.0.0.1:59730
+Apr 04 18:26 : client: [74] closed
+Apr 04 18:26 : client: [75] opened from 127.0.0.1:59734
+Apr 04 18:26 : client: [75] closed
+Apr 04 18:26 : client: [76] opened from 127.0.0.1:59738
+Apr 04 18:26 : client: [76] closed
+Apr 04 18:26 : client: [77] opened from 127.0.0.1:59742
+Apr 04 18:26 : client: [77] closed
+Apr 04 18:26 : client: [78] opened from 127.0.0.1:59746
+Apr 04 18:26 : client: [78] closed
+Apr 04 18:26 : client: [79] opened from 127.0.0.1:59750
+Apr 04 18:26 : client: [79] closed
+Apr 04 18:26 : client: [80] opened from 127.0.0.1:59754
+Apr 04 18:26 : client: [80] closed
+Apr 04 18:26 : client: [81] opened from 127.0.0.1:59758
+Apr 04 18:26 : client: [81] closed
+Apr 04 18:27 : client: [82] opened from 127.0.0.1:59762
+Apr 04 18:27 : client: [82] closed
+Apr 04 18:27 : client: [83] opened from 127.0.0.1:59766
+Apr 04 18:27 : client: [83] closed
+Apr 04 18:27 : client: [84] opened from 127.0.0.1:59770
+Apr 04 18:27 : client: [84] closed
+Apr 04 18:27 : client: [85] opened from 127.0.0.1:59774
+Apr 04 18:27 : client: [85] closed
+Apr 04 18:28 : client: [86] opened from 127.0.0.1:59778
+Apr 04 18:28 : client: [86] closed
+Apr 04 18:28 : client: [87] opened from 127.0.0.1:59782
+Apr 04 18:28 : client: [87] closed
+Apr 04 20:14 : client: [88] opened from 127.0.0.1:32974
+Apr 04 20:14 : client: [88] closed
+Apr 04 20:14 : client: [89] opened from 127.0.0.1:32978
+Apr 04 20:14 : client: [89] closed
+Apr 04 20:18 : player: played "mp3/Cardi B - Best Life Ft. Chance The Rapper (DawnFoxes.com).mp3"
+Apr 04 20:19 : client: [90] opened from 127.0.0.1:33250
+Apr 04 20:19 : client: [90] closed
+Apr 04 20:19 : client: [91] opened from 127.0.0.1:33254
+Apr 04 20:19 : client: [91] closed
+Apr 04 20:57 : client: [92] opened from 127.0.0.1:33376
+Apr 04 20:57 : client: [92] closed
+Apr 04 20:57 : client: [93] opened from 127.0.0.1:33380
+Apr 04 20:57 : client: [93] closed
+Apr 04 20:58 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Apr 04 20:58 : player: played "mp3/Nothing Dirty Anthem - Badshah.mp3"
+Apr 04 20:59 : client: [94] opened from 127.0.0.1:33384
+Apr 04 20:59 : client: [94] closed
+Apr 04 20:59 : client: [95] opened from 127.0.0.1:33388
+Apr 04 20:59 : client: [95] closed
+Apr 04 21:00 : player: played "mp3/13._Kenton___Real_Steel_-_Soundtrack.mp3"
+Apr 04 21:05 : player: played "mp3/Uk Top 40-Next 2 You.mp3"
+Apr 04 21:08 : client: [96] opened from 127.0.0.1:33400
+Apr 04 21:08 : client: [96] closed
+Apr 04 21:08 : client: [97] opened from 127.0.0.1:33404
+Apr 04 21:08 : client: [97] closed
+Apr 04 21:18 : client: [98] opened from 127.0.0.1:33420
+Apr 04 21:18 : client: [98] closed
+Apr 04 21:18 : client: [99] opened from 127.0.0.1:33424
+Apr 04 21:18 : client: [99] closed
+Apr 04 21:18 : client: [100] opened from 127.0.0.1:33428
+Apr 04 21:18 : client: [100] closed
+Apr 04 21:18 : client: [101] opened from 127.0.0.1:33432
+Apr 04 21:18 : client: [101] closed
+Apr 04 21:18 : player: played "mp3/iron man.mp3"
+Apr 04 21:23 : player: played "mp3/Gulzaar Chhaniwala - FILTER SHOT (Official) _ Latest Haryanvi Songs Haryanavi 2018 _ Sonotek.mp3"
+Apr 04 21:30 : player: played "mp3/CokeStudio - Tera Woh Pyar (Nawazishein Karam) Momina Mustehsan & Asim Azhar Episode 6 Coke Studio S.mp3"
+Apr 04 21:30 : client: [102] opened from 127.0.0.1:33440
+Apr 04 21:30 : client: [102] closed
+Apr 04 21:30 : client: [103] opened from 127.0.0.1:33444
+Apr 04 21:30 : client: [103] closed
+Apr 04 21:32 : client: [104] opened from 127.0.0.1:33450
+Apr 04 21:32 : client: [104] closed
+Apr 04 21:32 : client: [105] opened from 127.0.0.1:33454
+Apr 04 21:32 : client: [105] closed
+Apr 04 21:32 : client: [106] opened from 127.0.0.1:33458
+Apr 04 21:32 : client: [106] closed
+Apr 04 21:32 : client: [107] opened from 127.0.0.1:33462
+Apr 04 21:32 : client: [107] closed
+Apr 04 21:40 : client: [108] opened from 127.0.0.1:33470
+Apr 04 21:40 : client: [108] closed
+Apr 04 21:40 : client: [109] opened from 127.0.0.1:33474
+Apr 04 21:40 : client: [109] closed
+Apr 04 21:44 : client: [110] opened from 127.0.0.1:33480
+Apr 04 21:44 : client: [110] closed
+Apr 04 21:44 : client: [111] opened from 127.0.0.1:33484
+Apr 04 21:44 : client: [111] closed
+Apr 04 21:45 : client: [112] opened from 127.0.0.1:33488
+Apr 04 21:45 : client: [112] closed
+Apr 04 21:45 : client: [113] opened from 127.0.0.1:33492
+Apr 04 21:45 : client: [113] closed
+Apr 04 22:40 : client: [114] opened from 127.0.0.1:33884
+Apr 04 22:40 : client: [114] closed
+Apr 04 22:40 : client: [115] opened from 127.0.0.1:33888
+Apr 04 22:40 : client: [115] closed
+Apr 04 22:40 : client: [116] opened from 127.0.0.1:33892
+Apr 04 22:40 : client: [116] closed
+Apr 04 22:40 : client: [117] opened from 127.0.0.1:33896
+Apr 04 22:40 : client: [117] closed
+Apr 04 22:40 : client: [118] opened from 127.0.0.1:33900
+Apr 04 22:40 : client: [118] closed
+Apr 04 22:40 : client: [119] opened from 127.0.0.1:33904
+Apr 04 22:40 : client: [119] closed
+Apr 04 22:40 : client: [120] opened from 127.0.0.1:33908
+Apr 04 22:40 : client: [120] closed
+Apr 04 22:40 : client: [121] opened from 127.0.0.1:33912
+Apr 04 22:40 : client: [121] closed
+Apr 04 22:40 : client: [122] opened from 127.0.0.1:33916
+Apr 04 22:40 : client: [122] closed
+Apr 04 22:40 : client: [123] opened from 127.0.0.1:33920
+Apr 04 22:40 : client: [123] closed
+Apr 04 22:40 : client: [124] opened from 127.0.0.1:33924
+Apr 04 22:40 : client: [124] closed
+Apr 04 22:40 : client: [125] opened from 127.0.0.1:33928
+Apr 04 22:40 : client: [125] closed
+Apr 04 22:40 : client: [126] opened from 127.0.0.1:33932
+Apr 04 22:40 : client: [126] closed
+Apr 04 22:40 : client: [127] opened from 127.0.0.1:33936
+Apr 04 22:40 : client: [127] closed
+Apr 04 22:40 : client: [128] opened from 127.0.0.1:33940
+Apr 04 22:40 : client: [128] closed
+Apr 04 22:40 : client: [129] opened from 127.0.0.1:33944
+Apr 04 22:40 : client: [129] closed
+Apr 04 22:40 : client: [130] opened from 127.0.0.1:33948
+Apr 04 22:40 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Apr 04 22:40 : client: [130] closed
+Apr 04 22:40 : client: [131] opened from 127.0.0.1:33952
+Apr 04 22:40 : client: [131] closed
+Apr 04 22:40 : client: [132] opened from 127.0.0.1:33956
+Apr 04 22:40 : client: [132] closed
+Apr 04 22:40 : client: [133] opened from 127.0.0.1:33960
+Apr 04 22:40 : client: [133] closed
+Apr 04 22:40 : client: [134] opened from 127.0.0.1:33964
+Apr 04 22:40 : client: [134] closed
+Apr 04 22:40 : client: [135] opened from 127.0.0.1:33968
+Apr 04 22:40 : client: [135] closed
+Apr 04 22:40 : client: [136] opened from 127.0.0.1:33972
+Apr 04 22:40 : client: [136] closed
+Apr 04 22:40 : client: [137] opened from 127.0.0.1:33976
+Apr 04 22:40 : client: [137] closed
+Apr 04 22:42 : client: [138] opened from 127.0.0.1:33980
+Apr 04 22:42 : client: [138] closed
+Apr 04 22:42 : client: [139] opened from 127.0.0.1:33984
+Apr 04 22:42 : client: [139] closed
+Apr 04 22:42 : client: [140] opened from 127.0.0.1:33988
+Apr 04 22:42 : client: [140] closed
+Apr 05 08:21 : player: played "mp3/Katto Gilehri.mp3"
+Apr 05 08:23 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 05 08:23 : exception: Failed to access /home/raytracer/Music/got: Too many levels of symbolic links
+Apr 05 08:23 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 05 08:40 : client: [0] opened from 127.0.0.1:55318
+Apr 05 08:40 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 05 08:40 : client: [0] closed
+Apr 05 08:40 : client: [1] opened from 127.0.0.1:55322
+Apr 05 08:40 : client: [1] closed
+Apr 05 08:40 : client: [2] opened from 127.0.0.1:55326
+Apr 05 08:40 : client: [2] closed
+Apr 05 08:40 : client: [3] opened from 127.0.0.1:55330
+Apr 05 08:40 : client: [3] closed
+Apr 05 08:40 : client: [4] opened from 127.0.0.1:55334
+Apr 05 08:40 : exception: Failed to open /home/raytracer/.config/mpd/playlists: No such file or directory
+Apr 05 08:40 : client: [4] closed
+Apr 05 08:40 : client: [5] opened from 127.0.0.1:55338
+Apr 05 08:40 : exception: Failed to open /home/raytracer/.config/mpd/playlists: No such file or directory
+Apr 05 08:40 : client: [6] opened from 127.0.0.1:55344
+Apr 05 08:40 : client: [6] closed
+Apr 05 08:40 : client: [7] opened from 127.0.0.1:55348
+Apr 05 08:40 : client: [7] closed
+Apr 05 11:07 : client: [8] opened from 127.0.0.1:56366
+Apr 05 11:07 : client: [8] closed
+Apr 05 11:07 : client: [9] opened from 127.0.0.1:56370
+Apr 05 11:07 : client: [9] closed
+Apr 05 11:10 : player: played "mp3/Marihua_-_Lenny_Tavárez_(#PopPorn).mp3"
+Apr 05 11:12 : client: [10] opened from 127.0.0.1:56376
+Apr 05 11:12 : client: [10] closed
+Apr 05 11:12 : client: [11] opened from 127.0.0.1:56380
+Apr 05 11:12 : client: [11] closed
+Apr 05 12:07 : client: [12] opened from 127.0.0.1:56626
+Apr 05 12:07 : client: [12] closed
+Apr 05 12:07 : client: [13] opened from 127.0.0.1:56630
+Apr 05 12:07 : client: [13] closed
+Apr 05 12:08 : client: [14] opened from 127.0.0.1:56638
+Apr 05 12:08 : client: [14] closed
+Apr 05 12:08 : client: [15] opened from 127.0.0.1:56642
+Apr 05 12:08 : client: [15] closed
+Apr 05 12:09 : client: [16] opened from 127.0.0.1:56650
+Apr 05 12:09 : client: [16] closed
+Apr 05 12:09 : client: [17] opened from 127.0.0.1:56654
+Apr 05 12:09 : client: [17] closed
+Apr 05 12:12 : client: [18] opened from 127.0.0.1:56690
+Apr 05 12:12 : client: [18] closed
+Apr 05 12:12 : client: [19] opened from 127.0.0.1:56694
+Apr 05 12:12 : client: [19] closed
+Apr 05 12:38 : client: [20] opened from 127.0.0.1:57054
+Apr 05 12:38 : client: [20] closed
+Apr 05 12:38 : client: [21] opened from 127.0.0.1:57058
+Apr 05 12:38 : client: [21] closed
+Apr 05 12:38 : client: [5] closed
+Apr 05 12:39 : client: [22] opened from 127.0.0.1:57062
+Apr 05 12:39 : client: [22] closed
+Apr 05 12:39 : client: [23] opened from 127.0.0.1:57066
+Apr 05 12:39 : client: [23] closed
+Apr 05 12:40 : client: [24] opened from 127.0.0.1:57070
+Apr 05 12:40 : client: [24] closed
+Apr 05 12:40 : client: [25] opened from 127.0.0.1:57074
+Apr 05 12:40 : client: [25] closed
+Apr 05 12:40 : client: [26] opened from 127.0.0.1:57078
+Apr 05 12:40 : client: [26] closed
+Apr 05 12:40 : client: [27] opened from 127.0.0.1:57082
+Apr 05 12:40 : client: [27] closed
+Apr 05 12:40 : client: [28] opened from 127.0.0.1:57086
+Apr 05 12:40 : client: [28] closed
+Apr 05 12:40 : client: [29] opened from 127.0.0.1:57090
+Apr 05 12:40 : client: [29] closed
+Apr 05 12:43 : player: played "mp3/6 - My Angel - Fast & Furious 7 - [Songspk.CC].mp3"
+Apr 05 12:46 : client: [30] opened from 127.0.0.1:57094
+Apr 05 12:46 : client: [30] closed
+Apr 05 12:46 : client: [31] opened from 127.0.0.1:57098
+Apr 05 12:46 : client: [31] closed
+Apr 05 12:47 : player: played "mp3/PagalWorldmp3.in (Bridge Across The Ocean).mp3"
+Apr 05 12:49 : client: [32] opened from 127.0.0.1:57102
+Apr 05 12:49 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Apr 05 12:49 : client: [32] closed
+Apr 05 12:49 : client: [33] opened from 127.0.0.1:57106
+Apr 05 12:49 : client: [33] closed
+Apr 05 12:49 : client: [34] opened from 127.0.0.1:57110
+Apr 05 12:49 : client: [34] closed
+Apr 05 12:49 : client: [35] opened from 127.0.0.1:57114
+Apr 05 12:49 : client: [35] closed
+Apr 05 12:50 : client: [36] opened from 127.0.0.1:57118
+Apr 05 12:50 : client: [36] closed
+Apr 05 12:50 : client: [37] opened from 127.0.0.1:57122
+Apr 05 12:50 : client: [37] closed
+Apr 05 12:52 : client: [38] opened from 127.0.0.1:57126
+Apr 05 12:52 : client: [38] closed
+Apr 05 12:52 : client: [39] opened from 127.0.0.1:57130
+Apr 05 12:52 : client: [39] closed
+Apr 05 12:52 : client: [40] opened from 127.0.0.1:57134
+Apr 05 12:52 : client: [40] closed
+Apr 05 12:52 : client: [41] opened from 127.0.0.1:57138
+Apr 05 12:52 : client: [41] closed
+Apr 05 12:53 : client: [42] opened from 127.0.0.1:57142
+Apr 05 12:53 : client: [42] closed
+Apr 05 12:53 : client: [43] opened from 127.0.0.1:57146
+Apr 05 12:53 : client: [43] closed

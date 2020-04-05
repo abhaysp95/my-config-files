@@ -15,11 +15,8 @@ let mapleader =","
 call plug#begin()
 Plug 'vim-syntastic/syntastic' "error checker for languages and scripts
 Plug 'dense-analysis/ale'
-Plug 'tmux-plugins/vim-tmux-focus-events'
-Plug 'tmux-plugins/vim-tmux'
 Plug 'mattn/emmet-vim'			" for html
 Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-unimpaired'
 Plug 'vim-python/python-syntax'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -88,6 +85,12 @@ Plug 'nelstrom/vim-visual-star-search'
 " learn using f/F & t/T
 Plug 'unblevable/quick-scope'
 
+" get startscreen
+Plug 'mhinz/vim-startify'
+
+" Plug 'tmux-plugins/vim-tmux-focus-events'
+" Plug 'tmux-plugins/vim-tmux'
+" Plug 'tpope/vim-unimpaired'
 " Plug 'vim-airline/vim-airline'
 " Plug 'vim-airline/vim-airline-themes'
 " Plug 'tpope/vim-surround'
@@ -413,6 +416,8 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
+
+" source ~/.config/nvim/statusline.vim
 
 " lightline configuration
 let g:lightline = {
@@ -882,7 +887,7 @@ let g:NERDTreeDirArrowCollapsible = "◢"
     autocmd BufRead,BufNewFile *.tex set filetype=tex
 
 " Save file as sudo on files that require root permission
-    " cnoremap w! !execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
+    cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' \| edit!
 
 " breaks line beautifully instead of last fitting character
     set linebreak
@@ -1220,3 +1225,23 @@ highlight QuickScopeSecondary guifg='#5fffff' gui=underline ctermfg=81 cterm=und
 " ------- ptzz/lf.vim -------------------- "
 let g:lf_map_keys=0
 nnoremap <leader>fl :vsplit \| Lf<CR>
+
+" ------- vim-startify -------------------------------------
+" save current session/switch to another
+nnoremap <leader>ls :SSave<CR>
+nnoremap <leader>ll :SClose<CR>
+nnoremap <leader>lD :SDelete!
+
+" simplify the startify to just recent files and sessions
+let g:startify_list = [
+			\ { 'type': 'dir'     ,	'header': ['Recent files'] },
+			\ { 'type': 'sessions', 'header': ['Saved sessions'] }
+\ ]
+
+" Custom header
+let g:startfiy_custom_header = [
+  \ '   ╻ ╻   ╻   ┏┳┓',
+  \ '   ┃┏┛   ┃   ┃┃┃',
+  \ '   ┗┛    ╹   ╹ ╹',
+  \ '   ',
+  \ ]
