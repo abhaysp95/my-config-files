@@ -1,11 +1,11 @@
 [colors]
 ;foreground = #ebdbb2
-foreground = #bbaaab
+foreground = #7094af
 background = #181818
 red        = #cc241d
 ; changing blue with orange and vice-versa
 lightbrown       = #d65d0e
-blue	= #181818
+blue	= #1d1f21
 teal       = #689d6a
 green      = #98971a
 purple     = #b16286
@@ -87,8 +87,9 @@ module-margin-left  = 0
 module-margin-right = 0
 
 ; Font
-;font-0 = JetBrains Mono:style=Bold:size=8;3
-font-0 = Fura Code Nerd Font:style=Bold:size=9;3
+font-0 = Source Code Pro:style=Bold:size=10;3
+; font-0 = Fura Code Nerd Font:style=Bold:size=9;3
+; font-1 = Source Code Pro:style=Bold:size=10;3
 font-1 = Font Awesome 5 Free Solid:size=12;3
 
 ; Modlues
@@ -178,10 +179,10 @@ type = internal/i3
 ; format-prefix-foreground = ${colors.indigo}
 ; format-prefix-background = ${colors.blue}
 
-;format-suffix = 
-;format-suffix = "%{T3}%{T-}"
-;format-suffix-foreground = ${colors.background}
-;format-suffix-background = ${colors.blue}
+format-suffix = 
+; format-suffix = "%{T3}%{T-}" */
+format-suffix-foreground = ${colors.foreground}
+format-suffix-background = ${colors.blue}
 
 ; Mouse click
 enable-click = true
@@ -246,15 +247,20 @@ label-urgent-padding    = 1
 
 [module/xwindow]
 
-/* format-suffix = "%{T3}%{T-}" */
-/* format-suffix-foreground = ${colors.blue} */
-/* format-suffix-background = ${colors.background} */
+; format-prefix = "%{T3}%{T-}"
+; format-prefix-foreground = ${colors.foreground}
+; format-prefix-background = ${colors.blue}
+
+; format-suffix = "%{T3}%{T-}"
+format-suffix = "%{T3}%{T-}"
+format-suffix-foreground = ${colors.foreground}
+format-suffix-background = ${colors.blue}
 
 type = internal/xwindow
-label = %title:0:50:...%
+label = %title:0:40:...%
 format-foreground = ${colors.foreground}
 format-background = ${colors.blue}
-label-padding = 2
+label-padding = 1
 
 [module/corona]
 type = custom/script
@@ -283,16 +289,16 @@ type = custom/script
 
 exec = /home/raytracer/.config/polybar/bar_scripts/bright.sh
 
-label            = bright: %output% %
+label            = bright: %output%%
 label-foreground = ${colors.background}
 label-background = ${colors.foreground}
-label-padding    = 1
+label-padding    = 0
 interval         = 1
 
 ; Label
 ; label            = %output%
 ; label-foreground = ${colors.foreground}
-; label-padding    = 1
+; label-padding    = 0
 
 [module/battery]
 type = internal/battery
@@ -309,21 +315,21 @@ adapter = AC0
 label-charging            = bat: %percentage%% ¦
 label-charging-background = ${colors.yellow}
 label-charging-foreground = ${colors.foreground}
-label-charging-padding    = 1
+label-charging-padding    = 0
 
 ; Discharging label
 ;label-discharging            =  %percentage%%
 label-discharging            = bat: %percentage%% ¦
 label-discharging-background = ${colors.foreground}
 label-discharging-foreground = ${colors.blue}
-label-discharging-padding    = 1
+label-discharging-padding    = 0
 
 ; Full label
 ;label-full           =  100%
 label-full            = bat: 100% ¦
 label-full-background = ${colors.lightbrown}
 label-full-foreground = ${colors.foreground}
-label-full-padding    = 1
+label-full-padding    = 0
 
 [module/temperature]
 type = internal/temperature
@@ -344,14 +350,14 @@ format-suffix-background = ${colors.foreground}
 label            = temp: %temperature%
 label-background = ${colors.foreground}
 label-foreground = ${colors.blue}
-label-padding    = 1
+label-padding    = 0
 
 ; Warning label
 ;label-warn           =  %temperature%
 label-warn            = temp: %temperature%
 label-warn-background = ${colors.red}
 label-warn-foreground = ${colors.background}
-label-warn-padding    = 1
+label-warn-padding    = 0
 
 [module/cpu]
 type = internal/cpu
@@ -359,7 +365,7 @@ type = internal/cpu
 label = cpu %percentage%% ¦
 label-foreground = ${colors.background}
 label-background = ${colors.foreground}
-label-padding = 1
+label-padding = 0
 
 [module/pulseaudio]
 type = internal/pulseaudio
@@ -368,20 +374,20 @@ type = internal/pulseaudio
 label-volume            = vol: %percentage%% ¦
 label-volume-background = ${colors.foreground}
 label-volume-foreground = ${colors.blue}
-label-volume-padding    = 1
+label-volume-padding    = 0
 
 ; Muted label
 label-muted            = vol: Muted
 label-muted-background = ${colors.blue}
 label-muted-foreground = ${colors.foreground}
-label-muted-padding    = 1
+label-muted-padding    = 0
 
 [module/time]
 type = internal/date
 
-/* format-prefix = "%{T3}%{T-}" */
-/* format-prefix-foreground = ${colors.blue} */
-/* format-prefix-background = ${colors.background} */
+format-prefix = "%{T3}%{T-}"
+format-prefix-foreground = ${colors.foreground}
+format-prefix-background = ${colors.blue}
 
 /* format-suffix = "%{T3}%{T-}" */
 /* format-suffix-foreground = ${colors.blue} */
@@ -396,10 +402,10 @@ date = %A, %d %B
 
 ; Label
 ;label            =  %time%
-label            = time: %time% ¦ date: %date%
+label            = time: %time% ¦date: %date%
 label-foreground = ${colors.blue}
 label-background = ${colors.foreground}
-label-padding    = 2
+label-padding    = 1
 
 [module/date]
 type = internal/date
@@ -414,7 +420,7 @@ date = %A, %d %B
 ;label            =  %date%
 label-foreground = ${colors.foreground}
 label-background = ${colors.lightbackgrounds}
-label-padding    = 2
+label-padding    = 1
 
 ; [module/date]
 ; type = internal/date
@@ -429,7 +435,7 @@ label-padding    = 2
 ; label            =  %time%
 ; label-foreground = ${colors.foreground}
 ; label-background = ${colors.foreground}
-; label-padding    = 1
+; label-padding    = 0
 
 [module/lock]
 type = custom/text
@@ -439,7 +445,7 @@ type = custom/text
 content = lock ¦
 content-background = ${colors.foreground}
 content-foreground = ${colors.blue}
-content-padding    = 1
+content-padding    = 0
 
 ; Mouse click
 click-left = slock
@@ -452,7 +458,7 @@ type = custom/text
 content		= logoff
 content-background = ${colors.foreground}
 content-foreground = ${colors.blue}
-content-padding    = 1
+content-padding    = 0
 
 ; Mouse click
 click-left = i3-msg exit
@@ -465,7 +471,7 @@ type = custom/text
 content			= reboot ¦
 content-background = ${colors.foreground}
 content-foreground = ${colors.blue}
-content-padding    = 1
+content-padding    = 0
 
 ; Mouse click
 click-left = reboot
@@ -478,7 +484,7 @@ type = custom/text
 content			= shdn
 content-background = ${colors.foreground}
 content-foreground = ${colors.blue}
-content-padding    = 1
+content-padding    = 0
 
 ; Mouse click
 click-left = poweroff
@@ -490,7 +496,7 @@ type = custom/text
 content            = 
 content-background = ${colors.orange}
 content-foreground = ${colors.background}
-content-padding    = 1
+content-padding    = 0
 
 ; Mouse click
 click-left = firefox &

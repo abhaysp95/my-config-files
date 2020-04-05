@@ -88,50 +88,6 @@ Plug 'unblevable/quick-scope'
 " get startscreen
 Plug 'mhinz/vim-startify'
 
-" Plug 'tmux-plugins/vim-tmux-focus-events'
-" Plug 'tmux-plugins/vim-tmux'
-" Plug 'tpope/vim-unimpaired'
-" Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
-" Plug 'tpope/vim-surround'
-" Plug 'plasticboy/vim-markdown'	(overrides your foldmethod to fdm=expr)
-" Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
-" Plug 'airblade/vim-gitgutter'
-"Plug 'tpope/vim-git'
-"Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-"Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
-"Plug 'tpope/vim-git'
-"Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-"Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
-
-"Elixir support
-"Plug 'elixir-editors/vim-elixir'
-"Plug 'avdgaag/vim-phoenix'
-"Plug 'mmorearty/elixir-ctags'
-"Plug 'mattreduce/vim-mix'
-"Plug 'BjRo/vim-extest'
-"Plug 'frost/vim-eh-docs'
-"Plug 'slashmili/alchemist.vim'
-"Plug 'tpope/vim-endwise'
-"Plug 'jadercorrea/elixir_generator.vim'
-
-"Plug 'godlygeek/tabular
-"Plug 'gabrielelana/vim-markdown'
-"Plug 'vim-pandoc/vim-pandoc'
-"Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
-
-" Theme / Interface
-"Plug 'Yggdroot/indentLine'
-"Plug 'AnsiEsc.vim'
-
-"Plug 'PotatoesMaster/i3-vim-syntax'
-"Plug 'metakirby5/codi.vim'
-"Plug 'jreybert/vimagit'
-"Plug 'lukesmithxyz/vimling'
-"Plug 'bling/vim-airline'
-"Plug 'roxma/nvim-completion-manager'
-"Plug 'tpope/vim-surround'
-
 call plug#end()
 
 " set runtime to load some other plugins
@@ -202,24 +158,22 @@ set termguicolors
 set ruler
 set title	" sets title for document in terminal"
 set hlsearch
-set noshowmode " isn't working right now
 set ignorecase
 set incsearch
 set laststatus=2
 set lazyredraw
 set matchpairs+=<:> " Use % to jump between pairs
-" set mmp=5000
+set mmp=10000
+set noshowmode	" doesn't shows vim mode(which is showm below statusbar)
 set modelines=2
 set noerrorbells visualbell t_vb=
 set noshiftround
 set nospell
-"set nohls
 set nostartofline
 set regexpengine=1
 set scrolloff=3
 set showcmd
 set showmatch
-set showmode
 set smartcase
 set softtabstop=4
 set spelllang=en_us
@@ -417,11 +371,10 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
-" source ~/.config/nvim/statusline.vim
-
+" source ~/.config/nvim/statusline.vim		" goerge b(from vim group)
 " lightline configuration
 let g:lightline = {
-      \ 'colorscheme': 'gruvbox',
+      \ 'colorscheme': 'Tomorrow_Night_Bright',
 	\ 'active': {
 		  \   'left': [ [ 'mode', 'paste' ],
 		  \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
@@ -433,7 +386,22 @@ let g:lightline = {
 		  \ 'fileformat': 'LightlineFileformat',
 		  \ 'filetype': 'LightlineFiletype'
 		  \ },
+			\ 'component': {
+			\ 'lineinfo': ' %3l:%-2v',
+			\ 'tagbar': '%{tagbar#currenttag("[%s]", "")}'
+			\ },
 \ }
+	let g:lightline.separator = {
+	\ 'left': '', 'right': ''
+	\}
+	let g:lightline.subseparator = {
+	\ 'left': '', 'right': ''
+	\}
+	let g:lightline.tabline = {
+	\ 'left': [ ['tabs'] ],
+	\ 'right': [ ['close'] ]
+	\ }
+	set showtabline=1 " Show tabline, only when there is another tab
 
 	function! LightlineMode()
 		return expand('%:t') =~# '^__Tagbar__' ? 'Tagbar':
@@ -491,7 +459,7 @@ let g:lightline = {
 	let g:nord_underline = 1
 	"let ayucolor="mirage"
 	"let ayucolor="dark"
-	colorscheme gruvbox
+	colorscheme base16-tomorrow-night
     set go=a
     highlight Comment cterm=italic gui=italic
     highlight Search ctermbg=black ctermfg=yellow term=underline
@@ -638,7 +606,7 @@ nmap <leader>ac  <Plug>(coc-codeaction)
 nmap <leader>qf  <Plug>(coc-fix-current)
 
 
-" Use <C-d> for select selections ranges, needs server support, like: coc-tsserver, coc-python
+" Use <C-c> for select selections ranges, needs server support, like: coc-tsserver, coc-python
 nmap <silent> <C-c> <Plug>(coc-range-select)
 xmap <silent> <C-c> <Plug>(coc-range-select)
 
@@ -677,11 +645,14 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 " set width for codi
 "   let g:coid#width=50.0
+
+" Automatically open & close quickfix window
+autocmd QuickFixCmdPost [^l] * nested cwindow
 "
 " Syntastic Configuration   #Check :help Syntastic
 	set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
     set statusline+=%#warningmsg#
-    set statusline+=%{SystasticStatuslineFlag()}
+    set statusline+=%{SyntasticStatuslineFlag()}
     set statusline+=%*
 
     let g:syntastic_always_populate_loc_list=1
@@ -690,17 +661,21 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
     let g:syntastic_check_on_open=0
     let g:syntastic_auto_jump=3
     let g:syntastic_check_on_wq=0
+	let g:syntastic_error_symbol = '✖'
+	let g:syntastic_style_error_symbol = '✖'
+	let g:syntastic_enable_highlighting = 1
     " let g:syntastic_enable_elixir_checker = 1
     " let g:syntastic_elixir_checkers = ["elixir"]
-        map <leader>te :Errors<cr>
-        map <leader>T :SynstasticToggleMode<CR>
-        " map <leader>t :SyntasticCheck
+	map <leader>te :Errors<cr>
+	map <leader>T :SyntasticToggleMode<CR>
+	" map <leader>t :SyntasticCheck
 
-        nnoremap cln :lnext<CR>
-        nnoremap clp :lprevious<CR>
-        nnoremap clc :lclose<CR>
-        nnoremap <C-n> :cnext<CR>
-        nnoremap <C-p> :cprev<CR>
+	nnoremap cln :lnext<CR>
+	nnoremap clp :lprevious<CR>
+	nnoremap clc :lclose<CR>
+	nnoremap clo :lopen<CR>
+	nnoremap <C-n> :cnext<CR>
+	nnoremap <C-p> :cprev<CR>
 
 " Elixir Tagbar Configuration (not active)
 "let g:tagbar_type_elixir = {
@@ -918,7 +893,7 @@ autocmd FileType markdown map <F7> :!pandoc<Space><C-r>%<space>-o<Space><C-r>%.p
 autocmd FileType rmd map <F7> :!echo<space>"require(rmarkdown);<space>render('<c-r>%')"<space>\|<space>R<space>--vanilla<enter>
 
 " Automatically deletes all whitespace on save
-    autocmd BufWritePre * %s/\s\+$//e
+    " autocmd BufWritePre * %s/\s\+$//e
 
 " when shortcut files are updated, renew bash and ranger configs with new material
     autocmd BufWritePost files,directories !shortcuts
@@ -1245,3 +1220,49 @@ let g:startfiy_custom_header = [
   \ '   ┗┛    ╹   ╹ ╹',
   \ '   ',
   \ ]
+
+" ----------------- plugins not in use -------------------------- "
+
+" Plug 'tmux-plugins/vim-tmux-focus-events'
+" Plug 'tmux-plugins/vim-tmux'
+" Plug 'tpope/vim-unimpaired'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
+" Plug 'tpope/vim-surround'
+" Plug 'plasticboy/vim-markdown'	(overrides your foldmethod to fdm=expr)
+" Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
+" Plug 'airblade/vim-gitgutter'
+"Plug 'tpope/vim-git'
+"Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+"Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
+"Plug 'tpope/vim-git'
+"Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+"Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
+
+"Elixir support
+"Plug 'elixir-editors/vim-elixir'
+"Plug 'avdgaag/vim-phoenix'
+"Plug 'mmorearty/elixir-ctags'
+"Plug 'mattreduce/vim-mix'
+"Plug 'BjRo/vim-extest'
+"Plug 'frost/vim-eh-docs'
+"Plug 'slashmili/alchemist.vim'
+"Plug 'tpope/vim-endwise'
+"Plug 'jadercorrea/elixir_generator.vim'
+
+"Plug 'godlygeek/tabular
+"Plug 'gabrielelana/vim-markdown'
+"Plug 'vim-pandoc/vim-pandoc'
+"Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
+
+" Theme / Interface
+"Plug 'Yggdroot/indentLine'
+"Plug 'AnsiEsc.vim'
+
+"Plug 'PotatoesMaster/i3-vim-syntax'
+"Plug 'metakirby5/codi.vim'
+"Plug 'jreybert/vimagit'
+"Plug 'lukesmithxyz/vimling'
+"Plug 'bling/vim-airline'
+"Plug 'roxma/nvim-completion-manager'
+"Plug 'tpope/vim-surround'
