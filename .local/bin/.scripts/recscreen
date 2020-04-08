@@ -1,0 +1,44 @@
+#!/usr/bin/env sh
+
+video() {
+	ffmpeg \
+		-f x11grab \
+		-s "$(xdpyinfo | grep dimensions | awk '{print $2;}')" \
+		-i "$DISPLAY" \
+		"$HOME/video-$(date '+%Y-%m-%d-%H%M-%S').mkv" &
+		echo "$!" > /tmp/recscreenpid
+		img="$(readlink -f ~/.cache/notify-icons/movie-player.png)"
+		notify-send --icon="$img" -t 3000 "Recording Started"
+}
+
+killrec() {
+	recpid="$(cat /tmp/recscreenpid)"
+
+	# getting notification first
+	img="$(readlink -f ~/.cache/notify-icons/video-player.png)"
+	notify-send --icon="$img" -t 3000 "Recording Stopped"
+
+	# killing with SIGTERM first, allows finishing touches
+	kill -15 "$recpid"
+	rm -f /tmp/recscreenpid
+	sleep 3
+	kill -9 "$recpid"	# just to be sure
+}
+
+moverec() {
+	get_file="$(fd -d 1 -u video -e mkv "$HOME")"
+	moveto="$(basename "$(echo "$get_file" | awk -F- '{print $2 "-" $3}')")"
+	save_path="$HOME/Videos/recorded/$moveto"
+
+	[ ! -d "$save_path" ] && mkdir -p "$save_path"
+
+	mv "$get_file" "$save_path"
+	notify-send -t 2000 "$(printf 'Recording saved to path\n%s' "$save_path")"
+}
+
+if [ ! -f /tmp/recscreenpid ]; then
+	video
+else
+	killrec
+	moverec
+fi

@@ -24,6 +24,11 @@ killrecording() {
 	# even after SIGTERM, ffmpeg may still run, so SIGKILL it.
 	sleep 3
 	kill -9 "$recpid"
+	# latest_file="$(fd -d 1 -u video -e mkv "$HOME")"
+	# moveto="$(basename "$(echo "$latest_file" | awk -F- '{print $2 "-" $3}')")"
+	# save_path="$HOME"/Videos/recorded/"$moveto"
+	# [ ! -d "$save_path" ] && mkdir -p "$save_path"
+	# mv "$latest_file" "$save_path"
 	exit
 	}
 
@@ -46,7 +51,7 @@ video() { ffmpeg \
 	-s $(xdpyinfo | grep dimensions | awk '{print $2;}') \
 	-i $DISPLAY \
  	-c:v libx264 -qp 0 -r 30 \
-	"$HOME/video-$(date '+%y%m%d-%H%M-%S').mkv" &
+	"$HOME/video-$(date '+%Y-%m-%d-%H%M-%S').mkv" &
 	echo $! > /tmp/recordingpid
 	updateicon "⏺️"
 	}
@@ -91,8 +96,17 @@ askrecording() { \
 	}
 
 asktoend() { \
-	response=$(printf "No\\nYes" | dmenu -i -nb '#282828' -sf '#282828' -nf '#ebdbb2' -sb '#b8bb26' -fn "FuraCode Nerd Font 09" -p "Recording still active. End recording?") &&
-	[ "$response" = "Yes" ] &&  killrecording
+	response=$(pintf "No\\nYes" | dmenu -i -nb '#282828' -sf '#282828' -nf '#ebdbb2' -sb '#b8bb26' -fn "FuraCode Nerd Font 09" -p "Recording still active. End recording?") &&
+	# [ "$response" = "Yes" ] &&  killrecording
+	if [ "$response" = "Yes" ]; then
+		killrecording
+		# echo "YES"
+	# latest_file="$(fd -d 1 -u video -e mkv "$HOME")"
+	# moveto="$(basename "$(echo "$latest_file" | awk -F- '{print $2 "-" $3}')")"
+	# save_path="$HOME"/Videos/recorded/"$moveto"
+	# [ ! -d "$save_path" ] && mkdir -p "$save_path"
+	# mv "$latest_file" "$save_path"
+	fi
 	}
 
 

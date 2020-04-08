@@ -6,8 +6,7 @@ scrot -q 100 -l style=solid -s
 
 latest_file="$(fd -d 1 -u scrot -e png "$HOME")"
 
-moveto="$(basename "$(echo "$latest_file" | awk -F- '{print $1 "-" $2}')")"	# this line doesn't works in zsh shell, bad mathematical expression: operand expected
-# gives bad math expression, operand expected
+moveto="$(basename "$(echo "$latest_file" | awk -F- '{print $1 "-" $2}')")"	
 
 save_path="$HOME/Pictures/Screenshots/$moveto"
 
