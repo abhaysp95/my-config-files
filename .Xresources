@@ -39,34 +39,34 @@
 !! URxvt.color12: rgb:5c/5c/ff
 
 !!gruvbox
- hard contrast : *background: #1d2021
-*background    : #181818
-! soft contrast: *background: #32302f
-*foreground    : #ebdbb2
-! Black + DarkGrey
-*color0        : #282828
-*color8        : #928374
-! DarkRed + Red
-*color1        : #cc241d
-*color9        : #fb4934
-! DarkGreen + Green
-*color2        : #98971a
-*color10       : #b8bb26
-! DarkYellow + Yellow
-*color3        : #d79921
-*color11       : #fabd2f
-! DarkBlue + Blue
-*color4        : #458588
-*color12       : #83a598
-! DarkMagenta + Magenta
-*color5        : #b16286
-*color13       : #d3869b
-! DarkCyan + Cyan
-*color6        : #689d6a
-*color14       : #8ec07c
-! LightGrey + White
-*color7        : #a89984
-*color15       : #ebdbb2
+ /* hard contrast : *background: #1d2021 */
+/* *background    : #181818 */
+/* ! soft contrast: *background: #32302f */
+/* *foreground    : #ebdbb2 */
+/* ! Black + DarkGrey */
+/* *color0        : #282828 */
+/* *color8        : #928374 */
+/* ! DarkRed + Red */
+/* *color1        : #cc241d */
+/* *color9        : #fb4934 */
+/* ! DarkGreen + Green */
+/* *color2        : #98971a */
+/* *color10       : #b8bb26 */
+/* ! DarkYellow + Yellow */
+/* *color3        : #d79921 */
+/* *color11       : #fabd2f */
+/* ! DarkBlue + Blue */
+/* *color4        : #458588 */
+/* *color12       : #83a598 */
+/* ! DarkMagenta + Magenta */
+/* *color5        : #b16286 */
+/* *color13       : #d3869b */
+/* ! DarkCyan + Cyan */
+/* *color6        : #689d6a */
+/* *color14       : #8ec07c */
+/* ! LightGrey + White */
+/* *color7        : #a89984 */
+/* *color15       : #ebdbb2 */
 
 /* Solarized dark */
 /* ! special */
@@ -217,16 +217,54 @@
 /* *.color14: nord7 */
 /* *.color15: nord6 */
 
+/* base-16 tomorrow dark */
+! special
+*.foreground:   #c5c8c6
+*.background:   #1d1f21
+*.cursorColor:  #c5c8c6
+
+! black
+*.color0:       #1d1f21
+*.color8:       #969896
+
+! red
+*.color1:       #cc6666
+*.color9:       #cc6666
+
+! green
+*.color2:       #b5bd68
+*.color10:      #b5bd68
+
+! yellow
+*.color3:       #f0c674
+*.color11:      #f0c674
+
+! blue
+*.color4:       #81a2be
+*.color12:      #81a2be
+
+! magenta
+*.color5:       #b294bb
+*.color13:      #b294bb
+
+! cyan
+*.color6:       #8abeb7
+*.color14:      #8abeb7
+
+! white
+*.color7:       #c5c8c6
+*.color15:      #ffffff
+
 URxvt.perl-ext-common: resize-font,default,clipboard,url-select,keyboard-select
 
 URxvt.url-select.launcher: brave
 URxvt.url-select.underline: true
 
 !! URxvt Appearance
-URxvt.font: xft:Source Code Pro:size=10:style=Semibold
-URxvt.boldFont: xft:Source Code Pro:size=10:style=Bold
-URxvt.italicFont: xft:Source Code Pro:size=10:style=Italic
-URxvt.boldItalicfont: xft:Source Code Pro:size=10:style=Bold Italic
+URxvt.font: xft:Source Code Pro:size=11.4:style=Semibold
+URxvt.boldFont: xft:Source Code Pro:size=11.4:style=Bold
+URxvt.italicFont: xft:Source Code Pro:size=11.4:style=Italic
+URxvt.boldItalicfont: xft:Source Code Pro:size=11.4:style=Bold Italic
 URxvt.scrollBar: false
 URxvt.letterSpace: -1
 URxvt.lineSpace: 0
