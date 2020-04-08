@@ -55,8 +55,9 @@ Plug 'atelierbram/Base2Tone-vim'
 Plug 'colepeters/spacemacs-theme.vim'
 
 Plug 'junegunn/goyo.vim'
-Plug 'vimwiki/vimwiki'
+" Plug 'vimwiki/vimwiki'
 Plug 'neoclide/coc.nvim', {'branch': 'release', 'tag': '*', 'do': { -> coc#util#install()}}
+Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-commentary'
 Plug 'kovetskiy/sxhkd-vim'
 Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
@@ -348,8 +349,8 @@ hi SpellCap cterm=underline
 	autocmd FileType markdown inoremap ;sh ```sh<CR>```<CR><CR><++><Esc>2kO<C-i>
 	autocmd FileType markdown inoremap ;p ```python<CR>```<Esc>O
 	autocmd FileType markdown inoremap ;c ```c<CR>```<Esc>O
-	autocmd FileType vimwiki inoremap ;p ```python<CR>```<Esc>O
-	autocmd FileType vimwiki inoremap ;c ```c<CR>```<Esc>O
+	" autocmd FileType vimwiki inoremap ;p ```python<CR>```<Esc>O
+	" autocmd FileType vimwiki inoremap ;c ```c<CR>```<Esc>O
 	" >>>
 
 " some random setting <<<
@@ -383,14 +384,14 @@ function! QuickFix_toggle()
     copen
 endfunction
 nnoremap <silent><Leader>tq :call QuickFix_toggle()<CR>
-nmap <leader>Ic :set noic<CR>
+nnoremap <leader>Ic :set noic<CR>
 " >>>
 
 " *Ultisnips configs <<<
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsJumpForwardTrigger="<c-h>"
+let g:UltiSnipsJumpBackwardTrigger="<c-g>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
@@ -512,7 +513,6 @@ let g:coc_global_extensions = [
   \ 'coc-pyls',
   \ 'coc-yaml',
   \ 'coc-snippets',
-  \ 'coc-pairs',
   \ 'coc-tsserver',
   \ 'coc-prettier',
   \ 'coc-markmap',
@@ -524,6 +524,7 @@ let g:coc_global_extensions = [
   \ 'coc-css',
   \ 'coc-ultisnips'
   \ ]
+  " \ 'coc-pairs',
   " \ 'coc-markdownlint',
   " \ 'coc-tslint',
   " \ 'coc-tslint-plugin',
@@ -946,8 +947,8 @@ cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' \| edit!
 	set fillchars=vert:╏,fold:•
 "
 	" I don't know why aren't they following this: "
-	autocmd FileType vimwiki set foldmethod=marker
-	autocmd FileType vimwiki set ft=markdown
+	" autocmd FileType vimwiki set foldmethod=marker
+	" autocmd FileType vimwiki set ft=markdown
 	autocmd FileType markdown set foldmethod=marker
 
     autocmd BufWinLeave *.* mkview
@@ -1003,13 +1004,13 @@ nnoremap \incc :read $HOME/.vim/.skeleton/include.c<CR>ji
 
 
 """ Using templates
-if has("autocmd")
-    augroup templates
-        autocmd BufNewFile *.sh 0r ~/.config/nvim/templates/shshebang.sh
-        autocmd BufNewFile *.c 0r ~/.config/nvim/templates/incandmain.c
-		autocmd BufNewFile *.py 0r ~/.config/nvim/templates/pyshebang.py
-    augroup END
-endif
+" if has("autocmd")
+"     augroup templates
+"         autocmd BufNewFile *.sh 0r ~/.config/nvim/templates/shshebang.sh
+"         autocmd BufNewFile *.c 0r ~/.config/nvim/templates/incandmain.c
+" 		autocmd BufNewFile *.py 0r ~/.config/nvim/templates/pyshebang.py
+"     augroup END
+" endif
 
 " markdown plugins settings not in use <<<
 ".........................................................................
@@ -1044,11 +1045,11 @@ endif
 " >>>
 
 " Notetaking <<<
-command! -nargs=1 Ngrep vimgrep "<args>" /home/raytracer/vimwiki/**/*.md
+" command! -nargs=1 Ngrep vimgrep "<args>" /home/raytracer/vimwiki/**/*.md
 nnoremap <leader>[ :Ngrep
 
 au BufRead,BufNewFile *wiki set filetype=markdown
-:autocmd FileType vimwiki map <leader>d :VimwikiMakeDiaryNote
+" :autocmd FileType vimwiki map <leader>d :VimwikiMakeDiaryNote
 function! ToggleCalendar()
   execute ":Calendar"
   if exists("g:calendar_open")
@@ -1062,16 +1063,16 @@ function! ToggleCalendar()
     let g:calendar_open = 1
   end
 endfunction
-:autocmd FileType vimwiki map <leader>cl :call ToggleCalendar() set ft=markdown
+" :autocmd FileType vimwiki map <leader>cl :call ToggleCalendar() set ft=markdown
 
 " Markdown codeblock highlight syntax
 " let g:markdown_fenced_languages = ['c', 'bash', 'python']
 
 " Vimwiki settings and ensures files are read as what is wanted:
-    let g:vimwiki_ext2syntax = {'.Rmd': 'markdown', '.rmd': 'markdown', '.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
+    " let g:vimwiki_ext2syntax = {'.Rmd': 'markdown', '.rmd': 'markdown', '.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
 
 "     map <leader>v :set ft=markdown<CR>
-let g:vimwiki_list = [{'path': '~/vimwiki/',
+" let g:vimwiki_list = [{'path': '~/vimwiki/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
 "     autocmd BufRead,BufNewFile /tmp/calcurse*,~/.calcurse/notes/* set filetype=markdown
 
@@ -1091,6 +1092,7 @@ map <leader>fg :Files
 
 nnoremap <leader>bb :Buffers<CR>
 nnoremap <leader>bc :Commands<CR>
+nnoremap <leader>bs :Snippets<CR>
 nnoremap cq: :History:<CR>
 
 " open terminal in new split

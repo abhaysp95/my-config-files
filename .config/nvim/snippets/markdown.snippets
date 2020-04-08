@@ -1,0 +1,15 @@
+snippet post
+	---
+	layout: "post"
+	tags: ["${1}"]
+
+	card: "blog/cards/${2}.jpg"
+	title: "${3:Title}"
+	description:
+		${4:Description}
+	
+	toc:
+		- "${5}"
+	---
+
+	${6}
