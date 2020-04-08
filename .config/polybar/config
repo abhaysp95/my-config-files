@@ -208,9 +208,9 @@ label-urgent-padding    = 1
 ; format-prefix-background = ${colors.blue}
 
 ; format-suffix = "%{T3}%{T-}"
-; format-suffix = "%{T3}%{T-}"
-; format-suffix-foreground = ${colors.foreground}
-; format-suffix-background = ${colors.blue}
+format-suffix = "%{T3}%{T-}"
+format-suffix-foreground = ${colors.foreground}
+format-suffix-background = ${colors.blue}
 
 type = internal/xwindow
 label = %title:0:35:...%
