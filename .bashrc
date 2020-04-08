@@ -239,3 +239,10 @@ trap 'settitle "$BASH_COMMAND"' DEBUG
 # clear screen
 # bind '"^L"':"\"clear\""
 # "^L": clear-screen
+
+# command_not_found 
+
+command_not_found_handle() {
+	printf "\e[33mOooh..., \e[5mit isn't there\e[0m\n"
+	return 127
+}
