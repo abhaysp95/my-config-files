@@ -1,11 +1,11 @@
 [colors]
 ;foreground = #ebdbb2
-foreground = #7094af
+foreground = #e97057
 background = #181818
 red        = #cc241d
 ; changing blue with orange and vice-versa
 lightbrown       = #d65d0e
-blue	= #1d1f21
+blue	= #181818
 teal       = #689d6a
 green      = #98971a
 purple     = #b16286
@@ -90,87 +90,43 @@ module-margin-right = 0
 font-0 = Source Code Pro:style=Bold:size=10;3
 ; font-0 = Fura Code Nerd Font:style=Bold:size=9;3
 ; font-1 = Source Code Pro:style=Bold:size=10;3
-font-1 = Font Awesome 5 Free Solid:size=12;3
+; font1 = Source Code Pro:style=Bold:size=10;3
+font-1 = Font Awesome 5 Free Solid:size=10;2
 
 ; Modlues
 modules-left   = i3 xwindow
 /* modules-center = time */
-modules-right  = time temperature cpu pulseaudio battery bright
+modules-right  = s time d date d temperature d cpu d memory d pulseaudio d battery  d bright
 ; lock logout reboot poweroff
 
 ;tray-position = left
 ;tray-padding = 2
 
-; Cursor actions
-cursor-click  = pointer
-cursor-scroll = ns-resize
+wm-restack = i3
 
-[bar/bottom]
-; Size
-width  = 100%
-height = 22
-
-; Offset
-;offset-x = 50%
-;offset-y = 50%
-
-; Position
-bottom = true
-
-; Radius
-radius = 0
-
-; Align modules fixed to middle
-fixed-center = true
-
-; Colors
-background = ${colors.background}
-foreground = ${colors.foreground}
-
-; Underline
-line-size  = 2
-line-color = ${colors.foreground}
-
-; Border
-border-size  = 0
-border-color = ${colors.black}
-
-; Padding
-padding-left  = 0
-padding-right = 0
-
-; Margin of modules
-module-margin-left  = 0
-module-margin-right = 0
-
-; Font
-;font-0 = Fira Code:style=Bold:size=10;3
-font-0 = SFMono Nerd Font:style=Bold:size=10;3
-font-1 = Font Awesome 5 Free Solid:size=12;3
-
-; Modlues
-modules-left   = i3
-modules-center =
-modules-right  = lock logout reboot poweroff
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
 
 ; Cursor actions
 cursor-click  = pointer
 cursor-scroll = ns-resize
-
-; trying to get powerline effect
 
 [module/s]
 type = custom/text
 
 content = ""
-content-foreground = ${colors.background}
+content-foreground = ${colors.foreground}
 
 [module/d]
 type = custom/text
 
 content-prefix = ""
 content-prefix-foreground = ${colors.blue}
-content-prefix-background  ${colors.yellow}
+content-prefix-background = ${colors.foreground}
+
+content = ""
+content-foreground = ${colors.foreground}
+content-background = ${colors.blue}
 
 [module/i3]
 type = internal/i3
@@ -179,10 +135,10 @@ type = internal/i3
 ; format-prefix-foreground = ${colors.indigo}
 ; format-prefix-background = ${colors.blue}
 
-format-suffix = 
+; format-suffix = 
 ; format-suffix = "%{T3}%{T-}" */
-format-suffix-foreground = ${colors.foreground}
-format-suffix-background = ${colors.blue}
+; format-suffix-foreground = ${colors.foreground}
+; format-suffix-background = ${colors.blue}
 
 ; Mouse click
 enable-click = true
@@ -209,23 +165,23 @@ index-sort = true
 ;ws-icon-9 = Read;
 ;ws-icon-0 = "Free;
 
-ws-icon-1 = 1
-ws-icon-2 = 2
-ws-icon-3 = 3
-ws-icon-4 = 4
-ws-icon-5 = 5
-ws-icon-6 = 6
-ws-icon-7 = 7
-ws-icon-8 = 8
-ws-icon-9 = 9
-ws-icon-0 = 0
+; ws-icon-1 = 1
+; ws-icon-2 = 2
+; ws-icon-3 = 3
+; ws-icon-4 = 4
+; ws-icon-5 = 5
+; ws-icon-6 = 6
+; ws-icon-7 = 7
+; ws-icon-8 = 8
+; ws-icon-9 = 9
+; ws-icon-0 = 0
 
 ;ws-icon-default = 
 
-; Focused label
-label-focused            = %name%
+label-focused            = %name% 
 label-focused-foreground = ${colors.foreground}
 label-focused-background = ${colors.blue}
+; label-focused-underline = ${colors.red}
 label-focused-padding    = 1
 
 ; Unfocused labels
@@ -242,7 +198,7 @@ label-visible-padding    = 1
 ; Urgent labels
 label-urgent            = %icon% %name%
 label-urgent-foreground = ${colors.foreground}
-label-urgent-background = ${colors.yellow}
+label-urgent-background = ${colors.red}
 label-urgent-padding    = 1
 
 [module/xwindow]
@@ -252,12 +208,12 @@ label-urgent-padding    = 1
 ; format-prefix-background = ${colors.blue}
 
 ; format-suffix = "%{T3}%{T-}"
-format-suffix = "%{T3}%{T-}"
-format-suffix-foreground = ${colors.foreground}
-format-suffix-background = ${colors.blue}
+; format-suffix = "%{T3}%{T-}"
+; format-suffix-foreground = ${colors.foreground}
+; format-suffix-background = ${colors.blue}
 
 type = internal/xwindow
-label = %title:0:40:...%
+label = %title:0:35:...%
 format-foreground = ${colors.foreground}
 format-background = ${colors.blue}
 label-padding = 1
@@ -275,6 +231,15 @@ interval = 300
 label = %output%
 label-foreground = ${colors.foreground}
 
+[module/memory]
+type = internal/memory
+interval = 1
+format-prefix = "  "
+format-background = ${colors.foreground}
+format-foreground = ${colors.blue}
+label = %percentage_used%%
+label-padding = 1
+
 [module/weather]
 type = custom/script
 
@@ -284,16 +249,39 @@ exec = /home/enindu/.config/polybar/scripts/weather.sh
 ; Update interval
 interval = 600
 
+[module/wlan]
+type = internal/network
+interface = wlp5s0
+interval = 2.0
+
+format-connected = "直 "
+format-connected-background = ${colors.foreground}
+format-connected-foreground = ${colors.blue}
+
+;label-connected = "直 %essid%"
+label-connected = "直 "
+
+format-disconnected = <label-disconnected>
+format-disconnected-background = ${colors.foreground}
+format-disconnected-foreground = ${colors.blue}
+label-disconnected = "睊"
+
 [module/bright]
 type = custom/script
 
 exec = /home/raytracer/.config/polybar/bar_scripts/bright.sh
 
-label            = bright: %output%%
-label-foreground = ${colors.background}
-label-background = ${colors.foreground}
-label-padding    = 0
-interval         = 1
+; label            = 🔅 : %output%%
+; label-foreground = ${colors.background}
+; label-background = ${colors.foreground}
+; label-padding    = 1
+; interval         = 1
+format = <label>
+format-background = ${colors.foreground}
+format-foreground = ${colors.blue}
+label =  %output%%
+interval = 1
+label-padding = 1
 
 ; Label
 ; label            = %output%
@@ -310,84 +298,181 @@ full-at = 96
 battery = BAT0
 adapter = AC0
 
-; Charging label
-;label-charging           =  %percentage%%
-label-charging            = bat: %percentage%% ¦
-label-charging-background = ${colors.yellow}
-label-charging-foreground = ${colors.foreground}
-label-charging-padding    = 0
+;; Charging label
+;;label-charging           =  %percentage%%
+;label-charging            = bat: %percentage%%
+;label-charging-background = ${colors.yellow}
+;label-charging-foreground = ${colors.foreground}
+;label-charging-padding    = 0
 
-; Discharging label
-;label-discharging            =  %percentage%%
-label-discharging            = bat: %percentage%% ¦
-label-discharging-background = ${colors.foreground}
-label-discharging-foreground = ${colors.blue}
-label-discharging-padding    = 0
+;; Discharging label
+;;label-discharging            =  %percentage%%
+;label-discharging            = bat: %percentage%%
+;label-discharging-background = ${colors.foreground}
+;label-discharging-foreground = ${colors.blue}
+;label-discharging-padding    = 0
 
-; Full label
-;label-full           =  100%
-label-full            = bat: 100% ¦
-label-full-background = ${colors.lightbrown}
-label-full-foreground = ${colors.foreground}
-label-full-padding    = 0
+;; Full label
+;;label-full           =  100%
+;label-full            = bat: 100%
+;label-full-background = ${colors.lightbrown}
+;label-full-foreground = ${colors.foreground}
+;label-full-padding    = 0
+
+format-charging = <animation-charging> <label-charging>
+format-discharging = <animation-discharging> <label-discharging>
+format-charging-background = ${colors.orange}
+format-charging-foreground = ${colors.blue}
+format-discharging-background = ${colors.foreground}
+format-discharging-foreground = ${colors.blue}
+
+;label-charging-background = ${colors.background}
+label-charging-padding = 1
+
+;label-discharging-background = ${colors.background}
+label-discharging-padding = 1
+
+format-full-prefix = "  "
+format-full-background = ${colors.foreground}
+format-full-foreground = ${colors.blue}
+
+ramp-capacity-4 = " "
+ramp-capacity-3 = " "
+ramp-capacity-2 = " "
+ramp-capacity-1 = " "
+ramp-capacity-0 = " "
+
+animation-charging-4 = " "
+animation-charging-3 = " "
+animation-charging-2 = " "
+animation-charging-1 = " "
+animation-charging-0 = " "
+animation-charging-framerate = 750
+
+animation-discharging-4 = " "
+animation-discharging-3 = " "
+animation-discharging-2 = " "
+animation-discharging-1 = " "
+animation-discharging-0 = " "
+animation-discharging-framerate = 750
+
 
 [module/temperature]
-type = internal/temperature
+; format-prefix = "%{T3}%{T-}"
+; format-prefix-foreground = ${colors.foreground}
+; format-prefix-background = ${colors.background}
 
-/* format-prefix = "%{T3}%{T-}" */
-/* format-prefix-foreground = ${colors.foreground} */
-/* format-prefix-background = ${colors.background} */
-
-format-prefix = ¦
-format-prefix-foreground = ${colors.blue}
-format-prefix-background = ${colors.foreground}
-
-format-suffix = ¦
-format-suffix-foreground = ${colors.blue}
-format-suffix-background = ${colors.foreground}
-; Label
-;label           =  %temperature%
-label            = temp: %temperature%
-label-background = ${colors.foreground}
-label-foreground = ${colors.blue}
-label-padding    = 0
+; format;label           =  %temperature%
+; label            = temp: %temperature%
+; label-background = ${colors.foreground}
+; label-foreground = ${colors.blue}
+; label-padding    = 0
 
 ; Warning label
 ;label-warn           =  %temperature%
-label-warn            = temp: %temperature%
+; label-warn            = temp: %temperature%
+; label-warn-background = ${colors.red}
+; label-warn-foreground = ${colors.background}
+; label-warn-padding    = 0
+
+type = internal/temperature
+thermal-zone = 0
+warn-temperature = 80
+interval = 3
+
+label = %temperature-c%
+label-foreground = ${colors.blue}
+
+format = <ramp> <label>
+format-padding = 1
+format-foreground = ${colors.red}
+format-background = ${colors.foreground}
+
+format-warn = <ramp> <label-warn>
+format-warn-padding= 0
+format-warn-background = ${colors.red}
+format-warn-prefix = 
+format-warn-suffix = 
+format-warn-prefix-foreground = ${colors.blue}
+format-warn-prefix-background = ${colors.red}
+format-warn-suffix-foreground = ${colors.blue}
+format-warn-suffix-background = ${colors.red}
+
+
+
+label-warn = " %temperature-c%"
+label-warn-foreground = ${colors.blue}
 label-warn-background = ${colors.red}
-label-warn-foreground = ${colors.background}
-label-warn-padding    = 0
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-3 = 
+ramp-4 = 
+ramp-foreground = ${colors.blue}
 
 [module/cpu]
 type = internal/cpu
 
-label = cpu %percentage%% ¦
-label-foreground = ${colors.background}
-label-background = ${colors.foreground}
-label-padding = 0
+; label = cpu %percentage%%
+; label-foreground = ${colors.background}
+; label-background = ${colors.foreground}
+; label-padding = 0
+interval = 2
+format-prefix = " "
+format-background = ${colors.foreground}
+format-foreground = ${colors.blue}
+label = %percentage:2%%
+label-padding = 1
 
 [module/pulseaudio]
 type = internal/pulseaudio
 
 ; Volume label
-label-volume            = vol: %percentage%% ¦
-label-volume-background = ${colors.foreground}
-label-volume-foreground = ${colors.blue}
-label-volume-padding    = 0
+; label-volume            = vol: %percentage%%
+; label-volume-background = ${colors.foreground}
+; label-volume-foreground = ${colors.blue}
+; label-volume-padding    = 0
 
 ; Muted label
-label-muted            = vol: Muted
-label-muted-background = ${colors.blue}
-label-muted-foreground = ${colors.foreground}
-label-muted-padding    = 0
+; label-muted            = vol: Muted
+; label-muted-background = ${colors.blue}
+; label-muted-foreground = ${colors.foreground}
+; label-muted-padding    = 0
+
+format-volume = <label-volume> <bar-volume>
+format-volume-padding = 1
+format-volume-background = ${colors.foreground}
+
+label-volume =  %percentage%%
+label-volume-foreground = ${colors.blue}
+
+format-muted-padding = 1
+format-muted-background = ${colors.background}
+
+label-muted = ﱝ muted
+label-muted-foreground = ${colors.blue}
+label-muted-background = ${colors.red}
+
+bar-volume-width = 10
+bar-volume-foreground-0 = ${colors.blue}
+bar-volume-foreground-1 = ${colors.blue}
+bar-volume-foreground-2 = ${colors.blue}
+bar-volume-foreground-3 = ${colors.blue}
+bar-volume-foreground-4 = ${colors.blue}
+bar-volume-foreground-5 = ${colors.blue}
+bar-volume-foreground-6 = ${colors.blue}
+bar-volume-gradient = false
+bar-volume-indicator = ¦
+bar-volume-indicator-font = 2
+bar-volume-fill = ─
+bar-volume-fill-font = 2
+bar-volume-empty = ─
+bar-volume-empty-font = 2
+bar-volume-empty-foreground = ${colors.foreground}
 
 [module/time]
 type = internal/date
-
-format-prefix = "%{T3}%{T-}"
-format-prefix-foreground = ${colors.foreground}
-format-prefix-background = ${colors.blue}
 
 /* format-suffix = "%{T3}%{T-}" */
 /* format-suffix-foreground = ${colors.blue} */
@@ -397,12 +482,13 @@ format-prefix-background = ${colors.blue}
 interval = 1.0
 
 ; Format
-time = %I:%M %P
-date = %A, %d %B
+; time = %I:%M %P
+time = %H:%M:%S
+; date = %A, %d %B
 
 ; Label
-;label            =  %time%
-label            = time: %time% ¦date: %date%
+label            =  %time%
+; label            = time: %time%  date: %date%
 label-foreground = ${colors.blue}
 label-background = ${colors.foreground}
 label-padding    = 1
@@ -414,13 +500,19 @@ type = internal/date
 interval = 1.0
 
 ; Format
-date = %A, %d %B
+; date = %A, %d %B
+date = "%Y-%m-%d"
+
+; time = %H:%M:%S
 
 ; Label
 ;label            =  %date%
-label-foreground = ${colors.foreground}
-label-background = ${colors.lightbackgrounds}
-label-padding    = 1
+; label-foreground = ${colors.foreground}
+; label-background = ${colors.lightbackgrounds}
+; label-padding    = 1
+format-background = ${colors.foreground}
+format-foreground = ${colors.blue}
+label = "  %date% "
 
 ; [module/date]
 ; type = internal/date
