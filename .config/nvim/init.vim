@@ -484,7 +484,7 @@ let g:lightline = {
 	let g:nord_underline = 1
 	"let ayucolor="mirage"
 	"let ayucolor="dark"
-	colorscheme base16-tomorrow-night
+	colorscheme gruvbox
     set go=a
     highlight Comment cterm=italic gui=italic
     highlight Search ctermbg=black ctermfg=yellow term=underline
@@ -509,6 +509,7 @@ let g:coc_global_extensions = [
   \ 'coc-emoji',
   \ 'coc-css',
   \ 'coc-python',
+  \ 'coc-pyls',
   \ 'coc-yaml',
   \ 'coc-snippets',
   \ 'coc-pairs',
@@ -524,7 +525,6 @@ let g:coc_global_extensions = [
   \ 'coc-ultisnips'
   \ ]
   " \ 'coc-markdownlint',
-  " \ 'coc-pyls'
   " \ 'coc-tslint',
   " \ 'coc-tslint-plugin',
   " \ 'coc-eslint',
@@ -787,7 +787,7 @@ nnoremap <C-p> :cprev<CR>
 
 " Airline configuration <<<
 " Vim-Airline configuration
-	let g:airline#extensions#tabline#enabled=1
+	let g:airline#extensions#tabline#enabled=0
 	let g:airline#extensions#tabline#show_splits = 1
 	let g:airline#extensions#tabline#show_buffers = 1
 	let g:airline#extensions#tabline#show_tabs = 1
@@ -830,7 +830,7 @@ nnoremap <C-p> :cprev<CR>
 	let airline#extensions#syntastic#stl_format_err = '%E{[%fe(#%e)]}'
 	let airline#extensions#syntastic#warning_symbol = 'ẃ:'
 	let airline#extensions#syntastic#stl_format_warn = '%W{[%fw(#%w)]}'
-	let g:airline_theme='base16_tomorrow'
+	let g:airline_theme='minimalist'
 	let g:hybrid_custom_term_colors=1
 	let g:hybrid_reduced_contrast=1
 " >>>
@@ -1265,6 +1265,8 @@ let g:startfiy_custom_header = [
   \ '   ',
   \ ]
 " >>>
+
+echom '(>^.^<)'
 
 " ----------------- plugins not in use --------------------- <<<
 

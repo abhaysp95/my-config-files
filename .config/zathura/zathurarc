@@ -1,8 +1,8 @@
 #set recolor
-#set recolor-darkcolor "#1d2021"
+set recolor-darkcolor "#1d2021"
 #set recolor-lightcolor "#282936"
 #set recolor-lightcolor "#020202"
-set recolor-lightcolor "#181818"
+#set recolor-lightcolor "#181818"
 # set recolor-lightcolor "#2e3440"
 #set default-bg #1d2021
 

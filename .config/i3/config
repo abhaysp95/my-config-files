@@ -319,7 +319,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 #   client.urgent           $base02 $base08    $base00 $base0F
 
 # Customize colors-gruvbox
-client.focused          #7094af #7094af #ebdbb2 #7094af #7094af
+client.focused          #e97057 #e97057 #ebdbb2 #e97057 #e97057
 client.focused_inactive #181818 #181818 #ebdbb2 #181818 #181818
 client.unfocused        #181818 #181818 #ebdbb2 #181818 #181818
 client.urgent           #181818 #181818 #fb4934 #181818 #181818

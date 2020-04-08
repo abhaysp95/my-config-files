@@ -7,8 +7,8 @@ bold_is_bright = true
 clickable_url = true
 dynamic_title = true
 #font = JetBrains Mono, 11.4
-font = Source Code Pro,Medium 11.8
-#font = SFMono Nerd Font,SemiBold 11.8
+# font = Source Code Pro,Medium 11.8
+font = SFMono Nerd Font,Medium 11.5
 # font = Mononoki Nerd Font Mono, 12
 #font = Hack Nerd Font Mono, 11
 #font = DejaVu SansMono Nerd Font, Book 11
@@ -485,66 +485,66 @@ highlight = #2f2f2f
 #
 
 ## gruvbox <<<
-#[colors]
-#foreground         = #bbaaab
-#foreground_bold    = #bbaaab
-##cursor            = #b8bb26
-##cursor_foreground = #ebdbb2
-#background         = #181818
+[colors]
+foreground         = #ee8b5f
+foreground_bold    = #d5c9b4
+#cursor            = #b8bb26
+#cursor_foreground = #ebdbb2
+background         = #181818
 
-## Black
-#color0  = #3c3836
+# Black
+color0  = #3c3836
 
-## Black dark
-#color18 = #181818
+# Black dark
+color18 = #181818
 
-## White
-#color15 = #ebdbb2
+# White
+color15 = #ebdbb2
 
-## Grey
-#color8  = #928374
+# Grey
+color8  = #928374
 
-## Grey light
-#color20 = #a89984
+# Grey light
+color20 = #a89984
 
-## Gray lighter
-#color21 = #a89984
+# Gray lighter
+color21 = #a89984
 
-## Grey lightest
-#color7  = #bdae93
+# Grey lightest
+color7  = #bdae93
 
-## Red
-#color1  = #cc241d
-#color9  = #fb4934
+# Red
+color1  = #cc241d
+color9  = #fb4934
 
-## Green
-#color2  = #98971a
-#color10 = #b8bb26
+# Green
+color2  = #98971a
+color10 = #b8bb26
 
-## Yellow
-#color3  = #d79921
-#color11 = #fabd2f
+# Yellow
+color3  = #d79921
+color11 = #fabd2f
 
-## Blue
-#color4  = #458588
-#color12 = #83a598
+# Blue
+color4  = #458588
+color12 = #83a598
 
-## Purple
-#color5  = #b16286
-#color13 = #d3869b
+# Purple
+color5  = #b16286
+color13 = #d3869b
 
-## Teal
-#color6  = #689d6a
-#color14 = #8ec07c
+# Teal
+color6  = #689d6a
+color14 = #8ec07c
 
-## Orange
-#color16 = #d65d0e
+# Orange
+color16 = #d65d0e
 
-## Cyan
-#color17 = #689d6a
+# Cyan
+color17 = #689d6a
 
-## Blue Grey
-#color19 = #83a598
+# Blue Grey
+color19 = #83a598
 ## >>>
 
 ## google-dark
@@ -867,52 +867,54 @@ highlight = #2f2f2f
 # color13 = #b48ead
 # color14 = #8fbcbb
 # color15 = #eceff4
-[colors]
-# Base16 Tomorrow Night
-# Author: Chris Kempson (http://chriskempson.com)
 
-foreground          = #c5c8c6
-foreground_bold     = #e0e0e0
-cursor              = #e0e0e0
-cursor_foreground   = #1d1f21
-background          = rgba(29, 31, 33)
+# [colors]
+# # Base16 Tomorrow Night
+# # Author: Chris Kempson (http://chriskempson.com)
 
-# 16 color space
+# # foreground        = #c5c8c6
+# foreground          = #b8b5ca
+# foreground_bold     = #d5c9b4
+# cursor              = #e0e0e0
+# # cursor_foreground = #1d1f21
+# background          = rgba(29, 31, 33)
 
-# Black, Gray, Silver, White
-color0  = #1d1f21
-color8  = #969896
-color7  = #c5c8c6
-color15 = #ffffff
+# # 16 color space
 
-# Red
-color1  = #cc6666
-color9  = #cc6666
+# # Black, Gray, Silver, White
+# color0  = #1d1f21
+# color8  = #969896
+# color7  = #c5c8c6
+# color15 = #ffffff
 
-# Green
-color2  = #b5bd68
-color10 = #b5bd68
+# # Red
+# color1  = #cc6666
+# color9  = #cc6666
 
-# Yellow
-color3  = #f0c674
-color11 = #f0c674
+# # Green
+# color2  = #b5bd68
+# color10 = #b5bd68
 
-# Blue
-color4  = #81a2be
-color12 = #81a2be
+# # Yellow
+# color3  = #f0c674
+# color11 = #f0c674
 
-# Purple
-color5  = #b294bb
-color13 = #b294bb
+# # Blue
+# color4  = #81a2be
+# color12 = #81a2be
 
-# Teal
-color6  = #8abeb7
-color14 = #8abeb7
+# # Purple
+# color5  = #b294bb
+# color13 = #b294bb
 
-# Extra colors
-color16 = #de935f
-color17 = #a3685a
-color18 = #282a2e
-color19 = #373b41
-color20 = #b4b7b4
-color21 = #e0e0e0
+# # Teal
+# color6  = #8abeb7
+# color14 = #8abeb7
+
+# # Extra colors
+# color16 = #de935f
+# color17 = #a3685a
+# color18 = #282a2e
+# color19 = #373b41
+# color20 = #b4b7b4
+# color21 = #e0e0e0
