@@ -134,6 +134,7 @@ map f
 map ee   $$EDITOR "$f"
 map es   $sudo    $EDITOR "$f"
 map u    $view    "$f"
+map el	 $$BROWSER "$f"
 
 #   Archive mappings
 map az      zip
@@ -196,6 +197,7 @@ map gd  cd ~/Documents
 map gtc cd ~/Documents/nc/
 map gtp cd ~/Documents/npython
 map gts cd ~/Documents/nshell
+map gth cd ~/Documents/nhtml
 map gt. cd ~/Documents/pdf
 
 map gD   cd ~/Downloads
