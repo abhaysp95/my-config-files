@@ -69,7 +69,7 @@ bindsym XF86AudioPrev exec playerctl previous
 
 
 ##---Basic Bindings---##
-bindsym $mod+Shift+Return         exec --no-startup-id alacritty
+bindsym $mod+Shift+Return         exec --no-startup-id samedirec
 
 #bindsym $mod+Shit+t               exec --no-startup-id
 

@@ -169,3 +169,7 @@ XF86Audio{Rewind,Forward}
 #dmenurecord
 XF86AudioMedia
 	$TERMINAL -e ncmpcpp
+
+# screenkey
+super + Scroll_Lock
+	killall screenkey || screenkey
