@@ -55,7 +55,7 @@ Plug 'atelierbram/Base2Tone-vim'
 Plug 'colepeters/spacemacs-theme.vim'
 
 Plug 'junegunn/goyo.vim'
-" Plug 'vimwiki/vimwiki'
+Plug 'vimwiki/vimwiki'
 Plug 'neoclide/coc.nvim', {'branch': 'release', 'tag': '*', 'do': { -> coc#util#install()}}
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-commentary'
@@ -349,8 +349,8 @@ hi SpellCap cterm=underline
 	autocmd FileType markdown inoremap ;sh ```sh<CR>```<CR><CR><++><Esc>2kO<C-i>
 	autocmd FileType markdown inoremap ;p ```python<CR>```<Esc>O
 	autocmd FileType markdown inoremap ;c ```c<CR>```<Esc>O
-	" autocmd FileType vimwiki inoremap ;p ```python<CR>```<Esc>O
-	" autocmd FileType vimwiki inoremap ;c ```c<CR>```<Esc>O
+	autocmd FileType vimwiki inoremap ;p ```python<CR>```<Esc>O
+	autocmd FileType vimwiki inoremap ;c ```c<CR>```<Esc>O
 	" >>>
 
 " some random setting <<<
@@ -788,14 +788,20 @@ nnoremap <C-p> :cprev<CR>
 
 " Airline configuration <<<
 " Vim-Airline configuration
-	let g:airline#extensions#tabline#enabled=0
+	let g:airline#extensions#tabline#enabled=1
 	let g:airline#extensions#tabline#show_splits = 1
 	let g:airline#extensions#tabline#show_buffers = 1
+	let g:airline#extensions#tabline#buffer_nr_show = 1
+	let g:airline#extensions#tabline#buffer_idx_show = 1
+	let g:airline#extensions#tabline#tab_nr_type = 1
 	let g:airline#extensions#tabline#show_tabs = 1
-	let g:airline#extensions#tabline#show_tab_count = 1
+	let g:airline#extensions#tabline#show_tab_count = 1 
+	let g:airline#extensions#tabline#fnamecollapse = 1
 	let g:airline#extensions#tabline#overflow_marker = '…'
 	let g:airline_powerline_fonts=1
 	let g:airline_inactive_collapse = 1
+	let g:airline#extensions#tabline#buffers_label = 'b'
+	let g:airline#extensions#tabline#tabs_label = 't'
 	let g:airline_mode_map = {
 		  \ '__'     : '-',
 		  \ 'c'      : 'C',
@@ -831,7 +837,7 @@ nnoremap <C-p> :cprev<CR>
 	let airline#extensions#syntastic#stl_format_err = '%E{[%fe(#%e)]}'
 	let airline#extensions#syntastic#warning_symbol = 'ẃ:'
 	let airline#extensions#syntastic#stl_format_warn = '%W{[%fw(#%w)]}'
-	let g:airline_theme='minimalist'
+	let g:airline_theme='gruvbox'
 	let g:hybrid_custom_term_colors=1
 	let g:hybrid_reduced_contrast=1
 " >>>
@@ -947,8 +953,8 @@ cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' \| edit!
 	set fillchars=vert:╏,fold:•
 "
 	" I don't know why aren't they following this: "
-	" autocmd FileType vimwiki set foldmethod=marker
-	" autocmd FileType vimwiki set ft=markdown
+	autocmd FileType vimwiki set foldmethod=marker
+	autocmd FileType vimwiki set ft=markdown
 	autocmd FileType markdown set foldmethod=marker
 
     autocmd BufWinLeave *.* mkview
@@ -1045,11 +1051,11 @@ nnoremap \incc :read $HOME/.vim/.skeleton/include.c<CR>ji
 " >>>
 
 " Notetaking <<<
-" command! -nargs=1 Ngrep vimgrep "<args>" /home/raytracer/vimwiki/**/*.md
+command! -nargs=1 Ngrep vimgrep "<args>" /home/raytracer/vimwiki/**/*.md
 nnoremap <leader>[ :Ngrep
 
 au BufRead,BufNewFile *wiki set filetype=markdown
-" :autocmd FileType vimwiki map <leader>d :VimwikiMakeDiaryNote
+:autocmd FileType vimwiki map <leader>d :VimwikiMakeDiaryNote
 function! ToggleCalendar()
   execute ":Calendar"
   if exists("g:calendar_open")
@@ -1063,7 +1069,7 @@ function! ToggleCalendar()
     let g:calendar_open = 1
   end
 endfunction
-" :autocmd FileType vimwiki map <leader>cl :call ToggleCalendar() set ft=markdown
+:autocmd FileType vimwiki map <leader>cl :call ToggleCalendar() set ft=markdown
 
 " Markdown codeblock highlight syntax
 " let g:markdown_fenced_languages = ['c', 'bash', 'python']
@@ -1113,9 +1119,9 @@ let g:fzf_files_options =
 autocmd BufEnter * lcd %:p:h
 
 " ---- vim-pandoc-syntax(without vim-pandoc) ------- <<<
-augroup pandoc_syntax
-	au! BufNewFile,BufFilePre,BufRead *.md set filetype=markdown.pandoc
-augroup END
+" augroup pandoc_syntax
+" 	au! BufNewFile,BufFilePre,BufRead *.md set filetype=markdown.pandoc
+" augroup END
 " >>>
 
 " Vim Hexokinase <<<

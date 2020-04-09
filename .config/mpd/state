@@ -1,9 +1,9 @@
 sw_volume: 95
 audio_device_state:1:pulse audio
 audio_device_state:1:toggle_visualizer
-state: play
-current: 790
-time: 3.137000
+state: pause
+current: 520
+time: 211.500000
 random: 1
 repeat: 0
 single: 0
@@ -1246,6 +1246,5 @@ playlist_begin
 1231:webm/Prada - JASS MANAK  Satti Dhillon  Latest Punjabi Song 2018  GK.DIGITAL  Geet MP3 [PjTU0DmBWiU].webm
 1232:webm/T-Series (YouTube) - Official_ Issey Kehte Hain Hip Hop Full Video Song _ Yo Yo Honey Singh _ World  [uaCYeQ9FtSI].webm
 1233:youtube/Chillstep Music — Work Mix for Programmers _ Developers _ Designers-IjIa4cRgijg.m4a
-1234:youtube/One Direction - What Makes You Beautiful (Official Video)-QJO3ROT-A4E.m4a
-1235:youtube/2020-04m/Insomnia (Lyrics) _ ❤ Tebey-Kfxo6y3fXjA.m4a
+1234:youtube/2020-04m/Insomnia (Lyrics) _ ❤ Tebey-Kfxo6y3fXjA.m4a
 playlist_end

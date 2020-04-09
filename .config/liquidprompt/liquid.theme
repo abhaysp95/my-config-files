@@ -60,7 +60,7 @@ LP_PS1_POSTFIX=""
 # UBG="$(tput setaf 2)\]"
 
 # Current working directory
-LP_COLOR_PATH="$PINK"         # as normal user
+LP_COLOR_PATH="$BOLD_YELLOW"         # as normal user
 LP_COLOR_PATH_ROOT="$BOLD_GREEN"   # as root
 
 # Color of the proxy mark
@@ -100,7 +100,7 @@ LP_COLOR_NOWRITE="$RED"  # do not have write permission
 LP_COLOR_UP="$GREEN"                # repository is up to date / a push have been made
 LP_COLOR_COMMITS="$YELLOW"          # some commits have not been pushed
 LP_COLOR_COMMITS_BEHIND="$BOLD_RED" # some commits have not been pushed
-LP_COLOR_CHANGES="$GREEN"             # there is some changes to commit
+LP_COLOR_CHANGES="$WHITE"             # there is some changes to commit
 LP_COLOR_DIFF="$PURPLE"             # number of lines impacted by current changes
 
 # Battery

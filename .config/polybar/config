@@ -1,6 +1,6 @@
 [colors]
 ;foreground = #ebdbb2
-foreground = #e97057
+foreground = #f59829
 background = #181818
 red        = #cc241d
 ; changing blue with orange and vice-versa
@@ -292,7 +292,7 @@ label-padding = 1
 type = internal/battery
 
 ; Full battery level
-full-at = 96
+full-at = 100
 
 ; Battery and adapter
 battery = BAT0
@@ -320,18 +320,24 @@ adapter = AC0
 ;label-full-padding    = 0
 
 format-charging = <animation-charging> <label-charging>
-format-discharging = <animation-discharging> <label-discharging>
+; format-discharging = <animation-discharging> <label-discharging>
+format-discharging = <ramp-capacity> <label-discharging>
 format-charging-background = ${colors.orange}
 format-charging-foreground = ${colors.blue}
 format-discharging-background = ${colors.foreground}
 format-discharging-foreground = ${colors.blue}
 
 ;label-charging-background = ${colors.background}
+label-charging = Ch %percentage%%
 label-charging-padding = 1
 
 ;label-discharging-background = ${colors.background}
+label-discharging = Dis %percentage%%
 label-discharging-padding = 1
 
+label-full = Full
+label-full-padding = 1
+format-full = <ramp-capacity> <label-full>
 format-full-prefix = "  "
 format-full-background = ${colors.foreground}
 format-full-foreground = ${colors.blue}

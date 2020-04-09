@@ -91,7 +91,7 @@ super + x
     /home/raytracer/.local/bin/.scripts/i3lock.sh ; mpc pause ;
 #    /home/raytracer/.config/i3/blurlock.sh
 super + d:{d,f,k}
-    {dmenu_run -i -nb '#181818' -sf '#181818' -nf '#ebdbb2' -sb '#d7d7d8' -fn "Mononoki Nerd Font Mono 12",rofi -show run -i -show-icons, ((pidof compton && kill $(pidof compton)) || compton) & dunstify -t 2000 'compton toggled'}
+    {dmenu_run -i -nb '#181818' -sf '#181818' -nf '#ebdbb2' -sb '#d7d7d8' -fn "Mononoki Nerd Font Mono 12",rofi -show run -i -show-icons, ((pidof picom && kill $(pidof picom)) || picom) & dunstify -t 2000 'picom toggled'}
 
 # brightness
 super + ctrl + {minus,equal}
@@ -173,3 +173,7 @@ XF86AudioMedia
 # screenkey
 super + Scroll_Lock
 	killall screenkey || screenkey
+
+# show clipboard
+super + F9
+	showclip
