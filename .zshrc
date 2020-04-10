@@ -198,6 +198,7 @@ function zle-line-finish {
 zle -N zle-line-finish
 
 source ~/.config/.aliases            # aliases
+source ~/.profile
 
 #neofetch | lolcat -t
 #pfetch

@@ -197,7 +197,7 @@ alias gUs='cd /usr/share && ls'
 alias sc='cd ~/.local/bin/.scripts && ls'
 
 # using exa as ls
-alias ls='exa --grid -F --group-directories-first'
-alias lsa='exa --grid -Fa --group-directories-first'
-alias ll='exa -lFa --color-scale --git'
-alias tree='exa -TaF --git'
+alias ls='exa --grid --icons -F --group-directories-first'
+alias lsa='exa --grid --icons -Fa --group-directories-first'
+alias ll='exa -lFa --icons --group-directories-first --color-scale --git'
+alias tree='exa -TaF --icons --git'

@@ -98,8 +98,8 @@ super + ctrl + {minus,equal}
 	{light -U 5 && dunstify --icon="~/.cache/notify-icons/yellow-bulb.png" -t 500 "current brightness->"`light -G`,light -A 5 && dunstify --icon="~/.cache/notify-icons/yellow-bulb.png" -t 500 "current brightness is ->"`light -G`}
 
 #notifications
-super+n:{w,l,m,t}
-	{notify-send --icon=network-wireless "Status" "`nmcli device status`",notify-send --icon=network-wireless "Wifi list" "`nmcli device wifi list`",notify-send --icon=audio-headphones -t 3000 "Now Playing" "`mpc`",notify-send -t 3000 "Temperature" "`sensors | grep temp1 | head -1 && sensors | grep temp1 | tail -1`"}
+super+n:{w,l,p,t,m,c}
+	{notify-send --icon=~/.cache/notify-icons/maintenance.png "Status" "`nmcli device status`",notify-send --icon=~/.cache/notify-icons/wifi-signal.png "Wifi list" "`nmcli device wifi list`",notify-send --icon=~/.cache/notify-icons/music.png -t 3000 "Now Playing" "`mpc`",notify-send --icon=~/.cache/notify-icons/hot.png -t 3000 "Temperature" "`sensors | grep temp1 | head -1 && sensors | grep temp1 | tail -1`",/home/raytracer/.local/bin/.scripts/some-random/memproc,/home/raytracer/.local/bin/.scripts/some-random/cpuproc}
 
 super+i:{m,p,v,d}
 	{manbyrofi,pdfbyrofi,videosbyrofi,caffeine_like}
