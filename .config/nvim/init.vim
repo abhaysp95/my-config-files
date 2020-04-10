@@ -55,9 +55,7 @@ Plug 'atelierbram/Base2Tone-vim'
 Plug 'colepeters/spacemacs-theme.vim'
 
 Plug 'junegunn/goyo.vim'
-Plug 'vimwiki/vimwiki'
 Plug 'neoclide/coc.nvim', {'branch': 'release', 'tag': '*', 'do': { -> coc#util#install()}}
-Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-commentary'
 Plug 'kovetskiy/sxhkd-vim'
 Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
@@ -89,7 +87,6 @@ Plug 'unblevable/quick-scope'
 
 " get startscreen
 Plug 'mhinz/vim-startify'
-
 call plug#end()
 " >>>
 
@@ -349,8 +346,8 @@ hi SpellCap cterm=underline
 	autocmd FileType markdown inoremap ;sh ```sh<CR>```<CR><CR><++><Esc>2kO<C-i>
 	autocmd FileType markdown inoremap ;p ```python<CR>```<Esc>O
 	autocmd FileType markdown inoremap ;c ```c<CR>```<Esc>O
-	autocmd FileType vimwiki inoremap ;p ```python<CR>```<Esc>O
-	autocmd FileType vimwiki inoremap ;c ```c<CR>```<Esc>O
+	" autocmd FileType vimwiki inoremap ;p ```python<CR>```<Esc>O
+	" autocmd FileType vimwiki inoremap ;c ```c<CR>```<Esc>O
 	" >>>
 
 " some random setting <<<
@@ -508,6 +505,7 @@ autocmd Filetype * setlocal formatoptions-=c formatoptions-=r formatoptions-=0
 " coc extensions <<<
 let g:coc_global_extensions = [
   \ 'coc-emoji',
+  \ 'coc-pairs',
   \ 'coc-css',
   \ 'coc-python',
   \ 'coc-pyls',
@@ -524,7 +522,6 @@ let g:coc_global_extensions = [
   \ 'coc-css',
   \ 'coc-ultisnips'
   \ ]
-  " \ 'coc-pairs',
   " \ 'coc-markdownlint',
   " \ 'coc-tslint',
   " \ 'coc-tslint-plugin',
@@ -953,9 +950,9 @@ cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' \| edit!
 	set fillchars=vert:╏,fold:•
 "
 	" I don't know why aren't they following this: "
-	autocmd FileType vimwiki set foldmethod=marker
-	autocmd FileType vimwiki set ft=markdown
-	autocmd FileType markdown set foldmethod=marker
+	" autocmd FileType vimwiki set foldmethod=marker
+	" autocmd FileType vimwiki set ft=markdown
+	" autocmd FileType markdown set foldmethod=marker
 
     autocmd BufWinLeave *.* mkview
     autocmd BufWinEnter *.* silent! loadview
@@ -1018,14 +1015,11 @@ nnoremap \incc :read $HOME/.vim/.skeleton/include.c<CR>ji
 "     augroup END
 " endif
 
+" markdown setting
+autocmd FileType markdown set conceallevel=2
+autocmd FileType markdown set foldmethod=marker
+
 " markdown plugins settings not in use <<<
-".........................................................................
-" plasticboy/vim-markdown
-".........................................................................
-
-" autocmd FileType markdown set conceallevel=2
-" autocmd FileType markdown normal zR
-
 ".........................................................................
 " iamcco/markdown-preview.nvim
 ".........................................................................
@@ -1051,11 +1045,11 @@ nnoremap \incc :read $HOME/.vim/.skeleton/include.c<CR>ji
 " >>>
 
 " Notetaking <<<
-command! -nargs=1 Ngrep vimgrep "<args>" /home/raytracer/vimwiki/**/*.md
+" command! -nargs=1 Ngrep vimgrep "<args>" /home/raytracer/vimwiki/**/*.md
 nnoremap <leader>[ :Ngrep
 
 au BufRead,BufNewFile *wiki set filetype=markdown
-:autocmd FileType vimwiki map <leader>d :VimwikiMakeDiaryNote
+" :autocmd FileType vimwiki map <leader>d :VimwikiMakeDiaryNote
 function! ToggleCalendar()
   execute ":Calendar"
   if exists("g:calendar_open")
@@ -1069,7 +1063,7 @@ function! ToggleCalendar()
     let g:calendar_open = 1
   end
 endfunction
-:autocmd FileType vimwiki map <leader>cl :call ToggleCalendar() set ft=markdown
+" :autocmd FileType vimwiki map <leader>cl :call ToggleCalendar() set ft=markdown
 
 " Markdown codeblock highlight syntax
 " let g:markdown_fenced_languages = ['c', 'bash', 'python']
@@ -1283,7 +1277,6 @@ echom '(>^.^<)'
 " Plug 'tpope/vim-unimpaired'
 " Plug 'itchyny/lightline.vim'
 " Plug 'tpope/vim-surround'
-" Plug 'plasticboy/vim-markdown'	(overrides your foldmethod to fdm=expr)
 " Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
 " Plug 'airblade/vim-gitgutter'
 "Plug 'tpope/vim-git'
@@ -1320,4 +1313,6 @@ echom '(>^.^<)'
 "Plug 'bling/vim-airline'
 "Plug 'roxma/nvim-completion-manager'
 "Plug 'tpope/vim-surround'
+" Plug 'vimwiki/vimwiki'
+" Plug 'jiangmiao/auto-pairs'
 " >>>
