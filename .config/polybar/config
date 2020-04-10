@@ -292,11 +292,11 @@ label-padding = 1
 type = internal/battery
 
 ; Full battery level
-full-at = 100
+full-at = 99
 
 ; Battery and adapter
 battery = BAT0
-adapter = AC0
+adapter = AC
 
 ;; Charging label
 ;;label-charging           =  %percentage%%
@@ -322,7 +322,7 @@ adapter = AC0
 format-charging = <animation-charging> <label-charging>
 ; format-discharging = <animation-discharging> <label-discharging>
 format-discharging = <ramp-capacity> <label-discharging>
-format-charging-background = ${colors.orange}
+format-charging-background = ${colors.foreground}
 format-charging-foreground = ${colors.blue}
 format-discharging-background = ${colors.foreground}
 format-discharging-foreground = ${colors.blue}
@@ -335,12 +335,12 @@ label-charging-padding = 1
 label-discharging = Dis %percentage%%
 label-discharging-padding = 1
 
-label-full = Full
-label-full-padding = 1
-format-full = <ramp-capacity> <label-full>
+format-full = <label-full>
 format-full-prefix = "  "
 format-full-background = ${colors.foreground}
 format-full-foreground = ${colors.blue}
+label-full = Full
+label-full-padding = 1
 
 ramp-capacity-4 = " "
 ramp-capacity-3 = " "
