@@ -25,5 +25,8 @@ printf "Converting %s\nto\n%s" "$*" "$HOME/Music/converted/$music_name"
 
 # echo "converting $* to $music_name"
 
-ffmpeg -i "$*" "$HOME"/Music/converted/"$music_name"
-
+ffmpeg -i "$*" -f "$music_format" -ab 256000 -vn "$HOME"/Music/converted/"$music_name"
+# -i takes input
+# -f specify format
+# -ab bitrate
+# -vn no video
