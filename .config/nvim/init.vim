@@ -785,7 +785,7 @@ nnoremap <C-p> :cprev<CR>
 
 " Airline configuration <<<
 " Vim-Airline configuration
-	let g:airline#extensions#tabline#enabled=1
+	let g:airline#extensions#tabline#enabled=0
 	let g:airline#extensions#tabline#show_splits = 1
 	let g:airline#extensions#tabline#show_buffers = 1
 	let g:airline#extensions#tabline#buffer_nr_show = 1
