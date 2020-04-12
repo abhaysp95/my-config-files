@@ -240,6 +240,8 @@ format-foreground = ${colors.blue}
 label = %percentage_used%%
 label-padding = 1
 
+click-left = memproc &
+
 [module/weather]
 type = custom/script
 
@@ -270,6 +272,9 @@ label-disconnected = "睊"
 type = custom/script
 
 exec = /home/raytracer/.config/polybar/bar_scripts/bright.sh
+
+scroll-up = light -A 5
+scroll-down = light -U 5
 
 ; label            = 🔅 : %output%%
 ; label-foreground = ${colors.background}
@@ -431,6 +436,8 @@ format-foreground = ${colors.blue}
 label = %percentage:2%%
 label-padding = 1
 
+click-left = cpuproc &
+
 [module/pulseaudio]
 type = internal/pulseaudio
 
@@ -476,6 +483,9 @@ bar-volume-fill-font = 2
 bar-volume-empty = ─
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground}
+
+scroll-up = pulsemixer --change-volume +5
+scroll-down = pulsemixer --change-volume -5
 
 [module/time]
 type = internal/date
