@@ -19632,3 +19632,329 @@ Apr 09 21:40 : client: [10] opened from 127.0.0.1:51402
 Apr 09 21:40 : client: [10] closed
 Apr 09 21:40 : client: [11] opened from 127.0.0.1:51406
 Apr 09 21:40 : client: [11] closed
+Apr 09 22:57 : client: [12] opened from 127.0.0.1:51410
+Apr 09 22:57 : client: [12] closed
+Apr 10 07:12 : player: played "mp3/Kadar_(Full_Song)___Mankirt_Aulakh___Sukh_Sanghera___Latest_Punjabi_Song_2016___.mp3"
+Apr 10 07:14 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 10 07:14 : exception: Failed to access /home/raytracer/Music/got: Too many levels of symbolic links
+Apr 10 07:14 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 10 07:31 : client: [0] opened from 127.0.0.1:50514
+Apr 10 07:31 : client: [0] closed
+Apr 10 08:35 : client: [1] opened from 127.0.0.1:51088
+Apr 10 08:35 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 10 08:35 : client: [1] closed
+Apr 10 08:35 : client: [2] opened from 127.0.0.1:51092
+Apr 10 08:35 : client: [2] closed
+Apr 10 08:35 : player: played "mp3/Kadar_(Full_Song)___Mankirt_Aulakh___Sukh_Sanghera___Latest_Punjabi_Song_2016___.mp3"
+Apr 10 08:38 : client: [3] opened from 127.0.0.1:51096
+Apr 10 08:38 : client: [3] closed
+Apr 10 08:38 : client: [4] opened from 127.0.0.1:51100
+Apr 10 08:38 : client: [4] closed
+Apr 10 10:22 : client: [5] opened from 127.0.0.1:51690
+Apr 10 10:22 : client: [5] closed
+Apr 10 10:22 : client: [6] opened from 127.0.0.1:51694
+Apr 10 10:22 : client: [6] closed
+Apr 10 10:23 : player: played "mp3/Maninder Buttar SAKHIYAAN (Full Song) MixSingh  Babbu  New Punjabi Songs 2018  Sakhiyan.mp3"
+Apr 10 10:24 : client: [7] opened from 127.0.0.1:51698
+Apr 10 10:24 : client: [7] closed
+Apr 10 10:27 : player: played "mp3/Alicia_Keys_-_Fallin_.mp3"
+Apr 10 10:31 : player: played "mp3/01 Hug Me - Beiimaan Love (Kanika Kapoor) 190Kbps.mp3"
+Apr 10 10:34 : player: played "mp3/Chocolate Ankita Dave Song _ Lakshya _ The Begraj _ New Hindi Songs 2018.mp3"
+Apr 10 10:38 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Apr 10 10:38 : player: played "mp3/Alan Walker - Faded  128 .mp3"
+Apr 10 10:39 : client: [8] opened from 127.0.0.1:52314
+Apr 10 10:39 : client: [8] closed
+Apr 10 10:41 : player: played "m4a/benny blanco Halsey & Khalid – Eastside (official video) [56WBK4ZK_cw].m4a"
+Apr 10 10:42 : client: [9] opened from 127.0.0.1:52320
+Apr 10 10:42 : client: [9] closed
+Apr 10 10:42 : client: [10] opened from 127.0.0.1:52324
+Apr 10 10:42 : client: [10] closed
+Apr 10 11:45 : client: [11] opened from 127.0.0.1:52330
+Apr 10 11:45 : client: [11] closed
+Apr 10 11:45 : client: [12] opened from 127.0.0.1:52334
+Apr 10 11:45 : client: [12] closed
+Apr 10 11:49 : player: played "mp3/Kola Laka Vellari-(Mr-Jatt.com).mp3"
+Apr 10 11:50 : client: [13] opened from 127.0.0.1:52338
+Apr 10 11:50 : client: [13] closed
+Apr 10 11:50 : client: [14] opened from 127.0.0.1:52342
+Apr 10 11:50 : client: [14] closed
+Apr 10 11:50 : client: [15] opened from 127.0.0.1:52346
+Apr 10 11:50 : client: [15] closed
+Apr 10 11:50 : client: [16] opened from 127.0.0.1:52350
+Apr 10 11:50 : client: [16] closed
+Apr 10 11:50 : client: [17] opened from 127.0.0.1:52354
+Apr 10 11:50 : client: [17] closed
+Apr 10 11:50 : client: [18] opened from 127.0.0.1:52358
+Apr 10 11:50 : client: [18] closed
+Apr 10 11:53 : player: played "mp3/Imagine - John Lennon and The Plastic Ono Band (with the Flux Fiddlers).mp3"
+Apr 10 11:54 : update: added converted/Thor___Tera_baap_aya___Marvel___Commando_3_(_1080_X_1080_).m4a
+Apr 10 11:54 : client: [19] opened from 127.0.0.1:52362
+Apr 10 11:54 : client: [19] closed
+Apr 10 11:54 : client: [20] opened from 127.0.0.1:52366
+Apr 10 11:54 : client: [20] closed
+Apr 10 11:54 : client: [21] opened from 127.0.0.1:52370
+Apr 10 11:54 : exception: Failed to open /home/raytracer/.config/mpd/playlists: No such file or directory
+Apr 10 11:54 : client: [22] opened from 127.0.0.1:52374
+Apr 10 11:55 : client: [22] closed
+Apr 10 11:55 : client: [23] opened from 127.0.0.1:52378
+Apr 10 11:55 : client: [23] closed
+Apr 10 11:55 : client: [24] opened from 127.0.0.1:52382
+Apr 10 11:55 : client: [24] closed
+Apr 10 11:55 : client: [25] opened from 127.0.0.1:52386
+Apr 10 11:55 : client: [25] closed
+Apr 10 11:55 : client: [26] opened from 127.0.0.1:52390
+Apr 10 11:55 : client: [26] closed
+Apr 10 11:55 : client: [27] opened from 127.0.0.1:52394
+Apr 10 11:55 : client: [27] closed
+Apr 10 11:55 : client: [28] opened from 127.0.0.1:52398
+Apr 10 11:55 : client: [28] closed
+Apr 10 11:55 : client: [29] opened from 127.0.0.1:52402
+Apr 10 11:55 : client: [29] closed
+Apr 10 11:55 : client: [30] opened from 127.0.0.1:52406
+Apr 10 11:55 : client: [30] closed
+Apr 10 11:55 : client: [31] opened from 127.0.0.1:52410
+Apr 10 11:55 : client: [31] closed
+Apr 10 11:55 : client: [32] opened from 127.0.0.1:52414
+Apr 10 11:55 : client: [32] closed
+Apr 10 11:55 : client: [33] opened from 127.0.0.1:52418
+Apr 10 11:55 : client: [33] closed
+Apr 10 11:55 : client: [34] opened from 127.0.0.1:52422
+Apr 10 11:55 : client: [34] closed
+Apr 10 11:55 : client: [35] opened from 127.0.0.1:52426
+Apr 10 11:55 : client: [35] closed
+Apr 10 11:55 : client: [21] closed
+Apr 10 11:55 : player: played "converted/Thor___Tera_baap_aya___Marvel___Commando_3_(_1080_X_1080_).m4a"
+Apr 10 11:55 : client: [36] opened from 127.0.0.1:52430
+Apr 10 11:55 : client: [36] closed
+Apr 10 11:55 : client: [37] opened from 127.0.0.1:52434
+Apr 10 11:55 : client: [37] closed
+Apr 10 11:56 : client: [38] opened from 127.0.0.1:52438
+Apr 10 11:56 : client: [38] closed
+Apr 10 11:56 : client: [39] opened from 127.0.0.1:52442
+Apr 10 11:56 : client: [39] closed
+Apr 10 11:57 : client: [40] opened from 127.0.0.1:52446
+Apr 10 11:57 : client: [40] closed
+Apr 10 11:57 : client: [41] opened from 127.0.0.1:52450
+Apr 10 11:57 : client: [41] closed
+Apr 10 12:09 : client: [42] opened from 127.0.0.1:52454
+Apr 10 12:09 : client: [42] closed
+Apr 10 12:09 : client: [43] opened from 127.0.0.1:52458
+Apr 10 12:09 : client: [43] closed
+Apr 10 12:09 : client: [44] opened from 127.0.0.1:52462
+Apr 10 12:09 : exception: Failed to open /home/raytracer/.config/mpd/playlists: No such file or directory
+Apr 10 12:09 : update: added converted/Thor___Tera_baap_aya___Marvel___Commando_3_(_1080_X_1080_).mp3
+Apr 10 12:09 : update: removing converted/Thor___Tera_baap_aya___Marvel___Commando_3_(_1080_X_1080_).m4a
+Apr 10 12:12 : player: played "converted/Thor___Tera_baap_aya___Marvel___Commando_3_(_1080_X_1080_).mp3"
+Apr 10 12:13 : client: [45] opened from 127.0.0.1:52466
+Apr 10 12:13 : client: [45] closed
+Apr 10 12:13 : client: [46] opened from 127.0.0.1:52470
+Apr 10 12:13 : client: [46] closed
+Apr 10 17:24 : client: [47] opened from 127.0.0.1:52888
+Apr 10 17:24 : client: [47] closed
+Apr 10 17:24 : client: [48] opened from 127.0.0.1:52892
+Apr 10 17:24 : client: [48] closed
+Apr 10 17:24 : client: [49] opened from 127.0.0.1:52896
+Apr 10 17:24 : client: [49] closed
+Apr 10 17:24 : client: [50] opened from 127.0.0.1:52900
+Apr 10 17:24 : client: [50] closed
+Apr 10 17:24 : client: [51] opened from 127.0.0.1:52904
+Apr 10 17:24 : client: [51] closed
+Apr 10 17:24 : client: [52] opened from 127.0.0.1:52908
+Apr 10 17:24 : client: [52] closed
+Apr 10 17:24 : client: [53] opened from 127.0.0.1:52912
+Apr 10 17:24 : client: [53] closed
+Apr 10 17:24 : client: [54] opened from 127.0.0.1:52916
+Apr 10 17:24 : client: [54] closed
+Apr 10 17:25 : client: [55] opened from 127.0.0.1:52956
+Apr 10 17:25 : client: [55] closed
+Apr 10 17:25 : client: [56] opened from 127.0.0.1:52960
+Apr 10 17:25 : client: [56] closed
+Apr 10 18:14 : client: [57] opened from 127.0.0.1:53030
+Apr 10 18:14 : client: [57] closed
+Apr 10 18:14 : client: [58] opened from 127.0.0.1:53034
+Apr 10 18:14 : client: [58] closed
+Apr 10 18:15 : client: [59] opened from 127.0.0.1:53126
+Apr 10 18:15 : client: [59] closed
+Apr 10 18:15 : client: [60] opened from 127.0.0.1:53130
+Apr 10 18:15 : client: [60] closed
+Apr 10 19:12 : client: [61] opened from 127.0.0.1:53188
+Apr 10 19:12 : client: [61] closed
+Apr 10 19:12 : client: [62] opened from 127.0.0.1:53192
+Apr 10 19:12 : client: [62] closed
+Apr 10 19:12 : player: played "mp3/05 Kaun Hain Voh - Baahubali (Kailash Kher) 320Kbps.mp3"
+Apr 10 19:12 : client: [63] opened from 127.0.0.1:53222
+Apr 10 19:12 : client: [63] closed
+Apr 10 19:12 : client: [64] opened from 127.0.0.1:53226
+Apr 10 19:12 : client: [64] closed
+Apr 10 20:08 : client: [65] opened from 127.0.0.1:53712
+Apr 10 20:08 : client: [65] closed
+Apr 10 20:08 : client: [66] opened from 127.0.0.1:53716
+Apr 10 20:08 : client: [66] closed
+Apr 10 20:08 : client: [67] opened from 127.0.0.1:53720
+Apr 10 20:08 : client: [67] closed
+Apr 10 20:08 : client: [68] opened from 127.0.0.1:53724
+Apr 10 20:08 : client: [68] closed
+Apr 10 20:10 : client: [69] opened from 127.0.0.1:53808
+Apr 10 20:10 : client: [69] closed
+Apr 10 20:10 : client: [70] opened from 127.0.0.1:53812
+Apr 10 20:10 : client: [70] closed
+Apr 10 21:08 : client: [71] opened from 127.0.0.1:54362
+Apr 10 21:08 : client: [71] closed
+Apr 10 21:08 : client: [72] opened from 127.0.0.1:54366
+Apr 10 21:08 : client: [72] closed
+Apr 10 21:09 : client: [73] opened from 127.0.0.1:54370
+Apr 10 21:09 : client: [73] closed
+Apr 10 21:09 : client: [74] opened from 127.0.0.1:54374
+Apr 10 21:09 : client: [74] closed
+Apr 10 21:13 : client: [75] opened from 127.0.0.1:54438
+Apr 10 21:13 : client: [75] closed
+Apr 10 21:13 : client: [76] opened from 127.0.0.1:54442
+Apr 10 21:13 : client: [76] closed
+Apr 10 21:14 : client: [77] opened from 127.0.0.1:54448
+Apr 10 21:14 : client: [77] closed
+Apr 10 21:14 : client: [78] opened from 127.0.0.1:54452
+Apr 10 21:14 : client: [78] closed
+Apr 10 22:23 : client: [79] opened from 127.0.0.1:54456
+Apr 10 22:23 : client: [79] closed
+Apr 10 22:23 : client: [80] opened from 127.0.0.1:54460
+Apr 10 22:23 : client: [80] closed
+Apr 10 22:23 : player: played "converted/Thor___Tera_baap_aya___Marvel___Commando_3_(_1080_X_1080_).mp3"
+Apr 10 22:23 : client: [81] opened from 127.0.0.1:54464
+Apr 10 22:23 : client: [81] closed
+Apr 10 22:23 : client: [82] opened from 127.0.0.1:54468
+Apr 10 22:23 : client: [82] closed
+Apr 10 22:23 : client: [83] opened from 127.0.0.1:54472
+Apr 10 22:23 : client: [83] closed
+Apr 10 22:27 : player: played "mp3/02 Hawa Hawa - Mubarakan (Mika) 190Kbps.mp3"
+Apr 10 22:30 : player: played "mp3/Proper Patola [feat. Badshah]-(Mr-Jatt.com).mp3"
+Apr 10 22:30 : client: [84] opened from 127.0.0.1:54674
+Apr 10 22:30 : client: [84] closed
+Apr 10 22:30 : client: [85] opened from 127.0.0.1:54678
+Apr 10 22:30 : client: [85] closed
+Apr 10 23:16 : client: [86] opened from 127.0.0.1:55020
+Apr 10 23:16 : client: [86] closed
+Apr 10 23:16 : client: [87] opened from 127.0.0.1:55026
+Apr 10 23:16 : client: [87] closed
+Apr 10 23:16 : client: [88] opened from 127.0.0.1:55030
+Apr 10 23:16 : client: [88] closed
+Apr 10 23:16 : client: [89] opened from 127.0.0.1:55034
+Apr 10 23:16 : client: [89] closed
+Apr 10 23:16 : client: [90] opened from 127.0.0.1:55052
+Apr 10 23:16 : client: [90] closed
+Apr 10 23:16 : client: [91] opened from 127.0.0.1:55056
+Apr 10 23:16 : client: [91] closed
+Apr 10 23:25 : client: [92] opened from 127.0.0.1:55090
+Apr 10 23:25 : client: [92] closed
+Apr 10 23:25 : client: [93] opened from 127.0.0.1:55094
+Apr 10 23:25 : client: [93] closed
+Apr 10 23:26 : client: [94] opened from 127.0.0.1:55160
+Apr 10 23:26 : client: [94] closed
+Apr 10 23:26 : client: [95] opened from 127.0.0.1:55164
+Apr 10 23:26 : client: [95] closed
+Apr 10 23:32 : client: [96] opened from 127.0.0.1:55248
+Apr 10 23:32 : client: [96] closed
+Apr 10 23:32 : client: [97] opened from 127.0.0.1:55252
+Apr 10 23:32 : client: [97] closed
+Apr 10 23:35 : player: played "mp3/Jazzy B - Jine Mera Dil Luteya with Lyrics.mp3"
+Apr 10 23:35 : client: [98] opened from 127.0.0.1:55318
+Apr 10 23:35 : client: [98] closed
+Apr 10 23:39 : client: [99] opened from 127.0.0.1:55358
+Apr 10 23:39 : client: [99] closed
+Apr 10 23:39 : client: [100] opened from 127.0.0.1:55362
+Apr 10 23:39 : client: [100] closed
+Apr 10 23:41 : client: [101] opened from 127.0.0.1:55366
+Apr 10 23:41 : client: [101] closed
+Apr 11 08:26 : client: [102] opened from 127.0.0.1:56204
+Apr 11 08:26 : client: [102] closed
+Apr 11 08:26 : client: [103] opened from 127.0.0.1:56208
+Apr 11 08:26 : client: [103] closed
+Apr 11 10:50 : client: [104] opened from 127.0.0.1:56480
+Apr 11 10:50 : client: [104] closed
+Apr 11 10:50 : client: [105] opened from 127.0.0.1:56484
+Apr 11 10:50 : client: [105] closed
+Apr 11 10:50 : client: [106] opened from 127.0.0.1:56492
+Apr 11 10:50 : client: [106] closed
+Apr 11 10:50 : client: [107] opened from 127.0.0.1:56496
+Apr 11 10:50 : client: [107] closed
+Apr 11 10:51 : client: [108] opened from 127.0.0.1:56502
+Apr 11 10:51 : client: [108] closed
+Apr 11 10:51 : client: [109] opened from 127.0.0.1:56506
+Apr 11 10:51 : client: [109] closed
+Apr 11 10:51 : client: [110] opened from 127.0.0.1:56510
+Apr 11 10:51 : client: [110] closed
+Apr 11 10:51 : client: [111] opened from 127.0.0.1:56514
+Apr 11 10:51 : client: [111] closed
+Apr 11 10:51 : client: [112] opened from 127.0.0.1:56518
+Apr 11 10:51 : client: [112] closed
+Apr 11 10:51 : client: [113] opened from 127.0.0.1:56522
+Apr 11 10:51 : client: [113] closed
+Apr 11 10:53 : client: [114] opened from 127.0.0.1:56538
+Apr 11 10:53 : client: [114] closed
+Apr 11 10:53 : client: [115] opened from 127.0.0.1:56542
+Apr 11 10:53 : client: [115] closed
+Apr 11 10:56 : client: [116] opened from 127.0.0.1:56614
+Apr 11 10:56 : client: [116] closed
+Apr 11 10:56 : client: [117] opened from 127.0.0.1:56618
+Apr 11 10:56 : client: [117] closed
+Apr 11 10:56 : client: [118] opened from 127.0.0.1:56622
+Apr 11 10:56 : client: [118] closed
+Apr 11 10:56 : client: [119] opened from 127.0.0.1:56626
+Apr 11 10:56 : client: [119] closed
+Apr 11 10:57 : player: played "mp3/SagaHits - Purje - Mankirt Aulakh Ft. DJ Flow  DJ Goddess  Singga  Sukh Sanghera  New Punjabi Songs .mp3"
+Apr 11 11:00 : client: [120] opened from 127.0.0.1:56708
+Apr 11 11:00 : client: [120] closed
+Apr 11 11:00 : client: [121] opened from 127.0.0.1:56712
+Apr 11 11:00 : client: [121] closed
+Apr 11 11:36 : client: [122] opened from 127.0.0.1:56840
+Apr 11 11:36 : client: [122] closed
+Apr 11 11:36 : client: [123] opened from 127.0.0.1:56844
+Apr 11 11:36 : client: [123] closed
+Apr 11 11:36 : player: played "mp3/Hey Mama - David Guetta (DJJOhAL.Com).mp3"
+Apr 11 11:36 : client: [124] opened from 127.0.0.1:56848
+Apr 11 11:36 : client: [124] closed
+Apr 11 11:36 : client: [125] opened from 127.0.0.1:56852
+Apr 11 11:36 : client: [125] closed
+Apr 11 11:36 : client: [126] opened from 127.0.0.1:56856
+Apr 11 11:36 : client: [126] closed
+Apr 11 11:39 : player: played "mp3/Queens_Of_The_Stone_Age_-_Head_Like_a_Haunted_House.mp3"
+Apr 11 11:43 : player: played "mp3/STARBO~1.MP3"
+Apr 11 11:48 : client: [127] opened from 127.0.0.1:56926
+Apr 11 11:48 : client: [127] closed
+Apr 11 11:48 : client: [128] opened from 127.0.0.1:56930
+Apr 11 11:48 : client: [128] closed
+Apr 11 17:17 : client: [129] opened from 127.0.0.1:57446
+Apr 11 17:17 : client: [129] closed
+Apr 11 17:17 : client: [130] opened from 127.0.0.1:57450
+Apr 11 17:17 : client: [130] closed
+Apr 11 17:17 : client: [131] opened from 127.0.0.1:57454
+Apr 11 17:17 : client: [131] closed
+Apr 11 17:17 : client: [132] opened from 127.0.0.1:57458
+Apr 11 17:17 : client: [132] closed
+Apr 11 17:19 : client: [133] opened from 127.0.0.1:57462
+Apr 11 17:19 : client: [133] closed
+Apr 11 17:19 : client: [134] opened from 127.0.0.1:57466
+Apr 11 17:19 : client: [134] closed
+Apr 11 17:19 : client: [135] opened from 127.0.0.1:57470
+Apr 11 17:19 : client: [135] closed
+Apr 11 17:20 : client: [136] opened from 127.0.0.1:57474
+Apr 11 17:20 : client: [136] closed
+Apr 11 17:20 : client: [137] opened from 127.0.0.1:57478
+Apr 11 17:20 : client: [137] closed
+Apr 11 18:49 : client: [138] opened from 127.0.0.1:57482
+Apr 11 18:49 : client: [138] closed
+Apr 11 18:49 : client: [139] opened from 127.0.0.1:57486
+Apr 11 18:49 : client: [139] closed
+Apr 11 18:50 : client: [140] opened from 127.0.0.1:57490
+Apr 11 18:50 : client: [140] closed
+Apr 11 18:50 : client: [141] opened from 127.0.0.1:57494
+Apr 11 18:50 : client: [141] closed
+Apr 11 18:50 : client: [142] opened from 127.0.0.1:57498
+Apr 11 18:50 : client: [142] closed
+Apr 11 18:53 : player: played "mp3/Bae Baba Aur Bank Chor Song  Bank Chor  Riteish Deshmukh  Baba Sehgal.mp3"
+Apr 11 18:55 : player: played "mp3/13._Kenton___Real_Steel_-_Soundtrack.mp3"
+Apr 11 18:55 : client: [143] opened from 127.0.0.1:57538
+Apr 11 18:55 : client: [143] closed
+Apr 11 18:55 : client: [144] opened from 127.0.0.1:57542
+Apr 11 18:55 : client: [144] closed
+Apr 11 22:45 : client: [145] opened from 127.0.0.1:57956
+Apr 11 22:45 : client: [145] closed
