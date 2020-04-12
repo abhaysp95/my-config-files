@@ -113,6 +113,9 @@ shopt -s expand_aliases
 # Enable history appending instead of overwriting.  #139609
 shopt -s histappend
 
+# don't use cd
+shopt -s autocd
+
 #
 # # ex - archive extractor
 # # usage: ex <file>
@@ -196,7 +199,7 @@ pfetch
 # [[ $- = *i* ]] && source ~/Downloads/git-materials/liquidprompt/liquidprompt
 
 # a custom prompt
-source ~/.config/custom_bashprompt
+# source ~/.config/custom_bashprompt
 
 # using z.lua ------------------------------------------------
 eval "$(lua ~/.zsh/z.lua/z.lua --init bash enhanced once fzf)"
@@ -219,7 +222,7 @@ export _ZL_ECHO=1
 # ---------------------------------------------------------
 function settitle () {
 	export PREV_COMMAND=${PREV_COMMAND}${@}
-	echo -ne "\033]0;${PREV_COMMAND}\007"
+	# echo -ne "\033]0;${PREV_COMMAND}\007"
 	export PREV_COMMAND=${PREV_COMMAND}' | '
 }
 
@@ -246,3 +249,7 @@ command_not_found_handle() {
 	printf "\e[33mOooh..., \e[5mit isn't there\e[0m\n"
 	return 127
 }
+
+export CLICOLOR=1
+
+export HISTCONTROL=ignoreboth
