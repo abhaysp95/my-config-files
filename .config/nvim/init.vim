@@ -139,9 +139,10 @@ map <leader>F :Goyo \| set background=dark\| set linebreak<CR>
 " some set settings <<<
 " Set Proper Tabs
 set tabstop=4
+set softtabstop=4
 set shiftwidth=4
 set smarttab
-set noexpandtab
+set noexpandtab	"if switched on means it will insert spaces to length of tab
 set listchars=eol:↲,tab:↦\ ,nbsp:␣,extends:…,trail:⋅
 set nolist
 set linebreak
@@ -187,10 +188,10 @@ set scrolloff=3
 set showcmd
 set showmatch
 set smartcase
-set softtabstop=4
 set spelllang=en_us
 set textwidth=0
 set ttimeout
+set mouse=a	"makes vim easy for others
 " set ttyfast
 " set ttymouse=sgr
 set undodir=/tmp
@@ -394,6 +395,16 @@ let g:UltiSnipsJumpBackwardTrigger="<c-g>"
 let g:UltiSnipsEditSplit="vertical"
 " >>>
 
+" movement in insert mode
+inoremap <C-k> <Up>
+inoremap <C-j> <Down>
+inoremap <C-h> <Left>
+inoremap <C-l> <Right>
+snoremap <C-k> <Up>
+snoremap <C-j> <Down>
+snoremap <C-h> <Left>
+snoremap <C-l> <Right>
+
 " source ~/.config/nvim/statusline.vim		" goerge b(from vim group)
 " lightline configuration <<<
 let g:lightline = {
@@ -482,7 +493,7 @@ let g:lightline = {
 	let g:nord_underline = 1
 	"let ayucolor="mirage"
 	"let ayucolor="dark"
-	colorscheme gruvbox
+	colorscheme base16-google-dark
     set go=a
     highlight Comment cterm=italic gui=italic
     highlight Search ctermbg=black ctermfg=yellow term=underline
@@ -565,7 +576,7 @@ endfunction
 
 " Use <c-space> to trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
- 
+
 " Remap for format selected region
 xmap <leader>v  <Plug>(coc-format-selected)
 nmap <leader>v  <Plug>(coc-format-selected)
@@ -671,6 +682,8 @@ inoremap <expr> <S-space> (pumvisible() ? (col('.') > 1 ? '<Esc>i<Right>' : '<Es
 
 " Automatically open & close quickfix window
 autocmd QuickFixCmdPost [^l] * nested cwindow
+
+
 "
 " Syntastic Configuration   #Check :help Syntastic <<<
 	set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
@@ -792,7 +805,7 @@ nnoremap <C-p> :cprev<CR>
 	let g:airline#extensions#tabline#buffer_idx_show = 1
 	let g:airline#extensions#tabline#tab_nr_type = 1
 	let g:airline#extensions#tabline#show_tabs = 1
-	let g:airline#extensions#tabline#show_tab_count = 1 
+	let g:airline#extensions#tabline#show_tab_count = 1
 	let g:airline#extensions#tabline#fnamecollapse = 1
 	let g:airline#extensions#tabline#overflow_marker = '…'
 	let g:airline_powerline_fonts=1
@@ -834,7 +847,7 @@ nnoremap <C-p> :cprev<CR>
 	let airline#extensions#syntastic#stl_format_err = '%E{[%fe(#%e)]}'
 	let airline#extensions#syntastic#warning_symbol = 'ẃ:'
 	let airline#extensions#syntastic#stl_format_warn = '%W{[%fw(#%w)]}'
-	let g:airline_theme='gruvbox'
+	let g:airline_theme='base16_google'
 	let g:hybrid_custom_term_colors=1
 	let g:hybrid_reduced_contrast=1
 " >>>
@@ -844,6 +857,7 @@ nnoremap <C-p> :cprev<CR>
     let g:netrw_browse_split=4          "open in prior window
     let g:netrw_altv=1                  "open splits to the right
     let g:netrw_liststyle=3             "tree view
+	nnoremap <leader>nl :Lex! \| vertical resize 30<CR>
 " >>>
 
 " scrooloose/nerdtree <<<
@@ -852,7 +866,7 @@ let g:NERDTreeAutoDeleteBuffer=1
 " NERDTree conf
 
 " Open nerdtree at the current file or close nerd tree if pressed again
-nnoremap <silent> <expr> <leader>n g:NERDTree.IsOpen() ? "\:NERDTreeClose<CR>" : bufexists(expand('%')) ? "\:NERDTreeFind<CR>" : "\:NERDTree<CR>"
+nnoremap <silent> <expr> <leader>nn g:NERDTree.IsOpen() ? "\:NERDTreeClose<CR>" : bufexists(expand('%')) ? "\:NERDTreeFind<CR>" : "\:NERDTree<CR>"
 
 " --------- settings below slows down vim opening for a second
 
@@ -902,6 +916,10 @@ let g:NERDTreeDirArrowCollapsible = "◢"
     map <C-k> <C-w>k
     map <C-l> <C-w>l
 " >>>
+
+" Enable/disable auto comments
+map <leader>cd :setlocal formatoptions-=cro<CR>
+map <leader>ce :setlocal formatoptions=cro<CR>
 
 " Check file in shellcheck:
     map <leader>S :!clear && shellcheck %<CR>
@@ -964,7 +982,7 @@ autocmd FileType markdown map <F7> :!pandoc<Space><C-r>%<space>-o<Space><C-r>%.p
 autocmd FileType rmd map <F7> :!echo<space>"require(rmarkdown);<space>render('<c-r>%')"<space>\|<space>R<space>--vanilla<enter>
 
 " Automatically deletes all whitespace on save
-    " autocmd BufWritePre * %s/\s\+$//e
+    autocmd BufWritePre * %s/\s\+$//e
 
 " when shortcut files are updated, renew bash and ranger configs with new material
     autocmd BufWritePost files,directories !shortcuts

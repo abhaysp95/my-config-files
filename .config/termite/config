@@ -7,7 +7,7 @@ bold_is_bright = true
 clickable_url = true
 dynamic_title = true
 #font = JetBrains Mono, 11.4
-font = Source Code Pro,Medium 11.4
+font = Source Code Pro,Medium 12
 # font = SFMono Nerd Font,Medium 11.5
 # font = Mononoki Nerd Font Mono, 12
 #font = Hack Nerd Font Mono, 11
@@ -267,45 +267,45 @@ highlight = #2f2f2f
 #
 
 #google-colors
-#[colors]
-#
-## special
-#foreground      = #c5c8c6
-#foreground_bold = #c5c8c6
-#cursor          = #c5c8c6
-#background      = #1d1f21
-#
-## black
-#color0  = #1d1f21
-#color8  = #969896
-#
-## red
-#color1  = #cc342b
-#color9  = #cc342b
-#
-## green
-#color2  = #198844
-#color10 = #198844
-#
-## yellow
-#color3  = #fba922
-#color11 = #fba922
-#
-## blue
-#color4  = #3971ed
-#color12 = #3971ed
-#
-## magenta
-#color5  = #a36ac7
-#color13 = #a36ac7
-#
-## cyan
-#color6  = #3971ed
-#color14 = #3971ed
-#
-## white
-#color7  = #c5c8c6
-#color15 = #ffffff
+# [colors]
+
+# # special
+# foreground      = #c5c8c6
+# foreground_bold = #c5c8c6
+# cursor          = #c5c8c6
+# background      = #1d1f21
+
+# # black
+# color0  = #1d1f21
+# color8  = #969896
+
+# # red
+# color1  = #cc342b
+# color9  = #cc342b
+
+# # green
+# color2  = #198844
+# color10 = #198844
+
+# # yellow
+# color3  = #fba922
+# color11 = #fba922
+
+# # blue
+# color4  = #3971ed
+# color12 = #3971ed
+
+# # magenta
+# color5  = #a36ac7
+# color13 = #a36ac7
+
+# # cyan
+# color6  = #3971ed
+# color14 = #3971ed
+
+# # white
+# color7  = #c5c8c6
+# color15 = #ffffff
 #
 
 #chalk-colors
@@ -485,109 +485,109 @@ highlight = #2f2f2f
 #
 
 ## gruvbox <<<
-[colors]
-foreground         = #ebdbb2
-foreground_bold    = #d5c9b4
-#cursor            = #b8bb26
-#cursor_foreground = #ebdbb2
-background         = #181818
+#[colors]
+#foreground         = #ebdbb2
+#foreground_bold    = #d5c9b4
+##cursor            = #b8bb26
+##cursor_foreground = #ebdbb2
+#background         = #282828
 
-# Black
-color0  = #3c3836
+## Black
+#color0  = #3c3836
 
-# Black dark
-color18 = #181818
+## Black dark
+#color18 = #181818
 
-# White
-color15 = #ebdbb2
+## White
+#color15 = #ebdbb2
 
-# Grey
-color8  = #928374
+## Grey
+#color8  = #928374
 
-# Grey light
-color20 = #a89984
+## Grey light
+#color20 = #a89984
 
-# Gray lighter
-color21 = #a89984
+## Gray lighter
+#color21 = #a89984
 
-# Grey lightest
-color7  = #bdae93
+## Grey lightest
+#color7  = #bdae93
 
-# Red
-color1  = #cc241d
-color9  = #fb4934
+## Red
+#color1  = #cc241d
+#color9  = #fb4934
 
-# Green
-color2  = #98971a
-color10 = #b8bb26
+## Green
+#color2  = #98971a
+#color10 = #b8bb26
 
-# Yellow
-color3  = #d79921
-color11 = #fabd2f
+## Yellow
+#color3  = #d79921
+#color11 = #fabd2f
 
-# Blue
-color4  = #458588
-color12 = #83a598
+## Blue
+#color4  = #458588
+#color12 = #83a598
 
-# Purple
-color5  = #b16286
-color13 = #d3869b
+## Purple
+#color5  = #b16286
+#color13 = #d3869b
 
-# Teal
-color6  = #689d6a
-color14 = #8ec07c
+## Teal
+#color6  = #689d6a
+#color14 = #8ec07c
 
-# Orange
-color16 = #d65d0e
+## Orange
+#color16 = #d65d0e
 
-# Cyan
-color17 = #689d6a
+## Cyan
+#color17 = #689d6a
 
 # Blue Grey
 color19 = #83a598
 ## >>>
 
-## google-dark
+# google-dark
 
-# [colors]
+[colors]
 
-# # special
-# foreground      = #c5c8c6
-# foreground_bold = #c5c8c6
-# cursor          = #c5c8c6
-# background      = #1d1f21
+# special
+foreground      = #c5c8c6
+foreground_bold = #c5c8c6
+cursor          = #c5c8c6
+background      = #1d1f21
 
-# # black
-# color0  = #1d1f21
-# color8  = #969896
+# black
+color0  = #1d1f21
+color8  = #969896
 
-# # red
-# color1  = #cc342b
-# color9  = #cc342b
+# red
+color1  = #cc342b
+color9  = #cc342b
 
-# # green
-# color2  = #198844
-# color10 = #198844
+# green
+color2  = #198844
+color10 = #198844
 
-# # yellow
-# color3  = #fba922
-# color11 = #fba922
+# yellow
+color3  = #fba922
+color11 = #fba922
 
-# # blue
-# color4  = #3971ed
-# color12 = #3971ed
+# blue
+color4  = #3971ed
+color12 = #3971ed
 
-# # magenta
-# color5  = #a36ac7
-# color13 = #a36ac7
+# magenta
+color5  = #a36ac7
+color13 = #a36ac7
 
-# # cyan
-# color6  = #3971ed
-# color14 = #3971ed
+# cyan
+color6  = #3971ed
+color14 = #3971ed
 
-# # white
-# color7  = #c5c8c6
-# color15 = #ffffff
+# white
+color7  = #c5c8c6
+color15 = #ffffff
 
 
 # [colors]
@@ -918,3 +918,46 @@ color19 = #83a598
 # color19 = #373b41
 # color20 = #b4b7b4
 # color21 = #e0e0e0
+
+# # gruvbox light
+# [colors]
+# # hard contrast: background = #f9f5d7
+# # background = #fbf1c7
+# background = #f9f5d7
+# # soft contrast: background = #f2e5bc
+# foreground = #3c3836
+# foreground_bold = #3c3836
+
+# # light0 + gray
+# color0 = #fbf1c7
+# color8 = #928374
+
+# # neutral_red + faded_red
+# color1 = #cc241d
+# color9 = #9d0006
+
+# # neutral_green + faded_green
+# color2 = #98971a
+# color10 = #79740e
+
+# # neutral_yellow + faded_yellow
+# color3 = #d79921
+# color11 = #b57614
+
+# # neutral_blue + faded_blue
+# color4 = #458588
+# color12 = #076678
+
+# # neutral_purple + faded_purple
+# color5 = #b16286
+# color13 = #8f3f71
+
+# # neutral_aqua + faded_aqua
+# color6 = #689d6a
+# color14 = #427b58
+
+# # dark4 + dark1
+# color7 = #7c6f64
+# color15 = #3c3836
+
+# vim: ft=dosini cms=#%s
