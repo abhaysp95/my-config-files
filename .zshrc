@@ -14,6 +14,8 @@ colors      # colours
 zsh-mime-setup      # run everyting as executable
 select-word-style bash      # ctrl+w on bash
 
+setopt PROMPT_SUBST
+
 #Key bindings
 ##
 # Lookup in /etc/termcap or /etc/terminfo else, you can get the right keycode
@@ -276,10 +278,10 @@ source /home/raytracer/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #source $HOME/.config/nvim/plugged/vim-solarized8/scripts/solarized8.sh
 
 # corona_check
-#corona_check & 
+#corona_check &
 ## liquidprompt
 # [[ $- = *i* ]] && source ~/Downloads/git-materials/liquidprompt/liquidprompt
-source ~/.zsh/learning_prompt.zsh
+# source ~/.zsh/learning_prompt.zsh
 
 # pure prompt
 # fpath+=~/.zsh/pure
@@ -331,6 +333,28 @@ zle -N viewdirs
 bindkey '^[pd' viewdirs
 
 # popd (alt-p+l)
-function popdir() {echo "popd"; popd; zle redisplay}
+function popdir() {echo "popd"; popd; zle reset-prompt; zle redisplay}
 zle -N popdir
 bindkey '^[pl' popdir
+
+function awesome_magicenter {
+	figlet -f slant "COOL"
+}
+
+source ~/.zsh/minimal/minimal.zsh
+
+# minimalprompt setup <<<
+MNML_OK_COLOR=4
+MNML_ERR_COLOR=1
+MNML_BGJOB_MODE=2
+MNML_USER_CHAR='λ'
+MNML_INSERT_CHAR='›'
+MNML_NORMAL_CHAR='·'
+MNML_ELLIPSIS_CHAR='..'
+
+# mnml_pyenv mnml_ssh
+MNML_PROMPT=(mnml_err mnml_jobs mnml_status 'mnml_cwd 2 10' mnml_keymap);
+MNML_RPROMPT=(mnml_git);
+MNML_INFOLN=(mnml_err mnml_jobs mnml_uhp mnml_files);
+MNML_MAGICENTER=(awesome_magicenter mnml_me_dirs mnml_me_git mnml_me_ls);
+# >>>
