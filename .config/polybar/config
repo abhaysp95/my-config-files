@@ -1,11 +1,11 @@
 [colors]
 ;foreground = #ebdbb2
-foreground = #f59829
+foreground = #768f85
 background = #181818
 red        = #cc241d
 ; changing blue with orange and vice-versa
 lightbrown       = #d65d0e
-blue	= #181818
+blue	= #1d1f21
 teal       = #689d6a
 green      = #98971a
 purple     = #b16286
@@ -178,7 +178,7 @@ index-sort = true
 
 ;ws-icon-default = 
 
-label-focused            = %name% 
+label-focused            = %name%
 label-focused-foreground = ${colors.foreground}
 label-focused-background = ${colors.blue}
 ; label-focused-underline = ${colors.red}
