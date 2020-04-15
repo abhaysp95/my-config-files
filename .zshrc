@@ -1,23 +1,3 @@
-# ________
-#< .zshrc >
-# --------
-#      \                    / \  //\
-#       \    |\___/|      /   \//  \\
-#            /0  0  \__  /    //  | \ \
-#           /     /  \/_/    //   |  \  \
-#           @_^_@'/   \/_   //    |   \   \
-#           //_^_/     \/_ //     |    \    \
-#        ( //) |        \///      |     \     \
-#      ( / /) _|_ /   )  //       |      \     _\
-#    ( // /) '/,_ _ _/  ( ; -.    |    _ _\.-~        .-~~~^-.
-#  (( / / )) ,-{        _      `-.|.-~-.           .~         `.
-# (( // / ))  '/\      /                 ~-. _ .-~      .-~^-.  \
-# (( /// ))      `.   {            }                   /      \  \
-#  (( / ))     .----~-.\        \-'                 .~         \  `. \^-.
-#             ///.----..>        \             _ -~             `.  ^-`  ^-_
-#               ///-._ _ _ _ _ _ _}^ - - - - ~                     ~-- ,.-~
-#                                                                  /.-~
-#
 #                   ██
 #                  ░██
 #    ██████  ██████░██      ██████  █████
@@ -34,35 +14,6 @@ colors      # colours
 zsh-mime-setup      # run everyting as executable
 select-word-style bash      # ctrl+w on bash
 
-##
-#Vcs info
-##
-autoload -Uz vcs_info
-# zstyle ':vcs_info:*' enable git svn     # use vcs_info_printsys to check more
-# zstyle ':vcs_info:*' check-for-changes true
-# zstyle ':vcs_info:*' formats "%{$fg_bold[yellow]%}%c%{$fg_bold[green]%}%u%{$reset_color%} [%{$fg_bold[blue]%}%b%{$reset_color%}]%{$fg_bold[yellow]%}%s%{$fg_bold[green]%}:%r%{$reset_color%}"
-
-precmd(){   # run before each prompt
-    vcs_info
-}
-
-##
-#Prompt
-##
-setopt PROMPT_SUBST     # allow funky stuff in prompt
-color="blue"
-if [ "$USER" = "root" ]; then
-    color="yellow"     # root⌚Ɀ‽⚠ i➞s→ rՀed, user is blue
-fi;
-#%{$fg_bold[$color]>%{$reset_color%}"
-# RPROMPT='${vim_mode} ${vcs_info_msg_0_}'
-# prompt="
-# %{$fg_bold[$color]%}╭─ %{$fg_bold[yellow]%}%B%~%b%{$fg_bold[red]%}  Ѽ  %?%{$fg_bold[blue]%}  ⌚ %T %{$fg_bold[green]%} Ɀ %! %{$fg_bold[$color]%}
-# ╰─➤ "
-# %! -> tells command no.
-# %T -> time
-
-##
 #Key bindings
 ##
 # Lookup in /etc/termcap or /etc/terminfo else, you can get the right keycode
@@ -179,23 +130,6 @@ export EDITOR=nvim              # Meh.
 watch=all                        # watch all logins
 logcheck=30                     # every 30 seconds
 WATCHFMT="%n from %M has %a tty%1 at %T %W"
-
-##
-#Show vim mode in your prompt
-##
-# vim_ins_mode="%{$fg_bold[yellow]%}[ins]%{$reset_color%}" vim_cmd_mode="%{$fg_bold[blue]%}[cmd-%?]%{$reset_color%}"
-# vim_mode=$vim_ins_mode
-
-function zle-keymap-select {
-    vim_mode="${${KEYMAP/vicmd/${vim_cmd_mode}}/(main|viins)/${vim_ins_mode}}"
-    zle reset-prompt
-}
-zle -N zle-keymap-select
-
-function zle-line-finish {
-    vim_mode=$vim_ins_mode
-}
-zle -N zle-line-finish
 
 source ~/.config/.aliases            # aliases
 source ~/.profile
@@ -344,7 +278,8 @@ source /home/raytracer/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # corona_check
 #corona_check & 
 ## liquidprompt
-[[ $- = *i* ]] && source ~/Downloads/git-materials/liquidprompt/liquidprompt
+# [[ $- = *i* ]] && source ~/Downloads/git-materials/liquidprompt/liquidprompt
+source ~/.zsh/learning_prompt.zsh
 
 # pure prompt
 # fpath+=~/.zsh/pure

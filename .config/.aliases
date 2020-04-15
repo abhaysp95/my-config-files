@@ -8,6 +8,7 @@ alias i3conf="nvim ~/.config/i3/config"
 alias stconf="nvim ~/st/.Xdefaults"
 alias titconf="nvim ~/.config/termite/config"
 alias szsh="source ~/.zshrc"
+alias sbash="source ~/.bashrc"
 alias p="sudo pacman"
 alias ..="cd .."
 alias ..2="cd ../.."
@@ -56,16 +57,16 @@ alias mp="mpc play"
 alias ss..="xset r rate 400 60"
 
 #alias rfw="rofi -show window"
-#alias lgoff="sudo killall Xorg"
-alias lgoff='i3-msg exit'
+alias lgoff="sudo killall Xorg"
+# alias lgoff='i3-msg exit'
 
 alias diskspace="du -S | sort -n -r |less"
 
-alias -s {c,java}=nvim
+# alias -s {c,java}=nvim
 
-alias -g G='| grep -i'
+# alias -g G='| grep -i'
 
-alias -g lct='| lolcat -t'
+# alias -g lct='| lolcat -t'
 
 alias fig3d="figlet -f /usr/share/fonts/figlet-fonts/3d.flf"
 
@@ -115,7 +116,7 @@ alias du='du -ch'
 
 alias top='atop'
 #alias brght='xrandr --output eDP1 --brightness'
-alias -g brt=' | sudo tee /sys/class/backlight/intel_backlight/brightness'
+# alias -g brt=' | sudo tee /sys/class/backlight/intel_backlight/brightness'
 alias bright='xbacklight -set'
 
 #functions
@@ -197,7 +198,7 @@ alias gUs='cd /usr/share && ls'
 alias sc='cd ~/.local/bin/.scripts && ls'
 
 # using exa as ls
-alias ls='exa --grid --icons -F --group-directories-first'
-alias lsa='exa --grid --icons -Fa --group-directories-first'
-alias ll='exa -lFa --icons --group-directories-first --color-scale --git'
-alias tree='exa -TaF --icons --git'
+alias ls='exa --grid -F --group-directories-first'
+alias lsa='exa --grid -Fa --group-directories-first'
+alias ll='exa -lFa --group-directories-first --color-scale --git'
+alias tree='exa -TaF --git'
