@@ -338,7 +338,9 @@ zle -N popdir
 bindkey '^[pl' popdir
 
 function awesome_magicenter {
-	figlet -f slant "COOL"
+	figlet -f Star\ Wars "MAGIC"
+	# figlet -f mnemonic "$(printf '\t%s' "$(pwd)")"
+	printf '\t%s' "$(pwd)"
 }
 
 source ~/.zsh/minimal/minimal.zsh
@@ -347,14 +349,14 @@ source ~/.zsh/minimal/minimal.zsh
 MNML_OK_COLOR=4
 MNML_ERR_COLOR=1
 MNML_BGJOB_MODE=2
-MNML_USER_CHAR='λ'
+MNML_USER_CHAR='⋏'
 MNML_INSERT_CHAR='›'
 MNML_NORMAL_CHAR='·'
 MNML_ELLIPSIS_CHAR='..'
 
-# mnml_pyenv mnml_ssh
+# mnml_pyenv mnml_ssh mnml_me_git mnml_files mnml_me_dirs mnml_me_git mnml_me_ls
 MNML_PROMPT=(mnml_err mnml_jobs mnml_status 'mnml_cwd 2 10' mnml_keymap);
 MNML_RPROMPT=(mnml_git);
-MNML_INFOLN=(mnml_err mnml_jobs mnml_uhp mnml_files);
-MNML_MAGICENTER=(awesome_magicenter mnml_me_dirs mnml_me_git mnml_me_ls);
+MNML_INFOLN=(mnml_err mnml_jobs mnml_uhp);
+MNML_MAGICENTER=(awesome_magicenter mnml_me_dirs mnml_me_git);
 # >>>
