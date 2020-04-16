@@ -395,7 +395,7 @@ let g:UltiSnipsJumpBackwardTrigger="<c-g>"
 let g:UltiSnipsEditSplit="vertical"
 " >>>
 
-" movement in insert mode
+" movement in insert mode <<<
 inoremap <C-k> <Up>
 inoremap <C-j> <Down>
 inoremap <C-h> <Left>
@@ -404,6 +404,7 @@ snoremap <C-k> <Up>
 snoremap <C-j> <Down>
 snoremap <C-h> <Left>
 snoremap <C-l> <Right>
+" >>>
 
 " source ~/.config/nvim/statusline.vim		" goerge b(from vim group)
 " lightline configuration <<<
