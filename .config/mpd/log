@@ -22219,3 +22219,153 @@ Apr 15 21:04 : client: [64] opened from 127.0.0.1:48974
 Apr 15 21:04 : client: [64] closed
 Apr 15 22:15 : client: [65] opened from 127.0.0.1:49386
 Apr 15 22:15 : exception: Failed to open /home/raytracer/.config/mpd/playlists: No such file or directory
+Apr 16 11:26 : client: [66] opened from 127.0.0.1:49504
+Apr 16 11:26 : client: [66] closed
+Apr 16 11:26 : client: [67] opened from 127.0.0.1:49508
+Apr 16 11:26 : client: [67] closed
+Apr 16 11:26 : client: [68] opened from 127.0.0.1:49512
+Apr 16 11:26 : client: [68] closed
+Apr 16 11:26 : client: [69] opened from 127.0.0.1:49516
+Apr 16 11:26 : client: [69] closed
+Apr 16 11:26 : client: [70] opened from 127.0.0.1:49520
+Apr 16 11:26 : client: [70] closed
+Apr 16 11:26 : client: [71] opened from 127.0.0.1:49524
+Apr 16 11:26 : client: [71] closed
+Apr 16 11:26 : client: [72] opened from 127.0.0.1:49528
+Apr 16 11:26 : client: [72] closed
+Apr 16 11:26 : client: [73] opened from 127.0.0.1:49532
+Apr 16 11:26 : client: [73] closed
+Apr 16 11:26 : client: [74] opened from 127.0.0.1:49536
+Apr 16 11:26 : client: [74] closed
+Apr 16 11:26 : client: [75] opened from 127.0.0.1:49540
+Apr 16 11:26 : client: [75] closed
+Apr 16 11:26 : client: [76] opened from 127.0.0.1:49544
+Apr 16 11:26 : client: [76] closed
+Apr 16 11:26 : client: [77] opened from 127.0.0.1:49548
+Apr 16 11:26 : client: [77] closed
+Apr 16 11:27 : client: [78] opened from 127.0.0.1:49552
+Apr 16 11:27 : client: [78] closed
+Apr 16 11:27 : client: [79] opened from 127.0.0.1:49556
+Apr 16 11:27 : client: [79] closed
+Apr 16 20:12 : client: [80] opened from 127.0.0.1:49560
+Apr 16 20:12 : client: [80] closed
+Apr 16 20:12 : client: [81] opened from 127.0.0.1:49564
+Apr 16 20:12 : client: [81] closed
+Apr 16 20:14 : client: [82] opened from 127.0.0.1:49568
+Apr 16 20:14 : client: [82] closed
+Apr 16 20:14 : client: [83] opened from 127.0.0.1:49572
+Apr 16 20:14 : client: [83] closed
+Apr 16 20:17 : client: [84] opened from 127.0.0.1:49576
+Apr 16 20:17 : client: [84] closed
+Apr 16 20:17 : client: [85] opened from 127.0.0.1:49580
+Apr 16 20:17 : client: [85] closed
+Apr 16 20:17 : client: [86] opened from 127.0.0.1:49584
+Apr 16 20:17 : client: [86] closed
+Apr 16 20:17 : client: [87] opened from 127.0.0.1:49588
+Apr 16 20:17 : client: [87] closed
+Apr 16 20:49 : client: [88] opened from 127.0.0.1:49592
+Apr 16 20:49 : client: [88] closed
+Apr 16 20:49 : client: [89] opened from 127.0.0.1:49596
+Apr 16 20:49 : client: [89] closed
+Apr 16 20:49 : player: played "mp3/Harrdy Sandhu - Kya Baat Ay  Jaani  B Praak   Arvindr Khaira  Official Music Video.mp3"
+Apr 16 20:53 : player: played "mp3/Iss Qadar Pyar Hai Full Song with LYRICS - Ankit Tiwari  Bhaag Johnny  T-Series.mp3"
+Apr 16 20:55 : client: [90] opened from 127.0.0.1:49600
+Apr 16 20:55 : client: [90] closed
+Apr 16 20:55 : client: [91] opened from 127.0.0.1:49604
+Apr 16 20:55 : client: [91] closed
+Apr 16 20:59 : player: played "mp3/Coolar Kurti Me - Deewanapan - Full Video Song - Khesari Lal Yadav - Kajal Raghwani - Bhojpuri 2018.mp3"
+Apr 16 21:01 : client: [92] opened from 127.0.0.1:49608
+Apr 16 21:01 : client: [92] closed
+Apr 16 21:01 : client: [93] opened from 127.0.0.1:49612
+Apr 16 21:01 : client: [93] closed
+Apr 16 21:57 : client: [94] opened from 127.0.0.1:49728
+Apr 16 21:57 : client: [94] closed
+Apr 16 21:57 : client: [95] opened from 127.0.0.1:49732
+Apr 16 21:57 : client: [95] closed
+Apr 16 21:58 : player: played "mp3/Bonde R300 - Oh Nanana.mp3"
+Apr 16 22:01 : player: played "mp3/Ek Ladki Bheegi Bhaagi Si (Party Mix) - Aqeel Ali And Meiyang Chang (320 Kb.mp3"
+Apr 16 22:07 : player: played "m4a/_MY_DIL_GOES_MMMM_Korean_MixJi_Chang_Wook_and_Nam_Ji_Hyun_Suspicious_Partner.m4a"
+Apr 16 22:12 : player: played "m4a/Lady_Gaga_-_Your_Song_(Audio).m4a"
+Apr 16 22:13 : client: [96] opened from 127.0.0.1:49742
+Apr 16 22:13 : client: [96] closed
+Apr 16 22:13 : client: [97] opened from 127.0.0.1:49746
+Apr 16 22:13 : client: [97] closed
+Apr 16 22:13 : client: [98] opened from 127.0.0.1:49750
+Apr 16 22:13 : client: [98] closed
+Apr 16 22:13 : client: [99] opened from 127.0.0.1:49754
+Apr 16 22:13 : client: [99] closed
+Apr 16 22:13 : client: [100] opened from 127.0.0.1:49758
+Apr 16 22:13 : client: [100] closed
+Apr 16 22:13 : client: [101] opened from 127.0.0.1:49762
+Apr 16 22:13 : client: [101] closed
+Apr 16 22:13 : client: [102] opened from 127.0.0.1:49766
+Apr 16 22:13 : client: [102] closed
+Apr 16 22:13 : client: [103] opened from 127.0.0.1:49770
+Apr 16 22:13 : client: [103] closed
+Apr 16 22:16 : player: played "mp3/Empire Of The Sun - High And Low (Official Video).mp3"
+Apr 16 22:19 : client: [104] opened from 127.0.0.1:49774
+Apr 16 22:19 : client: [104] closed
+Apr 16 22:19 : client: [105] opened from 127.0.0.1:49778
+Apr 16 22:19 : client: [105] closed
+Apr 16 22:19 : client: [106] opened from 127.0.0.1:49782
+Apr 16 22:19 : client: [106] closed
+Apr 16 22:19 : client: [107] opened from 127.0.0.1:49786
+Apr 16 22:19 : client: [107] closed
+Apr 16 22:19 : player: played "mp3/SHAPE_OF_YOU__7C_The_Megamix_ft._Selena_Gomez_2C_T_C3_98P_2C_Ariana_Grande_2C_Justin_Bieber_2C_.mp3"
+Apr 16 22:24 : client: [108] opened from 127.0.0.1:49790
+Apr 16 22:24 : client: [108] closed
+Apr 16 22:24 : client: [109] opened from 127.0.0.1:49794
+Apr 16 22:24 : client: [109] closed
+Apr 16 22:29 : client: [110] opened from 127.0.0.1:49798
+Apr 16 22:29 : client: [110] closed
+Apr 16 22:29 : client: [111] opened from 127.0.0.1:49802
+Apr 16 22:29 : client: [111] closed
+Apr 16 22:29 : client: [112] opened from 127.0.0.1:49806
+Apr 16 22:29 : client: [112] closed
+Apr 16 22:29 : client: [113] opened from 127.0.0.1:49810
+Apr 16 22:29 : client: [113] closed
+Apr 16 22:29 : client: [114] opened from 127.0.0.1:49814
+Apr 16 22:29 : client: [114] closed
+Apr 16 22:29 : client: [115] opened from 127.0.0.1:49818
+Apr 16 22:29 : client: [115] closed
+Apr 16 22:29 : client: [116] opened from 127.0.0.1:49822
+Apr 16 22:29 : client: [116] closed
+Apr 16 22:29 : client: [117] opened from 127.0.0.1:49826
+Apr 16 22:29 : client: [117] closed
+Apr 16 22:30 : client: [118] opened from 127.0.0.1:49830
+Apr 16 22:30 : client: [118] closed
+Apr 16 22:30 : client: [119] opened from 127.0.0.1:49834
+Apr 16 22:30 : client: [119] closed
+Apr 16 22:30 : client: [120] opened from 127.0.0.1:49838
+Apr 16 22:30 : client: [120] closed
+Apr 16 22:30 : client: [121] opened from 127.0.0.1:49842
+Apr 16 22:30 : client: [121] closed
+Apr 16 22:30 : client: [122] opened from 127.0.0.1:49846
+Apr 16 22:30 : client: [122] closed
+Apr 16 22:30 : client: [123] opened from 127.0.0.1:49850
+Apr 16 22:30 : client: [123] closed
+Apr 16 22:30 : client: [124] opened from 127.0.0.1:49854
+Apr 16 22:30 : client: [124] closed
+Apr 16 22:30 : client: [125] opened from 127.0.0.1:49858
+Apr 16 22:30 : client: [125] closed
+Apr 16 22:30 : client: [126] opened from 127.0.0.1:49862
+Apr 16 22:30 : client: [126] closed
+Apr 16 22:30 : client: [127] opened from 127.0.0.1:49866
+Apr 16 22:30 : client: [127] closed
+Apr 16 22:30 : client: [128] opened from 127.0.0.1:49870
+Apr 16 22:30 : client: [128] closed
+Apr 16 22:30 : client: [129] opened from 127.0.0.1:49874
+Apr 16 22:30 : client: [129] closed
+Apr 16 22:32 : player: played "mp3/Chamkelu Sheeshan Jaisan _ Bhojpuri New Full Song _ Pawan Singh, Akshara Singh.mp3"
+Apr 16 22:34 : client: [130] opened from 127.0.0.1:49878
+Apr 16 22:34 : client: [130] closed
+Apr 16 22:34 : client: [131] opened from 127.0.0.1:49882
+Apr 16 22:34 : client: [131] closed
+Apr 16 22:36 : client: [132] opened from 127.0.0.1:49886
+Apr 16 22:36 : client: [132] closed
+Apr 16 22:36 : client: [133] opened from 127.0.0.1:49890
+Apr 16 22:36 : client: [133] closed
+Apr 16 22:40 : client: [134] opened from 127.0.0.1:49894
+Apr 16 22:40 : client: [134] closed
+Apr 16 22:40 : client: [135] opened from 127.0.0.1:49898
+Apr 16 22:40 : client: [135] closed

@@ -549,45 +549,45 @@ color19 = #83a598
 
 # google-dark
 
-[colors]
+# [colors]
 
-# special
-foreground      = #c5c8c6
-foreground_bold = #c5c8c6
-cursor          = #c5c8c6
-background      = #1d1f21
+# # special
+# foreground      = #c5c8c6
+# foreground_bold = #c5c8c6
+# cursor          = #c5c8c6
+# background      = #1d1f21
 
-# black
-color0  = #1d1f21
-color8  = #969896
+# # black
+# color0  = #1d1f21
+# color8  = #969896
 
-# red
-color1  = #cc342b
-color9  = #cc342b
+# # red
+# color1  = #cc342b
+# color9  = #cc342b
 
-# green
-color2  = #198844
-color10 = #198844
+# # green
+# color2  = #198844
+# color10 = #198844
 
-# yellow
-color3  = #fba922
-color11 = #fba922
+# # yellow
+# color3  = #fba922
+# color11 = #fba922
 
-# blue
-color4  = #3971ed
-color12 = #3971ed
+# # blue
+# color4  = #3971ed
+# color12 = #3971ed
 
-# magenta
-color5  = #a36ac7
-color13 = #a36ac7
+# # magenta
+# color5  = #a36ac7
+# color13 = #a36ac7
 
-# cyan
-color6  = #3971ed
-color14 = #3971ed
+# # cyan
+# color6  = #3971ed
+# color14 = #3971ed
 
-# white
-color7  = #c5c8c6
-color15 = #ffffff
+# # white
+# color7  = #c5c8c6
+# color15 = #ffffff
 
 
 # [colors]
@@ -961,3 +961,53 @@ color15 = #ffffff
 # color15 = #3c3836
 
 # vim: ft=dosini cms=#%s
+[colors]
+# Base16 Eighties
+# Author: Chris Kempson (http://chriskempson.com)
+
+foreground          = #d3d0c8
+foreground_bold     = #e8e6df
+# cursor              = #e8e6df
+# cursor_foreground   = #2d2d2d
+background          = rgba(45, 45, 45)
+# background = #2d2d2d
+
+# 16 color space
+
+# Black, Gray, Silver, White
+color0  = #2d2d2d
+color8  = #747369
+color7  = #d3d0c8
+color15 = #f2f0ec
+
+# Red
+color1  = #f2777a
+color9  = #f2777a
+
+# Green
+color2  = #99cc99
+color10 = #99cc99
+
+# Yellow
+color3  = #ffcc66
+color11 = #ffcc66
+
+# Blue
+color4  = #6699cc
+color12 = #6699cc
+
+# Purple
+color5  = #cc99cc
+color13 = #cc99cc
+
+# Teal
+color6  = #66cccc
+color14 = #66cccc
+
+# Extra colors
+color16 = #f99157
+color17 = #d27b53
+color18 = #393939
+color19 = #515151
+color20 = #a09f93
+color21 = #e8e6df

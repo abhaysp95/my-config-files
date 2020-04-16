@@ -1,11 +1,12 @@
 [colors]
 ;foreground = #ebdbb2
 foreground = #768f85
+light-foreground = #616161
 background = #181818
 red        = #c45e46
 ; changing blue with orange and vice-versa
 lightbrown       = #d65d0e
-blue	= #1d1f21
+blue	= #2d2d2d
 teal       = #689d6a
 green      = #98971a
 purple     = #b16286
@@ -13,7 +14,8 @@ orange     = #458588
 indigo      = #83a598
 black = #000000
 yellow     = #d79921
-white      = #ebdbb2
+light-white      = #a09f93
+white = #d3d0c8
 cyan       = #689d6a
 brown      = #fb4934
 
@@ -96,7 +98,7 @@ font-1 = Font Awesome 5 Free Solid:size=10;2
 ; Modlues
 modules-left   = i3 xwindow
 /* modules-center = time */
-modules-right  = s time d date f temperature d cpu f memory d pulseaudio f battery  d bright
+modules-right  = time date temperature cpu memory pulseaudio battery bright
 ; lock logout reboot poweroff
 
 ;tray-position = left
@@ -190,15 +192,15 @@ index-sort = true
 ;ws-icon-default = 
 
 label-focused            = %name%
-label-focused-foreground = ${colors.foreground}
+label-focused-foreground = ${colors.light-white}
 label-focused-background = ${colors.blue}
 ; label-focused-underline = ${colors.red}
 label-focused-padding    = 1
 
 ; Unfocused labels
 label-unfocused            = %icon% %name%
-label-unfocused-foreground = ${colors.blue}
-label-unfocused-background = ${colors.foreground}
+label-unfocused-foreground = ${colors.light-foreground}
+label-unfocused-background = ${colors.blue}
 label-unfocused-padding    = 1
 
 ; Visible labels
@@ -225,7 +227,7 @@ format-suffix-background = ${colors.blue}
 
 type = internal/xwindow
 label = %title:0:35:...%
-format-foreground = ${colors.foreground}
+format-foreground = ${colors.light-white}
 format-background = ${colors.blue}
 label-padding = 1
 
@@ -246,10 +248,10 @@ label-foreground = ${colors.foreground}
 type = internal/memory
 interval = 1
 format-prefix = "  "
-format-background = ${colors.foreground}
-format-foreground = ${colors.blue}
+format-background = ${colors.blue}
+format-foreground = ${colors.light-white}
 label = %percentage_used%%
-label-padding = 1
+format-padding = 1
 
 click-left = memproc &
 
@@ -293,8 +295,8 @@ scroll-down = light -U 5
 ; label-padding    = 1
 ; interval         = 1
 format = <label>
-format-background = ${colors.red}
-format-foreground = ${colors.blue}
+format-background = ${colors.blue}
+format-foreground = ${colors.light-white}
 label =  %output%%
 interval = 1
 label-padding = 1
@@ -340,23 +342,24 @@ format-charging = <animation-charging> <label-charging>
 format-discharging = <ramp-capacity> <label-discharging>
 format-charging-background = ${colors.foreground}
 format-charging-foreground = ${colors.blue}
-format-discharging-background = ${colors.foreground}
-format-discharging-foreground = ${colors.blue}
+format-discharging-background = ${colors.blue}
+format-discharging-foreground = ${colors.light-white}
 
 ;label-charging-background = ${colors.background}
 label-charging = Ch %percentage%%
-label-charging-padding = 1
+format-charging-padding = 1
 
 ;label-discharging-background = ${colors.background}
 label-discharging = Dis %percentage%%
-label-discharging-padding = 1
+format-discharging-padding = 1
 
 format-full = <label-full>
 format-full-prefix = "  "
-format-full-background = ${colors.foreground}
-format-full-foreground = ${colors.blue}
+format-full-background = ${colors.blue}
+format-full-foreground = ${colors.light-white}
+format-full-padding = 1
 label-full = Full
-label-full-padding = 1
+; label-full-padding = 1
 
 ramp-capacity-4 = " "
 ramp-capacity-3 = " "
@@ -403,12 +406,12 @@ warn-temperature = 80
 interval = 3
 
 label = %temperature-c%
-label-foreground = ${colors.blue}
+label-foreground = ${colors.light-white}
 
 format = <ramp> <label>
 format-padding = 1
-format-foreground = ${colors.red}
-format-background = ${colors.foreground}
+format-foreground = ${colors.light-white}
+format-background = ${colors.blue}
 
 format-warn = <ramp> <label-warn>
 format-warn-padding= 0
@@ -431,7 +434,7 @@ ramp-1 = 
 ramp-2 = 
 ramp-3 = 
 ramp-4 = 
-ramp-foreground = ${colors.blue}
+ramp-foreground = ${colors.light-white}
 
 [module/cpu]
 type = internal/cpu
@@ -442,10 +445,10 @@ type = internal/cpu
 ; label-padding = 0
 interval = 2
 format-prefix = " "
-format-background = ${colors.red}
-format-foreground = ${colors.blue}
+format-background = ${colors.blue}
+format-foreground = ${colors.light-white}
 label = %percentage:2%%
-label-padding = 1
+format-padding = 1
 
 click-left = cpuproc &
 
@@ -458,7 +461,7 @@ type = internal/pulseaudio
 ; label-volume-foreground = ${colors.blue}
 ; label-volume-padding    = 0
 
-; Muted label
+; Muted label┃
 ; label-muted            = vol: Muted
 ; label-muted-background = ${colors.blue}
 ; label-muted-foreground = ${colors.foreground}
@@ -466,10 +469,10 @@ type = internal/pulseaudio
 
 format-volume = <label-volume> <bar-volume>
 format-volume-padding = 1
-format-volume-background = ${colors.red}
+format-volume-background = ${colors.blue}
 
 label-volume =  %percentage%%
-label-volume-foreground = ${colors.blue}
+label-volume-foreground = ${colors.light-white}
 
 format-muted-padding = 1
 format-muted-background = ${colors.background}
@@ -479,22 +482,22 @@ label-muted-foreground = ${colors.blue}
 label-muted-background = ${colors.red}
 
 bar-volume-width = 10
-bar-volume-foreground-0 = ${colors.blue}
-bar-volume-foreground-1 = ${colors.blue}
-bar-volume-foreground-2 = ${colors.blue}
-bar-volume-foreground-3 = ${colors.blue}
-bar-volume-foreground-4 = ${colors.blue}
-bar-volume-foreground-5 = ${colors.blue}
-bar-volume-foreground-6 = ${colors.blue}
+bar-volume-foreground-0 = ${colors.light-white}
+bar-volume-foreground-1 = ${colors.light-white}
+bar-volume-foreground-2 = ${colors.light-white}
+bar-volume-foreground-3 = ${colors.light-white}
+bar-volume-foreground-4 = ${colors.light-white}
+bar-volume-foreground-5 = ${colors.light-white}
+bar-volume-foreground-6 = ${colors.light-white}
 bar-volume-gradient = false
-bar-volume-indicator = ┃
-bar-volume-indicator-foreground = ${colors.blue}
+bar-volume-indicator =
+bar-volume-indicator-foreground = ${colors.white}
 bar-volume-indicator-font = 2
 bar-volume-fill = ─
 bar-volume-fill-font = 2
 bar-volume-empty = ─
 bar-volume-empty-font = 2
-bar-volume-empty-foreground = ${colors.foreground}
+bar-volume-empty-foreground = ${colors.light-foreground}
 
 scroll-up = pulsemixer --change-volume +5
 scroll-down = pulsemixer --change-volume -5
@@ -517,8 +520,8 @@ time = %H:%M:%S
 ; Label
 label            =  %time%
 ; label            = time: %time%  date: %date%
-label-foreground = ${colors.blue}
-label-background = ${colors.foreground}
+label-foreground = ${colors.light-white}
+label-background = ${colors.blue}
 label-padding    = 1
 
 [module/date]
@@ -537,10 +540,10 @@ date = "%Y-%m-%d"
 ;label            =  %date%
 ; label-foreground = ${colors.foreground}
 ; label-background = ${colors.lightbackgrounds}
-; label-padding    = 1
-format-background = ${colors.red}
-format-foreground = ${colors.blue}
+format-background = ${colors.blue}
+format-foreground = ${colors.light-white}
 label = "  %date% "
+label-padding    = 1
 
 ; [module/date]
 ; type = internal/date

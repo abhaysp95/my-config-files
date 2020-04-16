@@ -494,7 +494,7 @@ let g:lightline = {
 	let g:nord_underline = 1
 	"let ayucolor="mirage"
 	"let ayucolor="dark"
-	colorscheme base16-google-dark
+	colorscheme base16-eighties
     set go=a
     highlight Comment cterm=italic gui=italic
     highlight Search ctermbg=black ctermfg=yellow term=underline
@@ -809,7 +809,7 @@ nnoremap <C-p> :cprev<CR>
 	let g:airline#extensions#tabline#show_tab_count = 1
 	let g:airline#extensions#tabline#fnamecollapse = 1
 	let g:airline#extensions#tabline#overflow_marker = '…'
-	let g:airline_powerline_fonts=1
+	let g:airline_powerline_fonts=0
 	let g:airline_inactive_collapse = 1
 	let g:airline#extensions#tabline#buffers_label = 'b'
 	let g:airline#extensions#tabline#tabs_label = 't'
@@ -848,7 +848,7 @@ nnoremap <C-p> :cprev<CR>
 	let airline#extensions#syntastic#stl_format_err = '%E{[%fe(#%e)]}'
 	let airline#extensions#syntastic#warning_symbol = 'ẃ:'
 	let airline#extensions#syntastic#stl_format_warn = '%W{[%fw(#%w)]}'
-	let g:airline_theme='base16_google'
+	let g:airline_theme='base16_eighties'
 	let g:hybrid_custom_term_colors=1
 	let g:hybrid_reduced_contrast=1
 " >>>

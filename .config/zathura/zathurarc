@@ -1,5 +1,6 @@
 #set recolor
-set recolor-darkcolor "#1d2021"
+#set recolor-darkcolor "#1d2021"
+set recolor-darkcolor "#2d2d2d"
 #set recolor-lightcolor "#282936"
 #set recolor-lightcolor "#020202"
 #set recolor-lightcolor "#181818"
