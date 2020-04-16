@@ -2,7 +2,7 @@
 ;foreground = #ebdbb2
 foreground = #768f85
 background = #181818
-red        = #cc241d
+red        = #c45e46
 ; changing blue with orange and vice-versa
 lightbrown       = #d65d0e
 blue	= #1d1f21
@@ -96,7 +96,7 @@ font-1 = Font Awesome 5 Free Solid:size=10;2
 ; Modlues
 modules-left   = i3 xwindow
 /* modules-center = time */
-modules-right  = s time d date d temperature d cpu d memory d pulseaudio d battery  d bright
+modules-right  = s time d date f temperature d cpu f memory d pulseaudio f battery  d bright
 ; lock logout reboot poweroff
 
 ;tray-position = left
@@ -121,12 +121,23 @@ content-foreground = ${colors.foreground}
 type = custom/text
 
 content-prefix = ""
-content-prefix-foreground = ${colors.blue}
+content-prefix-foreground = ${colors.foreground}
 content-prefix-background = ${colors.foreground}
 
 content = ""
+content-foreground = ${colors.red}
+content-background = ${colors.foreground}
+
+[module/f]
+type = custom/text
+
+content-prefix = ""
+content-prefix-foreground = ${colors.foreground}
+content-prefix-background = ${colors.red}
+
+content = ""
 content-foreground = ${colors.foreground}
-content-background = ${colors.blue}
+content-background = ${colors.foreground}
 
 [module/i3]
 type = internal/i3
@@ -282,7 +293,7 @@ scroll-down = light -U 5
 ; label-padding    = 1
 ; interval         = 1
 format = <label>
-format-background = ${colors.foreground}
+format-background = ${colors.red}
 format-foreground = ${colors.blue}
 label =  %output%%
 interval = 1
@@ -431,7 +442,7 @@ type = internal/cpu
 ; label-padding = 0
 interval = 2
 format-prefix = " "
-format-background = ${colors.foreground}
+format-background = ${colors.red}
 format-foreground = ${colors.blue}
 label = %percentage:2%%
 label-padding = 1
@@ -455,7 +466,7 @@ type = internal/pulseaudio
 
 format-volume = <label-volume> <bar-volume>
 format-volume-padding = 1
-format-volume-background = ${colors.foreground}
+format-volume-background = ${colors.red}
 
 label-volume =  %percentage%%
 label-volume-foreground = ${colors.blue}
@@ -476,7 +487,8 @@ bar-volume-foreground-4 = ${colors.blue}
 bar-volume-foreground-5 = ${colors.blue}
 bar-volume-foreground-6 = ${colors.blue}
 bar-volume-gradient = false
-bar-volume-indicator = ¦
+bar-volume-indicator = ┃
+bar-volume-indicator-foreground = ${colors.blue}
 bar-volume-indicator-font = 2
 bar-volume-fill = ─
 bar-volume-fill-font = 2
@@ -526,7 +538,7 @@ date = "%Y-%m-%d"
 ; label-foreground = ${colors.foreground}
 ; label-background = ${colors.lightbackgrounds}
 ; label-padding    = 1
-format-background = ${colors.foreground}
+format-background = ${colors.red}
 format-foreground = ${colors.blue}
 label = "  %date% "
 
