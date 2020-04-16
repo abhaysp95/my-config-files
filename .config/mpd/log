@@ -22217,3 +22217,5 @@ Apr 15 21:04 : client: [63] opened from 127.0.0.1:48966
 Apr 15 21:04 : client: [63] closed
 Apr 15 21:04 : client: [64] opened from 127.0.0.1:48974
 Apr 15 21:04 : client: [64] closed
+Apr 15 22:15 : client: [65] opened from 127.0.0.1:49386
+Apr 15 22:15 : exception: Failed to open /home/raytracer/.config/mpd/playlists: No such file or directory
