@@ -54,10 +54,10 @@ width  = 100%
 height = 16
 
 ; Offset
-offset-x = 29
-offset-y = 5
+offset-x = 0
+offset-y = 0
 
-;override-redirect = true
+override-redirect = true
 
 ; Position
 bottom = false
@@ -101,8 +101,9 @@ modules-left   = i3 xwindow
 modules-right  = time date temperature cpu memory pulseaudio battery bright
 ; lock logout reboot poweroff
 
-;tray-position = left
-;tray-padding = 2
+tray-position = right
+tray-padding = 3
+tray-background = ${colors.blue}
 
 wm-restack = i3
 
@@ -247,13 +248,14 @@ label-foreground = ${colors.foreground}
 [module/memory]
 type = internal/memory
 interval = 1
-format-prefix = "  "
+; format-prefix = "  "
 format-background = ${colors.blue}
 format-foreground = ${colors.light-white}
-label = %percentage_used%%
+; label = %percentage_used%%
+label = %{A1:memproc:} %percentage_used%%%{A}
 format-padding = 1
 
-click-left = memproc &
+; click-left = memproc &
 
 [module/weather]
 type = custom/script
@@ -297,7 +299,7 @@ scroll-down = light -U 5
 format = <label>
 format-background = ${colors.blue}
 format-foreground = ${colors.light-white}
-label =  %output%%
+label = %{A1:/home/raytracer/.config/polybar/bar_scripts/bright_notify.sh:} %output%%%{A}
 interval = 1
 label-padding = 1
 
@@ -346,19 +348,19 @@ format-discharging-background = ${colors.blue}
 format-discharging-foreground = ${colors.light-white}
 
 ;label-charging-background = ${colors.background}
-label-charging = Ch %percentage%%
+label-charging = %{A1:notify-send "$(cat /sys/class/power_supply/BAT0/uevent)":}Ch %percentage%%%{A}
 format-charging-padding = 1
 
 ;label-discharging-background = ${colors.background}
-label-discharging = Dis %percentage%%
+label-discharging = %{A1:notify-send "$(cat /sys/class/power_supply/BAT0/uevent)":}Dis %percentage%%%{A}
 format-discharging-padding = 1
 
 format-full = <label-full>
-format-full-prefix = "  "
+; format-full-prefix = "  "
 format-full-background = ${colors.blue}
 format-full-foreground = ${colors.light-white}
 format-full-padding = 1
-label-full = Full
+label-full = %{A1:notify-send "$(cat /sys/class/power_supply/BAT0/uevent)":} Full%{A}
 ; label-full-padding = 1
 
 ramp-capacity-4 = " "
@@ -405,7 +407,8 @@ thermal-zone = 0
 warn-temperature = 80
 interval = 3
 
-label = %temperature-c%
+; label = %temperature-c%
+label = %{A1:/home/raytracer/.config/polybar/bar_scripts/temp.sh:}%temperature-c%%{A}
 label-foreground = ${colors.light-white}
 
 format = <ramp> <label>
@@ -425,7 +428,8 @@ format-warn-suffix-background = ${colors.red}
 
 
 
-label-warn = " %temperature-c%"
+; label-warn = " %temperature-c%"
+label-warn = %{A1:/home/raytracer/.config/polybar/bar_scripts/temp.sh:}%temperature-c%%{A}
 label-warn-foreground = ${colors.blue}
 label-warn-background = ${colors.red}
 
@@ -444,13 +448,15 @@ type = internal/cpu
 ; label-background = ${colors.foreground}
 ; label-padding = 0
 interval = 2
-format-prefix = " "
+; format-prefix = " "
+format = <label>
 format-background = ${colors.blue}
 format-foreground = ${colors.light-white}
-label = %percentage:2%%
+; label = %percentage:2%%
+label = %{A1:cpuproc:}%percentage:2%%%{A}
 format-padding = 1
-
-click-left = cpuproc &
+; click-left = %{A1:cpuproc:} <label>%{A}
+; format+="%{A1:cpuproc:}$format%{A}"
 
 [module/pulseaudio]
 type = internal/pulseaudio
@@ -518,7 +524,7 @@ time = %H:%M:%S
 ; date = %A, %d %B
 
 ; Label
-label            =  %time%
+label            = %{A1:notify-send "$(cal)":} %time%%{A}
 ; label            = time: %time%  date: %date%
 label-foreground = ${colors.light-white}
 label-background = ${colors.blue}
@@ -542,7 +548,7 @@ date = "%Y-%m-%d"
 ; label-background = ${colors.lightbackgrounds}
 format-background = ${colors.blue}
 format-foreground = ${colors.light-white}
-label = "  %date% "
+label = %{A1:termite -e calcurse:} %date%%{A}
 label-padding    = 1
 
 ; [module/date]
