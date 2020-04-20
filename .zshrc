@@ -340,7 +340,7 @@ bindkey '^[pl' popdir
 function awesome_magicenter {
 	figlet -f Star\ Wars "MAGIC"
 	# figlet -f mnemonic "$(printf '\t%s' "$(pwd)")"
-	printf '\t%s' "$(pwd)"
+	printf 'pwd -> %s' "$(pwd)"
 }
 
 source ~/.zsh/minimal/minimal.zsh
@@ -349,7 +349,7 @@ source ~/.zsh/minimal/minimal.zsh
 MNML_OK_COLOR=4
 MNML_ERR_COLOR=1
 MNML_BGJOB_MODE=2
-MNML_USER_CHAR='⋏'
+MNML_USER_CHAR='⮝'
 MNML_INSERT_CHAR='›'
 MNML_NORMAL_CHAR='·'
 MNML_ELLIPSIS_CHAR='..'

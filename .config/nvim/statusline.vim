@@ -22,35 +22,45 @@ function! ActiveLine()
     let statusline = ""
     " Mode
     let statusline .= "%#Base#"
-    let statusline .= " %#ModeArrow#".s:left_separator
+    let statusline .= " %#ModeArrow#"
+	" .s:left_separator
     let statusline .= "%#Mode# %{ModeCurrent()}"
-    let statusline .= "%#ModeArrow#".s:right_separator
+    let statusline .= "%#ModeArrow#"
+	" .s:right_separator
 
     " Filename with modified flag
-    let statusline .= " %#NotModeArrow#".s:left_separator
+    let statusline .= " %#NotModeArrow#"
+	" .s:left_separator
 
     let statusline .= "%#Modi# %{IsModified(&modified)} "
-    let statusline .= " %#NotModeArrow#".s:right_separator
+    let statusline .= " %#NotModeArrow#"
+	" .s:right_separator
 
     " Go to right
     let statusline .= "%="
 
     " Filepath till of this file, on left side ( with condition of string length)
     if len(GetFilePath()) + len(IsModified(&modified)) + 40 < winwidth('.')
-        let statusline .= "%#NotModeArrow#".s:left_separator
+        let statusline .= "%#NotModeArrow#"
+		" .s:left_separator
         let statusline .= "%#FilePath# %{GetFilePath()} "
-        let statusline .= "%#NotModeArrow#".s:right_separator
+        let statusline .= "%#NotModeArrow#"
+		" .s:right_separator
     endif
 
     " Filetype
-    let statusline .= " %#NotModeArrow#".s:left_separator
+    let statusline .= " %#NotModeArrow#"
+	" .s:left_separator
     let statusline .= "%#Filetype# %{CheckFT(&filetype)} "
-    let statusline .= "%#NotModeArrow#".s:right_separator
+    let statusline .= "%#NotModeArrow#"
+	" .s:right_separator
 
     " Current line and column
-    let statusline .= " %#NotModeArrow#".s:left_separator
+    let statusline .= " %#NotModeArrow#"
+	". s:left_separator
     let statusline .= "%#Filetype# Ln %l:%L "
-    let statusline .= " %#NotModeArrow#".s:right_separator." "
+    let statusline .= " %#NotModeArrow#"
+	" .s:right_separator." "
 
     return statusline
 endfunction

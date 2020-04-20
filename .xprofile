@@ -13,7 +13,8 @@ xset r rate 350 70 &
 # nitrogen --restore &
 setbg &
 udiskie -A -t &
-notify-send --icon=~/.cache/notify-icons/home.png "Welcome to region of raytracer" "Enjoy!"
+caffeine_like &
+notify-send --icon=~/.cache/notify-icons/home.png "Welcome to region of raytracer" "Enjoy!" &
 
 # lf icons <<<
 export LF_ICONS="di=📁:\
@@ -75,5 +76,5 @@ ex=🎯:\
 *.ged=👪:\
 *.part=💔:\
 *.torrent=🔽:\
-"
+" &
 # >>>

@@ -121,8 +121,8 @@ alias bright='xbacklight -set'
 
 #functions
 
-se () { du -a ~/.local/bin/* ~/.config/* | awk '{print $2}' | fzf --layout=reverse --preview='pistol {}'| xargs -r $EDITOR ;}
-vf () { ls -l | fzf --layout=reverse --preview='pistol {}'| xargs -r -I % $EDITOR % ;}
+se () { du -a ~/.local/bin/* ~/.config/* | awk '{print $2}' | fzf --preview='pistol {}'| xargs -r $EDITOR ;}
+vf () { ls -l | fzf --preview='pistol {}'| xargs -r -I % $EDITOR % ;}
 
 alias tknow='tldr -l | sed s/,/\\n/g | fzf | xargs -I {} tldr "{}"'
 alias shdn="shutdown now"

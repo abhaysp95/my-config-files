@@ -343,7 +343,7 @@ client.placeholder      #1d1f21 #1d1f21 #ebdbb2 #1d1f21 #1d1f21
 hide_edge_borders both
 
 # base16-eighties
-client.focused          #608473 #608473 #ebdbb2 #608473 #608473
+client.focused          #a09f93 #a09f93 #ebdbb2 #a09f93 #a09f93
 client.focused_inactive #2d2d2d #2d2d2d #ebdbb2 #2d2d2d #2d2d2d
 client.unfocused        #2d2d2d #2d2d2d #ebdbb2 #2d2d2d #2d2d2d
 client.urgent           #2d2d2d #2d2d2d #fb4934 #2d2d2d #2d2d2d

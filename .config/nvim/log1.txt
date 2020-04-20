@@ -1,0 +1,174 @@
+
+
+times in msec
+ clock   self+sourced   self:  sourced script
+ clock   elapsed:              other lines
+
+000.032  000.032: --- NVIM STARTING ---
+000.899  000.866: locale set
+001.470  000.572: inits 1
+001.513  000.043: window checked
+001.522  000.009: parsing arguments
+001.679  000.157: expanding arguments
+001.772  000.094: inits 2
+003.521  001.749: init highlight
+003.781  000.260: waiting for UI
+006.423  002.642: done waiting for UI
+006.479  000.056: initialized screen early for UI
+006.780  000.062  000.062: sourcing /usr/share/nvim/archlinux.vim
+006.802  000.204  000.143: sourcing /etc/xdg//nvim/sysinit.vim
+012.445  005.421  005.421: sourcing /home/raytracer/.local/share/nvim/site/autoload/plug.vim
+079.061  000.048  000.048: sourcing /home/raytracer/.config/nvim/plugged/sxhkd-vim/ftdetect/sxhkd.vim
+079.236  000.048  000.048: sourcing /home/raytracer/.config/nvim/plugged/ultisnips/ftdetect/snippets.vim
+092.052  012.654  012.654: sourcing /home/raytracer/.config/nvim/plugged/vim-polyglot/ftdetect/polyglot.vim
+092.355  000.038  000.038: sourcing /home/raytracer/.config/nvim/plugged/vim-fugitive/ftdetect/fugitive.vim
+092.937  000.035  000.035: sourcing /usr/share/vim/vimfiles/ftdetect/PKGBUILD.vim
+093.013  000.031  000.031: sourcing /usr/share/vim/vimfiles/ftdetect/augeas.vim
+093.174  000.121  000.121: sourcing /usr/share/vim/vimfiles/ftdetect/gnfiletype.vim
+093.278  000.065  000.065: sourcing /usr/share/vim/vimfiles/ftdetect/lf.vim
+093.430  035.769  022.730: sourcing /usr/share/nvim/runtime/filetype.vim
+094.286  000.093  000.093: sourcing /usr/share/nvim/runtime/ftplugin.vim
+095.074  000.082  000.082: sourcing /usr/share/nvim/runtime/indent.vim
+097.595  000.916  000.916: sourcing /usr/share/nvim/runtime/syntax/syncolor.vim
+097.923  001.945  001.030: sourcing /usr/share/nvim/runtime/syntax/synload.vim
+098.007  002.743  000.797: sourcing /usr/share/nvim/runtime/syntax/syntax.vim
+100.739  000.076  000.076: sourcing /usr/share/nvim/runtime/filetype.vim
+101.526  000.030  000.030: sourcing /usr/share/nvim/runtime/ftplugin.vim
+102.575  000.790  000.790: sourcing /usr/share/nvim/runtime/syntax/nosyntax.vim
+104.592  000.483  000.483: sourcing /usr/share/nvim/runtime/syntax/syncolor.vim
+104.954  001.641  001.158: sourcing /usr/share/nvim/runtime/syntax/synload.vim
+105.037  003.343  000.913: sourcing /usr/share/nvim/runtime/syntax/syntax.vim
+107.348  000.432  000.432: sourcing /usr/share/nvim/runtime/syntax/syncolor.vim
+111.566  000.530  000.530: sourcing /usr/share/nvim/runtime/syntax/syncolor.vim
+113.661  000.444  000.444: sourcing /usr/share/nvim/runtime/syntax/syncolor.vim
+141.273  032.637  031.663: sourcing /home/raytracer/.config/nvim/plugged/base16-vim/colors/base16-eighties.vim
+145.376  000.554  000.554: sourcing /usr/share/nvim/runtime/autoload/provider/clipboard.vim
+152.403  145.543  064.363: sourcing /home/raytracer/.config/nvim/init.vim
+152.437  000.211: sourcing vimrc file(s)
+153.692  000.091  000.091: sourcing /home/raytracer/.config/nvim/plugged/syntastic/plugin/syntastic/autoloclist.vim
+153.785  000.035  000.035: sourcing /home/raytracer/.config/nvim/plugged/syntastic/plugin/syntastic/balloons.vim
+153.874  000.034  000.034: sourcing /home/raytracer/.config/nvim/plugged/syntastic/plugin/syntastic/checker.vim
+153.955  000.034  000.034: sourcing /home/raytracer/.config/nvim/plugged/syntastic/plugin/syntastic/cursor.vim
+154.037  000.035  000.035: sourcing /home/raytracer/.config/nvim/plugged/syntastic/plugin/syntastic/highlighting.vim
+154.168  000.036  000.036: sourcing /home/raytracer/.config/nvim/plugged/syntastic/plugin/syntastic/loclist.vim
+154.253  000.038  000.038: sourcing /home/raytracer/.config/nvim/plugged/syntastic/plugin/syntastic/modemap.vim
+154.328  000.034  000.034: sourcing /home/raytracer/.config/nvim/plugged/syntastic/plugin/syntastic/notifiers.vim
+154.408  000.034  000.034: sourcing /home/raytracer/.config/nvim/plugged/syntastic/plugin/syntastic/registry.vim
+154.488  000.034  000.034: sourcing /home/raytracer/.config/nvim/plugged/syntastic/plugin/syntastic/signs.vim
+156.510  001.525  001.525: sourcing /home/raytracer/.config/nvim/plugged/syntastic/autoload/syntastic/util.vim
+170.390  000.285  000.285: sourcing /home/raytracer/.config/nvim/plugged/syntastic/plugin/syntastic/autoloclist.vim
+170.705  000.228  000.228: sourcing /home/raytracer/.config/nvim/plugged/syntastic/plugin/syntastic/balloons.vim
+171.241  000.451  000.451: sourcing /home/raytracer/.config/nvim/plugged/syntastic/plugin/syntastic/checker.vim
+171.522  000.217  000.217: sourcing /home/raytracer/.config/nvim/plugged/syntastic/plugin/syntastic/cursor.vim
+171.781  000.208  000.208: sourcing /home/raytracer/.config/nvim/plugged/syntastic/plugin/syntastic/highlighting.vim
+172.500  000.673  000.673: sourcing /home/raytracer/.config/nvim/plugged/syntastic/plugin/syntastic/loclist.vim
+172.781  000.231  000.231: sourcing /home/raytracer/.config/nvim/plugged/syntastic/plugin/syntastic/modemap.vim
+172.990  000.165  000.165: sourcing /home/raytracer/.config/nvim/plugged/syntastic/plugin/syntastic/notifiers.vim
+173.926  000.893  000.893: sourcing /home/raytracer/.config/nvim/plugged/syntastic/plugin/syntastic/registry.vim
+174.383  000.313  000.313: sourcing /home/raytracer/.config/nvim/plugged/syntastic/plugin/syntastic/signs.vim
+178.509  023.975  018.785: sourcing /home/raytracer/.config/nvim/plugged/syntastic/plugin/syntastic.vim
+181.038  000.215  000.215: sourcing /home/raytracer/.config/nvim/plugged/ale/autoload/ale/events.vim
+181.744  002.962  002.746: sourcing /home/raytracer/.config/nvim/plugged/ale/plugin/ale.vim
+188.971  006.997  006.997: sourcing /home/raytracer/.config/nvim/plugged/emmet-vim/plugin/emmet.vim
+191.731  002.354  002.354: sourcing /home/raytracer/.fzf/plugin/fzf.vim
+194.394  002.339  002.339: sourcing /home/raytracer/.config/nvim/plugged/fzf.vim/plugin/fzf.vim
+196.519  001.731  001.731: sourcing /home/raytracer/.config/nvim/plugged/vim-sandwich/plugin/operator/sandwich.vim
+197.352  000.746  000.746: sourcing /home/raytracer/.config/nvim/plugged/vim-sandwich/plugin/sandwich.vim
+198.191  000.757  000.757: sourcing /home/raytracer/.config/nvim/plugged/vim-sandwich/plugin/textobj/sandwich.vim
+199.858  001.434  001.434: sourcing /home/raytracer/.config/nvim/plugged/vim-multiple-cursors/plugin/multiple_cursors.vim
+200.066  000.027  000.027: sourcing /home/raytracer/.config/nvim/plugged/vim-pandoc-syntax/plugin/pandoc-syntax-check.vim
+201.159  000.219  000.219: sourcing /home/raytracer/.config/nvim/plugged/vim-airline/autoload/airline/init.vim
+202.499  000.230  000.230: sourcing /home/raytracer/.config/nvim/plugged/vim-airline/autoload/airline/parts.vim
+207.291  000.464  000.464: sourcing /home/raytracer/.config/nvim/plugged/vim-airline/autoload/airline/util.vim
+207.580  007.352  006.439: sourcing /home/raytracer/.config/nvim/plugged/vim-airline/plugin/airline.vim
+207.910  000.122  000.122: sourcing /home/raytracer/.config/nvim/plugged/vim-airline-themes/plugin/airline-themes.vim
+211.175  000.409  000.409: sourcing /home/raytracer/.config/nvim/plugged/vim-airline/autoload/airline.vim
+215.841  007.646  007.238: sourcing /home/raytracer/.config/nvim/plugged/vim-devicons/plugin/webdevicons.vim
+216.415  000.277  000.277: sourcing /home/raytracer/.config/nvim/plugged/bclose.vim/plugin/bclose.vim
+216.796  000.130  000.130: sourcing /home/raytracer/.config/nvim/plugged/limelight.vim/plugin/limelight.vim
+217.312  000.055  000.055: sourcing /home/raytracer/.config/nvim/plugged/goyo.vim/plugin/goyo.vim
+218.481  000.242  000.242: sourcing /home/raytracer/.config/nvim/plugged/coc.nvim/autoload/coc/rpc.vim
+220.480  001.496  001.496: sourcing /home/raytracer/.config/nvim/plugged/coc.nvim/autoload/coc/util.vim
+222.215  000.496  000.496: sourcing /home/raytracer/.config/nvim/plugged/coc.nvim/autoload/coc/client.vim
+233.990  016.480  014.246: sourcing /home/raytracer/.config/nvim/plugged/coc.nvim/plugin/coc.vim
+235.017  000.644  000.644: sourcing /home/raytracer/.config/nvim/plugged/vim-commentary/plugin/commentary.vim
+237.094  000.313  000.313: sourcing /home/raytracer/.config/nvim/plugged/ultisnips/autoload/UltiSnips/map_keys.vim
+237.624  002.361  002.048: sourcing /home/raytracer/.config/nvim/plugged/ultisnips/plugin/UltiSnips.vim
+238.070  000.139  000.139: sourcing /home/raytracer/.config/nvim/plugged/vim-snippets/plugin/vimsnippets.vim
+238.625  000.351  000.351: sourcing /home/raytracer/.config/nvim/plugged/lf.vim/plugin/lf.vim
+242.885  001.484  001.484: sourcing /home/raytracer/.config/nvim/plugged/vim-repeat/autoload/repeat.vim
+243.210  004.416  002.933: sourcing /home/raytracer/.config/nvim/plugged/vim-grepper/plugin/grepper.vim
+244.693  001.217  001.217: sourcing /home/raytracer/.config/nvim/plugged/vim-lion/plugin/lion.vim
+246.152  001.229  001.229: sourcing /home/raytracer/.config/nvim/plugged/vim-signify/plugin/signify.vim
+246.837  000.474  000.474: sourcing /home/raytracer/.config/nvim/plugged/undotree/plugin/undotree.vim
+252.609  005.605  005.605: sourcing /home/raytracer/.config/nvim/plugged/vim-fugitive/plugin/fugitive.vim
+256.618  003.720  003.720: sourcing /home/raytracer/.config/nvim/plugged/tagbar/plugin/tagbar.vim
+258.236  000.273  000.273: sourcing /home/raytracer/.config/nvim/plugged/vim-hexokinase/autoload/hexokinase/v2.vim
+259.164  002.256  001.983: sourcing /home/raytracer/.config/nvim/plugged/vim-hexokinase/plugin/hexokinase.vim
+259.822  000.415  000.415: sourcing /home/raytracer/.config/nvim/plugged/vim-visual-star-search/plugin/visual-star-search.vim
+262.234  002.198  002.198: sourcing /home/raytracer/.config/nvim/plugged/quick-scope/plugin/quick_scope.vim
+263.070  000.585  000.585: sourcing /home/raytracer/.config/nvim/plugged/vim-startify/plugin/startify.vim
+264.922  001.018  001.018: sourcing /usr/share/nvim/runtime/plugin/gzip.vim
+265.144  000.106  000.106: sourcing /usr/share/nvim/runtime/plugin/health.vim
+265.808  000.611  000.611: sourcing /usr/share/nvim/runtime/plugin/man.vim
+268.630  001.076  001.076: sourcing /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim
+268.855  002.954  001.878: sourcing /usr/share/nvim/runtime/plugin/matchit.vim
+269.639  000.701  000.701: sourcing /usr/share/nvim/runtime/plugin/matchparen.vim
+271.931  002.203  002.203: sourcing /usr/share/nvim/runtime/plugin/netrwPlugin.vim
+274.692  001.008  001.008: sourcing /usr/share/nvim/runtime/autoload/remote/host.vim
+276.819  001.044  001.044: sourcing /usr/share/nvim/runtime/autoload/remote/define.vim
+279.479  006.828  004.777: sourcing /home/raytracer/.local/share/nvim/rplugin.vim
+279.517  007.465  000.637: sourcing /usr/share/nvim/runtime/plugin/rplugin.vim
+280.294  000.671  000.671: sourcing /usr/share/nvim/runtime/plugin/shada.vim
+280.466  000.096  000.096: sourcing /usr/share/nvim/runtime/plugin/spellfile.vim
+281.131  000.612  000.612: sourcing /usr/share/nvim/runtime/plugin/tarPlugin.vim
+281.482  000.277  000.277: sourcing /usr/share/nvim/runtime/plugin/tohtml.vim
+281.602  000.068  000.068: sourcing /usr/share/nvim/runtime/plugin/tutor.vim
+282.418  000.766  000.766: sourcing /usr/share/nvim/runtime/plugin/zipPlugin.vim
+282.767  000.082  000.082: sourcing /usr/share/vim/vimfiles/plugin/fzf.vim
+282.787  011.323: loading plugins
+283.154  000.367: loading packages
+284.230  000.567  000.567: sourcing /home/raytracer/.config/nvim/plugged/ultisnips/after/plugin/UltiSnips_after.vim
+284.307  000.586: loading after plugins
+284.362  000.055: inits 3
+295.241  010.879: reading ShaDa
+298.265  001.296  001.296: sourcing /home/raytracer/.config/nvim/plugged/syntastic/autoload/syntastic/log.vim
+300.047  001.181  001.181: sourcing /home/raytracer/.config/nvim/plugged/vim-airline/autoload/airline/extensions.vim
+300.845  000.392  000.392: sourcing /home/raytracer/.config/nvim/plugged/vim-airline/autoload/airline/extensions/quickfix.vim
+301.680  000.227  000.227: sourcing /home/raytracer/.config/nvim/plugged/vim-airline/autoload/airline/extensions/netrw.vim
+302.838  000.364  000.364: sourcing /home/raytracer/.config/nvim/plugged/vim-airline/autoload/airline/section.vim
+304.406  000.961  000.961: sourcing /home/raytracer/.config/nvim/plugged/vim-airline/autoload/airline/highlighter.vim
+304.990  002.920  001.596: sourcing /home/raytracer/.config/nvim/plugged/vim-airline/autoload/airline/extensions/term.vim
+305.692  000.122  000.122: sourcing /home/raytracer/.config/nvim/plugged/vim-airline/autoload/airline/extensions/undotree.vim
+306.370  000.328  000.328: sourcing /home/raytracer/.config/nvim/plugged/vim-airline/autoload/airline/extensions/hunks.vim
+306.936  000.170  000.170: sourcing /home/raytracer/.config/nvim/plugged/vim-airline/autoload/airline/extensions/tagbar.vim
+308.008  000.511  000.511: sourcing /home/raytracer/.config/nvim/plugged/vim-airline/autoload/airline/extensions/branch.vim
+308.702  000.169  000.169: sourcing /home/raytracer/.config/nvim/plugged/vim-airline/autoload/airline/extensions/fugitiveline.vim
+309.409  000.157  000.157: sourcing /home/raytracer/.config/nvim/plugged/vim-airline/autoload/airline/extensions/syntastic.vim
+310.049  000.223  000.223: sourcing /home/raytracer/.config/nvim/plugged/vim-airline/autoload/airline/extensions/ale.vim
+311.260  000.162  000.162: sourcing /home/raytracer/.config/nvim/plugged/vim-airline/autoload/airline/extensions/coc.vim
+312.031  000.138  000.138: sourcing /home/raytracer/.config/nvim/plugged/vim-airline/autoload/airline/extensions/po.vim
+312.611  000.237  000.237: sourcing /home/raytracer/.config/nvim/plugged/vim-airline/autoload/airline/extensions/wordcount.vim
+313.206  000.084  000.084: sourcing /home/raytracer/.config/nvim/plugged/vim-airline/autoload/airline/extensions/grepper.vim
+313.684  000.078  000.078: sourcing /home/raytracer/.config/nvim/plugged/vim-airline/autoload/airline/extensions/keymap.vim
+333.587  000.159  000.159: sourcing /home/raytracer/.config/nvim/plugged/vim-airline/autoload/airline/themes.vim
+334.542  001.588  001.430: sourcing /home/raytracer/.config/nvim/plugged/vim-airline-themes/autoload/airline/themes/base16_eighties.vim
+343.017  001.008  001.008: sourcing /home/raytracer/.config/nvim/plugged/vim-airline-themes/autoload/airline/themes/base16_eighties.vim
+404.786  000.428  000.428: sourcing /home/raytracer/.config/nvim/plugged/vim-airline/autoload/airline/builder.vim
+406.504  000.256  000.256: sourcing /home/raytracer/.config/nvim/plugged/vim-airline/autoload/airline/extensions/default.vim
+481.907  174.993: opening buffers
+483.998  000.277  000.277: sourcing /home/raytracer/.config/nvim/plugged/vim-signify/autoload/sy.vim
+484.387  002.202: BufEnter autocommands
+484.397  000.011: editing files in windows
+485.368  000.260  000.260: sourcing /home/raytracer/.config/nvim/plugged/vim-hexokinase/autoload/hexokinase/v2/scraper.vim
+486.417  000.271  000.271: sourcing /home/raytracer/.config/nvim/plugged/vim-hexokinase/autoload/hexokinase/utils.vim
+533.701  042.574  042.574: sourcing /home/raytracer/.config/nvim/plugged/vim-startify/autoload/startify.vim
+566.240  001.660  001.660: sourcing /home/raytracer/.config/nvim/plugged/vim-startify/autoload/startify/fortune.vim
+953.300  022.445  022.445: sourcing /home/raytracer/.config/nvim/plugged/vim-startify/syntax/startify.vim
+970.197  000.487  000.487: sourcing /home/raytracer/.config/nvim/plugged/ale/autoload/ale.vim
+971.366  000.671  000.671: sourcing /home/raytracer/.config/nvim/plugged/ale/autoload/ale/util.vim
+989.648  436.884: VimEnter autocommands
+989.680  000.032: UIEnter autocommands
+989.704  000.024: before starting main loop
+1046.548  056.844: first screen update
+1046.567  000.019: --- NVIM STARTED ---

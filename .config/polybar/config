@@ -57,7 +57,7 @@ height = 16
 offset-x = 0
 offset-y = 0
 
-override-redirect = true
+; override-redirect = true
 
 ; Position
 bottom = false
@@ -222,9 +222,9 @@ label-urgent-padding    = 1
 ; format-prefix-background = ${colors.blue}
 
 ; format-suffix = "%{T3}%{T-}"
-format-suffix = "%{T3}%{T-}"
-format-suffix-foreground = ${colors.foreground}
-format-suffix-background = ${colors.blue}
+; format-suffix = "%{T3}%{T-}"
+; format-suffix-foreground = ${colors.foreground}
+; format-suffix-background = ${colors.blue}
 
 type = internal/xwindow
 label = %title:0:35:...%
@@ -348,11 +348,11 @@ format-discharging-background = ${colors.blue}
 format-discharging-foreground = ${colors.light-white}
 
 ;label-charging-background = ${colors.background}
-label-charging = %{A1:notify-send "$(cat /sys/class/power_supply/BAT0/uevent)":}Ch %percentage%%%{A}
+label-charging = %{A1:notify-send -t 5000 "$(cat /sys/class/power_supply/BAT0/uevent)":}Ch %percentage%%%{A}
 format-charging-padding = 1
 
 ;label-discharging-background = ${colors.background}
-label-discharging = %{A1:notify-send "$(cat /sys/class/power_supply/BAT0/uevent)":}Dis %percentage%%%{A}
+label-discharging = %{A1:notify-send -t 5000 "$(cat /sys/class/power_supply/BAT0/uevent)":}Dis %percentage%%%{A}
 format-discharging-padding = 1
 
 format-full = <label-full>
@@ -360,7 +360,7 @@ format-full = <label-full>
 format-full-background = ${colors.blue}
 format-full-foreground = ${colors.light-white}
 format-full-padding = 1
-label-full = %{A1:notify-send "$(cat /sys/class/power_supply/BAT0/uevent)":} Full%{A}
+label-full = %{A1:notify-send -t 5000 "$(cat /sys/class/power_supply/BAT0/uevent)":} Full%{A}
 ; label-full-padding = 1
 
 ramp-capacity-4 = " "
@@ -524,7 +524,7 @@ time = %H:%M:%S
 ; date = %A, %d %B
 
 ; Label
-label            = %{A1:notify-send "$(cal)":} %time%%{A}
+label            = %{A1:notify-send -t 5000 "$(cal)":} %time%%{A}
 ; label            = time: %time%  date: %date%
 label-foreground = ${colors.light-white}
 label-background = ${colors.blue}

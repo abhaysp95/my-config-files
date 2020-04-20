@@ -2,8 +2,8 @@ sw_volume: 100
 audio_device_state:1:pulse audio
 audio_device_state:1:toggle_visualizer
 state: play
-current: 986
-time: 130.451000
+current: 1147
+time: 3.881000
 random: 1
 repeat: 0
 single: 0
@@ -1253,4 +1253,5 @@ playlist_begin
 1238:youtube/punjabi_songs/SAHIBA ( BASS BOOSTED ) Simiran Kaur Dhadli _ LATEST BASS BOOSTED PUNJABI SONGS 2019-0ipENYgonqU.m4a
 1239:youtube/punjabi_songs/8 Parche _ Baani Sandhu _ Gur Sidhu _ Gurneet Dosanjh _ New Punjabi Song 2019 _ White Hill Music.mp3
 1240:youtube/punjabi_songs/Challa Punjabi Song _ Amit, Afsana Khan _ Enzo _ New Punjabi Song 2020  - PunjabiSong2020.mp3
+1241:youtube/punjabi_songs/Tu Hi Das De _ Tedi Pagg _ Simar Panag ft. Mickey Singh _ Latest Punjabi Songs 2020-vvRo5tOU32Q.mp3
 playlist_end

@@ -9,7 +9,8 @@
 "
 
 
-let mapleader =","
+let mapleader = ","
+let maplocalleader = "`"
 
 "-------All-the-plugins-for-vim-and-nvim---------------------- <<<
 call plug#begin()
@@ -22,7 +23,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'machakann/vim-sandwich'
 
-Plug 'mattn/calendar-vim'
+" Plug 'mattn/calendar-vim'
 Plug 'terryma/vim-multiple-cursors'
 
 Plug 'vim-pandoc/vim-pandoc-syntax'
@@ -33,7 +34,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'ayu-theme/ayu-vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'tomasiser/vim-code-dark'
-Plug 'dracula/vim',{'as':'dracula'}
 Plug 'lifepillar/vim-solarized8'
 Plug 'ryanoasis/vim-devicons'
 Plug 'sjl/badwolf'
@@ -63,8 +63,6 @@ Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'ptzz/lf.vim'
-Plug 'scrooloose/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
 
 Plug 'mhinz/vim-grepper'
 Plug 'sheerun/vim-polyglot'
@@ -131,7 +129,7 @@ map <leader>F :Goyo \| set background=dark\| set linebreak<CR>
     autocmd! User GoyoLeave Limelight!
 	" >>>"
 
-" reduces stretching of hand
+" reduces stretching of hand(has side-effects)
 " map : to ; and ; to :
 " nnoremap ;	:
 " nnoremap :	;
@@ -149,7 +147,8 @@ set linebreak
 set autoindent
 set autoread
 set backspace=indent,eol,start
-set clipboard+=unnamedplus
+" set clipboard+=xclip
+set clipboard+=unnamed,unnamedplus
 set complete+=kspell
 set completeopt=menuone,preview,longest
 " set cryptmethod=blowfish2
@@ -177,7 +176,7 @@ set laststatus=2
 set lazyredraw
 set matchpairs+=<:> " Use % to jump between pairs
 set mmp=10000
-set noshowmode	" doesn't shows vim mode(which is showm below statusbar)
+" set noshowmode	" doesn't shows vim mode(which is showm below statusbar)
 set modelines=2
 set noerrorbells visualbell t_vb=
 set noshiftround
@@ -201,6 +200,10 @@ set whichwrap=b,s,<,>
 set wrap
 set modifiable
 set wrap
+" set mps+=<:>
+" set mps+=":"
+" set mps+=':'
+autocmd FileType c,cpp,java set mps+==:;
 
 " better search in vim ------------
 set hlsearch
@@ -336,7 +339,8 @@ hi SpellCap cterm=underline
 	syntax on
 "	set number relativenumber
 	inoremap j' <ESC>
-	inoremap \<Space> <Esc>/<++><Enter>"_c4l
+	" inoremap <localleader><Space> <Esc>/<++><Enter>"_c4l
+	inoremap <M-Space> <Esc>/<++><Enter>"_c4l
 
 	" some custom snipptes <<<
 	autocmd FileType html inoremap ;i <em></em><Space><++><Esc>FeT>i
@@ -396,14 +400,14 @@ let g:UltiSnipsEditSplit="vertical"
 " >>>
 
 " movement in insert mode <<<
-inoremap <C-k> <Up>
-inoremap <C-j> <Down>
-inoremap <C-h> <Left>
-inoremap <C-l> <Right>
-snoremap <C-k> <Up>
-snoremap <C-j> <Down>
-snoremap <C-h> <Left>
-snoremap <C-l> <Right>
+inoremap <M-k> <Up>
+inoremap <M-j> <Down>
+inoremap <M-h> <Left>
+inoremap <M-l> <Right>
+snoremap <M-k> <Up>
+snoremap <M-j> <Down>
+snoremap <M-h> <Left>
+snoremap <M-l> <Right>
 " >>>
 
 " source ~/.config/nvim/statusline.vim		" goerge b(from vim group)
@@ -463,41 +467,42 @@ let g:lightline = {
 " >>>
 
 " colorscheme configuration <<<
-	" source "$HOME/.config/nvim/plugged/gruvbox/gruvbox_256palette.sh"
-    let base16colorspace=256
-	set background=dark
-    " source this to your profile
-    let g:gruvbox_bold='1'
-    let g:gruvbox_italic='1'
-    let g:gruvbox_undercurl='1'
-    let g:gruvbox_termcolors='256'
-    let g:gruvbox_underline='1'
-    "let g:gruvbox_contrast='hard'
-    let g:gruvbox_italicize_comments='1'
-    let g:gruvbox_italicize_strings='1'
-    let g:gruvbox_impoved_strings='1'
-    let g:gruvbox_impoved_warnings='1'
-    "let g:gruvbox_contrast_dark='hard'
-    let g:gruvbox_contrast_light='hard'
-    "highlight Normal ctermbg=NONE
-	let g:spacegray_underline_search = 1
-	let g:spacegray_italicize_comments = 1
-	let ayucolor="light"
-	" nord colorscheme settings"
-	let g:nord_cursor_line_number_background = 0
-	let g:nord_uniform_status_line = 0
-	let g:nord_bold_vertical_split_line = 0
-	let g:nord_uniform_diff_background = 0
-	let g:nord_bold = 1
-	let g:nord_italic = 1
-	let g:nord_italic_comments = 1
-	let g:nord_underline = 1
-	"let ayucolor="mirage"
-	"let ayucolor="dark"
-	colorscheme base16-eighties
-    set go=a
-    highlight Comment cterm=italic gui=italic
-    highlight Search ctermbg=black ctermfg=yellow term=underline
+" source "$HOME/.config/nvim/plugged/gruvbox/gruvbox_256palette.sh"
+let base16colorspace=256
+set background=dark
+" source this to your profile
+let g:gruvbox_bold='1'
+let g:gruvbox_italic='1'
+let g:gruvbox_undercurl='1'
+let g:gruvbox_termcolors='256'
+let g:gruvbox_underline='1'
+"let g:gruvbox_contrast='hard'
+let g:gruvbox_italicize_comments='1'
+let g:gruvbox_italicize_strings='1'
+let g:gruvbox_impoved_strings='1'
+let g:gruvbox_impoved_warnings='1'
+"let g:gruvbox_contrast_dark='hard'
+let g:gruvbox_contrast_light='hard'
+"highlight Normal ctermbg=NONE
+let g:spacegray_underline_search = 1
+let g:spacegray_italicize_comments = 1
+let ayucolor="light"
+" nord colorscheme settings"
+let g:nord_cursor_line_number_background = 0
+let g:nord_uniform_status_line = 0
+let g:nord_bold_vertical_split_line = 0
+let g:nord_uniform_diff_background = 0
+let g:nord_bold = 1
+let g:nord_italic = 1
+let g:nord_italic_comments = 1
+let g:nord_underline = 1
+"let ayucolor="mirage"
+"let ayucolor="dark"
+colorscheme base16-eighties
+set go=a
+highlight Comment cterm=italic gui=italic
+highlight Search ctermbg=black ctermfg=yellow term=underline
+hi SignColumn ctermbg=255 guibg=255 gui=bold
 " >>>
 
 " Disables automatic commenting on newline
@@ -685,7 +690,21 @@ inoremap <expr> <S-space> (pumvisible() ? (col('.') > 1 ? '<Esc>i<Right>' : '<Es
 autocmd QuickFixCmdPost [^l] * nested cwindow
 
 
-"
+" statusline learning <<<
+set statusline=
+set statusline+=\ %r	" readonly flag
+set statusline+=\ %0.20F	" F for full path, t for tail only
+set statusline+=\ %y	" display filetype
+set statusline+=\ %m	" if file modified
+
+set statusline+=%=		    " right side
+set statusline+=\ %l/%L  " column:line:totalnumberoflines
+set statusline+=\ %4p%% 	    " set line %
+" set statusline+=\ %b 		" value of character under cursor
+set statusline+=\ %3c
+set statusline+=\ [%n] 	    " gives buffer number
+" >>>
+
 " Syntastic Configuration   #Check :help Syntastic <<<
 	set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
     set statusline+=%#warningmsg#
@@ -802,6 +821,7 @@ nnoremap <C-p> :cprev<CR>
 	let g:airline#extensions#tabline#enabled=0
 	let g:airline#extensions#tabline#show_splits = 1
 	let g:airline#extensions#tabline#show_buffers = 1
+	" let g:airline#extensions#bufferline#enabled = 1
 	let g:airline#extensions#tabline#buffer_nr_show = 1
 	let g:airline#extensions#tabline#buffer_idx_show = 1
 	let g:airline#extensions#tabline#tab_nr_type = 1
@@ -862,12 +882,12 @@ nnoremap <C-p> :cprev<CR>
 " >>>
 
 " scrooloose/nerdtree <<<
-let g:NERDTreeShowHidden=1
-let g:NERDTreeAutoDeleteBuffer=1
+" let g:NERDTreeShowHidden=1
+" let g:NERDTreeAutoDeleteBuffer=1
 " NERDTree conf
 
 " Open nerdtree at the current file or close nerd tree if pressed again
-nnoremap <silent> <expr> <leader>nn g:NERDTree.IsOpen() ? "\:NERDTreeClose<CR>" : bufexists(expand('%')) ? "\:NERDTreeFind<CR>" : "\:NERDTree<CR>"
+" nnoremap <silent> <expr> <leader>nn g:NERDTree.IsOpen() ? "\:NERDTreeClose<CR>" : bufexists(expand('%')) ? "\:NERDTreeFind<CR>" : "\:NERDTree<CR>"
 
 " --------- settings below slows down vim opening for a second
 
@@ -890,8 +910,8 @@ nnoremap <silent> <expr> <leader>nn g:NERDTree.IsOpen() ? "\:NERDTreeClose<CR>" 
 " endfunction
 
 " " changing opening and closing arrow of NERDTree
-let g:NERDTreeDirArrowExpandable  = "▷"
-let g:NERDTreeDirArrowCollapsible = "◢"
+" let g:NERDTreeDirArrowExpandable  = "▷"
+" let g:NERDTreeDirArrowCollapsible = "◢"
 
 " " Higlight currently open buffer in NERDTree
 " autocmd BufEnter * call SyncTree()
@@ -1009,10 +1029,15 @@ noremap <Leader>Y "+y
 noremap <Leader>P "+p
 " >>>
 
+" some abbreviations <<<
+iabbrev Name Abhay Shanker Pathak
+iabbrev ppywar pylint: disable=W
+" >>>
+
 " search :h ins-completion for auto-complete
 " snippet reading <<<
-nnoremap \mainc :read $HOME/.vim/.skeleton/main.c<CR>ji<C-i>
-nnoremap \incc :read $HOME/.vim/.skeleton/include.c<CR>ji
+" nnoremap \mainc :read $HOME/.vim/.skeleton/main.c<CR>ji<C-i>
+" nnoremap \incc :read $HOME/.vim/.skeleton/include.c<CR>ji
 " >>>
     " use -1 read if you want snippet on the cursor line
 
@@ -1296,6 +1321,9 @@ echom '(>^.^<)'
 " Plug 'tpope/vim-unimpaired'
 " Plug 'itchyny/lightline.vim'
 " Plug 'tpope/vim-surround'
+" Plug 'scrooloose/nerdtree'
+" Plug 'dracula/vim',{'as':'dracula'}
+" Plug 'Xuyuanp/nerdtree-git-plugin'
 " Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
 " Plug 'airblade/vim-gitgutter'
 "Plug 'tpope/vim-git'
@@ -1335,3 +1363,9 @@ echom '(>^.^<)'
 " Plug 'vimwiki/vimwiki'
 " Plug 'jiangmiao/auto-pairs'
 " >>>
+
+" learning some new things
+" nnoremap <buffer> <localleader>x dd
+autocmd BufNewFile * :write
+autocmd BufWritePre,BufRead *.html :normal gg=G
+autocmd BufNewFile,BufRead *.html :setlocal nowrap
