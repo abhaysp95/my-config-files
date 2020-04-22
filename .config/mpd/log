@@ -22832,3 +22832,170 @@ Apr 20 22:02 : client: [48] closed
 Apr 20 22:02 : client: [49] opened from 127.0.0.1:48278
 Apr 20 22:02 : client: [49] closed
 Apr 20 22:02 : player: played "m4a/Daru_Badnaam___Kamal_Kahlon___Param_Singh___Official_Video___Latest_Punjabi_Vira.m4a"
+Apr 20 22:06 : player: played "mp3/Tamma Tamma Again-(Mr-Jatt.com).mp3"
+Apr 20 22:09 : player: played "mp3/EMIWAY - MACHAYENGE  (PROD BY.TONY JAMES).mp3"
+Apr 20 22:11 : client: [50] opened from 127.0.0.1:48314
+Apr 20 22:11 : client: [50] closed
+Apr 20 22:11 : client: [51] opened from 127.0.0.1:48318
+Apr 20 22:11 : client: [51] closed
+Apr 20 22:15 : player: played "mp3/पागल बनाइबे Pagal Banaibe _ Dabangg Sarkar _ Khesari Lal Yadav & Priyanka Singh.mp3"
+Apr 21 06:52 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 21 06:52 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 21 07:08 : client: [0] opened from 127.0.0.1:54938
+Apr 21 07:08 : client: [0] closed
+Apr 21 09:14 : client: [1] opened from 127.0.0.1:55532
+Apr 21 09:14 : exception: Failed to open /home/raytracer/.config/mpd/playlists: No such file or directory
+Apr 21 09:14 : client: [2] opened from 127.0.0.1:55536
+Apr 21 09:14 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 21 09:14 : client: [2] closed
+Apr 21 09:14 : client: [3] opened from 127.0.0.1:55540
+Apr 21 09:14 : client: [3] closed
+Apr 21 09:14 : client: [4] opened from 127.0.0.1:55544
+Apr 21 09:14 : client: [4] closed
+Apr 21 09:14 : client: [5] opened from 127.0.0.1:55548
+Apr 21 09:14 : client: [5] closed
+Apr 21 09:14 : client: [6] opened from 127.0.0.1:55552
+Apr 21 09:14 : client: [6] closed
+Apr 21 09:14 : client: [7] opened from 127.0.0.1:55556
+Apr 21 09:14 : client: [7] closed
+Apr 21 09:14 : client: [8] opened from 127.0.0.1:55560
+Apr 21 09:14 : client: [8] closed
+Apr 21 09:14 : client: [9] opened from 127.0.0.1:55564
+Apr 21 09:14 : client: [9] closed
+Apr 21 09:14 : client: [10] opened from 127.0.0.1:55568
+Apr 21 09:14 : client: [10] closed
+Apr 21 09:14 : client: [11] opened from 127.0.0.1:55572
+Apr 21 09:14 : client: [11] closed
+Apr 21 09:14 : client: [12] opened from 127.0.0.1:55576
+Apr 21 09:14 : client: [12] closed
+Apr 21 09:14 : client: [13] opened from 127.0.0.1:55580
+Apr 21 09:14 : client: [13] closed
+Apr 21 09:14 : client: [14] opened from 127.0.0.1:55584
+Apr 21 09:14 : client: [14] closed
+Apr 21 09:14 : client: [15] opened from 127.0.0.1:55588
+Apr 21 09:14 : client: [15] closed
+Apr 21 09:14 : client: [16] opened from 127.0.0.1:55592
+Apr 21 09:14 : client: [16] closed
+Apr 21 09:14 : client: [17] opened from 127.0.0.1:55596
+Apr 21 09:14 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Apr 21 09:14 : client: [17] closed
+Apr 21 09:14 : client: [18] opened from 127.0.0.1:55600
+Apr 21 09:14 : client: [18] closed
+Apr 21 09:58 : client: [19] opened from 127.0.0.1:55634
+Apr 21 09:58 : client: [19] closed
+Apr 21 09:58 : client: [20] opened from 127.0.0.1:55638
+Apr 21 09:58 : client: [20] closed
+Apr 21 11:38 : client: [21] opened from 127.0.0.1:56024
+Apr 21 11:38 : client: [21] closed
+Apr 21 11:38 : client: [22] opened from 127.0.0.1:56028
+Apr 21 11:38 : client: [22] closed
+Apr 21 11:41 : player: played "m4a/Bazzi - Beautiful feat. Camila (Official Audio) [BWC9OS45HAM].m4a"
+Apr 21 11:46 : player: played "mp3/P!nk - What About Us (Official Music Video).mp3"
+Apr 21 11:46 : client: [23] opened from 127.0.0.1:56070
+Apr 21 11:46 : client: [23] closed
+Apr 21 11:46 : client: [24] opened from 127.0.0.1:56074
+Apr 21 11:46 : client: [24] closed
+Apr 21 12:13 : client: [25] opened from 127.0.0.1:56552
+Apr 21 12:13 : client: [25] closed
+Apr 21 12:13 : client: [26] opened from 127.0.0.1:56556
+Apr 21 12:13 : client: [26] closed
+Apr 21 12:13 : client: [27] opened from 127.0.0.1:56560
+Apr 21 12:13 : client: [27] closed
+Apr 21 12:13 : client: [28] opened from 127.0.0.1:56564
+Apr 21 12:13 : client: [28] closed
+Apr 21 12:13 : client: [29] opened from 127.0.0.1:56568
+Apr 21 12:13 : client: [29] closed
+Apr 21 12:13 : client: [30] opened from 127.0.0.1:56572
+Apr 21 12:13 : client: [30] closed
+Apr 21 12:13 : client: [31] opened from 127.0.0.1:56576
+Apr 21 12:13 : client: [31] closed
+Apr 21 12:13 : client: [32] opened from 127.0.0.1:56580
+Apr 21 12:13 : client: [32] closed
+Apr 21 12:13 : client: [33] opened from 127.0.0.1:56584
+Apr 21 12:13 : client: [33] closed
+Apr 21 12:13 : client: [34] opened from 127.0.0.1:56588
+Apr 21 12:13 : client: [34] closed
+Apr 21 12:13 : client: [35] opened from 127.0.0.1:56592
+Apr 21 12:13 : client: [35] closed
+Apr 21 12:13 : client: [36] opened from 127.0.0.1:56596
+Apr 21 12:13 : client: [36] closed
+Apr 21 14:04 : client: [1] closed
+Apr 21 14:04 : client: [37] opened from 127.0.0.1:56682
+Apr 21 14:04 : exception: Failed to open /home/raytracer/.config/mpd/playlists: No such file or directory
+Apr 21 14:04 : client: [38] opened from 127.0.0.1:56686
+Apr 21 14:04 : client: [38] closed
+Apr 21 14:04 : client: [39] opened from 127.0.0.1:56690
+Apr 21 14:04 : client: [39] closed
+Apr 21 14:04 : client: [40] opened from 127.0.0.1:56694
+Apr 21 14:04 : client: [40] closed
+Apr 21 14:04 : client: [41] opened from 127.0.0.1:56698
+Apr 21 14:04 : client: [41] closed
+Apr 21 14:35 : client: [42] opened from 127.0.0.1:57124
+Apr 21 14:35 : client: [42] closed
+Apr 21 14:35 : client: [43] opened from 127.0.0.1:57128
+Apr 21 14:35 : client: [43] closed
+Apr 21 14:39 : player: played "mp3/Yo Yo Honey Singh Aankhon Aankhon (Film Version) FULL VIDEO Song  Bhaag Johnny   T-Series.mp3"
+Apr 21 14:41 : player: played "mp3/Tu Laung Main Elaachi - Luka Chuppi.mp3"
+Apr 21 14:44 : player: played "mp3/Jiya Re - Vidya Vox Cover Mashup 320Kbps.mp3"
+Apr 21 14:48 : player: played "m4a/One_Direction_-_Drag_Me_Down_(Official_Video).m4a"
+Apr 21 14:51 : player: played "m4a/Cold_Water_(Remix)_-_Don_Omar_Ft_Justin_Bieber,_Major_Lazer_Y_MØ_(Oficial_Audio).m4a"
+Apr 21 14:54 : player: played "mp3/Zara Larsson - Ain't My Fault (J HUS & FRED VIP Remix) (DawnFoxes.com).mp3"
+Apr 21 14:55 : client: [37] closed
+Apr 21 14:55 : client: [44] opened from 127.0.0.1:57210
+Apr 21 14:55 : exception: Failed to open /home/raytracer/.config/mpd/playlists: No such file or directory
+Apr 21 14:55 : client: [45] opened from 127.0.0.1:57214
+Apr 21 14:55 : client: [45] closed
+Apr 21 14:55 : client: [46] opened from 127.0.0.1:57218
+Apr 21 14:55 : client: [46] closed
+Apr 21 18:59 : client: [47] opened from 127.0.0.1:58032
+Apr 21 18:59 : client: [47] closed
+Apr 21 18:59 : client: [48] opened from 127.0.0.1:58036
+Apr 21 18:59 : client: [48] closed
+Apr 21 18:59 : client: [49] opened from 127.0.0.1:58040
+Apr 21 18:59 : client: [49] closed
+Apr 21 18:59 : client: [50] opened from 127.0.0.1:58044
+Apr 21 18:59 : client: [50] closed
+Apr 21 19:49 : client: [51] opened from 127.0.0.1:58096
+Apr 21 19:49 : client: [51] closed
+Apr 21 19:49 : client: [52] opened from 127.0.0.1:58100
+Apr 21 19:49 : client: [52] closed
+Apr 21 19:51 : client: [53] opened from 127.0.0.1:58104
+Apr 21 19:51 : client: [53] closed
+Apr 21 19:51 : client: [54] opened from 127.0.0.1:58108
+Apr 21 19:51 : client: [54] closed
+Apr 21 20:01 : client: [55] opened from 127.0.0.1:58140
+Apr 21 20:01 : client: [55] closed
+Apr 21 20:01 : client: [56] opened from 127.0.0.1:58144
+Apr 21 20:01 : client: [56] closed
+Apr 21 20:02 : player: played "mp3/Bholenath - Sumit Goswami _ Kaka _ Shanky Goswami _ Deepesh Goyal _ Latest Haryanvi Song 2019.mp3"
+Apr 21 20:05 : player: played "mp3/Rabb Jane - Garry Sandhu 190Kbps.mp3"
+Apr 21 20:09 : player: played "mp3/One_Direction_-_Drag_Me_Down_(Official_Video).mp3"
+Apr 21 20:11 : client: [57] opened from 127.0.0.1:58166
+Apr 21 20:11 : client: [57] closed
+Apr 21 20:11 : client: [58] opened from 127.0.0.1:58170
+Apr 21 20:11 : client: [58] closed
+Apr 21 21:30 : client: [59] opened from 127.0.0.1:58720
+Apr 21 21:30 : client: [59] closed
+Apr 21 21:30 : client: [60] opened from 127.0.0.1:58724
+Apr 21 21:30 : client: [60] closed
+Apr 21 21:32 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Apr 21 21:32 : player: played "mp3/Queens_Of_The_Stone_Age_-_No_One_Knows.mp3"
+Apr 21 21:36 : client: [61] opened from 127.0.0.1:58730
+Apr 21 21:36 : client: [61] closed
+Apr 21 21:36 : client: [62] opened from 127.0.0.1:58734
+Apr 21 21:36 : client: [62] closed
+Apr 21 22:08 : client: [63] opened from 127.0.0.1:58804
+Apr 21 22:08 : client: [63] closed
+Apr 21 22:08 : client: [64] opened from 127.0.0.1:58808
+Apr 21 22:08 : client: [64] closed
+Apr 21 22:10 : player: played "m4a/चोलिया के हुक - Choliya Ke Hook Raja Ji  High Voltage Wali  Arvind Akela Kalluji  D.J Song [CUFLws2mdqU].m4a"
+Apr 21 22:14 : player: played "mp3/Dekhega Raja Trailer FULL VIDEO SONG _ Mastizaade _ Sunny Leone, Tusshar Kapoor, Vir Das _ T-Series.mp3"
+Apr 21 22:19 : player: played "m4a/The_Jon_Spencer_Blues_Explosion_-_Bellbottoms.m4a"
+Apr 21 22:23 : player: played "mp3/No Makeup (Bilal Saeed) - DJ Sanju n DJ Upendra Rax Remix.mp3"
+Apr 21 22:27 : player: played "mp3/DJ_Khaled__All_I_Do_Is_Win__feat._Ludacris,_Rick_Ross,_T-Pain___Snoop_Dogg___Vic.mp3"
+Apr 21 22:29 : client: [65] opened from 127.0.0.1:59048
+Apr 21 22:29 : client: [65] closed
+Apr 21 22:29 : client: [66] opened from 127.0.0.1:59052
+Apr 21 22:29 : client: [66] closed
+Apr 21 22:29 : client: [67] opened from 127.0.0.1:59056
+Apr 21 22:29 : client: [67] closed
