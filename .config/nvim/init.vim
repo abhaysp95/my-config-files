@@ -29,6 +29,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 
 " Theme / Interface
+Plug 'whatyouhide/vim-gotham'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ayu-theme/ayu-vim'
@@ -93,21 +94,8 @@ set runtimepath^=~/.config/nvim/plugged/dragvisuals
 " Colorcolumn settings <<<
 highlight ColorColumn ctermbg=red
 " although this is working, color isn't changing to red, it's still grey
-" set colorcolumn=81
 call matchadd('ColorColumn', '\%101v', 100)
-" have some fun
-" highlight ColorColumn ctermbg=red ctermfg=blue
-" exec 'set colorcolumn=' . join(range(2,80,3), ',')
 " >>>
-
-
-" always display status line
-
-" minimap customization
-" let g:minimap_highlight='Visual'
-
-" enbale highlighting current line
-"set cursorline
 
 " Limelight configuration <<<
     let g:limelight_conceal_ctermbg     = 'dark-gray'
@@ -129,11 +117,6 @@ map <leader>F :Goyo \| set background=dark\| set linebreak<CR>
     autocmd! User GoyoLeave Limelight!
 	" >>>"
 
-" reduces stretching of hand(has side-effects)
-" map : to ; and ; to :
-" nnoremap ;	:
-" nnoremap :	;
-
 " some set settings <<<
 " Set Proper Tabs
 set tabstop=4
@@ -147,13 +130,10 @@ set linebreak
 set autoindent
 set autoread
 set backspace=indent,eol,start
-" set clipboard+=xclip
 set clipboard+=unnamed,unnamedplus
 set complete+=kspell
 set completeopt=menuone,preview,longest
-" set cryptmethod=blowfish2
 set encoding=utf-8
-"set formatoptions=tcqrn1
 set hidden
 set termguicolors
 set t_Co=256
@@ -176,7 +156,6 @@ set laststatus=2
 set lazyredraw
 set matchpairs+=<:> " Use % to jump between pairs
 set mmp=10000
-" set noshowmode	" doesn't shows vim mode(which is showm below statusbar)
 set modelines=2
 set noerrorbells visualbell t_vb=
 set noshiftround
@@ -191,8 +170,6 @@ set spelllang=en_us
 set textwidth=0
 set ttimeout
 set mouse=a	"makes vim easy for others
-" set ttyfast
-" set ttymouse=sgr
 set undodir=/tmp
 set undofile
 set virtualedit=block
@@ -200,9 +177,6 @@ set whichwrap=b,s,<,>
 set wrap
 set modifiable
 set wrap
-" set mps+=<:>
-" set mps+=":"
-" set mps+=':'
 autocmd FileType c,cpp,java set mps+==:;
 
 " better search in vim ------------
@@ -256,74 +230,6 @@ hi SpellRare cterm=underline ctermfg=9
 hi SpellCap cterm=underline
 " >>>
 
-"-------- highlight search funtion <<<
-	" This rewires n and N to dot the highlighting
-	" nnoremap <silent> n		n:call HLNext(0.4)<cr>
-	" nnoremap <silent> N		N:call HLNext(0.4)<cr>
-
-" This one highlights whole line in which you are in
-	" function! HLNext (blinktime)
-	" 	set invcursorline
-	" 	redraw
-	" 	exec 'sleep' . float2nr(a:blinktime * 1000) . 'm'
-	" 	redraw
-	" endfunction
-	"
-" This one rings the match
-	" function! HLNext (blinktime)
-	"
-" This one rings the match
-	" function! HLNext (blinktime)
-	" 	highlight RedOnRed ctermfg=red ctermbg=red
-	" 	let [bufnum, lnum, col, off] = getpos('.')
-	" 	let matchlen = strlen(matchstr(strpart(getline('.'),col - 1),@/))
-	" 	echo matchlen
-	" 	let ring_pat = (lnum > 1 ? '\%'.(lnum - 1).'l\%>'.max([col-4,1]) .'v\%<'.(col+matchlen+3).'v.\|' : '')
-	" 				\ . '\%'.lnum.'l\%>'.max([col-4,1]) . 'v\%<'.col.'v.'
-	" 				\ . '\|'
-	" 				\ . '\%'.lnum.'l\%>'.max([col+matchlen-1,1]) .'v\%<'.(col+matchlen+3).'v.'
-	" 				\ . '\|'
-	" 				\ . '\%'.(lnum+1).'l\%>'.max([col-4,1]) .'v\%<'.(col+matchlen+3).'v.'
-	" 	let ring = matchadd('RedOnRed', ring_pat, 101)
-	" 	redraw
-	" 	exec 'sleep ' . float2nr(a:blinktime * 1000) . 'm'
-	" 	call matchdelete(ring)
-	" 	redraw
-	" endfunction
-	"
-" briefly hide everything except the match
-	" function! HLNext (blinktime)
-	" 	highlight BlackOnBlack ctermfg=black ctermbg=black
-	" 	let [bufnum, lnum, col, off] = getpos('.')
-	" 	let matchlen = strlen(matchstr(strpart(getline('.'),col-1),@/))
-	" 	let hide_pat = '\%<'.lnum.'l.'
-	" 			\ . '\|'
-	" 			\ . '\%'.lnum.'l\%'.col.'v.'
-	" 			\ . '\|'
-	" 			\ . '\%'.lnum.'l\%>'.(col+matchlen-1).'v.'
-	" 			\ . '\|'
-	" 			\ . '\%>'.lnum.'l.'
-	" 	let ring = matchadd('BlackOnBlack', hide_pat, 101)
-	" 	redraw
-	" 	exec 'sleep ' . float2nr(a:blinktime * 1000) . 'm'
-	" 	call matchdelete(ring)
-	" 	redraw
-	" endfunction
-	"
-" OR highlight match in red...
-    " function! HLNext (blinktime)
-    "     let [bufnum, lnum, col, off] = getpos('.')
-    "     let matchlen = strlen(matchstr(strpart(getline('.'),col-1),@/))
-    "     let target_pat = '\c\%#\%('.@/.'\)'
-    "     let ring = matchadd('WhiteOnRed', target_pat, 101)
-    "     redraw
-    "     exec 'sleep ' . float2nr(a:blinktime * 1000) . 'm'
-    "     call matchdelete(ring)
-    "     redraw
-    " endfunction
-" facing issue of INVALID ID: -1(must be greater than or equal to 1)
-" >>>
-
 " enable autocompletion
 	set wildmode=longest,list,full
 
@@ -351,8 +257,6 @@ hi SpellCap cterm=underline
 	autocmd FileType markdown inoremap ;sh ```sh<CR>```<CR><CR><++><Esc>2kO<C-i>
 	autocmd FileType markdown inoremap ;p ```python<CR>```<Esc>O
 	autocmd FileType markdown inoremap ;c ```c<CR>```<Esc>O
-	" autocmd FileType vimwiki inoremap ;p ```python<CR>```<Esc>O
-	" autocmd FileType vimwiki inoremap ;c ```c<CR>```<Esc>O
 	" >>>
 
 " some random setting <<<
@@ -360,14 +264,14 @@ hi SpellCap cterm=underline
 nnoremap <S-Tab> <C-w>w
 
 " Edit vim config file in a new tab
-map <Leader>ev                      : tabnew $MYVIMRC<CR>
+map <Leader>ev : tabnew $MYVIMRC<CR>
 
 " Source vim config file
-map <Leader>sv                      : source $MYVIMRC<CR>
+map <Leader>sv : source $MYVIMRC<CR>
 
 " Toggle relative line number
-nmap <F5>                           : set invrelativenumber number<CR>
-nmap <leader>N                      : set nonumber norelativenumber<CR>
+nmap <F5>      : set invrelativenumber number<CR>
+nmap <leader>N : set nonumber norelativenumber<CR>
 " >>>
 
 " Spell-check set to <leader>o, 'o' for 'orthography':
@@ -410,7 +314,7 @@ snoremap <M-h> <Left>
 snoremap <M-l> <Right>
 " >>>
 
-" source ~/.config/nvim/statusline.vim		" goerge b(from vim group)
+
 " lightline configuration <<<
 let g:lightline = {
       \ 'colorscheme': 'Tomorrow_Night_Bright',
@@ -471,22 +375,19 @@ let g:lightline = {
 let base16colorspace=256
 set background=dark
 " source this to your profile
+
+" gruvbox settings
 let g:gruvbox_bold='1'
 let g:gruvbox_italic='1'
 let g:gruvbox_undercurl='1'
 let g:gruvbox_termcolors='256'
 let g:gruvbox_underline='1'
-"let g:gruvbox_contrast='hard'
 let g:gruvbox_italicize_comments='1'
 let g:gruvbox_italicize_strings='1'
 let g:gruvbox_impoved_strings='1'
 let g:gruvbox_impoved_warnings='1'
-"let g:gruvbox_contrast_dark='hard'
 let g:gruvbox_contrast_light='hard'
-"highlight Normal ctermbg=NONE
-let g:spacegray_underline_search = 1
-let g:spacegray_italicize_comments = 1
-let ayucolor="light"
+
 " nord colorscheme settings"
 let g:nord_cursor_line_number_background = 0
 let g:nord_uniform_status_line = 0
@@ -496,9 +397,13 @@ let g:nord_bold = 1
 let g:nord_italic = 1
 let g:nord_italic_comments = 1
 let g:nord_underline = 1
-"let ayucolor="mirage"
-"let ayucolor="dark"
-colorscheme base16-eighties
+
+" other colorschemes
+let g:spacegray_underline_search = 1
+let g:spacegray_italicize_comments = 1
+let ayucolor="light"
+let g:gotham_airline_empahsised_insert = 0
+colorscheme gruvbox
 set go=a
 highlight Comment cterm=italic gui=italic
 highlight Search ctermbg=black ctermfg=yellow term=underline
@@ -507,17 +412,6 @@ hi SignColumn ctermbg=255 guibg=255 gui=bold
 
 " Disables automatic commenting on newline
 autocmd Filetype * setlocal formatoptions-=c formatoptions-=r formatoptions-=0
-
-" smart tab(space if it is in normal whitespace else autocompletion <<<
-"	function! CleverTab()
-"	   if strpart( getline('.'), 0, col('.')-1 ) =~ '^\s*$'
-"	      return <"\<Tab>"		delete first < to use
-"	   else
-"	      return <"\<C-N>"
-"	   endif
-"	endfunction
-"	inoremap <Tab> <C-R>=CleverTab()<CR>
-" >>>
 
 " coc extensions <<<
 let g:coc_global_extensions = [
@@ -539,10 +433,6 @@ let g:coc_global_extensions = [
   \ 'coc-css',
   \ 'coc-ultisnips'
   \ ]
-  " \ 'coc-markdownlint',
-  " \ 'coc-tslint',
-  " \ 'coc-tslint-plugin',
-  " \ 'coc-eslint',
 " >>>
 
 " Better display for messages <<<
@@ -683,26 +573,24 @@ inoremap <expr> <S-space> (pumvisible() ? (col('.') > 1 ? '<Esc>i<Right>' : '<Es
 			\ '<C-x><C-u><C-r>=pumvisible() ? "\<lt>C-n>\<lt>C-p>\<lt>Down>" : ""<CR>'
 " >>>
 
-" set width for codi
-"   let g:coid#width=50.0
 
 " Automatically open & close quickfix window
 autocmd QuickFixCmdPost [^l] * nested cwindow
 
 
 " statusline learning <<<
-set statusline=
-set statusline+=\ %r	" readonly flag
-set statusline+=\ %0.20F	" F for full path, t for tail only
-set statusline+=\ %y	" display filetype
-set statusline+=\ %m	" if file modified
+" set statusline=
+" set statusline+=\ %r	" readonly flag
+" set statusline+=\ %0.20F	" F for full path, t for tail only
+" set statusline+=\ %y	" display filetype
+" set statusline+=\ %m	" if file modified
 
-set statusline+=%=		    " right side
-set statusline+=\ %l/%L  " column:line:totalnumberoflines
-set statusline+=\ %4p%% 	    " set line %
-" set statusline+=\ %b 		" value of character under cursor
-set statusline+=\ %3c
-set statusline+=\ [%n] 	    " gives buffer number
+" set statusline+=%=		    " right side
+" set statusline+=\ %l/%L  " column:line:totalnumberoflines
+" set statusline+=\ %4p%% 	    " set line %
+" " set statusline+=\ %b 		" value of character under cursor
+" set statusline+=\ %3c
+" set statusline+=\ [%n] 	    " gives buffer number
 " >>>
 
 " Syntastic Configuration   #Check :help Syntastic <<<
@@ -734,86 +622,6 @@ nnoremap clc :lclose<CR>
 nnoremap clo :lopen<CR>
 nnoremap <C-n> :cnext<CR>
 nnoremap <C-p> :cprev<CR>
-" >>>
-
-" Elixir Tagbar Configuration (not active) <<<
-"let g:tagbar_type_elixir = {
-""    \ 'ctagstype' : 'elixir',
-""    \ 'kinds' : [
-""        \ 'f:functions',
-""        \ 'functions:functions',
-""        \ 'c:callbacks',
-""        \ 'd:delegates',
-""        \ 'e:exceptions',
-""        \ 'i:implementations',
-""        \ 'a:macros',
-""        \ 'o:operators',
-""        \ 'm:modules',
-""        \ 'o:operators',
-""        \ 'm:modules',
-""        \ 'p:protocols',
-""        \ 'r:records',
-""        \ 't:tests'
-""    \ ]
-""    \ }
-" >>>
-
-" status line <<<
-" function! s:statusline_expr()
-"     let mod = "%{&modified ? '[+] ' : !&modifiable ? '[x] ' : ''}"
-"     let ro = "%{&readonly ? '[RO] ' : ''}"
-"     let ft = "%{len(&filetype) ? '['.&filetype.'] ' : ''}"
-"     let fug = "%{exists('g:loaded_fugitive') ? fugitive#statusline() : ''}"
-"     let sep = ' %= '
-"     let pos = ' %-12(%l : %c%V%) '
-"     let pct = ' %P '
-
-"     return '[%n] %f %<'.mod.ro.ft.fug.sep.pos.'%*'.pct
-" endfunction
-
-" let &statusline = s:statusline_expr()
-
-" " ---------------------------------------------------------------------------
-" " change status line color for insert and replace modes
-" " --------------------------------------------------------------------------
-
-" " optimized for gruvbox:hard(both dark and light)
-" function! InsertStatuslineColor(mode)
-"     if a:mode == '1'
-"         if(&background == 'dark')
-"             hi StatusLine ctermfg=109 ctermbg=0 guifg=#83a598 guibg=#000000
-"         else
-"             hi StatusLine ctermfg=24 ctermbg=255 guifg=#076678 guibg=#ffffff
-"         endif
-"     elseif a:mode == 'r'
-"         if (&background == 'dark')
-"             hi StatusLine ctermfg=106 ctermbg=0 guifg=#98971a guibg=#000000
-"         else
-"             hi StatusLine ctermfg=100 ctermbg=255 guifg=#79740e guibg=#ffffff
-"         endif
-"     else
-"         if (&background == 'dark')
-"             hi StatusLine ctermfg=166 ctermbg=0 guifg=#d65d0e guibg=#000000
-"         else
-"             hi StatusLine ctermfg=88 ctermbg=255 guifg=#9d0006 guibg=#ffffff
-"         endif
-"     endif
-" endfunction
-
-" function! InsertLeaveActions()
-"     if (&background == 'dark')
-"         au InsertLeave * hi StatusLine ctermfg=239 ctermbg=223 guifg=#504945 guibg=#ebdbb2
-"     else
-"         au InsertLeave * hi StatusLine ctermfg=250 ctermbg=0 guifg=#d5c4a1 guibg=#000000
-"     endif
-" endfunction
-
-" au InsertEnter * call InsertStatuslineColor(v:insertmode)
-" au InsertChange * call InsertStatuslineColor(v:insertmode)
-" au InsertLeave * call InsertLeaveActions()
-
-" " Ensure status line color gets reverted if exiting insert mode with <C-c>
-" inoremap <C-c> <C-o>:call InsertLeaveActions()<CR><C-c>
 " >>>
 
 " Airline configuration <<<
@@ -868,7 +676,7 @@ nnoremap <C-p> :cprev<CR>
 	let airline#extensions#syntastic#stl_format_err = '%E{[%fe(#%e)]}'
 	let airline#extensions#syntastic#warning_symbol = 'ẃ:'
 	let airline#extensions#syntastic#stl_format_warn = '%W{[%fw(#%w)]}'
-	let g:airline_theme='base16_eighties'
+	let g:airline_theme='gruvbox'
 	let g:hybrid_custom_term_colors=1
 	let g:hybrid_reduced_contrast=1
 " >>>
@@ -879,42 +687,6 @@ nnoremap <C-p> :cprev<CR>
     let g:netrw_altv=1                  "open splits to the right
     let g:netrw_liststyle=3             "tree view
 	nnoremap <leader>nl :Lex! \| vertical resize 30<CR>
-" >>>
-
-" scrooloose/nerdtree <<<
-" let g:NERDTreeShowHidden=1
-" let g:NERDTreeAutoDeleteBuffer=1
-" NERDTree conf
-
-" Open nerdtree at the current file or close nerd tree if pressed again
-" nnoremap <silent> <expr> <leader>nn g:NERDTree.IsOpen() ? "\:NERDTreeClose<CR>" : bufexists(expand('%')) ? "\:NERDTreeFind<CR>" : "\:NERDTree<CR>"
-
-" --------- settings below slows down vim opening for a second
-
-	" " autocmd vimenter * NERDTree
-	" " " jump to main window
-	" autocmd VimEnter * wincmd p
-    " autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-" " " sync open file with NERDTree
-" " " " Check if NERDTree is open or active
-" function! IsNERDTreeOpen()
-" 	return exists("t:NERDTreeBufName") && (bufwinnr(t:NERDTreeBufName) != -1)
-" endfunction
-
-" " " " Call NERDTreeFind if NERDTree is active, current window contains a modifiable file, not vimdiff
-" function! SyncTree()
-" 	if &modifiable && IsNERDTreeOpen() && strlen(expand('%')) > 0 && !&diff
-" 		NERDTreeFind
-" 		wincmd p
-" 	endif
-" endfunction
-
-" " changing opening and closing arrow of NERDTree
-" let g:NERDTreeDirArrowExpandable  = "▷"
-" let g:NERDTreeDirArrowCollapsible = "◢"
-
-" " Higlight currently open buffer in NERDTree
-" autocmd BufEnter * call SyncTree()
 " >>>
 
 " searches down into subfolders
@@ -928,31 +700,28 @@ nnoremap <C-p> :cprev<CR>
 " Create the 'tags' file(install ctags)
     command! MakeTags !ctags -R .   "use ^] to jump to tag under cursor, g^] for ambiguous tag, ^t to jump back to tag stack
 
-" vimling
-    " nm <leader>d :call ToggleDeadKeys()<CR>
-
 " Shortcutting split navigation,(laziness): <<<
-    map <C-h> <C-w>h
-    map <C-j> <C-w>j
-    map <C-k> <C-w>k
-    map <C-l> <C-w>l
+    nnoremap <C-h> <C-w>h
+    nnoremap <C-j> <C-w>j
+    nnoremap <C-k> <C-w>k
+    nnoremap <C-l> <C-w>l
+" >>>
+
+" change splits from vert to horizontal and vice versa <<<
+nnoremap <leader>th <C-w>t<C-w>H
+nnoremap <leader>tk <C-w>t<C-w>K
 " >>>
 
 " Enable/disable auto comments
+set formatoptions-=cro
 map <leader>cd :setlocal formatoptions-=cro<CR>
 map <leader>ce :setlocal formatoptions=cro<CR>
 
 " Check file in shellcheck:
     map <leader>S :!clear && shellcheck %<CR>
 
-" Compile document, for groff/LaTeX/markdown etc.
-    " map <leader>c :w! \| !compiler <c-r>%<CR>
-
 " Open corresponding .pdf/.html or preview
     map <leader>p :!opout <c-r>%<CR><CR>
-
-" Runs a script that cleans out the tex build files whenever I close out a .tex file
-    " autocmd VimLeave *.tex !texclear %
 
 " resize pane <<<
 " disables arrow movement, resize splits instead but
@@ -963,10 +732,10 @@ map <leader>ce :setlocal formatoptions=cro<CR>
         " nnoremap <Down>     :resize -2<CR>
         " nnoremap <Left>     :vertical resize +2<CR>
         " nnoremap <Right>    :vertical resize -2<CR>
-		nnoremap <M-k>		:resize +2<CR>
-		nnoremap <M-j>		:resize -2<CR>
-		nnoremap <M-l>		:vertical resize +2<CR>
-		nnoremap <M-h>		:vertical resize -2<CR>
+		nnoremap <silent> <M-k>		:resize +2<CR>
+		nnoremap <silent> <M-j>		:resize -2<CR>
+		nnoremap <silent> <M-l>		:vertical resize +2<CR>
+		nnoremap <silent> <M-h>		:vertical resize -2<CR>
     endif
 " >>>
 
@@ -977,26 +746,15 @@ autocmd BufRead,BufNewFile *.tex set filetype=tex
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' \| edit!
 
 " indentation settings <<<
-" old
-" +--  7 lines: set foldmethod=indent··············━
-	"●
-"
-" new ⏤⏤⏤⏤► [7 lines]: set foldmethod=indent ⏤⏤⏤⏤⏤⏤⏤⏤⏤⏤
-
-	set foldcolumn=0
+	set foldcolumn=1
+	set foldlevelstart=1
 	set foldmarker=<<<,>>>
 	set foldmethod=marker
-	set fillchars=vert:╏,fold:•
+	set fillchars+=vert:╏,fold:•
 "
-	" I don't know why aren't they following this: "
-	" autocmd FileType vimwiki set foldmethod=marker
-	" autocmd FileType vimwiki set ft=markdown
-	" autocmd FileType markdown set foldmethod=marker
-
     autocmd BufWinLeave *.* mkview
     autocmd BufWinEnter *.* silent! loadview
 " >>>
-
 
 " Notestaking and text/config editing <<<
 autocmd FileType markdown map <F7> :!pandoc<Space><C-r>%<space>-o<Space><C-r>%.pdf<Enter><Enter>
@@ -1020,8 +778,6 @@ autocmd FileType rmd map <F7> :!echo<space>"require(rmarkdown);<space>render('<c
 let @+=@"
 let @*=@""
 
-"" vnoremap <silent><Leader>y "yy <Bar> :call system('xclip', @y)<CR>
-
 " copy/paste registers <<<
 noremap <Leader>y "*y
 noremap <Leader>p "*p
@@ -1030,63 +786,18 @@ noremap <Leader>P "+p
 " >>>
 
 " some abbreviations <<<
-iabbrev Name Abhay Shanker Pathak
+iabbrev myname Abhay Shanker Pathak
 iabbrev ppywar pylint: disable=W
 " >>>
 
-" search :h ins-completion for auto-complete
-" snippet reading <<<
-" nnoremap \mainc :read $HOME/.vim/.skeleton/main.c<CR>ji<C-i>
-" nnoremap \incc :read $HOME/.vim/.skeleton/include.c<CR>ji
-" >>>
-    " use -1 read if you want snippet on the cursor line
-
-" indentLine Pluging customization
-      " let g:indentLine_bgcolor_term = 202
-      " let g:indentLine_color_term = 208
-      " let g:indentLine_char = '┃'
 	augroup FILETYPES
 		autocmd FileType markdown let b:indentLine_setConceal=1
 	augroup END
 
 
-""" Using templates
-" if has("autocmd")
-"     augroup templates
-"         autocmd BufNewFile *.sh 0r ~/.config/nvim/templates/shshebang.sh
-"         autocmd BufNewFile *.c 0r ~/.config/nvim/templates/incandmain.c
-" 		autocmd BufNewFile *.py 0r ~/.config/nvim/templates/pyshebang.py
-"     augroup END
-" endif
-
 " markdown setting
 autocmd FileType markdown set conceallevel=2
 autocmd FileType markdown set foldmethod=marker
-
-" markdown plugins settings not in use <<<
-".........................................................................
-" iamcco/markdown-preview.nvim
-".........................................................................
-
-" let g:mkdp_refresh_slow=0
-" let g:mkdp_markdown_css='/home/raytracer/dox/markdown/github-markdown-css/github-markdown.css'
-
-".......................................................................
-" vim-instant-markdown
-".......................................................................
-"Uncomment to override defaults:
-"let g:instant_markdown_slow = 1
-"let g:instant_markdown_autostart = 0
-"map <leader>md :InstantMarkdownPreview<CR>
-"let g:instant_markdown_open_to_the_world = 1
-"let g:instant_markdown_allow_unsafe_content = 1
-"let g:instant_markdown_allow_external_content = 0
-"let g:instant_markdown_mathjax = 1
-"let g:instant_markdown_logfile = '/tmp/instant_markdown.log'
-"let g:instant_markdown_autoscroll = 0
-"let g:instant_markdown_port = 8888
-"let g:instant_markdown_python = 1
-" >>>
 
 " Notetaking <<<
 " command! -nargs=1 Ngrep vimgrep "<args>" /home/raytracer/vimwiki/**/*.md
@@ -1107,22 +818,6 @@ function! ToggleCalendar()
     let g:calendar_open = 1
   end
 endfunction
-" :autocmd FileType vimwiki map <leader>cl :call ToggleCalendar() set ft=markdown
-
-" Markdown codeblock highlight syntax
-" let g:markdown_fenced_languages = ['c', 'bash', 'python']
-
-" Vimwiki settings and ensures files are read as what is wanted:
-    " let g:vimwiki_ext2syntax = {'.Rmd': 'markdown', '.rmd': 'markdown', '.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
-
-"     map <leader>v :set ft=markdown<CR>
-" let g:vimwiki_list = [{'path': '~/vimwiki/',
-                      \ 'syntax': 'markdown', 'ext': '.md'}]
-"     autocmd BufRead,BufNewFile /tmp/calcurse*,~/.calcurse/notes/* set filetype=markdown
-
-"     augroup FILETYPES
-"         autocmd FileType markdown let b:indentLine_enabled = 0
-"     augroup END
 " >>>
 
 " ----------------- settings for fzf --------------------- <<<
@@ -1155,12 +850,6 @@ let g:fzf_files_options =
 " >>>
 
 autocmd BufEnter * lcd %:p:h
-
-" ---- vim-pandoc-syntax(without vim-pandoc) ------- <<<
-" augroup pandoc_syntax
-" 	au! BufNewFile,BufFilePre,BufRead *.md set filetype=markdown.pandoc
-" augroup END
-" >>>
 
 " Vim Hexokinase <<<
 let g:Hexokinase_refreshEvents = ['TextChanged', 'InsertLeave']
@@ -1224,22 +913,7 @@ let g:ale_lint_on_insert_leave                     = 0
 " ---- vim-lion -----"
 let g:lion_squeeze_spaces = 1
 
-" --- vim-gitgutter ----"(only using because of staging feature)(not in use) <<<
-" let g:gitgutter_grep                    = 'rg'
-" let g:gitgutter_map_keys                = 0
-" let g:gitgutter_map_keys                = 0
-" let g:gitgutter_sign_added              = '▎'
-" let g:gitgutter_sign_modified           = '▎'
-" let g:gitgutter_sign_modified_removed   = '▶'
-" let g:gitgutter_sign_removed            = '▶'
-" let g:gitgutter_sign_removed_first_line = '◥'
-" nmap [g <Plug>(GitGutterPrevHunk)
-" nmap ]g <Plug>(GitGutterNextHunk)
-" nmap <Leader>gp <Plug>(GitGutterPreviewHunk)
-" nmap <Leader>+ <Plug>(GitGutterStageHunk)
-" nmap <Leader>- <Plug>(GitGutterUndoHunk)
 nmap <leader>gs :set signcolumn=
-" >>>
 
 " -- undotree ---- <<<
 let g:undotree_HighlightChangedWithSign = 0
@@ -1253,22 +927,15 @@ nnoremap <silent> <leader>C :Gclog %<CR>
 nnoremap <silent> <leader>G :Gstatus<CR>
 " >>>
 
-"" --- move visual block(dragvisual.vim)(not in use) <<<
-" vmap  <expr>  <LEFT>   DVB_Drag('left')
-" vmap  <expr>  <RIGHT>  DVB_Drag('right')
-" vmap  <expr>  <DOWN>   DVB_Drag('down')
-" vmap  <expr>  <UP>     DVB_Drag('up')
-" vmap  <expr>  D        DVB_Duplicate()
-
 " Remove any introduced trailing whitespace after moving...     ##
 let g:DVB_TrimWS = 1
 " >>>
 
 " operations related to foldmethod = marker(marco trosi) <<<
-vnoremap af:<C-U>silent! normal! [zV]z<CR>
-onoremap af:normal Vaf<CR>
-vnoremap if:<C-U>silent! normal! [zjV]zk<CR>
-onoremap if:normal Vif<CR>
+vnoremap af:<c-u>silent! normal! [zv]z$<cr>
+onoremap af:normal vaf<cr>
+vnoremap if:<c-u>silent! normal! [zjv]zk$<cr>
+onoremap if:normal vif<cr>
 " >>>
 
 " ----- majutsushi/tagbar ----- "
@@ -1279,6 +946,10 @@ nmap [g <plug>(signify-prev-hunk)
 nmap ]g <plug>(signify-next-hunk)
 nmap <leader>gJ 9999<leader>gj
 nmap <leader>gK 9999<leader>gk
+
+highlight SignifySignAdd ctermbg=255 guibg=255
+highlight SignifySignDelete ctermbg=255 guibg=255
+highlight SignifySignChange ctermbg=255 guibg=255
 " >>>
 
 " ----- vim - quickscope ------------------- <<<
@@ -1313,56 +984,6 @@ let g:startfiy_custom_header = [
 " >>>
 
 echom '(>^.^<)'
-
-" ----------------- plugins not in use --------------------- <<<
-
-" Plug 'tmux-plugins/vim-tmux-focus-events'
-" Plug 'tmux-plugins/vim-tmux'
-" Plug 'tpope/vim-unimpaired'
-" Plug 'itchyny/lightline.vim'
-" Plug 'tpope/vim-surround'
-" Plug 'scrooloose/nerdtree'
-" Plug 'dracula/vim',{'as':'dracula'}
-" Plug 'Xuyuanp/nerdtree-git-plugin'
-" Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
-" Plug 'airblade/vim-gitgutter'
-"Plug 'tpope/vim-git'
-"Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-"Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
-"Plug 'tpope/vim-git'
-"Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-"Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
-
-"Elixir support
-"Plug 'elixir-editors/vim-elixir'
-"Plug 'avdgaag/vim-phoenix'
-"Plug 'mmorearty/elixir-ctags'
-"Plug 'mattreduce/vim-mix'
-"Plug 'BjRo/vim-extest'
-"Plug 'frost/vim-eh-docs'
-"Plug 'slashmili/alchemist.vim'
-"Plug 'tpope/vim-endwise'
-"Plug 'jadercorrea/elixir_generator.vim'
-
-"Plug 'godlygeek/tabular
-"Plug 'gabrielelana/vim-markdown'
-"Plug 'vim-pandoc/vim-pandoc'
-"Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
-
-" Theme / Interface
-"Plug 'Yggdroot/indentLine'
-"Plug 'AnsiEsc.vim'
-
-"Plug 'PotatoesMaster/i3-vim-syntax'
-"Plug 'metakirby5/codi.vim'
-"Plug 'jreybert/vimagit'
-"Plug 'lukesmithxyz/vimling'
-"Plug 'bling/vim-airline'
-"Plug 'roxma/nvim-completion-manager'
-"Plug 'tpope/vim-surround'
-" Plug 'vimwiki/vimwiki'
-" Plug 'jiangmiao/auto-pairs'
-" >>>
 
 " learning some new things
 " nnoremap <buffer> <localleader>x dd
