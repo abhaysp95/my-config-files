@@ -40,33 +40,33 @@
 
 /* !!gruvbox */
 /* !! hard contrast : *background: #1d2021 */
-/* *background    : #181818 */
-/* ! soft contrast: *background: #32302f */
-/* *foreground    : #ebdbb2 */
-/* ! Black + DarkGrey */
-/* *color0        : #282828 */
-/* *color8        : #928374 */
-/* ! DarkRed + Red */
-/* *color1        : #cc241d */
-/* *color9        : #fb4934 */
-/* ! DarkGreen + Green */
-/* *color2        : #98971a */
-/* *color10       : #b8bb26 */
-/* ! DarkYellow + Yellow */
-/* *color3        : #d79921 */
-/* *color11       : #fabd2f */
-/* ! DarkBlue + Blue */
-/* *color4        : #458588 */
-/* *color12       : #83a598 */
-/* ! DarkMagenta + Magenta */
-/* *color5        : #b16286 */
-/* *color13       : #d3869b */
-/* ! DarkCyan + Cyan */
-/* *color6        : #689d6a */
-/* *color14       : #8ec07c */
-/* ! LightGrey + White */
-/* *color7        : #a89984 */
-/* *color15       : #ebdbb2 */
+*background    : #282828
+! soft contrast: *background: #32302f
+*foreground    : #ebdbb2
+! Black + DarkGrey
+*color0        : #282828
+*color8        : #928374
+! DarkRed + Red
+*color1        : #cc241d
+*color9        : #fb4934
+! DarkGreen + Green
+*color2        : #98971a
+*color10       : #b8bb26
+! DarkYellow + Yellow
+*color3        : #d79921
+*color11       : #fabd2f
+! DarkBlue + Blue
+*color4        : #458588
+*color12       : #83a598
+! DarkMagenta + Magenta
+*color5        : #b16286
+*color13       : #d3869b
+! DarkCyan + Cyan
+*color6        : #689d6a
+*color14       : #8ec07c
+! LightGrey + White
+*color7        : #a89984
+*color15       : #ebdbb2
 
 /* Solarized dark */
 /* ! special */
@@ -257,41 +257,70 @@
 
 /* base16_eighties */
 ! special
-*.foreground:   #d3d0c8
-*.background:   #2d2d2d
-*.cursorColor:  #d3d0c8
+/* *.foreground:   #d3d0c8 */
+/* *.background:   #2d2d2d */
+/* *.cursorColor:  #d3d0c8 */
 
-! black
-*.color0:       #2d2d2d
-*.color8:       #747369
+/* ! black */
+/* *.color0:       #2d2d2d */
+/* *.color8:       #747369 */
 
-! red
-*.color1:       #f2777a
-*.color9:       #f2777a
+/* ! red */
+/* *.color1:       #f2777a */
+/* *.color9:       #f2777a */
 
-! green
-*.color2:       #99cc99
-*.color10:      #99cc99
+/* ! green */
+/* *.color2:       #99cc99 */
+/* *.color10:      #99cc99 */
 
-! yellow
-*.color3:       #ffcc66
-*.color11:      #ffcc66
+/* ! yellow */
+/* *.color3:       #ffcc66 */
+/* *.color11:      #ffcc66 */
 
-! blue
-*.color4:       #6699cc
-*.color12:      #6699cc
+/* ! blue */
+/* *.color4:       #6699cc */
+/* *.color12:      #6699cc */
 
-! magenta
-*.color5:       #cc99cc
-*.color13:      #cc99cc
+/* ! magenta */
+/* *.color5:       #cc99cc */
+/* *.color13:      #cc99cc */
 
-! cyan
-*.color6:       #66cccc
-*.color14:      #66cccc
+/* ! cyan */
+/* *.color6:       #66cccc */
+/* *.color14:      #66cccc */
 
-! white
-*.color7:       #d3d0c8
-*.color15:      #f2f0ec
+/* ! white */
+/* *.color7:       #d3d0c8 */
+/* *.color15:      #f2f0ec */
+
+/* gotham */
+/* *.foreground:   #98d1ce */
+/* *.background:   #0a0f14 */
+/* *.cursorColor:  #98d1ce */
+
+/* *.color0:       #0a0f14 */
+/* *.color8:       #10151b */
+
+/* *.color1:       #c33027 */
+/* *.color9:       #d26939 */
+
+/* *.color2:       #26a98b */
+/* *.color10:      #081f2d */
+
+/* *.color3:       #edb54b */
+/* *.color11:      #245361 */
+
+/* *.color4:       #195465 */
+/* *.color12:      #093748 */
+
+/* *.color5:       #4e5165 */
+/* *.color13:      #888ba5 */
+
+/* *.color6:       #33859d */
+/* *.color14:      #599caa */
+
+/* *.color7:       #98d1ce */
+/* *.color15:      #d3ebe9 */
 
 URxvt.perl-ext-common: resize-font,default,clipboard,url-select,keyboard-select
 
@@ -313,4 +342,3 @@ URxvt.cursorUnderline: false
 URxvt.saveline: 3072
 URxvt.urgentOnBell: true
 URxvt.depth: 24
-
