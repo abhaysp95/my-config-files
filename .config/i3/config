@@ -319,11 +319,11 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 #   client.urgent           $base02 $base08    $base00 $base0F
 
 # Customize colors-gruvbox
-# client.focused          #f59829 #f59829 #ebdbb2 #f59829 #f59829
-# client.focused_inactive #181818 #181818 #ebdbb2 #181818 #181818
-# client.unfocused        #181818 #181818 #ebdbb2 #181818 #181818
-# client.urgent           #181818 #181818 #fb4934 #181818 #181818
-# client.placeholder      #181818 #181818 #ebdbb2 #181818 #181818
+client.focused          #458588 #458588 #ebdbb2 #458588 #458588
+client.focused_inactive #181818 #181818 #ebdbb2 #181818 #181818
+client.unfocused        #181818 #181818 #ebdbb2 #181818 #181818
+client.urgent           #181818 #181818 #fb4934 #181818 #181818
+client.placeholder      #181818 #181818 #ebdbb2 #181818 #181818
 # hide_edge_borders both
 
 # gruvbox light
@@ -335,20 +335,28 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 # hide_edge_borders both
 
 # google-dark
-client.focused          #768f85 #768f85 #ebdbb2 #768f85 #768f85
-client.focused_inactive #1d1f21 #1d1f21 #ebdbb2 #1d1f21 #1d1f21
-client.unfocused        #1d1f21 #1d1f21 #ebdbb2 #1d1f21 #1d1f21
-client.urgent           #1d1f21 #1d1f21 #fb4934 #1d1f21 #1d1f21
-client.placeholder      #1d1f21 #1d1f21 #ebdbb2 #1d1f21 #1d1f21
-hide_edge_borders both
+# client.focused          #768f85 #768f85 #ebdbb2 #768f85 #768f85
+# client.focused_inactive #1d1f21 #1d1f21 #ebdbb2 #1d1f21 #1d1f21
+# client.unfocused        #1d1f21 #1d1f21 #ebdbb2 #1d1f21 #1d1f21
+# client.urgent           #1d1f21 #1d1f21 #fb4934 #1d1f21 #1d1f21
+# client.placeholder      #1d1f21 #1d1f21 #ebdbb2 #1d1f21 #1d1f21
+# hide_edge_borders both
 
 # base16-eighties
-client.focused          #a09f93 #a09f93 #ebdbb2 #a09f93 #a09f93
-client.focused_inactive #2d2d2d #2d2d2d #ebdbb2 #2d2d2d #2d2d2d
-client.unfocused        #2d2d2d #2d2d2d #ebdbb2 #2d2d2d #2d2d2d
-client.urgent           #2d2d2d #2d2d2d #fb4934 #2d2d2d #2d2d2d
-client.placeholder      #2d2d2d #2d2d2d #ebdbb2 #2d2d2d #2d2d2d
-hide_edge_borders both
+# client.focused          #a09f93 #a09f93 #ebdbb2 #a09f93 #a09f93
+# client.focused_inactive #2d2d2d #2d2d2d #ebdbb2 #2d2d2d #2d2d2d
+# client.unfocused        #2d2d2d #2d2d2d #ebdbb2 #2d2d2d #2d2d2d
+# client.urgent           #2d2d2d #2d2d2d #fb4934 #2d2d2d #2d2d2d
+# client.placeholder      #2d2d2d #2d2d2d #ebdbb2 #2d2d2d #2d2d2d
+# hide_edge_borders both
+
+# gotham-colorscheme
+# client.focused          #245361 #245361 #ebdbb2 #245361 #245361
+# client.focused_inactive #0a0f14 #0a0f14 #ebdbb2 #0a0f14 #0a0f14
+# client.unfocused        #0a0f14 #0a0f14 #ebdbb2 #0a0f14 #0a0f14
+# client.urgent           #0a0f14 #0a0f14 #fb4934 #0a0f14 #0a0f14
+# client.placeholder      #0a0f14 #0a0f14 #ebdbb2 #0a0f14 #0a0f14
+# hide_edge_borders both
 
 # client.focused          #81a1c1 #81a1c1 #ebdbb2 #81a1c1 #81a1c1
 # client.focused_inactive #2e3440 #2e3440 #ebdbb2 #2e3440 #2e3440

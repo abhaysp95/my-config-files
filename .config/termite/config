@@ -11,15 +11,18 @@ dynamic_title = true
 # font = SFMono Nerd Font,Medium 11.5
 # font = Mononoki Nerd Font Mono, 12
 # font = Hack Nerd Font Mono, 12
+# font = Monoid Nerd Font Mono,Retina 11
+# font = Victor Mono SemiBold, 12
+font = Operator Mono Medium, 13
 # font = DejaVu SansMono Nerd Font, Book 11
 # font = FantasqueSansMono Nerd Font Mono, 13.5
 # font = Fira Code,Regular 12
 # font = Fura Code Nerd Font,Regular 13
 # font = Iosevka Nerd Font, 13
-font = InputMono, 13
+# font = InputMonoCompressed, 13
 # font = Consolas, 13
 # font = Inconsolata Nerd Font Mono, 14
-#font = TSCu_Comic, 13
+# font = TSCu_Comic, 13
 #font = Monaco 11
 #font = SpaceMono Nerd Font Mono, 10.8
 #font = Monospace 10
@@ -489,63 +492,63 @@ highlight = #2f2f2f
 #
 
 ## gruvbox <<<
-#[colors]
-#foreground         = #ebdbb2
-#foreground_bold    = #d5c9b4
-##cursor            = #b8bb26
-##cursor_foreground = #ebdbb2
-#background         = #282828
+[colors]
+foreground         = #ebdbb2
+foreground_bold    = #d5c9b4
+#cursor            = #b8bb26
+#cursor_foreground = #ebdbb2
+background         = #282828
 
-## Black
-#color0  = #3c3836
+# Black
+color0  = #3c3836
 
-## Black dark
-#color18 = #181818
+# Black dark
+color18 = #181818
 
-## White
-#color15 = #ebdbb2
+# White
+color15 = #ebdbb2
 
-## Grey
-#color8  = #928374
+# Grey
+color8  = #928374
 
-## Grey light
-#color20 = #a89984
+# Grey light
+color20 = #a89984
 
-## Gray lighter
-#color21 = #a89984
+# Gray lighter
+color21 = #a89984
 
-## Grey lightest
-#color7  = #bdae93
+# Grey lightest
+color7  = #bdae93
 
-## Red
-#color1  = #cc241d
-#color9  = #fb4934
+# Red
+color1  = #cc241d
+color9  = #fb4934
 
-## Green
-#color2  = #98971a
-#color10 = #b8bb26
+# Green
+color2  = #98971a
+color10 = #b8bb26
 
-## Yellow
-#color3  = #d79921
-#color11 = #fabd2f
+# Yellow
+color3  = #d79921
+color11 = #fabd2f
 
-## Blue
-#color4  = #458588
-#color12 = #83a598
+# Blue
+color4  = #458588
+color12 = #83a598
 
-## Purple
-#color5  = #b16286
-#color13 = #d3869b
+# Purple
+color5  = #b16286
+color13 = #d3869b
 
-## Teal
-#color6  = #689d6a
-#color14 = #8ec07c
+# Teal
+color6  = #689d6a
+color14 = #8ec07c
 
-## Orange
-#color16 = #d65d0e
+# Orange
+color16 = #d65d0e
 
-## Cyan
-#color17 = #689d6a
+# Cyan
+color17 = #689d6a
 
 # Blue Grey
 color19 = #83a598
@@ -964,54 +967,88 @@ color19 = #83a598
 # color7 = #7c6f64
 # color15 = #3c3836
 
+# [colors]
+# # Base16 Eighties
+# # Author: Chris Kempson (http://chriskempson.com)
+
+# foreground          = #d3d0c8
+# foreground_bold     = #e8e6df
+# # cursor              = #e8e6df
+# # cursor_foreground   = #2d2d2d
+# background          = rgba(45, 45, 45)
+# # background = #2d2d2d
+
+# # 16 color space
+
+# # Black, Gray, Silver, White
+# color0  = #2d2d2d
+# color8  = #747369
+# color7  = #d3d0c8
+# color15 = #f2f0ec
+
+# # Red
+# color1  = #f2777a
+# color9  = #f2777a
+
+# # Green
+# color2  = #99cc99
+# color10 = #99cc99
+
+# # Yellow
+# color3  = #ffcc66
+# color11 = #ffcc66
+
+# # Blue
+# color4  = #6699cc
+# color12 = #6699cc
+
+# # Purple
+# color5  = #cc99cc
+# color13 = #cc99cc
+
+# # Teal
+# color6  = #66cccc
+# color14 = #66cccc
+
+# # Extra colors
+# color16 = #f99157
+# color17 = #d27b53
+# color18 = #393939
+# color19 = #515151
+# color20 = #a09f93
+# color21 = #e8e6df
+
+# Gotham color scheme
+
+# [colors]
+
+# foreground      = #98d1ce
+# foreground_bold = #98d1ce
+# cursor          = #98d1ce
+# background      = #0a0f14
+
+# color0  = #0a0f14
+# color8  = #10151b
+
+# color1  = #c33027
+# color9  = #d26939
+
+# color2  = #26a98b
+# color10 = #081f2d
+
+# color3  = #edb54b
+# color11 = #245361
+
+# color4  = #195465
+# color12 = #093748
+
+# color5  = #4e5165
+# color13 = #888ba5
+
+# color6  = #33859d
+# color14 = #599caa
+
+# color7  = #98d1ce
+# color15 = #d3ebe9
+
 # vim: ft=dosini cms=#%s
-[colors]
-# Base16 Eighties
-# Author: Chris Kempson (http://chriskempson.com)
-
-foreground          = #d3d0c8
-foreground_bold     = #e8e6df
-# cursor              = #e8e6df
-# cursor_foreground   = #2d2d2d
-background          = rgba(45, 45, 45)
-# background = #2d2d2d
-
-# 16 color space
-
-# Black, Gray, Silver, White
-color0  = #2d2d2d
-color8  = #747369
-color7  = #d3d0c8
-color15 = #f2f0ec
-
-# Red
-color1  = #f2777a
-color9  = #f2777a
-
-# Green
-color2  = #99cc99
-color10 = #99cc99
-
-# Yellow
-color3  = #ffcc66
-color11 = #ffcc66
-
-# Blue
-color4  = #6699cc
-color12 = #6699cc
-
-# Purple
-color5  = #cc99cc
-color13 = #cc99cc
-
-# Teal
-color6  = #66cccc
-color14 = #66cccc
-
-# Extra colors
-color16 = #f99157
-color17 = #d27b53
-color18 = #393939
-color19 = #515151
-color20 = #a09f93
-color21 = #e8e6df
