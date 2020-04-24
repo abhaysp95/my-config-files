@@ -492,66 +492,66 @@ highlight = #2f2f2f
 #
 
 ## gruvbox <<<
-[colors]
-foreground         = #ebdbb2
-foreground_bold    = #d5c9b4
-#cursor            = #b8bb26
-#cursor_foreground = #ebdbb2
-background         = #282828
+#[colors]
+#foreground         = #ebdbb2
+#foreground_bold    = #d5c9b4
+##cursor            = #b8bb26
+##cursor_foreground = #ebdbb2
+#background         = #282828
 
-# Black
-color0  = #3c3836
+## Black
+#color0  = #3c3836
 
-# Black dark
-color18 = #181818
+## Black dark
+#color18 = #181818
 
-# White
-color15 = #ebdbb2
+## White
+#color15 = #ebdbb2
 
-# Grey
-color8  = #928374
+## Grey
+#color8  = #928374
 
-# Grey light
-color20 = #a89984
+## Grey light
+#color20 = #a89984
 
-# Gray lighter
-color21 = #a89984
+## Gray lighter
+#color21 = #a89984
 
-# Grey lightest
-color7  = #bdae93
+## Grey lightest
+#color7  = #bdae93
 
-# Red
-color1  = #cc241d
-color9  = #fb4934
+## Red
+#color1  = #cc241d
+#color9  = #fb4934
 
-# Green
-color2  = #98971a
-color10 = #b8bb26
+## Green
+#color2  = #98971a
+#color10 = #b8bb26
 
-# Yellow
-color3  = #d79921
-color11 = #fabd2f
+## Yellow
+#color3  = #d79921
+#color11 = #fabd2f
 
-# Blue
-color4  = #458588
-color12 = #83a598
+## Blue
+#color4  = #458588
+#color12 = #83a598
 
-# Purple
-color5  = #b16286
-color13 = #d3869b
+## Purple
+#color5  = #b16286
+#color13 = #d3869b
 
-# Teal
-color6  = #689d6a
-color14 = #8ec07c
+## Teal
+#color6  = #689d6a
+#color14 = #8ec07c
 
-# Orange
-color16 = #d65d0e
+## Orange
+#color16 = #d65d0e
 
-# Cyan
-color17 = #689d6a
+## Cyan
+#color17 = #689d6a
 
-# Blue Grey
-color19 = #83a598
+## Blue Grey
+#color19 = #83a598
 ## >>>
 
 # google-dark
@@ -1020,35 +1020,39 @@ color19 = #83a598
 
 # Gotham color scheme
 
-# [colors]
+[colors]
 
-# foreground      = #98d1ce
-# foreground_bold = #98d1ce
-# cursor          = #98d1ce
-# background      = #0a0f14
+foreground      = #98d1ce
+foreground_bold = #98d1ce
+cursor          = #98d1ce
+background      = #0a0f14
 
-# color0  = #0a0f14
-# color8  = #10151b
+color0  = #0a0f14
+color8  = #3a3d42
 
-# color1  = #c33027
-# color9  = #d26939
+color1  = #c33027
+color9  = #d26939
 
-# color2  = #26a98b
-# color10 = #081f2d
+color2  = #26a98b
+color10 = #37b893
 
-# color3  = #edb54b
-# color11 = #245361
+color3  = #edb54b
+color11 = #245361
 
-# color4  = #195465
-# color12 = #093748
+color4  = #195465
+color12 = #277373
 
-# color5  = #4e5165
-# color13 = #888ba5
+color5  = #4e5165
+color13 = #888ba5
 
-# color6  = #33859d
-# color14 = #599caa
+color14 = #599caa
 
-# color7  = #98d1ce
-# color15 = #d3ebe9
+color7  = #98d1ce
+color15 = #d3ebe9
+
+# changed colors
+#color8  = #10151b
+#color10 = #081f2d
+#color12 = #093748
 
 # vim: ft=dosini cms=#%s
