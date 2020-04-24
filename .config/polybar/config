@@ -196,7 +196,7 @@ index-sort = true
 label-focused            = %name%
 label-focused-foreground = ${colors.light-white}
 label-focused-background = ${colors.blue}
-label-focused-underline = ${colors.orange}
+label-focused-underline = ${colors.light-white}
 label-focused-padding    = 1
 
 ; Unfocused labels
