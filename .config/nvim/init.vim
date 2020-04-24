@@ -404,8 +404,9 @@ let g:spacegray_underline_search = 1
 let g:spacegray_italicize_comments = 1
 let ayucolor="light"
 let g:gotham_airline_empahsised_insert = 0
-colorscheme gruvbox
+colorscheme gotham256
 set go=a
+highlight String gui=italic cterm=italic
 highlight Comment cterm=italic gui=italic
 highlight Search ctermbg=black ctermfg=yellow term=underline
 hi SignColumn ctermbg=255 guibg=255 gui=bold
