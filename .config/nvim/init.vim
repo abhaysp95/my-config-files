@@ -8,7 +8,6 @@
 "				--> Abhay Shanker Pathak
 "
 
-
 let mapleader = ","
 let maplocalleader = "`"
 
@@ -68,9 +67,9 @@ Plug 'ptzz/lf.vim'
 Plug 'mhinz/vim-grepper'
 Plug 'sheerun/vim-polyglot'
 Plug 'tommcdo/vim-lion'
-Plug 'mhinz/vim-signify'
 
 " shows diff signs in vim's signcolumn
+Plug 'mhinz/vim-signify'
 Plug 'mbbill/undotree'
 Plug 'tpope/vim-fugitive'
 Plug 'majutsushi/tagbar'
@@ -384,9 +383,11 @@ let g:gruvbox_termcolors='256'
 let g:gruvbox_underline='1'
 let g:gruvbox_italicize_comments='1'
 let g:gruvbox_italicize_strings='1'
-let g:gruvbox_impoved_strings='1'
-let g:gruvbox_impoved_warnings='1'
+let g:gruvbox_improved_strings='0'
+let g:gruvbox_improved_warnings='1'
 let g:gruvbox_contrast_light='hard'
+let g:gruvbox_contrast_dark='hard'
+let g:gruvbox_invert_indent_guides='1'
 
 " nord colorscheme settings"
 let g:nord_cursor_line_number_background = 0
