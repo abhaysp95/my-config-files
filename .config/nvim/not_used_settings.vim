@@ -426,6 +426,8 @@
 "Plug 'bling/vim-airline'
 "Plug 'roxma/nvim-completion-manager'
 "Plug 'tpope/vim-surround'
-" Plug 'vimwiki/vimwiki'
-" Plug 'jiangmiao/auto-pairs'
+"Plug 'vimwiki/vimwiki'
+"Plug 'jiangmiao/auto-pairs'
+"Plug 'vim-scripts/AutoComplPop'
+"Plug 'ajh17/VimCompletesMe'
 " >>>
