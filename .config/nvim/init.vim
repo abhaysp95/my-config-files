@@ -583,18 +583,18 @@ autocmd QuickFixCmdPost [^l] * nested cwindow
 
 
 " statusline learning <<<
-" set statusline=
-" set statusline+=\ %r	" readonly flag
-" set statusline+=\ %0.20F	" F for full path, t for tail only
-" set statusline+=\ %y	" display filetype
-" set statusline+=\ %m	" if file modified
+set statusline=
+set statusline+=\ %r	" readonly flag
+set statusline+=\ %0.20F	" F for full path, t for tail only
+set statusline+=\ %y	" display filetype
+set statusline+=\ %m	" if file modified
 
-" set statusline+=%=		    " right side
-" set statusline+=\ %l/%L  " column:line:totalnumberoflines
-" set statusline+=\ %4p%% 	    " set line %
-" " set statusline+=\ %b 		" value of character under cursor
-" set statusline+=\ %3c
-" set statusline+=\ [%n] 	    " gives buffer number
+set statusline+=%=		    " right side
+set statusline+=\ %l/%L  " column:line:totalnumberoflines
+set statusline+=\ %4p%% 	    " set line %
+" set statusline+=\ %b 		" value of character under cursor
+set statusline+=\ %3c
+set statusline+=\ [%n] 	    " gives buffer number
 " >>>
 
 " Syntastic Configuration   #Check :help Syntastic <<<
@@ -630,10 +630,10 @@ nnoremap <C-p> :cprev<CR>
 
 " Airline configuration <<<
 " Vim-Airline configuration
-	let g:airline#extensions#tabline#enabled=0
+	let g:airline#extensions#tabline#enabled=1
 	let g:airline#extensions#tabline#show_splits = 1
 	let g:airline#extensions#tabline#show_buffers = 1
-	" let g:airline#extensions#bufferline#enabled = 1
+	let g:airline#extensions#bufferline#enabled = 1
 	let g:airline#extensions#tabline#buffer_nr_show = 1
 	let g:airline#extensions#tabline#buffer_idx_show = 1
 	let g:airline#extensions#tabline#tab_nr_type = 1
@@ -680,7 +680,7 @@ nnoremap <C-p> :cprev<CR>
 	let airline#extensions#syntastic#stl_format_err = '%E{[%fe(#%e)]}'
 	let airline#extensions#syntastic#warning_symbol = 'ẃ:'
 	let airline#extensions#syntastic#stl_format_warn = '%W{[%fw(#%w)]}'
-	let g:airline_theme='gruvbox'
+	let g:airline_theme='gotham256'
 	let g:hybrid_custom_term_colors=1
 	let g:hybrid_reduced_contrast=1
 " >>>
