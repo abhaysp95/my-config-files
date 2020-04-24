@@ -13,7 +13,7 @@ dynamic_title = true
 # font = Hack Nerd Font Mono, 12
 # font = Monoid Nerd Font Mono,Retina 11
 # font = Victor Mono SemiBold, 12
-font = Operator Mono Medium, 13
+font = Operator Mono Medium,Medium 13
 # font = DejaVu SansMono Nerd Font, Book 11
 # font = FantasqueSansMono Nerd Font Mono, 13.5
 # font = Fira Code,Regular 12
@@ -440,10 +440,10 @@ highlight = #2f2f2f
 #color7  = #f8f8f2
 #color15 = #f9f8f5
 #
-#[colors]
 # Base16 Gruvbox dark, hard
 # Author: Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
 
+# [colors]
 # foreground          = #d5c4a1
 # foreground_bold     = #ebdbb2
 # cursor              = #83a598
