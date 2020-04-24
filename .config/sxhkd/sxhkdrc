@@ -131,39 +131,35 @@ super + alt + x
 # super + m
 	# music_setup
 	#termite -e ncmpcpp
-super + v
-    st -e nvim -c VimwikiIndex
 #super + c
 #    termite -e mpv --no-osc --no-input-default-bindings --input-conf=/dev/null --title='mpvfloat' /dev/video0
-super + b:{f,p,c,s,n,b,v}
-    {firefox,pcmanfm,telegram-desktop,stacer,nautilus,brave,vivaldi-stable}
-super+ctrl+n
-    termite -e calcurse
-#super+o
-#   /home/raytracer/.scripts/manbyrofi
 super + x
     /home/raytracer/.local/bin/.scripts/i3lock.sh ; mpc pause ;
 #    /home/raytracer/.config/i3/blurlock.sh
-super + d:{d,f,k}
-    {dmenu_run -i -nb '#181818' -sf '#181818' -nf '#ebdbb2' -sb '#d7d7d8' -fn "Mononoki Nerd Font Mono 12",rofi -show run -i -show-icons, ((pidof picom && kill $(pidof picom)) || picom) & dunstify -t 2000 'picom toggled'}
-
+#notifications <<<
 # brightness
 super + ctrl + {minus,equal}
 	{light -U 5 && dunstify --icon="~/.cache/notify-icons/yellow-bulb.png" -t 500 "current brightness->"`light -G`,light -A 5 && dunstify --icon="~/.cache/notify-icons/yellow-bulb.png" -t 500 "current brightness is ->"`light -G`}
 
-#notifications
 super+n:{w,l,p,t}
 	{notify-send --icon=~/.cache/notify-icons/maintenance.png "Status" "`nmcli device status`",notify-send --icon=~/.cache/notify-icons/wifi-signal.png "Wifi list" "`nmcli device wifi list`",notify-send --icon=~/.cache/notify-icons/music.png -t 3000 "Now Playing" "`mpc`",notify-send --icon=~/.cache/notify-icons/hot.png -t 3000 "Temperature" "`sensors | grep temp1 | head -1 && sensors | grep temp1 | tail -1`"}
 
 super+n:{m,c}
 	{/home/raytracer/.local/bin/.scripts/some-random/memproc,/home/raytracer/.local/bin/.scripts/some-random/cpuproc}
+# >>>
 
+# open different apps and settings <<<
 super+i:{m,p,v,d}
 	{manbyrofi,pdfbyrofi,videosbyrofi,caffeine_like}
 
-#i3resize
-#super + shift + {y,u,i,o}
-#    /home/raytracer/.local/bin/.scripts/i3resize {left,down,up,right}
+super + d:{d,f,k}
+    {dmenu_run -i -nb '#181818' -sf '#181818' -nf '#ebdbb2' -sb '#d7d7d8' -fn "Mononoki Nerd Font Mono 12",rofi -show run -i -show-icons, ((pidof compton && kill $(pidof compton)) || compton) & dunstify -t 2000 'compton toggled'}
+
+super + b:{f,p,c,s,n,b,v}
+    {firefox,pcmanfm,telegram-desktop,stacer,nautilus,brave,vivaldi-stable}
+super+ctrl+n
+    termite -e calcurse
+# >>>
 
 # screenshot and recording <<<
 Print
@@ -211,7 +207,7 @@ super + shift +m
     pulsemixer --toggle-mute && notify-send --icon=~/.cache/notify-icons/mute.png -t 3000 "Volume Toggled"
 # >>>
 
-# Audiokeys
+# Audiokeys <<<
 XF86AudioMute
     pulsemixer --toggle-mute
 XF86Audio{Raise,Lower}Volume
@@ -226,6 +222,7 @@ XF86Audio{Play,Stop}
 #dmenurecord
 XF86AudioMedia
 	$TERMINAL -e ncmpcpp
+# >>>
 
 # screenkey
 super + Scroll_Lock
