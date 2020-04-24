@@ -126,6 +126,11 @@ unset LD_PRELOAD                # Meh.
 export GTK_RC_FILES="$HOME/.gtkrc-2.0"
 export EDITOR=nvim              # Meh.
 
+# automatic ls, whenever cd/pusd etc.
+chpwd() {
+	exa --grid -F --group-directories-first
+}
+
 ##
 #Get notified when someone logs in
 ##
