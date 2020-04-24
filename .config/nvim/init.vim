@@ -716,10 +716,11 @@ nnoremap <leader>th <C-w>t<C-w>H
 nnoremap <leader>tk <C-w>t<C-w>K
 " >>>
 
-" Enable/disable auto comments
+" Enable/disable auto comments <<<
 set formatoptions-=cro
 map <leader>cd :setlocal formatoptions-=cro<CR>
 map <leader>ce :setlocal formatoptions=cro<CR>
+" >>>
 
 " Check file in shellcheck:
     map <leader>S :!clear && shellcheck %<CR>
@@ -850,7 +851,7 @@ let g:fzf_files_options =
 			\ '--preview="pistol {}"'
 " ----------------------- emmet plugin ------------------"
 "" redefine default trigger key <C-y> followed by , "
-"let g:user_emmet_leader_key='/'
+let g:user_emmet_leader_key='<S-Tab>'
 " >>>
 
 autocmd BufEnter * lcd %:p:h
