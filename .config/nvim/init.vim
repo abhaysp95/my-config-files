@@ -21,6 +21,7 @@ Plug 'vim-python/python-syntax'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'machakann/vim-sandwich'
+Plug 'tpope/vim-markdown'
 
 " Plug 'mattn/calendar-vim'
 Plug 'terryma/vim-multiple-cursors'
