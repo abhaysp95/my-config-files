@@ -29,19 +29,21 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 
 " Theme / Interface
+Plug 'haishanh/night-owl.vim'
 Plug 'whatyouhide/vim-gotham'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
 Plug 'ayu-theme/ayu-vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'tomasiser/vim-code-dark'
 Plug 'lifepillar/vim-solarized8'
-Plug 'ryanoasis/vim-devicons'
+" Plug 'ryanoasis/vim-devicons'
 Plug 'sjl/badwolf'
 Plug 'rbgrouleff/bclose.vim'
 Plug 'tomasr/molokai'
 Plug 'morhetz/gruvbox'
 Plug 'zenorocha/dracula-theme', {'rtp': 'vim/'}
+Plug 'kaicataldo/material.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'mkarmona/colorsbox'
 Plug 'romainl/Apprentice'
@@ -117,7 +119,7 @@ map <leader>F :Goyo \| set background=dark\| set linebreak<CR>
     autocmd! User GoyoLeave Limelight!
 	" >>>"
 
-" some set settings <<<
+" some set settings <<
 " Set Proper Tabs
 set tabstop=4
 set softtabstop=4
@@ -165,6 +167,7 @@ set regexpengine=1
 set scrolloff=3
 set showcmd
 set showmatch
+set noshowmode
 set smartcase
 set spelllang=en_us
 set textwidth=0
@@ -371,6 +374,9 @@ let g:lightline = {
 " >>>
 
 " colorscheme configuration <<<
+if (has('nvim'))
+	let $NVIM_TUI_ENABLE_TRUE_COLOR = 1
+endif
 " source "$HOME/.config/nvim/plugged/gruvbox/gruvbox_256palette.sh"
 let base16colorspace=256
 set background=dark
@@ -400,18 +406,42 @@ let g:nord_italic = 1
 let g:nord_italic_comments = 1
 let g:nord_underline = 1
 
+" material colorscheme
+let g:material_terminal_italics = 1
+let g:material_theme_style = 'ocean'
+
 " other colorschemes
 let g:spacegray_underline_search = 1
 let g:spacegray_italicize_comments = 1
 let ayucolor="light"
 let g:gotham_airline_empahsised_insert = 0
-colorscheme gotham256
+colorscheme night-owl
 set go=a
+" augroup htmlitalic <<<
+" 	autocmd FileType=html highlight htmlArg cterm=italic gui=italic
+" 	autocmd FileType=html highlight String cterm=none gui=none
+" augroup end
+" >>>
+highlight Identifiers gui=italic cterm=italic
+highlight PreProc gui=bold cterm=bold
+highlight Special gui=bold cterm=bold
+highlight Type gui=italic cterm=italic
+highlight Constant gui=italic cterm=italic
+highlight Statement gui=italic cterm=italic
 highlight String gui=italic cterm=italic
 highlight Comment cterm=italic gui=italic
-highlight Search ctermbg=black ctermfg=yellow term=underline
+highlight Search ctermbg=black ctermfg=yellow cterm=underline
 hi SignColumn ctermbg=255 guibg=255 gui=bold
+hi CursorLineNr guifg='#f78c6c' guibg='#01162c'
+hi FoldColumn guibg='#01162c'
+highlight htmlItalic gui=italic cterm=italic
+
+syn sync fromstart
 " >>>
+
+" make nvim transparent with terminal
+hi! Normal ctermbg=NONE guibg=NONE
+hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
 
 " Disables automatic commenting on newline
 autocmd Filetype * setlocal formatoptions-=c formatoptions-=r formatoptions-=0
@@ -584,25 +614,26 @@ autocmd QuickFixCmdPost [^l] * nested cwindow
 
 
 " statusline learning <<<
-set statusline=
-set statusline+=\ %r	" readonly flag
-set statusline+=\ %0.20F	" F for full path, t for tail only
-set statusline+=\ %y	" display filetype
-set statusline+=\ %m	" if file modified
+" set statusline=
+" set statusline+=\ %r	" readonly flag
+" set statusline+=\ %0.20F	" F for full path, t for tail only
+" set statusline+=\ %y	" display filetype
+" set statusline+=\ %m	" if file modified
 
-set statusline+=%=		    " right side
-set statusline+=\ %l/%L  " column:line:totalnumberoflines
-set statusline+=\ %4p%% 	    " set line %
-" set statusline+=\ %b 		" value of character under cursor
-set statusline+=\ %3c
-set statusline+=\ [%n] 	    " gives buffer number
+" set statusline+=%=		    " right side
+" set statusline+=\ %l/%L  " column:line:totalnumberoflines
+" set statusline+=\ %4p%% 	    " set line %
+" " set statusline+=\ %b 		" value of character under cursor
+" set statusline+=\ %3c
+" set statusline+=\ [%n] 	    " gives buffer number
 " >>>
+source ~/.config/nvim/statusline.vim
 
 " Syntastic Configuration   #Check :help Syntastic <<<
-	set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
-    set statusline+=%#warningmsg#
-    set statusline+=%{SyntasticStatuslineFlag()}
-    set statusline+=%*
+	" set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+    " set statusline+=%#warningmsg#
+    " set statusline+=%{SyntasticStatuslineFlag()}
+    " set statusline+=%*
 
 	let g:syntastic_always_populate_loc_list=1
 	let g:syntastic_auto_loc_list=0
@@ -681,7 +712,7 @@ nnoremap <C-p> :cprev<CR>
 	let airline#extensions#syntastic#stl_format_err = '%E{[%fe(#%e)]}'
 	let airline#extensions#syntastic#warning_symbol = 'ẃ:'
 	let airline#extensions#syntastic#stl_format_warn = '%W{[%fw(#%w)]}'
-	let g:airline_theme='gotham256'
+	let g:airline_theme='night_owl'
 	let g:hybrid_custom_term_colors=1
 	let g:hybrid_reduced_contrast=1
 " >>>
