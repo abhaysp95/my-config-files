@@ -295,10 +295,31 @@ map <Leader>ev : tabnew $MYVIMRC<CR>
 
 " Source vim config file
 map <Leader>sv : source $MYVIMRC<CR>
+" >>>
 
-" Toggle relative line number
+" linenumber settings <<<
 nmap <F5>      : set invrelativenumber number<CR>
 nmap <leader>N : set nonumber norelativenumber<CR>
+" Switch between normal and relativenumber and cursorline when switching modes
+augroup highlight-when-switching-modes
+    autocmd!
+    autocmd InsertEnter * setlocal number norelativenumber nocursorline
+    autocmd InsertLeave * setlocal relativenumber cursorline
+    autocmd WinEnter * setlocal cursorline
+    autocmd WinLeave * setlocal nocursorline
+" >>>
+
+" Periodically check for file changes <<<
+augroup checktime
+    autocmd!
+    autocmd CursorHold * silent! checktime
+augroup END
+" >>>
+
+" Resize splits when vim changes size <<<
+augroup auto-resize
+    autocmd!
+    autocmd VimResized * wincmd =
 " >>>
 
 " Spell-check set to <leader>o, 'o' for 'orthography':
@@ -306,15 +327,15 @@ map <F6> :setlocal spell! spelllang=en_us<CR>
 
 " Toggle quickfix window <<<
 function! QuickFix_toggle()
-    for i in range(1, winnr('$'))
-        let bnum = winbufnr(i)
-        if getbufbar(bnum, '&buftype') == 'quickfix'
-            cclose
-            return
-        endif
-    endfor
+	for i in range(1, winnr('$'))
+		let bnum = winbufnr(i)
+		if getbufbar(bnum, '&buftype') == 'quickfix'
+			cclose
+			return
+		endif
+	endfor
 
-    copen
+	copen
 endfunction
 nnoremap <silent><Leader>tq :call QuickFix_toggle()<CR>
 nnoremap <leader>Ic :set noic<CR>
@@ -344,57 +365,57 @@ snoremap <M-l> <Right>
 
 " lightline configuration <<<
 let g:lightline = {
-      \ 'colorscheme': 'Tomorrow_Night_Bright',
-		\ 'active': {
-		  \   'left': [ [ 'mode', 'paste' ],
-		  \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-		  \ },
-		  \ 'component_function': {
-		  \   'gitbranch': 'FugitiveHead',
-		  \ 'mode': 'LightlineMode',
-		  \ 'filename': 'LightlineFilename',
-		  \ 'fileformat': 'LightlineFileformat',
-		  \ 'filetype': 'LightlineFiletype'
-		  \ },
+			\ 'colorscheme': 'Tomorrow_Night_Bright',
+			\ 'active': {
+			\   'left': [ [ 'mode', 'paste' ],
+			\             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+			\ },
+			\ 'component_function': {
+			\   'gitbranch': 'FugitiveHead',
+			\ 'mode': 'LightlineMode',
+			\ 'filename': 'LightlineFilename',
+			\ 'fileformat': 'LightlineFileformat',
+			\ 'filetype': 'LightlineFiletype'
+			\ },
 			\ 'component': {
 			\ 'lineinfo': ' %3l:%-2v',
 			\ 'tagbar': '%{tagbar#currenttag("[%s]", "")}'
 			\ },
-\ }
-	let g:lightline.separator = {
-	\ 'left': '', 'right': ''
-	\}
-	let g:lightline.subseparator = {
-	\ 'left': '', 'right': ''
-	\}
-	let g:lightline.tabline = {
-	\ 'left': [ ['tabs'] ],
-	\ 'right': [ ['close'] ]
-	\ }
-	set showtabline=1 " Show tabline, only when there is another tab
+			\ }
+let g:lightline.separator = {
+			\ 'left': '', 'right': ''
+			\}
+let g:lightline.subseparator = {
+			\ 'left': '', 'right': ''
+			\}
+let g:lightline.tabline = {
+			\ 'left': [ ['tabs'] ],
+			\ 'right': [ ['close'] ]
+			\ }
+set showtabline=1 " Show tabline, only when there is another tab
 
-	function! LightlineMode()
-		return expand('%:t') =~# '^__Tagbar__' ? 'Tagbar':
-					\ expand('%:t') ==# 'ControlP' ? 'CtrlP' :
-					\ &filetype ==# 'unite' ? 'Unite' :
-					\ &filetype ==# 'vimfiler' ? 'VimFiler' :
-					\ &filetype ==# 'vimshell' ? 'VimShell' :
-					\ lightline#mode()
-	endfunction
+function! LightlineMode()
+	return expand('%:t') =~# '^__Tagbar__' ? 'Tagbar':
+				\ expand('%:t') ==# 'ControlP' ? 'CtrlP' :
+				\ &filetype ==# 'unite' ? 'Unite' :
+				\ &filetype ==# 'vimfiler' ? 'VimFiler' :
+				\ &filetype ==# 'vimshell' ? 'VimShell' :
+				\ lightline#mode()
+endfunction
 
-	function! LightlineFilename()
-	  let filename = expand('%:t') !=# '' ? expand('%:t') : '[No Name]'
-	  let modified = &modified ? ' +' : ''
-	  return filename . modified
-	endfunction
+function! LightlineFilename()
+	let filename = expand('%:t') !=# '' ? expand('%:t') : '[No Name]'
+	let modified = &modified ? ' +' : ''
+	return filename . modified
+endfunction
 
-	function! LightlineFileformat()
-		return winwidth(0) > 70 ? &fileformat : ''
-	endfunction
+function! LightlineFileformat()
+	return winwidth(0) > 70 ? &fileformat : ''
+endfunction
 
-	function! LightlineFiletype()
-		return winwidth(0) > 70 ? (&filetype !=# '' ? &filetype : 'no ft') : ''
-	endfunction
+function! LightlineFiletype()
+	return winwidth(0) > 70 ? (&filetype !=# '' ? &filetype : 'no ft') : ''
+endfunction
 " >>>
 
 " colorscheme configuration <<<
@@ -432,64 +453,105 @@ let g:nord_underline = 1
 
 " material colorscheme
 let g:material_terminal_italics = 1
-let g:material_theme_style = 'ocean'
+let g:material_theme_style = 'palenight'
+
+" onedark colorscheme
+let g:onedark_hide_endofbuffer = 1
+let g:onedark_terminal_italics = 1
+
+" neodark colorscheme
+" let g:neodark#backgroud = '#202020'
+let g:neodark#use_256color = 1
 
 " other colorschemes
+let g:palenight_terminal_italics=1
 let g:spacegray_underline_search = 1
 let g:spacegray_italicize_comments = 1
 let ayucolor="light"
 let g:gotham_airline_empahsised_insert = 0
-colorscheme night-owl
+colorscheme palenight
 set go=a
+
+" enable when onedark is set to colorscheme <<<
+" if (has("autocmd"))
+" 	augroup colorextend
+" 		autocmd!
+" 		"Make 'function's bold in GUI mode"
+" 		autocmd ColorScheme * call onedark#extend_highlight("Function", { "gui": "bold", "cterm": "bold" })
+" 	augroup END
+" endif
+" >>>
+
 " augroup htmlitalic <<<
-" 	autocmd FileType=html highlight htmlArg cterm=italic gui=italic
 " 	autocmd FileType=html highlight String cterm=none gui=none
 " augroup end
 " >>>
-highlight Identifiers gui=italic cterm=italic
 highlight PreProc gui=bold cterm=bold
 highlight Special gui=bold cterm=bold
-highlight Type gui=italic cterm=italic
-highlight Constant gui=italic cterm=italic
-highlight Statement gui=italic cterm=italic
+highlight SpecialComment gui=bold cterm=bold
+
+highlight Underlined gui=underline cterm=underline
+
+highlight Identifiers gui=bold,italic cterm=bold,italic
+highlight Constant gui=bold,italic cterm=bold,italic
+highlight Statement gui=bold,italic cterm=bold,italic
 highlight String gui=italic cterm=italic
 highlight Comment cterm=italic gui=italic
 highlight Search ctermbg=black ctermfg=yellow cterm=underline
 hi SignColumn ctermbg=255 guibg=255 gui=bold
-hi CursorLineNr guifg='#f78c6c' guibg='#01162c'
-hi FoldColumn guibg='#01162c'
+hi CursorLineNr guifg='#f78c6c' guibg=255
+hi FoldColumn guibg=255 ctermbg=255
 highlight htmlItalic gui=italic cterm=italic
+highlight htmlArg cterm=bold,italic gui=bold,italic
+
+" these changes colors to white for syntax <<<
+highlight Boolean gui=bold cterm=bold
+highlight Function gui=bold cterm=bold
+highlight SpecialChar gui=bold cterm=bold
+" highlight Delimiter gui=bold cterm=bold
+" highlight Todo gui=bold cterm=bold
+
+highlight Type gui=bold,italic cterm=bold,italic
+highlight Structure gui=bold,italic cterm=bold,italic
+highlight Typedef gui=bold,italic cterm=bold,italic
+highlight Keyword gui=bold,italic cterm=bold,italic
+highlight Conditional gui=bold,italic cterm=bold,italic
+highlight Repeat gui=bold,italic cterm=bold,italic
+highlight Label gui=bold,italic cterm=bold,italic
+highlight Character gui=bold,italic cterm=bold,italic
+" >>>
 
 syn sync fromstart
 " >>>
 
 " make nvim transparent with terminal
-hi! Normal ctermbg=NONE guibg=NONE
-hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
+" hi! Normal ctermbg=NONE guibg=NONE
+" hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
 
 " Disables automatic commenting on newline
 autocmd Filetype * setlocal formatoptions-=c formatoptions-=r formatoptions-=0
+autocmd Filetype * setlocal formatoptions+=n
 
 " coc extensions <<<
 let g:coc_global_extensions = [
-  \ 'coc-emoji',
-  \ 'coc-pairs',
-  \ 'coc-css',
-  \ 'coc-python',
-  \ 'coc-pyls',
-  \ 'coc-yaml',
-  \ 'coc-snippets',
-  \ 'coc-tsserver',
-  \ 'coc-prettier',
-  \ 'coc-markmap',
-  \ 'coc-json',
-  \ 'coc-syntax',
-  \ 'coc-java',
-  \ 'coc-html',
-  \ 'coc-sh',
-  \ 'coc-css',
-  \ 'coc-ultisnips'
-  \ ]
+			\ 'coc-emoji',
+			\ 'coc-pairs',
+			\ 'coc-css',
+			\ 'coc-python',
+			\ 'coc-pyls',
+			\ 'coc-yaml',
+			\ 'coc-snippets',
+			\ 'coc-tsserver',
+			\ 'coc-prettier',
+			\ 'coc-markmap',
+			\ 'coc-json',
+			\ 'coc-syntax',
+			\ 'coc-java',
+			\ 'coc-html',
+			\ 'coc-sh',
+			\ 'coc-css',
+			\ 'coc-ultisnips'
+			\ ]
 " >>>
 
 " Better display for messages <<<
@@ -503,6 +565,11 @@ set signcolumn=auto
 " >>>
 
 " some coc related settings <<<
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+" Remap for format selected region
+xmap <leader>v  <Plug>(coc-format-selected)
+nmap <leader>v  <Plug>(coc-format-selected)
+
 " Use `lp` and `ln` for navigate diagnostics
 nmap <silent> <leader>lp <Plug>(coc-diagnostic-prev)
 nmap <silent> <leader>ln <Plug>(coc-diagnostic-next)
@@ -530,16 +597,12 @@ endfunction
 " Use <c-space> to trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
 
-" Remap for format selected region
-xmap <leader>v  <Plug>(coc-format-selected)
-nmap <leader>v  <Plug>(coc-format-selected)
-
 augroup mygroup
-  autocmd!
-  " Setup formatexpr specified filetype(s).
-  autocmd FileType typescript,json,c,python setl formatexpr=CocAction('formatSelected')
-  " Update signature help on jump placeholder
-  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
+	autocmd!
+	" Setup formatexpr specified filetype(s).
+	autocmd FileType typescript,json,c,python setl formatexpr=CocAction('formatSelected')
+	" Update signature help on jump placeholder
+	autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 augroup end
 
 " Remap for do codeAction of selected region, ex: `<leader>aap` for current paragraph
@@ -564,11 +627,8 @@ command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 " use `:OR` for organize import of current buffer
 command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
 
-" prettier command for coc
-command! -nargs=0 Prettier :CocCommand prettier.formatFile
-
 " Higlight symbol under cursor on CursorHold
-    autocmd CursorHold * silent call CocActionAsync('highlight')
+autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Using CocList
 " Show all diagnostics
@@ -613,23 +673,34 @@ inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 " in first one, <c-n> works normally, however when completion menu appears the <Down> key is simulated.
 " this keeps the menu item always highlighted so that you can hit enter anytime to insert it.
 inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
-		\ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+			\ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 inoremap <expr> <C-p> pumvisible() ? '<C-p>' :
-		\ '<C-p><C-r>=pumvisible() ? "\<lt>Up>" : ""<CR>'
+			\ '<C-p><C-r>=pumvisible() ? "\<lt>Up>" : ""<CR>'
 " these two mappings are supposed to do show.
 " this one stimulates <C-x><C-o> to bring omni-completion menu, the stimulates <C-n><C-p> to remove longest common text
 " then finally stimulates <Down> again to keep match highlighted
 inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
-		\ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+			\ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 
 " here's another example of set of mappings that first close any popups that are open which means you seamlessly switch between omni and user completions.
 " if the menu is visible, use the above trick to keep the text you typed and select first
 " open omni completion menu closing previous if open and opening new menu without changing the text
 inoremap <expr> <C-Space> (pumvisible() ? (col('.') > 1 ? '<Esc>i<Right>' : '<Esc>i') : '') .
-            \ '<C-x><C-o><C-r>=pumvisible() ? "\<lt>C-n>\<lt>C-p>\<lt>Down>" : ""<CR>'
+			\ '<C-x><C-o><C-r>=pumvisible() ? "\<lt>C-n>\<lt>C-p>\<lt>Down>" : ""<CR>'
 " open user completion menu closing previous if open an opening new menu without changing the text
 inoremap <expr> <S-Space> (pumvisible() ? (col('.') > 1 ? '<Esc>i<Right>' : '<Esc>i') : '') .
-            \ '<C-x><C-u><C-r>=pumvisible() ? "\<lt>C-n>\<lt>C-p>\<lt>Down>" : ""<CR>'
+			\ '<C-x><C-u><C-r>=pumvisible() ? "\<lt>C-n>\<lt>C-p>\<lt>Down>" : ""<CR>'
+" >>>
+
+" some autocomplete settings <<<
+augroup omnifuncs
+    autocmd!
+    autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+    autocmd FileType html,markdown setlocal omnifunc=htmkcomplete#CompleteTags
+    autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+    autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+    autocmd FileType c setlocal omnifunc=ccomplete#Complete
+augroup endif
 " >>>
 
 
@@ -651,29 +722,28 @@ autocmd QuickFixCmdPost [^l] * nested cwindow
 " set statusline+=\ %3c
 " set statusline+=\ [%n] 	    " gives buffer number
 " >>>
-source ~/.config/nvim/statusline.vim
 
 " Syntastic Configuration   #Check :help Syntastic <<<
-	" set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
-    " set statusline+=%#warningmsg#
-    " set statusline+=%{SyntasticStatuslineFlag()}
-    " set statusline+=%*
+" set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
 
-	let g:syntastic_always_populate_loc_list=1
-	let g:syntastic_auto_loc_list=0
-	let g:syntastic_loc_list_height=6
-	let g:syntastic_check_on_open=0
-	let g:syntastic_auto_jump=3
-	let g:syntastic_check_on_wq=0
-	let g:syntastic_error_symbol = '✖'
-	let g:syntastic_style_error_symbol = '✖'
-	let g:syntastic_enable_highlighting = 1
-    " let g:syntastic_enable_elixir_checker = 1
-    " let g:syntastic_elixir_checkers = ["elixir"]
-	map <leader>te :Errors<cr>
-	map <leader>T :SyntasticToggleMode<CR>
-	" map <leader>t :SyntasticCheck
-	" >>>
+let g:syntastic_always_populate_loc_list=1
+let g:syntastic_auto_loc_list=0
+let g:syntastic_loc_list_height=6
+let g:syntastic_check_on_open=0
+let g:syntastic_auto_jump=3
+let g:syntastic_check_on_wq=0
+let g:syntastic_error_symbol = '✖'
+let g:syntastic_style_error_symbol = '✖'
+let g:syntastic_enable_highlighting = 1
+" let g:syntastic_enable_elixir_checker = 1
+" let g:syntastic_elixir_checkers = ["elixir"]
+map <leader>te :Errors<cr>
+map <leader>T :SyntasticToggleMode<CR>
+" map <leader>t :SyntasticCheck
+" >>>
 
 " useful for error detection <<<
 nnoremap cln :lnext<CR>
@@ -686,85 +756,85 @@ nnoremap <C-p> :cprev<CR>
 
 " Airline configuration <<<
 " Vim-Airline configuration
-	let g:airline#extensions#tabline#enabled=1
-	let g:airline#extensions#tabline#show_splits = 1
-	let g:airline#extensions#tabline#show_buffers = 1
-	let g:airline#extensions#bufferline#enabled = 1
-	let g:airline#extensions#tabline#buffer_nr_show = 1
-	let g:airline#extensions#tabline#buffer_idx_show = 1
-	let g:airline#extensions#tabline#tab_nr_type = 1
-	let g:airline#extensions#tabline#show_tabs = 1
-	let g:airline#extensions#tabline#show_tab_count = 1
-	let g:airline#extensions#tabline#fnamecollapse = 1
-	let g:airline#extensions#tabline#overflow_marker = '…'
-	let g:airline_powerline_fonts=0
-	let g:airline_inactive_collapse = 1
-	let g:airline#extensions#tabline#buffers_label = 'b'
-	let g:airline#extensions#tabline#tabs_label = 't'
-	let g:airline_mode_map = {
-		  \ '__'     : '-',
-		  \ 'c'      : 'C',
-		  \ 'i'      : 'I',
-		  \ 'ic'     : 'I',
-		  \ 'ix'     : 'I',
-		  \ 'n'      : 'N',
-		  \ 'multi'  : 'M',
-		  \ 'ni'     : 'N',
-		  \ 'no'     : 'N',
-		  \ 'R'      : 'R',
-		  \ 'Rv'     : 'R',
-		  \ 's'      : 'S',
-		  \ 'S'      : 'S',
-		  \ ''     : 'S',
-		  \ 't'      : 'T',
-		  \ 'v'      : 'V',
-		  \ 'V'      : 'V',
-		  \ ''     : 'V',
-	\ }
-	let g:airline#extensions#coc#enabled = 1
-	let airline#extensions#coc#stl_format_warn = '%W{[%w(#%fw)]}'
-	let airline#extensions#coc#stl_format_err = '%E{[%e(#%fe)]}'
-	let g:airline_exclude_preview = 0
-	let g:airline_focuslost_inactive = 0
-	let g:airline#extensions#whitespace#enabled = 0
-	let g:airline#extensions#branch#vcs_checks = ['untracked', 'dirty']
-	let airline#extensions#ale#error_symbol = 'e:'
-	let airline#extensions#ale#warning_symbol = 'w:'
-	let g:airline#extensions#nerdtree_status = 0
-	let g:airline#extensions#syntastic#enabled = 1
-	let airline#extensions#syntastic#error_symbol = 'ë:'
-	let airline#extensions#syntastic#stl_format_err = '%E{[%fe(#%e)]}'
-	let airline#extensions#syntastic#warning_symbol = 'ẃ:'
-	let airline#extensions#syntastic#stl_format_warn = '%W{[%fw(#%w)]}'
-	let g:airline_theme='night_owl'
-	let g:hybrid_custom_term_colors=1
-	let g:hybrid_reduced_contrast=1
+let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tabline#show_splits = 1
+let g:airline#extensions#tabline#show_buffers = 1
+let g:airline#extensions#bufferline#enabled = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline#extensions#tabline#buffer_idx_show = 1
+let g:airline#extensions#tabline#tab_nr_type = 1
+let g:airline#extensions#tabline#show_tabs = 1
+let g:airline#extensions#tabline#show_tab_count = 1
+let g:airline#extensions#tabline#fnamecollapse = 1
+let g:airline#extensions#tabline#overflow_marker = '…'
+let g:airline_powerline_fonts=0
+let g:airline_inactive_collapse = 1
+let g:airline#extensions#tabline#buffers_label = 'b'
+let g:airline#extensions#tabline#tabs_label = 't'
+let g:airline_mode_map = {
+			\ '__'     : '-',
+			\ 'c'      : 'C',
+			\ 'i'      : 'I',
+			\ 'ic'     : 'I',
+			\ 'ix'     : 'I',
+			\ 'n'      : 'N',
+			\ 'multi'  : 'M',
+			\ 'ni'     : 'N',
+			\ 'no'     : 'N',
+			\ 'R'      : 'R',
+			\ 'Rv'     : 'R',
+			\ 's'      : 'S',
+			\ 'S'      : 'S',
+			\ ''     : 'S',
+			\ 't'      : 'T',
+			\ 'v'      : 'V',
+			\ 'V'      : 'V',
+			\ ''     : 'V',
+			\ }
+let g:airline#extensions#coc#enabled = 1
+let airline#extensions#coc#stl_format_warn = '%W{[%w(#%fw)]}'
+let airline#extensions#coc#stl_format_err = '%E{[%e(#%fe)]}'
+let g:airline_exclude_preview = 0
+let g:airline_focuslost_inactive = 0
+let g:airline#extensions#whitespace#enabled = 0
+let g:airline#extensions#branch#vcs_checks = ['untracked', 'dirty']
+let airline#extensions#ale#error_symbol = 'e:'
+let airline#extensions#ale#warning_symbol = 'w:'
+let g:airline#extensions#nerdtree_status = 0
+let g:airline#extensions#syntastic#enabled = 1
+let airline#extensions#syntastic#error_symbol = 'ë:'
+let airline#extensions#syntastic#stl_format_err = '%E{[%fe(#%e)]}'
+let airline#extensions#syntastic#warning_symbol = 'ẃ:'
+let airline#extensions#syntastic#stl_format_warn = '%W{[%fw(#%w)]}'
+let g:airline_theme='night_owl'
+let g:hybrid_custom_term_colors=1
+let g:hybrid_reduced_contrast=1
 " >>>
 
 " newtree(tweeks for browsing) <<<
-    let g:netrw_banner=0                "disables banner at top
-    let g:netrw_browse_split=4          "open in prior window
-    let g:netrw_altv=1                  "open splits to the right
-    let g:netrw_liststyle=3             "tree view
-	nnoremap <leader>nl :Lex! \| vertical resize 30<CR>
+let g:netrw_banner=0                "disables banner at top
+let g:netrw_browse_split=4          "open in prior window
+let g:netrw_altv=1                  "open splits to the right
+let g:netrw_liststyle=3             "tree view
+nnoremap <leader>nl :Lex! \| vertical resize 30<CR>
 " >>>
 
 " searches down into subfolders
 " provides tab-completion for all file-related tasks
-    set path+=**
+set path+=**
 
 " Settings for vim latex live preview(needs working)
-    let g:livepreview_previewer = 'zathura'
-    "can also specify generator for latex
+let g:livepreview_previewer = 'zathura'
+"can also specify generator for latex
 
 " Create the 'tags' file(install ctags)
-    command! MakeTags !ctags -R .   "use ^] to jump to tag under cursor, g^] for ambiguous tag, ^t to jump back to tag stack
+command! MakeTags !ctags -R .   "use ^] to jump to tag under cursor, g^] for ambiguous tag, ^t to jump back to tag stack
 
 " Shortcutting split navigation,(laziness): <<<
-    nnoremap <C-h> <C-w>h
-    nnoremap <C-j> <C-w>j
-    nnoremap <C-k> <C-w>k
-    nnoremap <C-l> <C-w>l
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 " >>>
 
 " change splits from vert to horizontal and vice versa <<<
@@ -779,25 +849,25 @@ map <leader>ce :setlocal formatoptions=cro<CR>
 " >>>
 
 " Check file in shellcheck:
-    map <leader>S :!clear && shellcheck %<CR>
+map <leader>S :!clear && shellcheck %<CR>
 
 " Open corresponding .pdf/.html or preview
-    map <leader>p :!opout <c-r>%<CR><CR>
+map <leader>p :!opout <c-r>%<CR><CR>
 
 " resize pane <<<
 " disables arrow movement, resize splits instead but
 " since sometimes non vim users have to use my machine so arrow is necessary, so changed
-    let g:elite_mode=1
-    if get(g:, 'elite_mode')
-        " nnoremap <Up>       :resize +2<CR>
-        " nnoremap <Down>     :resize -2<CR>
-        " nnoremap <Left>     :vertical resize +2<CR>
-        " nnoremap <Right>    :vertical resize -2<CR>
-		nnoremap <silent> <M-k>		:resize +2<CR>
-		nnoremap <silent> <M-j>		:resize -2<CR>
-		nnoremap <silent> <M-l>		:vertical resize +2<CR>
-		nnoremap <silent> <M-h>		:vertical resize -2<CR>
-    endif
+let g:elite_mode=1
+if get(g:, 'elite_mode')
+	" nnoremap <Up>       :resize +2<CR>
+	" nnoremap <Down>     :resize -2<CR>
+	" nnoremap <Left>     :vertical resize +2<CR>
+	" nnoremap <Right>    :vertical resize -2<CR>
+	nnoremap <silent> <M-k>		:resize +2<CR>
+	nnoremap <silent> <M-j>		:resize -2<CR>
+	nnoremap <silent> <M-l>		:vertical resize +2<CR>
+	nnoremap <silent> <M-h>		:vertical resize -2<CR>
+endif
 " >>>
 
 autocmd BufRead,BufNewFile *.ms,*.me,*.mom,*.man set filetype=groff
@@ -807,33 +877,35 @@ autocmd BufRead,BufNewFile *.tex set filetype=tex
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' \| edit!
 
 " indentation settings <<<
-	set foldcolumn=1
-	set foldlevelstart=1
-	set foldmarker=<<<,>>>
-	set foldmethod=marker
-	set fillchars+=vert:╏,fold:•
+set foldcolumn=1
+set foldlevelstart=1
+set foldmarker=<<<,>>>
+set foldmethod=marker
+set fillchars+=vert:╏,fold:•
 "
-    autocmd BufWinLeave *.* mkview
-    autocmd BufWinEnter *.* silent! loadview
+autocmd WinLeave *.* mkview
+autocmd WinEnter *.* silent! loadview
 " >>>
+
+source ~/.config/nvim/statusline.vim
 
 " Notestaking and text/config editing <<<
 autocmd FileType markdown map <F7> :!pandoc<Space><C-r>%<space>-o<Space><C-r>%.pdf<Enter><Enter>
 autocmd FileType rmd map <F7> :!echo<space>"require(rmarkdown);<space>render('<c-r>%')"<space>\|<space>R<space>--vanilla<enter>
 
 " Automatically deletes all whitespace on save
-    autocmd BufWritePre * %s/\s\+$//e
+autocmd BufWritePre * %s/\s\+$//e
 
 " when shortcut files are updated, renew bash and ranger configs with new material
-    autocmd BufWritePost files,directories !shortcuts
+autocmd BufWritePost files,directories !shortcuts
 
 " Run xrdb whenever Xdefaults or Xresources are updated
-    autocmd BufWritePost *Xdefaults,*Xresources !xrdb %
+autocmd BufWritePost *Xdefaults,*Xresources !xrdb %
 
 " Update binds when sxhkdrc is updated
-    autocmd BufWritePost *sxhkdrc !pkill -USR1 sxhkd
+autocmd BufWritePost *sxhkdrc !pkill -USR1 sxhkd
 
-    autocmd BufWritePost !ctags -R %
+autocmd BufWritePost !ctags -R %
 " >>>
 
 let @+=@"
@@ -851,9 +923,9 @@ iabbrev myname Abhay Shanker Pathak
 iabbrev ppywar pylint: disable=W
 " >>>
 
-	augroup FILETYPES
-		autocmd FileType markdown let b:indentLine_setConceal=1
-	augroup END
+augroup FILETYPES
+	autocmd FileType markdown let b:indentLine_setConceal=1
+augroup END
 
 
 " markdown setting
@@ -867,17 +939,17 @@ nnoremap <leader>[ :Ngrep
 au BufRead,BufNewFile *wiki set filetype=markdown
 " :autocmd FileType vimwiki map <leader>d :VimwikiMakeDiaryNote
 function! ToggleCalendar()
-  execute ":Calendar"
-  if exists("g:calendar_open")
-    if g:calendar_open == 1
-      execute "q"
-      unlet g:calendar_open
-    else
-      g:calendar_open = 1
-    end
-  else
-    let g:calendar_open = 1
-  end
+	execute ":Calendar"
+	if exists("g:calendar_open")
+		if g:calendar_open == 1
+			execute "q"
+			unlet g:calendar_open
+		else
+			g:calendar_open = 1
+		end
+	else
+		let g:calendar_open = 1
+	end
 endfunction
 " >>>
 
@@ -942,30 +1014,31 @@ xmap gs <Plug>(GrepperOperator)
 " replace. It's similar to <leader>r except this one applies to all matches
 " across all files instead of just the current file.
 nnoremap <Leader>R
-  \ :let @s='\<'.expand('<cword>').'\>'<CR>
-  \ :Grepper -cword -noprompt<CR>
-  \ :cfdo %s/<C-r>s//g \| update
-  \<Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left>
+			\ :let @s='\<'.expand('<cword>').'\>'<CR>
+			\ :Grepper -cword -noprompt<CR>
+			\ :cfdo %s/<C-r>s//g \| update
+			\<Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left>
 
 " The same as above except it works with a visual selection.
 xmap <Leader>R
-    \ "sy
-    \ gvgr
-    \ :cfdo %s/<C-r>s//g \| update
-     \<Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left>
+			\ "sy
+			\ gvgr
+			\ :cfdo %s/<C-r>s//g \| update
+			\<Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left>
 " >>>
 
 " --- ale pluging ----- <<<
-let g:ale_sign_error                               = '●'
-let g:ale_sign_warning                             = '!-'
-"let g:ale_linters_explicit                        = 1
-"let g:ale_open_list                               = 1
-let g:ale_lint_on_enter                            = 0
+let g:ale_sign_error                            = '●'
+let g:ale_sign_warning                          = '!-'
+"let g:ale_linters_explicit                     = 1
+"let g:ale_open_list                            = 1
+let g:ale_lint_on_enter                         = 0
 " if you want to show after opening file save file
-let g:ale_lint_on_save                             = 1
-"let g:ale_lint_on_filetype_changed                = 0
-let g:ale_lint_on_insert_leave                     = 0
-"let g:ale_lint_on_text_changed                    = 'never'
+let g:ale_lint_on_save                          = 1
+"let g:ale_lint_on_filetype_changed             = 0
+let g:ale_lint_on_insert_leave                  = 0
+let g:ale_python_pylint_use_global				= 1
+"let g:ale_lint_on_text_changed                 = 'never'
 " nmap <leader>El	<Plug>(ale_lint)
 " nmap <leader>E	<Plug>(ale_fix)
 " nmap <leader><BS>		<Plug>(ale_reset_buffer)
@@ -1033,21 +1106,22 @@ nnoremap <leader>lD :SDelete!
 let g:startify_list = [
 			\ { 'type': 'dir'     ,	'header': ['Recent files'] },
 			\ { 'type': 'sessions', 'header': ['Saved sessions'] }
-\ ]
+			\ ]
 
 " Custom header
 let g:startfiy_custom_header = [
-  \ '   ╻ ╻   ╻   ┏┳┓',
-  \ '   ┃┏┛   ┃   ┃┃┃',
-  \ '   ┗┛    ╹   ╹ ╹',
-  \ '   ',
-  \ ]
+			\ '   ╻ ╻   ╻   ┏┳┓',
+			\ '   ┃┏┛   ┃   ┃┃┃',
+			\ '   ┗┛    ╹   ╹ ╹',
+			\ '   ',
+			\ ]
 " >>>
 
 echom '(>^.^<)'
 
 " learning some new things
 " nnoremap <buffer> <localleader>x dd
-autocmd BufNewFile * :write
-autocmd BufWritePre,BufRead *.html :normal gg=G
+" autocmd BufNewFile * :write
+" autocmd BufWritePre,BufRead *.html :normal gg=G2
+autocmd BufWritePre,BufRead *.html :normal gg=G2``
 autocmd BufNewFile,BufRead *.html :setlocal nowrap
