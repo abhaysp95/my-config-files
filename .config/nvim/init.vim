@@ -236,6 +236,13 @@ nnoremap <silent> <leader>s* :let@/='\<'.expand('<cword>').'\>'<CR>cgn
 xnoremap <silent> <leader>s* "sy:let @/=@s<CR>cgn
 " >>>
 
+" Press enter for newline without insert
+nnoremap <cr> o<esc>
+nnoremap <S-cr> O<esc>
+" but don't effect command line mode
+autocmd CmdwinEnter * nnoremap <CR> <CR>
+autocmd CmdwinLeave * nnoremap <CR> o<CR>
+
 
 " ---- format paragraph ------ "<<<
 " format paragraph (selected or not) to 80 character lines
@@ -252,33 +259,32 @@ hi SpellCap cterm=underline
 " >>>
 
 " enable autocompletion
-	set wildmode=longest,list,full
+set wildmode=longest,list,full
 
 " Splits open at the bottom and right(should be default)
-    set splitbelow splitright
+set splitbelow splitright
 
 " Display all matching files when tabs complete
-    set wildmenu
+set wildmenu
 
 " Some basics:
-	nnoremap c "_c
-	filetype plugin on
-	syntax on
-"	set number relativenumber
-	inoremap j' <ESC>
-	" inoremap <localleader><Space> <Esc>/<++><Enter>"_c4l
-	inoremap <M-Space> <Esc>/<++><Enter>"_c4l
+nnoremap c "_c
+filetype plugin on
+syntax on
+inoremap j' <ESC>
+" inoremap <localleader><Space> <Esc>/<++><Enter>"_c4l
+inoremap <M-Space> <Esc>/<++><Enter>"_c4l
 
-	" some custom snipptes <<<
-	autocmd FileType html inoremap ;i <em></em><Space><++><Esc>FeT>i
-	autocmd FileType html inoremap ;b <b></b><Space><++><Esc>FbT>i
-    autocmd FileType c inoremap ;c // <++> <<<<CR><++>()<Space>{<CR><++><CR>}<CR>// >>><CR><CR><++><Esc>7kI
-    autocmd FileType markdown inoremap ;c <!---<Space><Space>--><CR><CR><++><Esc>2kf<Space>a
-    autocmd FileType html inoremap ;c <!---<Space><Space>--><CR><CR><++><Esc>2kf<Space>a
-	autocmd FileType markdown inoremap ;sh ```sh<CR>```<CR><CR><++><Esc>2kO<C-i>
-	autocmd FileType markdown inoremap ;p ```python<CR>```<Esc>O
-	autocmd FileType markdown inoremap ;c ```c<CR>```<Esc>O
-	" >>>
+" some custom snipptes <<<
+autocmd FileType html inoremap ;i <em></em><Space><++><Esc>FeT>i
+autocmd FileType html inoremap ;b <b></b><Space><++><Esc>FbT>i
+autocmd FileType c inoremap ;c // <++> <<<<CR><++>()<Space>{<CR><++><CR>}<CR>// >>><CR><CR><++><Esc>7kI
+autocmd FileType markdown inoremap ;c <!---<Space><Space>--><CR><CR><++><Esc>2kf<Space>a
+autocmd FileType html inoremap ;c <!---<Space><Space>--><CR><CR><++><Esc>2kf<Space>a
+autocmd FileType markdown inoremap ;sh ```sh<CR>```<CR><CR><++><Esc>2kO<C-i>
+autocmd FileType markdown inoremap ;p ```python<CR>```<Esc>O
+autocmd FileType markdown inoremap ;c ```c<CR>```<Esc>O
+" >>>
 
 " some random setting <<<
 " Cycle through splits
