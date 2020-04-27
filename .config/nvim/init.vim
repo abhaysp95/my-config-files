@@ -100,35 +100,40 @@ call matchadd('ColorColumn', '\%101v', 100)
 " >>>
 
 " Limelight configuration <<<
-    let g:limelight_conceal_ctermbg     = 'dark-gray'
-    let g:limelight_conceal_ctermfg     = 240
-    let g:limelight_default_coefficient = 0.5
-    let g:limelight_paragraph_span      = 1
-	" >>>
+let g:limelight_conceal_ctermbg     = 'dark-gray'
+let g:limelight_conceal_ctermfg     = 240
+let g:limelight_default_coefficient = 0.5
+let g:limelight_paragraph_span      = 1
+" >>>
 
 " Goyo plugin makes text more readable when writing prose: <<<
 map <leader>F :Goyo \| set background=dark\| set linebreak<CR>
 " >>>
 
 " python syntax
-	let g:python_highlight_all          = 1
-	let g:python_slow_sync              = 0
+let g:python_highlight_all          = 1
+let g:python_slow_sync              = 0
 
 " Goyo configuration <<<
-    autocmd! User GoyoEnter Limelight
-    autocmd! User GoyoLeave Limelight!
-	" >>>"
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
+" >>>"
 
 " some set settings <<
 " Set Proper Tabs
-set tabstop=4
+set binary		" allows editing of binary files
+set tabstop=8
 set softtabstop=4
 set shiftwidth=4
-set smarttab
 set noexpandtab	"if switched on means it will insert spaces to length of tab
+set smarttab
+set autoindent
+set smartindent
 set listchars=eol:↲,tab:↦\ ,nbsp:␣,extends:…,trail:⋅
 set nolist
 set linebreak
+set sidescroll=1	" smooth scrolling
+set nostartofline	" places cursor to same position when switching buffers
 set autoindent
 set autoread
 set backspace=indent,eol,start
@@ -143,16 +148,18 @@ set nocompatible
 set omnifunc=syntaxcomplete#Complete
 set encoding=utf-8
 
-	if exists('+termguicolors')
+if exists('+termguicolors')
 	let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 	let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 	set termguicolors
-	endif
+endif
 
 set ruler
 set title	" sets title for document in terminal"
 set hlsearch
 set ignorecase
+set smartcase
+set autowrite	" saves file before switching buffer
 set incsearch
 set laststatus=2
 set lazyredraw
@@ -168,6 +175,8 @@ set scrolloff=3
 set showcmd
 set showmatch
 set noshowmode
+set number relativenumber
+set cursorline
 set smartcase
 set spelllang=en_us
 set textwidth=0
@@ -180,10 +189,15 @@ set whichwrap=b,s,<,>
 set wrap
 set modifiable
 set wrap
+set nojoinspaces    " don't add extra space ., !, etc. when joining
+set modeline
+set modelines=4
 autocmd FileType c,cpp,java set mps+==:;
 
 " better search in vim ------------
 set hlsearch
+set scrolloff=3	    " leaves 3 lines before the edge vertically
+" check sidescroll for horizontal when nowrap is set
 set incsearch
 " >>>
 
