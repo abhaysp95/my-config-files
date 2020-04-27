@@ -221,8 +221,12 @@ xnoremap <leader>ra :%s///g<Left><Left>
 xnoremap <leader>rc :%s///gc<Left><Left><Left>
 " >>>
 
-" keep cursor at the bottom of the visual selection after you yank it
-vmap y ygv<Esc>
+" keep cursor at the bottom of the visual selection after you yank it <<<
+vnoremap y ygv<Esc>
+vnoremap <silent> y y`]
+vnoremap <silent> p p`]
+nnoremap <silent> p p`]
+" >>>
 
 " repeat replacement <<<
 " type replacement term and press '.' to repeat the
