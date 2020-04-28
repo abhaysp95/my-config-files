@@ -139,13 +139,10 @@ logcheck=30                     # every 30 seconds
 WATCHFMT="%n from %M has %a tty%1 at %T %W"
 
 source ~/.config/.aliases            # aliases
-source ~/.profile
 
 #neofetch | lolcat -t
 #pfetch
 #figlet -f /usr/share/fonts/figlet-fonts/ANSI\ Shadow.flf "zsh ready" | lolcat -t
-
-export PATH="$HOME/.local/bin/.scripts:$PATH"
 
 notify-send --icon=~/.cache/notify-icons/terminal.png "zsh settings reloaded" -a zsh -t 2000
 
@@ -343,7 +340,7 @@ zle -N popdir
 bindkey '^[pl' popdir
 
 function awesome_magicenter {
-	figlet -f Star\ Wars "MAGIC"
+	figlet -f /usr/share/figlet/fonts/drpepper "raytracer"
 	# figlet -f mnemonic "$(printf '\t%s' "$(pwd)")"
 	printf 'pwd -> %s' "$(pwd)"
 }
