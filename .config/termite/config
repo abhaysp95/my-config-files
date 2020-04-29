@@ -13,9 +13,10 @@ dynamic_title = true
 # font = Hack Nerd Font Mono, 12
 # font = Monoid Nerd Font Mono,Retina 11
 # font = Victor Mono SemiBold, 12
-font = Operator Mono Medium,Medium 13
+# font = Operator Mono Medium,Medium 13
+# font = Dank Mono, 13
 # font = DejaVu SansMono Nerd Font, Book 11
-# font = FantasqueSansMono Nerd Font Mono, 13.5
+font = FantasqueSansMono Nerd Font Mono, 14
 # font = Fira Code,Regular 12
 # font = Fura Code Nerd Font,Regular 13
 # font = Iosevka Nerd Font, 13
@@ -1020,39 +1021,402 @@ highlight = #2f2f2f
 
 # Gotham color scheme
 
-[colors]
+# [colors]
 
-foreground      = #98d1ce
-foreground_bold = #98d1ce
-cursor          = #98d1ce
-background      = #0a0f14
+# foreground      = #98d1ce
+# foreground_bold = #98d1ce
+# cursor          = #98d1ce
+# background      = #0a0f14
 
-color0  = #0a0f14
-color8  = #3a3d42
+# color0  = #0a0f14
+# color8  = #3a3d42
 
-color1  = #c33027
-color9  = #d26939
+# color1  = #c33027
+# color9  = #d26939
 
-color2  = #26a98b
-color10 = #37b893
+# color2  = #26a98b
+# color10 = #37b893
 
-color3  = #edb54b
-color11 = #245361
+# color3  = #edb54b
+# color11 = #245361
 
-color4  = #195465
-color12 = #277373
+# color4  = #195465
+# color12 = #277373
 
-color5  = #4e5165
-color13 = #888ba5
+# color5  = #4e5165
+# color13 = #888ba5
 
-color14 = #599caa
+# color14 = #599caa
 
-color7  = #98d1ce
-color15 = #d3ebe9
+# color7  = #98d1ce
+# color15 = #d3ebe9
 
 # changed colors
 #color8  = #10151b
 #color10 = #081f2d
 #color12 = #093748
 
-# vim: ft=dosini cms=#%s
+# night-owl colorscheme
+# [colors]
+
+# foreground      = #bec5d4
+# foreground_bold = #bec5d4
+# # cursor          = #bec5d4
+# background      = #011627
+
+# color0 = #011627
+# color8 = #44596b
+
+# color1 = #f78c6c
+# color9 = #ef5350
+
+# color2  = #addb67
+# color10 = #22da6e
+
+# color3  = #ffcb8b
+# color11 = #ffeb95
+
+# color4  = #82aaff
+# color12 = #5ca7e4
+
+# color5  = #c792ea
+# color13 = #7e57c2
+
+# color6  = #7fdbca
+# color14 = #21c7a8
+
+# color7  = #bec5d4
+# color15 = #ffffff
+
+# # Base16 Material
+# # Author: Nate Peterson
+# [colors]
+
+# foreground          = #EEFFFF
+# foreground_bold     = #EEFFFF
+# cursor              = #EEFFFF
+# cursor_foreground   = #263238
+# background          = rgba(38, 50, 56)
+
+# # 16 color space
+
+# # Black, Gray, Silver, White
+# color0  = #263238
+# color8  = #546E7A
+# color7  = #EEFFFF
+# color15 = #FFFFFF
+
+# # Red
+# color1  = #F07178
+# color9  = #F07178
+
+# # Green
+# color2  = #C3E88D
+# color10 = #C3E88D
+
+# # Yellow
+# color3  = #FFCB6B
+# color11 = #FFCB6B
+
+# # Blue
+# color4  = #82AAFF
+# color12 = #82AAFF
+
+# # Purple
+# color5  = #C792EA
+# color13 = #C792EA
+
+# # Teal
+# color6  = #89DDFF
+# color14 = #89DDFF
+
+# # Extra colors
+# color16 = #F78C6C
+# color17 = #FF5370
+# color18 = #2E3C43
+# color19 = #314549
+# color20 = #B2CCD6
+# color21 = #EEFFFF
+
+# # Base16 Material Darker
+# # Author: Nate Peterson
+# [colors]
+
+# foreground          = #EEFFFF
+# foreground_bold     = #EEFFFF
+# cursor              = #EEFFFF
+# cursor_foreground   = #212121
+# background          = rgba(33, 33, 33)
+
+# # 16 color space
+
+# # Black, Gray, Silver, White
+# color0  = #212121
+# color8  = #4A4A4A
+# color7  = #EEFFFF
+# color15 = #FFFFFF
+
+# # Red
+# color1  = #F07178
+# color9  = #F07178
+
+# # Green
+# color2  = #C3E88D
+# color10 = #C3E88D
+
+# # Yellow
+# color3  = #FFCB6B
+# color11 = #FFCB6B
+
+# # Blue
+# color4  = #82AAFF
+# color12 = #82AAFF
+
+# # Purple
+# color5  = #C792EA
+# color13 = #C792EA
+
+# # Teal
+# color6  = #89DDFF
+# color14 = #89DDFF
+
+# # Extra colors
+# color16 = #F78C6C
+# color17 = #FF5370
+# color18 = #303030
+# color19 = #353535
+# color20 = #B2CCD6
+# color21 = #EEFFFF
+
+# # Base16 Material Lighter
+# # Author: Nate Peterson
+# [colors]
+
+# foreground          = #80CBC4
+# foreground_bold     = #80CBC4
+# cursor              = #80CBC4
+# cursor_foreground   = #FAFAFA
+# background          = rgba(250, 250, 250)
+
+# # 16 color space
+
+# # Black, Gray, Silver, White
+# color0  = #FAFAFA
+# color8  = #CCD7DA
+# color7  = #80CBC4
+# color15 = #FFFFFF
+
+# # Red
+# color1  = #FF5370
+# color9  = #FF5370
+
+# # Green
+# color2  = #91B859
+# color10 = #91B859
+
+# # Yellow
+# color3  = #FFB62C
+# color11 = #FFB62C
+
+# # Blue
+# color4  = #6182B8
+# color12 = #6182B8
+
+# # Purple
+# color5  = #7C4DFF
+# color13 = #7C4DFF
+
+# # Teal
+# color6  = #39ADB5
+# color14 = #39ADB5
+
+# # Extra colors
+# color16 = #F76D47
+# color17 = #E53935
+# color18 = #E7EAEC
+# color19 = #CCEAE7
+# color20 = #8796B0
+# color21 = #80CBC4
+
+# Base16 Material Palenight
+# Author: Nate Peterson
+[colors]
+
+foreground          = #959DCB
+foreground_bold     = #959DCB
+cursor              = #959DCB
+cursor_foreground   = #292D3E
+background          = rgba(41, 45, 62)
+
+# 16 color space
+
+# Black, Gray, Silver, White
+color0  = #292D3E
+color8  = #676E95
+color7  = #959DCB
+color15 = #FFFFFF
+
+# Red
+color1  = #F07178
+color9  = #F07178
+
+# Green
+color2  = #C3E88D
+color10 = #C3E88D
+
+# Yellow
+color3  = #FFCB6B
+color11 = #FFCB6B
+
+# Blue
+color4  = #82AAFF
+color12 = #82AAFF
+
+# Purple
+color5  = #C792EA
+color13 = #C792EA
+
+# Teal
+color6  = #89DDFF
+color14 = #89DDFF
+
+# Extra colors
+color16 = #F78C6C
+color17 = #FF5370
+color18 = #444267
+color19 = #32374D
+color20 = #8796B0
+color21 = #959DCB
+
+# # # Base16 Material Vivid
+# # # Author: joshyrobot
+# # [colors]
+
+# # foreground          = #B0BEC5
+# # foreground_bold     = #CFD8DC
+# # cursor              = #CFD8DC
+# # cursor_foreground   = #263238
+# # background          = rgba(38, 50, 56)
+
+# # # 16 color space
+
+# # # Black, Gray, Silver, White
+# # color0  = #263238
+# # color8  = #546E7A
+# # color7  = #B0BEC5
+# # color15 = #ECEFF1
+
+# # # Red
+# # color1  = #FF1744
+# # color9  = #FF1744
+
+# # # Green
+# # color2  = #00E676
+# # color10 = #00E676
+
+# # # Yellow
+# # color3  = #FFC400
+# # color11 = #FFC400
+
+# # # Blue
+# # color4  = #2979FF
+# # color12 = #2979FF
+
+# # # Purple
+# # color5  = #651FFF
+# # color13 = #651FFF
+
+# # # Teal
+# # color6  = #00B0FF
+# # color14 = #00B0FF
+
+# # # Extra colors
+# # color16 = #FF9100
+# # color17 = #8D6E63
+# # color18 = #37474F
+# # color19 = #455A64
+# # color20 = #90A4AE
+# # color21 = #CFD8DC
+
+# [colors]
+# # Base16 Ocean
+# # Author: Chris Kempson (http://chriskempson.com)
+
+# foreground          = #c0c5ce
+# foreground_bold     = #dfe1e8
+# cursor              = #dfe1e8
+# cursor_foreground   = #2b303b
+# background          = rgba(43, 48, 59)
+
+# # 16 color space
+
+# # Black, Gray, Silver, White
+# color0  = #2b303b
+# color8  = #65737e
+# color7  = #c0c5ce
+# color15 = #eff1f5
+
+# # Red
+# color1  = #bf616a
+# color9  = #bf616a
+
+# # Green
+# color2  = #a3be8c
+# color10 = #a3be8c
+
+# # Yellow
+# color3  = #ebcb8b
+# color11 = #ebcb8b
+
+# # Blue
+# color4  = #8fa1b3
+# color12 = #8fa1b3
+
+# # Purple
+# color5  = #b48ead
+# color13 = #b48ead
+
+# # Teal
+# color6  = #96b5b4
+# color14 = #96b5b4
+
+# # Extra colors
+# color16 = #d08770
+# color17 = #ab7967
+# color18 = #343d46
+# color19 = #4f5b66
+# color20 = #a7adba
+# color21 = #dfe1e8
+
+# material ocean <<<
+ [colors]
+
+foreground =  0x0f111a
+foreground_bold = 0x090b10
+background = 0x8f93a2
+
+color0 = #0f111a
+color8 = #ff8a80
+
+color1 = #ff5370
+color9 = #b0bec5
+
+color2  = #c3e88d
+color10 = #ffe57f
+
+color3  = #ffcb6b
+color11 = #ffe57f
+
+color4  = #82aaff
+color12 = #80d8ff
+
+color5  = #c792ea
+color13 = #ff80ab
+
+color6  = #89ddff
+color14 = #a7fdeb
+
+color7  = #ffffff
+color15 = #ffffff
+# >>>
+ vim: ft=config cms=#%s

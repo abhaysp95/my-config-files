@@ -26,13 +26,13 @@ for_window [instance="dropdown"] floating enable
 for_window [instance="dropdown"] resize set 700 400
 for_window [instance="dropdown"] move scratchpad
 for_window [instance="dropdown"] border pixel 4
-exec --no-startup-id $TERMINAL --name dropdown -e tmux
+exec --no-startup-id $TERMINAL2 --name dropdown -e tmux
 
 for_window [instance="clc"] floating enable
 for_window [instance="clc"] resize set 800 300
 for_window [instance="clc"] move scratchpad
 for_window [instance="clc"] border pixel 4
-exec --no-startup-id $TERMINAL --name clc -e python
+exec --no-startup-id $TERMINAL2 --name clc -e python
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -69,7 +69,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20
 
 
 ##---Basic Bindings---##
-bindsym $mod+Shift+Return         exec --no-startup-id samedirec
+# bindsym $mod+Shift+Return         exec --no-startup-id samedirec
 
 #bindsym $mod+Shit+t               exec --no-startup-id
 
@@ -318,45 +318,75 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 #   client.unfocused        $base01 $base01    $base03 $base0F
 #   client.urgent           $base02 $base08    $base00 $base0F
 
-# Customize colors-gruvbox
+# Customize colors-gruvbox <<<
 # client.focused          #fe8019 #fe8019 #ebdbb2 #fe8019 #fe8019
 # client.focused_inactive #1d2021 #1d2021 #ebdbb2 #1d2021 #1d2021
 # client.unfocused        #1d2021 #1d2021 #ebdbb2 #1d2021 #1d2021
 # client.urgent           #1d2021 #1d2021 #fb4934 #1d2021 #1d2021
 # client.placeholder      #1d2021 #1d2021 #ebdbb2 #1d2021 #1d2021
 # hide_edge_borders both
+# >>>
 
-# gruvbox light
+# gruvbox light <<<
 # client.focused          #d65228 #d65228 #ebdbb2 #d65228 #d65228
 # client.focused_inactive #fbf1c7 #fbf1c7 #ebdbb2 #fbf1c7 #fbf1c7
 # client.unfocused        #fbf1c7 #fbf1c7 #ebdbb2 #fbf1c7 #fbf1c7
 # client.urgent           #fbf1c7 #fbf1c7 #fb4934 #fbf1c7 #fbf1c7
 # client.placeholder      #fbf1c7 #fbf1c7 #ebdbb2 #fbf1c7 #fbf1c7
 # hide_edge_borders both
+# >>>
 
-# google-dark
+# google-dark <<<
 # client.focused          #768f85 #768f85 #ebdbb2 #768f85 #768f85
 # client.focused_inactive #1d1f21 #1d1f21 #ebdbb2 #1d1f21 #1d1f21
 # client.unfocused        #1d1f21 #1d1f21 #ebdbb2 #1d1f21 #1d1f21
 # client.urgent           #1d1f21 #1d1f21 #fb4934 #1d1f21 #1d1f21
 # client.placeholder      #1d1f21 #1d1f21 #ebdbb2 #1d1f21 #1d1f21
 # hide_edge_borders both
+# >>>
 
-# base16-eighties
+# base16-eighties <<<
 # client.focused          #a09f93 #a09f93 #ebdbb2 #a09f93 #a09f93
 # client.focused_inactive #2d2d2d #2d2d2d #ebdbb2 #2d2d2d #2d2d2d
 # client.unfocused        #2d2d2d #2d2d2d #ebdbb2 #2d2d2d #2d2d2d
 # client.urgent           #2d2d2d #2d2d2d #fb4934 #2d2d2d #2d2d2d
 # client.placeholder      #2d2d2d #2d2d2d #ebdbb2 #2d2d2d #2d2d2d
 # hide_edge_borders both
+# >>>
 
-# gotham-colorscheme
-client.focused          #98d1ce #98d1ce #ebdbb2 #98d1ce #98d1ce
-client.focused_inactive #0a0f14 #0a0f14 #ebdbb2 #0a0f14 #0a0f14
-client.unfocused        #0a0f14 #0a0f14 #ebdbb2 #0a0f14 #0a0f14
-client.urgent           #0a0f14 #0a0f14 #fb4934 #0a0f14 #0a0f14
-client.placeholder      #0a0f14 #0a0f14 #ebdbb2 #0a0f14 #0a0f14
-hide_edge_borders both
+# gotham-colorscheme <<<
+# client.focused          #98d1ce #98d1ce #ebdbb2 #98d1ce #98d1ce
+# client.focused_inactive #0a0f14 #0a0f14 #ebdbb2 #0a0f14 #0a0f14
+# client.unfocused        #0a0f14 #0a0f14 #ebdbb2 #0a0f14 #0a0f14
+# client.urgent           #0a0f14 #0a0f14 #fb4934 #0a0f14 #0a0f14
+# client.placeholder      #0a0f14 #0a0f14 #ebdbb2 #0a0f14 #0a0f14
+# hide_edge_borders both
+# >>>
+
+# night-owl colors <<<
+# client.focused          #ffcb8b #ffcb8b #ebdbb2 #ffcb8b #ffcb8b
+# client.focused_inactive #011627 #011627 #ebdbb2 #011627 #011627
+# client.unfocused        #011627 #011627 #ebdbb2 #011627 #011627
+# client.urgent           #011627 #011627 #fb4934 #011627 #011627
+# client.placeholder      #011627 #011627 #ebdbb2 #011627 #011627
+# hide_edge_borders both
+# >>>
+
+#                       palenight <<<
+client.focused          #292d3e   #292d3e #ebdbb2 #292d3e #292d3e
+client.focused_inactive #292d3e   #292d3e #ebdbb2 #292d3e #292d3e
+client.unfocused        #292d3e   #292d3e #ebdbb2 #292d3e #292d3e
+client.urgent           #292d3e   #292d3e #fb4934 #292d3e #292d3e
+client.placeholder      #292d3e   #292d3e #ebdbb2 #292d3e #292d3e
+hide_edge_borders       both
+#                       >>>
+#material-ocean <<<
+client.focused          #0f111a   #0f111a #ebdbb2 #0f111a #0f111a
+client.focused_inactive #0f111a   #0f111a #ebdbb2 #0f111a #0f111a
+client.unfocused        #0f111a   #0f111a #ebdbb2 #0f111a #0f111a
+client.urgent           #0f111a   #0f111a #fb4934 #0f111a #0f111a
+client.placeholder      #0f111a   #0f111a #ebdbb2 #0f111a #0f111a
+hide_edge_borders       both
 
 # client.focused          #81a1c1 #81a1c1 #ebdbb2 #81a1c1 #81a1c1
 # client.focused_inactive #2e3440 #2e3440 #ebdbb2 #2e3440 #2e3440

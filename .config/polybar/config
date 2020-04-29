@@ -1,20 +1,20 @@
 [colors]
 ;foreground = #ebdbb2
 foreground = #768f85
-light-foreground = #195465
+light-foreground = #8f93a2
 background = #181818
 red        = #c45e46
 ; changing blue with orange and vice-versa
 lightbrown       = #d65d0e
-blue	= #ec0a0f14
+blue	= #0f111a
 teal       = #689d6a
 green      = #98971a
 purple     = #b16286
-orange     = #093748
+orange     = #b0bec5
 indigo      = #83a598
 black = #000000
 yellow     = #d79921
-light-white      = #98d1ce
+light-white      = #b0bec5
 white = #d3d0c8
 cyan       = #689d6a
 brown      = #fb4934
@@ -48,6 +48,7 @@ brown      = #fb4934
 ;/* white      = #e9e9f4 */
 ;/* yellow     = #ebff87 */
 ;/* brown      = #969896 */
+
 [bar/top]
 ; Size
 width  = 100%
@@ -196,7 +197,7 @@ index-sort = true
 label-focused            = %name%
 label-focused-foreground = ${colors.light-white}
 label-focused-background = ${colors.blue}
-label-focused-underline = ${colors.light-white}
+label-focused-underline = ${colors.orange}
 label-focused-padding    = 1
 
 ; Unfocused labels
@@ -605,7 +606,8 @@ interval = 1.0
 
 ; Format
 ; date = %A, %d %B
-date = "%Y-%m-%d"
+date = "%m-%d"
+; %Y for year in full
 
 ; time = %H:%M:%S
 
