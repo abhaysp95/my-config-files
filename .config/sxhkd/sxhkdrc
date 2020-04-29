@@ -2,8 +2,8 @@
 
 super + Return
     $TERMINAL
-super + shift +t
-    alacritty
+super + shift + Return
+    $TERMINAL2
 super + shift + q
     kill -9 'xdotool getwindowfocus getwindowpid'
 # super + Escape
@@ -153,7 +153,7 @@ super+i:{m,p,v,d}
 	{manbyrofi,pdfbyrofi,videosbyrofi,caffeine_like}
 
 super + d:{d,f,k}
-    {dmenu_run -i -nb '#181818' -sf '#181818' -nf '#ebdbb2' -sb '#d7d7d8' -fn "Mononoki Nerd Font Mono 12",rofi -show run -i -show-icons, ((pidof compton && kill $(pidof compton)) || compton) & dunstify -t 2000 'compton toggled'}
+    {dmenu_run -i -nb '#181818' -sf '#181818' -nf '#ebdbb2' -sb '#d7d7d8' -fn "Mononoki Nerd Font Mono 12",rofi -show run -i -show-icons, ((pidof picom && kill $(pidof picom)) || picom) & dunstify -t 2000 'picom toggled'}
 
 super + b:{f,p,c,s,n,b,v}
     {firefox,pcmanfm,telegram-desktop,stacer,nautilus,brave,vivaldi-stable}
@@ -226,7 +226,7 @@ XF86AudioMedia
 
 # screenkey
 super + Scroll_Lock
-	killall screenkey || screenkey
+	killall screenkey || screenkey -s small --font-size small -g 300x800+1000+0
 
 # show clipboard
 super + F9
