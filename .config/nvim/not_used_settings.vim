@@ -34,6 +34,62 @@
 " set mps+=':'
 " >>>
 
+
+" lightline configuration <<<
+" let g:lightline = {
+" 			\ 'colorscheme': 'Tomorrow_Night_Bright',
+" 			\ 'active': {
+" 			\   'left': [ [ 'mode', 'paste' ],
+" 			\             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+" 			\ },
+" 			\ 'component_function': {
+" 			\   'gitbranch': 'FugitiveHead',
+" 			\ 'mode': 'LightlineMode',
+" 			\ 'filename': 'LightlineFilename',
+" 			\ 'fileformat': 'LightlineFileformat',
+" 			\ 'filetype': 'LightlineFiletype'
+" 			\ },
+" 			\ 'component': {
+" 			\ 'lineinfo': ' %3l:%-2v',
+" 			\ 'tagbar': '%{tagbar#currenttag("[%s]", "")}'
+" 			\ },
+" 			\ }
+" let g:lightline.separator = {
+" 			\ 'left': '', 'right': ''
+" 			\}
+" let g:lightline.subseparator = {
+" 			\ 'left': '', 'right': ''
+" 			\}
+" let g:lightline.tabline = {
+" 			\ 'left': [ ['tabs'] ],
+" 			\ 'right': [ ['close'] ]
+" 			\ }
+" set showtabline=1 " Show tabline, only when there is another tab
+
+" function! LightlineMode()
+" 	return expand('%:t') =~# '^__Tagbar__' ? 'Tagbar':
+" 				\ expand('%:t') ==# 'ControlP' ? 'CtrlP' :
+" 				\ &filetype ==# 'unite' ? 'Unite' :
+" 				\ &filetype ==# 'vimfiler' ? 'VimFiler' :
+" 				\ &filetype ==# 'vimshell' ? 'VimShell' :
+" 				\ lightline#mode()
+" endfunction
+
+" function! LightlineFilename()
+" 	let filename = expand('%:t') !=# '' ? expand('%:t') : '[No Name]'
+" 	let modified = &modified ? ' +' : ''
+" 	return filename . modified
+" endfunction
+
+" function! LightlineFileformat()
+" 	return winwidth(0) > 70 ? &fileformat : ''
+" endfunction
+
+" function! LightlineFiletype()
+" 	return winwidth(0) > 70 ? (&filetype !=# '' ? &filetype : 'no ft') : ''
+" endfunction
+" >>>
+
 "-------- highlight search funtion <<<
 	" This rewires n and N to dot the highlighting
 	" nnoremap <silent> n		n:call HLNext(0.4)<cr>
@@ -108,6 +164,22 @@
 " >>>
 
 " source ~/.config/nvim/statusline.vim		" goerge b(from vim group)
+
+" statusline learning <<<
+" set statusline=
+" set statusline+=\ %r	" readonly flag
+" set statusline+=\ %0.20F	" F for full path, t for tail only
+" set statusline+=\ %y	" display filetype
+" set statusline+=\ %m	" if file modified
+
+" set statusline+=%=		    " right side
+" set statusline+=\ %l/%L  " column:line:totalnumberoflines
+" set statusline+=\ %4p%% 	    " set line %
+" " set statusline+=\ %b 		" value of character under cursor
+" set statusline+=\ %3c
+" set statusline+=\ [%n] 	    " gives buffer number
+" >>>
+
 
 " some colorscheme related <<<
 "let g:gruvbox_contrast='hard'
@@ -350,6 +422,22 @@
 "     augroup END
 " >>>
 
+" mattn/calender.vim <<<
+" function! ToggleCalendar()
+" 	execute ":Calendar"
+" 	if exists("g:calendar_open")
+" 		if g:calendar_open == 1
+" 			execute "q"
+" 			unlet g:calendar_open
+" 		else
+" 			g:calendar_open = 1
+" 		end
+" 	else
+" 		let g:calendar_open = 1
+" 	end
+" endfunction
+" >>>
+
 " ---- vim-pandoc-syntax(without vim-pandoc) ------- <<<
 " augroup pandoc_syntax
 " 	au! BufNewFile,BufFilePre,BufRead *.md set filetype=markdown.pandoc
@@ -422,6 +510,7 @@
 " Plug 'vim-airline/vim-airline-themes'
 " Plug 'ryanoasis/vim-devicons'
 
+"Plug 'mattn/calendar-vim'
 "Plug 'PotatoesMaster/i3-vim-syntax'
 "Plug 'metakirby5/codi.vim'
 "Plug 'jreybert/vimagit'
