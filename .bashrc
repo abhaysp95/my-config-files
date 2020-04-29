@@ -179,6 +179,8 @@ shopt -s checkwinsize
 
 shopt -s expand_aliases
 
+shopt -s extglob
+
 # export QT_SELECT=4
 
 # Enable history appending instead of overwriting.  #139609
