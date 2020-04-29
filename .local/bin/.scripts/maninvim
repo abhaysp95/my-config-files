@@ -1,0 +1,32 @@
+#!/usr/bin/env sh
+
+# Date: 2020-04-28
+# Description: Open man page in $EDITOR
+# Email: abhaysp9955@gmail.com
+# Github: https://github.com/CoolAbhayS
+# Last Edited: 2020-04-28
+
+# requires fzf
+# set env variable EDITOR to your preferred editor choice
+# in my case it's nvim
+
+
+getmanname() {
+    man -k . | \
+	awk '{print $1 $2}' | \
+	fzf
+}
+
+
+viman() {
+    text=$(man "$@") && \
+	echo "$text" | \
+	"$EDITOR" -R +":set ft=man" - ;
+}
+
+if [ -z "$*" ]; then
+    name_is="$(getmanname | sed 's/(.*)//' )"
+    viman "$name_is"
+else
+    viman "$@"
+fi
