@@ -8,7 +8,7 @@
 "				--> Abhay Shanker Pathak
 "
 
-let mapleader = ","
+let mapleader = "\<Space>"
 let maplocalleader = "`"
 
 "-------All-the-plugins-for-vim-and-nvim---------------------- <<<
@@ -29,6 +29,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 
 " Theme / Interface
+" Plug 'luochen1990/rainbow'
 Plug 'joshdick/onedark.vim'
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'KeitaNakamura/neodark.vim'
@@ -89,7 +90,7 @@ Plug 'unblevable/quick-scope'
 " get startscreen
 Plug 'mhinz/vim-startify'
 call plug#end()
-" >>>
+" >>> And this is done by the way
 
 " set runtime to load some other plugins
 set runtimepath^=~/.config/nvim/plugged/dragvisuals
@@ -119,7 +120,7 @@ autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
 " >>>"
 
-" some set settings <<
+" some set settings <<<
 " Set Proper Tabs
 set binary		" allows editing of binary files
 set tabstop=8
@@ -141,7 +142,9 @@ set clipboard+=unnamed,unnamedplus
 set complete+=kspell
 set completeopt=menuone,preview,longest
 set encoding=utf-8
+scriptencoding utf-8
 set hidden
+set autowrite	" saves file before switching buffer
 set termguicolors
 set t_Co=256
 set nocompatible
@@ -159,7 +162,6 @@ set title	" sets title for document in terminal"
 set hlsearch
 set ignorecase
 set smartcase
-set autowrite	" saves file before switching buffer
 set incsearch
 set laststatus=2
 set lazyredraw
@@ -175,8 +177,8 @@ set scrolloff=3
 set showcmd
 set showmatch
 set noshowmode
-set number relativenumber
 set cursorline
+" set cursorcolumn
 set smartcase
 set spelllang=en_us
 set textwidth=0
@@ -238,7 +240,7 @@ xnoremap <silent> <leader>s* "sy:let @/=@s<CR>cgn
 
 " Press enter for newline without insert
 nnoremap <cr> o<esc>
-nnoremap <S-cr> O<esc>
+nnoremap <localleader><cr> O<esc>
 " but don't effect command line mode
 autocmd CmdwinEnter * nnoremap <CR> <CR>
 autocmd CmdwinLeave * nnoremap <CR> o<CR>
@@ -276,8 +278,8 @@ inoremap j' <ESC>
 inoremap <M-Space> <Esc>/<++><Enter>"_c4l
 
 " some custom snipptes <<<
-autocmd FileType html inoremap ;i <em></em><Space><++><Esc>FeT>i
-autocmd FileType html inoremap ;b <b></b><Space><++><Esc>FbT>i
+" autocmd FileType html inoremap ;i <em></em><Space><++><Esc>FeT>i
+" autocmd FileType html inoremap ;b <b></b><Space><++><Esc>FbT>i
 autocmd FileType c inoremap ;c // <++> <<<<CR><++>()<Space>{<CR><++><CR>}<CR>// >>><CR><CR><++><Esc>7kI
 autocmd FileType markdown inoremap ;c <!---<Space><Space>--><CR><CR><++><Esc>2kf<Space>a
 autocmd FileType html inoremap ;c <!---<Space><Space>--><CR><CR><++><Esc>2kf<Space>a
@@ -301,12 +303,15 @@ map <Leader>sv : source $MYVIMRC<CR>
 nmap <F5>      : set invrelativenumber number<CR>
 nmap <leader>N : set nonumber norelativenumber<CR>
 " Switch between normal and relativenumber and cursorline when switching modes
+autocmd FileType html,c,python,js,config,sh set number relativenumber
 augroup highlight-when-switching-modes
     autocmd!
     autocmd InsertEnter * setlocal number norelativenumber nocursorline
     autocmd InsertLeave * setlocal relativenumber cursorline
-    autocmd WinEnter * setlocal cursorline
-    autocmd WinLeave * setlocal nocursorline
+    " if &buftype != "terminal"
+	" autocmd BufEnter,WinEnter * setlocal cursorline
+	" autocmd BufLeave,WinLeave * setlocal nocursorline
+    " endif
 " >>>
 
 " Periodically check for file changes <<<
@@ -453,7 +458,7 @@ let g:nord_underline = 1
 
 " material colorscheme
 let g:material_terminal_italics = 1
-let g:material_theme_style = 'palenight'
+let g:material_theme_style = 'ocean'
 
 " onedark colorscheme
 let g:onedark_hide_endofbuffer = 1
@@ -469,8 +474,9 @@ let g:spacegray_underline_search = 1
 let g:spacegray_italicize_comments = 1
 let ayucolor="light"
 let g:gotham_airline_empahsised_insert = 0
-colorscheme palenight
+colorscheme material
 set go=a
+let g:rainbow_active = 1
 
 " enable when onedark is set to colorscheme <<<
 " if (has("autocmd"))
@@ -500,6 +506,8 @@ highlight Comment cterm=italic gui=italic
 highlight Search ctermbg=black ctermfg=yellow cterm=underline
 hi SignColumn ctermbg=255 guibg=255 gui=bold
 hi CursorLineNr guifg='#f78c6c' guibg=255
+hi CursorLine guibg=255' cterm=underline gui=underline
+" hi CursorColumn guibg='#444267'
 hi FoldColumn guibg=255 ctermbg=255
 highlight htmlItalic gui=italic cterm=italic
 highlight htmlArg cterm=bold,italic gui=bold,italic
@@ -521,6 +529,36 @@ highlight Label gui=bold,italic cterm=bold,italic
 highlight Character gui=bold,italic cterm=bold,italic
 " >>>
 
+" Dim inactive windows using 'colorcolumn' setting
+" This tends to slow down redrawing, but is very useful.
+" Based on https://groups.google.com/d/msg/vim_use/IJU-Vk-QLJE/xz4hjPjCRBUJ
+" XXX: this will only work with lines containing text (i.e. not '~')
+" from
+" if exists('+colorcolumn')
+"   function! s:DimInactiveWindows()
+"     for i in range(1, tabpagewinnr(tabpagenr(), '$'))
+"       let l:range = ""
+"       if i != winnr()
+"         if &wrap
+         " HACK: when wrapping lines is enabled, we use the maximum number
+         " of columns getting highlighted. This might get calculated by
+         " looking for the longest visible line and using a multiple of
+         " winwidth().
+         " let l:width=256 " max
+        " else
+         " let l:width=winwidth(i)
+        " endif
+        " let l:range = join(range(1, l:width), ',')
+      " endif
+      " call setwinvar(i, '&colorcolumn', l:range)
+    " endfor
+  " endfunction
+  " augroup DimInactiveWindows
+    " au!
+    " au WinEnter * call s:DimInactiveWindows()
+  " augroup END
+" endif
+
 syn sync fromstart
 " >>>
 
@@ -534,6 +572,7 @@ autocmd Filetype * setlocal formatoptions+=n
 
 " coc extensions <<<
 let g:coc_global_extensions = [
+			\ 'coc-clangd',
 			\ 'coc-emoji',
 			\ 'coc-pairs',
 			\ 'coc-css',
@@ -552,6 +591,7 @@ let g:coc_global_extensions = [
 			\ 'coc-css',
 			\ 'coc-ultisnips'
 			\ ]
+			" \ 'coc-jdtls',
 " >>>
 
 " Better display for messages <<<
@@ -745,7 +785,7 @@ map <leader>T :SyntasticToggleMode<CR>
 " map <leader>t :SyntasticCheck
 " >>>
 
-" useful for error detection <<<
+" useful for error detection (coc) <<<
 nnoremap cln :lnext<CR>
 nnoremap clp :lprevious<CR>
 nnoremap clc :lclose<CR>
@@ -812,11 +852,74 @@ let g:hybrid_reduced_contrast=1
 " >>>
 
 " newtree(tweeks for browsing) <<<
+let g:netrw_winsize = -35
+let g:netrw_liststyle = '[\/]$,*'
 let g:netrw_banner=0                "disables banner at top
 let g:netrw_browse_split=4          "open in prior window
 let g:netrw_altv=1                  "open splits to the right
 let g:netrw_liststyle=3             "tree view
 nnoremap <leader>nl :Lex! \| vertical resize 30<CR>
+" >>>
+
+" function for Lexplore (doesn't do what I want) <<<
+" function! ToggleLexplorer()
+"     if exists("t:expl_buf_num")
+" 	let expl_win_num = bufwinnr(t:expl_buf_num)
+" 	if expl_win_num != -1
+" 	    let cur_win_nr = winnr()
+" 	    exec expl_win_num . 'wincmd w'
+" 	    close
+" 	    exec cur_win_nr . 'wincmd w'
+" 	    unlet t:expl_buf_num
+" 	else
+" 	    unlet t:expl_buf_num
+" 	endif
+"     else
+" 	exec '1wincmd w'
+" 	Lexplore!
+" 	let t:expl_buf_num = bufnr("%")
+"     endif
+" endfunction
+
+" com! -nargs=* -bar -bang -complete=dir Lexplore call netrw#Lexplore(<q-args>, <bang>0)
+" fun! LexploreToggle(dir, right)
+"     if exists("t:netrw_lexbufnr")
+" 	" close down netrw explorer window
+" 	let lexwinnr = bufwinnr(t:netrw_lexbufnr)
+" 	if lexwinnr != -1
+" 	    let curwin = winnr()
+" 	    exe lexwinnr."wincmd w"
+" 	    close
+" 	    exe curwin."wincmd w"
+" 	endif
+" 	unlet t:netrw_lexbufnr
+"     else
+" 	" open netrw explorer in the dir of current file
+" 	" for remote files also
+" 	let path = substitute(exists("b:netrw_curdir")? b:netrw_curdir : expand("%:p"), '^\(.*[/\\]\)[^/\\]*$','e')
+" 	exe (a:right? "botright" : "topleft")." vertical ".((g.netrw_winsize > 0)? (g:netrw_winsize*winwidth(0))/100 : -g:netrw_winsize) . " new"
+" 	if a:dir != ""
+" 	    exe "Explore ".a:dir
+" 	else
+" 	    exe "Explore ".path
+" 	endif
+" 	setlocal winfixwidth
+" 	let t:netrw_lexbufnr = bufnr("%")
+"     endif
+" endfun
+" >>>
+
+" Some handy setting <<<
+nnoremap gG ggvG
+nnoremap g. @:
+nnoremap U <C-R>
+nnoremap cd :cd %:p:h<CR>
+nnoremap cu :cd ..<CR>
+nnoremap zq :qa!<CR>
+autocmd FileType help nnoremap <buffer>q :helpclose<CR>
+" >>>
+
+" nnoremap <leader>nl :call ToggleLexplorer()<CR>
 " >>>
 
 " searches down into subfolders
@@ -881,7 +984,16 @@ set foldcolumn=1
 set foldlevelstart=1
 set foldmarker=<<<,>>>
 set foldmethod=marker
-set fillchars+=vert:╏,fold:•
+set fillchars+=vert:\ ,fold:•
+set foldtext=MyFoldText()
+function MyFoldText()
+  let line = getline(v:foldstart)
+  let sub = substitute(line, '/\*\|\*/\|{{{\d\=', '', 'g')
+  return v:folddashes . sub
+endfunction
+" set foldtext=►
+" ǁǂ｜┃
+
 "
 autocmd WinLeave *.* mkview
 autocmd WinEnter *.* silent! loadview
@@ -953,6 +1065,9 @@ function! ToggleCalendar()
 endfunction
 " >>>
 
+" delete all buffers except current one
+nnoremap <leader>bd :silent :w \| %bd \| e#<CR>
+
 " ----------------- settings for fzf --------------------- <<<
 map <leader>ff :Files<CR>
 map <leader>fc :Files ~/.config/<CR>
@@ -982,7 +1097,9 @@ let g:fzf_files_options =
 let g:user_emmet_leader_key='<S-Tab>'
 " >>>
 
-autocmd BufEnter * lcd %:p:h
+if &buftype != "terminal"
+    autocmd BufEnter * lcd %:p:h
+endif
 
 " Vim Hexokinase <<<
 let g:Hexokinase_refreshEvents = ['TextChanged', 'InsertLeave']

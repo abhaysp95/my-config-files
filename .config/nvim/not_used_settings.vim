@@ -418,6 +418,9 @@
 " Theme / Interface
 "Plug 'Yggdroot/indentLine'
 "Plug 'AnsiEsc.vim'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
+" Plug 'ryanoasis/vim-devicons'
 
 "Plug 'PotatoesMaster/i3-vim-syntax'
 "Plug 'metakirby5/codi.vim'

@@ -32,7 +32,7 @@ function! ActiveLine()
     let statusline .= " %#NotModeArrow#"
 	" .s:left_separator
 
-    let statusline .= "%#Modi# %{IsModified(&modified)} "
+    let statusline .= "%#Modi# [%n] %{IsModified(&modified)} %m"
     let statusline .= " %#NotModeArrow#"
 	" .s:right_separator
 
@@ -58,7 +58,7 @@ function! ActiveLine()
     " Current line and column
     let statusline .= " %#NotModeArrow#"
 	". s:left_separator
-    let statusline .= "%#Filetype# Ln %l:%L "
+    let statusline .= "%#Filetype# ln %l:%L | %c"
     let statusline .= " %#NotModeArrow#"
 	" .s:right_separator." "
 
