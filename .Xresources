@@ -1,4 +1,4 @@
-!! Colors
+!! Colors <<<
 ! special
 /* *.foreground:   #c5c8c6 */
 /* *.background:   #1d1f21 */
@@ -35,10 +35,11 @@
 /* ! white */
 /* *.color7:       #707880 */
 /* *.color15:      #c5c8c6 */
+!! >>>
 
 !! URxvt.color12: rgb:5c/5c/ff
 
-/* !!gruvbox */
+/* !!gruvbox */ <<<
 /* !! hard contrast : *background: #1d2021 */
 /* *background    : #181818 */
 /* ! soft contrast: *background: #32302f */
@@ -67,8 +68,9 @@
 /* ! LightGrey + White */
 /* *color7        : #a89984 */
 /* *color15       : #ebdbb2 */
+!! >>>
 
-/* Solarized dark */
+/* Solarized dark */ <<<
 /* ! special */
 /* *.foreground:   #c5c8c6 */
 /* *.background:   #1d1f21 */
@@ -105,8 +107,9 @@
 /* ! white */
 /* *.color7:       #707880 */
 /* *.color15:      #c5c8c6 */
+!! >>>
 
-/* ! Dracula Xresources palette */
+/* ! Dracula Xresources palette */ <<<
 /* *.foreground: #F8F8F2 */
 /* *.background: #282A36 */
 /* *.color0:     #000000 */
@@ -125,8 +128,9 @@
 /* *.color14:    #9AEDFE */
 /* *.color7:     #BFBFBF */
 /* *.color15:    #E6E6E6 */
+!! >>>
 
-! Base16 Gruvbox dark, hard
+! Base16 Gruvbox dark, hard <<<
 ! Scheme: Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
 
 /* #define base00 #1d2021 */
@@ -171,8 +175,9 @@
 /* *color13:      base06 */
 /* *color14:      base0F */
 /* *color15:      base07 */
+!! >>>
 
-! Project:    Nord XResources
+! Project:    Nord XResources <<<
 ! Version:    0.1.0
 ! Repository: https://github.com/arcticicestudio/nord-xresources
 ! License:    MIT
@@ -216,8 +221,9 @@
 /* *.color13: nord15 */
 /* *.color14: nord7 */
 /* *.color15: nord6 */
+!! >>>
 
-/* base-16 tomorrow dark */
+/* base-16 tomorrow dark */ <<<
 ! special
 /* *.foreground:   #c5c8c6 */
 /* *.background:   #1d1f21 */
@@ -254,8 +260,9 @@
 /* ! white */
 /* *.color7:       #c5c8c6 */
 /* *.color15:      #ffffff */
+!! >>>
 
-/* base16_eighties */
+/* base16_eighties */ <<<
 ! special
 /* *.foreground:   #d3d0c8 */
 /* *.background:   #2d2d2d */
@@ -292,38 +299,71 @@
 /* ! white */
 /* *.color7:       #d3d0c8 */
 /* *.color15:      #f2f0ec */
+!! >>>
 
-/* gotham */
-*.foreground:   #98d1ce
-*.background:   #0a0f14
-*.cursorColor:  #98d1ce
+!! gotham <<<
+/* *.foreground:   #98d1ce */
+/* *.background:   #0a0f14 */
+/* *.cursorColor:  #98d1ce */
 
-*.color0:       #0a0f14
-*.color8:       #3a3d42
-/* *.color8:       #10151b */
+/* *.color0:       #0a0f14 */
+/* *.color8:       #3a3d42 */
+/* /1* *.color8:       #10151b *1/ */
 
-*.color1:       #c33027
-*.color9:       #d26939
+/* *.color1:       #c33027 */
+/* *.color9:       #d26939 */
 
-*.color2:       #26a98b
-*.color10:      #37b893
-/* *.color10:      #081f2d */
+/* *.color2:       #26a98b */
+/* *.color10:      #37b893 */
+/* /1* *.color10:      #081f2d *1/ */
 
-*.color3:       #edb54b
-*.color11:      #245361
+/* *.color3:       #edb54b */
+/* *.color11:      #245361 */
 
-*.color4:       #195465
-*.color12:      #277373
-/* *.color12:      #093748 */
+/* *.color4:       #195465 */
+/* *.color12:      #277373 */
+/* /1* *.color12:      #093748 *1/ */
 
-*.color5:       #4e5165
-*.color13:      #888ba5
+/* *.color5:       #4e5165 */
+/* *.color13:      #888ba5 */
 
-*.color6:       #33859d
-*.color14:      #599caa
+/* *.color6:       #33859d */
+/* *.color14:      #599caa */
 
-*.color7:       #98d1ce
-*.color15:      #d3ebe9
+/* *.color7:       #98d1ce */
+/* *.color15:      #d3ebe9 */
+!! >>>
+
+
+!! night-owl <<<
+*.foreground:   #bec5d4
+*.background:   #011627
+*.cursorColor:  #bec5d4
+
+*.color0:       #011627
+*.color8:       #44596b
+
+*.color1:       #f78c6c
+*.color9:       #ef5350
+
+*.color2:       #addb67
+*.color10:      #22da6e
+
+*.color3:       #ffcb8b
+*.color11:      #ffeb95
+
+*.color4:       #82aaff
+*.color12:      #5ca7e4
+
+*.color5:       #c792ea
+*.color13:      #7e57c2
+
+*.color6:       #7fdbca
+*.color14:      #21c7a8
+
+*.color7:       #bec5d4
+*.color15:      #ffffff
+!! >>>
 
 URxvt.perl-ext-common: resize-font,default,clipboard,url-select,keyboard-select
 
@@ -331,10 +371,10 @@ URxvt.url-select.launcher: brave
 URxvt.url-select.underline: true
 
 !! URxvt Appearance
-URxvt.font: xft:Source Code Pro:size=11.4:style=Semibold
-URxvt.boldFont: xft:Source Code Pro:size=11.4:style=Bold
-URxvt.italicFont: xft:Source Code Pro:size=11.4:style=Italic
-URxvt.boldItalicfont: xft:Source Code Pro:size=11.4:style=Bold Italic
+URxvt.font: xft:Operator Mono Medium:size=12.4:style=Medium
+URxvt.boldFont: xft:Operator Mono Bold:size=12.4:style=Bold
+URxvt.italicFont: xft:Operator Mono Medium:size=12.4:style=Medium Italic
+URxvt.boldItalicfont: xft:Operator Mono Bold:size=12.4:style=Bold Italic
 URxvt.scrollBar: false
 URxvt.letterSpace: -1
 URxvt.lineSpace: 0
