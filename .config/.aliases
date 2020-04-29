@@ -201,4 +201,6 @@ alias sc='cd ~/.local/bin/.scripts'
 alias ls='exa --grid -F --group-directories-first'
 alias lsa='exa --grid -Fa --group-directories-first'
 alias ll='exa -lFa --group-directories-first --color-scale --git'
-alias tree='exa -TaF --git'
+alias treee='exa -TaFl'		# alternative is tree -Duhp
+
+alias maninvim='miv'
