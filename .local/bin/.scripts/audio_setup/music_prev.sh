@@ -8,7 +8,8 @@
 # Last Edited: 2020-02-26
 
 if [ -n "$(pidof mpd)" ]; then
-	mpc prev && notify-send --icon=~/.cache/notify-icons/previous-1.png -t 3000 "Music played/paused\nCurrent Song" "$(mpc | head -1)"
+	mpc prev
+# notify-send --icon=~/.cache/notify-icons/previous-1.png -t 3000 "Music played/paused\nCurrent Song" "$(mpc | head -1)"
 else
 	if [ -n "$(pidof cmus)" ]; then
 		cmus-remote -r && notify-send --icon=~/.cache/notify-icons/previous-1.png -t 3000 "Music played/paused\nCurrent Song" "$(cmus-remote -Q | head -n 2 | grep file | cut -c 22-)"
