@@ -2,7 +2,7 @@
 ##---Basic Definitions---##
 for_window [class="^.*"] border pixel 2
 hide_edge_borders smart
-smart_gaps on
+# smart_gaps on
 gaps inner 15
 gaps outer 0
 new_float none
@@ -380,12 +380,12 @@ client.urgent           #292d3e   #292d3e #fb4934 #292d3e #292d3e
 client.placeholder      #292d3e   #292d3e #ebdbb2 #292d3e #292d3e
 hide_edge_borders       both
 #                       >>>
-#material-ocean <<<
-client.focused          #0f111a   #0f111a #ebdbb2 #0f111a #0f111a
-client.focused_inactive #0f111a   #0f111a #ebdbb2 #0f111a #0f111a
-client.unfocused        #0f111a   #0f111a #ebdbb2 #0f111a #0f111a
-client.urgent           #0f111a   #0f111a #fb4934 #0f111a #0f111a
-client.placeholder      #0f111a   #0f111a #ebdbb2 #0f111a #0f111a
+#material <<<
+client.focused          #263238   #263238 #ebdbb2 #263238 #263238
+client.focused_inactive #263238   #263238 #ebdbb2 #263238 #263238
+client.unfocused        #263238   #263238 #ebdbb2 #263238 #263238
+client.urgent           #263238   #263238 #fb4934 #263238 #263238
+client.placeholder      #263238   #263238 #ebdbb2 #263238 #263238
 hide_edge_borders       both
 
 # client.focused          #81a1c1 #81a1c1 #ebdbb2 #81a1c1 #81a1c1
