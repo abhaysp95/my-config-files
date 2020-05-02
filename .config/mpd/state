@@ -1,9 +1,9 @@
 sw_volume: 100
 audio_device_state:1:pulse audio
 audio_device_state:1:toggle_visualizer
-state: pause
-current: 78
-time: 174.732000
+state: play
+current: 1440
+time: 4.166000
 random: 1
 repeat: 0
 single: 0
@@ -1646,4 +1646,5 @@ playlist_begin
 1631:youtube/punjabi_songs/Tu Hi Das De _ Tedi Pagg _ Simar Panag ft. Mickey Singh _ Latest Punjabi Songs 2020-vvRo5tOU32Q.mp3
 1632:youtube/punjabi_songs/Yaar Hasda  - GURI (Full Song) Deep Jandu _ Latest Punjabi Songs 2020 _ Geet MP3-hn1Z7EUwM18.m4a
 1633:youtube/punjabi_songs/Naah Goriye - Bala.mp3
+1634:youtube/punjabi_songs/OSCAR - Video Song _ Kaptaan _ Gippy Grewal feat. Badshah _ Jaani, B Praak.mp3
 playlist_end
