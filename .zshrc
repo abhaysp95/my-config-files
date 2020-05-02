@@ -150,6 +150,8 @@ export FZF_DEFAULT_COMMAND="rg --files --hidden --follow"
 # export FZF_COMPLETION_TRIGGER=''
 # bindkey '^T' fzf-completion
 # bindkey '^I' $fzf_default_completion
+source /usr/share/fzf/completion.zsh
+source /usr/share/fzf/key-bindings.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # get colorful man page

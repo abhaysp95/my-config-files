@@ -1,6 +1,5 @@
 #
 # ~/.bashrc
-#
 
 [[ $- != *i* ]] && return
 
@@ -31,6 +30,7 @@ colors() {
 	done
 }
 
+bind 'set completion-ignore-case on'
 [ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
 
 # Change the window title of X terminals
@@ -77,38 +77,21 @@ parse_git_branch() {
 }
 # >>>
 
-# shortpath() didn't worked <<<
-# shortpath() {
-# 	dir=${1%/*} && last=${1##*/}
-
-# 	res=$(for i in ${dir//\// } ;
-# 		do
-# 			echo -n "${i:0:3}../" ;
-# 		done
-# 	)
-# 	echo "/$res$lat"
-# }
-# >>>
-
 # truncate pwd <<<
 MAX_PWD_LENGTH=15
 
 function shorten_pwd {
 	# this function ensures that the PWD string doesn't exceed $MAX_PWD_LENGTH characters
 	PWD=$(pwd)
-
-	# if truncated, replace truncated part with this string:
+# if truncated, replace truncated part with this string:
 	REPLACE="/.."
-
-	# determine part of path within HOME, or entire path if not in HOME
+# determine part of path within HOME, or entire path if not in HOME
 	RESIDUAL=${PWD#$HOME}
-
-	# compare RESIDUAL with PWD to determine whether we are in HOME or not
+# compare RESIDUAL with PWD to determine whether we are in HOME or not
 	if [ X"$RESIDUAL" != X"$PWD" ]; then
 		PREFIX="~"
 	fi
-
-	# check if RESIDUAL path need truncating to keep total length below MAX_PWD_LENGTH
+# check if RESIDUAL path need truncating to keep total length below MAX_PWD_LENGTH
 	# compensate for replacement string
 	TRUNC_LENGTH=$(($MAX_PWD_LENGTH - ${#PREFIX} - ${#REPLACE} - 1))
 	NORMAL=${PREFIX}${RESIDUAL}
@@ -124,32 +107,24 @@ function shorten_pwd {
 # >>>
 
 Err_Code() {
-	echo -e '\e[1;31m'error code $?'\e[m\n';
+	echo -e '\e[1;31m'error code $?'\e[m';
 }
 trap Err_Code ERR
-
-# \${?#0} var#pattern, to exlcude specific pattern from command or variable
-
-# jobcount() {
-# 	local stopped=$(jobs -sp | wc -l)
-# 	local running=$(jobs -rp | wc -l)
-# 	(( running + stopped )) && echo -n "${running}r/${stopped}s"
-# }
 
 # prompt PS1 <<<
 	if [[ ${EUID} == 0 ]] ; then
 		PS1="\[\033[01;31m\][\h\[\033[01;36m\] \W\[\033[01;31m\]]\$\[\033[00m\] "
 		set -o vi
 	else
-	 # PS1="\[\033[m\]|\[\033[1;35m\]\t\[\033[m\]|\[\e[1m\]\u\[\e[1;36m\]\[\033[m\]@\[\e[1;36m\]\h\[\033[m\]:\[\e[0m\]\[\e[1;32m\][\W]> \[\e[0m\]"
-	 PS1="\[\033[1;91m\]\[\033[1;35m\]|\t|\[\033[m\]\[\e[1;39m\]\u\[\e[1;36m\]\[\033[m\]\[\033[m\]:\[\e[0m\]\[\e[1;32m\][\$CurDir]\[\e[0;38;5;202m\]\$(parse_git_branch)\[\e[1;32m\]> \[\e[0m\]"
+	 PS1=""
+	 # PS1+="\[\033[1;91m\]\[\033[1;35m\]|\t|"
+	 PS1+="\[\033[m\]\[\e[1;39m\]\u"
+	 PS1+="\[\e[1;36m\]\[\033[m\]\[\033[m\]:"
+	 PS1+="\[\e[0m\]\[\e[1;32m\][\$CurDir]\[\e[0;38;5;202m"
+	 PS1+="\]\$(parse_git_branch)\[\e[1;32m\]> \[\e[0m\]"
 	fi
 # >>>
 
-	alias ls='ls --color=auto'
-	alias grep='grep --colour=auto'
-	alias egrep='egrep --colour=auto'
-	alias fgrep='fgrep --colour=auto'
 else
 	if [[ ${EUID} == 0 ]] ; then
 		# show root@ when we don't have colors
@@ -161,12 +136,6 @@ fi
 
 unset use_color safe_term match_lhs sh
 
-alias cp="cp -i"                          # confirm before overwriting something
-alias df='df -h'                          # human-readable sizes
-alias free='free -m'                      # show sizes in MB
-alias np='nano -w PKGBUILD'
-alias more=less
-
 xhost +local:root > /dev/null 2>&1
 
 complete -cf sudo
@@ -176,10 +145,10 @@ complete -cf sudo
 # it regains control.  #65623
 # http://cnswww.cns.cwru.edu/~chet/bash/FAQ (E11)
 shopt -s checkwinsize
-
+shopt -s cdspell
 shopt -s expand_aliases
-
 shopt -s extglob
+complete -d cd
 
 # export QT_SELECT=4
 
@@ -220,45 +189,8 @@ source ~/.config/.aliases
 # vi-mode
 set -o vi
 
-#get colored man pages
-#export PAGER="most"
-# man () {
-# 	LESS_TERMCAP_md=$'\e[01;31m' \
-# 	LESS_TERMCAP_me=$'\e[0m' \
-# 	LESS_TERMCAP_se=$'\e[0m' \
-# 	LESS_TERMCAP_so=$'\e[01;44;33m' \
-# 	LESS_TERMCAP_ue=$'\e[0m' \
-# 	LESS_TERMCAP_us=$'\e[01;32m' \
-# 	command man "$@"
-# }
-
-# export LESS=-R
-# export LESS_TERMCAP_mb=$'\E[1;31m'
-# export LESS_TERMCAP_md=$'\E[1;36m'
-# export LESS_TERMCAP_me=$'\E[0m'
-# export LESS_TERMCAP_so=$'\E[01;44;33m'
-# export LESS_TERMCAP_se=$'\E[0m'
-# export LESS_TERMCAP_us=$'\E[1;30m'
-# export LESS_TERMCAP_ue=$'\E[0m'
-
-## coloring man pages -------------------------------------
-# start blinking
-export LESS_TERMCAP_mb=$(tput bold; tput setaf 2)	# green
-# start bold
-export LESS_TERMCAP_md=$(tput bold; tput setaf 2)	# green
-# start stand out
-export LESS_TERMCAP_so=$(tput bold; tput setaf 3)	# yellow
-# end standout
-export LESS_TERMCAP_se=$(tput rmso; tput sgr0)
-# start underline
-export LESS_TERMCAP_us=$(tput smul; tput bold; tput setaf 1)	# red
-# end bold, blinking, standout, underline
-export LESS_TERMCAP_me=$(tput sgr0)
-# ------------------------------------------------------------
-
-
-source /home/raytracer/.gem/ruby/2.7.0/gems/colorls-1.3.3/lib/tab_complete.sh
-source /home/raytracer/.config/broot/launcher/bash/br
+# source /home/raytracer/.gem/ruby/2.7.0/gems/colorls-1.3.3/lib/tab_complete.sh
+# source /home/raytracer/.config/broot/launcher/bash/br
 
 ### insultor ###
 
@@ -266,29 +198,9 @@ if [ -f /etc/bash.command-not-found ]; then
     . /etc/bash.command-not-found
 fi
 
-# pfetch
-
-# liquid prompt
-# [[ $- = *i* ]] && source ~/Downloads/git-materials/liquidprompt/liquidprompt
-
-# a custom prompt
-# source ~/.config/custom_bashprompt
-
 # using z.lua ------------------------------------------------
-eval "$(lua ~/.zsh/z.lua/z.lua --init bash enhanced once fzf)"
-export _ZL_ECHO=1
-# ------------------------------------------------------------
-
-# setting dynamic title according to the directory
-# -----------------------------------------------------
-# not working correctly in bash
-# case $TERM in
-# 	xterm*)
-# 		HOST=`hostname`
-# 		HOST=${HOST%%.*}
-# 		PS1='^[]0;%${USER}@${HOST}: ${PWD##${HOME}/}^Gbash$ '
-# 		;;
-# esac
+# eval "$(lua ~/.zsh/z.lua/z.lua --init bash enhanced once fzf)"
+# export _ZL_ECHO=1
 
 # ---------------------------------------------------------
 # set dynamic title upon the previous executed command
@@ -298,11 +210,9 @@ function settitle () {
 	# echo -ne "\033]0;${PREV_COMMAND}\007"
 	export PREV_COMMAND=${PREV_COMMAND}' | '
 }
-
 export PROMPT_COMMAND=${PROMPT_COMMAND}';export PREV_COMMAND=""'
-
 trap 'settitle "$BASH_COMMAND"' DEBUG
-# ------------------------------------------------------------
+
 
 # ------------------------------------------------------------
 # some other PS1 prompts
@@ -345,7 +255,5 @@ command_not_found_handle() {
 }
 
 export CLICOLOR=1
-
 export HISTCONTROL=ignoreboth
-
 notify-send --icon=~/.cache/notify-icons/terminal.png "bash settings reloaded" -a bash -t 2000
