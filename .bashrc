@@ -121,7 +121,7 @@ trap Err_Code ERR
 	 PS1+="\[\033[m\]\[\e[1;39m\]\u"
 	 PS1+="\[\e[1;36m\]\[\033[m\]\[\033[m\]:"
 	 PS1+="\[\e[0m\]\[\e[1;32m\][\$CurDir]\[\e[0;38;5;202m"
-	 PS1+="\]\$(parse_git_branch)\[\e[1;32m\]> \[\e[0m\]"
+	 PS1+="\]\$(parse_git_branch)\[\e[1;32m\]› \[\e[0m\]"
 	fi
 # >>>
 
