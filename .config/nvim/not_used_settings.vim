@@ -506,8 +506,6 @@
 " Theme / Interface
 "Plug 'Yggdroot/indentLine'
 "Plug 'AnsiEsc.vim'
-" Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
 " Plug 'ryanoasis/vim-devicons'
 
 "Plug 'mattn/calendar-vim'
