@@ -1,0 +1,40 @@
+{
+    "schema_version": 2,
+    "timestamp": 1588302990,
+    "workspace": {
+        "0": [
+            [
+                {
+                    "panes": [
+                        {
+                            "type": "term",
+                            "directory": "/home/raytracer/Music/youtube/english_others",
+                            "custom_colors": {
+                                "fg_color": null,
+                                "bg_color": null,
+                                "palette": null
+                            }
+                        }
+                    ],
+                    "label": "...haiyya Chaiyya - (Remix) - PagalWorld.me",
+                    "custom_label_set": false
+                },
+                {
+                    "panes": [
+                        {
+                            "type": "term",
+                            "directory": "/home/raytracer/Downloads",
+                            "custom_colors": {
+                                "fg_color": null,
+                                "bg_color": null,
+                                "palette": null
+                            }
+                        }
+                    ],
+                    "label": "~/Downloads",
+                    "custom_label_set": false
+                }
+            ]
+        ]
+    }
+}
