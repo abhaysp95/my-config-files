@@ -40,9 +40,15 @@ xnoremap <silent> <leader>s* "sy:let @/=@s<CR>cgn
 " Press enter for newline without insert <<<
 nnoremap <cr> o<esc>
 nnoremap <localleader><cr> O<esc>
+nnoremap <localleader>x i<Space><Esc>l
+nnoremap <localleader>g<CR> r<CR>kddpk==
+nnoremap <localleader><localleader>g<CR> r<CR>kddpk==
+
 " but don't effect command line mode
 autocmd CmdwinEnter * nnoremap <CR> <CR>
 autocmd CmdwinLeave * nnoremap <CR> o<CR>
+" not useful
+" nnoremap <localleader>g<CR> i<CR><ESC>
 " >>>
 
 " ---- format paragraph ------ "<<<
@@ -54,7 +60,7 @@ xnoremap <leader>gP gqa
 nnoremap c "_c
 inoremap j' <ESC>
 " inoremap <localleader><Space> <Esc>/<++><Enter>"_c4l
-inoremap <M-,> <Esc>/<++><Enter>"_c4l
+inoremap <M-m> <Esc>/<++><Enter>"_c4l
 
 " some custom snipptes <<<
 " autocmd FileType html inoremap ;i <em></em><Space><++><Esc>FeT>i
@@ -110,7 +116,7 @@ nnoremap <C-p> :cprev<CR>
 nnoremap <leader>nl :Lex! \| vertical resize 30<CR>
 
 " Some handy setting <<<
-nnoremap gG ggvG
+nnoremap gG ggvG$
 nnoremap g. @:
 nnoremap U <C-R>
 nnoremap cd :cd %:p:h<CR>
@@ -186,3 +192,6 @@ onoremap af:normal vaf<cr>
 vnoremap if:<c-u>silent! normal! [zjv]zk$<cr>
 onoremap if:normal vif<cr>
 " >>>
+"
+" open terminal in new split
+nnoremap <leader>ct :vsplit term://zsh<CR>

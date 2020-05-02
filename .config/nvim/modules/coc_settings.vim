@@ -6,7 +6,6 @@ let g:coc_global_extensions = [
 			\ 'coc-clangd',
 			\ 'coc-emoji',
 			\ 'coc-pairs',
-			\ 'coc-css',
 			\ 'coc-python',
 			\ 'coc-pyls',
 			\ 'coc-yaml',
@@ -18,8 +17,11 @@ let g:coc_global_extensions = [
 			\ 'coc-syntax',
 			\ 'coc-java',
 			\ 'coc-html',
+			\ 'coc-lua',
 			\ 'coc-sh',
 			\ 'coc-css',
+			\ 'coc-vimlsp',
+			\ 'coc-explorer',
 			\ 'coc-ultisnips'
 			\ ]
 			" \ 'coc-jdtls',
@@ -112,33 +114,33 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 " Higlight symbol under cursor on CursorHold
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
-function! s:check_back_space() abort
-    let col = col('.') - 1
-    return !col || getline('.')[col - 1] =~ # '\s'
-endfunction
+" function! s:check_back_space() abort
+"     let col = col('.') - 1
+"     return !col || getline('.')[col - 1] =~ # '\s'
+" endfunction
 
-" Explorer
-let g:coc_explorer_global_presets = {
-	    \ 'floating': {
-	    \ 'position': 'floating',
-	    \ },
-	    \ 'floatingLeftside': {
-	    \ 'position': 'floating',
-	    \ 'floating-position': 'left-center',
-	    \ 'floating-width': 30,
-	    \ },
-	    \ 'floatingRightside': {
-	    \ 'position': 'floating',
-	    \ 'floating-position': 'right-center',
-	    \ 'floating-width': 30,
-	    \ },
-	    \ 'simplify': {
-	    \ 'file.child.template': '[selection | clip | 1] [filename omitCenter 1]'
-	    \ }
-	    \ }
+" Explorer (floating window)
+" let g:coc_explorer_global_presets = {
+" 	    \ 'floating': {
+" 	    \ 'position': 'floating',
+" 	    \ },
+" 	    \ 'floatingLeftside': {
+" 	    \ 'position': 'floating',
+" 	    \ 'floating-position': 'left-center',
+" 	    \ 'floating-width': 30,
+" 	    \ },
+" 	    \ 'floatingRightside': {
+" 	    \ 'position': 'floating',
+" 	    \ 'floating-position': 'right-center',
+" 	    \ 'floating-width': 30,
+" 	    \ },
+" 	    \ 'simplify': {
+" 	    \ 'file.child.template': '[selection | clip | 1] [filename omitCenter 1]'
+" 	    \ }
+" 	    \ }
 nnoremap ,Ee :CocCommand explorer<CR>
-nnoremap ,Ef :CocCommand explorer --preset floatingRightside<CR>
-autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
+" nnoremap ,Ef :CocCommand explorer --preset floatingRightside<CR>
+" autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
 " >>>
 
 " some auto-completion settings for <c-space>, <c-n> and <c-p> <<<

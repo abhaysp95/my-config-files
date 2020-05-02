@@ -1,0 +1,217 @@
+ [BUFFER]
+ [FILE I]: raytracer /home/raytracer
+      .android                                                     4.1 kB
+      .byobu                                                       4.1 kB
+      .cache                                                       4.1 kB
+      .calcurse                                                    4.1 kB
+      .cargo                                                       4.1 kB
+      .cgdb                                                        4.1 kB
+ *    .config                                                      4.1 kB
+ M   │  alacritty                                                  4.1 kB
+     │  asciinema                                                  4.1 kB
+     │  autostart                                                  4.1 kB
+     │  balena-etcher-electron                                     4.1 kB
+     │  bashtop                                                    4.1 kB
+     │  bat                                                        4.1 kB
+     │  BraveSoftware                                              4.1 kB
+     │  broot                                                      4.1 kB
+     │  bspwm                                                      4.1 kB
+     │  caffeine                                                   4.1 kB
+     │  cava                                                       4.1 kB
+     │  cmus                                                       4.1 kB
+     │  coc                                                        4.1 kB
+     │  Code - OSS                                                 4.1 kB
+     │  colorls                                                    4.1 kB
+     │  configstore                                                4.1 kB
+     │  dconf                                                      4.1 kB
+     │  deadbeef                                                   4.1 kB
+     │  discord                                                    4.1 kB
+     │  dunst                                                      4.1 kB
+     │  enchant                                                    4.1 kB
+     │  evolution                                                  4.1 kB
+     │  falkon                                                     4.1 kB
+     │  fish                                                       4.1 kB
+     │  galculator                                                 4.1 kB
+     │  gcolor3                                                    4.1 kB
+     │  gedit                                                      4.1 kB
+     │  gnome-session                                              4.1 kB
+     │  goa-1.0                                                    4.1 kB
+     │  google-chrome                                              4.1 kB
+     │  gthumb                                                     4.1 kB
+     │  gtk-2.0                                                    4.1 kB
+ M   │  gtk-3.0                                                    4.1 kB
+     │  gtk-4.0                                                    4.1 kB
+ ?   │  guake                                                      4.1 kB
+     │  hexchat                                                    4.1 kB
+     │  htop                                                       4.1 kB
+     │  i3                                                         4.1 kB
+     │  i3blocks                                                   4.1 kB
+     │  ibus                                                       4.1 kB
+     │  joplin                                                     4.1 kB
+     │  Joplin                                                     4.1 kB
+     │  joplin-desktop                                             4.1 kB
+     │  Kingsoft                                                   4.1 kB
+     │  kitty                                                      4.1 kB
+     │  Kvantum                                                    4.1 kB
+     │  lf                                                         4.1 kB
+     │  lftp                                                       4.1 kB
+     │  libaccounts-glib                                           4.1 kB
+     │  libfm                                                      4.1 kB
+     │  libvirt                                                    4.1 kB
+     │  light                                                      4.1 kB
+     │  liquidprompt                                               4.1 kB
+     │  manjaro                                                    4.1 kB
+ M   │  mpd                                                        4.1 kB
+     │  mpv                                                        4.1 kB
+     │  nano                                                       4.1 kB
+     │  nautilus                                                   4.1 kB
+     │  ncmpcpp                                                    4.1 kB
+     │  neofetch                                                   4.1 kB
+     │  newsboat                                                   4.1 kB
+     │  nitrogen                                                   4.1 kB
+     │  notify-icons                                               4.1 kB
+     │  nu                                                         4.1 kB
+ *   │  nvim                                                       4.1 kB
+ *   │ │  modules                                                  4.1 kB
+ M   │ │ │  coc_settings.vim                                      7.28 kB
+     │ │ │  color_settings.vim                                    4.94 kB
+ ?   │ │ │  fzf_conf.vim                                          3.11 kB
+ M   │ │ │  keybindings.vim                                        5.9 kB
+ ?   │ │ │  plug-colorizer.lua                                      425 B
+ M   │ │ │  plugin_settings.vim                                   8.69 kB
+ M   │ │ │  plugins.vim                                           2.35 kB
+ M   │ │ │  settings.vim                                          7.36 kB
+     │ │ └  statusline.vim                                        3.29 kB
+     │ │  plugged                                                  4.1 kB
+     │ │  snippets                                                 4.1 kB
+     │ │  templates                                                4.1 kB
+     │ │  vim-plugins-profile-master                               4.1 kB
+     │ │ ﬒ .netrwhist                                                700 B
+ M   │ │  coc-settings.json                                         453 B
+ M   │ │  init.vim                                                  715 B
+     │ │  log1.txt                                                15.6 kB
+     │ │  log2.txt                                                17.4 kB
+ M   │ │  not_used_settings.vim                                   16.7 kB
+     │ │  oldinit → →/home/raytracer/.vimrc                          22 B
+     │ │  s.vim                                                     210 B
+     │ └  vim-plugins-profile-master.zip                          73.9 kB
+     │  pamac                                                      4.1 kB
+     │  pcmanfm                                                    4.1 kB
+     │  polybar                                                    4.1 kB
+     │  polybar2                                                   4.1 kB
+     │  pulse                                                      4.1 kB
+     │  qt5ct                                                      4.1 kB
+     │  ranger                                                     4.1 kB
+     │  rofi                                                       4.1 kB
+     │  spotify                                                    4.1 kB
+     │  spotify-tui                                                4.1 kB
+     │  sxhkd                                                      4.1 kB
+     │  sxiv                                                       4.1 kB
+     │  syncthing                                                  4.1 kB
+     │  systemd                                                    4.1 kB
+     │  terminator                                                 4.1 kB
+ M   │  termite                                                    4.1 kB
+     │  tilda                                                      4.1 kB
+     │  totem                                                      4.1 kB
+     │  vidcutter                                                  4.1 kB
+     │  vivaldi                                                    4.1 kB
+     │  wal                                                        4.1 kB
+     │  xfce4                                                      4.1 kB
+     │  yarn                                                       4.1 kB
+     │  yay                                                        4.1 kB
+     │  yelp                                                       4.1 kB
+     │  youtube-viewer                                             4.1 kB
+     │  zathura                                                    4.1 kB
+ M   │ ﬒ .aliases                                                   5.8 kB
+     │  compton.conf                                              1.16 kB
+     │  current_wall.txt                                           139 kB
+     │  custom_bashprompt                                         7.44 kB
+     │  directories                                                 178 B
+     │  equal_cylinder_stack.c                                    1.83 kB
+     │  files                                                        67 B
+     │  kglobalshortcutsrc                                         2.6 kB
+     │  lattedockrc                                                 371 B
+     │  liquidpromptrc                                            4.79 kB
+     │  manjaro-hello.json                                           16 B
+     │  mimeapps.list                                               352 B
+     │  mpv-shot0001.jpg                                           100 kB
+     │  picom.conf                                                8.04 kB
+     │  QtProject.conf                                              532 B
+     │  README.md                                                   204 B
+     │  Trolltech.conf                                            1.53 kB
+     │  user-dirs.dirs                                              603 B
+     │  user-dirs.locale                                              5 B
+ M   └  wall.png                                                  1.47 MB
+      .dotnet                                                      4.1 kB
+      .electron-gyp                                                4.1 kB
+      .fonts                                                       4.1 kB
+      .fzf                                                         4.1 kB
+      .gem                                                         4.1 kB
+      .git                                                         4.1 kB
+      .gnupg                                                       4.1 kB
+      .icons                                                       4.1 kB
+      .ipython                                                     4.1 kB
+      .kingsoft                                                    4.1 kB
+ *    .local                                                       4.1 kB
+      .mozilla                                                     4.1 kB
+      .mplayer                                                     4.1 kB
+      .npm                                                         4.1 kB
+      .nuget                                                       4.1 kB
+      .packer.d                                                    4.1 kB
+      .pki                                                         4.1 kB
+      .pylint.d                                                   12.3 kB
+      .ssh                                                         4.1 kB
+      .subversion                                                  4.1 kB
+      .surf                                                        4.1 kB
+      .themes                                                      4.1 kB
+      .thumbnails                                                  4.1 kB
+      .tldr                                                        4.1 kB
+      .tmux                                                        4.1 kB
+ ?    .tooling                                                     4.1 kB
+      .vim                                                         4.1 kB
+      .vimgolf                                                     4.1 kB
+      .vscode-oss                                                  4.1 kB
+      .w3m                                                         4.1 kB
+      .zsh                                                         4.1 kB
+      Documents                                                    4.1 kB
+      Downloads                                                    4.1 kB
+      go                                                           4.1 kB
+      Music                                                        131 kB
+      Pictures                                                    24.6 kB
+      R                                                            4.1 kB
+      Templates                                                    4.1 kB
+      Videos                                                      32.8 kB
+      vimwiki                                                      4.1 kB
+      yay                                                          4.1 kB
+     ﬒ .bash_history                                               5.88 kB
+     ﬒ .bash_logout                                                   21 B
+     ﬒ .bash_profile                                                 112 B
+      .bashrc                                                     9.56 kB
+     ﬒ .dir_colors                                                 4.86 kB
+     ﬒ .fehbg                                                        117 B
+      .fzf.bash                                                     346 B
+      .fzf.zsh                                                      344 B
+     ﬒ .git-credentials                                               51 B
+      .gitconfig                                                    115 B
+      .gitignore                                                  4.06 kB
+     ﬒ .gtkrc-2.0                                                    611 B
+     ﬒ .lesshst                                                      657 B
+     ﬒ .profile                                                    1.07 kB
+     ﬒ .pylintrc                                                   17.9 kB
+     ﬒ .python_history                                               304 B
+     ﬒ .pythonhist                                                 1.73 kB
+      .tmux.conf                                                  3.79 kB
+     ﬒ .viminfo                                                    9.32 kB
+      .vimrc → →.config/nvim/init.vim                                21 B
+     ﬒ .Xclients                                                     100 B
+     ﬒ .xinitrc                                                    1.55 kB
+     ﬒ .Xmodmap                                                       22 B
+ M   ﬒ .xprofile                                                     460 B
+ M   ﬒ .Xresources                                                  9.1 kB
+     ﬒ .zcompdump                                                    43 kB
+     ﬒ .zcompdump.server.11616                                     32.5 kB
+     ﬒ .zlua                                                       11.2 kB
+     ﬒ .zsh_history                                                 128 kB
+ M    .zshrc                                                      11.7 kB
+      canyonbottom                                                  572 B
+      README.md                                                     941 B

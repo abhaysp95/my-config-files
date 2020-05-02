@@ -8,6 +8,7 @@ Plug 'tpope/vim-repeat'
 Plug 'vim-python/python-syntax'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+" Plug 'airblade/vim-rooter'
 Plug 'machakann/vim-sandwich'
 Plug 'tpope/vim-markdown'
 
@@ -17,12 +18,22 @@ Plug 'gcmt/wildfire.vim'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 
 " Theme / Interface
+" Plug 'norcalli/nvim-colorizer.lua'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
 Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'KeitaNakamura/neodark.vim'
 Plug 'haishanh/night-owl.vim'
 Plug 'whatyouhide/vim-gotham'
+Plug 'yuttie/hydrangea-vim'
+Plug 'tyrannicaltoucan/vim-deep-space'
+Plug 'AlessandroYorba/Despacio'
+Plug 'cocopon/iceberg.vim'
+Plug 'nightsense/snow'
+Plug 'nightsense/stellarized'
+Plug 'nightsense/cosmic_latte'
 Plug 'ayu-theme/ayu-vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'tomasiser/vim-code-dark'
@@ -64,7 +75,6 @@ Plug 'tommcdo/vim-lion'
 Plug 'mhinz/vim-signify'
 Plug 'mbbill/undotree'
 Plug 'tpope/vim-fugitive'
-Plug 'majutsushi/tagbar'
 
 " display colors
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
@@ -77,5 +87,15 @@ Plug 'unblevable/quick-scope'
 
 " get startscreen
 Plug 'mhinz/vim-startify'
+
+" Browsing
+Plug 'Yggdroot/indentLine', { 'on': 'IndentLinesEnable' }
+  autocmd! User indentLine doautocmd indentLine Syntax
+  let g:indentLine_color_term = 239
+  let g:indentLine_color_gui = '#616161'
+
+Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
+  let g:tagbar_sort = 0
+
 call plug#end()
 " >>> And this is done by the way

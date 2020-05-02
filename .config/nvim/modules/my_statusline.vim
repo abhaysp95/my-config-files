@@ -32,6 +32,7 @@ endfunction
 set statusline=
 set statusline+=\[%n] 	    " gives buffer number
 set statusline+=\ %0.35t	" F for full path, t for tail only
+set statusline+=\ %{fugitive#statusline()}
 set statusline+=\ %{Git_Status()}
 set statusline+=\ %W		" preview window
 set statusline+=\%m	" if file modified

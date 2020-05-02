@@ -6,14 +6,15 @@ filetype plugin on
 syntax on
 
 set binary		" allows editing of binary files
-set tabstop=8
+set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set noexpandtab	"if switched on means it will insert spaces to length of tab
 set smarttab
 set autoindent
 set smartindent
-set listchars=eol:↲,tab:↦\ ,nbsp:␣,extends:…,trail:⋅
+set listchars=eol:↲,tab:\|\ ,nbsp:␣,extends:…,trail:⋅
+" ↦
 set nolist
 set linebreak
 set sidescroll=1	" smooth scrolling
@@ -50,10 +51,11 @@ set noshiftround
 set nospell
 set nostartofline
 set regexpengine=1
-set scrolloff=3
 set showcmd
 set showmatch
 set noshowmode
+" set noshowcmd
+set shortmess+=Ft
 set cursorline
 " set cursorcolumn
 set smartcase
@@ -104,7 +106,14 @@ set foldcolumn=1
 set foldlevelstart=1
 set foldmarker=<<<,>>>
 set foldmethod=marker
-set fillchars+=vert:\ ,fold:•
+"set fillchars+=vert:\ ,fold:•
+
+set fillchars=vert:\|,fold:-
+  autocmd BufReadPost *
+    \ if line("'\"") >= 1 && line("'\"") <= line("$") |
+    \   exe "normal! g`\"" |
+    \ endif
+set foldtext=''
 set foldtext+=MyFoldText()
 function! MyFoldText()
   let line = getline(v:foldstart)
@@ -124,8 +133,8 @@ augroup highlight-when-switching-modes
     autocmd InsertEnter * setlocal number norelativenumber nocursorline
     autocmd InsertLeave * setlocal relativenumber cursorline
     " if &buftype != "terminal"
-	" autocmd BufEnter,WinEnter * setlocal cursorline
-	" autocmd BufLeave,WinLeave * setlocal nocursorline
+	autocmd BufEnter,WinEnter * setlocal cursorline
+	autocmd BufLeave,WinLeave * setlocal nocursorline
     " endif
 
 " Periodically check for file changes <<<

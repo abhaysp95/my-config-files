@@ -46,89 +46,6 @@ map <leader>T :SyntasticToggleMode<CR>
 " map <leader>t :SyntasticCheck
 " >>>
 
-" Airline configuration <<<
-" Vim-Airline configuration
-let g:airline#extensions#tabline#enabled=1
-let g:airline#extensions#tabline#show_splits = 1
-let g:airline#extensions#tabline#show_buffers = 1
-let g:airline#extensions#bufferline#enabled = 1
-let g:airline#extensions#tabline#buffer_nr_show = 1
-let g:airline#extensions#tabline#buffer_idx_show = 1
-let g:airline#extensions#tabline#tab_nr_type = 1
-let g:airline#extensions#tabline#show_tabs = 1
-let g:airline#extensions#tabline#show_tab_count = 1
-let g:airline#extensions#tabline#fnamecollapse = 1
-let g:airline#extensions#tabline#overflow_marker = '…'
-let g:airline_powerline_fonts=0
-let g:airline_inactive_collapse = 1
-let g:airline#extensions#tabline#buffers_label = 'b'
-let g:airline#extensions#tabline#tabs_label = 't'
-let g:airline_mode_map = {
-			\ '__'     : '-',
-			\ 'c'      : 'C',
-			\ 'i'      : 'I',
-			\ 'ic'     : 'I',
-			\ 'ix'     : 'I',
-			\ 'n'      : 'N',
-			\ 'multi'  : 'M',
-			\ 'ni'     : 'N',
-			\ 'no'     : 'N',
-			\ 'R'      : 'R',
-			\ 'Rv'     : 'R',
-			\ 's'      : 'S',
-			\ 'S'      : 'S',
-			\ ''     : 'S',
-			\ 't'      : 'T',
-			\ 'v'      : 'V',
-			\ 'V'      : 'V',
-			\ ''     : 'V',
-			\ }
-let g:airline#extensions#coc#enabled = 1
-let airline#extensions#coc#stl_format_warn = '%W{[%w(#%fw)]}'
-let airline#extensions#coc#stl_format_err = '%E{[%e(#%fe)]}'
-let g:airline_exclude_preview = 0
-let g:airline_focuslost_inactive = 0
-let g:airline#extensions#whitespace#enabled = 0
-let g:airline#extensions#branch#vcs_checks = ['untracked', 'dirty']
-let airline#extensions#ale#error_symbol = 'e:'
-let airline#extensions#ale#warning_symbol = 'w:'
-let g:airline#extensions#nerdtree_status = 0
-let g:airline#extensions#syntastic#enabled = 1
-let airline#extensions#syntastic#error_symbol = 'ë:'
-let airline#extensions#syntastic#stl_format_err = '%E{[%fe(#%e)]}'
-let airline#extensions#syntastic#warning_symbol = 'ẃ:'
-let airline#extensions#syntastic#stl_format_warn = '%W{[%fw(#%w)]}'
-let g:airline_theme='night_owl'
-let g:hybrid_custom_term_colors=1
-let g:hybrid_reduced_contrast=1
-" >>>
-
-" ----------------- settings for fzf --------------------- <<<
-map <leader>ff :Files<CR>
-map <leader>fc :Files ~/.config/<CR>
-map <leader>fs :Files ~/.local/bin/.scripts/<CR>
-map <leader>fl :Lines<CR>
-map <leader>fw :Windows<CR>
-"can also use :Files instead of :FZF
-map <leader>fg :Files
-
-nnoremap <leader>bb :Buffers<CR>
-nnoremap <leader>bc :Commands<CR>
-nnoremap <leader>bs :Snippets<CR>
-nnoremap cq: :History:<CR>
-
-" open terminal in new split
-nnoremap <leader>ct :vsplit term://zsh<CR>
-
-command! -nargs=1 Locate call fzf#run( \ {'source': 'locate <q-args>', 'sink': 'e', 'options': '-m'})
-
-" let g:fzf_files_options =
-" 			\ '--preview "(codearay {} || cat {}) 2> /dev/null | head -' .&lines.'"'
-
-let g:fzf_files_options =
-			\ '--preview="pistol {}"'
-" >>>
-
 " -------------------- emmet plugin ---------------" <<<
 "" redefine default trigger key <C-y> followed by , "
 let g:user_emmet_leader_key='<S-Tab>'
@@ -246,12 +163,24 @@ let g:startify_list = [
 			\ ]
 
 " Custom header
-let g:startfiy_custom_header = [
+" let g:startfiy_custom_header = [
+let s:header = [
+			\ '',
+			\ '',
 			\ '   ╻ ╻   ╻   ┏┳┓',
 			\ '   ┃┏┛   ┃   ┃┃┃',
 			\ '   ┗┛    ╹   ╹ ╹',
 			\ '   ',
 			\ ]
+
+function! s:center(lines) abort
+	let longest_line = max(map(copy(a:lines), 'strwidth(v:val)'))
+	let centered_lines = map(copy(a:lines),
+				\ 'repeat(" ", (&columns / 2) - (longest_line / 2)) . v:val')
+	return centered_lines
+endfunction
+
+let g:startify_custom_header = s:center(s:header)
 " >>>
 
 " junegunn/rainbow_parethesis <<<
@@ -268,3 +197,6 @@ map <leader><CR> <Plug>(wildfire-fuel)
 
 " This selects the previous closest text object.
 " vmap <leader><CR> <Plug>(wildfire-water)
+
+" ----- airblade/vim-rooter ---- "
+let g:rooter_change_directory_for_non_project_files = 'current'
