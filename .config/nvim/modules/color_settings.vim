@@ -28,6 +28,37 @@ let base16colorspace=256
 set background=dark
 " source this to your profile
 
+" highlight settings <<<
+highlight Identifiers gui=bold,italic cterm=bold,italic
+highlight Constant gui=bold,italic cterm=bold,italic
+highlight Statement gui=bold,italic cterm=bold,italic
+hi SignColumn ctermbg=255 guibg=255 gui=bold
+hi CursorLine guibg=255' cterm=underline gui=underline
+highlight htmlArg cterm=bold,italic gui=bold,italic
+highlight Type gui=bold,italic cterm=bold,italic
+highlight Structure gui=bold,italic cterm=bold,italic
+highlight Typedef gui=bold,italic cterm=bold,italic
+highlight Keyword gui=bold,italic cterm=bold,italic
+highlight Conditional gui=bold,italic cterm=bold,italic
+highlight Repeat gui=bold,italic cterm=bold,italic
+highlight Label gui=bold,italic cterm=bold,italic
+highlight Character gui=bold,italic cterm=bold,italic
+
+highlight Boolean gui=bold cterm=bold
+highlight Function gui=bold cterm=bold
+highlight SpecialChar gui=bold cterm=bold
+highlight PreProc gui=bold cterm=bold
+highlight Special gui=bold cterm=bold
+highlight SpecialComment gui=bold cterm=bold
+
+highlight Underlined gui=underline cterm=underline
+
+highlight String gui=italic cterm=italic
+highlight Comment cterm=italic gui=italic
+highlight htmlItalic gui=italic cterm=italic
+
+hi CursorLineNr guifg='#f78c6c' guibg=255
+
 " gruvbox settings <<<
 let g:gruvbox_bold='1'
 let g:gruvbox_italic='1'
@@ -56,12 +87,15 @@ let g:nord_underline = 1
 
 " material colorscheme <<<
 let g:material_terminal_italics = 1
-let g:material_theme_style = 'ocean'
+let g:material_theme_style = 'default'
 " >>>
 
 " onedark colorscheme
 let g:onedark_hide_endofbuffer = 1
 let g:onedark_terminal_italics = 1
+
+" deep-space
+let g:deepspace_italics = 1
 
 " neodark colorscheme
 " let g:neodark#backgroud = '#202020'
@@ -87,6 +121,7 @@ set go=a
 " 	augroup END
 " endif
 " >>>
+
 
 " highlight settings <<<
 highlight Identifiers gui=bold,italic cterm=bold,italic

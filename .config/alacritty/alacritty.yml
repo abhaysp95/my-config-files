@@ -35,7 +35,7 @@ window:
   # by DPI and the specified value is always added at both opposing sides.
   padding:
     x: 5
-    y: 5
+    y: 1
 
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
@@ -293,60 +293,61 @@ font:
 # >>>
 
 # material design(ocean varient) <<<
-colors        :
- primary      :
-   background : '0x0f111a'
-   #background: '0x090b10'
-   foreground : '0x8f93a2'
- normal       :
-   black      : '0x0f111a'
-   red        : '0xff5370'
-   green      : '0xc3e88d'
-   yellow     : '0xffcb6b'
-   blue       : '0x82aaff'
-   magenta    : '0xc792ea'
-   cyan       : '0x89ddff'
-   white      : '0xffffff'
- bright       :
-   black      : '#b0bec5'
-   red        : '0xff8a80'
-   green      : '0xb9f66a'
-   yellow     : '0xffe57f'
-   blue       : '0x80d8ff'
-   magenta    : '0xff80ab'
-   cyan       : '0xa7fdeb'
-   white      : '0xffffff'
+#colors        :
+# primary      :
+#   background : '0x0f111a'
+#   #background: '0x090b10'
+#   foreground : '0x8f93a2'
+# normal       :
+#   black      : '0x0f111a'
+#   red        : '0xff5370'
+#   green      : '0xc3e88d'
+#   yellow     : '0xffcb6b'
+#   blue       : '0x82aaff'
+#   magenta    : '0xc792ea'
+#   cyan       : '0x89ddff'
+#   white      : '0xffffff'
+# bright       :
+#   black      : '#b0bec5'
+#   red        : '0xff8a80'
+#   green      : '0xb9f66a'
+#   yellow     : '0xffe57f'
+#   blue       : '0x80d8ff'
+#   magenta    : '0xff80ab'
+#   cyan       : '0xa7fdeb'
+#   white      : '0xffffff'
 # >>>
 
 # Colors (Material Theme) <<<
-# colors:
-#   # Default colors
-#   primary:
-#     #    background: '#1e282d'
-#     background: '0x090b10'
-#     foreground: '#c4c7d1'
+colors:
+  # Default colors
+  primary:
+    background: '0x263238'
+    # background: '#1e282d'
+    # background: '0x090b10'
+    foreground: '#c4c7d1'
 
-#   # Normal colors
-#   normal:
-#     black:   '#666666'
-#     red:     '#eb606b'
-#     green:   '#c3e88d'
-#     yellow:  '#f7eb95'
-#     blue:    '#80cbc4'
-#     magenta: '#ff2f90'
-#     cyan:    '#aeddff'
-#     white:   '#ffffff'
+  # Normal colors
+  normal:
+    black:   '#666666'
+    red:     '#eb606b'
+    green:   '#c3e88d'
+    yellow:  '#f7eb95'
+    blue:    '#80cbc4'
+    magenta: '#ff2f90'
+    cyan:    '#aeddff'
+    white:   '#ffffff'
 
-#   # Bright colors
-#   bright:
-#     black:   '#ff262b'
-#     red:     '#eb606b'
-#     green:   '#c3e88d'
-#     yellow:  '#f7eb95'
-#     blue:    '#7dc6bf'
-#     magenta: '#6c71c4'
-#     cyan:    '#35434d'
-#     white:   '#ffffff'
+  # Bright colors
+  bright:
+    black:   '#ff262b'
+    red:     '#eb606b'
+    green:   '#c3e88d'
+    yellow:  '#f7eb95'
+    blue:    '#7dc6bf'
+    magenta: '#6c71c4'
+    cyan:    '#35434d'
+    white:   '#ffffff'
 # >>>
 
 # Colors (Dracula) <<<

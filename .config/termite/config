@@ -1090,53 +1090,53 @@ highlight = #2f2f2f
 
 # # Base16 Material
 # # Author: Nate Peterson
-# [colors]
+[colors]
 
-# foreground          = #EEFFFF
-# foreground_bold     = #EEFFFF
-# cursor              = #EEFFFF
-# cursor_foreground   = #263238
-# background          = rgba(38, 50, 56)
+foreground          = #EEFFFF
+foreground_bold     = #EEFFFF
+cursor              = #EEFFFF
+cursor_foreground   = #263238
+background          = rgba(38, 50, 56)
 
-# # 16 color space
+# 16 color space
 
-# # Black, Gray, Silver, White
-# color0  = #263238
-# color8  = #546E7A
-# color7  = #EEFFFF
-# color15 = #FFFFFF
+# Black, Gray, Silver, White
+color0  = #263238
+color8  = #546E7A
+color7  = #EEFFFF
+color15 = #FFFFFF
 
-# # Red
-# color1  = #F07178
-# color9  = #F07178
+# Red
+color1  = #F07178
+color9  = #F07178
 
-# # Green
-# color2  = #C3E88D
-# color10 = #C3E88D
+# Green
+color2  = #C3E88D
+color10 = #C3E88D
 
-# # Yellow
-# color3  = #FFCB6B
-# color11 = #FFCB6B
+# Yellow
+color3  = #FFCB6B
+color11 = #FFCB6B
 
-# # Blue
-# color4  = #82AAFF
-# color12 = #82AAFF
+# Blue
+color4  = #82AAFF
+color12 = #82AAFF
 
-# # Purple
-# color5  = #C792EA
-# color13 = #C792EA
+# Purple
+color5  = #C792EA
+color13 = #C792EA
 
-# # Teal
-# color6  = #89DDFF
-# color14 = #89DDFF
+# Teal
+color6  = #89DDFF
+color14 = #89DDFF
 
-# # Extra colors
-# color16 = #F78C6C
-# color17 = #FF5370
-# color18 = #2E3C43
-# color19 = #314549
-# color20 = #B2CCD6
-# color21 = #EEFFFF
+# Extra colors
+color16 = #F78C6C
+color17 = #FF5370
+color18 = #2E3C43
+color19 = #314549
+color20 = #B2CCD6
+color21 = #EEFFFF
 
 # # Base16 Material Darker
 # # Author: Nate Peterson
@@ -1240,53 +1240,53 @@ highlight = #2f2f2f
 
 # Base16 Material Palenight
 # Author: Nate Peterson
-[colors]
+# [colors]
 
-foreground          = #959DCB
-foreground_bold     = #959DCB
-cursor              = #959DCB
-cursor_foreground   = #292D3E
-background          = rgba(41, 45, 62)
+# foreground          = #959DCB
+# foreground_bold     = #959DCB
+# cursor              = #959DCB
+# cursor_foreground   = #292D3E
+# background          = rgba(41, 45, 62)
 
-# 16 color space
+# # 16 color space
 
-# Black, Gray, Silver, White
-color0  = #292D3E
-color8  = #676E95
-color7  = #959DCB
-color15 = #FFFFFF
+# # Black, Gray, Silver, White
+# color0  = #292D3E
+# color8  = #676E95
+# color7  = #959DCB
+# color15 = #FFFFFF
 
-# Red
-color1  = #F07178
-color9  = #F07178
+# # Red
+# color1  = #F07178
+# color9  = #F07178
 
-# Green
-color2  = #C3E88D
-color10 = #C3E88D
+# # Green
+# color2  = #C3E88D
+# color10 = #C3E88D
 
-# Yellow
-color3  = #FFCB6B
-color11 = #FFCB6B
+# # Yellow
+# color3  = #FFCB6B
+# color11 = #FFCB6B
 
-# Blue
-color4  = #82AAFF
-color12 = #82AAFF
+# # Blue
+# color4  = #82AAFF
+# color12 = #82AAFF
 
-# Purple
-color5  = #C792EA
-color13 = #C792EA
+# # Purple
+# color5  = #C792EA
+# color13 = #C792EA
 
-# Teal
-color6  = #89DDFF
-color14 = #89DDFF
+# # Teal
+# color6  = #89DDFF
+# color14 = #89DDFF
 
-# Extra colors
-color16 = #F78C6C
-color17 = #FF5370
-color18 = #444267
-color19 = #32374D
-color20 = #8796B0
-color21 = #959DCB
+# # Extra colors
+# color16 = #F78C6C
+# color17 = #FF5370
+# color18 = #444267
+# color19 = #32374D
+# color20 = #8796B0
+# color21 = #959DCB
 
 # # # Base16 Material Vivid
 # # # Author: joshyrobot
@@ -1389,34 +1389,34 @@ color21 = #959DCB
 # color21 = #dfe1e8
 
 # material ocean <<<
- [colors]
+# [colors]
 
-foreground =  0x0f111a
-foreground_bold = 0x090b10
-background = 0x8f93a2
+# foreground      = #8f93a2
+# foreground_bold = #090b10
+# background      = #0f111a
 
-color0 = #0f111a
-color8 = #ff8a80
+# color0 = #0f111a
+# color8 = #ff8a80
 
-color1 = #ff5370
-color9 = #b0bec5
+# color1 = #ff5370
+# color9 = #b0bec5
 
-color2  = #c3e88d
-color10 = #ffe57f
+# color2  = #c3e88d
+# color10 = #b9f66a
 
-color3  = #ffcb6b
-color11 = #ffe57f
+# color3  = #ffcb6b
+# color11 = #ffe57f
 
-color4  = #82aaff
-color12 = #80d8ff
+# color4  = #82aaff
+# color12 = #80d8ff
 
-color5  = #c792ea
-color13 = #ff80ab
+# color5  = #c792ea
+# color13 = #ff80ab
 
-color6  = #89ddff
-color14 = #a7fdeb
+# color6  = #89ddff
+# color14 = #a7fdeb
 
-color7  = #ffffff
-color15 = #ffffff
+# color7  = #ffffff
+# color15 = #ffffff
 # >>>
  vim: ft=config cms=#%s
