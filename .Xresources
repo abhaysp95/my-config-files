@@ -366,35 +366,66 @@
 !! >>>
 
 !! material-ocean <<<
-*.foreground: #8f93a2
-*.cursorColor:#090b10
-*.background: #0f111a
+/* *.foreground : #8f93a2 */
+/* *.cursorColor: #090b10 */
+/* *.background : #0f111a */
 
-*.color0: #0f111a
-*.color8: #ff8a80
+/* *.color0: #0f111a */
+/* *.color8: #ff8a80 */
 
-*.color1: #ff5370
-*.color9: #b0bec5
+/* *.color1: #ff5370 */
+/* *.color9: #b0bec5 */
 
-*.color2: #c3e88d
-*.color10:  #b9f66a
+/* *.color2 : #c3e88d */
+/* *.color10: #b9f66a */
 
-*.color3 :  #ffcb6b
-*.color11:  #ffe57f
+/* *.color3 : #ffcb6b */
+/* *.color11: #ffe57f */
 
-*.color4 :  #82aaff
-*.color12:  #80d8ff
+/* *.color4 : #82aaff */
+/* *.color12: #80d8ff */
 
-*.color5 :  #c792ea
-*.color13:  #ff80ab
+/* *.color5 : #c792ea */
+/* *.color13: #ff80ab */
 
-*.color6 :  #89ddff
-*.color14:  #a7fdeb
+/* *.color6 : #89ddff */
+/* *.color14: #a7fdeb */
 
-*.color7 :  #ffffff
-*.color15:  #ffffff
+/* *.color7 : #ffffff */
+/* *.color15: #ffffff */
 !! >>>
-!
+
+!! base16-material <<<
+*.foreground : #EEFFFF
+*.cursorColor: #EEFFFF
+*.background : #263238
+
+*.color0: #263238
+*.color8: #546E7A
+
+*.color1: #F07178
+*.color9: #F07178
+
+*.color2 : #C3E88D
+*.color10: #C3E88D
+         :
+*.color3 : #FFCB6B
+*.color11: #FFCB6B
+         :
+*.color4 : #82AAFF
+*.color12: #82AAFF
+         :
+*.color5 : #C792EA
+*.color13: #C792EA
+         :
+*.color6 : #89DDFF
+*.color14: #89DDFF
+         :
+*.color7 : #EEFFFF
+*.color15: #FFFFFF
+!! >>>
+
+
 URxvt.perl-ext-common: resize-font,default,clipboard,url-select,keyboard-select
 
 URxvt.url-select.launcher: brave
