@@ -34,3 +34,9 @@ export LESS_TERMCAP_us=$(tput smul; tput bold; tput setaf 1)	# red
 # end bold, blinking, standout, underline
 export LESS_TERMCAP_me=$(tput sgr0)
 # >>>
+
+# fzf environment variable
+# making fzf use fd instead of find
+export FZF_DEFAULT_COMMAND="fd -H --no-ignore-vcs . $HOME"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ATL_C_COMMAND="fd -t d -H --no-ignore-vcs . $HOME"
