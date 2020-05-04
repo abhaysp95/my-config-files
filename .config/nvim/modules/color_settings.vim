@@ -103,8 +103,8 @@ highlight Type gui=bold,italic cterm=bold,italic
 highlight Structure gui=bold,italic cterm=bold,italic
 highlight Typedef gui=bold,italic cterm=bold,italic
 highlight Keyword gui=bold,italic cterm=bold,italic
-highlight Conditional gui=bold,italic cterm=bold,italic
-highlight Repeat gui=bold,italic cterm=bold,italic
+" highlight Conditional gui=bold,italic cterm=bold,italic
+" highlight Repeat gui=bold,italic cterm=bold,italic
 highlight Label gui=bold,italic cterm=bold,italic
 highlight Character gui=bold,italic cterm=bold,italic
 
@@ -119,6 +119,7 @@ highlight Underlined gui=underline cterm=underline
 
 highlight String gui=italic cterm=italic
 highlight Comment cterm=italic gui=italic
+highlight Visual cterm=reverse ctermbg=NONE
 highlight htmlItalic gui=italic cterm=italic
 
 hi CursorLineNr guifg='#f78c6c' guibg=255
