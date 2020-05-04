@@ -47,6 +47,10 @@ set statusline+=\%c%V
 set statusline+=\ %3p%% 	    " set line %
 " set statusline+=\ %3c
 set statusline+=\ %3b 		" value of character under cursor
+" set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
 " >>>
 
 " set statusline=
