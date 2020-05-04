@@ -430,6 +430,7 @@ hide_edge_borders       both
 assign [class="firefox"] $ws2
 assign [class="Brave-browser"] $ws2
 assign [class="Vivaldi-stable"] $ws2
+assign [class="qutebrowser"] $ws2
 # assign [class="$TERMINAL"] $ws1
 assign [class="Rhythmbox"] $ws3
 assign [class="Pcmanfm"] $ws8
