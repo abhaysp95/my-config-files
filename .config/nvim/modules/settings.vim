@@ -5,20 +5,21 @@ set runtimepath^=~/.config/nvim/plugged/dragvisuals
 filetype plugin on
 syntax on
 
-set binary		" allows editing of binary files
+set binary " allows editing of binary files
+
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-set noexpandtab	"if switched on means it will insert spaces to length of tab
-set smarttab
+set noexpandtab "if switched on means it will insert spaces to length of tab
+
+" set smarttab
 set autoindent
 set smartindent
-set listchars=eol:↲,tab:\|\ ,nbsp:␣,extends:…,trail:⋅
-" ↦
-set nolist
+set listchars=tab:\┃\ ,nbsp:␣,extends:…,trail:⋅
+set list
 set linebreak
-set sidescroll=1	" smooth scrolling
-set nostartofline	" places cursor to same position when switching buffers
+set sidescroll=1 " smooth scrolling
+set nostartofline " places cursor to same position when switching buffers
 set autoindent
 set autoread
 set backspace=indent,eol,start
@@ -28,7 +29,7 @@ set completeopt=menuone,preview,longest
 set encoding=utf-8
 scriptencoding utf-8
 set hidden
-set autowrite	" saves file before switching buffer
+set autowrite " saves file before switching buffer
 set termguicolors
 set t_Co=256
 set nocompatible
@@ -49,6 +50,7 @@ set modelines=2
 set noerrorbells visualbell t_vb=
 set noshiftround
 set nospell
+set autochdir
 set nostartofline
 set regexpengine=1
 set showcmd
@@ -73,6 +75,7 @@ set wrap
 set nojoinspaces    " don't add extra space ., !, etc. when joining
 set modeline
 set modelines=4
+" ↦, eol:↲,		▏	eol is for end of line
 
 " better search in vim ------------
 set hlsearch
@@ -101,14 +104,16 @@ set path+=**
 set formatoptions-=cro
 " >>>
 
-" indentation settings <<<
+autocmd WinLeave *.* mkview
+autocmd WinEnter *.* silent! loadview
+
+" fold settings <<<
 set foldcolumn=1
 set foldlevelstart=1
 set foldmarker=<<<,>>>
 set foldmethod=marker
-"set fillchars+=vert:\ ,fold:•
 
-set fillchars=vert:\|,fold:-
+set fillchars=vert:\┃,fold:-
   autocmd BufReadPost *
     \ if line("'\"") >= 1 && line("'\"") <= line("$") |
     \   exe "normal! g`\"" |
@@ -120,6 +125,7 @@ function! MyFoldText()
   let sub = substitute(line, '/\*\|\*/\|{{{\d\=', '', 'g')
   return v:folddashes . sub
 endfunction
+"set fillchars+=vert:\ ,fold:•
 " set foldtext=►
 " ǁǂ｜┃
 " >>>
@@ -128,14 +134,15 @@ autocmd FileType c,cpp,java set mps+==:;
 
 " Switch between normal and relativenumber and cursorline when switching modes
 autocmd FileType html,c,python,js,config,sh set number relativenumber
+autocmd FileType markdown,txt set nolist
 augroup highlight-when-switching-modes
     autocmd!
     autocmd InsertEnter * setlocal number norelativenumber nocursorline
     autocmd InsertLeave * setlocal relativenumber cursorline
-    " if &buftype != "terminal"
-	autocmd BufEnter,WinEnter * setlocal cursorline
-	autocmd BufLeave,WinLeave * setlocal nocursorline
-    " endif
+    if &buftype != "terminal"
+		autocmd BufEnter,WinEnter * setlocal cursorline
+		autocmd BufLeave,WinLeave * setlocal nocursorline
+    endif
 
 " Periodically check for file changes <<<
 augroup checktime
@@ -236,9 +243,6 @@ command! MakeTags !ctags -R .   "use ^] to jump to tag under cursor, g^] for amb
 autocmd BufRead,BufNewFile *.ms,*.me,*.mom,*.man set filetype=groff
 autocmd BufRead,BufNewFile *.tex set filetype=tex
 
-autocmd WinLeave *.* mkview
-autocmd WinEnter *.* silent! loadview
-
 " Automatically deletes all whitespace on save
 autocmd BufWritePre * %s/\s\+$//e
 
@@ -273,9 +277,9 @@ autocmd FileType markdown set foldmethod=marker
 au BufRead,BufNewFile *wiki set filetype=markdown
 " :autocmd FileType vimwiki map <leader>d :VimwikiMakeDiaryNote
 
-if &buftype != "terminal"
-    autocmd BufEnter * lcd %:p:h
-endif
+" if &buftype != "terminal"
+"     autocmd BufEnter * lcd %:p:h
+" endif
 
 " Remove any introduced trailing whitespace after moving...     ##
 let g:DVB_TrimWS = 1
