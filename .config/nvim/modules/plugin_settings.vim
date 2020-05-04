@@ -25,11 +25,6 @@ let g:UltiSnipsEditSplit="vertical"
 
 
 " Syntastic Configuration   #Check :help Syntastic <<<
-" set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
-" set statusline+=%#warningmsg#
-" set statusline+=%{SyntasticStatuslineFlag()}
-" set statusline+=%*
-
 let g:syntastic_always_populate_loc_list=1
 let g:syntastic_auto_loc_list=0
 let g:syntastic_loc_list_height=6
@@ -39,11 +34,17 @@ let g:syntastic_check_on_wq=0
 let g:syntastic_error_symbol = '✖'
 let g:syntastic_style_error_symbol = '✖'
 let g:syntastic_enable_highlighting = 1
+" let g:syntasitc_mode_map = {
+" 			\ "mode": "passive",
+" 			\ "passive_filetypes": ["python"] }
+let b:syntastic_mode="passive"
 " let g:syntastic_enable_elixir_checker = 1
 " let g:syntastic_elixir_checkers = ["elixir"]
-map <leader>te :Errors<cr>
-map <leader>T :SyntasticToggleMode<CR>
-" map <leader>t :SyntasticCheck
+
+let g:syntastic_quiet_messages = {'regex': 'E117\|W191'}
+nnoremap <leader>te :Errors<cr>
+nnoremap <leader>T :SyntasticToggleMode<CR>
+nnoremap <leader>ts :SyntasticCheck<CR>
 " >>>
 
 " -------------------- emmet plugin ---------------" <<<
