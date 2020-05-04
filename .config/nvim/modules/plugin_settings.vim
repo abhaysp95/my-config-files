@@ -201,3 +201,22 @@ map <leader><CR> <Plug>(wildfire-fuel)
 
 " ----- airblade/vim-rooter ---- "
 let g:rooter_change_directory_for_non_project_files = 'current'
+
+" ------ vim-slime ---- "
+let g:slime_target = "x11"
+" let g:slime_config = {"jobid": b:terminal_job_id}
+
+
+"""""""""""""""""""""""""""
+" Yggdroot/indentline
+"""""""""""""""""""""""""""
+
+let g:indentline_leadingSpaceEnabled = 1
+let g:indentline_leadingSpaceChar = '.'
+
+""""""""""""""""""""""""""""""""
+"  indent-line-guide
+""""""""""""""""""""""""""""""""
+autocmd FileType python,yaml :IndentGuidesEnable
+let g:indent_guides_enable_on_vim_startup = 0
+let g:indent_guides_guide_size = 1
