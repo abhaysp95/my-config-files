@@ -96,7 +96,7 @@ xmap <Leader>R
 " >>>
 
 " --- ale pluging ----- <<<
-let g:ale_sign_error                            = '●'
+let g:ale_sign_error                            = '•'
 let g:ale_sign_warning                          = '·'
 "let g:ale_linters_explicit                     = 1
 "let g:ale_open_list                            = 1
@@ -217,6 +217,6 @@ let g:indentline_leadingSpaceChar = '.'
 """"""""""""""""""""""""""""""""
 "  indent-line-guide
 """"""""""""""""""""""""""""""""
-autocmd FileType python,yaml :IndentGuidesEnable
+autocmd FileType python,yaml,ruby :IndentGuidesEnable
 let g:indent_guides_enable_on_vim_startup = 0
 let g:indent_guides_guide_size = 1
