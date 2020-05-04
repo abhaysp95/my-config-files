@@ -24,7 +24,6 @@ let g:coc_global_extensions = [
 			\ 'coc-explorer',
 			\ 'coc-ultisnips'
 			\ ]
-			" \ 'coc-jdtls',
 " >>>
 
 " some coc related key-bindings <<<
