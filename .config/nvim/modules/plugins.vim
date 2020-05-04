@@ -1,26 +1,35 @@
-
 "-------All-the-plugins-for-vim-and-nvim---------------------- <<<
 call plug#begin()
-Plug 'vim-syntastic/syntastic' "error checker for languages and scripts
+" Plug 'vim-syntastic/syntastic' "error checker for languages and scripts
+
+" syntax and error detection
 Plug 'dense-analysis/ale'
-Plug 'mattn/emmet-vim'			" for html
+
+" for html
+Plug 'mattn/emmet-vim'
+
+" lsp and autocompletion
+Plug 'neoclide/coc.nvim', {'branch': 'release', 'tag': '*', 'do': { -> coc#util#install()}}
+
 Plug 'tpope/vim-repeat'
+
 Plug 'vim-python/python-syntax'
+
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
 Plug 'junegunn/fzf.vim'
-" Plug 'airblade/vim-rooter'
+
 Plug 'machakann/vim-sandwich'
+
 Plug 'tpope/vim-markdown'
 
 Plug 'terryma/vim-multiple-cursors'
+
 Plug 'gcmt/wildfire.vim'
 
 Plug 'vim-pandoc/vim-pandoc-syntax'
 
 " Theme / Interface
-" Plug 'norcalli/nvim-colorizer.lua'
-" Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
 Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'drewtempelmeyer/palenight.vim'
@@ -39,7 +48,6 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'tomasiser/vim-code-dark'
 Plug 'lifepillar/vim-solarized8'
 Plug 'sjl/badwolf'
-Plug 'rbgrouleff/bclose.vim'
 Plug 'tomasr/molokai'
 Plug 'morhetz/gruvbox'
 Plug 'zenorocha/dracula-theme', {'rtp': 'vim/'}
@@ -58,7 +66,6 @@ Plug 'atelierbram/Base2Tone-vim'
 Plug 'colepeters/spacemacs-theme.vim'
 
 Plug 'junegunn/goyo.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release', 'tag': '*', 'do': { -> coc#util#install()}}
 Plug 'tpope/vim-commentary'
 Plug 'kovetskiy/sxhkd-vim'
 Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
@@ -88,14 +95,24 @@ Plug 'unblevable/quick-scope'
 " get startscreen
 Plug 'mhinz/vim-startify'
 
-" Browsing
-Plug 'Yggdroot/indentLine', { 'on': 'IndentLinesEnable' }
-  autocmd! User indentLine doautocmd indentLine Syntax
-  let g:indentLine_color_term = 239
-  let g:indentLine_color_gui = '#616161'
+Plug 'nathanaelkane/vim-indent-guides'
 
 Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
   let g:tagbar_sort = 0
 
+Plug 'jpalardy/vim-slime'
+
 call plug#end()
 " >>> And this is done by the way
+
+" Browsing
+" Plug 'Yggdroot/indentLine', { 'on': 'IndentLinesEnable' }
+"   autocmd! User indentLine doautocmd indentLine Syntax
+"   let g:indentLine_color_term = 239
+"   let g:indentLine_color_gui = '#616161'
+
+" Plug 'norcalli/nvim-colorizer.lua'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
+" Plug 'airblade/vim-rooter'
+" Plug 'rbgrouleff/bclose.vim'
