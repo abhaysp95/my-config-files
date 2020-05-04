@@ -12,7 +12,7 @@ set softtabstop=4
 set shiftwidth=4
 set noexpandtab "if switched on means it will insert spaces to length of tab
 
-autocmd FileType yaml,python set expandtab softtabstop=4 shiftwidth=4 tabstop=4
+autocmd FileType yaml,python,ruby set expandtab softtabstop=4 shiftwidth=4 tabstop=4
 
 " set smarttab
 set autoindent
@@ -127,7 +127,7 @@ function! MyFoldText()
   let sub = substitute(line, '/\*\|\*/\|{{{\d\=', '', 'g')
   return v:folddashes . sub
 endfunction
-"set fillchars+=vert:\ ,fold:•
+"set fillchars+=vert:\ ,fold:•● ⨉
 " set foldtext=►
 " ǁǂ｜┃
 " >>>
