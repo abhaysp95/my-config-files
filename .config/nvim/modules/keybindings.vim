@@ -46,7 +46,7 @@ nnoremap <localleader><localleader>g<CR> r<CR>kddpk==
 
 " but don't effect command line mode
 autocmd CmdwinEnter * nnoremap <CR> <CR>
-autocmd CmdwinLeave * nnoremap <CR> o<CR>
+autocmd CmdwinLeave * nnoremap <CR> o<esc>
 " not useful
 " nnoremap <localleader>g<CR> i<CR><ESC>
 " >>>
