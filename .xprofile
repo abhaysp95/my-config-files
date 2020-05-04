@@ -15,4 +15,4 @@ setbg &
 udiskie -A -t &
 caffeine_like &
 notify-send --icon=~/.cache/notify-icons/home.png "Welcome to region of raytracer" "Enjoy!" &
-sh ~/.local/share/.script/mpd_changes.sh &
+mpd_changes.sh &
