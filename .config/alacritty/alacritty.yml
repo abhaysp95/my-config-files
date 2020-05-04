@@ -129,6 +129,7 @@ font:
     # value specified for the normal font.
     # family: Operator Mono Medium
     family: FantasqueSansMono Nerd Font Mono
+    # family: Fira Code
     # family: Hack Nerd Font Mono
     # family: Iosevka Nerd Font
 
@@ -141,12 +142,17 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Dank Mono
+    # family: Dank Mono
     # family: flottflott
     # family: Script12 BT
     # family: Operator Mono Book
+    # family: FantasqueSansMono Nerd Font Mono
+    # family: TSCu_Comic
+    family: UbuntuMono Nerd Font Mono
+    # family: Victor Mono
     # family: Pacifico
     # family: Yellowtail
+    # family: Fira Code
 
     # The `style` can be specified to pick a specific face.
     style: Italic
@@ -158,6 +164,7 @@ font:
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
     family: Operator Mono Medium
+    # family: Fira Code
     # family: Script12 BT
     # family: flott flott
 
@@ -165,7 +172,7 @@ font:
     style: Medium Italic
 
   # Point size
-  size: 12
+  size: 13
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
