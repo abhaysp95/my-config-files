@@ -155,8 +155,8 @@ super+i:{m,p,v,d}
 super + d:{d,f,k}
     {dmenu_run -i -nb '#181818' -sf '#181818' -nf '#ebdbb2' -sb '#d7d7d8' -fn "Mononoki Nerd Font Mono 12",rofi -show run -i -show-icons, ((pidof picom && kill $(pidof picom)) || picom) & dunstify -t 2000 'picom toggled'}
 
-super + b:{f,p,c,s,n,b,v}
-    {firefox,pcmanfm,telegram-desktop,stacer,nautilus,brave,vivaldi-stable}
+super + b:{f,p,c,s,n,q,v}
+    {firefox,pcmanfm,telegram-desktop,stacer,nautilus,qutebrowser,vivaldi-stable}
 super+ctrl+n
     termite -e calcurse
 # >>>
