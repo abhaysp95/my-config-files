@@ -53,8 +53,8 @@ trap Err_Code ERR
 	 # PS1+="\[\033[1;91m\]\[\033[1;35m\]|\t|"
 	 PS1+="\[\033[m\]\[\e[1;39m\]\u"
 	 PS1+="\[\e[1;36m\]\[\033[m\]\[\033[m\]:"
-	 PS1+="\[\e[0m\]\[\e[1;32m\][\$CurDir]\[\e[0;38;5;202m"
-	 PS1+="\]\$(parse_git_branch)\[\e[1;32m\]› \[\e[0m\]"
+	 PS1+="\[\e[0m\]\[\e[1;34m\][\$CurDir]\[\e[0;38;5;202m"
+	 PS1+="\]\$(parse_git_branch)\[\e[1;34m\]› \[\e[0m\]"
 	fi
 # >>>
 
@@ -130,6 +130,8 @@ command_not_found_handle() {
 
 # this is givinng problem of showing no command when a job is on
 # export CLICOLOR=1
+
+xmodmap -e "keycode 108 = Super_R"
 
 export HISTCONTROL=ignoreboth
 notify-send --icon=~/.cache/notify-icons/terminal.png "bash settings reloaded" -a bash -t 2000
