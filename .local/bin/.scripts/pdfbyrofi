@@ -1,3 +1,4 @@
 #!/usr/bin/env sh
 
-find ~/Downloads ~/Documents -name "*.pdf" | rofi -dmenu -i -lines 20 -width 80 | xargs -I {} zathura "{}"
+# find ~/Downloads ~/Documents -name "*.pdf" | rofi -dmenu -i -lines 20 -width 80 | xargs -I {} zathura "{}"
+fd . -u --type f -e pdf '/home/raytracer/Documents' '/home/raytracer/Downloads'| rofi -dmenu -i -lines 20 -width 80 | xargs -I {} zathura "{}"

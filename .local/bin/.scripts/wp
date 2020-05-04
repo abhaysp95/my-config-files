@@ -1,3 +1,4 @@
 #!/usr/bin/env sh
 
-find ~/Pictures/bgwallpapers -type f | shuf | sxiv -t -
+# find ~/Pictures/bgwallpapers -type f | shuf | sxiv -t -
+fd . --type f -u --no-ignore-vcs '/home/raytracer/Pictures/bgwallpapers' | shuf | sxiv -t -
