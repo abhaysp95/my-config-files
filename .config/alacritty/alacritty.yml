@@ -325,37 +325,67 @@ font:
 #   white      : '0xffffff'
 # >>>
 
-# Colors (Material Theme) <<<
+# Colors (Material Theme)
+# colors:
+  # Default colors
+  # primary:
+  #   background: '0x263238'
+    # background: '#1e282d'
+    # background: '0x090b10'
+    # foreground: '#c4c7d1'
+
+  # Normal colors
+  # normal:
+  #   black:   '#666666'
+  #   red:     '#eb606b'
+  #   green:   '#c3e88d'
+  #   yellow:  '#f7eb95'
+  #   blue:    '#80cbc4'
+  #   magenta: '#ff2f90'
+  #   cyan:    '#aeddff'
+  #   white:   '#ffffff'
+
+  # Bright colors
+  # bright:
+  #   black:   '#ff262b'
+  #   red:     '#eb606b'
+  #   green:   '#c3e88d'
+  #   yellow:  '#f7eb95'
+  #   blue:    '#7dc6bf'
+  #   magenta: '#6c71c4'
+  #   cyan:    '#35434d'
+  #   white:   '#ffffff'
+
+# Colors (One Dark)
 colors:
   # Default colors
   primary:
-    background: '0x263238'
-    # background: '#1e282d'
-    # background: '0x090b10'
-    foreground: '#c4c7d1'
+    background: '#282c34'
+    foreground: '#abb2bf'
 
   # Normal colors
   normal:
-    black:   '#666666'
-    red:     '#eb606b'
-    green:   '#c3e88d'
-    yellow:  '#f7eb95'
-    blue:    '#80cbc4'
-    magenta: '#ff2f90'
-    cyan:    '#aeddff'
-    white:   '#ffffff'
+    # NOTE: Use '#131613' for the `black` color if you'd like to see
+    # black text on the background.
+    black:   '#282c34'
+    red:     '#e06c75'
+    green:   '#98c379'
+    yellow:  '#d19a66'
+    blue:    '#61afef'
+    magenta: '#c678dd'
+    cyan:    '#56b6c2'
+    white:   '#abb2bf'
 
   # Bright colors
   bright:
-    black:   '#ff262b'
-    red:     '#eb606b'
-    green:   '#c3e88d'
-    yellow:  '#f7eb95'
-    blue:    '#7dc6bf'
-    magenta: '#6c71c4'
-    cyan:    '#35434d'
+    black:   '#5c6370'
+    red:     '#e06c75'
+    green:   '#98c379'
+    yellow:  '#d19a66'
+    blue:    '#61afef'
+    magenta: '#c678dd'
+    cyan:    '#56b6c2'
     white:   '#ffffff'
-# >>>
 
 # Colors (Dracula) <<<
 #colors:
