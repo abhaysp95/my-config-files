@@ -373,19 +373,27 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 # >>>
 
 #                       palenight <<<
-client.focused          #292d3e   #292d3e #ebdbb2 #292d3e #292d3e
-client.focused_inactive #292d3e   #292d3e #ebdbb2 #292d3e #292d3e
-client.unfocused        #292d3e   #292d3e #ebdbb2 #292d3e #292d3e
-client.urgent           #292d3e   #292d3e #fb4934 #292d3e #292d3e
-client.placeholder      #292d3e   #292d3e #ebdbb2 #292d3e #292d3e
-hide_edge_borders       both
+# client.focused          #292d3e   #292d3e #ebdbb2 #292d3e #292d3e
+# client.focused_inactive #292d3e   #292d3e #ebdbb2 #292d3e #292d3e
+# client.unfocused        #292d3e   #292d3e #ebdbb2 #292d3e #292d3e
+# client.urgent           #292d3e   #292d3e #fb4934 #292d3e #292d3e
+# client.placeholder      #292d3e   #292d3e #ebdbb2 #292d3e #292d3e
+# hide_edge_borders       both
 #                       >>>
-#material <<<
-client.focused          #263238   #263238 #ebdbb2 #263238 #263238
-client.focused_inactive #263238   #263238 #ebdbb2 #263238 #263238
-client.unfocused        #263238   #263238 #ebdbb2 #263238 #263238
-client.urgent           #263238   #263238 #fb4934 #263238 #263238
-client.placeholder      #263238   #263238 #ebdbb2 #263238 #263238
+#material
+# client.focused          #263238   #263238 #ebdbb2 #263238 #263238
+# client.focused_inactive #263238   #263238 #ebdbb2 #263238 #263238
+# client.unfocused        #263238   #263238 #ebdbb2 #263238 #263238
+# client.urgent           #263238   #263238 #fb4934 #263238 #263238
+# client.placeholder      #263238   #263238 #ebdbb2 #263238 #263238
+# hide_edge_borders       both
+
+# one dark
+client.focused          #282c34   #282c34 #ebdbb2 #282c34 #282c34
+client.focused_inactive #282c34   #282c34 #ebdbb2 #282c34 #282c34
+client.unfocused        #282c34   #282c34 #ebdbb2 #282c34 #282c34
+client.urgent           #282c34   #282c34 #fb4934 #282c34 #282c34
+client.placeholder      #282c34   #282c34 #ebdbb2 #282c34 #282c34
 hide_edge_borders       both
 
 # client.focused          #81a1c1 #81a1c1 #ebdbb2 #81a1c1 #81a1c1
