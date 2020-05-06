@@ -211,3 +211,4 @@ map gU  cd /usr
 map gUs cd /usr/share
 
 map sc cd ~/.local/bin/.scripts
+map gnv cd ~/.config/nvim
