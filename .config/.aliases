@@ -33,12 +33,9 @@ alias dman="$HOME/.local/bin/.scripts/mansplain"
 alias dpdf="$HOME/.local/bin/.scripts/pdfdmenu"
 alias dvid="$HOME/.local/bin/.scripts/videosmpv"
 
-# removed -a option from ls
-# alias ls='ls -FhN --color=auto --group-directories-first'
-# alias ll='ls -lah --group-directories-first'
-	alias grep='grep --colour=auto'
-	alias egrep='egrep --colour=auto'
-	alias fgrep='fgrep --colour=auto'
+alias grep='grep --colour=auto'
+alias egrep='egrep --colour=auto'
+alias fgrep='fgrep --colour=auto'
 alias cp="cp -i"
 alias df="df -h"
 
@@ -47,8 +44,6 @@ alias mkd="mkdir -pv"
 alias vrc="nvim ~/.config/nvim/init.vim"
 alias brc="nvim ~/.bashrc"
 alias ffx="firefox"
-# alias battery="cat /sys/class/power_supply/BAT0/capacity"
-#alias ps = "ps l --USER raytracer --forest"
 alias nn="mpc next"
 alias pp="mpc prev"
 alias ss="mpc stop"
@@ -56,17 +51,9 @@ alias sp="mpc pause"
 alias mp="mpc play"
 alias ss..="xset r rate 400 60"
 
-#alias rfw="rofi -show window"
 alias lgoff="sudo killall Xorg"
-# alias lgoff='i3-msg exit'
 
 alias diskspace="du -S | sort -n -r |less"
-
-# alias -s {c,java}=nvim
-
-# alias -g G='| grep -i'
-
-# alias -g lct='| lolcat -t'
 
 alias fig3d="figlet -f /usr/share/fonts/figlet-fonts/3d.flf"
 
@@ -115,8 +102,6 @@ alias df='df -H'
 alias du='du -ch'
 
 alias top='atop'
-#alias brght='xrandr --output eDP1 --brightness'
-# alias -g brt=' | sudo tee /sys/class/backlight/intel_backlight/brightness'
 alias bright='xbacklight -set'
 
 #functions
@@ -196,6 +181,7 @@ alias gU='cd /usr'
 alias gUs='cd /usr/share'
 
 alias sc='cd ~/.local/bin/.scripts'
+alias gnv='cd ~/.config/nvim'
 
 # using exa as ls
 alias ls='exa --grid -F --group-directories-first'
@@ -208,3 +194,15 @@ alias miv='sh ~/.local/bin/.scripts/maninvim'
 # look through pacman and yay
 # alias lookpac='pacman -Slq | fzf -m --preview 'cat <(pacman -Si {1}) <(pacman -Fl {1} | awk "{print \$2}")' | xargs -ro sudo pacman -S'
 # alias lookyay='yay -Slq | fzf -m --preview 'cat <(yay -Si {1}) <(yay -Fl {1} | awk "{print \$2}")' | xargs -ro  yay -S'
+# removed -a option from ls
+# alias ls='ls -FhN --color=auto --group-directories-first'
+# alias ll='ls -lah --group-directories-first'
+# alias battery="cat /sys/class/power_supply/BAT0/capacity"
+#alias ps = "ps l --USER raytracer --forest"
+# alias lgoff='i3-msg exit'
+#alias rfw="rofi -show window"
+# alias -s {c,java}=nvim
+# alias -g G='| grep -i'
+# alias -g lct='| lolcat -t'
+#alias brght='xrandr --output eDP1 --brightness'
+# alias -g brt=' | sudo tee /sys/class/backlight/intel_backlight/brightness'
