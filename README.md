@@ -5,6 +5,20 @@ These are some of the config files and dot files which I use daily
 All the `scripts` are in `~/.local/bin/.scripts`
 
 ## Window Manager
+
+### bspwm(current wm)
+Currently using [bspwm](https://github.com/baskerville/bspwm) as my primary
+window manager.
+
+![bspwm_screenshot](.local/bin/screenshots/bspwm_ss.png)
+
+`Binary Space Partitioning Window Mangager(bspwm)` as name suggests, this is
+a binary space partitioning tiling wm which supports _spiral,alternative_ and
+some other partitioning mechanisms.
+
+Also, `sxhkd` is a must with bspwm as it binds the keys to different commands.
+
+### i3wm(2020-05-07)
 Using `i3wm` as my window manager
 
 `Window Manager: i3`
@@ -50,3 +64,5 @@ Using `mpd(ncmpcpp)` and `cmus` as my music player and `Polybar` as statusbar
 
 ## Corona Update
 ![corona](.local/bin/screenshots/corona_check.png)
+
+> These givens dates beside headings are last used date of them
