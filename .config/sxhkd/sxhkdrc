@@ -206,4 +206,8 @@ super + Scroll_Lock
 super + F9
 	showclip
 
+# dunst test
+super + w
+	dtest
+
   #xdo resize {-w +20, -h -20, -h +20, -w -20}
