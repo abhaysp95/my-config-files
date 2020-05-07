@@ -134,4 +134,4 @@ command_not_found_handle() {
 xmodmap -e "keycode 108 = Super_R"
 
 export HISTCONTROL=ignoreboth
-notify-send --icon=~/.cache/notify-icons/terminal.png "bash settings reloaded" -a bash -t 2000
+# notify-send --icon=~/.cache/notify-icons/terminal.png "bash settings reloaded" -a bash -t 2000

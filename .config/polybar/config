@@ -6,7 +6,7 @@ background = #181818
 red        = #c45e46
 ; changing blue with orange and vice-versa
 lightbrown       = #d65d0e
-blue	= #282c34
+blue	= #aa282c34
 teal       = #689d6a
 green      = #98971a
 purple     = #b16286
@@ -97,8 +97,8 @@ font-0 = Source Code Pro:style=Bold:size=8;2
 font-1 = Font Awesome 5 Free Solid:size=10;2
 
 ; Modlues
-modules-left   = i3 xwindow mpd
-;wireless-network
+modules-left   = bspwm xwindow mpd
+;wireless-network i3
 /* modules-center = time */
 modules-right  = time date temperature cpu memory pulseaudio battery bright
 ; lock logout reboot poweroff
@@ -109,8 +109,10 @@ tray-background = ${colors.blue}
 
 wm-restack = i3
 
-scroll-up = i3wm-wsnext
-scroll-down = i3wm-wsprev
+; scroll-up = i3wm-wsnext
+; scroll-down = i3wm-wsprev
+scroll-up = bspwm-desknext
+scroll-down = bspwm-deskprev
 
 ; Cursor actions
 cursor-click  = pointer
@@ -144,8 +146,8 @@ content = ""
 content-foreground = ${colors.foreground}
 content-background = ${colors.foreground}
 
-[module/i3]
-type = internal/i3
+; [module/i3]
+; type = internal/i3
 
 ; format-prefix = "%{T3}%{T-}"
 ; format-prefix-foreground = ${colors.indigo}
@@ -157,13 +159,13 @@ type = internal/i3
 ; format-suffix-background = ${colors.blue}
 
 ; Mouse click
-enable-click = true
+; enable-click = true
 
 ; Mouse scroll
-enable-scroll = false
+; enable-scroll = false
 
 ; Sort
-index-sort = true
+; index-sort = true
 
 ; Display icons
 ;fuzzy-match = true
@@ -194,28 +196,53 @@ index-sort = true
 
 ;ws-icon-default = 
 
-label-focused            = %name%
+; label-focused            = %name%
+; label-focused-foreground = ${colors.light-white}
+; label-focused-background = ${colors.blue}
+; label-focused-underline = ${colors.orange}
+; label-focused-padding    = 1
+
+; ; Unfocused labels
+; label-unfocused            = %icon% %name%
+; label-unfocused-foreground = ${colors.light-foreground}
+; label-unfocused-background = ${colors.blue}
+; label-unfocused-padding    = 1
+
+; ; Visible labels
+; label-visible            = %icon% %name%
+; label-visible-foreground = ${colors.foreground}
+; label-visible-padding    = 1
+
+; ; Urgent labels
+; label-urgent            = %icon% %name%
+; label-urgent-foreground = ${colors.foreground}
+; label-urgent-background = ${colors.red}
+; label-urgent-padding    = 1
+
+[module/bspwm]
+type = internal/bspwm
+
+label-focused = %name%
 label-focused-foreground = ${colors.light-white}
 label-focused-background = ${colors.blue}
-label-focused-underline = ${colors.orange}
-label-focused-padding    = 1
+label-focused-underline = ${colors.light-white}
+label-focused-padding = 1
 
-; Unfocused labels
-label-unfocused            = %icon% %name%
-label-unfocused-foreground = ${colors.light-foreground}
-label-unfocused-background = ${colors.blue}
-label-unfocused-padding    = 1
+label-occupied = %name%
+label-occupied-foreground = ${colors.light-white}
+label-occupied-padding = 1
 
-; Visible labels
-label-visible            = %icon% %name%
-label-visible-foreground = ${colors.foreground}
-label-visible-padding    = 1
-
-; Urgent labels
-label-urgent            = %icon% %name%
-label-urgent-foreground = ${colors.foreground}
+label-urgent = %name%!
 label-urgent-background = ${colors.red}
-label-urgent-padding    = 1
+label-urgent-padding = 1
+
+label-empty = %name%
+label-empty-foreground = ${colors.light-foreground}
+label-empty-padding = 1
+
+format-underline =
+format-background =
+format-padding =
 
 [module/xwindow]
 
