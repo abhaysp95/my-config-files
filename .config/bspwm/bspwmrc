@@ -3,14 +3,6 @@
 bspc rule -r "*"
 
 ###---Autostart---###
-# nm-applet &
-# xrdb ~/.Xresources &
-# nitrogen --set-scaled --head=0 ~/.config/wall.png &
-# nitrogen --set-scaled --head=1 ~/.config/wall.png &
-# killall cleanfullscreen
-# cleanfullscreen &
-#killall "launchlemon"
-#launchlemon &
 ~/.config/polybar/./launch.sh
 
 ###---MONITORS---###
