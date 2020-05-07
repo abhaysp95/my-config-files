@@ -75,6 +75,15 @@ shopt -s histappend
 # don't use cd
 shopt -s autocd
 
+## history
+export HISTTIMEFORMAT="%h %d %H:%M:%S "
+export HISTSIZE=10000
+export HISTFILESIZE=10000
+# store bash history immediately
+export PROMPT_COMMAND="${PROMPT_COMMAND};history -a"
+# store multi-line commands in one history
+shopt -s cmdhist
+
 source ~/.config/.aliases
 
 # giving exit code 1
@@ -93,7 +102,7 @@ function settitle () {
 	# echo -ne "\033]0;${PREV_COMMAND}\007"
 	export PREV_COMMAND=${PREV_COMMAND}' | '
 }
-export PROMPT_COMMAND=${PROMPT_COMMAND}';export PREV_COMMAND=""'
+export PROMPT_COMMAND="${PROMPT_COMMAND};PREV_COMMAND="
 trap 'settitle "$BASH_COMMAND"' DEBUG
 
 # auto ls
