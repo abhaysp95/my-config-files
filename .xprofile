@@ -2,17 +2,18 @@
 
 # sourcing this file to .xinitrc, contains some basic things
 mpd &
-# remaps &		# remaps script for changing Multi_key to super
-# xmodmap -e 'keycode 108 = Super_R'
-#setbg &
+setbg &
 xrdb ~/.Xresources &
 sxhkd &
-compton &
+picom &
 dunst &
 xset r rate 350 80 &
-# nitrogen --restore &
-setbg &
 udiskie -A -t &
 caffeine_like &
-notify-send --icon=~/.cache/notify-icons/home.png "Welcome to region of raytracer" "Enjoy!" &
 mpd_changes.sh &
+notify-send --icon=~/.cache/notify-icons/home.png "Welcome to region of raytracer" "Enjoy!" &
+
+# nitrogen --restore &
+# compton &
+# remaps &		# remaps script for changing Multi_key to super
+# xmodmap -e 'keycode 108 = Super_R'
