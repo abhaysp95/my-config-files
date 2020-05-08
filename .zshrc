@@ -89,8 +89,8 @@ setopt pushd_to_home            # `pushd` = `pushd $HOME`
 #History
 ##
 HISTFILE=~/.zsh_history         # where to store zsh config
-HISTSIZE=4096                   # big history
-SAVEHIST=4096                   # big history
+HISTSIZE=10000                   # big history
+SAVEHIST=10000                  # big history
 setopt append_history           # append
 setopt hist_ignore_all_dups     # no duplicates
 unsetopt hist_ignore_space      # ignore space prefixed commands
