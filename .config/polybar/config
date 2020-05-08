@@ -58,7 +58,7 @@ height = 17
 offset-x = 0
 offset-y = 0
 
-; override-redirect = true
+override-redirect = true
 
 ; Position
 bottom = false
@@ -107,7 +107,7 @@ tray-position = right
 tray-padding = 3
 tray-background = ${colors.blue}
 
-wm-restack = i3
+wm-restack = bspwm
 
 ; scroll-up = i3wm-wsnext
 ; scroll-down = i3wm-wsprev
