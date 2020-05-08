@@ -49,6 +49,15 @@ Used [liquidprompt](https://github.com/nojhan/liquidprompt) with `zsh` as shell.
 ![liquidprompt](.local/bin/screenshots/liquidpromptss.png)
 
 
+## Text Editor
+
+Currently using `neovim` as primary text editor
+
+![neovim](.local/bin/screenshots/nvim_setup1.png)
+
+Checkout [my_nvim_setup](https://github.com/coolabays/nvim) for more detail and configs
+
+
 ## Terminal FileManagers
 Using `ranger` and `lf` as terminal file managers
 
