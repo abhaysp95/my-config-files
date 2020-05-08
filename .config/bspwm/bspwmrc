@@ -22,6 +22,8 @@ bspc config pointer_action2 resize_side
 bspc config pointer_action3 resize_corner
 bspc config click_to_focus none
 bspc config focus_follows_pointer true
+bspc config pointer_follows_focus true
+
 bspc config remove_disabled_monitors true
 bspc config remove_unplugged_monitors true
 bspc config merge_overlapping_monitors true
