@@ -55,7 +55,7 @@ Currently using `neovim` as primary text editor
 
 ![neovim](.local/bin/screenshots/nvim_setup1.png)
 
-Checkout [my_nvim_setup](https://github.com/coolabays/nvim) for more detail and configs
+Checkout [my_nvim_setup](https://github.com/coolabhays/nvim) for more detail and configs
 
 
 ## Terminal FileManagers
