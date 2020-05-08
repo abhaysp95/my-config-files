@@ -69,7 +69,7 @@ super + {Tab,backslash}
 super + slash:{a,s,l}
 	~/.config/bspwm/layout_scheme.sh {alternate,spiral,longest_side}
 
-# focues or swap the next node
+# focues the next node
 super + {_,shift + }c
 	bspc node -f {next,prev}.local
 
@@ -85,16 +85,13 @@ super + ctrl + {1-9}
 super + ctrl + space
 	bspc node -p cancel
 
+# manual partiotion the container
 super + alt + {h,j,k,l}
 	bspc node -p {west,south,north,east}
 
 # expand window by moving one of its side outward
 super + shift + {y,u,i,o}
 	bspc node -z {right -20 0,bottom 0 20, bottom 0 -20, right 20 0}
-
-# move a floating window
-ctrl + alt + {h,j,k,l}
-	bspc node -v {-20 0,0 20,0 -20,20 0}
 
 # toggle gaps
 super + shift + d
@@ -107,9 +104,6 @@ super + {_,+ shift }+ z
 # Make a window sticky/non-sticky
 super + ctrl + o
 	bspc node -g sticky={on,off} && notify-send -t 2000 "sticky mode toggled"
-
-super + {a,o}
-	bspc node -f {prev,next}.local
 
 super + shift + n
 	bspc node focused -t \~floating ; hover right
@@ -129,10 +123,6 @@ super + control + {h,j,k,l}
 super + {t,shift + t,f,shift + f}
 	bspc {node -t tiled,node -t pseudo_tiled,desktop -l next,node -t ~fullscreen}
 
-# Swap window with direction
-super + shift + {h,j,k,l}
-	bspc node -s {west,south,north,east}
-
 super + ctrl + {minus,equal}
 	{light -U 5 && dunstify --icon="~/.cache/notify-icons/yellow-bulb.png" -t 500 "current brightness->"`light -G`,light -A 5 && dunstify --icon="~/.cache/notify-icons/yellow-bulb.png" -t 500 "current brightness is ->"`light -G`}
 
@@ -147,7 +137,7 @@ super+i:{m,p,v,d}
 	{manbyrofi,pdfbyrofi,videosbyrofi,caffeine_like}
 
 super + d:{d,f,k}
-    {dmenu_run -i -nb '#181818' -sf '#181818' -nf '#ebdbb2' -sb '#d7d7d8' -fn "Mononoki Nerd Font Mono 12",rofi -show run -i -show-icons, ((pidof picom && kill $(pidof picom)) || picom) & dunstify -t 2000 'picom toggled'}
+    {dmenu_run -i -nb '#181818' -sf '#181818' -nf '#ebdbb2' -sb '#d7d7d8' -fn "Ubuntu Mono Nerd Font Mono 10",rofi -show run -i -show-icons, ((pidof picom && kill $(pidof picom)) || picom) & dunstify -t 2000 'picom toggled'}
 
 super + b:{f,p,c,n,q,v}
     {firefox,pcmanfm,telegram-desktop,nautilus,qutebrowser,vivaldi-stable}
