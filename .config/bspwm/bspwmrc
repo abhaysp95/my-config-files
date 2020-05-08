@@ -10,14 +10,17 @@ my_monitor="$(bspc query --monitors --names)"
 bspc monitor "$my_monitor" -d 1 2 3 4 5 6 7 8 9 0
 
 ###---Global Settings---###
-bspc config automatic_scheme alternate
-bspc config initial_polarity second_child
+
+# spawns new node on left with spiral
+bspc config automatic_scheme spiral
+bspc config initial_polarity first_child
+
+# mouse actions
 bspc config pointer_modifier control
 bspc config pointer_action1 move
 bspc config pointer_action2 resize_side
 bspc config pointer_action3 resize_corner
 bspc config click_to_focus none
-
 bspc config focus_follows_pointer true
 bspc config remove_disabled_monitors true
 bspc config remove_unplugged_monitors true
