@@ -36,9 +36,17 @@ super + shift + space
 super + {h,j,k,l}
 	bspc node -f {west,south,north,east}
 
+super + shift + {h,j,k,l}
+    { dir=west  dx=-20 dy=0 \
+    , dir=south dx=0   dy=20 \
+    , dir=north dx=0   dy=-20 \
+    , dir=east  dx=20  dy=0 \
+    }; \
+    bspc node --move "$dx" "$dy" || bspc node --swap $dir
+
 # Focus on desktop
-super + {_,shift + }{0-9}
-	bspc {desktop -f,node -d} ^{0-9}
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} ^{1-9,10}
 
 # Cycle through desktops
 super + alt + {Left, Right}
