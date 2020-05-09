@@ -19,7 +19,6 @@ getshufman() {
 }
 
 show_options() {
-	# get_choice=$(echo "search - It will provide list of the various commands to get manual|shuf - It'll choose a random command and open it's manual" \
 	get_choice=$(printf "%s\n%s\n" \
 		"search - It will provide list of the various commands to get manual" \
 		"shuf - It'll choose a random command and open it's manual" \
