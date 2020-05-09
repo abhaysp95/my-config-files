@@ -1,3 +1,35 @@
 #!/usr/bin/env sh
 
-man -k . | rofi -dmenu -lines 20 -matching regex | awk '{print $1}' | xargs -r man -Tpdf | zathura -
+getmanname() {
+	man -k . \
+		| rofi -dmenu -lines 20 -matching regex \
+		| awk '{print $1}' | xargs -r man -Tpdf \
+		| zathura -
+}
+
+getshufman() {
+	getname=$(fd . --type f /usr/share/man/man1 \
+		| shuf \
+		| head -n 1)
+	propername=$(basename "${getname}" \
+		| sed 's/.1.gz//g')
+	# xargs -r man -Tpdf "${propername}" \
+	man -Tpdf "${propername}" \
+	| zathura -
+}
+
+show_options() {
+	# get_choice=$(echo "search - It will provide list of the various commands to get manual|shuf - It'll choose a random command and open it's manual" \
+	get_choice=$(printf "%s\n%s\n" \
+		"search - It will provide list of the various commands to get manual" \
+		"shuf - It'll choose a random command and open it's manual" \
+		| rofi -dmenu -i -lines 5)
+		choice_is="$(echo "${get_choice}" | awk '{print $1}')"
+}
+
+show_options
+
+case "$choice_is" in
+	search) getmanname;;
+	shuf) getshufman;;
+esac
