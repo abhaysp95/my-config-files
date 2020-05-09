@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
-#    _   ___ ___
-#   /_\ / __| _ \   Abhay Shanker Pathak
-#  / _ \__ \  _/    abhaysp9955@gmail.com
-# /_/ \_\___/_|     https://github.com/coolabhays
+#     _    ____  ____
+#    / \  / ___||  _ \   Abhay Shanker Pathak
+#   / _ \ \___ \| |_) |  abhaysp9955@gmail.com
+#  / ___ \ ___) |  __/   https://github.com/coolabhays
+# /_/   \_\____/|_|
 #
-# Open man page in vim
+# Description
 # requires fzf and fd(for faster result)
 # set env variable EDITOR to your preferred editor choice
 # in my case it's nvim
