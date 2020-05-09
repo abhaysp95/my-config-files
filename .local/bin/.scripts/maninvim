@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 # Date: 2020-04-28
 # Description: Open man page in $EDITOR
@@ -6,17 +6,24 @@
 # Github: https://github.com/CoolAbhayS
 # Last Edited: 2020-04-28
 
-# requires fzf
+# requires fzf and fd(for faster result)
 # set env variable EDITOR to your preferred editor choice
 # in my case it's nvim
 
-
 getmanname() {
     man -k . | \
-	awk '{print $1 $2}' | \
-	fzf
+	fzf | \
+	awk '{print $1}'
 }
 
+getshufman() {
+	getname=$(fd . --type f /usr/share/man/man1 \
+		| shuf \
+		| head -n 1)
+	propername=$(basename "${getname}" \
+		| sed 's/.1.gz//g')
+	echo "${propername}"
+}
 
 viman() {
     text=$(man "$@") && \
@@ -24,9 +31,13 @@ viman() {
 	"$EDITOR" -R +":set ft=man" - ;
 }
 
-if [ -z "$*" ]; then
-    name_is="$(getmanname | sed 's/(.*)//' )"
-    viman "$name_is"
-else
-    viman "$@"
-fi
+case "$1" in
+	-h) printf "%s\n%s\n%s\n%s\n" "There are three queries to pass:" \
+		"-s for search" "-r for random(currently executable or shell commands only)" \
+		"keyword";;
+	-s) viman "$(getmanname)";;
+	-r) viman "$(getshufman)";;
+	*) viman "$1"
+esac
+
+# arrays are not part of posix so changed shebang to bash
