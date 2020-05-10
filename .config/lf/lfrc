@@ -9,6 +9,13 @@ set drawbox true
 set icons true
 set ignorecase true
 
+
+cmd video_preview ${{
+    CACHE=$(mktemp /tmp/thumb_cache.XXXXX)
+    ffmpegthumbnailer -i "$f" -o $CACHE -s 0
+    /path/to/draw_img.sh $CACHE && rm $CACHE
+}}
+
 # custom Functions
 cmd open ${{
 	case $(file --mime-type "$f" -bL) in
@@ -212,3 +219,6 @@ map gUs cd /usr/share
 
 map sc cd ~/.local/bin/.scripts
 map gnv cd ~/.config/nvim
+
+map + :video_preview
+map - $/home/raytracer/.config/lf/draw_image.sh $f
