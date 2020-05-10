@@ -1,20 +1,20 @@
 [colors]
 ;foreground = #ebdbb2
 foreground = #35434d
-light-foreground = #5c6370
-background = #181818
+light-foreground = #666666
+background = #1b1d1e
 red        = #c45e46
 ; changing blue with orange and vice-versa
 lightbrown       = #d65d0e
-blue	= #aa282c34
+blue	= #cc1b1d1e
 teal       = #689d6a
 green      = #98971a
 purple     = #b16286
-orange     = #abb2bf
+orange     = #e3e3dd
 indigo      = #83a598
 black = #000000
 yellow     = #d79921
-light-white      = #abb2bf
+light-white      = #e3e3dd
 white = #d3d0c8
 cyan       = #689d6a
 brown      = #fb4934
@@ -224,7 +224,7 @@ type = internal/bspwm
 
 label-focused = %name%
 label-focused-foreground = ${colors.light-white}
-label-focused-background = ${colors.blue}
+label-focused-background = ${colors.background}
 label-focused-underline = ${colors.light-white}
 label-focused-padding = 1
 

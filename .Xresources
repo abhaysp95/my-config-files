@@ -151,11 +151,11 @@
 /* #define base0F #d65d0e */
 
 /* *foreground:   base05 */
-#ifdef background_opacity
+/* #ifdef background_opacity */
 /* *background:   [background_opacity]base00 */
-#else
+/* #else */
 /* *background:   base00 */
-#endif
+/* #endif */
 /* *cursorColor:  base05 */
 
 /* *color0:       base00 */
@@ -425,36 +425,70 @@
 /* *.color15: #FFFFFF */
 !! >>>
 !
-! Original theme https://github.com/nathanbuchar/atom-one-dark-terminal
-*.foreground:    #ABB2BF
-*.background:    #1E2127
-*.cursorColor:   #5C6370
-*.highlightColor:#3A3F4B
+/* ! Original theme https://github.com/nathanbuchar/atom-one-dark-terminal */
+/* *.foreground:    #ABB2BF */
+/* *.background:    #1E2127 */
+/* *.cursorColor:   #5C6370 */
+/* *.highlightColor:#3A3F4B */
 
-! Negro y gris
-*.color0:        #1E2127
-*.color8:        #5C6370
-! Rojos
-*.color1:        #E06C75
-*.color9:        #E06C75
-! Verde
-*.color2:        #98C379
-*.color10:       #98C379
-! Amarillo
-*.color3:        #D19A66
-*.color11:       #D19A66
-! Azul
-*.color4:        #61AFEF
-*.color12:       #61AFEF
-! Magenta
-*.color5:        #C678DD
-*.color13:       #C678DD
-! Cyan
-*.color6:        #56B6C2
-*.color14:       #56B6C2
-! Blanco
-*.color7:        #ABB2BF
-*.color15:       #FFFFFF
+/* ! Negro y gris */
+/* *.color0:        #1E2127 */
+/* *.color8:        #5C6370 */
+/* ! Rojos */
+/* *.color1:        #E06C75 */
+/* *.color9:        #E06C75 */
+/* ! Verde */
+/* *.color2:        #98C379 */
+/* *.color10:       #98C379 */
+/* ! Amarillo */
+/* *.color3:        #D19A66 */
+/* *.color11:       #D19A66 */
+/* ! Azul */
+/* *.color4:        #61AFEF */
+/* *.color12:       #61AFEF */
+/* ! Magenta */
+/* *.color5:        #C678DD */
+/* *.color13:       #C678DD */
+/* ! Cyan */
+/* *.color6:        #56B6C2 */
+/* *.color14:       #56B6C2 */
+/* ! Blanco */
+/* *.color7:        #ABB2BF */
+/* *.color15:       #FFFFFF */
+
+
+! terminal colours
+*foreground:#CCCCCC
+*background:#1B1D1E
+
+!black darkgray
+*color0:    #1B1D1E
+*color8:    #808080
+!darkred red
+*color1:    #FF0044
+*color9:    #F92672
+!darkgreen green
+*color2:    #82B414
+*color10:   #A6E22E
+!darkyellow yellow
+*color3:    #FD971F
+*color11:   #E6DB74
+!darkblue blue
+*color4:    #266C98
+*color12:   #7070F0
+!darkmagenta magenta
+*color5:    #AC0CB1
+*color13:   #D63AE1
+!darkcyan cyan
+*color6:    #AE81FF
+*color14:   #66D9EF
+!gray white
+*color7:    #CCCCCC
+*color15:   #F8F8F2
+
+xterm*faceName: Envy Code R
+xterm*faceNameDoublesize: Droid Sans Fallback
+xterm*faceSize: 12
 
 URxvt.perl-ext-common: resize-font,default,clipboard,url-select,keyboard-select
 
