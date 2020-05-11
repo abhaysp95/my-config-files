@@ -350,7 +350,7 @@ function awesome_magicenter {
 source ~/.zsh/minimal/minimal.zsh
 
 # minimalprompt setup <<<
-MNML_OK_COLOR=2
+MNML_OK_COLOR=4
 MNML_ERR_COLOR=1
 MNML_BGJOB_MODE=2
 MNML_USER_CHAR='⮝'
