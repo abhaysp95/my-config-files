@@ -347,7 +347,8 @@ function awesome_magicenter {
 	printf 'pwd -> %s' "$(pwd)"
 }
 
-source ~/.zsh/minimal/minimal.zsh
+# source ~/.zsh/minimal/minimal.zsh
+source ~/.zsh/learning_prompt.zsh
 
 # minimalprompt setup <<<
 MNML_OK_COLOR=4
