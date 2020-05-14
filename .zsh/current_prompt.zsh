@@ -70,7 +70,15 @@ function zle-line-finish {
 }
 zle -N zle-line-finish
 
+
+# function +vi-git-untracked() {
+# 	if [[ $(git rev-parse --is-inside-work-tree 2> /dev/null) == 'true' ]] && \
+# 		[[ $(git ls-files --other --directory --exclude-standard | sed q | wc -l | tr -d ' ') == 1 ]]; then
+# 	hook_com[unstaged]+='??'
+# }
+
 # commands
+# %! -> history even number
 # %n -> user name
 # %m -> system name
 # %~ -> current dir
@@ -84,3 +92,5 @@ zle -N zle-line-finish
 # RPROMPT+='%(?,%F{green}%B😄,%F{yellow}%? %F{red}😢 '
 # vim_ins_mode="%{$fg_bold[yellow]%}[ins]%{$reset_color%}"
 # vim_cmd_mode="%{$fg_bold[blue]%}[cmd-%?]%{$reset_color%}"
+# PROMPT+='%K{#a49acd}%F{124} ${vcs_info_msg_0_}%f%k '
+# PROMPT+="$(put_spacing)"
