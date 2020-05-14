@@ -348,7 +348,7 @@ function awesome_magicenter {
 }
 
 # source ~/.zsh/minimal/minimal.zsh
-source ~/.zsh/learning_prompt.zsh
+source ~/.zsh/current_prompt.zsh
 
 # minimalprompt setup <<<
 MNML_OK_COLOR=4
