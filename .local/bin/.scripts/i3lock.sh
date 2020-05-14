@@ -1,4 +1,13 @@
 #!/usr/bin/env bash
+#     _    ____  ____
+#    / \  / ___||  _ \   Abhay Shanker Pathak
+#   / _ \ \___ \| |_) |  abhaysp9955@gmail.com
+#  / ___ \ ___) |  __/   https://github.com/coolabhays
+# /_/   \_\____/|_|
+#
+# current lock screen script for my setup
+
+
 
 lock_timeout=300
 def_timeout="$(cut -d ' ' -f4 <<< $(xset q | sed -n '25p'))"
@@ -37,17 +46,8 @@ postlock() {
 
 lock_run() {
 	prelock
-	i3lock -n -i "$tmpbg" && mpc pause
+	mpc pause && i3lock -n -i "$tmpbg"
 	postlock
 }
 
 lock_run
-
-#	i3lock_pid
-# i3lock_pid() {
-# 	if [ -n "$(pgrep i3lock.sh)" ]; then
-# 		echo "i3lock still running $(date)"
-# 	else
-# 		echo "i3lock has stopped $(date)"
-# 	fi
-# }
