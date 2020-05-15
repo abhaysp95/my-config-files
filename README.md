@@ -29,7 +29,7 @@ Using `i3wm` as my window manager
 
 ### Self made(current shell -> zsh)
 Currently, using `zsh` as default shell. Using self made [zshprompt](https://github.com/coolabhays/my-config-files/blob/master/.zsh/current_prompt.zsh). Checkout out the link for more info
-[zshprompt](.local/bin/screenshots/current_zsh_prompt.png)
+![zshprompt](.local/bin/screenshots/current_zsh_prompt.png)
 
 Features are:
 * truncate path if more than 20 chars
