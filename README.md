@@ -31,6 +31,14 @@ Using `i3wm` as my window manager
 Currently, using `zsh` as default shell. Using self made [zshprompt](https://github.com/coolabhays/my-config-files/blob/master/.zsh/current_prompt.zsh). Checkout out the link for more info
 [zshprompt](.local/bin/screenshots/current_zsh_prompt.png)
 
+Features are:
+* truncate path if more than 20 chars
+* Shows clean and dirty git branch with different colors
+* Shows `modified` and `git add` status in prompt
+* Shows count of currently stopped and running zobs
+* Shows error code
+* Show `ins` and `normal` mode for vi-mode
+
 ### Self made(bash)
 Using self-made [bashprompt](https://github.com/coolabhays/my-config-files/blob/master/.bashrc). Checkout the link for more info
 ![bashprompt](.local/bin/screenshots/bashprompt.png)
