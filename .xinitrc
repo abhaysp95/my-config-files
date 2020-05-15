@@ -67,4 +67,5 @@ fi
 
 # exec $(get_session)
 
+# exec xmonad
 exec bspwm
