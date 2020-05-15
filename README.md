@@ -27,14 +27,18 @@ Using `i3wm` as my window manager
 
 ## Current Prompt
 
-### Self made(current bash)
-Currently using `bash` as my default shell. Using self made prompt
+### Self made(current shell -> zsh)
+Currently, using `zsh` as default shell. Using self made [zshprompt](https://github.com/coolabhays/my-config-files/blob/master/.zsh/current_prompt.zsh). Checkout out the link for more info
+[zshprompt](.local/bin/screenshots/current_zsh_prompt.png)
+
+### Self made(bash)
+Using self-made [bashprompt](https://github.com/coolabhays/my-config-files/blob/master/.bashrc). Checkout the link for more info
 ![bashprompt](.local/bin/screenshots/bashprompt.png)
 
 It shows, current `git brach`, vim mode, error_codes
 
 
-### minimal(current zsh)
+### minimal
 In `zsh` shell, using [minimal](https://github.com/subnixr/minimal) as prompt with some custom settings
 ![minimal](.local/bin/screenshots/minimal_zsh.png)
 
