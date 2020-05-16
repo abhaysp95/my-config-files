@@ -5,7 +5,9 @@ autoload -Uz vcs_info
 function +vi-git-untracked() {
 	if [[ $(git rev-parse --is-inside-work-tree 2> /dev/null) == 'true' ]] && \
   [[ $(git ls-files --other --directory --exclude-standard | sed q | wc -l | tr -d ' ') == 1 ]] ; then
+	  if [[ "$(git status --porcelain | grep '^??' | wc -l 2> /dev/null)" -gt 0 ]]; then
   hook_com[unstaged]+='??'
+	  fi
 fi
 }
 
@@ -91,8 +93,8 @@ function left_prompt() {
 RPROMPT=''
 RPROMPT+='%(?,,%F{red}%B %? %b%f)'
 RPROMPT+='${vim_mode}'
-vim_ins_mode='%K{#59c2ff}%F{#01060E} INS %f%k'
-vim_cmd_mode='%K{#36a3d9}%F{#01060E} NORM %f%k'
+vim_ins_mode='%K{#59c2ff}%F{#01060E}%B INS %b%f%k'
+vim_cmd_mode='%K{#36a3d9}%F{#01060E}%B NORM %b%f%k'
 vim_mode=$vim_ins_mode
 
 function zle-keymap-select {
@@ -107,12 +109,6 @@ function zle-line-finish {
 zle -N zle-line-finish
 
 
-# function +vi-git-untracked() {
-# 	if [[ $(git rev-parse --is-inside-work-tree 2> /dev/null) == 'true' ]] && \
-# 		[[ $(git ls-files --other --directory --exclude-standard | sed q | wc -l | tr -d ' ') == 1 ]]; then
-# 	hook_com[unstaged]+='??'
-# }
-
 # commands
 # %! -> history even number
 # %n -> user name
@@ -122,11 +118,3 @@ zle -N zle-line-finish
 # %f -> reset color
 # %B -> start bold
 # %b -> stop bold
-
-
-# PROMPT+=' in '
-# RPROMPT+='%(?,%F{green}%B😄,%F{yellow}%? %F{red}😢 '
-# vim_ins_mode="%{$fg_bold[yellow]%}[ins]%{$reset_color%}"
-# vim_cmd_mode="%{$fg_bold[blue]%}[cmd-%?]%{$reset_color%}"
-# PROMPT+='%K{#a49acd}%F{124} ${vcs_info_msg_0_}%f%k '
-# PROMPT+="$(put_spacing)"
