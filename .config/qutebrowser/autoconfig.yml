@@ -32,7 +32,7 @@ settings:
     - -c
     - normal {line}G{column0}l
   statusbar.hide:
-    global: false
+    global: true
   tabs.show:
     global: always
   url.searchengines:
