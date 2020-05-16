@@ -44,8 +44,8 @@ super + shift + {h,j,k,l}
     }; \
     bspc node --move "$dx" "$dy" || bspc node --swap $dir
 
-alt + shift + {h,j,k,l}
-	bspc node -
+# alt + shift + {h,j,k,l}
+# 	bspc node -
 
 # Focus on desktop
 super + {_,shift + }{1-9,0}
@@ -143,7 +143,7 @@ super+i:{m,p,v,d}
 	{manbyrofi,pdfbyrofi,videosbyrofi,caffeine_like}
 
 super + d:{d,f,k}
-    {dmenu_run -i -nb '#181818' -sf '#181818' -nf '#ebdbb2' -sb '#d7d7d8' -fn "Ubuntu Mono Nerd Font Mono 10",rofi -show run -i -show-icons, ((pidof picom && kill $(pidof picom)) || picom) & dunstify -t 2000 'picom toggled'}
+    {dmenu_run -i -nb '#181818' -sf '#181818' -nf '#ebdbb2' -sb '#d7d7d8' -fn "Ubuntu Mono Nerd Font Mono 10",rofi -show run -i -show-icons, ((pidof compton && kill $(pidof compton)) || compton) & dunstify -t 2000 'compton toggled'}
 
 super + b:{f,p,c,n,q,v}
     {firefox,pcmanfm,telegram-desktop,nautilus,qutebrowser,vivaldi-stable}
@@ -197,6 +197,10 @@ XF86Audio{Play,Stop}
 	mpc {toggle,stop}
 XF86AudioMedia
 	$TERMINAL -e ncmpcpp
+
+# file manager
+super + shift + semicolon
+	$TERMINAL -e ranger
 
 # lockscreen
 super + x
