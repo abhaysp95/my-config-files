@@ -39,6 +39,9 @@ Features are:
 * Shows error code
 * Show `ins` and `normal` mode for vi-mode
 
+Different git features are shown below in screenshot:
+![git-features](.local/bin/screenshots/git_features_current_prompt.png)
+
 ### Self made(bash)
 Using self-made [bashprompt](https://github.com/coolabhays/my-config-files/blob/master/.bashrc). Checkout the link for more info
 ![bashprompt](.local/bin/screenshots/bashprompt.png)
