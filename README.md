@@ -34,7 +34,10 @@ Currently, using `zsh` as default shell. Using self made [zshprompt](https://git
 Features are:
 * truncate path if more than 20 chars
 * Shows clean and dirty git branch with different colors
-* Shows `modified` and `git add` status in prompt
+* Shows `modified` and `untracked` status in prompt
+* Shows `git add` and `git commit` status
+* Shows number of commits ahead or behind
+* Show `git stash` counts
 * Shows count of currently stopped and running zobs
 * Shows error code
 * Show `ins` and `normal` mode for vi-mode
