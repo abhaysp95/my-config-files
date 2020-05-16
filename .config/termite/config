@@ -37,6 +37,7 @@ mouse_autohide = true
 scrollback_lines = 100000
 search_wrap = true
 urgent_on_bell = true
+browser = lynx
 #hyperlinks = false
 
 # $BROWSER is used by default if set, with xdg-open as a fallback
