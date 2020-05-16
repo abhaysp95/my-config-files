@@ -1,0 +1,8 @@
+
+xmonad.hs:62:33: error:
+    • Variable not in scope: xK_dl
+    • Perhaps you meant one of these:
+        ‘xK_d’ (imported from XMonad), ‘xK_l’ (imported from XMonad)
+   |
+62 |         , ((modm .|. shiftMask, xK_dl, spawn "rofi -show run"))
+   |                                 ^^^^^
