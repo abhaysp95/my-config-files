@@ -34,8 +34,8 @@ window:
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
   padding:
-    x: 5
-    y: 3
+    x: 15
+    y: 10
 
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
@@ -116,10 +116,10 @@ font:
     # family: Dank Mono
     # family: Fira Code
     # family: Hack Nerd Font Mono
-    # family: Iosevka Nerd Font
+    family: Iosevka Nerd Font
     # family: InputMonoCompressed
     # family: Script12 BT
-    family: Mononoki Nerd Font Mono
+    # family: Mononoki Nerd Font Mono
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -135,9 +135,9 @@ font:
     # family: Monofurbold Nerd Font
     # family: Fira Code
     # family: Hack Nerd Font Mono
-    # family: Iosevka Nerd Font
+    family: Iosevka Nerd Font
     # family: InputMonoCompressed
-    family: Mononoki Nerd Font Mono
+    # family: Mononoki Nerd Font Mono
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -148,10 +148,10 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Dank Mono
+    # family: Dank Mono
     # family: flottflott
     # family: Script12 BT
-    # family: Operator Mono Book
+    family: Operator Mono Book
     # family: FantasqueSansMono Nerd Font Mono
     # family: TSCu_Comic
     # family: UbuntuMono Nerd Font Mono
@@ -162,7 +162,7 @@ font:
     # family: Fira Code
 
     # The `style` can be specified to pick a specific face.
-    style: Italic
+    style: Book Italic
 
   # Bold italic font face
   bold_italic:
@@ -179,12 +179,12 @@ font:
     style: Medium Italic
 
   # Point size
-  size: 12
+  size: 11
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
-   x: -2
+   x: 0
    y: 0
 
   # Glyph offset determines the locations of the glyphs within their cells with
@@ -213,213 +213,64 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: true
 
-# Colors (Gruvbox dark) <<<
-# colors:
-#   # Default colors
-#   primary:
-#     # hard contrast: background = '0x1d2021'
-#     background: '0x282828'
-#     # soft contrast: background = '0x32302f'
-#     foreground: '0xebdbb2'
-
-#   # Normal colors
-#   normal:
-#     black:   '0x282828'
-#     red:     '0xcc241d'
-#     green:   '0x98971a'
-#     yellow:  '0xd79921'
-#     blue:    '0x458588'
-#     magenta: '0xb16286'
-#     cyan:    '0x689d6a'
-#     white:   '0xa89984'
-
-#   # Bright colors
-#   bright:
-#     black:   '0x928374'
-#     red:     '0xfb4934'
-#     green:   '0xb8bb26'
-#     yellow:  '0xfabd2f'
-#     blue:    '0x83a598'
-#     magenta: '0xd3869b'
-#     cyan:    '0x8ec07c'
-#     white:   '0xebdbb2'
-# >>>
-
-# Project:    Nord Alacritty <<<
-# Version:    0.1.0
-# Repository: https://github.com/arcticicestudio/nord-alacritty
-# License:    MIT
-# References:
-#   https://github.com/jwilm/alacritty
-
-# colors:
-#   primary:
-#     background: '0x2E3440'
-#     foreground: '0xD8DEE9'
-#   cursor:
-#     text: '0x2E3440'
-#     cursor: '0xD8DEE9'
-#   normal:
-#     black: '0x3B4252'
-#     red: '0xBF616A'
-#     green: '0xA3BE8C'
-#     yellow: '0xEBCB8B'
-#     blue: '0x81A1C1'
-#     magenta: '0xB48EAD'
-#     cyan: '0x88C0D0'
-#     white: '0xE5E9F0'
-#   bright:
-#     black: '0x4C566A'
-#     red: '0xBF616A'
-#     green: '0xA3BE8C'
-#     yellow: '0xEBCB8B'
-#     blue: '0x81A1C1'
-#     magenta: '0xB48EAD'
-#     cyan: '0x8FBCBB'
-#     white: '0xECEFF4'
-# >>>
-
-
-# Colors(night-owl) <<<
-# colors:
-#   # default colors
-#   primary:
-#     background: '0x011627'
-#     foreground: '0xbec5d4'
-#   normal:
-#     black: '0x011627'
-#     red: '0xf78c6c'
-#     green: '0xaddb67'
-#     yellow: '0xffcb8b'
-#     blue: '0x82aaff'
-#     magenta: '0xc792ea'
-#     cyan: '0x7fdbca'
-#     white: '0xbec5d4'
-#   bright:
-#     black: '0x44596b'
-#     red: '0xef5350'
-#     green: '0x22da6e'
-#     yellow: '0xffeb95'
-#     blue: '0x5ca7e4'
-#     magenta: '0x7e57c2'
-#     cyan: '0x21c7a8'
-#     white: '0xffffff'
-# >>>
-
-# material design(ocean varient) <<<
-#colors        :
-# primary      :
-#   background : '0x0f111a'
-#   #background: '0x090b10'
-#   foreground : '0x8f93a2'
-# normal       :
-#   black      : '0x0f111a'
-#   red        : '0xff5370'
-#   green      : '0xc3e88d'
-#   yellow     : '0xffcb6b'
-#   blue       : '0x82aaff'
-#   magenta    : '0xc792ea'
-#   cyan       : '0x89ddff'
-#   white      : '0xffffff'
-# bright       :
-#   black      : '#b0bec5'
-#   red        : '0xff8a80'
-#   green      : '0xb9f66a'
-#   yellow     : '0xffe57f'
-#   blue       : '0x80d8ff'
-#   magenta    : '0xff80ab'
-#   cyan       : '0xa7fdeb'
-#   white      : '0xffffff'
-# >>>
-
-# Colors (Material Theme)
-# colors:
-  # Default colors
-  # primary:
-  #   background: '0x263238'
-    # background: '#1e282d'
-    # background: '0x090b10'
-    # foreground: '#c4c7d1'
-
-  # Normal colors
-  # normal:
-  #   black:   '#666666'
-  #   red:     '#eb606b'
-  #   green:   '#c3e88d'
-  #   yellow:  '#f7eb95'
-  #   blue:    '#80cbc4'
-  #   magenta: '#ff2f90'
-  #   cyan:    '#aeddff'
-  #   white:   '#ffffff'
-
-  # Bright colors
-  # bright:
-  #   black:   '#ff262b'
-  #   red:     '#eb606b'
-  #   green:   '#c3e88d'
-  #   yellow:  '#f7eb95'
-  #   blue:    '#7dc6bf'
-  #   magenta: '#6c71c4'
-  #   cyan:    '#35434d'
-  #   white:   '#ffffff'
-
-# Colors (One Dark)
-# colors:
-  # Default colors
-  primary:
-    # background: '#282c34'
-    # foreground: '#abb2bf'
-
-  # Normal colors
-  # normal:
-    # NOTE: Use '#131613' for the `black` color if you'd like to see
-    # black text on the background.
-    # black:   '#282c34'
-    # red:     '#e06c75'
-    # green:   '#98c379'
-    # yellow:  '#d19a66'
-    # blue:    '#61afef'
-    # magenta: '#c678dd'
-    # cyan:    '#56b6c2'
-    # white:   '#abb2bf'
-
-  # Bright colors
-  # bright:
-    # black:   '#5c6370'
-    # red:     '#e06c75'
-    # green:   '#98c379'
-    # yellow:  '#d19a66'
-    # blue:    '#61afef'
-    # magenta: '#c678dd'
-    # cyan:    '#56b6c2'
-    # white:   '#ffffff'
-
-  #Colors (Molokai Dark)
+# Colors (Ayu Dark)
 colors:
   # Default colors
   primary:
-    background: '#1B1D1E'
-    foreground: '#F8F8F2'
+    background: '#0A0E14'
+      # background: '#0f1419'
+    foreground: '#B3B1AD'
+
   # Normal colors
   normal:
-    black:   '#333333'
-    red:     '#C4265E'
-    green:   '#86B42B'
-    yellow:  '#B3B42B'
-    blue:    '#6A7EC8'
-    magenta: '#8C6BC8'
-    cyan:    '#56ADBC'
-    white:   '#E3E3DD'
+    black: '#01060E'
+    red: '#EA6C73'
+    green: '#91B362'
+    yellow: '#F9AF4F'
+    blue: '#53BDFA'
+    magenta: '#FAE994'
+    cyan: '#90E1C6'
+    white: '#C7C7C7'
+
   # Bright colors
   bright:
-    black:   '#666666'
-    red:     '#F92672'
-    green:   '#A6E22E'
-    yellow:  '#E2E22E'
-    blue:    '#819AFF'
-    magenta: '#AE81FF'
-    cyan:    '#66D9EF'
-    white:   '#F8F8F2'
+    black: '#686868'
+    red: '#F07178'
+    green: '#C2D94C'
+    yellow: '#FFB454'
+    blue: '#59C2FF'
+    magenta: '#FFEE99'
+    cyan: '#95E6CB'
+    white: '#FFFFFF'
+
+# Colors (Ayu Mirage)
+# colors:
+#   # Default colors
+#   primary:
+#     background: '#202734'
+#     foreground: '#CBCCC6'
+
+#   # Normal colors
+#   normal:
+#     black: '#191E2A'
+#     red: '#FF3333'
+#     green: '#BAE67E'
+#     yellow: '#FFA759'
+#     blue: '#73D0FF'
+#     magenta: '#FFD580'
+#     cyan: '#95E6CB'
+#     white: '#C7C7C7'
+
+#   # Bright colors
+#   bright:
+#     black: '#686868'
+#     red: '#F27983'
+#     green: '#A6CC70'
+#     yellow: '#FFCC66'
+#     blue: '#5CCFE6'
+#     magenta: '#FFEE99'
+#     cyan: '#95E6CB'
+#     white: '#FFFFFF'
 
 # Colors (Dracula) <<<
 #colors:
