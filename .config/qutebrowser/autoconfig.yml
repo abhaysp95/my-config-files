@@ -39,6 +39,7 @@ settings:
     global:
       DEFAULT: https://duckduckgo.com/?q={}
       aw: https://wiki.archlinux.org/?search={}
+      au: https://aur.archlinux.org/packages/?O=0&K={}
       gg: https://www.google.com/search?q={}
       re: https://www.reddit.com/r/{}
       wt: https://en.wikipedia.org/wiki/Special:Search?search={}
