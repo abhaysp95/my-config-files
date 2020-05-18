@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+#     _    ____  ____
+#    / \  / ___||  _ \   Abhay Shanker Pathak
+#   / _ \ \___ \| |_) |  abhaysp9955@gmail.com
+#  / ___ \ ___) |  __/   https://github.com/coolabhays
+# /_/   \_\____/|_|
+#
+# pandoc converter
+
+pandoc "$1" -f gfm \
+	--toc -V toc-title='Table Of Contents' \
+	--highlight-style=pygments \
+	--include-in-header chap_breaks.tex \
+	--include-in-header pdf_property.tex \
+	--include-in-header bullet_style.tex \
+	-V linkcolor:blue \
+	-V geometry:a4paper \
+	-V geometry:margin=2cm \
+	--pdf-engine=xelatex \
+	-o "$2"
+	# --listings -H listings_setup.tex \
+	# -V monofont="Mononoki Nerd Font Mono"
+	# --include-in-header breezedark.theme \
