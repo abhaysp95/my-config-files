@@ -26,7 +26,7 @@ getshufman() {
 }
 
 viman() {
-    text=$(man "$@") && \
+	text=$(man "$@") && \
 	echo "$text" | \
 	"$EDITOR" -R +":set ft=man" - ;
 }
