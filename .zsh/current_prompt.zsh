@@ -85,16 +85,16 @@ function put_spacing() {
 
 function left_prompt() {
 	PROMPT=''
-	PROMPT='%(1j,%K{#f07178}%F{#01060E} %j %f%k,)'
-	PROMPT+='%K{#36a3d9}%F{#01060E}%B %n %b%f%k'
-	PROMPT+='%K{#59c2ff}%F{#01060E}%B %20<..<%~ %<<%b%f%k '
+	PROMPT='%(1j,%K{#fb4934}%F{#1d2021} %j %f%k,)'
+	PROMPT+='%K{#a89984}%F{#1d2021}%B %n %b%f%k'
+	PROMPT+='%K{#d1c1a8}%F{#1d2021}%B %20<..<%~ %<<%b%f%k '
 }
 
 RPROMPT=''
 RPROMPT+='%(?,,%F{red}%B %? %b%f)'
 RPROMPT+='${vim_mode}'
-vim_ins_mode='%K{#59c2ff}%F{#01060E}%B INS %b%f%k'
-vim_cmd_mode='%K{#36a3d9}%F{#01060E}%B NORM %b%f%k'
+vim_ins_mode='%K{#a89984}%F{#1d2021}%B INS %b%f%k'
+vim_cmd_mode='%K{#d1c1a8}%F{#1d2021}%B NORM %b%f%k'
 vim_mode=$vim_ins_mode
 
 function zle-keymap-select {
