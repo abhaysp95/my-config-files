@@ -40,6 +40,7 @@ Features are:
 * Show `git stash` counts
 * Shows count of currently stopped and running zobs
 * Shows error code
+* Shows command execution timing
 * Show `ins` and `normal` mode for vi-mode
 
 Different git features are shown below in screenshot:
