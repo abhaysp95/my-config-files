@@ -56,9 +56,16 @@ zstyle ':vcs_info:git*+set-message:*' hooks git-untracked git-stash git-st
 zstyle ':vcs_info:*' enable git
 #zstyle ':vcs_info:*+*:*' debug true
 
+# function executed just after hiting enter
+preexec() {
+	cmd_start="$SECONDS"
+}
+
 precmd() {
 	vcs_info
 	git_change
+	local cmd_end="$SECONDS"
+	elapsed=$((cmd_end-cmd_start))
 }
 
 function git_change() {
@@ -91,7 +98,9 @@ function left_prompt() {
 }
 
 RPROMPT=''
-RPROMPT+='%(?,,%F{red}%B %? %b%f)'
+RPROMPT+='%F{green}%B$elapsed%b%f'
+RPROMPT+='%F{green}%Bs %b%f'
+RPROMPT+='%(?,,%F{red}%B%? %b%f)'
 RPROMPT+='${vim_mode}'
 vim_ins_mode='%K{#a89984}%F{#1d2021}%B INS %b%f%k'
 vim_cmd_mode='%K{#d1c1a8}%F{#1d2021}%B NORM %b%f%k'
