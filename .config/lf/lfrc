@@ -164,7 +164,7 @@ map f broot_jump
 map ss stripcase
 
 #    Basic   Functions
-map  .       set hidden!
+map  .       set   hidden!
 map  DD      delete
 map  p       paste
 map  x       cut
@@ -180,6 +180,7 @@ map  ch      chmod
 #map bg      setwallpaper
 map  o       open_config
 map  r       rename
+map  br      $vimv $fx
 map  H       top
 map  L       bottom
 map  R       reload
@@ -208,8 +209,8 @@ map gth cd ~/Documents/nhtml
 map gt. cd ~/Documents/pdf
 
 map gD   cd ~/Downloads
-map gdg  cd ~/Downloads/git-materials
-map gdgg cd ~/Downloads/git-materials/gitlab
+map gDg  cd ~/Downloads/git-materials
+map gDgg cd ~/Downloads/git-materials/gitlab
 
 map gc.  cd ~/.config
 map gC  cd ~/.cache/cell
