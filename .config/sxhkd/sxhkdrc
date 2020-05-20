@@ -163,7 +163,7 @@ super + p
 	/home/raytracer/.local/bin/.scripts/audio_setup/music.sh
 #pause song,video
 super + shift +p
-    mpc pause;pauseallmpv
+	mpc pause;pauseallmpv
 #change song
 super + {comma,period}
 	{/home/raytracer/.local/bin/.scripts/audio_setup/music_prev.sh,/home/raytracer/.local/bin/.scripts/audio_setup/music_next.sh}
