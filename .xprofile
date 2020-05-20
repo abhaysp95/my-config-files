@@ -10,6 +10,7 @@ dunst &
 xset r rate 350 80 &
 udiskie -A -t &
 caffeine_like &
+mpc crossfade 5 &
 mpd_changes.sh &
 notify-send --icon=~/.cache/notify-icons/home.png "Welcome to region of raytracer" "Enjoy!" &
 
