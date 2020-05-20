@@ -189,7 +189,26 @@ alias lsa='exa --grid -Fa --group-directories-first'
 alias ll='exa -lFa --group-directories-first --color-scale --git'
 alias treee='exa -TaFl'		# alternative is tree -Duhp
 
+# open man in vim
 alias miv='sh ~/.local/bin/.scripts/maninvim'
+
+# get diff in vim
+vdiff () {
+		if [[ "${#}" -ne 2 ]];  then
+			echo "vdiff requires two arguments"
+			echo " comparing dirs: vdiff dir_a dir_b"
+			echo " comparing files: vdiff file_a file_b"
+			return 1
+		fi
+		local left="${1}"
+		local right="${2}"
+
+		if [ -d "${left}" ] && [ -d "${right}" ]; then
+			nvim +"DirDiff ${left} ${right}"
+		else
+			nvim -d "${left}" "${right}"
+		fi
+	}
 
 # look through pacman and yay
 # alias lookpac='pacman -Slq | fzf -m --preview 'cat <(pacman -Si {1}) <(pacman -Fl {1} | awk "{print \$2}")' | xargs -ro sudo pacman -S'
@@ -206,3 +225,5 @@ alias miv='sh ~/.local/bin/.scripts/maninvim'
 # alias -g lct='| lolcat -t'
 #alias brght='xrandr --output eDP1 --brightness'
 # alias -g brt=' | sudo tee /sys/class/backlight/intel_backlight/brightness'
+
+# vim: set ft=sh
