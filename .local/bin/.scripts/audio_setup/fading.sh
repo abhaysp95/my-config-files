@@ -25,6 +25,7 @@ elif [[ $stat == "playing" ]]; then
 		sleep 0.2;
 	done
 	mpc pause >/dev/null
+	# set $vol to 100 if you press shortcut in time interval of fading
 	mpc volume "$vol" >/dev/null
 else
 	mpc volume 0;
