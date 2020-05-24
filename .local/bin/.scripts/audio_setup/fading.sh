@@ -7,7 +7,8 @@
 #
 # fading effect with mpc
 
-vol="$(mpc volume | cut -c 8-10)"
+# vol="$(mpc volume | cut -c 8-10)"
+vol=100
 step=$((vol/10))
 stat=$(mpc | sed -n '2 p' | cut -d '[' -f 2 | cut -d ']' -f 1)
 # echo "$stat"
