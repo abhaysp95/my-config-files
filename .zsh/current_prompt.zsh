@@ -86,24 +86,43 @@ function git_change() {
 
 # zstyle ':vcs_info:git:*' formats '%b '
 
+cur_dir=''
+function shrink() {
+	local paths=(${PWD/$HOME/\~})
+	paths=(${(s:/:)paths})
+
+	length="${#paths[@]}"
+	count=1
+	for directory in ${paths[@]}; do
+		if [[ $count -lt $length ]]; then
+			cur_dir+="${directory:0:1}"
+			cur_dir+='/'
+			count=$((count + 1))
+		fi
+	done
+	cur_dir+="${paths[$length]}"
+	#PROMPT+='%K{#ad9984}%F{#282828}%B $cur_dir %b%f%k'
+	#printf %q "${cur_dir}"
+}
+
 function put_spacing() {
-	printf "\n"
+
 }
 
 function left_prompt() {
 	PROMPT=''
-	PROMPT='%(1j,%K{#fb4934}%F{#1d2021} %j %f%k,)'
-	PROMPT+='%K{#a89984}%F{#1d2021}%B %n %b%f%k'
-	PROMPT+='%K{#d1c1a8}%F{#1d2021}%B %20<..<%~ %<<%b%f%k '
+	PROMPT+='%(1j,%K{#fb4934}%F{#282828} %j %f%k,)'
+	PROMPT+='%K{#458588}%F{#282828}%B %n %b%f%k'
+	PROMPT+='%K{#ad9984}%F{#282828}%B %20<..<%~ %<<%b%f%k '
 }
 
 RPROMPT=''
 RPROMPT+='%F{green}%B$elapsed%b%f'
 RPROMPT+='%F{green}%Bs %b%f'
-RPROMPT+='%(?,,%F{red}%B%? %b%f)'
+RPROMPT+='%(?,,%F{red}%B✗%? %b%f)'
 RPROMPT+='${vim_mode}'
-vim_ins_mode='%K{#a89984}%F{#1d2021}%B INS %b%f%k'
-vim_cmd_mode='%K{#d1c1a8}%F{#1d2021}%B NORM %b%f%k'
+vim_ins_mode='%K{#458588}%F{#282828}%B I %b%f%k'
+vim_cmd_mode='%K{#ad9984}%F{#282828}%B N %b%f%k'
 vim_mode=$vim_ins_mode
 
 function zle-keymap-select {

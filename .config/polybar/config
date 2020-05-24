@@ -1,12 +1,12 @@
 [colors]
 ;foreground = #ebdbb2
 foreground = #35434d
-light-foreground = #a89984
+light-foreground = #484848
 background = #a89984
 red        = #ea6c73
 ; changing blue with orange and vice-versa
 lightbrown       = #d65d0e
-blue	= #dc1d2021
+blue	= #ad282828
 teal       = #689d6a
 green      = #98971a
 purple     = #b16286
