@@ -111,7 +111,7 @@ font:
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
     # family: Operator Mono Book
-    family: FantasqueSansMono Nerd Font Mono
+    # family: FantasqueSansMono Nerd Font Mono
     # family: Monofur Nerd Font
     # family: Dank Mono
     # family: Fira Code
@@ -120,6 +120,7 @@ font:
     # family: InputMonoCompressed
     # family: Script12 BT
     # family: Mononoki Nerd Font Mono
+    family: Consolas
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -131,13 +132,14 @@ font:
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
     # family: Operator Mono Medium
-    family: FantasqueSansMono Nerd Font Mono
+    # family: FantasqueSansMono Nerd Font Mono
     # family: Monofurbold Nerd Font
     # family: Fira Code
     # family: Hack Nerd Font Mono
     # family: Iosevka Nerd Font
     # family: InputMonoCompressed
     # family: Mononoki Nerd Font Mono
+    family: Consolas
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -151,18 +153,20 @@ font:
     # family: Dank Mono
     # family: flottflott
     # family: Script12 BT
-    family: Operator Mono Medium
+    # family: Operator Mono Book
     # family: FantasqueSansMono Nerd Font Mono
     # family: TSCu_Comic
     # family: UbuntuMono Nerd Font Mono
     # family: Monofuritalic Nerd Font
     # family: Victor Mono
+    # family: InputMonoCompressed
     # family: Pacifico
     # family: Yellowtail
     # family: Fira Code
+    family: Consolas
 
     # The `style` can be specified to pick a specific face.
-    style: Medium Italic
+    style: Italic
 
   # Bold italic font face
   bold_italic:
@@ -170,16 +174,18 @@ font:
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Operator Mono Bold
+    # family: Operator Mono Medium
     # family: Fira Code
     # family: Script12 BT
     # family: flott flott
+    # family: InputMonoCompressed
+    family: Consolas
 
     # The `style` can be specified to pick a specific face.
     style: Bold Italic
 
   # Point size
-  size: 11.5
+  size: 11
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -218,8 +224,8 @@ colors:
   # Default colors
   primary:
       # hard contrast:
-    background: '0x1d2021'
-    # background: '0x282828'
+      # background: '0x1d2021'
+    background: '0x282828'
     # soft contrast: background = '0x32302f'
     foreground: '0xebdbb2'
 
