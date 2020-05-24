@@ -167,7 +167,7 @@ alias gd='cd ~/Documents'
 alias gtc='cd ~/Documents/nc/'
 alias gtp='cd ~/Documents/npython'
 alias gts='cd ~/Documents/nshell'
-alias gth='cd ~/Documents/nhtml'
+alias gth='cd ~/Documents/nweb_designing'
 alias gt.='cd ~/Documents/pdf'
 
 alias gD='cd ~/Downloads'
