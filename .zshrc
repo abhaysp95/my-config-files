@@ -364,4 +364,18 @@ MNML_PROMPT=(mnml_err mnml_jobs mnml_status 'mnml_cwd 2 10' mnml_keymap);
 MNML_RPROMPT=(mnml_git);
 MNML_INFOLN=(mnml_err mnml_jobs mnml_uhp);
 MNML_MAGICENTER=(awesome_magicenter mnml_me_dirs mnml_me_git);
+
+# Codi
+# Usage: codi [filetype] [filename]
+codi() {
+  local syntax="${1:-python}"
+  shift
+  vim -c \
+    "let g:startify_disable_at_vimenter = 1 |\
+    set bt=nofile ls=0 noru nonu nornu |\
+    hi ColorColumn ctermbg=NONE |\
+    hi VertSplit ctermbg=NONE |\
+    hi NonText ctermfg=0 |\
+    Codi $syntax" "$@"
+}
 # >>>
