@@ -48,8 +48,8 @@ super + shift + {h,j,k,l}
 # 	bspc node -
 
 # Focus on desktop
-super + {_,shift + }{1-9,0}
-	bspc {desktop -f,node -d} ^{1-9,10}
+super + {_,shift + }{1-9}
+	bspc {desktop -f,node -d} ^{1-9}
 
 # Cycle through desktops
 super + alt + {Left, Right}
@@ -142,8 +142,8 @@ super+n:{m,c}
 super+i:{m,p,v,d}
 	{manbyrofi,pdfbyrofi,videosbyrofi,caffeine_like}
 
-super + d:{d,f,k}
-    {dmenu_run -i -nb '#181818' -sf '#181818' -nf '#ebdbb2' -sb '#d7d7d8' -fn "Ubuntu Mono Nerd Font Mono 10",rofi -show run -i -show-icons, ((pidof picom && kill $(pidof picom)) || picom --experimental-backends) & dunstify -t 2000 'picom toggled'}
+super + d:{c,d,f,k,s}
+    {get_config.sh,dmenu_run -i -nb '#282828' -sf '#282828' -nf '#ebdbb2' -sb '#d79921' -fn 'Ubuntu Mono Nerd Font Mono 10',rofi -show run -i -show-icons, ((pidof picom && kill $(pidof picom)) || picom --experimental-backends) & dunstify -t 2000 'picom toggled',get_script.sh}
 
 super + b:{f,p,c,n,q,v}
     {firefox,pcmanfm,telegram-desktop,nautilus,qutebrowser,vivaldi-stable}
@@ -217,5 +217,9 @@ super + F9
 # dunst test
 super + w
 	dtest
+
+# watch youtube on mpv
+super + ctrl + y
+	ympv.sh
 
   #xdo resize {-w +20, -h -20, -h +20, -w -20}
