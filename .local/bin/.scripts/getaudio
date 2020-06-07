@@ -7,7 +7,7 @@
 # Github: https://github.com/CoolAbhayS
 # Last Edited: 2020-03-20
 
-# using ffmpge to convert video to audio
+# using ffmpeg to convert video to audio
 
 # Default path is $HOME/Music/converted
 
