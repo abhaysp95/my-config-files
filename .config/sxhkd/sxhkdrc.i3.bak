@@ -1,0 +1,233 @@
+#basic bindings
+
+super + Return
+    $TERMINAL
+super + shift + Return
+    $TERMINAL2
+super + shift + q
+    kill -9 'xdotool getwindowfocus getwindowpid'
+# super + Escape
+# 	pkill -x sxhkd && sxhkd
+
+# some bspwm related settings <<<
+# super + F2
+# 	bspc wm -r
+super + alt + x
+	bspc quit
+# super + {_,shift + }q
+# 	bspc node -{c,k}
+
+# super + {_,shift + }{h,j,k,l}
+# 	bspc node -{f,s} {west,south,north,east}
+#
+# ## focus the node for the given path jump
+# super + {u,b,comma,period}
+# 	bspc node -f @{parent,brother,first,second}
+#
+# ##  focus the next/previous node in the current desktop
+# s# uper + {_,shift + }c
+# # 	bspc node -f {next,prev}.local
+# #
+# ##  focus the next/previous desktop in the current monitor
+# s# uper + shift + {y,p}
+# # 	bspc desktop -f {prev,next}.local
+# #
+# ##  preselect the ratio
+# s# uper + ctrl + {1-9}
+# # 	bspc node -o 0.{1-9}
+# #
+# ##  cancel the preselection for the focused node
+# s# uper + ctrl + space
+# # 	bspc node -p cancel
+# #
+# ##  cancel the preselection for the focused desktop
+# s# uper + ctrl + shift + space
+# # 	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+# #
+# # #
+# ##  move/resize
+# # #
+# #
+# ##  expand a window by moving one of its side outward
+# s# uper + alt + {h,j,k,l}
+# # 	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+# #
+# ##  contract a window by moving one of its side inward
+# s# uper + alt + shift + {h,j,k,l}
+# # 	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+# #
+# ##  move a floating window
+# s# uper + {Left,Down,Up,Right}
+# # 	bspc node -v {-20 0,0 20,0 -20,20 0}
+# #
+# ##  focus the last node/desktop
+# s# uper + {grave,Tab}
+# # 	bspc {node,desktop} -f last
+# #
+# ##  focus the older or newer node in the focus history
+# s# uper + {o,i}
+# # 	bspc wm -h off; \
+# # 	bspc node {older,newer} -f; \
+# # 	bspc wm -h on
+# #
+# ##  focus or send to the given desktop
+# s# uper + {_,shift + }{1-9,0}
+# # 	bspc {desktop -f,node -d} '^{1-9,10}'
+# #
+# ##  super + {g,semicolon}
+# ##  	bspc desktop {prev,next}.occupied --focus
+# ##  super + {Prior,Next}
+# ##  	bspc desktop {prev,next}.occupied --focus
+# ##  super + {Tab,backslash}
+# ##  	bspc desktop last --focus
+# #
+# ##  ## focus or swap the next node
+# ##  super + {_,shift + }c
+# ##  	bspc node -{f,s} next.local
+# #
+# ##  # super + shift + {0-9}
+# ##  # 	bspc node -d {0-9} && bspunhide
+# #
+# ##  super + control + {0-9}
+# ##  	bspc node -d {0-9} && bspunhide && bspc desktop -f {0-9}
+# #
+# ##  super + {_,shift + }f
+# ##  	bspc {desktop -l next,node -t ~fullscreen}
+# #
+# ##  super + space
+# ##  	bspc node -s biggest.local || bspc node -s next.local
+# #
+# ##  super + shift + space
+# ##  	bspc node focused.tiled -t floating || bspc node focused.floating -t tiled
+# #
+# ##  super + {_,shift + }{1-9,0}
+# ##  	bspc {desktop -f,node -d} ^{1-9,10}
+# #
+# ##  # cancel the preselection for the focused desktop
+# ##  super + ctrl + space
+# ##  	bspc node -p cancel
+# #
+# ##  # Toggle gaps
+# ##  super + shift + d
+# ##  	bspc config window_gap {0,15}
+# ##  # Increase/decrease gap
+# ##  super {,+ shift }+z
+# ##  	bspc config window_gap $(($(bspc config window_gap) {+,-} 3))
+# #
+# ##  # Make a window sticky/non-sticky
+# ##  super + o
+# ##  	bspc node -g sticky={on,off}
+# #
+# ##  super + {i,o}
+# ##  	bspc node -f {prev,next}.local
+# ##  super + shift + n
+# ##  	bspc node focused -t \~floating ; hover right
+# ##  super + shift + b
+##  	bspc node focused -t \~floating ; hover left
+# >>>
+
+#  super + shift +x
+#  	killandnotify "sxhkd" "sxhkd config reloaded" && sxhkd &
+# super + m
+	# music_setup
+	#termite -e ncmpcpp
+#super + c
+#    termite -e mpv --no-osc --no-input-default-bindings --input-conf=/dev/null --title='mpvfloat' /dev/video0
+super + x
+    /home/raytracer/.local/bin/.scripts/i3lock.sh ; mpc pause ;
+#    /home/raytracer/.config/i3/blurlock.sh
+#notifications <<<
+# brightness
+super + ctrl + {minus,equal}
+	{light -U 5 && dunstify --icon="~/.cache/notify-icons/yellow-bulb.png" -t 500 "current brightness->"`light -G`,light -A 5 && dunstify --icon="~/.cache/notify-icons/yellow-bulb.png" -t 500 "current brightness is ->"`light -G`}
+
+super+n:{w,l,p,t}
+	{notify-send --icon=~/.cache/notify-icons/maintenance.png "Status" "`nmcli device status`",notify-send --icon=~/.cache/notify-icons/wifi-signal.png "Wifi list" "`nmcli device wifi list`",notify-send --icon=~/.cache/notify-icons/music.png -t 3000 "Now Playing" "`mpc`",notify-send --icon=~/.cache/notify-icons/hot.png -t 3000 "Temperature" "`sensors | grep temp1 | head -1 && sensors | grep temp1 | tail -1`"}
+
+super+n:{m,c}
+	{/home/raytracer/.local/bin/.scripts/some-random/memproc,/home/raytracer/.local/bin/.scripts/some-random/cpuproc}
+# >>>
+
+# open different apps and settings <<<
+super+i:{m,p,v,d}
+	{manbyrofi,pdfbyrofi,videosbyrofi,caffeine_like}
+
+super + d:{d,f,k}
+    {dmenu_run -i -nb '#181818' -sf '#181818' -nf '#ebdbb2' -sb '#d7d7d8' -fn "Mononoki Nerd Font Mono 12",rofi -show run -i -show-icons, ((pidof picom && kill $(pidof picom)) || picom) & dunstify -t 2000 'picom toggled'}
+
+super + b:{f,p,c,s,n,q,v}
+    {firefox,pcmanfm,telegram-desktop,stacer,nautilus,qutebrowser,vivaldi-stable}
+super+ctrl+n
+    termite -e calcurse
+# >>>
+
+# screenshot and recording <<<
+Print
+	/home/raytracer/.local/bin/.scripts/fscrnshot
+shift + Print
+	/home/raytracer/.local/bin/.scripts/fscrnushot
+super + ctrl + Print
+	/home/raytracer/.local/bin/.scripts/fscrnsshot
+super + Print
+	/home/raytracer/.local/bin/.scripts/recscreen
+# super + Print
+#     /home/raytracer/.local/bin/.scripts/dmenurecord
+# super + Delete
+#     /home/raytracer/.local/bin/.scripts/dmenurecord kill
+# >>>
+
+# audio related key-bindings <<<
+# super + p
+#     mpc toggle && notify-send --icon=audio-headphones -t 3000 "Music played/paused\nCurrent Song" "`mpc | head -1`"
+super + p
+	/home/raytracer/.local/bin/.scripts/audio_setup/music.sh
+#pause song,video
+super + shift +p
+    mpc pause;pauseallmpv
+#change song
+super + {comma,period}
+	{/home/raytracer/.local/bin/.scripts/audio_setup/music_prev.sh,/home/raytracer/.local/bin/.scripts/audio_setup/music_next.sh}
+#restart track
+super + shift + less
+	/home/raytracer/.local/bin/.scripts/audio_setup/music_seek_start.sh
+#seek forward in song
+super + {_,shift + } bracketright
+	{/home/raytracer/.local/bin/.scripts/audio_setup/music_seek_next1.sh,/home/raytracer/.local/bin/.scripts/audio_setup/music_seek_next2.sh}
+#seek backward in song
+super + {_,shift + } bracketleft
+	{/home/raytracer/.local/bin/.scripts/audio_setup/music_seek_prev1.sh,/home/raytracer/.local/bin/.scripts/audio_setup/music_seek_prev2.sh}
+#increase volume
+super + {_,shift + } equal
+    pulsemixer --change-volume +{5,15}
+#decrease volume
+super + {_,shift +} minus
+    pulsemixer --change-volume -{5,15}
+#mute
+super + shift +m
+    pulsemixer --toggle-mute && notify-send --icon=~/.cache/notify-icons/mute.png -t 3000 "Volume Toggled"
+# >>>
+
+# Audiokeys <<<
+XF86AudioMute
+    pulsemixer --toggle-mute
+XF86Audio{Raise,Lower}Volume
+    pulsemixer --change-volume {+10,-10}
+XF86Audio{Next,Prev}
+	mpc {next,prev}
+XF86Audio{Play,Stop}
+	mpc {toggle,stop}
+# XF86Audio{Rewind,Forward}
+# 	mpc seek {-,+}10
+#XF86AudioRecord
+#dmenurecord
+XF86AudioMedia
+	$TERMINAL -e ncmpcpp
+# >>>
+
+# screenkey
+super + Scroll_Lock
+	killall screenkey || screenkey -s small --font-size small -g 300x800+1000+0
+
+# show clipboard
+super + F9
+	showclip

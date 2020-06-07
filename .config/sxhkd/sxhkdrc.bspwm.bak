@@ -1,0 +1,221 @@
+#basic bindings
+
+super + Return
+    $TERMINAL
+super + shift + Return
+    $TERMINAL2
+
+#---BSPWM Bindings
+# Quit bspwm
+super + shift + Escape
+  prompt "Are you sure you would like to quit this Xsession" "bspc quit"
+
+# Restart bspwm
+super + shift + w
+  bspc wm -r && notify-send -t 2000 'bspwm reloaded'
+
+alt + F2
+	/home/raytracer/.config/bspwm/bspwmrc
+
+# close and kill Window
+super + {_,shift + }q
+  xdo {close,kill}
+
+# rotate current node 90 degrees
+super + y
+	bspc node @focused:/ -R 90
+
+# swap the current node at the biggest local node
+super + space
+	bspc node -s biggest.local || bspc node -s next.local
+
+super + shift + space
+	bspc node focused -t \~floating
+
+# Focus on window in direction
+super + {h,j,k,l}
+	bspc node -f {west,south,north,east}
+
+super + shift + {h,j,k,l}
+    { dir=west  dx=-20 dy=0 \
+    , dir=south dx=0   dy=20 \
+    , dir=north dx=0   dy=-20 \
+    , dir=east  dx=20  dy=0 \
+    }; \
+    bspc node --move "$dx" "$dy" || bspc node --swap $dir
+
+alt + shift + {h,j,k,l}
+	bspc node -
+
+# Focus on desktop
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} ^{1-9,10}
+
+# Cycle through desktops
+super + alt + {Left, Right}
+  bspc desktop -f {prev, next}
+
+#	Send window to desktop
+#super + shift + {0-9}
+#	bspc node -d {0-9}
+
+super + slash:{p,b,f,g}
+	bspc node -f @{parent,brother,first,second}
+
+super + {g,semicolon}
+	bspc desktop {prev,next}.occupied --focus
+
+super + {Tab,backslash}
+	bspc desktop last --focus
+
+# switching different layouts
+super + slash:{a,s,l}
+	~/.config/bspwm/layout_scheme.sh {alternate,spiral,longest_side}
+
+# focues the next node
+super + {_,shift + }c
+	bspc node -f {next,prev}.local
+
+# swap the next or current node
+super + {_,shift + }s
+	bspc node -s {next,prev}.local
+
+# preselect the ratio
+super + ctrl + {1-9}
+	bspc node -o 0.{1-9}
+
+# cancel the preselection for the focused node
+super + ctrl + space
+	bspc node -p cancel
+
+# manual partiotion the container
+super + alt + {h,j,k,l}
+	bspc node -p {west,south,north,east}
+
+# expand window by moving one of its side outward
+super + shift + {y,u,i,o}
+	bspc node -z {right -20 0,bottom 0 20, bottom 0 -20, right 20 0}
+
+alt + shift + {y,u,i,o}
+	bspc node -z {left -20 0,bottom 0 20, bottom 0 -20, left 20 0}
+
+# toggle gaps
+super + shift + d
+	bspc config window_gap {0,15}
+
+# Increase/decrease gap size
+super + {_,+ shift }+ z
+	bspc config window_gap $(($(bspc config window_gap) {+,-} 3))
+
+# Make a window sticky/non-sticky
+super + ctrl + o
+	bspc node -g sticky={on,off} && notify-send -t 2000 "sticky mode toggled"
+
+super + shift + n
+	bspc node focused -t \~floating ; hover right
+
+super + shift + b
+	bspc node focused -t \~floating ; hover left
+
+# Rotate the tree from the current nodes parent
+super + control + {Right, Left}
+  bspc node @parent -C {forward, backward}
+
+# Flip the tree from the current nodes parent
+super + control + {h,j,k,l}
+  bspc node @parent -F {vertical,horizontal,horizontal,vertical}
+
+# Toggle fullscreen on and off
+super + {t,shift + t,f,shift + f}
+	bspc {node -t tiled,node -t pseudo_tiled,desktop -l next,node -t ~fullscreen}
+
+super + ctrl + {minus,equal}
+	{light -U 5 && dunstify --icon="~/.cache/notify-icons/yellow-bulb.png" -t 500 "current brightness->"`light -G`,light -A 5 && dunstify --icon="~/.cache/notify-icons/yellow-bulb.png" -t 500 "current brightness is ->"`light -G`}
+
+super+n:{w,l,p,t}
+	{notify-send --icon=~/.cache/notify-icons/maintenance.png "Status" "`nmcli device status`",notify-send --icon=~/.cache/notify-icons/wifi-signal.png "Wifi list" "`nmcli device wifi list`",notify-send --icon=~/.cache/notify-icons/music.png -t 3000 "Now Playing" "`mpc`",notify-send --icon=~/.cache/notify-icons/hot.png -t 3000 "Temperature" "`sensors | grep temp1 | head -1 && sensors | grep temp1 | tail -1`"}
+
+super+n:{m,c}
+	{memproc,cpuproc}
+
+# open different apps and settings <<<
+super+i:{m,p,v,d}
+	{manbyrofi,pdfbyrofi,videosbyrofi,caffeine_like}
+
+super + d:{d,f,k}
+    {dmenu_run -i -nb '#181818' -sf '#181818' -nf '#ebdbb2' -sb '#d7d7d8' -fn "Ubuntu Mono Nerd Font Mono 10",rofi -show run -i -show-icons, ((pidof picom && kill $(pidof picom)) || picom) & dunstify -t 2000 'picom toggled'}
+
+super + b:{f,p,c,n,q,v}
+    {firefox,pcmanfm,telegram-desktop,nautilus,qutebrowser,vivaldi-stable}
+
+# screenshot and recording <<<
+Print
+	/home/raytracer/.local/bin/.scripts/fscrnshot
+shift + Print
+	/home/raytracer/.local/bin/.scripts/fscrnushot
+super + ctrl + Print
+	/home/raytracer/.local/bin/.scripts/fscrnsshot
+super + Print
+	/home/raytracer/.local/bin/.scripts/recscreen
+
+# music setup
+super + p
+	/home/raytracer/.local/bin/.scripts/audio_setup/music.sh
+#pause song,video
+super + shift +p
+    mpc pause;pauseallmpv
+#change song
+super + {comma,period}
+	{/home/raytracer/.local/bin/.scripts/audio_setup/music_prev.sh,/home/raytracer/.local/bin/.scripts/audio_setup/music_next.sh}
+#restart track
+super + shift + less
+	/home/raytracer/.local/bin/.scripts/audio_setup/music_seek_start.sh
+#seek forward in song
+super + {_,shift + } bracketright
+	{/home/raytracer/.local/bin/.scripts/audio_setup/music_seek_next1.sh,/home/raytracer/.local/bin/.scripts/audio_setup/music_seek_next2.sh}
+#seek backward in song
+super + {_,shift + } bracketleft
+	{/home/raytracer/.local/bin/.scripts/audio_setup/music_seek_prev1.sh,/home/raytracer/.local/bin/.scripts/audio_setup/music_seek_prev2.sh}
+#increase volume
+super + {_,shift + } equal
+    pulsemixer --change-volume +{5,15}
+#decrease volume
+super + {_,shift +} minus
+    pulsemixer --change-volume -{5,15}
+#mute
+super + shift +m
+    pulsemixer --toggle-mute && notify-send --icon=~/.cache/notify-icons/mute.png -t 3000 "Volume Toggled"
+
+# Audiokeys <<<
+XF86AudioMute
+    pulsemixer --toggle-mute
+XF86Audio{Raise,Lower}Volume
+    pulsemixer --change-volume {+10,-10}
+XF86Audio{Next,Prev}
+	mpc {next,prev}
+XF86Audio{Play,Stop}
+	mpc {toggle,stop}
+XF86AudioMedia
+	$TERMINAL -e ncmpcpp
+
+# file manager
+super + shift + semicolon
+	$TERMINAL -e ranger
+
+# lockscreen
+super + x
+	i3lock.sh
+
+# screenkey
+super + Scroll_Lock
+	killall screenkey || screenkey -s small --font-size small -g 300x800+1000+0
+
+# show clipboard
+super + F9
+	showclip
+
+# dunst test
+super + w
+	dtest
+
+  #xdo resize {-w +20, -h -20, -h +20, -w -20}
