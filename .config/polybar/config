@@ -1,56 +1,25 @@
 [colors]
-;foreground = #ebdbb2
-foreground = #35434d
-light-foreground = #484848
-background = #a89984
-red        = #ea6c73
-; changing blue with orange and vice-versa
-lightbrown       = #d65d0e
-blue	= #ad282828
-teal       = #689d6a
-green      = #98971a
-purple     = #b16286
-orange     = #d1c1a8
-indigo      = #83a598
-black = #000000
-yellow     = #f9af4f
-light-white      = #d1c1a8
-white = #d3d0c8
-cyan       = #689d6a
-brown      = #fb4934
+;background = ${xrdb:background}
+background = #cf282828
+foreground = ${xrdb:foreground}
+red = ${xrdb:color1}
+green = ${xrdb:color2}
+yellow = ${xrdb:color3}
+blue = ${xrdb:color4}
+magenta = ${xrdb:color5}
+cyan = ${xrdb:color6}
+grey = ${xrdb:color7}
+light-red = ${xrdb:color9}
+light-green = ${xrdb:color10}
+light-yellow = ${xrdb:color11}
+light-blue = ${xrdb:color12}
+light-magenta = ${xrdb:color13}
+light-cyan = ${xrdb:color14}
+light-grey = ${xrdb:color15}
+light-background = ${xrdb:color8}
 
-; nord scheme
-;[colors]
-;foreground = #d8dee9
-;background = #cc2e3440
-;red        = #bf616a
-;blue       = #81a1c1
-;teal       = #88c0d0
-;green      = #a3be8c
-;purple     = #b48ead
-;orange     = #ffa500
-;indigo     = #4c566a
-;black      = #000000
-;white      = #e5e9f0
-;yellow     = #ebcb8b
-;brown      = #a52a2a
-;lightbackground = #3b4252
-
-;/* foreground = #f7f7fb */
-;/* red        = #ea51b2 */
-;/* blue       = #62d6e8 */
-;/* teal       = #a1efe4 */
-;/* green      = #00f769 */
-;/* purple     = #b46bcf */
-;/* orange     = #ea51b2 */
-;/* indigo     = #b46bcf */
-;/* black      = #181818 */
-;/* white      = #e9e9f4 */
-;/* yellow     = #ebff87 */
-;/* brown      = #969896 */
-
-[bar/top]
 ; Size
+[bar/top]
 width  = 100%
 height = 17
 
@@ -70,7 +39,7 @@ radius = 0
 fixed-center = true
 
 ; Colors
-background = ${colors.blue}
+background = ${colors.background}
 foreground = ${colors.foreground}
 
 ; Underline
@@ -79,7 +48,7 @@ line-color = ${colors.foreground}
 
 ; Border
 border-size  = 0
-border-color = ${colors.black}
+border-color = ${colors.background}
 
 ; Padding
 padding-left  = 0
@@ -89,30 +58,20 @@ padding-right = 0
 module-margin-left  = 0
 module-margin-right = 0
 
-; Font
-font-0 = Source Code Pro:style=Bold:size=8;2
-; font-0 = Fura Code Nerd Font:style=Bold:size=9;3
-; font-1 = Source Code Pro:style=Bold:size=10;3
-; font1 = Source Code Pro:style=Bold:size=10;3
-font-1 = Font Awesome 5 Free Solid:size=10;2
+; font-0 = Source Code Pro:style=Bold:size=8;2
+font-0 = FantasqueSansMono Nerd Font:style=Bold:size=9;2
+font-1 = Font Awesome 5 Free Solid:size=9;2
 
 ; Modlues
 modules-left   = bspwm xwindow mpd
-;wireless-network i3
 /* modules-center = time */
-modules-right  = time date temperature cpu memory pulseaudio battery bright
-; lock logout reboot poweroff
+modules-right  = getnet time date temperature cpu memory storage pulseaudio bright battery
 
 tray-position = right
 tray-padding = 3
-tray-background = ${colors.blue}
+tray-background = ${colors.background}
 
 wm-restack = bspwm
-
-; scroll-up = i3wm-wsnext
-; scroll-down = i3wm-wsprev
-scroll-up = bspwm-desknext
-scroll-down = bspwm-deskprev
 
 ; Cursor actions
 cursor-click  = pointer
@@ -135,6 +94,7 @@ content = ""
 content-foreground = ${colors.red}
 content-background = ${colors.foreground}
 
+
 [module/f]
 type = custom/text
 
@@ -146,89 +106,17 @@ content = ""
 content-foreground = ${colors.foreground}
 content-background = ${colors.foreground}
 
-; [module/i3]
-; type = internal/i3
-
-; format-prefix = "%{T3}%{T-}"
-; format-prefix-foreground = ${colors.indigo}
-; format-prefix-background = ${colors.blue}
-
-; format-suffix = 
-; format-suffix = "%{T3}%{T-}" */
-; format-suffix-foreground = ${colors.foreground}
-; format-suffix-background = ${colors.blue}
-
-; Mouse click
-; enable-click = true
-
-; Mouse scroll
-; enable-scroll = false
-
-; Sort
-; index-sort = true
-
-; Display icons
-;fuzzy-match = true
-
-; Icons
-
-;ws-icon-1 = Terminal;
-;ws-icon-2 = Web;
-;ws-icon-3 = Music;
-;ws-icon-4 = Videos;
-;ws-icon-5 = Term2;
-;ws-icon-6 = Code;
-;ws-icon-7 = Chat;
-;ws-icon-8 = Random;
-;ws-icon-9 = Read;
-;ws-icon-0 = "Free;
-
-; ws-icon-1 = 1
-; ws-icon-2 = 2
-; ws-icon-3 = 3
-; ws-icon-4 = 4
-; ws-icon-5 = 5
-; ws-icon-6 = 6
-; ws-icon-7 = 7
-; ws-icon-8 = 8
-; ws-icon-9 = 9
-; ws-icon-0 = 0
-
-;ws-icon-default = 
-
-; label-focused            = %name%
-; label-focused-foreground = ${colors.light-white}
-; label-focused-background = ${colors.blue}
-; label-focused-underline = ${colors.orange}
-; label-focused-padding    = 1
-
-; ; Unfocused labels
-; label-unfocused            = %icon% %name%
-; label-unfocused-foreground = ${colors.light-foreground}
-; label-unfocused-background = ${colors.blue}
-; label-unfocused-padding    = 1
-
-; ; Visible labels
-; label-visible            = %icon% %name%
-; label-visible-foreground = ${colors.foreground}
-; label-visible-padding    = 1
-
-; ; Urgent labels
-; label-urgent            = %icon% %name%
-; label-urgent-foreground = ${colors.foreground}
-; label-urgent-background = ${colors.red}
-; label-urgent-padding    = 1
 
 [module/bspwm]
 type = internal/bspwm
 
 label-focused = %name%
-label-focused-foreground = ${colors.blue}
+label-focused-foreground = ${colors.yellow}
 label-focused-background = ${colors.background}
 label-focused-padding = 1
 
 label-occupied = %name%
-label-occupied-foreground = ${colors.light-white}
+label-occupied-foreground = ${colors.light-grey}
 label-occupied-padding = 1
 
 label-urgent = %name%!
@@ -236,31 +124,27 @@ label-urgent-background = ${colors.red}
 label-urgent-padding = 1
 
 label-empty = %name%
-label-empty-foreground = ${colors.light-foreground}
+label-empty-foreground = ${colors.light-background}
 label-empty-padding = 1
 
 format-underline =
 format-background =
 format-padding =
 
+scroll-up = bspwm-desknext
+scroll-down = bspwm-deskprev
+
+
 [module/xwindow]
-
-; format-prefix = "%{T3}%{T-}"
-; format-prefix-foreground = ${colors.foreground}
-; format-prefix-background = ${colors.blue}
-
-; format-suffix = "%{T3}%{T-}"
-; format-suffix = "%{T3}%{T-}"
-; format-suffix-foreground = ${colors.foreground}
-; format-suffix-background = ${colors.blue}
 
 type = internal/xwindow
 label = %title:0:30:...%
-format-foreground = ${colors.light-white}
-format-background = ${colors.blue}
+format-foreground = ${colors.grey}
+format-background = ${colors.background}
 label-padding = 1
 
-; mpd module <<<
+
+; mpd module
 [module/mpd]
 type = internal/mpd
 
@@ -274,9 +158,11 @@ format-stopped = <icon-stop> <label-song>
 format-offline = <label-offline>
 ; label-song     = %title:0:35:...%
 label-song = %{A1:/home/raytracer/.config/polybar/bar_scripts/mpd_module.sh:}%title:0:30:...%%{A}
-label-time     = %elapsed%/%total%
+label-time     = %{A1:mpc toggle:}%elapsed%/%total%%{A}
+; A3 is for right click
 label-icon = 🎜
 label-offline  = "mpd offline"
+;click-right = mpc toggle &
 
 icon-play      = ⏵
 icon-pause     = ⏸
@@ -296,14 +182,14 @@ bar-progress-indicator = |
 bar-progress-fill = ─
 bar-progress-empty = ─
 
-format-online-foreground  = ${colors.light-white}
-format-online-background  = ${colors.blue}
-format-playing-foreground = ${colors.light-white
-format-playing-background = ${colors.blue}
-format-paused-foreground  = ${colors.light-white}
-format-paused-background  = ${colors.blue}
-format-stopped-foreground = ${colors.light-white}
-format-stopped-background = ${colors.blue}
+format-online-foreground  = ${colors.grey}
+format-online-background  = ${colors.background}
+format-playing-foreground = ${colors.grey
+format-playing-background = ${colors.background}
+format-paused-foreground  = ${colors.grey}
+format-paused-background  = ${colors.background}
+format-stopped-foreground = ${colors.grey}
+format-stopped-background = ${colors.background}
 
 format-online-padding = 1
 format-playin-padding = 1
@@ -313,9 +199,9 @@ format-offlin-padding = 1
 label-song-padding    = 1
 label-time-padding    = 0
 label-offline-padding = 1
-; >>>
 
-; corona module <<<
+
+; corona module
 [module/corona]
 type = custom/scripts
 ; Script
@@ -327,23 +213,21 @@ interval = 300
 ; Label
 label = %output%
 label-foreground = ${colors.foreground}
-; >>>
 
-; memory module <<<
+
+; memory module
 [module/memory]
 type = internal/memory
 interval = 1
 ; format-prefix = "  "
-format-background = ${colors.blue}
-format-foreground = ${colors.light-white}
+format-background = ${colors.background}
+format-foreground = ${colors.grey}
 ; label = %percentage_used%%
 label = %{A1:memproc:} %percentage_used%%%{A}
 format-padding = 1
 
-; click-left = memproc &
-; >>>
 
-; weather module <<<
+; weather module
 [module/weather]
 type = custom/script
 
@@ -352,7 +236,7 @@ exec = /home/enindu/.config/polybar/scripts/weather.sh
 
 ; Update interval
 interval = 600
-; >>>
+
 
 [module/wireless-network]
 type = internal/network
@@ -361,14 +245,14 @@ interval = 2.0
 
 format-connected = "直 "
 format-connected-background = ${colors.foreground}
-format-connected-foreground = ${colors.blue}
+format-connected-foreground = ${colors.background}
 
 ;label-connected = "直 %essid%"
 label-connected = "直 "
 
 format-disconnected = <label-disconnected>
 format-disconnected-background = ${colors.foreground}
-format-disconnected-foreground = ${colors.blue}
+format-disconnected-foreground = ${colors.background}
 label-disconnected = "睊"
 
 [module/bright]
@@ -378,23 +262,26 @@ exec = /home/raytracer/.config/polybar/bar_scripts/bright.sh
 
 scroll-up = light -A 5
 scroll-down = light -U 5
-
-; label            = 🔅 : %output%%
-; label-foreground = ${colors.background}
-; label-background = ${colors.foreground}
-; label-padding    = 1
-; interval         = 1
 format = <label>
-format-background = ${colors.blue}
-format-foreground = ${colors.light-white}
+format-background = ${colors.background}
+format-foreground = ${colors.grey}
 label = %{A1:/home/raytracer/.config/polybar/bar_scripts/bright_notify.sh:} %output%%%{A}
 interval = 1
 label-padding = 1
 
-; Label
-; label            = %output%
-; label-foreground = ${colors.foreground}
-; label-padding    = 0
+
+[module/getnet]
+type = custom/script
+
+exec = /home/raytracer/.config/polybar/bar_scripts/net_module.sh
+
+format = <label>
+format-background = ${colors.background}
+format-foreground = ${colors.grey}
+label = %{A1:get_net.sh:}%output%%{A}
+
+
+interval = 1
 
 [module/battery]
 type = internal/battery
@@ -409,7 +296,7 @@ adapter = AC
 ;; Charging label
 ;;label-charging           =  %percentage%%
 ;label-charging            = bat: %percentage%%
-;label-charging-background = ${colors.yellow}
+;label-charging-background = ${colors.background}
 ;label-charging-foreground = ${colors.foreground}
 ;label-charging-padding    = 0
 
@@ -417,7 +304,7 @@ adapter = AC
 ;;label-discharging            =  %percentage%%
 ;label-discharging            = bat: %percentage%%
 ;label-discharging-background = ${colors.foreground}
-;label-discharging-foreground = ${colors.blue}
+;label-discharging-foreground = ${colors.background}
 ;label-discharging-padding    = 0
 
 ;; Full label
@@ -431,9 +318,9 @@ format-charging = <animation-charging> <label-charging>
 ; format-discharging = <animation-discharging> <label-discharging>
 format-discharging = <ramp-capacity> <label-discharging>
 format-charging-background = ${colors.foreground}
-format-charging-foreground = ${colors.blue}
-format-discharging-background = ${colors.blue}
-format-discharging-foreground = ${colors.light-white}
+format-charging-foreground = ${colors.background}
+format-discharging-background = ${colors.background}
+format-discharging-foreground = ${colors.grey}
 
 ;label-charging-background = ${colors.background}
 label-charging = %{A1:notify-send -t 5000 "$(cat /sys/class/power_supply/BAT0/uevent)":}Ch %percentage%%%{A}
@@ -445,8 +332,8 @@ format-discharging-padding = 1
 
 format-full = <label-full>
 ; format-full-prefix = "  "
-format-full-background = ${colors.blue}
-format-full-foreground = ${colors.light-white}
+format-full-background = ${colors.background}
+format-full-foreground = ${colors.grey}
 format-full-padding = 1
 label-full = %{A1:notify-send -t 5000 "$(cat /sys/class/power_supply/BAT0/uevent)":} Full%{A}
 ; label-full-padding = 1
@@ -497,28 +384,28 @@ interval = 3
 
 ; label = %temperature-c%
 label = %{A1:/home/raytracer/.config/polybar/bar_scripts/temp.sh:}%temperature-c%%{A}
-label-foreground = ${colors.light-white}
+label-foreground = ${colors.grey}
 
 format = <ramp> <label>
 format-padding = 1
-format-foreground = ${colors.light-white}
-format-background = ${colors.blue}
+format-foreground = ${colors.grey}
+format-background = ${colors.background}
 
 format-warn = <ramp> <label-warn>
 format-warn-padding= 0
 format-warn-background = ${colors.red}
 format-warn-prefix = 
 format-warn-suffix = 
-format-warn-prefix-foreground = ${colors.blue}
+format-warn-prefix-foreground = ${colors.background}
 format-warn-prefix-background = ${colors.red}
-format-warn-suffix-foreground = ${colors.blue}
+format-warn-suffix-foreground = ${colors.background}
 format-warn-suffix-background = ${colors.red}
 
 
 
 ; label-warn = " %temperature-c%"
 label-warn = %{A1:/home/raytracer/.config/polybar/bar_scripts/temp.sh:}%temperature-c%%{A}
-label-warn-foreground = ${colors.blue}
+label-warn-foreground = ${colors.background}
 label-warn-background = ${colors.red}
 
 ramp-0 = 
@@ -526,7 +413,7 @@ ramp-1 = 
 ramp-2 = 
 ramp-3 = 
 ramp-4 = 
-ramp-foreground = ${colors.light-white}
+ramp-foreground = ${colors.grey}
 
 [module/cpu]
 type = internal/cpu
@@ -536,10 +423,10 @@ type = internal/cpu
 ; label-background = ${colors.foreground}
 ; label-padding = 0
 interval = 2
-; format-prefix = " "
+; format-prefix = "  "
 format = <label>
-format-background = ${colors.blue}
-format-foreground = ${colors.light-white}
+format-background = ${colors.background}
+format-foreground = ${colors.grey}
 ; label = %percentage:2%%
 label = %{A1:cpuproc:}%percentage:2%%%{A}
 format-padding = 1
@@ -564,26 +451,26 @@ type = internal/pulseaudio
 format-volume = <label-volume>
 ; <bar-volume>
 format-volume-padding = 1
-format-volume-background = ${colors.blue}
+format-volume-background = ${colors.background}
 
 label-volume =  %percentage%%
-label-volume-foreground = ${colors.light-white}
+label-volume-foreground = ${colors.grey}
 
 format-muted-padding = 1
 format-muted-background = ${colors.background}
 
 label-muted = ﱝ muted
-label-muted-foreground = ${colors.blue}
+label-muted-foreground = ${colors.background}
 label-muted-background = ${colors.red}
 
 bar-volume-width = 10
-bar-volume-foreground-0 = ${colors.light-white}
-bar-volume-foreground-1 = ${colors.light-white}
-bar-volume-foreground-2 = ${colors.light-white}
-bar-volume-foreground-3 = ${colors.light-white}
-bar-volume-foreground-4 = ${colors.light-white}
-bar-volume-foreground-5 = ${colors.light-white}
-bar-volume-foreground-6 = ${colors.light-white}
+bar-volume-foreground-0 = ${colors.grey}
+bar-volume-foreground-1 = ${colors.grey}
+bar-volume-foreground-2 = ${colors.grey}
+bar-volume-foreground-3 = ${colors.grey}
+bar-volume-foreground-4 = ${colors.grey}
+bar-volume-foreground-5 = ${colors.grey}
+bar-volume-foreground-6 = ${colors.grey}
 bar-volume-gradient = false
 bar-volume-indicator =
 bar-volume-indicator-foreground = ${colors.white}
@@ -592,7 +479,7 @@ bar-volume-fill = ─
 bar-volume-fill-font = 2
 bar-volume-empty = ─
 bar-volume-empty-font = 2
-bar-volume-empty-foreground = ${colors.light-foreground}
+bar-volume-empty-foreground = ${colors.light-grey}
 
 scroll-up = pulsemixer --change-volume +5
 scroll-down = pulsemixer --change-volume -5
@@ -601,7 +488,7 @@ scroll-down = pulsemixer --change-volume -5
 type = internal/date
 
 /* format-suffix = "%{T3}%{T-}" */
-/* format-suffix-foreground = ${colors.blue} */
+/* format-suffix-foreground = ${colors.yellow} */
 /* format-suffix-background = ${colors.background} */
 
 ; Update interval
@@ -615,10 +502,9 @@ time = %H:%M:%S
 ; Label
 label            = %{A1:notify-send -t 5000 "$(cal)":} %time%%{A}
 ; label            = time: %time%  date: %date%
-label-foreground = ${colors.light-white}
-label-background = ${colors.blue}
+label-foreground = ${colors.grey}
+label-background = ${colors.background}
 label-padding    = 1
-;label-underline = ${colors.red}
 
 [module/date]
 type = internal/date
@@ -633,152 +519,20 @@ date = "%m-%d"
 
 ; time = %H:%M:%S
 
-; Label
-;label            =  %date%
-; label-foreground = ${colors.foreground}
-; label-background = ${colors.lightbackgrounds}
-format-background = ${colors.blue}
-format-foreground = ${colors.light-white}
-label = %{A1:termite -e calcurse:} %date%%{A}
+format-background = ${colors.background}
+format-foreground = ${colors.grey}
+label = %{A1:termite -e calcurse &:} %date%%{A}
 label-padding    = 1
 
+[module/storage]
+type = custom/script
 
-; [module/date]
-; type = internal/date
-
-; ; Update interval
-; interval = 1.0
-
-; ; Format
-; time = %I:%M:%S %p
-
-; ; Label
-; label            =  %time%
-; label-foreground = ${colors.foreground}
-; label-background = ${colors.foreground}
-; label-padding    = 0
-
-[module/lock]
-type = custom/text
-
-; Label
-;content = 
-content = lock ¦
-content-background = ${colors.foreground}
-content-foreground = ${colors.blue}
-content-padding    = 0
-
-; Mouse click
-click-left = slock
-
-[module/logout]
-type = custom/text
-
-; Label
-;content            = 
-content		= logoff
-content-background = ${colors.foreground}
-content-foreground = ${colors.blue}
-content-padding    = 0
-
-; Mouse click
-click-left = i3-msg exit
-
-[module/reboot]
-type = custom/text
-
-; Label
-;content            = 
-content			= reboot ¦
-content-background = ${colors.foreground}
-content-foreground = ${colors.blue}
-content-padding    = 0
-
-; Mouse click
-click-left = reboot
-
-[module/poweroff]
-type = custom/text
-
-; Label
-;content            = 
-content			= shdn
-content-background = ${colors.foreground}
-content-foreground = ${colors.blue}
-content-padding    = 0
-
-; Mouse click
-click-left = poweroff
-
-[module/firefox]
-type = custom/text
-
-; Label
-content            = 
-content-background = ${colors.orange}
-content-foreground = ${colors.background}
-content-padding    = 0
-
-; Mouse click
-click-left = firefox &
-
-[module/vscode]
-type = custom/text
-
-; Label
-content            = 
-content-background = ${colors.purple}
-content-foreground = ${colors.foreground}
-content-padding    = 1
-
-; Mouse click
-click-left = code &
-
-[module/gimp]
-type = custom/text
-
-; Label
-content            = 
-content-background = ${colors.brown}
-content-foreground = ${colors.foreground}
-content-padding    = 1
-
-; Mouse click
-click-left = gimp &
-
-[module/termite]
-type = custom/text
-
-; Label
-content            = 
-content-background = ${colors.teal}
-content-foreground = ${colors.foreground}
-content-padding    = 1
-
-; Mouse click
-click-left = termite &
-
-[module/thunar]
-type = custom/text
-
-; Label
-content            = 
-content-background = ${colors.red}
-content-foreground = ${colors.foreground}
-content-padding    = 1
-
-; Mouse click
-click-left = Thunar&
-
-[settings]
-screenchange-reload     = true
-;compositing-background = xor
-;compositing-foreground = source
-;compositing-border     = over
-;pseudo-transparency    = false
-
-[global/wm]
-margin-top    = 10
-margin-bottom = 10
+exec = '/home/raytracer/.config/polybar/bar_scripts/disk_usage.sh'
+label =  %output%
+format = <label>
+format-foreground = ${colors.grey}
+format-background = ${colors.background}
+interval = 5
+label-padding = 1
 
 ; vim: set ft=dosini

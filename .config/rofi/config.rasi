@@ -10,9 +10,9 @@ configuration {
 * {
 	background-color: #282828;
 	text-color      : #ebdbb2;
-	selbg           : #928374;
-	actbg           : #d1c1a8;
-	urgbg           : #ea6c73;
+	selbg           : #a89984;
+	actbg           : #d79921;
+	urgbg           : #cc241d;
 	winbg           : #282828;
 
 	selected-normal-foreground: @winbg;

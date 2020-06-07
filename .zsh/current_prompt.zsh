@@ -73,10 +73,10 @@ function git_change() {
 		STATUS=$(command git status --porcelain 2> /dev/null | tail -n1)
 		if [[ -n $STATUS ]]; then
 			left_prompt  # see the function below
-			PROMPT+='%F{red}%B ${vcs_info_msg_0_}%b%f '
+			PROMPT+='%F{red}%B${vcs_info_msg_0_}%b%f '
 		else
 			left_prompt
-			PROMPT+='%F{blue}%B ${vcs_info_msg_0_}%b%f '
+			PROMPT+='%F{blue}%B${vcs_info_msg_0_}%b%f '
 		fi
 	else
 		left_prompt
@@ -101,7 +101,7 @@ function shrink() {
 		fi
 	done
 	cur_dir+="${paths[$length]}"
-	#PROMPT+='%K{#ad9984}%F{#282828}%B $cur_dir %b%f%k'
+	#PROMPT+='%K{grey}%F{#282828}%B $cur_dir %b%f%k'
 	#printf %q "${cur_dir}"
 }
 
@@ -111,18 +111,18 @@ function put_spacing() {
 
 function left_prompt() {
 	PROMPT=''
-	PROMPT+='%(1j,%K{#fb4934}%F{#282828} %j %f%k,)'
-	PROMPT+='%K{#458588}%F{#282828}%B %n %b%f%k'
-	PROMPT+='%K{#ad9984}%F{#282828}%B %20<..<%~ %<<%b%f%k '
+	PROMPT+='%(1j,%F{red}%j %f,)'
+	PROMPT+='%F{yellow}%B%n %b%f'
+	PROMPT+='%F{grey}%B%20<..<%~ %<<%b%f '
 }
 
 RPROMPT=''
 RPROMPT+='%F{green}%B$elapsed%b%f'
 RPROMPT+='%F{green}%Bs %b%f'
-RPROMPT+='%(?,,%F{red}%B✗%? %b%f)'
+RPROMPT+='%(?,,%F{red}%B✗ %? %b%f)'
 RPROMPT+='${vim_mode}'
-vim_ins_mode='%K{#458588}%F{#282828}%B I %b%f%k'
-vim_cmd_mode='%K{#ad9984}%F{#282828}%B N %b%f%k'
+vim_ins_mode='%F{yellow}%BI %b%f'
+vim_cmd_mode='%F{grey}%BN %b%f'
 vim_mode=$vim_ins_mode
 
 function zle-keymap-select {

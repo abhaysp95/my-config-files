@@ -112,6 +112,7 @@ font:
     #   - (Windows) Consolas
     # family: Operator Mono Book
     # family: FantasqueSansMono Nerd Font Mono
+    # family: Cartograph Sans CF
     # family: Monofur Nerd Font
     # family: Dank Mono
     # family: Fira Code
@@ -120,7 +121,13 @@ font:
     # family: InputMonoCompressed
     # family: Script12 BT
     # family: Mononoki Nerd Font Mono
-    family: Consolas
+    # family: Inconsolata
+    #family: Monaco
+    # family: Victor Mono
+    # family: Fira Code iScript
+    # family: JetBrains Mono
+    family: UbuntuMono Nerd Font
+    # family: Consolas
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -132,14 +139,21 @@ font:
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
     # family: Operator Mono Medium
-    # family: FantasqueSansMono Nerd Font Mono
+    # family: FantasqueSansMono Nerd Font
+    # family: Cartograph Sans CF
     # family: Monofurbold Nerd Font
     # family: Fira Code
     # family: Hack Nerd Font Mono
     # family: Iosevka Nerd Font
     # family: InputMonoCompressed
     # family: Mononoki Nerd Font Mono
-    family: Consolas
+    # family: Inconsolata
+    # family: Monaco
+    # family: Victor Mono
+    # family: Fira Code iScript
+    # family: JetBrains Mono
+    family: UbuntuMono Nerd Font
+    # family: Consolas
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -154,16 +168,22 @@ font:
     # family: flottflott
     # family: Script12 BT
     # family: Operator Mono Book
-    # family: FantasqueSansMono Nerd Font Mono
+    # family: Fira Code iScript
+    # family: JetBrains Mono
+    # family: Cartograph Sans CF
+    # family: FantasqueSansMono Nerd Font
     # family: TSCu_Comic
     # family: UbuntuMono Nerd Font Mono
+    # family: Mononoki Nerd Font Mono
+    # family: Inconsolata
+    # family: Monaco
     # family: Monofuritalic Nerd Font
     # family: Victor Mono
     # family: InputMonoCompressed
     # family: Pacifico
     # family: Yellowtail
     # family: Fira Code
-    family: Consolas
+    # family: Consolas
 
     # The `style` can be specified to pick a specific face.
     style: Italic
@@ -175,11 +195,20 @@ font:
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
     # family: Operator Mono Medium
+    # family: Mononoki Nerd Font Mono
+    # family: Inconsolata
+    # family: Monaco
+    # family: Victor Mono
+    # family: Fira Code iScript
+    # family: JetBrains Mono
+    # family: UbuntuMono Nerd Font
+    # family: Cartograph Sans CF
     # family: Fira Code
     # family: Script12 BT
     # family: flott flott
     # family: InputMonoCompressed
-    family: Consolas
+    # family: FantasqueSansMono Nerd Font
+    # family: Consolas
 
     # The `style` can be specified to pick a specific face.
     style: Bold Italic
@@ -198,7 +227,7 @@ font:
   # increasing `y` moves the glyph upwards.
   glyph_offset:
     x: 0
-    y: 0
+    y: -1
 
   # Thin stroke font rendering (macOS only)
   #
@@ -219,37 +248,37 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: true
 
-# Colors (Gruvbox dark) <<<
+
+# Colors (Gruvbox dark)
 colors:
-  # Default colors
-  primary:
-      # hard contrast:
-      # background: '0x1d2021'
-    background: '0x282828'
-    # soft contrast: background = '0x32302f'
-    foreground: '0xebdbb2'
+   # Default colors
+   primary:
+     # hard contrast: background = '0x1d2021'
+     background: '0x282828'
+     # soft contrast: background = '0x32302f'
+     foreground: '0xebdbb2'
 
-  # Normal colors
-  normal:
-    black:   '0x282828'
-    red:     '0xcc241d'
-    green:   '0x98971a'
-    yellow:  '0xd79921'
-    blue:    '0x458588'
-    magenta: '0xb16286'
-    cyan:    '0x689d6a'
-    white:   '0xa89984'
+   # Normal colors
+   normal:
+     black:   '0x282828'
+     red:     '0xcc241d'
+     green:   '0x98971a'
+     yellow:  '0xd79921'
+     blue:    '0x458588'
+     magenta: '0xb16286'
+     cyan:    '0x689d6a'
+     white:   '0xa89984'
 
-  # Bright colors
-  bright:
-    black:   '0x928374'
-    red:     '0xfb4934'
-    green:   '0xb8bb26'
-    yellow:  '0xfabd2f'
-    blue:    '0x83a598'
-    magenta: '0xd3869b'
-    cyan:    '0x8ec07c'
-    white:   '0xebdbb2'
+   # Bright colors
+   bright:
+     black:   '0x928374'
+     red:     '0xfb4934'
+     green:   '0xb8bb26'
+     yellow:  '0xfabd2f'
+     blue:    '0x83a598'
+     magenta: '0xd3869b'
+     cyan:    '0x8ec07c'
+     white:   '0xebdbb2'
 
 
 #  # Dim colors
