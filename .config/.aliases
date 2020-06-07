@@ -143,8 +143,8 @@ alias udkm='udisksctl mount -b'
 alias udku='udisksctl unmount -b'
 
 # youtube-dl
-yt="youtube-dl --add-metadata -i"
-yta="yt -x -f bestaudio/best"
+alias yt="youtube-dl --add-metadata -ci"
+alias yta="yt -x -f bestaudio/best"
 
 # random backgound
 alias sbga='setbg ~/Pictures/bgwallpapers'
@@ -182,6 +182,7 @@ alias gUs='cd /usr/share'
 
 alias sc='cd ~/.local/bin/.scripts'
 alias gnv='cd ~/.config/nvim'
+alias shtp='cd /srv/http'
 
 # using exa as ls
 alias ls='exa --grid -F --group-directories-first'
