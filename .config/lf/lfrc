@@ -3,11 +3,14 @@
 set preview false
 set previewer ~/.config/lf/preview_file
 #set previewer /usr/bin/pistol
+#$lf -remote "send $id set previewer ${XDG_CONFIG_HOME:-$HOME/.config}/lf/scope"
 set hidden true
+set shellopts '-eu'
 set color256 true
 set drawbox true
 set icons true
 set ignorecase true
+set period 1
 
 
 cmd video_preview ${{
@@ -20,7 +23,9 @@ cmd video_preview ${{
 cmd open ${{
 	case $(file --mime-type "$f" -bL) in
 	text/*|application/json) $EDITOR "$f";;
-	video/*|image/*/application/pdf) xdg-open "$f" & disown;;
+	video/*|image/*|/application/pdf) xdg-open "$f" & disown;;
+	pdf/*) xdg-open "$f" & disown
+	audio/*) mpv --audio=display=no "$f" ;;
 	*) xdg-open "$f";;
 	esac
 }}
@@ -220,6 +225,7 @@ map gUs cd /usr/share
 
 map sc cd ~/.local/bin/.scripts
 map gnv cd ~/.config/nvim
+map shtp cd /srv/http
 
 map + :video_preview
 map - $/home/raytracer/.config/lf/draw_image.sh $f
