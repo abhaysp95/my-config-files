@@ -10,8 +10,8 @@ visualizer_in_stereo = "no"
 visualizer_type = "wave_filled"
 visualizer_output_name = "my_fifo"
 visualizer_look = "│┃"
-# visualizer_color = "default"
-visualizer_color = 41, 83, 119, 155, 185, 215, 209, 203, 197, 161
+visualizer_color = "default"
+# visualizer_color = 41, 83, 119, 155, 185, 215, 209, 203, 197, 161
 
 [header]
 header_visibility = "no"

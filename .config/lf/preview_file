@@ -2,7 +2,8 @@
 
 LINES=25
 case "$1" in
-	*.png|*.jpg|*.jpeg|*.mkv|*.mp4|*.mp3|*.m4a|*.webm) mediainfo "$1";;
+	*.png|*.jpg|*.jpeg|*.mkv|*.mp4|*.mp3|*.m4a|*.webm) mediainfo "$1" ;;
+	*.opus) opusinfo "$1" ;;
 	*.md) glow -s dark "$1";;
 	*.pdf) pdfoftext "$1" -;;
 	*.zip) zipinfo "$1";;
