@@ -1,6 +1,6 @@
 [colors]
-;background = ${xrdb:background}
-background = #cf282828
+; background = ${xrdb:background}
+background = #de1d1f21
 foreground = ${xrdb:foreground}
 red = ${xrdb:color1}
 green = ${xrdb:color2}
@@ -17,6 +17,7 @@ light-magenta = ${xrdb:color13}
 light-cyan = ${xrdb:color14}
 light-grey = ${xrdb:color15}
 light-background = ${xrdb:color8}
+light-black = ${xrdb:color19}
 
 ; Size
 [bar/top]
@@ -112,7 +113,8 @@ type = internal/bspwm
 
 label-focused = %name%
 label-focused-foreground = ${colors.yellow}
-label-focused-background = ${colors.background}
+label-focused-background = ${colors.light-black}
+label-focused-underline = ${colors.cyan}
 label-focused-padding = 1
 
 label-occupied = %name%
@@ -279,7 +281,9 @@ format = <label>
 format-background = ${colors.background}
 format-foreground = ${colors.grey}
 label = %{A1:get_net.sh:}%output%%{A}
-
+;label-foreground = ${colors.grey}
+;label-background = ${colors.light-black}
+;label-underline = ${colors.color6}
 
 interval = 1
 

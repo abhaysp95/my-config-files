@@ -112,7 +112,7 @@ function put_spacing() {
 function left_prompt() {
 	PROMPT=''
 	PROMPT+='%(1j,%F{red}%j %f,)'
-	PROMPT+='%F{yellow}%B%n %b%f'
+	PROMPT+='%F{blue}%B%n %b%f'
 	PROMPT+='%F{grey}%B%20<..<%~ %<<%b%f '
 }
 
@@ -121,7 +121,7 @@ RPROMPT+='%F{green}%B$elapsed%b%f'
 RPROMPT+='%F{green}%Bs %b%f'
 RPROMPT+='%(?,,%F{red}%B✗ %? %b%f)'
 RPROMPT+='${vim_mode}'
-vim_ins_mode='%F{yellow}%BI %b%f'
+vim_ins_mode='%F{blue}%BI %b%f'
 vim_cmd_mode='%F{grey}%BN %b%f'
 vim_mode=$vim_ins_mode
 

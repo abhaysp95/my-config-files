@@ -122,12 +122,16 @@ font:
     # family: Script12 BT
     # family: Mononoki Nerd Font Mono
     # family: Inconsolata
-    #family: Monaco
+    # family: Monaco
     # family: Victor Mono
     # family: Fira Code iScript
-    # family: JetBrains Mono
-    family: UbuntuMono Nerd Font
+    family: JetBrains Mono
+    # family: UbuntuMono Nerd Font
     # family: Consolas
+    # family: Envy Code R
+    # family: Anonymous Pro
+    # family: Hermit
+    # family: M+ 2m
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -151,9 +155,10 @@ font:
     # family: Monaco
     # family: Victor Mono
     # family: Fira Code iScript
-    # family: JetBrains Mono
-    family: UbuntuMono Nerd Font
+    family: JetBrains Mono
+    # family: UbuntuMono Nerd Font
     # family: Consolas
+    # family: Hermit
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -169,8 +174,9 @@ font:
     # family: Script12 BT
     # family: Operator Mono Book
     # family: Fira Code iScript
-    # family: JetBrains Mono
+    family: JetBrains Mono
     # family: Cartograph Sans CF
+    # family: Hack Nerd Font Mono
     # family: FantasqueSansMono Nerd Font
     # family: TSCu_Comic
     # family: UbuntuMono Nerd Font Mono
@@ -184,6 +190,7 @@ font:
     # family: Yellowtail
     # family: Fira Code
     # family: Consolas
+    # family: Hermit
 
     # The `style` can be specified to pick a specific face.
     style: Italic
@@ -200,8 +207,9 @@ font:
     # family: Monaco
     # family: Victor Mono
     # family: Fira Code iScript
-    # family: JetBrains Mono
+    family: JetBrains Mono
     # family: UbuntuMono Nerd Font
+    # family: Hack Nerd Font Mono
     # family: Cartograph Sans CF
     # family: Fira Code
     # family: Script12 BT
@@ -209,12 +217,13 @@ font:
     # family: InputMonoCompressed
     # family: FantasqueSansMono Nerd Font
     # family: Consolas
+    # family: Hermit
 
     # The `style` can be specified to pick a specific face.
     style: Bold Italic
 
   # Point size
-  size: 11
+  size: 10.5
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -249,37 +258,47 @@ font:
 #draw_bold_text_with_bright_colors: true
 
 
-# Colors (Gruvbox dark)
+  # base16-tomorrow-night256
 colors:
-   # Default colors
-   primary:
-     # hard contrast: background = '0x1d2021'
-     background: '0x282828'
-     # soft contrast: background = '0x32302f'
-     foreground: '0xebdbb2'
+  # Default colors
+  primary:
+    background: '0x1d1f21'
+    foreground: '0xc5c8c6'
 
-   # Normal colors
-   normal:
-     black:   '0x282828'
-     red:     '0xcc241d'
-     green:   '0x98971a'
-     yellow:  '0xd79921'
-     blue:    '0x458588'
-     magenta: '0xb16286'
-     cyan:    '0x689d6a'
-     white:   '0xa89984'
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: '0x1d1f21'
+    cursor: '0xc5c8c6'
 
-   # Bright colors
-   bright:
-     black:   '0x928374'
-     red:     '0xfb4934'
-     green:   '0xb8bb26'
-     yellow:  '0xfabd2f'
-     blue:    '0x83a598'
-     magenta: '0xd3869b'
-     cyan:    '0x8ec07c'
-     white:   '0xebdbb2'
+  # Normal colors
+  normal:
+    black:   '0x1d1f21'
+    red:     '0xcc6666'
+    green:   '0xb5bd68'
+    yellow:  '0xf0c674'
+    blue:    '0x81a2be'
+    magenta: '0xb294bb'
+    cyan:    '0x8abeb7'
+    white:   '0xc5c8c6'
 
+  # Bright colors
+  bright:
+    black:   '0x969896'
+    red:     '0xcc6666'
+    green:   '0xb5bd68'
+    yellow:  '0xf0c674'
+    blue:    '0x81a2be'
+    magenta: '0xb294bb'
+    cyan:    '0x8abeb7'
+    white:   '0xffffff'
+
+  indexed_colors:
+    - { index: 16, color: '0xde935f' }
+    - { index: 17, color: '0xa3685a' }
+    - { index: 18, color: '0x282a2e' }
+    - { index: 19, color: '0x373b41' }
+    - { index: 20, color: '0xb4b7b4' }
+    - { index: 21, color: '0xe0e0e0' }
 
 #  # Dim colors
 #  #
