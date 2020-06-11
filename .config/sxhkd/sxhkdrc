@@ -143,7 +143,7 @@ super+i:{m,p,v,d}
 	{manbyrofi,pdfbyrofi,videosbyrofi,caffeine_like}
 
 super + d:{c,d,f,k,s}
-    {get_config.sh,dmenu_run -i -nb '#282828' -sf '#282828' -nf '#ebdbb2' -sb '#d79921' -fn 'Ubuntu Mono Nerd Font Mono 10',rofi -show run -i -show-icons, ((pidof picom && kill $(pidof picom)) || picom --experimental-backends) & dunstify -t 2000 'picom toggled',get_script.sh}
+    {get_config.sh,dmenu_run -i -nb '#282828' -sf '#282828' -nf '#ebdbb2' -sb '#d79921' -fn 'Ubuntu Mono Nerd Font Mono 10',rofi -show run -i -show-icons, ((pidof picom && kill $(pidof picom)) || picom) & dunstify -t 2000 'picom toggled',get_script.sh}
 
 super + b:{f,p,c,n,q,v}
     {firefox,pcmanfm,telegram-desktop,nautilus,qutebrowser,vivaldi-stable}
