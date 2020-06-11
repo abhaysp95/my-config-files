@@ -7,7 +7,7 @@
 #
 # disk usage module for polybar
 
-root_per=$(df -h | awk '/sda1/ {print $5}')
-home_per=$(df -h | awk '/sda2/ {print $5}')
+root_per=$(df -H 2> /dev/null | awk '/sda1/ {print $5}')
+home_per=$(df -H 2> /dev/null | awk '/sda2/ {print $5}')
 
 printf "%s | %s" "$root_per" "$home_per"
