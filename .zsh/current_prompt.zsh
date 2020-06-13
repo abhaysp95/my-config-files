@@ -64,9 +64,19 @@ preexec() {
 precmd() {
 	vcs_info
 	git_change
+	set_virtualenv
 	local cmd_end="$SECONDS"
 	elapsed=$((cmd_end-cmd_start))
 }
+
+function set_virtualenv() {
+	if [ -z "$VIRTUAL_ENV" ]; then
+		python_venv=''
+	else
+		python_venv="$(printf "%s%s%s" "(" "$(basename $VIRTUAL_ENV)" ")")"
+	fi
+}
+
 
 function git_change() {
 	if [[ -n ${vcs_info_msg_0_} ]]; then
@@ -113,7 +123,8 @@ function left_prompt() {
 	PROMPT=''
 	PROMPT+='%(1j,%F{red}%j %f,)'
 	PROMPT+='%F{blue}%B%n %b%f'
-	PROMPT+='%F{grey}%B%20<..<%~ %<<%b%f '
+	PROMPT+='%F{grey}%B%20<..<%~%<<%b%f'
+	PROMPT+='%F{green}${python_venv}%f '
 }
 
 RPROMPT=''
