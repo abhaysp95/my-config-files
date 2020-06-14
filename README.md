@@ -38,6 +38,7 @@ Features are:
 * Shows `git add` and `git commit` status
 * Shows number of commits ahead or behind
 * Show `git stash` counts
+* Shows if virtualenv(python) is activated
 * Shows count of currently stopped and running zobs
 * Shows error code
 * Shows command execution timing
