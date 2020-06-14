@@ -1,9 +1,0 @@
-#!/bin/bash
-
-shopt -s nullglob	# for globbing in bash
-for image in *.jpg *.jpeg *.png *.JPG *.JPEG *.PNG
-do
-	res="$(identify -format %wx%h\\n "$image")";
-	mkdir -p ~/Pictures/aspect_ratio/"$res";
-	mv "$image" ~/Pictures/aspect_ratio/"$res";
-done
