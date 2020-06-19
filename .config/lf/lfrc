@@ -24,8 +24,8 @@ cmd open ${{
 	case $(file --mime-type "$f" -bL) in
 	text/*|application/json) $EDITOR "$f";;
 	video/*|image/*|/application/pdf) xdg-open "$f" & disown;;
-	pdf/*) xdg-open "$f" & disown
-	audio/*) mpv --audio=display=no "$f" ;;
+	# pdf/*) xdg-open "$f" & disown
+	# audio/*) mpv --audio=display=no "$f" ;;
 	*) xdg-open "$f";;
 	esac
 }}
@@ -227,5 +227,5 @@ map sc cd ~/.local/bin/.scripts
 map gnv cd ~/.config/nvim
 map shtp cd /srv/http
 
-map + :video_preview
-map - $/home/raytracer/.config/lf/draw_image.sh $f
+# map + :video_preview
+# map - $/home/raytracer/.config/lf/draw_image.sh $f
