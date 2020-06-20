@@ -1,0 +1,30 @@
+alias diskspace="du -S | sort -n -r |less"
+alias path='echo -e ${PATH//:/\\n}'
+alias now='date +"%T"'
+alias nowtime=now
+alias nowdate='date +"%d-%m-%Y"'
+
+alias fastping='ping -c 50 -s 1'
+
+alias ports='netstat -tulanp'
+
+
+alias meminfo='free -m -l -t'
+alias psmem='ps auxf | sort -nr -k 4'
+alias psmem10='ps auxf | sort -nr -k 4 | head -10'
+
+alias pscpu='ps auxf | sort -nr -k 3'
+alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
+
+#alias cpuinfo='lscpu'
+alias cpuinfo='less /proc/cpuinfo'
+
+
+alias df='df -H'
+alias du='du -ch'
+
+alias top='atop'
+
+# a neat terminal watch
+alias twatch='watch -n1 "date '+%b\/%a%n%D%n%T' | figlet -k"'
+

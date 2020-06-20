@@ -1,0 +1,109 @@
+# use neovim for vim if present
+command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
+alias sv="sudo nvim"
+
+alias vla="nvim ~/.config/shellaliases/.aliases"
+alias zshc="nvim ~/.zshrc"
+alias i3conf="nvim ~/.config/i3/config"
+alias stconf="nvim ~/st/.Xdefaults"
+alias titconf="nvim ~/.config/termite/config"
+alias szsh="source ~/.zshrc"
+alias sbash="source ~/.bashrc"
+alias p="sudo pacman"
+alias nwi="nmcli device"
+alias nwiwr="nmcli device wifi rescan"
+alias nwiwl="nmcli device wifi list"
+alias nwiwc="nmcli device wifi connect"
+alias nwidw="nmcli device disconnect wlp5s0"
+alias v="$EDITOR"
+alias e="$EDITOR"
+alias f="$FILE"
+alias clcr="calcurse"
+
+#already set rofi-theme-selector to gruvbox-dark, else use -theme {name}
+alias rfi='rofi -combi-modi window,drun,ssh -font "FuraCode Nerd Font 10" -lines 20 -show-icons -length 80 -show combi'
+alias rman="$HOME/.local/bin/.scripts/manbyrofi"
+alias rvid="$HOME/.local/bin/.scripts/videosbyrofi"
+alias rpdf="$HOME/.local/bin/.scripts/pdfbyrofi"
+alias dman="$HOME/.local/bin/.scripts/mansplain"
+alias dpdf="$HOME/.local/bin/.scripts/pdfdmenu"
+alias dvid="$HOME/.local/bin/.scripts/videosmpv"
+
+alias grep='grep --colour=auto'
+alias egrep='egrep --colour=auto'
+alias fgrep='fgrep --colour=auto'
+alias cp="cp -i"
+alias df="df -h"
+
+alias chat="telegram-desktop"
+alias mkd="mkdir -pv"
+alias vrc="nvim ~/.config/nvim/init.vim"
+alias brc="nvim ~/.bashrc"
+alias ffx="firefox"
+alias nn="mpc next"
+alias pp="mpc prev"
+alias ss="mpc stop"
+alias sp="mpc pause"
+alias mp="mpc play"
+alias ss..="xset r rate 360 80"
+
+alias lgoff="sudo killall Xorg"
+
+#light-dm
+alias lock="dm-tool lock"
+
+alias diff="colordiff"
+
+alias mount='mount | column -t'
+alias j="jobs -l"
+
+alias style='"-fmarkdown-implicit_figures -o" --from=markdown -V geometry.margin=.4in --toc --highlight-sytle=zenburn'
+# some other highlight-sytles for pandoc = default,espresso,haddock,kate,monochrome,pygments,tango,zenburn,breezedark
+
+alias rm='rm -Iv --preserve-root'
+
+alias mv='mv -i'
+alias cp='cp -iv'
+alias ln='ln -i'
+
+alias su='sudo -i'
+alias wget='wget -c'
+alias bright='xbacklight -set'
+
+#functions
+
+alias tknow='tldr -l | sed s/,/\\n/g | fzf | xargs -I {} tldr "{}"'
+alias shdn="shutdown now"
+alias pingarch='ping -c10 archlinux.org'
+
+# udisks2/udiskie
+alias udkm='udisksctl mount -b'
+alias udku='udisksctl unmount -b'
+
+# youtube-dl
+alias yt="youtube-dl --add-metadata -ci"
+alias yta="yt -x -f bestaudio/best"
+
+# random backgound
+alias sbga='setbg ~/Pictures/bgwallpapers'
+
+# open man in vim
+alias miv='sh ~/.local/bin/.scripts/maninvim'
+
+# look through pacman and yay
+# alias lookpac='pacman -Slq | fzf -m --preview 'cat <(pacman -Si {1}) <(pacman -Fl {1} | awk "{print \$2}")' | xargs -ro sudo pacman -S'
+# alias lookyay='yay -Slq | fzf -m --preview 'cat <(yay -Si {1}) <(yay -Fl {1} | awk "{print \$2}")' | xargs -ro  yay -S'
+# removed -a option from ls
+# alias ls='ls -FhN --color=auto --group-directories-first'
+# alias ll='ls -lah --group-directories-first'
+# alias battery="cat /sys/class/power_supply/BAT0/capacity"
+#alias ps = "ps l --USER raytracer --forest"
+# alias lgoff='i3-msg exit'
+#alias rfw="rofi -show window"
+# alias -s {c,java}=nvim
+# alias -g G='| grep -i'
+# alias -g lct='| lolcat -t'
+#alias brght='xrandr --output eDP1 --brightness'
+# alias -g brt=' | sudo tee /sys/class/backlight/intel_backlight/brightness'
+
+# vim: set ft=sh

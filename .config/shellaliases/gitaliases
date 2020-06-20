@@ -1,0 +1,8 @@
+# some git aliases
+alias gis='git status'
+alias gic='git commit -m'
+alias gia='git add'
+alias gps='git push'
+alias gpl='git pull'
+alias gpls='git pull && git push'
+

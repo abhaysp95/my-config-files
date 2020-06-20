@@ -51,7 +51,7 @@ trap Err_Code ERR
 	else
 	 PS1=""
 	 # PS1+="\[\033[1;91m\]\[\033[1;35m\]|\t|"
-	 PS1+="\[\033[m\]\[\e[1;39m\]\u"
+	 # PS1+="\[\033[m\]\[\e[1;39m\]\u"
 	 PS1+="\[\e[1;36m\]\[\033[m\]\[\033[m\]:"
 	 PS1+="\[\e[0m\]\[\e[1;34m\][\$CurDir]\[\e[0;38;5;202m"
 	 PS1+="\]\$(parse_git_branch)\[\e[1;34m\]› \[\e[0m\]"
@@ -84,7 +84,14 @@ export PROMPT_COMMAND="${PROMPT_COMMAND};history -a"
 # store multi-line commands in one history
 shopt -s cmdhist
 
-source ~/.config/.aliases
+source_aliases() {
+	for file in ~/.config/shellaliases/*; do
+		if [[ "$(basename "${file}")" != *zsh* ]]; then
+			source "${file}"
+		fi
+	done
+}
+source_aliases
 
 # giving exit code 1
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash

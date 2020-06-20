@@ -1,0 +1,25 @@
+se () { du -a ~/.local/bin/* ~/.config/* | awk '{print $2}' | fzf --preview='pistol {}'| xargs -r $EDITOR ;}
+vf () { ls -l | fzf --preview='pistol {}'| xargs -r -I % $EDITOR % ;}
+
+
+# get diff in vim
+vdiff () {
+		if [[ "${#}" -ne 2 ]];  then
+			echo "vdiff requires two arguments"
+			echo " comparing dirs: vdiff dir_a dir_b"
+			echo " comparing files: vdiff file_a file_b"
+			return 1
+		fi
+		local left="${1}"
+		local right="${2}"
+
+		if [ -d "${left}" ] && [ -d "${right}" ]; then
+			nvim +"DirDiff ${left} ${right}"
+		else
+			nvim -d "${left}" "${right}"
+		fi
+	}
+
+lolban () {
+	figlet -f /usr/share/figlet/fonts/3d "$1" | lolcat
+}

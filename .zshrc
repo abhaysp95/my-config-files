@@ -138,7 +138,7 @@ watch=all                        # watch all logins
 logcheck=30                     # every 30 seconds
 WATCHFMT="%n from %M has %a tty%1 at %T %W"
 
-source ~/.config/.aliases            # aliases
+for file in ~/.config/shellaliases/*; do source "$file"; done
 
 #neofetch | lolcat -t
 #pfetch

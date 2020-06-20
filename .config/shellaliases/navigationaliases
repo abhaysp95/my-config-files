@@ -1,0 +1,59 @@
+alias ..="cd .."
+alias ..2="cd ../.."
+alias ..3="cd ../../.."
+alias ..4="cd ../../../.."
+
+# directory specific
+alias gtr='cd ~/.local/share/Trash/files'
+alias gusb='cd /run/media/raytracer'
+
+alias gv.='cd ~/Videos'
+alias gvy='cd ~/Videos/youtube'
+
+alias gm='cd ~/Music'
+alias gmy='cd ~/Music/youtube'
+
+alias gp.='cd ~/Pictures'
+alias gbg='cd ~/Pictures/bgwallpapers'
+alias gss='cd ~/Pictures/Screenshots'
+
+alias gd='cd ~/Documents'
+alias gtc='cd ~/Documents/nc/'
+alias gtp='cd ~/Documents/npython'
+alias gts='cd ~/Documents/nshell'
+alias gth='cd ~/Documents/nweb_designing'
+alias gt.='cd ~/Documents/pdf'
+
+alias gD='cd ~/Downloads'
+alias gdg='cd ~/Downloads/git-materials'
+alias gdgg='cd ~/Downloads/git-materials/gitlab'
+
+alias gc.='cd ~/.config'
+alias gC='cd ~/.cache/cell'
+alias gE='cd /etc'
+alias gU='cd /usr'
+alias gUs='cd /usr/share'
+
+alias sc='cd ~/.local/bin/.scripts'
+alias gnv='cd ~/.config/nvim'
+alias shtp='cd /srv/http'
+
+# some aliases for broot(br)
+alias bll='br -dph'
+
+# for colorls(might remove them)
+alias cls='colorls -a --sd --report --gs'
+alias cll='colorls -la --sd --gs'
+alias clt='colorls --tree -a --sd'
+
+alias mapp='xmodmap ~/.Xmodmap'
+
+# lsd(ls deluxe)
+alias lsd='lsd -Fa --group-dirs first'
+alias lsdl='lsd -laF --group-dirs first --date relative'
+
+# using exa as ls
+alias lls='exa --grid -F --group-directories-first'
+alias llsa='exa --grid -Fa --group-directories-first'
+alias lll='exa -lFa --group-directories-first --color-scale --git'
+alias treee='exa -TaFl'		# alternative is tree -Duhp
