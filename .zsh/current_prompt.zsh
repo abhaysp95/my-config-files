@@ -65,6 +65,7 @@ precmd() {
 	vcs_info
 	git_change
 	set_virtualenv
+	shrink
 	local cmd_end="$SECONDS"
 	elapsed=$((cmd_end-cmd_start))
 }
@@ -77,6 +78,27 @@ function set_virtualenv() {
 	fi
 }
 
+function shrink() {
+	cur_dir=''
+	local paths=( ${PWD/$HOME/\~} )
+	paths=( ${(s:/:)paths} )
+
+	if [ "$(pwd | cut -d '/' -f 2)" != "home" ]; then
+		cur_dir+='#/'
+	fi
+
+	count=0
+	while [ "${#paths[@]}" -gt "${count}" ]; do
+		count=$(( count + 1 ))
+		cur_folder="${paths[count]}"
+		if [ "${count}" -lt "${#paths[@]}" ]; then
+			cur_dir+="${cur_folder:0:1}"
+			cur_dir+='/'
+		else
+			cur_dir+="${paths[$count]}"
+		fi
+	done
+}
 
 function git_change() {
 	if [[ -n ${vcs_info_msg_0_} ]]; then
@@ -96,24 +118,6 @@ function git_change() {
 
 # zstyle ':vcs_info:git:*' formats '%b '
 
-cur_dir=''
-function shrink() {
-	local paths=(${PWD/$HOME/\~})
-	paths=(${(s:/:)paths})
-
-	length="${#paths[@]}"
-	count=1
-	for directory in ${paths[@]}; do
-		if [[ $count -lt $length ]]; then
-			cur_dir+="${directory:0:1}"
-			cur_dir+='/'
-			count=$((count + 1))
-		fi
-	done
-	cur_dir+="${paths[$length]}"
-	#PROMPT+='%K{grey}%F{#282828}%B $cur_dir %b%f%k'
-	#printf %q "${cur_dir}"
-}
 
 function put_spacing() {
 
@@ -122,8 +126,8 @@ function put_spacing() {
 function left_prompt() {
 	PROMPT=''
 	PROMPT+='%(1j,%F{red}%j %f,)'
-	PROMPT+='%F{blue}%B%n %b%f'
-	PROMPT+='%F{grey}%B%20<..<%~%<<%b%f'
+	# PROMPT+='%F{grey}%B%20<..<%~%<<%b%f'
+	PROMPT+='%F{grey}%B${cur_dir} %b%f'
 	PROMPT+='%F{green}${python_venv}%f '
 }
 
@@ -157,3 +161,4 @@ zle -N zle-line-finish
 # %f -> reset color
 # %B -> start bold
 # %b -> stop bold
+# PROMPT+='%F{blue}%B%n %b%f'
