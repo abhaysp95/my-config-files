@@ -46,7 +46,7 @@ zstyle ':vcs_info:git*:*' check-for-changes true
 
 #zstyle ':vcs_info:*' stagedstr '%F{3}A%f'
 zstyle ':vcs_info:*' stagedstr 'A'
-zstyle ':vcs_info:*' unstagedstr 'M '
+zstyle ':vcs_info:*' unstagedstr 'M'
 # zstyle ':vcs_info:*' actionformats '%f(%F{2}%b%F{3}|%F{1}%a%f)  '
 zstyle ':vcs_info:*' actionformats '%b|%a  '
 # format the git part
@@ -107,11 +107,11 @@ function git_change() {
 		if [[ -n $STATUS ]]; then
 			left_prompt  # see the function below
 			PROMPT+='%F{red}${vcs_info_msg_0_}%f'
-			PROMPT+='%F{green}$ %f'
+			PROMPT+='%F{green} $ %f'
 		else
 			left_prompt
 			PROMPT+='%F{cyan}${vcs_info_msg_0_}%f'
-			PROMPT+='%F{green}$ %f'
+			PROMPT+='%F{green} $ %f'
 		fi
 	else
 		left_prompt
