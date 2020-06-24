@@ -35,7 +35,7 @@ function +vi-git-stash() {
 
 	if [[ -s ${hook_com[base]}/.git/refs/stash ]]; then
 		stashes=$(git stash list 2>/dev/null | wc -l)
-		hook_com[misc]+="%f%F{blue}STASH=${stashes}%f"
+		hook_com[misc]+="%f%F{cyan}STASH=${stashes}%f"
 	fi
 }
 
@@ -51,10 +51,11 @@ zstyle ':vcs_info:*' unstagedstr 'M '
 zstyle ':vcs_info:*' actionformats '%b|%a  '
 # format the git part
 # zstyle ':vcs_info:*' formats '%f%b %F{2}%c%F{3}%u%m%f'
-zstyle ':vcs_info:*' formats ' %b %c%u%m'
+zstyle ':vcs_info:*' formats 'שׂ %b %c%u%m'
 zstyle ':vcs_info:git*+set-message:*' hooks git-untracked git-stash git-st
 zstyle ':vcs_info:*' enable git
 #zstyle ':vcs_info:*+*:*' debug true
+# 
 
 # function executed just after hiting enter
 preexec() {
@@ -105,13 +106,16 @@ function git_change() {
 		STATUS=$(command git status --porcelain 2> /dev/null | tail -n1)
 		if [[ -n $STATUS ]]; then
 			left_prompt  # see the function below
-			PROMPT+='%F{red}%B${vcs_info_msg_0_}%b%f '
+			PROMPT+='%F{red}${vcs_info_msg_0_}%f'
+			PROMPT+='%F{green}$ %f'
 		else
 			left_prompt
-			PROMPT+='%F{blue}%B${vcs_info_msg_0_}%b%f '
+			PROMPT+='%F{cyan}${vcs_info_msg_0_}%f'
+			PROMPT+='%F{green}$ %f'
 		fi
 	else
 		left_prompt
+		PROMPT+='%F{green}$ %f'
 		PROMPT+=''
 	fi
 }
@@ -120,24 +124,25 @@ function git_change() {
 
 
 function put_spacing() {
-
+	PROMPT+='
+'
 }
 
 function left_prompt() {
 	PROMPT=''
 	PROMPT+='%(1j,%F{red}%j %f,)'
 	# PROMPT+='%F{grey}%B%20<..<%~%<<%b%f'
-	PROMPT+='%F{grey}%B${cur_dir} %b%f'
-	PROMPT+='%F{green}${python_venv}%f '
+	PROMPT+='%F{blue}${cur_dir}%f'
+	PROMPT+='%F{yellow}${python_venv}%f '
 }
 
 RPROMPT=''
-RPROMPT+='%F{green}%B$elapsed%b%f'
-RPROMPT+='%F{green}%Bs %b%f'
-RPROMPT+='%(?,,%F{red}%B✗ %? %b%f)'
+RPROMPT+='%F{green}$elapsed%f'
+RPROMPT+='%F{green}s %f'
+RPROMPT+='%(?,,%F{red}✗ %? %f)'
 RPROMPT+='${vim_mode}'
-vim_ins_mode='%F{blue}%BI %b%f'
-vim_cmd_mode='%F{grey}%BN %b%f'
+vim_ins_mode='%F{blue}I %f'
+vim_cmd_mode='%F{grey}N %f'
 vim_mode=$vim_ins_mode
 
 function zle-keymap-select {
