@@ -9,7 +9,8 @@ export FILE_MANAGER="pcmanfm"
 export BROWSER="vivaldi-stable"
 
 # Add ~/.local/bin/.scripts and all the subdirectories to the PATH
-export PATH="$PATH:$(du "$HOME/.local/bin/.scripts/" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
+#export PATH="$PATH:$(du "$HOME/.local/bin/.scripts/" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
+export PATH="$PATH:$(du "$HOME/.local/bin/.scripts/" | sed '/.*git/d' | cut -f 2 | tr '\n' ':' | sed 's/:*$//')"
 
 # for colorls
 export PATH="$PATH:/home/raytracer/.gem/ruby/2.7.0/bin"
