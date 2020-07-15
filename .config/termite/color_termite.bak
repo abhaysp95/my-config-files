@@ -1376,3 +1376,31 @@ highlight = #505050
 #color14= #4eb4fa
 #color15= #d0d0d0
 
+
+[colors]
+foreground = #bbc5ff
+foreground_bold = #bbc5ff
+cursor = #bbc5ff
+# background transparency (requires a compositor)
+background = rgb(40, 42, 54)
+
+# if unset, will reverse foreground and background
+#highlight = #839496
+
+# colors from color0 to color254 can be set
+color0 = #101010
+color1 = #f07178
+color2 = #c3e88d
+color3 = #ffcb6b
+color4 = #82aaff
+color5 = #c792ea
+color6 = #89ddff
+color7 = #d0d0d0
+color8 = #434758
+color9 = #ff8b92
+color10 = #ddffa7
+color11 = #ffe585
+color12 = #9cc4ff
+color13 = #e1acff
+color14 = #a3f7ff
+color15 = #ffffff
