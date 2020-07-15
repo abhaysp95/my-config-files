@@ -1,3 +1,98 @@
+# Apprentice Colorscheme
+
+colors:
+  primary:
+    foreground: '#bcbcbc'
+    background: '#262626'
+  normal:
+    black:   '#1c1c1c'
+    red:     '#af5f5f'
+    green:   '#5f875f'
+    yellow:  '#87875f'
+    blue:    '#5f87af'
+    magenta: '#5f5f87'
+    cyan:    '#5f8787'
+    white:   '#6c6c6c'
+  bright:
+    black:   '#444444'
+    red:     '#ff8700'
+    green:   '#87af87'
+    yellow:  '#ffffaf'
+    blue:    '#8fafd7'
+    magenta: '#8787af'
+    cyan:    '#5fafaf'
+    white:   '#ffffff'
+
+
+# vim-molokayo
+colors:
+  primary:
+      # background: '#1B1D1E'
+    background: '#202020'
+    foreground: '#F8F8F2'
+  normal:
+    black:   '#333333'
+    #red:     '#C4265E'
+    red:     '#e7482b'
+    green:   '#86B42B'
+    yellow:  '#B3B42B'
+    blue:    '#6A7EC8'
+    magenta: '#8C6BC8'
+    cyan:    '#56ADBC'
+    white:   '#E3E3DD'
+  bright:
+    black:   '#666666'
+    #red:     '#F92672'
+    red:     '#ff6347'
+    green:   '#A6E22E'
+    yellow:  '#E2E22E'
+    blue:    '#819AFF'
+    magenta: '#AE81FF'
+    cyan:    '#66D9EF'
+    white:   '#F8F8F2'
+
+  # base16-tomorrow-night256
+colors:
+  # Default colors
+  primary:
+    background: '0x1d1f21'
+    foreground: '0xc5c8c6'
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: '0x1d1f21'
+    cursor: '0xc5c8c6'
+
+  # Normal colors
+  normal:
+    black:   '0x1d1f21'
+    red:     '0xcc6666'
+    green:   '0xb5bd68'
+    yellow:  '0xf0c674'
+    blue:    '0x81a2be'
+    magenta: '0xb294bb'
+    cyan:    '0x8abeb7'
+    white:   '0xc5c8c6'
+
+  # Bright colors
+  bright:
+    black:   '0x969896'
+    red:     '0xcc6666'
+    green:   '0xb5bd68'
+    yellow:  '0xf0c674'
+    blue:    '0x81a2be'
+    magenta: '0xb294bb'
+    cyan:    '0x8abeb7'
+    white:   '0xffffff'
+
+  indexed_colors:
+    - { index: 16, color: '0xde935f' }
+    - { index: 17, color: '0xa3685a' }
+    - { index: 18, color: '0x282a2e' }
+    - { index: 19, color: '0x373b41' }
+    - { index: 20, color: '0xb4b7b4' }
+    - { index: 21, color: '0xe0e0e0' }
+
 # Colors (Ayu Dark)
 colors:
   # Default colors
@@ -102,6 +197,32 @@ colors:
 #    cyan:    '0x9aedfe'
 #    white:   '0xe6e6e6'
 # >>>
+
+# dracula(dwt1)
+colors:
+  primary:
+    background: '#282a36'
+    foreground: '#bbc5ff'
+
+  normal:
+    black:   '#101010'
+    red:     '#f07178'
+    green:   '#c3e88d'
+    yellow:  '#ffcb6b'
+    blue:    '#82aaff'
+    magenta: '#c792ea'
+    cyan:    '#89ddff'
+    white:   '#d0d0d0'
+
+  bright:
+    black:   '#434758'
+    red:     '#ff8b92'
+    green:   '#ddffa7'
+    yellow:  '#ffe585'
+    blue:    '#9cc4ff'
+    magenta: '#e1acff'
+    cyan:    '#a3f7ff'
+    white:   '#ffffff'
 
 # Colors (One Dark) <<<
 # colors:

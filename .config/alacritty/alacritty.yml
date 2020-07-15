@@ -34,8 +34,8 @@ window:
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
   padding:
-    x: 15
-    y: 10
+    x: 0
+    y: 0
 
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
@@ -110,7 +110,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    # family: Operator Mono Book
+    family: Operator Mono Book
     # family: FantasqueSansMono Nerd Font Mono
     # family: Cartograph Sans CF
     # family: Monofur Nerd Font
@@ -118,23 +118,33 @@ font:
     # family: Fira Code
     # family: Hack Nerd Font Mono
     # family: Iosevka Nerd Font
+    # family: IBM Plex Mono
     # family: InputMonoCompressed
     # family: Script12 BT
     # family: Mononoki Nerd Font Mono
     # family: Inconsolata
     # family: Monaco
+    # family: Liga Monego
+    # family: Monoid Nerd Font Mono
+    # family: Sudo
+    # family: Yosemite
     # family: Victor Mono
     # family: Fira Code iScript
-    family: JetBrains Mono
+    # family: JetBrains Mono
     # family: UbuntuMono Nerd Font
     # family: Consolas
     # family: Envy Code R
     # family: Anonymous Pro
     # family: Hermit
     # family: M+ 2m
+    # family: DroidSansMono Nerd Font Mono
+    # family: SauceCodePro Nerd Font
+    # family: Source Code Pro
+    # family: Envy Code R VS
+    # family: Scientifica
 
     # The `style` can be specified to pick a specific face.
-    style: Regular
+    style: Book
 
   # Bold font face
   bold:
@@ -142,7 +152,7 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    # family: Operator Mono Medium
+    famaly: Operator Mono Medium
     # family: FantasqueSansMono Nerd Font
     # family: Cartograph Sans CF
     # family: Monofurbold Nerd Font
@@ -153,15 +163,23 @@ font:
     # family: Mononoki Nerd Font Mono
     # family: Inconsolata
     # family: Monaco
+    # family: Liga Monego
+    # family: Monoid Nerd Font Mono
+    # family: Anonymous Pro
+    # family: Sudo
+    # familly: Yosemite
     # family: Victor Mono
     # family: Fira Code iScript
-    family: JetBrains Mono
+    # family: JetBrains Mono
     # family: UbuntuMono Nerd Font
     # family: Consolas
     # family: Hermit
+    # family: M+ 2M
+    # family: Envy Code R VS
+    # family: IBM Plex Mono
 
     # The `style` can be specified to pick a specific face.
-    style: Bold
+    style: Medium
 
   # Italic font face
   italic:
@@ -172,9 +190,9 @@ font:
     # family: Dank Mono
     # family: flottflott
     # family: Script12 BT
-    # family: Operator Mono Book
+    family: Operator Mono Book
     # family: Fira Code iScript
-    family: JetBrains Mono
+    # family: JetBrains Mono
     # family: Cartograph Sans CF
     # family: Hack Nerd Font Mono
     # family: FantasqueSansMono Nerd Font
@@ -183,6 +201,11 @@ font:
     # family: Mononoki Nerd Font Mono
     # family: Inconsolata
     # family: Monaco
+    # family: Liga Monego
+    # family: Monoid Nerd Font Mono
+    # family: Anonymous Pro
+    # family: Sudo
+    # family: Yosemite
     # family: Monofuritalic Nerd Font
     # family: Victor Mono
     # family: InputMonoCompressed
@@ -191,9 +214,11 @@ font:
     # family: Fira Code
     # family: Consolas
     # family: Hermit
+    # family: M+ 2M
+    # family: Envy Code R VS
 
     # The `style` can be specified to pick a specific face.
-    style: Italic
+    style: Book Italic
 
   # Bold italic font face
   bold_italic:
@@ -201,13 +226,18 @@ font:
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    # family: Operator Mono Medium
+    family: Operator Mono Medium
     # family: Mononoki Nerd Font Mono
     # family: Inconsolata
     # family: Monaco
+    # family: Liga Monego
+    # family: Monoid Nerd Font Mono
+    # family: Anonymous Pro
+    # family: Sudo
+    # family: Yosemite
     # family: Victor Mono
     # family: Fira Code iScript
-    family: JetBrains Mono
+    # family: JetBrains Mono
     # family: UbuntuMono Nerd Font
     # family: Hack Nerd Font Mono
     # family: Cartograph Sans CF
@@ -218,12 +248,14 @@ font:
     # family: FantasqueSansMono Nerd Font
     # family: Consolas
     # family: Hermit
+    # family: M+ 2M
+    # family: Envy Code R VS
 
     # The `style` can be specified to pick a specific face.
-    style: Bold Italic
+    style: Medium Italic
 
   # Point size
-  size: 10.5
+  size: 13
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -257,63 +289,80 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: true
 
+#colors:
+  #primary:
+    #background: '0x282828'
+    #foreground: '0xf5f5f5'
 
-  # base16-tomorrow-night256
+  #normal:
+    #black:   '0x252525'
+    #red:     '0xc15c2e'
+    #green:   '0x8b8f78'
+    #yellow:  '0xddbd94'
+    #blue:    '0x5a8c93'
+    #magenta: '0xa679cf'
+    #cyan:    '0x118a71'
+    #white:   '0xf5f5f5'
+
+  #bright:
+    #black:   '0x4f4f4f'
+    #red:     '0xff5252'
+    #green:   '0x25322b'
+    #yellow:  '0x8d6947'
+    #blue:    '0x204557'
+    #magenta: '0x9b51e0'
+    #cyan:    '0x097f7f'
+    #white:   '0xd0b693'
+
 colors:
   # Default colors
   primary:
-    background: '0x1d1f21'
-    foreground: '0xc5c8c6'
+    # background: '#2c2c2c'
+    background: '#1c1c1c'
+    foreground: '#d6d6d6'
 
-  # Colors the cursor will use if `custom_cursor_colors` is true
+    dim_foreground:    '#dbdbdb'
+    bright_foreground: '#d9d9d9'
+    dim_background:    '#202020' # not sure
+    bright_background: '#3a3a3a' # not sure
+
+  # Cursor colors
   cursor:
-    text: '0x1d1f21'
-    cursor: '0xc5c8c6'
+    text:   '#2c2c2c'
+    cursor: '#d9d9d9'
 
   # Normal colors
   normal:
-    black:   '0x1d1f21'
-    red:     '0xcc6666'
-    green:   '0xb5bd68'
-    yellow:  '0xf0c674'
-    blue:    '0x81a2be'
-    magenta: '0xb294bb'
-    cyan:    '0x8abeb7'
-    white:   '0xc5c8c6'
+    black:   '#1c1c1c'
+    red:     '#bc5653'
+    green:   '#909d63'
+    yellow:  '#ebc17a'
+    blue:    '#7eaac7'
+    magenta: '#aa6292'
+    cyan:    '#86d3ce'
+    white:   '#cacaca'
 
   # Bright colors
   bright:
-    black:   '0x969896'
-    red:     '0xcc6666'
-    green:   '0xb5bd68'
-    yellow:  '0xf0c674'
-    blue:    '0x81a2be'
-    magenta: '0xb294bb'
-    cyan:    '0x8abeb7'
-    white:   '0xffffff'
+    black:   '#636363'
+    red:     '#bc5653'
+    green:   '#909d63'
+    yellow:  '#ebc17a'
+    blue:    '#7eaac7'
+    magenta: '#aa6292'
+    cyan:    '#86d3ce'
+    white:   '#f7f7f7'
 
-  indexed_colors:
-    - { index: 16, color: '0xde935f' }
-    - { index: 17, color: '0xa3685a' }
-    - { index: 18, color: '0x282a2e' }
-    - { index: 19, color: '0x373b41' }
-    - { index: 20, color: '0xb4b7b4' }
-    - { index: 21, color: '0xe0e0e0' }
-
-#  # Dim colors
-#  #
-#  # If the dim colors are not set, they will be calculated automatically based
-#  # on the `normal` colors.
-#  dim:
-#    black:   '0x14151b'
-#    red:     '0xff2222'
-#    green:   '0x1ef956'
-#    yellow:  '0xebf85b'
-#    blue:    '0x4d5b86'
-#    magenta: '0xff46b0'
-#    cyan:    '0x59dffc'
-#    white:   '0xe6e6d1'
-#    >>>
+  # Dim colors
+  dim:
+    black:   '#232323'
+    red:     '#74423f'
+    green:   '#5e6547'
+    yellow:  '#8b7653'
+    blue:    '#556b79'
+    magenta: '#6e4962'
+    cyan:    '#5c8482'
+    white:   '#828282'
 
   # Indexed Colors
   #
@@ -327,23 +376,6 @@ colors:
 
 # Visual Bell
 # ...
-
-# Colors (Tomorrow Night Bright)
-#colors:
-#  # Default colors
-#  primary:
-#  #  background: '0x000000'
-#  #  foreground: '0xeaeaea'
-#      foreground: '0xebdbb2'
-#      background: '0x282828'
-
-#    # Bright and dim foreground colors
-#    #
-#    # The dimmed foreground color is calculated automatically if it is not present.
-#    # If the bright foreground color is not set, or `draw_bold_text_with_bright_colors`
-#    # is `false`, the normal foreground color will be used.
-#    #dim_foreground: '0x9a9a9a'
-#    #bright_foreground: '0xffffff'
 
  # Cursor colors
  #
@@ -361,45 +393,6 @@ colors:
 selection:
    text: '0x011627'
    background: '0xbec5d4'
-
-# some other colors
-#  # Normal colors
-#  normal:
-#  #  black:   '0x000000'
-#  #  red:     '0xd54e53'
-#  #  green:   '0xb9ca4a'
-#  #  yellow:  '0xe6c547'
-#  #  blue:    '0x7aa6da'
-#  #  magenta: '0xc397d8'
-#  #  cyan:    '0x70c0ba'
-#  #  white:   '0xeaeaea'
-#      black:   '0x1d2021'
-#      red:     '0xfb4934'
-#      green:   '0xb8bb26'
-#      yellow:  '0xfabd2f'
-#      blue:    '0x83a598'
-#      magenta: '0xd3869b'
-#      cyan:    '0x8ec07c'
-#      white:   '0xd5c4a1'
-
-#  # Bright colors
-#  bright:
-#  #  black:   '0x666666'
-#  #  red:     '0xff3334'
-#  #  green:   '0x9ec400'
-#  #  yellow:  '0xe7c547'
-#  #  blue:    '0x7aa6da'
-#  #  magenta: '0xb77ee0'
-#  #  cyan:    '0x54ced6'
-#  #  white:   '0xffffff'
-#      black:   '0x1d2021'
-#      red:     '0xfb4934'
-#      green:   '0xb8bb26'
-#      yellow:  '0xfabd2f'
-#      blue:    '0x83a598'
-#      magenta: '0xd3869b'
-#      cyan:    '0x8ec07c'
-#      white:   '0xd5c4a1'
 
   # Dim colors
   #
