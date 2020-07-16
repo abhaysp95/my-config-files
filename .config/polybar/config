@@ -1,6 +1,7 @@
 [colors]
-; background = ${xrdb:background}
-background = #de1d1f21
+background = ${xrdb:background}
+background1 = ${xrdb:background}
+; background = #ea2d2d2d
 foreground = ${xrdb:foreground}
 red = ${xrdb:color1}
 green = ${xrdb:color2}
@@ -17,12 +18,12 @@ light-magenta = ${xrdb:color13}
 light-cyan = ${xrdb:color14}
 light-grey = ${xrdb:color15}
 light-background = ${xrdb:color8}
-light-black = ${xrdb:color19}
+; light-black = ${xrdb:color8}
 
 ; Size
 [bar/top]
 width  = 100%
-height = 17
+height = 18
 
 ; Offset
 offset-x = 0
@@ -31,7 +32,7 @@ offset-y = 0
 override-redirect = true
 
 ; Position
-bottom = false
+bottom = true
 
 ; Radius
 radius = 0
@@ -40,7 +41,7 @@ radius = 0
 fixed-center = true
 
 ; Colors
-background = ${colors.background}
+background = ${colors.blue}
 foreground = ${colors.foreground}
 
 ; Underline
@@ -60,8 +61,8 @@ module-margin-left  = 0
 module-margin-right = 0
 
 ; font-0 = Source Code Pro:style=Bold:size=8;2
-font-0 = FantasqueSansMono Nerd Font:style=Bold:size=9;2
-font-1 = Font Awesome 5 Free Solid:size=9;2
+font-0 = FantasqueSansMono Nerd Font:style=Bold:size=9;3
+font-1 = Font Awesome 5 Free Solid:size=9;3
 
 ; Modlues
 modules-left   = bspwm xwindow mpd
@@ -112,13 +113,15 @@ content-background = ${colors.foreground}
 type = internal/bspwm
 
 label-focused = %name%
-label-focused-foreground = ${colors.yellow}
-label-focused-background = ${colors.light-black}
-label-focused-underline = ${colors.cyan}
+label-focused-foreground = ${colors.background}
+label-focused-background = ${colors.blue}
+
+; label-focused-underline = ${colors.cyan}
 label-focused-padding = 1
 
 label-occupied = %name%
-label-occupied-foreground = ${colors.light-grey}
+label-occupied-foreground = ${colors.foreground}
+label-occupied-background = ${colors.background1}
 label-occupied-padding = 1
 
 label-urgent = %name%!
@@ -127,6 +130,7 @@ label-urgent-padding = 1
 
 label-empty = %name%
 label-empty-foreground = ${colors.light-background}
+label-empty-background = ${colors.background1}
 label-empty-padding = 1
 
 format-underline =
@@ -141,8 +145,8 @@ scroll-down = bspwm-deskprev
 
 type = internal/xwindow
 label = %title:0:30:...%
-format-foreground = ${colors.grey}
-format-background = ${colors.background}
+format-foreground = ${colors.background}
+format-background = ${colors.blue}
 label-padding = 1
 
 
@@ -184,14 +188,14 @@ bar-progress-indicator = |
 bar-progress-fill = ─
 bar-progress-empty = ─
 
-format-online-foreground  = ${colors.grey}
-format-online-background  = ${colors.background}
-format-playing-foreground = ${colors.grey
-format-playing-background = ${colors.background}
-format-paused-foreground  = ${colors.grey}
-format-paused-background  = ${colors.background}
-format-stopped-foreground = ${colors.grey}
-format-stopped-background = ${colors.background}
+format-online-foreground  = ${colors.background}
+format-online-background  = ${colors.blue}
+format-playing-foreground = ${colors.background}
+format-playing-background = ${colors.blue}
+format-paused-foreground  = ${colors.background}
+format-paused-background  = ${colors.blue}
+format-stopped-foreground = ${colors.background}
+format-stopped-background = ${colors.blue}
 
 format-online-padding = 1
 format-playin-padding = 1
@@ -278,8 +282,8 @@ type = custom/script
 exec = /home/raytracer/.config/polybar/bar_scripts/net_module.sh
 
 format = <label>
-format-background = ${colors.background}
-format-foreground = ${colors.grey}
+format-background = ${colors.blue}
+format-foreground = ${colors.background}
 label = %{A1:get_net.sh:}%output%%{A}
 ;label-foreground = ${colors.grey}
 ;label-background = ${colors.light-black}

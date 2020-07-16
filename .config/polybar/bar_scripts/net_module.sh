@@ -21,26 +21,26 @@ if [ -n "${sys_wifi_name}" ] && [ -z "${sys_ether_name}" ]; then
 		| awk 'BEGIN {IGNORECASE = 1} /general.connection/ {print $2}')
 	connected=" "
 	if [ ${rx_in_kib} -gt 1024 ]; then
-		printf "%s %s %.1fmib %s %.1fmib" "${connected}" "" "$((rx_in_kib / 1024)).$((rx_in_kib % 1024))" \
+		printf " %s %s %.1fmib %s %.1fmib" "${connected}" "" "$((rx_in_kib / 1024)).$((rx_in_kib % 1024))" \
 			"" "$((tx_in_kib / 1024)).$((rx_in_kib % 1024))"
 	elif [ ${tx_in_kib} -gt 1024 ]; then
-		printf "%s %s %.1fmib %s %.1fmib " "${connected}" "" " $((rx_in_kib / 1024)).$((rx_in_kib % 1024))" \
+		printf " %s %s %.1fmib %s %.1fmib " "${connected}" "" " $((rx_in_kib / 1024)).$((rx_in_kib % 1024))" \
 			"" "$((tx_in_kib / 1024)).$((rx_in_kib % 1024))"
 	else
-		printf "%s %skib %skib " "${connected}" " ${rx_in_kib}" " ${tx_in_kib}"
+		printf " %s %skib %skib " "${connected}" " ${rx_in_kib}" " ${tx_in_kib}"
 	fi
 elif [ -n "${sys_ether_name}" ]  && [ -z "${sys_wifi_name}" ]; then
 	ether_name=$(nmcli device show ${sys_ether_name} \
 		| awk 'BEGIN {IGNORECASE = 1} /general.connection/ {print $2}')
 	connected=" "
 	if [ ${rx_in_kib} -gt 1024 ]; then
-		printf "%s %s %.1fmib %s %.1fmib" "${connected}" "" "$((rx_in_kib / 1024)).$((rx_in_kib % 1024))" \
+		printf " %s %s %.1fmib %s %.1fmib" "${connected}" "" "$((rx_in_kib / 1024)).$((rx_in_kib % 1024))" \
 			"" "$((tx_in_kib / 1024)).$((rx_in_kib % 1024))"
 	elif [ ${tx_in_kib} -gt 1024 ]; then
-		printf "%s %s %.1fmib %s %.1fmib " "${connected}" "" " $((rx_in_kib / 1024)).$((rx_in_kib % 1024))" \
+		printf " %s %s %.1fmib %s %.1fmib " "${connected}" "" " $((rx_in_kib / 1024)).$((rx_in_kib % 1024))" \
 			"" "$((tx_in_kib / 1024)).$((rx_in_kib % 1024))"
 	else
-		printf "%s %skib %skib " "${connected}" " ${rx_in_kib}" " ${tx_in_kib}"
+		printf " %s %skib %skib " "${connected}" " ${rx_in_kib}" " ${tx_in_kib}"
 	fi
 elif [ -n "${sys_wifi_name}" ] && [ -n "${sys_ether_name}" ]; then
 	wifi_name=$(nmcli device show ${sys_wifi_name} \
@@ -49,16 +49,16 @@ elif [ -n "${sys_wifi_name}" ] && [ -n "${sys_ether_name}" ]; then
 		| awk 'BEGIN {IGNORECASE = 1} /general.connection/ {print $2}')
 	connected="   "
 	if [ ${rx_in_kib} -gt 1024 ]; then
-		printf "%s %s %.1fmib %s %.1fmib" "${connected}" "" "$((rx_in_kib / 1024)).$((rx_in_kib % 1024))" \
+		printf " %s %s %.1fmib %s %.1fmib" "${connected}" "" "$((rx_in_kib / 1024)).$((rx_in_kib % 1024))" \
 			"" "$((tx_in_kib / 1024)).$((rx_in_kib % 1024))"
 	elif [ ${tx_in_kib} -gt 1024 ]; then
-		printf "%s %s %.1fmib %s %.1fmib " "${connected}" "" " $((rx_in_kib / 1024)).$((rx_in_kib % 1024))" \
+		printf " %s %s %.1fmib %s %.1fmib " "${connected}" "" " $((rx_in_kib / 1024)).$((rx_in_kib % 1024))" \
 			"" "$((tx_in_kib / 1024)).$((rx_in_kib % 1024))"
 	else
-		printf "%s %skib %skib " "${connected}" " ${rx_in_kib}" " ${tx_in_kib}"
+		printf " %s %skib %skib " "${connected}" " ${rx_in_kib}" " ${tx_in_kib}"
 	fi
 else
-	printf "%s\n" " "
+	printf " %s\n" " "
 fi
 
 echo "${rxcurrent} ${txcurrent}" > "$logfile"
