@@ -1,0 +1,8 @@
+# set themes to "zenburn"
+--theme="OneHalfDark"
+
+# show line numbers, Git modifications and file headers(but not grid)
+--style="numbers,changes,header,plain,snip,grid"
+
+# use italic text in terminal(not supported in all terminals)
+--italic-text=always
