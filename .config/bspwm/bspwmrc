@@ -17,8 +17,9 @@ bspc rule -r "*"
 ###---MONITORS---###
 my_monitor="$(bspc query --monitors --names)"
 #bspc monitor "$my_monitor" -d 1 2 3 4 5 6 7 8 9
-bspc monitor "$my_monitor" -d                
-
+#bspc monitor "$my_monitor" -d                
+#bspc monitor "$my_monitor" -d         
+bspc monitor "$my_monitor" -d         
 ###---Global Settings---###
 
 # spawns new node on left with spiral
@@ -49,15 +50,15 @@ bspc config active_locked_border_color "#ff0000"
 bspc config presel_feedback_color "#5e81ac"
 
 ###---Monitor And Desktop Settings----###
-bspc config top_padding -4
-bspc config bottom_padding 15
-bspc config left_padding -4
-bspc config right_padding -4
+bspc config top_padding 16
+bspc config bottom_padding 16
+bspc config left_padding 0
+bspc config right_padding 0
 bspc config border_width 1
 bspc config window_gap 6
 bspc config split_ratio 0.55
-bspc config borderless_monocle false
-# bspc config gapless_monocle true
+bspc config borderless_monocle true
+bspc config gapless_monocle false
 bspc config single_monocle true
 
 ###---Rules---###
