@@ -12,5 +12,7 @@ echo "---" | tee -a /tmp/polybar.log
 # polybar bar2 >>/tmp/polybar2.log 2>&1 &
 
 echo "Bars launched..."
-polybar top &
-#polybar bottom &
+# polybar top &
+# polybar bottom &
+polybar top -c ~/.config/polybar/config-top.ini &
+polybar bottom -c ~/.config/polybar/config-bottom.ini &
