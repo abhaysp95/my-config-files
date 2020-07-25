@@ -1,17 +1,7 @@
-#  ZSH CURRENT PROMPT
-
-
-# Issue:-
-# current issue, it takes a enter to take effect for new thing
-# like, if len_pwd gets greater than 20 one time, you have to
-# press enter again to have it work
-
-# autoloads
 autoload -U colors && colors
 setopt PROMPT_SUBST
 autoload -Uz vcs_info
 
-# git untracked
 function +vi-git-untracked() {
 	if [[ $(git rev-parse --is-inside-work-tree 2> /dev/null) == 'true' ]] && \
   [[ $(git ls-files --other --directory --exclude-standard | sed q | wc -l | tr -d ' ') == 1 ]] ; then
@@ -49,8 +39,6 @@ function +vi-git-stash() {
 	fi
 }
 
-
-# vcs info
 zstyle ':vcs:info:*' enable git
 zstyle ':vcs_info:git*:*' get-revision true
 zstyle ':vcs_info:git*:*' check-for-changes true
@@ -60,70 +48,34 @@ zstyle ':vcs_info:git*:*' check-for-changes true
 zstyle ':vcs_info:*' stagedstr 'A'
 zstyle ':vcs_info:*' unstagedstr 'M'
 # zstyle ':vcs_info:*' actionformats '%f(%F{2}%b%F{3}|%F{1}%a%f)  '
-zstyle ':vcs_info:*' actionformats '%b|%a'
+zstyle ':vcs_info:*' actionformats '%b|%a  '
 # format the git part
 # zstyle ':vcs_info:*' formats '%f%b %F{2}%c%F{3}%u%m%f'
-zstyle ':vcs_info:*' formats ' שׂ %b%c%u%m'
+zstyle ':vcs_info:*' formats 'שׂ %b %c%u%m'
 zstyle ':vcs_info:git*+set-message:*' hooks git-untracked git-stash git-st
 zstyle ':vcs_info:*' enable git
 #zstyle ':vcs_info:*+*:*' debug true
-# שׂ
-
+# 
 
 # function executed just after hiting enter
 preexec() {
 	cmd_start="$SECONDS"
-}  # check out more about preexec
+}
 
-# function executed just before showing prompt
 precmd() {
-	get_width
 	vcs_info
+	git_change
 	set_virtualenv
+	shrink
 	local cmd_end="$SECONDS"
 	elapsed=$((cmd_end-cmd_start))
 }
-# pwd_len
-# git_change
-len_pwd=0
 
 function set_virtualenv() {
 	if [ -z "$VIRTUAL_ENV" ]; then
 		python_venv=''
 	else
-		python_venv=$(printf "(%s) " "$(basename $VIRTUAL_ENV)")
-	fi
-}
-
-function check_venv() {
-	if [[ $python_venv == (*) ]]; then
-		echo "yes"
-	else
-		echo "no"
-	fi
-}
-
-function get_width() {
-	width=$(tput cols)
-	if [ ${width} -ge 70 ]; then
-		git_change
-		shrink "large"
-	elif [ ${width} -ge 60 ]; then
-		if [ ${len_pwd} -le 20 ] && [[ $python_venv == (*) ]]; then
-			git_change
-			shrink "large"
-		else
-			shrink "large"
-			right_prompt
-		fi
-	else
-		if [ ${len_pwd} -ge 20 ] && [[ $python_venv == (*) ]]; then
-			shrink "small"
-			right_prompt
-		else
-			shrink "large"
-			right_prompt
-		fi
+		python_venv="$(printf "%s%s%s" "(" "$(basename $VIRTUAL_ENV)" ")")"
 	fi
 }
 
@@ -133,10 +85,7 @@ function shrink() {
 	paths=( ${(s:/:)paths} )
 
 	if [ "$(pwd | cut -d '/' -f 2)" != "home" ]; then
-		cur_dir+='#'
-		if [ "${#paths[@]}" -ne 0 ]; then
-			cur_dir+='/'
-		fi
+		cur_dir+='#/'
 	fi
 
 	count=0
@@ -150,36 +99,26 @@ function shrink() {
 			cur_dir+="${paths[$count]}"
 		fi
 	done
-	len_pwd=${#cur_dir}
-	if [ $1 = "small" ]; then
-		cur_dir=''
-	fi
 }
 
 function git_change() {
 	if [[ -n ${vcs_info_msg_0_} ]]; then
 		STATUS=$(command git status --porcelain 2> /dev/null | tail -n1)
 		if [[ -n $STATUS ]]; then
-			right_prompt  # see the function below
-			RPROMPT+='%F{red}${vcs_info_msg_0_}%f'
+			left_prompt  # see the function below
+			PROMPT+='%F{red}${vcs_info_msg_0_}%f'
+			PROMPT+='%F{green} $ %f'
 		else
-			right_prompt
-			RPROMPT+='%F{cyan}${vcs_info_msg_0_}%f'
+			left_prompt
+			PROMPT+='%F{cyan}${vcs_info_msg_0_}%f'
+			PROMPT+='%F{green} $ %f'
 		fi
 	else
-		right_prompt
-		RPROMPT+=''
+		left_prompt
+		PROMPT+='%F{green}$ %f'
+		PROMPT+=''
 	fi
 }
-
-#function pwd_len() {
-	#echo "${#cur_dir}"
-	#if [ ${#cur_dir} -ge 10 ]; then
-		#echo "yes"
-	#else
-		#echo "no"
-	#fi
-#}
 
 # zstyle ':vcs_info:git:*' formats '%b '
 
@@ -192,22 +131,19 @@ function put_spacing() {
 function left_prompt() {
 	PROMPT=''
 	PROMPT+='%(1j,%F{red}%j %f,)'
-	PROMPT+='%F{yellow}${python_venv}%f'
-	PROMPT+='${vim_mode}'
-	vim_ins_mode='%F{green}%B$ %b%f'
-	vim_cmd_mode='%F{red}%B$ %b%f'
-	vim_mode=$vim_ins_mode
 	# PROMPT+='%F{grey}%B%20<..<%~%<<%b%f'
+	PROMPT+='%F{blue}${cur_dir}%f'
+	PROMPT+='%F{yellow}${python_venv}%f '
 }
-left_prompt
 
-function right_prompt() {
-	RPROMPT=''
-	RPROMPT+='%(?,,%F{red}%B✗ %? %b%f)'
-	# RPROMPT+='%F{green}%B$elapsed%b%f'
-	# RPROMPT+='%F{green}%Bs %b%f'
-	RPROMPT+='%F{blue}%B${cur_dir}%b%f'
-}
+RPROMPT=''
+RPROMPT+='%F{green}$elapsed%f'
+RPROMPT+='%F{green}s %f'
+RPROMPT+='%(?,,%F{red}✗ %? %f)'
+RPROMPT+='${vim_mode}'
+vim_ins_mode='%F{blue}I %f'
+vim_cmd_mode='%F{grey}N %f'
+vim_mode=$vim_ins_mode
 
 function zle-keymap-select {
     vim_mode="${${KEYMAP/vicmd/${vim_cmd_mode}}/(main|viins)/${vim_ins_mode}}"
