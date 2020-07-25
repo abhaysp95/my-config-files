@@ -80,12 +80,13 @@ precmd() {
 	get_width
 	vcs_info
 	set_virtualenv
+	left_prompt
 	local cmd_end="$SECONDS"
 	elapsed=$((cmd_end-cmd_start))
 }
 # pwd_len
 # git_change
-len_pwd=0
+len_pwd=0  # gives a numeric value on new terminal session
 
 function set_virtualenv() {
 	if [ -z "$VIRTUAL_ENV" ]; then
@@ -199,7 +200,6 @@ function left_prompt() {
 	vim_mode=$vim_ins_mode
 	# PROMPT+='%F{grey}%B%20<..<%~%<<%b%f'
 }
-left_prompt
 
 function right_prompt() {
 	RPROMPT=''
