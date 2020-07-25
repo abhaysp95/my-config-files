@@ -16,15 +16,15 @@ MAX_PWD_LENGTH=15
 function shorten_pwd {
 	# this function ensures that the PWD string doesn't exceed $MAX_PWD_LENGTH characters
 	PWD=$(pwd)
-# if truncated, replace truncated part with this string:
+	# if truncated, replace truncated part with this string:
 	REPLACE="/.."
-# determine part of path within HOME, or entire path if not in HOME
+	# determine part of path within HOME, or entire path if not in HOME
 	RESIDUAL=${PWD#$HOME}
-# compare RESIDUAL with PWD to determine whether we are in HOME or not
+	# compare RESIDUAL with PWD to determine whether we are in HOME or not
 	if [ X"$RESIDUAL" != X"$PWD" ]; then
 		PREFIX="~"
 	fi
-# check if RESIDUAL path need truncating to keep total length below MAX_PWD_LENGTH
+	# check if RESIDUAL path need truncating to keep total length below MAX_PWD_LENGTH
 	# compensate for replacement string
 	TRUNC_LENGTH=$(($MAX_PWD_LENGTH - ${#PREFIX} - ${#REPLACE} - 1))
 	NORMAL=${PREFIX}${RESIDUAL}
@@ -37,7 +37,6 @@ function shorten_pwd {
 	# return to caller
 	echo $newPWD
 }
-# >>>
 
 Err_Code() {
 	echo -e '\e[1;31m'error code $?'\e[m';
