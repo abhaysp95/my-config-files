@@ -48,7 +48,7 @@ zstyle ':vcs_info:git*:*' check-for-changes true
 zstyle ':vcs_info:*' stagedstr 'A'
 zstyle ':vcs_info:*' unstagedstr 'M'
 # zstyle ':vcs_info:*' actionformats '%f(%F{2}%b%F{3}|%F{1}%a%f)  '
-zstyle ':vcs_info:*' actionformats '%b|%a  '
+zstyle ':vcs_info:*' actionformats '%b|%a '
 # format the git part
 # zstyle ':vcs_info:*' formats '%f%b %F{2}%c%F{3}%u%m%f'
 zstyle ':vcs_info:*' formats 'שׂ %b %c%u%m'
