@@ -91,4 +91,6 @@ map J zoom out
 
 map i recolor
 
+unmap t
+unmap s
 map ts toggle_statusbar
