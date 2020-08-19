@@ -138,7 +138,12 @@ watch=all                        # watch all logins
 logcheck=30                     # every 30 seconds
 WATCHFMT="%n from %M has %a tty%1 at %T %W"
 
+# gettting aliases
 for file in ~/.config/shellaliases/*; do source "$file"; done
+
+# defining PS3
+PS3=''
+PS3+='?>'
 
 #neofetch | lolcat -t
 #pfetch
@@ -154,19 +159,10 @@ source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# get colorful man page
-#export PAGER="most"
-source /home/raytracer/.gem/ruby/2.7.0/gems/colorls-1.3.3/lib/tab_complete.sh
 
-# man () {
-# 	LESS_TERMCAP_md=$'\e[01;33m' \
-# 	LESS_TERMCAP_me=$'\e[0m' \
-# 	LESS_TERMCAP_se=$'\e[0m' \
-# 	LESS_TERMCAP_so=$'\e[01;44;32m' \
-# 	LESS_TERMCAP_ue=$'\e[0m' \
-# 	LESS_TERMCAP_us=$'\e[01;31m' \
-# 	command man "$@"
-# }
+# get colorful man page
+# export PAGER="most"
+# source /home/raytracer/.gem/ruby/2.7.0/gems/colorls-1.3.3/lib/tab_complete.sh
 
 ## coloring man pages
 # start blinking
@@ -183,118 +179,12 @@ export LESS_TERMCAP_us=$(tput smul; tput bold; tput setaf 1)	# red
 export LESS_TERMCAP_me=$(tput sgr0)
 
 
-### broot ###
-source /home/raytracer/.config/broot/launcher/bash/br
-
 ### insultor ###
 if [ -f /etc/bash.command-not-found ]; then
 	. /etc/bash.command-not-found
 fi
 
 mapp
-
-# source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-#ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#ff00ff,bg=cyan,bold,underline"
-# ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#585858,bg=#181818,bold,underline"
-source /home/raytracer/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-## spaceship prompt configuration ##
-
-# SPACESHIP_RPROMPT_ORDER=(
-# 	battery
-# 	time
-# 	vi_mode
-# )
-
-#SPACESHIP_PROMPT_ORDER=(
-#	user
-#	dir
-#	host
-#	git
-#	hg
-#	package
-#	node
-#	ruby
-#	elixir
-#	xcode
-#	swift
-#	golang
-#	php
-#	rust
-#	haskell
-#	julia
-#	docker
-#	aws
-#	venv
-#	conda
-#	pyenv
-#	dotnet
-#	ember
-#	kubectl
-#	terraform
-#	exec_time
-#	line_sep
-#	vi_mode
-#	jobs
-#	char
-#	# exit_code
-#)
-
-#SPACESHIP_PROMPT_ADD_NEWLINE=true
-#SPACESHIP_PROMPT_SEPARATE_LINE=	true
-#SPACESHIP_CHAR_COLOR_SUCCESS='green'
-#SPACESHIP_CHAR_COLOR_FAILURE='red'
-#SPACESHIP_CHAR_COLOR_SECONDARY='yellow'
-#SPACESHIP_TIME_SHOW=true
-#SPACESHIP_USER_COLOR_ROOT='red'
-#SPACESHIP_PACKAGE_SHOW=false
-#SPACESHIP_RUBY_SHOW=false
-#SPACESHIP_ELM_SHOW=false
-#SPACESHIP_ELIXIR_SHOW=false
-#SPACESHIP_SWIFT_SHOW_LOCAL=false
-#SPACESHIP_HASKELL_SHOW=true
-#SPACESHIP_JULIA_SHOW=false
-#SPACESHIP_AWS_SHOW=false
-#SPACESHIP_VENV_SHOW=false
-#SPACESHIP_CONDA_SHOW=false
-#SPACESHIP_DOTNET_SHOW=false
-#SPACESHIP_EMBER_SHOW=false
-#SPACESHIP_KUBECTL_SHOW=false
-#SPACESHIP_TERRAFORM_SHOW=false
-#SPACESHIP_EXEC_TIME_SHOW=true
-#SPACESHIP_EXEC_TIME_PREFIX='consumed '
-#SPACESHIP_EXEC_TIME_ELAPSED='0'
-#SPACESHIP_BATTERY_SHOW=true
-#SPACESHIP_BATTERY_THRESHOLD='101'
-#SPACESHIP_VI_MODE_SHOW=true
-##SPACESHIP_VI_MODE_PREFIX='in '
-#SPACESHIP_VI_MODE_INSERT='[Ins]'
-#SPACESHIP_VI_MODE_NORMAL='[Norm]'
-#SPACESHIP_VI_MODE_COLOR='cyan'
-#SPACESHIP_EXIT_CODE_SHOW=true
-
-### Spaceship prompt ##
-
-#autoload -U promptinit; promptinit
-#prompt spaceship
-
-# source solarized8
-#source $HOME/.config/nvim/plugged/vim-solarized8/scripts/solarized8.sh
-
-# corona_check
-#corona_check &
-## liquidprompt
-# [[ $- = *i* ]] && source ~/Downloads/git-materials/liquidprompt/liquidprompt
-# source ~/.zsh/learning_prompt.zsh
-
-# pure prompt
-# fpath+=~/.zsh/pure
-# autoload -U promptinit; promptinit
-# prompt pure
-# PURE_CMD_MAX_EXEC_TIME=1
-
-# using z.lua
-eval "$(lua ~/.zsh/z.lua/z.lua --init enhanced once zsh)"
 
 # setting dynamic title as working directory ------------------
 case $TERM in
@@ -341,41 +231,21 @@ function popdir() {echo "popd"; popd; zle reset-prompt; zle redisplay}
 zle -N popdir
 bindkey '^[pl' popdir
 
-function awesome_magicenter {
-	figlet -f /usr/share/figlet/fonts/drpepper "raytracer"
-	# figlet -f mnemonic "$(printf '\t%s' "$(pwd)")"
-	printf 'pwd -> %s' "$(pwd)"
-}
+
+
+# visual customization
 
 # source ~/.zsh/minimal/minimal.zsh
-source ~/.zsh/current_prompt.zsh
+[ -f ~/.zsh/current_prompt.zsh ] && source ~/.zsh/current_prompt.zsh
 
-# minimalprompt setup <<<
-MNML_OK_COLOR=4
-MNML_ERR_COLOR=1
-MNML_BGJOB_MODE=2
-MNML_USER_CHAR='⮝'
-MNML_INSERT_CHAR='›'
-MNML_NORMAL_CHAR='·'
-MNML_ELLIPSIS_CHAR='..'
+# some extra features
+[ -f ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh ] && source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+[ -f ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh ] && source ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
+[ -f ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# mnml_pyenv mnml_ssh mnml_me_git mnml_files mnml_me_dirs mnml_me_git mnml_me_ls
-MNML_PROMPT=(mnml_err mnml_jobs mnml_status 'mnml_cwd 2 10' mnml_keymap);
-MNML_RPROMPT=(mnml_git);
-MNML_INFOLN=(mnml_err mnml_jobs mnml_uhp);
-MNML_MAGICENTER=(awesome_magicenter mnml_me_dirs mnml_me_git);
-
-# Codi
-# Usage: codi [filetype] [filename]
-codi() {
-  local syntax="${1:-python}"
-  shift
-  vim -c \
-    "let g:startify_disable_at_vimenter = 1 |\
-    set bt=nofile ls=0 noru nonu nornu |\
-    hi ColorColumn ctermbg=NONE |\
-    hi VertSplit ctermbg=NONE |\
-    hi NonText ctermfg=0 |\
-    Codi $syntax" "$@"
-}
-# >>>
+# zsh-history-substring-search
+# keybinding setting (like fzf)
+bindkey '^n' history-substring-search-up  # starts from most recent
+bindkey '^p' history-substring-search-down  # reverse of upward
+bindkey -M vicmd '^[n' history-substring-search-up
+bindkey -M vicmd '^[p' history-substring-search-down
