@@ -128,7 +128,7 @@ export EDITOR=nvim              # Meh.
 
 # automatic ls, whenever cd/pusd etc.
 chpwd() {
-	exa --grid -F --group-directories-first
+	ls --color --classify -F --group-directories-first
 }
 
 ##
