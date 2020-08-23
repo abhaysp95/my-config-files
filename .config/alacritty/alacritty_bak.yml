@@ -298,6 +298,35 @@ font:
 #draw_bold_text_with_bright_colors: true
 
 
+
+# tokyonight-night
+colors:
+  primary:
+    background: '0x1a1b26'
+    foreground: '0xa9b1d6'
+
+  # Normal colors
+  normal:
+    black:   '0x32344a'
+    red:     '0xf7768e'
+    green:   '0x9ece6a'
+    yellow:  '0xe0af68'
+    blue:    '0x7aa2f7'
+    magenta: '0xad8ee6'
+    cyan:    '0x449dab'
+    white:   '0x787c99'
+
+  # Bright colors
+  bright:
+    black:   '0x444b6a'
+    red:     '0xff7a93'
+    green:   '0xb9f27c'
+    yellow:  '0xff9e64'
+    blue:    '0x7da6ff'
+    magenta: '0xbb9af7'
+    cyan:    '0x0db9d7'
+    white:   '0xacb0d0'
+
   # Indexed Colors
   #
   # The indexed colors include all colors from 16 to 256.
@@ -667,29 +696,3 @@ key_bindings:
   - { key: PageDown,  mods: Shift,   action: ScrollPageDown, mode: ~Alt       }
   - { key: Home,      mods: Shift,   action: ScrollToTop,    mode: ~Alt       }
   - { key: End,       mods: Shift,   action: ScrollToBottom, mode: ~Alt       }
-
-# gruvbox material <<<
-colors:
-  primary:
-    foreground : '0xd4be98'
-    background : '0x1d2021'
-
-  normal    :
-    black   : '0x1d2021'
-    red     : '0xea6962'
-    green   : '0xa9b665'
-    yellow  : '0xd8a657'
-    blue    : '0x80aa9e'
-    magenta : '0xd3869b'
-    cyan    : '0x8bba7f'
-    white   : '0xbdae93'
-
-  bright    :
-    black   : '0x928374'
-    red     : '0xea6962'
-    green   : '0xa9b665'
-    yellow  : '0xd8a657'
-    blue    : '0x80aa9e'
-    magenta : '0xd3869b'
-    cyan    : '0x8bba7f'
-    white   : '0xd4be98'

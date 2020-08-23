@@ -1,3 +1,59 @@
+# tokyo-night storm
+
+colors:
+  primary:
+    background: '0x24283b'
+    foreground: '0xa9b1d6'
+
+  # Normal colors
+  normal:
+    black:   '0x32344a'
+    red:     '0xf7768e'
+    green:   '0x9ece6a'
+    yellow:  '0xe0af68'
+    blue:    '0x7aa2f7'
+    magenta: '0xad8ee6'
+    cyan:    '0x449dab'
+    white:   '0x9699a8'
+
+  # Bright colors
+  bright:
+    black:   '0x444b6a'
+    red:     '0xff7a93'
+    green:   '0xb9f27c'
+    yellow:  '0xff9e64'
+    blue:    '0x7da6ff'
+    magenta: '0xbb9af7'
+    cyan:    '0x0db9d7'
+    white:   '0xacb0d0'
+
+# Xcodedarkhc
+colors        :
+  primary     :
+    foreground: '#ffffff'
+    background: '#1f1f24'
+  cursor      :
+    text      :
+    cursor    :
+  normal      :
+    black     : '#43454b'
+    red       : '#ff8a7a'
+    green     : '#83c9bc'
+    yellow    : '#d9c668'
+    blue      : '#4ec4e6'
+    magenta   : '#ff85b8'
+    cyan      : '#cda1ff'
+    white     : '#ffffff'
+  bright      :
+    black     : '#838991'
+    red       : '#ff8a7a'
+    green     : '#b1faeb'
+    yellow    : '#ffa14f'
+    blue      : '#6bdfff'
+    magenta   : '#ff85b8'
+    cyan      : '#e5cfff'
+    white     : '#ffffff'
+
 # Apprentice Colorscheme
 
 colors:
