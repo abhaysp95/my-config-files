@@ -1,0 +1,36 @@
+
+
+
+
+
+
+# altas theme(duo tone)
+
+colors:
+  # Default colors
+  primary:
+    background: '0x212121'
+    foreground: '0xc0c0c0'
+
+  # Normal colors
+  normal:
+    black:   '0x212121'
+    red:     '0xc0c0c0'
+    green:   '0xc0c0c0'
+    yellow:  '0xc0c0c0'
+    blue:    '0xc0c0c0'
+    magenta: '0xc0c0c0'
+    cyan:    '0xc0c0c0'
+    white:   '0xc0c0c0'
+
+  # Bright colors
+  bright:
+    black:   '0xc0c0c0'
+    red:     '0xc0c0c0'
+    green:   '0xc0c0c0'
+    yellow:  '0xc0c0c0'
+    blue:    '0xc0c0c0'
+    magenta: '0xc0c0c0'
+    cyan:    '0xc0c0c0'
+    white:   '0xffffff'
+

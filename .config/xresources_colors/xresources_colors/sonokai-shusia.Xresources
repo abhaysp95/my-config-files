@@ -1,0 +1,32 @@
+
+
+
+
+!! sonokai-shusia
+
+*.background: #2d2a2e
+*.foreground: #e3e1e4
+
+*.color0: #1a181a
+*.color8: #1a181a
+
+*.color1: #f85e84
+*.color9: #f85e84
+
+*.color2: #9ecd6f
+*.color10: #9ecd6f
+
+*.color3: #e5c463
+*.color11: #e5c463
+
+*.color4: #7accd7
+*.color12: #7accd7
+
+*.color5: #ab9df2
+*.color13: #ab9df2
+
+*.color6: #ef9062
+*.color14: #ef9062
+
+*.color7: #e3e1e4
+*.color15: #e3e1e4

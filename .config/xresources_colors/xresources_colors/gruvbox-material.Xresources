@@ -1,0 +1,37 @@
+
+
+
+
+!!gruvbox-material */
+!! hard contrast : *background: #1d2021 */
+*.background    : #1d2021
+! soft contrast: *background: #32302f
+*.foreground    : #d4be98
+!! Black + DarkGrey
+*.color0        : #1d2021
+*.color8        : #928374
+!! DarkRed + Red
+*.color1        : #ea6962
+*.color9        : #ea6962
+!! DarkGreen + Green
+*.color2        : #a9b665
+*.color10       : #a9b665
+!! DarkYellow + Yellow
+*.color3        : #d8a657
+*.color11       : #d8a657
+!! DarkBlue + Blue
+*.color4        : #80aa9e
+*.color12       : #80aa9e
+!! DarkMagenta + Magenta
+*.color5        : #d3869b
+*.color13       : #d3869b
+!! DarkCyan + Cyan
+*.color6        : #8bba7f
+*.color14       : #8bba7f
+!! LightGrey + White
+*.color7        : #bdae93
+*.color15       : #d4be98
+
+
+
+

@@ -1,0 +1,33 @@
+
+
+
+!! sonokai-maia
+
+*.background: #273136
+*.foreground: #e1e2e3
+
+*.color0 : #1c1e1f
+*.color8  : #1c1e1f
+
+*.color1 : #f76c7c
+*.color9  : #f76c7c
+
+*.color2 : #9cd57b
+*.color10 : #9cd57b
+
+*.color3 : #e3d367
+*.color11 : #e3d367
+
+*.color4 : #78cee9
+*.color12 : #78cee9
+
+*.color5 : #baa0f8
+*.color13 : #baa0f8
+
+*.color6 : #f3a96a
+*.color14 : #f3a96a
+
+*.color7 : #e1e2e3
+*.color15 : #e1e2e3
+
+
