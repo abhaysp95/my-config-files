@@ -1,8 +1,8 @@
 # use neovim for vim if present
-command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
+# command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
 alias sv="sudo nvim"
 
-alias vla="nvim ~/.config/shellaliases/.aliases"
+alias vla="nvim ~/.config/shellaliases"
 alias zshc="nvim ~/.zshrc"
 alias i3conf="nvim ~/.config/i3/config"
 alias stconf="nvim ~/st/.Xdefaults"
@@ -89,6 +89,9 @@ alias sbga='setbg ~/Pictures/bgwallpapers'
 
 # open man in vim
 alias miv='sh ~/.local/bin/.scripts/maninvim'
+
+# devour
+alias dsxiv='devour.sh sxiv'
 
 # look through pacman and yay
 # alias lookpac='pacman -Slq | fzf -m --preview 'cat <(pacman -Si {1}) <(pacman -Fl {1} | awk "{print \$2}")' | xargs -ro sudo pacman -S'
