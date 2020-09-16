@@ -89,7 +89,7 @@ super + ctrl + space
 	bspc node -p cancel
 
 # manual partiotion the container
-super + alt + {h,j,k,l}
+super + ctrl + {h,j,k,l}
 	bspc node -p {west,south,north,east}
 
 # expand window by moving one of its side outward
@@ -129,6 +129,9 @@ super + control + {h,j,k,l}
 super + {t,shift + t,f,shift + f}
 	bspc {node -t tiled,node -t pseudo_tiled,desktop -l next,node -t \~fullscreen}
 
+# super + {shift + F9, F9, F10}
+# {crystal.sh --toggle,crystal.sh --navigate,crystal.sh --close}
+
 super + ctrl + {minus,equal}
 	{light -U 5 && dunstify --icon="~/.cache/notify-icons/yellow-bulb.png" -t 500 "current brightness->"`light -G`,light -A 5 && dunstify --icon="~/.cache/notify-icons/yellow-bulb.png" -t 500 "current brightness is ->"`light -G`}
 
@@ -142,19 +145,22 @@ super+n:{m,c}
 super+i:{m,p,v,d}
 	{manbyrofi,pdfbyrofi,videosbyrofi,caffeine_like}
 
-super + d:{c,d,f,k,s}
-    {get_config.sh,dmenu_run -i -nb '#282828' -sf '#282828' -nf '#ebdbb2' -sb '#d79921' -fn 'Ubuntu Mono Nerd Font Mono 10',rofi -show run -i -show-icons, ((pidof picom && kill $(pidof picom)) || picom) & dunstify -t 2000 'picom toggled',get_script.sh}
+super + d:{c,d,f,k,s,b}
+    {get_config.sh,dmenu_run -i -p 'exec:' -c -l 20,rofi -show combi -columns 3 -i -show-icons, ((pidof picom && kill $(pidof picom)) || picom) & dunstify -t 2000 'picom toggled',get_script.sh, toggle_statusbar}
 
 super + b:{f,p,c,n,q,v}
     {firefox,pcmanfm,telegram-desktop,nautilus,qutebrowser,vivaldi-stable}
 
 # screenshot and recording <<<
 Print
-	/home/raytracer/.local/bin/.scripts/fscrnshot
+	sshots --full
+# /home/raytracer/.local/bin/.scripts/fscrnshot
 shift + Print
-	/home/raytracer/.local/bin/.scripts/fscrnushot
+	sshots --window
+# /home/raytracer/.local/bin/.scripts/fscrnushot
 super + ctrl + Print
-	/home/raytracer/.local/bin/.scripts/fscrnsshot
+	sshots --specific
+# /home/raytracer/.local/bin/.scripts/fscrnsshot
 super + Print
 	/home/raytracer/.local/bin/.scripts/recscreen
 
@@ -178,10 +184,10 @@ super + {_,shift + } bracketleft
 	{/home/raytracer/.local/bin/.scripts/audio_setup/music_seek_prev1.sh,/home/raytracer/.local/bin/.scripts/audio_setup/music_seek_prev2.sh}
 #increase volume
 super + {_,shift + } equal
-    pulsemixer --change-volume +{5,15}
+    pulsemixer --change-volume +{5,15} && notify-send -t 2500 "Current Volume" "$(pulsemixer --get-volume | cut -d' ' -f 1)"
 #decrease volume
 super + {_,shift +} minus
-    pulsemixer --change-volume -{5,15}
+    pulsemixer --change-volume -{5,15} && notify-send -t 2500 "Current Volume" "$(pulsemixer --get-volume | cut -d' ' -f 1)"
 #mute
 super + shift +m
     pulsemixer --toggle-mute && notify-send --icon=~/.cache/notify-icons/mute.png -t 3000 "Volume Toggled"
