@@ -4,6 +4,10 @@ bind 'set completion-ignore-case on'
 PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/\~}\007"; CurDir=`pwd|sed -e "s!$HOME!~!"|sed -re "s!([^/])[^/]+/!\1/!g"`'
 use_color=true
 
+
+# giving exit code 1(that's why moved this above, so its above Err_Code)
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
 # get git branch
 parse_git_branch() {
 	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
@@ -42,6 +46,10 @@ Err_Code() {
 }
 trap Err_Code ERR
 
+get_jobs() {
+	jobs | wc -l | tr -d 0
+}
+
 # prompt PS1
 	if [[ ${EUID} == 0 ]] ; then
 		PS1="\[\033[01;31m\][\h\[\033[01;36m\] \W\[\033[01;31m\]]\$\[\033[00m\] "
@@ -50,7 +58,7 @@ trap Err_Code ERR
 	 PS1=""
 	 # PS1+="\[\033[1;91m\]\[\033[1;35m\]|\t|"
 	 # PS1+="\[\033[m\]\[\e[1;39m\]\u"
-	 PS1+="\[\e[1;36m\]\[\033[m\]\[\033[m\]:"
+	 PS1+="\[\e[1;36m\]\$(get_jobs)\[\033[m\]\[\033[m\]:"
 	 PS1+="\[\e[0m\]\[\e[1;34m\][\$CurDir]\[\e[0;38;5;202m"
 	 PS1+="\]\$(parse_git_branch)\[\e[1;34m\]› \[\e[0m\]"
 	fi
@@ -73,8 +81,8 @@ complete -d cd
 # Enable history appending instead of overwriting.
 shopt -s histappend
 
-# don't use cd
-shopt -s autocd
+# no need for cd
+# shopt -s autocd  # ( turned off currently because it messes up directory stack )
 
 ## history
 export HISTTIMEFORMAT="%h %d %H:%M:%S "
@@ -94,9 +102,6 @@ source_aliases() {
 }
 source_aliases
 
-# giving exit code 1
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
 # # vi-mode
 set -o vi
 
@@ -114,7 +119,7 @@ export PROMPT_COMMAND="${PROMPT_COMMAND};PREV_COMMAND="
 trap 'settitle "$BASH_COMMAND"' DEBUG
 
 # auto ls
-cd () { builtin cd "$@" && ls; }
+# cd () { builtin cd "$@" && ls; }
 
 # key-bindings
 bind -x '"\C-l":clear'
@@ -146,8 +151,6 @@ command_not_found_handle() {
 
 # this is givinng problem of showing no command when a job is on
 # export CLICOLOR=1
-
-xmodmap -e "keycode 108 = Super_R"
 
 export HISTCONTROL=ignoreboth
 

@@ -92,7 +92,7 @@ function set_virtualenv() {
 	if [ -z "$VIRTUAL_ENV" ]; then
 		python_venv=''
 	else
-		python_venv=$(printf "(%s) " "$(basename $VIRTUAL_ENV)")
+		python_venv=$(printf "(%s)" "$(basename $VIRTUAL_ENV)")
 	fi
 }
 
@@ -203,7 +203,7 @@ function left_prompt() {
 
 function right_prompt() {
 	RPROMPT=''
-	RPROMPT+='%(?,,%F{red}%B✗ %? %b%f)'
+	RPROMPT+='%(?,,%F{red}%B✗%? %b%f)'
 	# RPROMPT+='%F{green}%B$elapsed%b%f'
 	# RPROMPT+='%F{green}%Bs %b%f'
 	RPROMPT+='%F{blue}%B${cur_dir}%b%f'
