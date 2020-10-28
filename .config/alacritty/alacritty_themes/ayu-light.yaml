@@ -1,0 +1,10 @@
+
+
+
+colors:
+  primary:
+    background: '0xfafbfc'
+    foreground: '0x24292e'
+
+  normal:
+    red:

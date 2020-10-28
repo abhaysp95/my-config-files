@@ -1,0 +1,37 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+# gotham
+colors         :
+  primary      :
+    foreground : "#98d1ce"
+    background : "#0a0f14"
+    cursorColor: "#98d1ce"
+  normal       :
+    black      : "#0a0f14"
+    red        : "#c33027"
+    green      : "#26a98b"
+    yellow     : "#edb54b"
+    blue       : "#195465"
+    magenta    : "#4e5165"
+    cyan       : "#33859d"
+    white      : "#98d1ce"
+  bright       :
+    black      : "#3a3d42"
+    red        : "#d26939"
+    green      : "#37b893"
+    yellow     : "#245361"
+    blue       : "#277373"
+    magenta    : "#888ba5"
+    cyan       : "#599caa"
+    white      : "#d3ebe9"

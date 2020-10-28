@@ -1,0 +1,29 @@
+
+
+
+# dracula(dwt1)
+colors:
+  primary:
+    #background: '#282a36'
+    background: '#1e1f29'
+    foreground: '#bbc5ff'
+
+  normal:
+    black:   '#101010'
+    red:     '#f07178'
+    green:   '#c3e88d'
+    yellow:  '#ffcb6b'
+    blue:    '#82aaff'
+    magenta: '#c792ea'
+    cyan:    '#89ddff'
+    white:   '#d0d0d0'
+
+  bright:
+    black:   '#434758'
+    red:     '#ff8b92'
+    green:   '#ddffa7'
+    yellow:  '#ffe585'
+    blue:    '#9cc4ff'
+    magenta: '#e1acff'
+    cyan:    '#a3f7ff'
+    white:   '#ffffff'

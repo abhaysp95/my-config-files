@@ -1,0 +1,28 @@
+
+
+
+colors:
+  primary:
+    foreground: '#cbccc6'
+    background: '#1f2430'
+  normal:
+    black:   '#1f2430'
+    red:     '#ff3333'
+    green:   '#a6cc70'
+    yellow:  '#ffa759'
+    blue:    '#5ccfe6'
+    magenta: '#f27983'
+    cyan:    '#77a8d9'
+    white:   '#707a8c'
+  bright:
+    black:   '#5c6773'
+    red:     '#f38779'
+    green:   '#bae67e'
+    yellow:  '#ffd580'
+    blue:    '#73d0ff'
+    magenta: '#d4bfff'
+    cyan:    '#95e6cb'
+    white:   '#cbccc6'
+
+
+
