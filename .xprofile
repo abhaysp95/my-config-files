@@ -1,19 +1,21 @@
 #!/usr/bin/env sh
 
 # sourcing this file to .xinitrc, contains some basic things
-mpd &                      # get the music daemon running
-setbg &                    # sets the new wallpaper everytime opening the laptop
-xrdb ~/.Xresources &       # colors for polybar and urxvt and other xterm utitilities
-sxhkd &                    # keybinds
+mpd &                         # get the music daemon running
+setbg &                       # sets the new wallpaper everytime opening the laptop
+xrdb ~/.Xresources &          # colors for polybar and urxvt and other xterm utitilities
+~/.config/polybar/launch.sh & # statusbar
+sxhkd &                       # keybinds
+clipmenud &  # for clipboard
 #picom --experimental-backends &
-picom &                    # compositor
-dunst &                    # notification daemon
-xset r rate 350 80 &       # get faster key rates
-udiskie -A -t &            # usb daemon utility
-caffeine_like &            # script to toggle between caffeine mode like feature
-mpc crossfade 5 &          # make mpc do crossfade
-mpd_changes.sh &           # show notification on every interaction with mpc
-alert_battery_wrapper.sh & # show notification for different levels of battery
+picom &                       # compositor
+dunst &                       # notification daemon
+xset r rate 350 80 &          # get faster key rates
+udiskie -A -t &               # usb daemon utility
+caffeine_like &               # script to toggle between caffeine mode like feature
+mpc crossfade 5 &             # make mpc do crossfade
+mpd_changes.sh &              # show notification on every interaction with mpc
+notifyChanges.sh --battery &    # show notification for different levels of battery
 notify-send --icon=~/.cache/notify-icons/home.png "Welcome to region of raytracer" "Enjoy!" &
 
 # nitrogen --restore &

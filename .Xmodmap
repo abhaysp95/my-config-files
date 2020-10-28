@@ -1,1 +1,10 @@
-keycode 108 = Super_R
+! keycode 108 = Super_R
+
+clear mod1
+clear mod4
+
+! Make right alt to look like Super_R
+keycode 108 = Super_R NoSymbol Super_R
+
+! Add the Super_L and Super_R keys to the modifier mod4
+add mod4 = Super_L Super_R

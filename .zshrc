@@ -7,7 +7,7 @@
 #░██ ██████ ██████ ░██  ░██░███   ░░█████
 #░░ ░░░░░░ ░░░░░░  ░░   ░░ ░░░     ░░░░░
 #
-# Created by newuser for 5.7.1
+# Created by raytracer
 
 autoload -U colors zsh-mime-setup select-word-style
 colors      # colours
