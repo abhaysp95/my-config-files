@@ -1,0 +1,42 @@
+
+
+
+
+!! embark
+
+*.background: #1e1c31
+*.foreground: #cbe3e7
+
+*.color0: #1e1c31
+*.color8 : #585273
+
+*.color1: #f48fb1
+*.color9 : #f02e6e
+
+*.color2: #a1efd3
+*.color10: #62d196
+
+*.color3: #ffe6b3
+*.color11: #f2b482
+
+*.color4: #91ddff
+*.color12: #65b2ff
+
+*.color5: #d4bfff
+*.color13: #a37acc
+
+*.color6: #87dfeb
+*.color14: #63f2f1
+
+*.color7: #cbe3e7
+*.color15: #8a889d
+
+
+
+
+
+
+
+
+
+

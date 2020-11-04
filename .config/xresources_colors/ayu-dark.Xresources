@@ -1,0 +1,44 @@
+
+
+!! ayu-dark
+
+*.foreground: #b3b1ad
+*.background: #0a0e14
+*.cursorColor: #f29718
+
+*.color0: #0a0e14
+*.color8: #626a73
+
+*.color1: #ff3333
+*.color9: #f07178
+
+*.color2: #c2d94c
+*.color10: #91b362
+
+*.color3: #ffb454
+*.color11: #ffee99
+
+*.color4: #39bae6
+*.color12: #59c2ff
+
+*.color5: #d96c75
+*.color13: #6994bf
+
+*.color6: #95e6cb
+*.color14: #95e6cb
+
+*.color7: #556699
+*.color15: #0a0e14
+
+
+
+
+
+
+
+
+
+
+
+
+

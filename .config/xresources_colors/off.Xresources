@@ -1,0 +1,42 @@
+
+
+
+
+*.background: #080808
+*.foreground: #f1f1f1
+
+*.cursor: #f1f1f1
+
+*.color0: #212121
+*.color8 : #545454
+
+*.color1: #c30771
+*.color9 : #e32791
+
+*.color2: #10a778
+*.color10: #5fd7a7
+
+*.color3: #a89c14
+*.color11: #f3e430
+
+*.color4: #00bec4
+*.color12: #20bbfc
+
+*.color5: #523c79
+*.color13: #6855de
+
+*.color6: #20a5ba
+*.color14: #4fb8cc
+
+*.color7: #f1f1f1
+*.color15: #ffffff
+
+
+
+
+
+
+
+
+
+

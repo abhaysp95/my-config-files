@@ -1,0 +1,43 @@
+
+
+!! ayu-mirage
+
+*.foreground: #cbccc6
+*.background: #1f2430
+
+*.color0: #1f2430
+*.color8: #5c6773
+
+*.color0: #ff3333
+*.color9: #f38779
+
+*.color0: #a6cc70
+*.color10: #bae67e
+
+*.color0: #ffa759
+*.color11: #ffd580
+
+*.color0: #5ccfe6
+*.color12: #73d0ff
+
+*.color0: #f27983
+*.color13: #d4bfff
+
+*.color0: #77a8d9
+*.color14: #95e6cb
+
+*.color0: #707a8c
+*.color15: #cbccc6
+
+
+
+
+
+
+
+
+
+
+
+
+

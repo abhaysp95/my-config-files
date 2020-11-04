@@ -1,0 +1,27 @@
+
+
+
+# palenight-more-dark(custom)
+
+colors        :
+  primary     :
+    background: '#070f22'
+    foreground: '#bfc7d5'
+  normal      :
+    black     : '#292d3e'
+    red       : '#ff5370'
+    green     : '#c3e88d'
+    yellow    : '#f78c6c'
+    blue      : '#82b1ff'
+    magenta   : '#c792ea'
+    cyan      : '#89ddff'
+    white     : '#697098'
+  bright      :
+    black     : '#3e4452'
+    red       : '#ff869a'
+    green     : '#c3e88d'
+    yellow    : '#ffcb6b'
+    blue      : '#939ede'
+    magenta   : '#c792ea'
+    cyan      : '#89ddff'
+    white     : '#bfc7d5'

@@ -1,0 +1,40 @@
+
+
+!! palenight-dark(custom)
+
+*.background: #0d162c
+*.foreground: #bfc7d5
+
+*.color0 : #292d3e
+*.color8 : #3e4452
+
+*.color1 : #ff5370
+*.color9 : #ff869a
+
+*.color2 : #c3e88d
+*.color10 : #c3e88d
+
+*.color3 : #f78c6c
+*.color11 : #ffcb6b
+
+*.color4 : #82b1ff
+*.color12 : #939ede
+
+*.color5 : #c792ea
+*.color13 : #c792ea
+
+*.color6 : #89ddff
+*.color14 : #89ddff
+
+*.color7 : #697098
+*.color15 : #bfc7d5
+
+
+
+
+
+
+
+
+
+

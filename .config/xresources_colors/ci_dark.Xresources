@@ -1,0 +1,52 @@
+
+
+
+*.foreground: #f6f8fa
+*.background: #24292d
+
+*.color0 : #24292e
+*.color8  : #959da5
+
+*.color1 : #f97583
+*.color9  : #f97583
+
+*.color2 : #85e89d
+*.color10 : #85e89d
+
+*.color3 : #ffea7f
+*.color11 : #ffea7f
+
+*.color4 : #79b8ff
+*.color12 : #79b8ff
+
+*.color5 : #b392f0
+*.color13 : #b392f0
+
+*.color6 : #73e3ff
+*.color14 : #73e3ff
+
+*.color7 : #f6f8fa
+*.color15 : #f6f8fa
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*cursor:
+text: #85e89d
+cursor: #24292e
+selection:
+text: #24292e
+background: #c8c8fa*/

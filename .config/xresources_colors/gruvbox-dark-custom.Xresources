@@ -3,7 +3,7 @@
 
 !!gruvbox-material */
 !! hard contrast : *background: #1d2021 */
-*.background    : #1d2021
+*.background    : #10151a
 ! soft contrast: *background: #32302f
 *.foreground    : #d4be98
 !! Black + DarkGrey
