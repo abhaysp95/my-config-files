@@ -56,3 +56,9 @@ export CM_LAUNCHER="rofi"
 # java/tomcat
 export CATALINA_HOME="/opt/tomcat-8.5.59"
 export JAVA_HOME="/usr/lib/jvm/java-11-openjdk"
+
+
+# golang
+export GOPATH="/home/raytracer/Downloads/golib"
+export PATH="$PATH:$GOPATH/bin"
+export GOPATH="$GOPATH:/home/raytracer/Documents/ngo"
