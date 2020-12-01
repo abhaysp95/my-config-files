@@ -1,3 +1,4 @@
+# alias ..="cd .."
 alias ..="cd .."
 alias ..2="cd ../.."
 alias ..3="cd ../../.."
@@ -28,6 +29,7 @@ alias gt.='cd ~/Documents/pdf'
 alias gD='cd ~/Downloads'
 alias gdg='cd ~/Downloads/git-materials'
 alias gdgg='cd ~/Downloads/git-materials/gitlab'
+alias gdgm='cd ~/Downloads/git-materials/my_repos'
 
 alias gc.='cd ~/.config'
 alias gC='cd ~/.cache/cell'
