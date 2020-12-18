@@ -1,0 +1,34 @@
+{
+  "settingsVersion": "1.66",
+  "exclusionRules": [
+    {
+      "pattern": "https://hackerrank.com/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://www.hackerrank.com/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://www.hackerrank.com/*",
+      "passKeys": ""
+    }
+  ],
+  "filterLinkHints": false,
+  "waitForEnterForFilteredHints": true,
+  "hideHud": false,
+  "keyMappings": "# Insert your preferred key mappings here",
+  "linkHintCharacters": "sadfjklewcmpgh",
+  "linkHintNumbers": "0123456789",
+  "newTabUrl": "about:newtab",
+  "nextPatterns": "next,more,newer,>,›,→,»,≫,>>",
+  "previousPatterns": "prev,previous,back,older,<,‹,←,«,≪,<<",
+  "regexFindMode": false,
+  "ignoreKeyboardLayout": false,
+  "scrollStepSize": 60,
+  "smoothScroll": true,
+  "grabBackFocus": false,
+  "searchEngines": "yt: https://www.youtube.com/results?search_query=%s Youtube\ngg: https://www.google.com/search?q=%s Google\nddg: https://duckduckgo.com/?q=%s DuckDuckGo\nwp: https://www.wikipedia.org/w/index.php?title=Special:Search&search=%s Wikipedia\nqw: https://www.qwant.com/?q=%s Qwant",
+  "searchUrl": "https://duckduckgo.com/?q=",
+  "userDefinedLinkHintCss": "/*****************************************************************************/\n/* THEMES */\n/*****************************************************************************/\n\n:root {\n\t--font-size: 15;\n\t--font-weight: normal;\n\t--font: tewi, Source Code Pro, sans;\n\t--padding: 2px;\n\t--shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);\n\n\t/***********************************/\n\t/* Uncomment Theme to Select */\n\t/***********************************/\n\n\n\t/* ---------- Gruvbox Dark ---------- */\n\t   --fg: #ebdbb2;\n\t   --bg: #282828;\n\t   --border: #3c3836;\n\t   --main-fg: #83a598;\n\t   --accent-fg: #b8bb26;\n\n\t/* Unused Alternate Colors */\n\t --bg-dark: #1d2021;\n\t --cyan: #076678;\n\t --purple: #8f3f71;\n\t --red: #fb4934;\n\t --yellow: #fabd2f;\n\n\t/* ---------- Tomorrow Night ---------- */\n\t/* -- DELETE LINE TO ENABLE THEME\n\t   --fg: #C5C8C6;\n\t   --bg: #282A2E;\n\t   --border: #373B41;\n\t   --main-fg: #81A2BE;\n\t   --accent-fg: #52C196;\n\n\t --bg-dark: #1D1F21;\n\t --cyan: #4CB3BC;\n\t --purple: #AC7BBA;\n\t --red: #CC6666;\n\t --yellow: #CBCA77;\n\t   -- DELETE LINE TO ENABLE THEME */\n\n\t/* ---------- NORD ---------- */\n\t/* -- DELETE LINE TO ENABLE THEME\n\t   --fg: #E5E9F0;\n\t   --bg: #2E3440;\n\t   --border: #3B4252;\n\t   --main-fg: #88C0D0;\n\t   --accent-fg: #A3BE8C;\n\t   -- DELETE LINE TO ENABLE THEME */\n\n\t/* Unused Alternate Colors */\n\t/* --bg-dark: #4C566A; */\n\t/* --main-fg-alt: #5E81AC; */\n\t/* --orange: #D08770; */\n\t/* --red: #BF616A; */\n\t/* --yellow: #EBCB8B; */\n\n\t/* ---------- DOOM ONE ---------- */\n\t/* -- DELETE LINE TO ENABLE THEME\n\t   --fg: #51AFEF;\n\t   --bg: #2E3440;\n\t   --border: #282C34;\n\t   --main-fg: #51AFEF;\n\t   --accent-fg: #98be65;\n\t   -- DELETE LINE TO ENABLE THEME */\n\n\t/* Unused Alternate Colors */\n\t/* --bg-dark: #21242B; */\n\t/* --main-fg-alt: #2257A0; */\n\t/* --cyan: #46D9FF; */\n\t/* --orange: #DA8548; */\n\t/* --purple: #C678DD; */\n\t/* --red: #FF6C6B; */\n\t/* --yellow: #ECBE7B; */\n\n\t/* ---------- MONOKAI ---------- */\n\t/* -- DELETE LINE TO ENABLE THEME\n\t   --fg: #F8F8F2;\n\t   --bg: #272822;\n\t   --bg-dark: #1D1E19;\n\t   --border: #2D2E2E;\n\t   --main-fg: #F92660;\n\t   --accent-fg: #E6DB74;\n\t   -- DELETE LINE TO ENABLE THEME */\n\n\t/* Unused Alternate Colors */\n\t/* --red: #E74C3C; */\n\t/* --orange: #FD971F; */\n\t/* --blue: #268BD2; */\n\t/* --violet: #9C91E4; */\n\t/* --cyan: #66D9EF; */\n}\n\n/*****************************************************************************/\n/* CSS */\n/*****************************************************************************/\n\n/* -------- HINTS -------- */\n#vimiumHintMarkerContainer div.internalVimiumHintMarker, #vimiumHintMarkerContainer div.vimiumHintMarker {\nbackground: var(--bg);\nborder: 1px solid var(--border);\n\t\tbox-shadow: var(--shadow);\npadding: 3px 4px;\n}\n\n#vimiumHintMarkerContainer div span {\ncolor: var(--main-fg);\n\t   font-family: var(--font);\n\t   font-size: var(--font-size);\n\t   font-weight: var(--font-weight);\n\t   text-shadow: none;\n}\n\n#vimiumHintMarkerContainer div > .matchingCharacter {\nopacity: 0.3;\n}\n\n#vimiumHintMarkerContainer div > .matchingCharacter ~ span {\ncolor: var(--main-fg);\n}\n\n/* -------- VOMNIBAR -------- */\n#vomnibar {\nanimation: show 200ms cubic-bezier(0, 0, 0.2, 1) forwards;\nbackground: var(--bg);\nborder: none;\n\t\tbox-shadow: var(--shadow);\n}\n\n/* Animate Slide in */\n@keyframes show {\n\t0% {\nopacity: 0;\ntransform: translateY(50px);\n\t}\n\t100% {\nopacity: 1;\ntransform: translateY(0);\n\t}\n}\n\n#vomnibar .vomnibarSearchArea,\n#vomnibar input {\nbackground: transparent;\nborder: none;\n\t\tbox-shadow: none;\ncolor: var(--fg);\n\t   font-family: var(--font);\n\t   font-size: var(--font-size);\n\t   font-weight: var(--font-weight);\n}\n\n#vomnibar .vomnibarSearchArea {\npadding: var(--padding) 30px;\n}\n\n#vomnibar input {\npadding: var(--padding)}\n\n#vomnibar ul {\nbackground: var(--bg);\n\t\t\tborder-top: 1px solid var(--border);\nmargin: 0;\npadding: var(--padding);\n}\n\n#vomnibar li {\n\tborder-bottom: 1px solid var(--border);\npadding: var(--padding);\n}\n\n#vomnibar li .vomnibarTopHalf,\n#vomnibar li .vomnibarBottomHalf {\npadding: var(--padding) 0;\n}\n\n#vomnibar li .vomnibarSource {\ncolor: var(--main-fg);\n\t   font-family: var(--font);\n\t   font-size: var(--font-size);\n\t   font-weight: var(--font-weight);\n}\n\n#vomnibar li em,\n#vomnibar li .vomnibarTitle {\ncolor: var(--main-fg);\n\t   font-family: var(--font);\n\t   font-size: var(--font-size);\n\t   font-weight: var(--font-weight);\n}\n\n#vomnibar li .vomnibarUrl {\ncolor: var(--fg);\n\t   font-family: var(--font);\n\t   font-size: var(--font-size);\n\t   font-weight: var(--font-weight);\n}\n\n#vomnibar li .vomnibarMatch {\ncolor: var(--accent-fg);\n\t   font-weight: normal;\n}\n\n#vomnibar li .vomnibarTitle .vomnibarMatch {\ncolor: var(--main-fg);\n}\n\n#vomnibar li.vomnibarSelected {\n\tbackground-color: var(--border);\n}\n\n/* -------- HUD -------- */\ndiv.vimiumHUD {\nbackground: var(--bg);\nborder: 1px solid var(--border);\n\t\tbox-shadow: var(--shadow);\n}\n\ndiv.vimiumHUD span#hud-find-input,\n\tdiv.vimiumHUD .vimiumHUDSearchAreaInner {\ncolor: var(--fg);\n\t   font-family: var(--font);\n\t   font-size: var(--font-size);\n\t   font-weight: var(--font-weight);\n\t}\n\ndiv.vimiumHUD .hud-find {\n\tbackground-color: transparent;\nborder: none;\n}\n\ndiv.vimiumHUD .vimiumHUDSearchArea {\n\tbackground-color: transparent;\n}"
+}
