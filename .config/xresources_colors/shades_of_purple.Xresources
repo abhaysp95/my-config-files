@@ -1,0 +1,45 @@
+
+
+
+
+!! shades_of_purple
+
+*.background: #1E1E3F
+*.foreground: #FFFFFF
+
+*.color0: #000000
+*.color8: #5C5C61
+
+*.color1: #D52822
+*.color9: #FF000D
+
+*.color2: #3DB72A
+*.color10: #3AD900
+
+*.color3: #FAD000
+*.color11: #FAD000
+
+*.color4: #6943FF
+*.color12: #6943FF
+
+*.color5: #FF628C
+*.color13: #FF628C
+
+*.color6: #9EFFFF
+*.color14: #9EFFFF
+
+*.color7: #DBDBE0
+*.color15: #FFFFFF
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+
+
+
+# colors(github-dark)
+
+
+colors:
+  # Default colors
+  primary:
+    background: '0x24292e'
+    foreground: '0xfafbfc'
+
+  # Normal colors
+  normal:
+    black:   '0x24292e'
+    red:     '0xb31d28'
+    green:   '0x3ebc5c'
+    yellow:  '0xf18338'
+    blue:    '0x005cc5'
+    magenta: '0x45267d'
+    cyan:    '0x669cc2'
+    white:   '0xd7dce1'
+
+  # Bright colors
+  bright:
+    black:   '0x42474c'
+    red:     '0xd73a49'
+    green:   '0x22863a'
+    yellow:  '0xe36209'
+    blue:    '0x5295d4'
+    magenta: '0x6f42c1'
+    cyan:    '0x4dacfd'
+    white:   '0xfafbfc'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

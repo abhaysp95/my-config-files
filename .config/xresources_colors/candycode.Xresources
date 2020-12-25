@@ -1,0 +1,45 @@
+
+
+
+
+
+
+
+
+
+*.foreground: #ffffff
+*.background: #050505
+
+*.color0: #050505
+*.color8 : #444444
+
+*.color1: #ff0011
+*.color9 : #dd4452
+
+*.color2: #39d049
+*.color10: #66d077
+
+*.color3: #eecc18
+*.color11: #eecc44
+
+*.color4: #0044ff
+*.color12: #4093cc
+
+*.color5: #bb88dd
+*.color13: #976398
+
+*.color6: #00bbdd
+*.color14: #3377aa
+
+*.color7: #cccccc
+*.color15: #ffffff
+
+
+
+
+
+
+
+
+
+
