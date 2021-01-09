@@ -35,7 +35,7 @@ function +vi-git-st() {
 		(( $ahead )) && gitstatus+=( "${c3}+${ahead}${c2}" )
 		behind=$(git rev-list HEAD..${hook_com[branch]}@{upstream} 2>/dev/null | wc -l)
 		(( $behind )) && gitstatus+=( "${c4}-${behind}${c2}" )
-		hook_com[branch]="${hook_com[branch]}${(j:/:)gitstatus}"
+		hook_com[branch]=${hook_com[branch]}${(j:/:)gitstatus}
 	fi
 }
 
@@ -63,7 +63,7 @@ zstyle ':vcs_info:*' unstagedstr 'M'
 zstyle ':vcs_info:*' actionformats '%b|%a'
 # format the git part
 # zstyle ':vcs_info:*' formats '%f%b %F{2}%c%F{3}%u%m%f'
-zstyle ':vcs_info:*' formats ' שׂ %b%c%u%m'
+zstyle ':vcs_info:*' formats ' שׂ%b%c%u%m'
 zstyle ':vcs_info:git*+set-message:*' hooks git-untracked git-stash git-st
 zstyle ':vcs_info:*' enable git
 #zstyle ':vcs_info:*+*:*' debug true
@@ -148,7 +148,14 @@ function shrink() {
 			cur_dir+="${cur_folder:0:1}"
 			cur_dir+='/'
 		else
-			cur_dir+="${paths[$count]}"
+			if [ "${#paths[$count]}" -gt 20 ]; then
+				cur_dir+="${paths[$count]:0:8}"
+				cur_dir+="..."
+				start_for_last_part=$(( ${#paths[$count]} - 8 ))
+				cur_dir+="${paths[$count]:${start_for_last_part}:${#paths[$count]}}"
+			else
+				cur_dir+="${paths[$count]}"
+			fi
 		fi
 	done
 	len_pwd=${#cur_dir}
@@ -204,7 +211,7 @@ function left_prompt() {
 function right_prompt() {
 	RPROMPT=''
 	RPROMPT+='%(?,,%F{red}%B✗%? %b%f)'
-	# RPROMPT+='%F{green}%B$elapsed%b%f'
+	RPROMPT+='%F{#4c566a}%B$elapsed %b%f'
 	# RPROMPT+='%F{green}%Bs %b%f'
 	RPROMPT+='%F{blue}%B${cur_dir}%b%f'
 }
