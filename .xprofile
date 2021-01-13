@@ -8,7 +8,7 @@ xrdb ~/.Xresources &          # colors for polybar and urxvt and other xterm uti
 sxhkd &                       # keybinds
 clipmenud &  # for clipboard
 #picom --experimental-backends &
-picom &                       # compositor
+picom --experimental-backends &                       # compositor
 dunst &                       # notification daemon
 xset r rate 350 80 &          # get faster key rates
 udiskie -A -t &               # usb daemon utility
@@ -18,7 +18,7 @@ mpd_changes.sh &              # show notification on every interaction with mpc
 notifyChanges.sh --battery &    # show notification for different levels of battery
 notify-send --icon=~/.cache/notify-icons/home.png "Welcome to region of raytracer" "Enjoy!" &
 
-# nitrogen --restore &
+nitrogen --restore &
 # compton &
 # remaps &		# remaps script for changing Multi_key to super
 # xmodmap -e 'keycode 108 = Super_R'
