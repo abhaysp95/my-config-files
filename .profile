@@ -1,27 +1,36 @@
 export QT_QPA_PLATFORMTHEME="qgnomeplatform"
 # export QT_QPA_PLATFORMTHEME="qt5ct"
-export EDITOR="/usr/local/bin/nvim"
-export TERMINAL="alacritty"
+export EDITOR="nvim"
+export TERMINAL="kitty"
 export TERMINAL2="termite"
 export READER="zathura"
 export FILE="ranger"
 export FILE_MANAGER="pcmanfm"
 export BROWSER="qutebrowser"
 
+
 # Add ~/.local/bin/.scripts and all the subdirectories to the PATH
 #export PATH="$PATH:$(du "$HOME/.local/bin/.scripts/" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
 export PATH="$PATH:$(du "$HOME/.local/bin/.scripts/" | sed '/.*git/d' | cut -f 2 | tr '\n' ':' | sed 's/:*$//')"
 
+
 # for colorls
 export PATH="$PATH:/home/raytracer/.gem/ruby/2.7.0/bin"
+
+
+# for hla(high level assembler)
+export PATH="/usr/hla:$PATH"
+
 
 # for some colors
 export S_COLORS=
 
+
 # for dust
 export PATH="$PATH:$HOME/.cargo/bin"
 
-## coloring man pages <<<
+
+## coloring man pages
 # start blinking
 export LESS_TERMCAP_mb=$(tput bold; tput setaf 2)	# green
 # start bold
@@ -34,7 +43,7 @@ export LESS_TERMCAP_se=$(tput rmso; tput sgr0)
 export LESS_TERMCAP_us=$(tput smul; tput bold; tput setaf 1)	# red
 # end bold, blinking, standout, underline
 export LESS_TERMCAP_me=$(tput sgr0)
-# >>>
+
 
 # fzf environment variable
 # making fzf use fd instead of find
@@ -62,3 +71,11 @@ export JAVA_HOME="/usr/lib/jvm/java-11-openjdk"
 export GOPATH="/home/raytracer/Downloads/golib"
 export PATH="$PATH:$GOPATH/bin"
 export GOPATH="$GOPATH:/home/raytracer/Documents/ngo"
+
+
+# variables for hla(high level assembler)
+export hlalib="/usr/hla/hlalib"
+export hlainc="/usr/hla/include"
+
+#
+source /home/raytracer/env_pass
