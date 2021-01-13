@@ -1,8 +1,11 @@
 #!/usr/bin/env sh
+
+export CALLER_IS="sxiv_imageviewer"
 while read -r file
 do
 	case "$1" in
 		"w") setbg "$file" & ;;
+		"r") rm "$file" && notify-send "File deleted" & ;;
 		"c")
 			[ -z "$destdir" ] && destdir="$(sed "s/\s.*#.*s//;/^\s*$/d" ~/.config/directories | awk '{print $2}' | dmenu -l 20 -i -p "Copy file(s) to where?" | sed "s|~|$HOME|g")"
 			[ -z "$destdir" ] && exit
