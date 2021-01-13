@@ -10,7 +10,7 @@
 # Created by raytracer
 
 autoload -U colors zsh-mime-setup select-word-style
-colors      # colours
+colors      # colors
 zsh-mime-setup      # run everyting as executable
 select-word-style bash      # ctrl+w on bash
 
@@ -70,6 +70,8 @@ zstyle ':completion:*:*killall:*' menu yes select
 zstyle ':completion:*:killall:*' force-list always
 users=(raytracer root)          # don't know and care for others
 zstyle ':completion:*' users $users
+
+kitty + complete setup zsh | source /dev/stdin
 
 #generic completion with --help
 compdef _gnu_generic gcc
@@ -239,9 +241,12 @@ bindkey '^[pl' popdir
 [ -f ~/.zsh/current_prompt.zsh ] && source ~/.zsh/current_prompt.zsh
 
 # some extra features
-[ -f ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh ] && source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-[ -f ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh ] && source ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
-[ -f ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#[ -f ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh ] \
+	#&& source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+[ -f ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh ] \
+	&& source ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
+[ -f ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] \
+	&& source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # zsh-history-substring-search
 # keybinding setting (like fzf)
@@ -249,3 +254,5 @@ bindkey '^n' history-substring-search-up  # starts from most recent
 bindkey '^p' history-substring-search-down  # reverse of upward
 bindkey -M vicmd '^[n' history-substring-search-up
 bindkey -M vicmd '^[p' history-substring-search-down
+
+fpath=(~/.zsh.d $fpath)
