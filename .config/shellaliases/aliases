@@ -93,6 +93,9 @@ alias miv='sh ~/.local/bin/.scripts/maninvim'
 # devour
 alias dsxiv='devour.sh sxiv'
 
+# neofetch with bgimage
+alias neofetch='neofetch --w3m ~/.config/wall.png'
+
 # look through pacman and yay
 # alias lookpac='pacman -Slq | fzf -m --preview 'cat <(pacman -Si {1}) <(pacman -Fl {1} | awk "{print \$2}")' | xargs -ro sudo pacman -S'
 # alias lookyay='yay -Slq | fzf -m --preview 'cat <(yay -Si {1}) <(yay -Fl {1} | awk "{print \$2}")' | xargs -ro  yay -S'

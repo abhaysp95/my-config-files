@@ -1,9 +1,9 @@
-se () { du -a ~/.local/bin/* ~/.config/* | awk '{print $2}' | fzf --preview='pistol {}'| xargs -r $EDITOR ;}
-vf () { ls -l | fzf --preview='pistol {}'| xargs -r -I % $EDITOR % ;}
+function se () { du -a ~/.local/bin/* ~/.config/* | awk '{print $2}' | fzf --preview='pistol {}'| xargs -r $EDITOR ;}
+function vf () { ls -l | fzf --preview='pistol {}'| xargs -r -I % $EDITOR % ;}
 
 
 # get diff in vim
-vdiff () {
+function vdiff () {
 		if [[ "${#}" -ne 2 ]];  then
 			echo "vdiff requires two arguments"
 			echo " comparing dirs: vdiff dir_a dir_b"
@@ -20,14 +20,54 @@ vdiff () {
 		fi
 	}
 
-lolban () {
+function lolban () {
 	figlet -f /usr/share/figlet/fonts/3d "$1" | lolcat
 }
 
-mkcd () {
-	mkdir -p $1 && cd $1
+function mkcd () {
+	# not doing buitlin pushd
+	mkdir -p $1 && pushd $1
 }
 
-copy () {
+function copy () {
 	cat "$1" | xclip -selection clipboard
 }
+
+
+
+# making use of pushd and popd
+function pushd() {
+	if [ $# -eq 0 ]; then
+		DIR="${HOME}"
+	else
+		DIR="$1"
+	fi
+
+	builtin pushd "${DIR}" > /dev/null
+	# echo -n "DIRSTACK: "
+	# dirs
+}
+
+function pushd_builtin() {
+	builtin pushd > /dev/null
+}
+
+function popd() {
+	builtin popd > /dev/null
+	# echo -n "DIRSTACK: "
+	# dirs
+}
+
+function back() {
+	[ -z "$1" ] && print "done" && popd
+	if [ -n "$1" ]; then
+		num="$1"
+		while [ "${num}" -gt 0 ]; do
+			popd
+			num=$(( num - 1 ))
+		done
+	fi
+}
+
+alias cd='pushd'
+alias flip='pushd_builtin'
