@@ -6,7 +6,12 @@ All the `scripts` are in `~/.local/bin/.scripts`
 
 ## Window Manager
 
-### bspwm(current wm)
+### dwm(current wm)
+Currently using [dwm](https://dwm.suckless.org) as my primary window manager. You can find my [dwm_custom build](https://github.com/coolabhays/dwm_custom.git) here.
+
+![dwm_centered_master](./.local/bin/screenshots/dwm-centered-mastered.png)
+
+### bspwm(2021-01-18)
 Currently using [bspwm](https://github.com/baskerville/bspwm) as my primary
 window manager.
 
@@ -25,10 +30,26 @@ Using `i3wm` as my window manager
 ![i3wm](.local/bin/screenshots/window_manageri3.png)
 
 
+## Current Terminal Emulator
+
+### Kitty(primary)
+
+Currently, using [kitty](https://sw.kovidgoyal.net/kitty/) as primary terminal emulator. Mainly because of good ligature support. You can find my kitty config [here](https://github.com/coolabhays/my-config-files/tree/master/.config/kitty).
+
+### ST(secondary)
+
+Using [st](https://st.suckless.org) as secondary terminal emulator. Used mainly as scratchpad in dwm. You can find my st build [here](https://github.com/coolabhays/st_custom.git)
+
 ## Current Prompt
 
 ### Self made(current shell -> zsh)
-Currently, using `zsh` as default shell. Using self made [zshprompt](https://github.com/coolabhays/my-config-files/blob/master/.zsh/current_prompt.zsh). Checkout out the link for more info
+
+Currently, using `zsh` as default shell. Using self made [zshprompt](https://github.com/coolabhays/my-config-files/blob/master/.zsh/current_prompt.zsh). Switched most of the infos to right side of prompt. More details about change is mentioned in the image below.
+![zshprompt-current-prompt](./.local/bin/screenshots/current-prompt-nobg.png)
+
+### Old zsh prompt
+
+Updated few things and the result in the above image.
 ![zshprompt](.local/bin/screenshots/current_zsh_prompt.png)
 
 Features are:
@@ -43,6 +64,7 @@ Features are:
 * Shows error code
 * Shows command execution timing
 * Show `ins` and `normal` mode for vi-mode
+* Reduce information from right prompt one by one if terminal shrinks vertically
 
 Different git features are shown below in screenshot:
 ![git-features](.local/bin/screenshots/git_features_current_prompt.png)
