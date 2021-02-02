@@ -47,6 +47,11 @@ Using [st](https://st.suckless.org) as secondary terminal emulator. Used mainly 
 Currently, using `zsh` as default shell. Using self made [zshprompt](https://github.com/coolabhays/my-config-files/blob/master/.zsh/current_prompt.zsh). Switched most of the infos to right side of prompt. More details about change is mentioned in the image below.
 ![zshprompt-current-prompt](./.local/bin/screenshots/current-prompt-nobg.png)
 
+
+**prompt elements description:**
+
+![zsh-prompt-detailed](./.local/bin/screenshots/zsh-prompt-detailed.png)
+
 ### Old zsh prompt
 
 Updated few things and the result in the above image.
@@ -74,6 +79,11 @@ Using self-made [bashprompt](https://github.com/coolabhays/my-config-files/blob/
 ![bashprompt](.local/bin/screenshots/bashprompt.png)
 
 It shows, current `git brach`, vim mode, error_codes
+
+
+**In more detail**
+
+![bash-prompt-detailed](./.local/bin/screenshots/bash-prompt-detailed.png)
 
 
 ### minimal
