@@ -101,6 +101,9 @@ Used [liquidprompt](https://github.com/nojhan/liquidprompt) with `zsh` as shell.
 ![liquidprompt](.local/bin/screenshots/liquidpromptss.png)
 
 
+**NOTE:** a `gist` about how to use `vi-mode` in _bash_ and _zsh_ could be found [here](https://gist.github.com/coolabhays/485a03b96d627a8478ef4c5e8e148caa)
+
+
 ## Text Editor
 
 Currently using `neovim` as primary text editor
