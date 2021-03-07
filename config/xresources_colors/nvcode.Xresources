@@ -1,0 +1,45 @@
+
+
+
+!! code-dark
+
+*.background: #1E1E1E
+*.foreground: #ABB2BF
+
+*.color0: #1E1E1E
+*.color8: #303030
+
+*.color1: #D16969
+*.color9: #F44747
+
+*.color2:  #608B4E
+*.color10: #B5CEA8
+
+*.color3:  #D7BA7D
+*.color11: #DCDCAA
+
+*.color4:  #569CD6
+*.color12: #4FC1FF
+
+*.color5:  #C586C0
+*.color13: #C586C0
+
+*.color6:  #4EC9B0
+*.color14: #9CDCFE
+
+*.color7:  #ABB2BF
+*.color15: #E9E9E9
+
+
+
+
+
+
+
+
+
+
+
+
+
+
