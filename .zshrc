@@ -240,13 +240,19 @@ bindkey '^[pl' popdir
 # source ~/.zsh/minimal/minimal.zsh
 [ -f ~/.zsh/current_prompt.zsh ] && source ~/.zsh/current_prompt.zsh
 
+
 # some extra features
+# zsh autosuggestions
 #[ -f ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh ] \
 	#&& source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# zsh history substring search
 [ -f ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh ] \
 	&& source ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
-[ -f ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] \
-	&& source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# zsh syntax highlighting
+#[ -f ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] \
+	#&& source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # zsh-history-substring-search
 # keybinding setting (like fzf)

@@ -1,6 +1,5 @@
 #  ZSH CURRENT PROMPT
 
-
 # Issue:-
 # current issue, it takes a enter to take effect for new thing
 # like, if len_pwd gets greater than 20 one time, you have to
@@ -77,6 +76,7 @@ preexec() {
 
 # function executed just before showing prompt
 precmd() {
+	#bruh
 	get_width
 	vcs_info
 	set_virtualenv
@@ -238,3 +238,12 @@ zle -N zle-line-finish
 # %B -> start bold
 # %b -> stop bold
 # PROMPT+='%F{blue}%B%n %b%f'
+
+
+# use this, if you wan't to have sound with error(someday)
+#bruh() {
+	#if [ "$?" != "0" ]; then
+		#paplay "$HOME/Music/CantinaBand3.wav" &
+		#disown %paplay  # used disown so that it won't display in my prompt
+	#fi
+#}
