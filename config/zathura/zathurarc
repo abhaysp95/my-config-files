@@ -23,38 +23,6 @@ set guioptions "s"
 # font
 set font "Dank Mono 12"
 
-# dark background
-set default-bg "#121212"
-set default-fg "#dfdfdf"
-
-# statusbar
-set statusbar-bg "#4e4e4e"
-set statusbar-fg "#b2b2b2"
-
-# inputbar
-set inputbar-bg "#121212"
-set inputbar-fg "#dfdfdf"
-
-# notification
-set notification-warning-bg "#262626"
-set notification-warning-fg "#1f1f24"
-
-# highlight
-set highlight-color "#b2b2b2"
-set highlight-active-color "#87afaf"
-
-# completion-highlight
-set completion-highlight-fg "#262626"
-set completion-highlight-bg "#af8787"
-
-# completion
-set completion-bg "#4e4e4e"
-set completion-fg "#dfafaf"
-
-# notification
-set notification-bg "#87afaf"
-set notification-fg "#262626"
-
 # title
 set window-title-basename "true"
 set statusbar-home-tilde "true"
@@ -62,8 +30,6 @@ set selection-clipboard "clipboard"
 
 # recolor
 set recolor "true"
-set recolor-darkcolor "#dfdfdf"
-set recolor-lightcolor "#121212"
 set recolor-reverse-video "true"
 set recolor-keephue "false"
 
@@ -93,3 +59,43 @@ map i recolor
 
 unmap t
 map tb toggle_statusbar
+
+
+
+# colors settings[zathura]
+
+# dark background
+set default-bg "#0c090c"
+set default-fg "#dee9f0"
+
+# statusbar
+set statusbar-bg "#9ba3a8"
+set statusbar-fg "#9DD8F5"
+
+# inputbar
+set inputbar-bg "#0c090c"
+set inputbar-fg "#dee9f0"
+
+# notification
+set notification-warning-bg "#0c090c"
+set notification-warning-fg "#dee9f0"
+
+# highlight
+set highlight-color "#9DD8F5"
+set highlight-active-color "#67CAF1"
+
+# completion-highlight
+set completion-highlight-fg "#E1BE98"
+set completion-highlight-bg "#0c090c"
+
+# completion
+set completion-bg "#9ba3a8"
+set completion-fg "#2AC4F5"
+
+# notification
+set notification-bg "#67CAF1"
+set notification-fg "#0c090c"
+
+# recolor
+set recolor-darkcolor "#dee9f0"
+set recolor-lightcolor "#0c090c"
