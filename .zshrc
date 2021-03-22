@@ -262,3 +262,5 @@ bindkey -M vicmd '^[n' history-substring-search-up
 bindkey -M vicmd '^[p' history-substring-search-down
 
 fpath=(~/.zsh.d $fpath)
+
+(cat ~/.cache/wal/sequences &)

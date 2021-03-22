@@ -172,3 +172,5 @@ codi() {
 [ -f ~/.bash.d/cht.sh ] && . ~/.bash.d/cht.sh
 
 # notify-send --icon=~/.cache/notify-icons/terminal.png "bash settings reloaded" -a bash -t 2000
+
+(cat ~/.cache/wal/sequences &)
