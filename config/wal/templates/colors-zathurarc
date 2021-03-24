@@ -1,0 +1,37 @@
+# colors settings[zathura]
+
+# dark background
+set default-bg "{background}"
+set default-fg "{foreground}"
+
+# statusbar
+set statusbar-bg "{color8}"
+set statusbar-fg "{color14}"
+
+# inputbar
+set inputbar-bg "{background}"
+set inputbar-fg "{foreground}"
+
+# notification
+set notification-warning-bg "{background}"
+set notification-warning-fg "{foreground}"
+
+# highlight
+set highlight-color "{color6}"
+set highlight-active-color "{color12}"
+
+# completion-highlight
+set completion-highlight-fg "{color5}"
+set completion-highlight-bg "{color0}"
+
+# completion
+set completion-bg "{color8}"
+set completion-fg "{color11}"
+
+# notification
+set notification-bg "{color4}"
+set notification-fg "{color0}"
+
+# recolor
+set recolor-darkcolor "{foreground}"
+set recolor-lightcolor "{background}"

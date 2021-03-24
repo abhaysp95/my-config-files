@@ -1,0 +1,19 @@
+# color settings[dunst]
+
+[urgency_low]
+background = "{color8}"
+foreground = "{foreground}"
+frame_color = "{color7}"
+timeout = 10
+
+[urgency_normal]
+background = "{background}"
+foreground = "{foreground}"
+frame_color = "{color1}"
+
+[urgency_critical]
+background = "{color1}"
+foreground = "{background}"
+frame_color = "{color1}"
+#
+# vim: ft=cfg
