@@ -1,17 +1,20 @@
-export QT_QPA_PLATFORMTHEME="qgnomeplatform"
+export QT_QPA_PLATFORMTHEME="qgnomeplatform"  # try gnome here too
 # export QT_QPA_PLATFORMTHEME="qt5ct"
-export EDITOR="nvim"
+export EDITOR="/usr/local/bin/nvim"
 export TERMINAL="kitty"
 export TERMINAL2="termite"
 export READER="zathura"
 export FILE="ranger"
 export FILE_MANAGER="pcmanfm"
-export BROWSER="qutebrowser"
+export BROWSER="librewolf"
 
+export LASTSTDOUT="something"
 
 # Add ~/.local/bin/.scripts and all the subdirectories to the PATH
 #export PATH="$PATH:$(du "$HOME/.local/bin/.scripts/" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
 export PATH="$PATH:$(du "$HOME/.local/bin/.scripts/" | sed '/.*git/d' | cut -f 2 | tr '\n' ':' | sed 's/:*$//')"
+
+export PATH="$PATH:$HOME/.local/bin/.npm_packages/bin"
 
 
 # for colorls
@@ -77,5 +80,20 @@ export GOPATH="$GOPATH:/home/raytracer/Documents/ngo"
 export hlalib="/usr/hla/hlalib"
 export hlainc="/usr/hla/include"
 
-#
+
+
+# Oracle db
+export ORACLE_HOME=/opt/oracle/product/18c/dbhomeXE
+export ORACLE_SID=XE
+export PATH="$PATH:$ORACLE_HOME/bin"
+
+
+# Rlibs
+if [ -n $R_LIBS ]; then
+	export R_LIBS=~/Rlibs:$R_LIBS
+else
+	export R_LIBS=~/RLibs
+fi
+
 source /home/raytracer/env_pass
+. "$HOME/.cargo/env"
