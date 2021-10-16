@@ -77,6 +77,7 @@ preexec() {
 # function executed just before showing prompt
 precmd() {
 	#bruh
+	LASTSTDOUT=$(ls)
 	get_width
 	vcs_info
 	set_virtualenv
