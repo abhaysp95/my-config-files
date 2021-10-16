@@ -40,11 +40,11 @@ alias mkd="mkdir -pv"
 alias vrc="nvim ~/.config/nvim/init.vim"
 alias brc="nvim ~/.bashrc"
 alias ffx="firefox"
-alias nn="mpc next"
-alias pp="mpc prev"
-alias ss="mpc stop"
-alias sp="mpc pause"
-alias mp="mpc play"
+alias mnn="mpc next"
+alias mpp="mpc prev"
+alias mss="mpc stop"
+alias msp="mpc pause"
+alias mmp="mpc play"
 alias ss..="xset r rate 360 80"
 
 alias lgoff="sudo killall Xorg"
@@ -111,5 +111,9 @@ alias neofetch='neofetch --w3m ~/.config/wall.png'
 # alias -g lct='| lolcat -t'
 #alias brght='xrandr --output eDP1 --brightness'
 # alias -g brt=' | sudo tee /sys/class/backlight/intel_backlight/brightness'
+
+# tmux aliases
+alias tmain='tmux new -s main'
+alias tfloat='tmux new -s float'
 
 # vim: set ft=sh
