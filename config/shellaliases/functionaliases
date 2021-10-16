@@ -3,6 +3,7 @@ function vf () { ls -l | fzf --preview='pistol {}'| xargs -r -I % $EDITOR % ;}
 
 
 # get diff in vim
+unalias vdiff 2>/dev/null
 function vdiff () {
 		if [[ "${#}" -ne 2 ]];  then
 			echo "vdiff requires two arguments"
@@ -20,15 +21,18 @@ function vdiff () {
 		fi
 	}
 
+unalias lolban 2>/dev/null
 function lolban () {
 	figlet -f /usr/share/figlet/fonts/3d "$1" | lolcat
 }
 
+unalias mkcd 2>/dev/null
 function mkcd () {
 	# not doing buitlin pushd
 	mkdir -p $1 && pushd $1
 }
 
+unalias copy 2>/dev/null
 function copy () {
 	cat "$1" | xclip -selection clipboard
 }
@@ -36,6 +40,7 @@ function copy () {
 
 
 # making use of pushd and popd
+unalias pushd 2>/dev/null
 function pushd() {
 	if [ $# -eq 0 ]; then
 		DIR="${HOME}"
@@ -48,16 +53,19 @@ function pushd() {
 	# dirs
 }
 
+unalias pushd_builtin 2>/dev/null
 function pushd_builtin() {
 	builtin pushd > /dev/null
 }
 
+unalias popd 2>/dev/null
 function popd() {
 	builtin popd > /dev/null
 	# echo -n "DIRSTACK: "
 	# dirs
 }
 
+unalias back 2>/dev/null
 function back() {
 	[ -z "$1" ] && print "done" && popd
 	if [ -n "$1" ]; then
@@ -69,5 +77,57 @@ function back() {
 	fi
 }
 
+
+unalias cdg 2>/dev/null
+function cdg() {
+	local dest_dir=$(cdg_glob_echo | fzf)
+	if [[ "{$dest_dir}" != "" ]]; then
+		pushd "${dest_dir}"
+	fi
+}
+
+
+unalias tm 2>/dev/null
+tm() {
+	[[ -n "$TMUX" ]] && change="switch-client" || change="attach-session"
+		if [ $1 ]; then
+			tmux $change -t "$1" 2>/dev/null || (tmux new-session -d -s $1 && tmux $change -t "$1"); return
+				fi
+				session=$(tmux list-sessions -F "#{session_name}" 2>/dev/null | fzf --exit-0) &&  tmux $change -t "$session" || echo "No sessions found."
+}
+
 alias cd='pushd'
 alias flip='pushd_builtin'
+
+unalias countdown 2>/dev/null
+countdown() {
+	date1=$(expr $(date +%s) + $1);
+	while [ "$date1" -ge $(date +%s) ]; do
+		# if this time is more than a day
+		days=$(( $(( $(( date1 - $(date +%s) )) * 1 )) / 86400 ))
+		echo -ne "\r${days} day(s) and $(date -u --date @$(( $date1 - `date +%s` )) +%H:%M:%S)";
+		# echo
+		sleep 0.1
+	done
+}
+
+unalias stopwatch 2>/dev/null
+stopwatch() {
+	date1=$(date +%s);
+	while true; do
+		days=$(( $(( $(date +%s) - date1)) / 86400 ))
+		echo -ne "\r$days day(s) and $(date -u --date @$((`date +%s` - $date1)) +%H:%M:%S)";
+		sleep 0.1
+		#echo
+		done
+}
+
+unalias wdict 2>/dev/null
+wdict() {
+	printf "word: "
+	read -r input
+
+	curl -s "https://api.dictionaryapi.dev/api/v2/entries/en/${input}" | jq ".[]"
+}
+
+# vim: filetype=sh
