@@ -1,5 +1,10 @@
 ! keycode 108 = Super_R
 
+remove Lock = Caps_Lock
+keysym Escape = Caps_Lock
+keysym Caps_Lock = Escape
+add Lock = Caps_Lock
+
 clear mod1
 clear mod4
 
