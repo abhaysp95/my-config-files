@@ -24,7 +24,7 @@ alias gtcc='cd ~/Documents/ncpp/'
 alias gtp='cd ~/Documents/npython'
 alias gts='cd ~/Documents/nshell'
 alias gth='cd ~/Documents/nweb_designing'
-alias gt.='cd ~/Documents/pdf'
+alias gt.='cd ~/Documents/pdfs'
 
 alias gD='cd ~/Downloads'
 alias gdg='cd ~/Downloads/git-materials'
@@ -40,6 +40,16 @@ alias gUs='cd /usr/share'
 alias sc='cd ~/.local/bin/.scripts'
 alias gnv='cd ~/.config/nvim'
 alias shtp='cd /srv/http'
+
+# move to cur_month screenshot_dir video_record_dir
+alias curshotdir="cd $HOME/Pictures/Screenshots/$(date +"%Y-%m")"
+alias currecdir="cd $HOME/Videos/recorded/$(date +"%Y-%m")"
+
+# copy current path to clipboard
+alias cpwd='pwd | xclip -selection clipboard'
+
+# copy current directory name to clipboard
+alias ccurdir="pwd | awk -F/ '{print \$NF}' | xclip -selection clipboard"
 
 # some aliases for broot(br)
 alias bll='br -dph'
