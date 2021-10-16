@@ -174,3 +174,11 @@ codi() {
 # notify-send --icon=~/.cache/notify-icons/terminal.png "bash settings reloaded" -a bash -t 2000
 
 (cat ~/.cache/wal/sequences &)
+
+# select tmux session
+if [[ ! -v TMUX ]]; then
+	tmux_startup && exit
+fi
+
+# clear screen
+[[ -v TMUX ]] && clear
