@@ -130,4 +130,30 @@ wdict() {
 	curl -s "https://api.dictionaryapi.dev/api/v2/entries/en/${input}" | jq ".[]"
 }
 
+unalias md2pdf 2>/dev/null
+md2pdf() {
+	[ -z "${1}" ] && echo "Enter the file name" && exit 1;
+	fname=$(basename "${1}" .md)
+	pandoc --pdf-engine=xelatex --highlight-style=tango --toc -N -V colorlinks -V urlcolor=NavyBlue -V toccolor=Red -V geometry:"top=2cm, bottom=2cm, left=2cm, right=2cm" -o "${fname}.pdf" "${1}"
+}
+
+mkdf() {
+	case "$1" in
+		-v)
+			local file="${2}"
+			[ ! -d "${dirpath}" ] && \
+				mkdir -p -- "$(dirname -- ${file})" && \
+					touch -- "${file}"
+			"${EDITOR}" "${file}"
+			;;
+		*)
+			local file="${1}"
+			dirpath="$(dirname -- ${file})"
+			mkdir -p -- "$(dirname -- ${file})" &&
+				touch -- "${file}"
+			;;
+	esac
+
+}
+
 # vim: filetype=sh
