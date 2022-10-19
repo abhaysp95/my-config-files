@@ -1,0 +1,73 @@
+[init]
+	defaultBranch = main
+
+[diff]
+	tool = vimdiff
+
+[pager]
+	log = less -cS
+	show = less -cS
+	diff = less -cS
+
+[pretty]
+	# PRETTY FORMATS COLORS: https://stackoverflow.com/a/15458378/15763223
+	# 50/72 Rule
+	xoneline = format:%C(yellow)%h%C(reset) %C(auto)%<(50,trunc)%s %C(white dim)%as%C(reset) %C(green dim)(%cr)%C(reset) %C(reset)%C(blue bold)%<(7)%aN%C(reset)%C(auto)%d
+	xfull = format:%m %C(yellow)%H%C(reset)%C(auto)%d%n%m %C(blue bold)%aN%C(reset) %C(ul)<%ae>%C(reset)%n%m %C(cyan)%ai%C(reset) %C(magenta)(%cr)%C(reset)%n%n%C(auto)%w(0,4,4)%B
+		# git shortlog -ne --format=shortlog
+	shortlog = tformat:* [%h] %<(50,trunc)%s %as (%cr)
+	changelog = tformat:%m %C(green)%cs%C(reset) %s
+
+[format]
+	pretty = xfull
+
+[alias]
+	# add
+	a = add
+	# Diff
+	d = diff
+	ds = diff --stat
+	dc = diff --cached
+	dS = diff --staged
+	# commit
+	gpgoff = config commit.gpgsign false
+	cm = commit -v -m
+	ca = commit -a -v
+	cam = commit -a -m
+	amend = commit -v --amend
+	cane = commit --amend --no-edit
+	wip = "!git add --all; git commit -v -a -m '[WIP]' -e"
+	wtc = "!git add --all; git commit -a -m \"[WTC] $(curl -s whatthecommit.com/index.txt)\""
+	# conventional commits
+	m = merge -v -m 'merge: ' -e  # test this
+	empty = commit -v -m 'chore: initial empty commit' --allow-empty -e
+	feat = commit -v -m 'feat: ' -e
+	fix = commit -v -m 'fix: ' -e
+	docs = commit -v -m 'docs: ' -e
+	cmnt = commit -v -m 'comment: ' -e
+	chore = commit -v -m 'chore: ' -e
+	refactor = commit -v -m 'refactor: ' -e
+	style = commit -v -m 'style: ' -e
+	todo = commit -v -m 'todo: ' -e
+	test = commit -v -m 'test: ' -e
+	# status and statistics
+	s = status -s
+	cloc = !cloc -vcs git  # install cloc
+	stats = !git diff --stat \"$(git hash-object -t tree /dev/null)\"
+	changelog = !git --no-pager log --oneline --pretty=changelog -n10
+	contrib = shortlog -sne
+	tree = "!f() { git ls-files $@ | tree --fromfile; }; f"
+	find = !git ls-tree --full-tree -r --name-only HEAD | fzf --multi --prompt='git find: '
+	# compact and full logs
+	lc = log --graph --pretty=xoneline
+	lf = log --graph --stat --pretty=xfull
+	# Misc
+	# git arc [tar|tgz|tar.gz|zip]
+	# git archive --list
+	arc = "!f() { test -z \"$1\" && return 1; FMT=\"$1\"; RN=\"$(basename $(git rev-parse --show-toplevel))\"; EN=\"$(git log -1 --oneline --pretty=%as_%f)\"; git archive --format=\"$FMT\" -o \"${RN}_${EN}.${FMT}\" --prefix=\"${RN}/\" HEAD; }; f"
+alias = "!git config -l | grep alias | cut -c 7- | column -s'=' -t -l2 | GREP_COLORS='ms=1;32' egrep --color 'f\\(\\)|$'"
+	fz = !ALIAS=$(echo 'fzlog fzcheckout find' | tr ' ' '\n' | fzf --inline-info --prompt='git ') && git $ALIAS
+	fzlog = !git log --oneline --pretty=xoneline --color=always | fzf --no-sort --ansi --multi --inline-info --prompt='git log ' --preview='git show {+1} --color=always' --bind='enter:execute:git show {+1} --color=always' --bind='F2:toggle-preview'
+	fzcheckout = "!TARGET=$({ git branch --all --color -vv | sed 's/^/branch,/'; git tag | sed 's/^/tag,  /'; } | column -s, -t -l2 | fzf --ansi --no-sort --info=inline --prompt='git checkout ' | awk '{print $2}') && test ! -z \"$TARGET\" && echo \"> git checkout $TARGET\" && git checkout \"$TARGET\""
+
+	# already have fzf --layout=reverse . No need to set here
