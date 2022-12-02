@@ -1,0 +1,27 @@
+# oxocarbon
+
+colors:
+  primary:
+    background: '#080808'
+    foreground: '#be95ff'
+
+  normal   :
+    black  : "#161616"
+    red    : "#ee5396"
+    green  : "#42be65"
+    yellow : "#ff6f00"
+    blue   : "#33b1ff"
+    magenta: "#ee5396"
+    cyan   : "#08bdba"
+    white  : "#eceff1"
+
+  bright :
+    black  : "#262626"
+    red    : "#ff7eb6"
+    green  : "#3ddbd9"
+    yellow : "#ff6f00"
+    blue   : "#78a9ff"
+    magenta: "#be95ff"
+    cyan   : "#82cfff"
+    white  : "#f2f4f8"
+

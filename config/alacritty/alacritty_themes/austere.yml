@@ -1,0 +1,38 @@
+# austere colorscheme
+#
+#
+# Color: black         #101010 ~
+# Color: darkgrey      #252525 ~
+# Color: darkstone     #7c7c7c ~
+# Color: almostwhite   #b9b9b9 ~
+# Color: grey          #8e8e8e ~
+# Color: white         #f7f7f7 ~
+# Color: beige         #e3e3e3 ~
+# Color: red           #ce5252 ~
+# color: green         #8c9440 ~
+# Color: blue          #5f819d ~
+# Color: yellow        #f0c674 ~
+
+colors:
+  primary:
+    foreground: '#b9b9b9'
+    background: '#101010'
+  normal:
+    black:   '#101010'
+    red:     '#ce5252'
+    green:   '#8c9440'
+    yellow:  '#f0c674'
+    blue:    '#5f819d'
+    magenta: '#8e8e8e'
+    cyan:    '#7c7c7c'
+    white:   '#f7f7f7'
+  bright:
+    black:   '#101010'
+    red:     '#ce5252'
+    green:   '#8c9440'
+    yellow:  '#f0c674'
+    blue:    '#5f819d'
+    magenta: '#8e8e8e'
+    cyan:    '#7c7c7c'
+    white:   '#f7f7f7'
+

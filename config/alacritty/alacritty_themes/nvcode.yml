@@ -1,0 +1,43 @@
+
+
+
+# nvcode
+
+colors:
+  primary:
+    background: '#1E1E1E'
+    foreground: '#ABB2BF'
+
+  normal   :
+    black  : '#1E1E1E'
+    red    : '#D16969'
+    green  : '#608B4E'
+    yellow : '#D7BA7D'
+    blue   : '#569CD6'
+    magenta: '#C586C0'
+    cyan   : '#4EC9B0'
+    white  : '#ABB2BF'
+
+  bright :
+    black  : '#303030'
+    red    : '#F44747'
+    green  : '#B5CEA8'
+    yellow : '#DCDCAA'
+    blue   : '#4FC1FF'
+    magenta: '#C586C0'
+    cyan   : '#9CDCFE'
+    white  : '#E9E9E9'
+
+
+
+
+
+
+
+
+
+
+
+
+
+

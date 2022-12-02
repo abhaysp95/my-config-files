@@ -1,0 +1,36 @@
+!! austere colorscheme
+
+*.foreground= #b9b9b9
+*.background= #101010
+
+*.color0 = #101010
+*.color8  = #101010
+
+*.color1 = #ce5252
+*.color9  = #ce5252
+
+*.color2 = #8c9440
+*.color10 = #8c9440
+
+*.color3 = #f0c674
+*.color11 = #f0c674
+
+*.color4 = #5f819d
+*.color12 = #5f819d
+
+*.color5 = #8e8e8e
+*.color13 = #8e8e8e
+
+*.color6 = #7c7c7c
+*.color14 = #7c7c7c
+
+*.color7 = #f7f7f7
+*.color15 = #f7f7f7
+
+
+
+
+
+
+
+
