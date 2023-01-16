@@ -71,8 +71,6 @@ zstyle ':completion:*:killall:*' force-list always
 users=(raytracer root)          # don't know and care for others
 zstyle ':completion:*' users $users
 
-kitty + complete setup zsh | source /dev/stdin
-
 #generic completion with --help
 compdef _gnu_generic gcc
 compdef _gnu_generic r2
@@ -101,6 +99,7 @@ setopt hist_verify              # show before executing history commands
 setopt inc_append_history       # add commands as they are typed, don't wait until shell exit
 setopt share_history            # share hist between sessions
 setopt bang_hist                # !keyword
+
 
 ##
 #Various
@@ -147,12 +146,6 @@ for file in ~/.config/shellaliases/*; do source "$file"; done
 PS3=''
 PS3+='?>'
 
-#neofetch | lolcat -t
-#pfetch
-#figlet -f /usr/share/fonts/figlet-fonts/ANSI\ Shadow.flf "zsh ready" | lolcat -t
-
-notify-send --icon=~/.cache/notify-icons/terminal.png "zsh settings reloaded" -a zsh -t 2000
-
 export FZF_DEFAULT_COMMAND="rg --files --hidden --follow"
 # export FZF_COMPLETION_TRIGGER=''
 # bindkey '^T' fzf-completion
@@ -160,11 +153,6 @@ export FZF_DEFAULT_COMMAND="rg --files --hidden --follow"
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-
-# get colorful man page
-# export PAGER="most"
-# source /home/raytracer/.gem/ruby/2.7.0/gems/colorls-1.3.3/lib/tab_complete.sh
 
 ## coloring man pages
 # start blinking
@@ -185,8 +173,6 @@ export LESS_TERMCAP_me=$(tput sgr0)
 if [ -f /etc/bash.command-not-found ]; then
 	. /etc/bash.command-not-found
 fi
-
-mapp
 
 # setting dynamic title as working directory ------------------
 case $TERM in
@@ -214,6 +200,7 @@ lfcd() {
 	fi
 }
 bindkey -s '^o' 'lfcd\n' # zsh
+
 
 # shortcut keys ---------------------------------------------
 
@@ -263,7 +250,9 @@ bindkey -M vicmd '^[p' history-substring-search-down
 
 fpath=(~/.zsh.d $fpath)
 
-(cat ~/.cache/wal/sequences &)
+
+# source .profile
+# [ -f "$HOME/.profile" ] && source $HOME/.profile
 
 # select tmux session
 if [[ ! -v TMUX ]]; then
@@ -272,3 +261,10 @@ fi
 
 # clear screen
 [[ -v TMUX ]] && clear
+
+# for some reason loading new shell removes ~/.Xmodmap settings
+[ -f "$HOME/.Xmodmap" ] && xmodmap $HOME/.Xmodmap
+
+(cat ~/.cache/wal/sequences &)
+
+which "prompt_greet.sh" >/dev/null && prompt_greet.sh

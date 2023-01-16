@@ -6,19 +6,16 @@ export TERMINAL2="termite"
 export READER="zathura"
 export FILE="ranger"
 export FILE_MANAGER="pcmanfm"
-export BROWSER="librewolf"
-
-export LASTSTDOUT="something"
+export BROWSER="firefox"
 
 # Add ~/.local/bin/.scripts and all the subdirectories to the PATH
 #export PATH="$PATH:$(du "$HOME/.local/bin/.scripts/" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
 export PATH="$PATH:$(du "$HOME/.local/bin/.scripts/" | sed '/.*git/d' | cut -f 2 | tr '\n' ':' | sed 's/:*$//')"
+export PATH="$PATH:$HOME/.local/bin"
+
 
 export PATH="$PATH:$HOME/.local/bin/.npm_packages/bin"
 
-
-# for colorls
-export PATH="$PATH:/home/raytracer/.gem/ruby/2.7.0/bin"
 
 
 # for hla(high level assembler)
@@ -65,22 +62,16 @@ export CM_LAUNCHER="rofi"
 
 
 
-# java/tomcat
-export CATALINA_HOME="/opt/tomcat-8.5.59"
-export JAVA_HOME="/usr/lib/jvm/java-11-openjdk"
 
 
 # golang
-export GOPATH="/home/raytracer/Downloads/golib"
+export GOPATH="$HOME/Downloads/golib"
 export PATH="$PATH:$GOPATH/bin"
-export GOPATH="$GOPATH:/home/raytracer/Documents/ngo"
 
 
 # variables for hla(high level assembler)
 export hlalib="/usr/hla/hlalib"
 export hlainc="/usr/hla/include"
-
-
 
 # Oracle db
 export ORACLE_HOME=/opt/oracle/product/18c/dbhomeXE
@@ -95,5 +86,15 @@ else
 	export R_LIBS=~/RLibs
 fi
 
-source /home/raytracer/env_pass
-. "$HOME/.cargo/env"
+[ -f "$HOME/env_pass" ] && source $HOME/env_pass
+[ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
+
+
+# nvm
+source /usr/share/nvm/init-nvm.sh
+[ -z "$NVM_DIR" ] && export NVM_DIR="$HOME/.nvm"
+source /usr/share/nvm/nvm.sh
+source /usr/share/nvm/bash_completion
+source /usr/share/nvm/install-nvm-exec
+
+# java

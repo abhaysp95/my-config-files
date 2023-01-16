@@ -102,6 +102,7 @@ source_aliases() {
 }
 source_aliases
 
+
 # # vi-mode
 set -o vi
 
@@ -141,6 +142,7 @@ lfcd() {
 	fi
 }
 
+
 bind -x '"\C-o":lfcd'
 
 # command_not_found
@@ -173,8 +175,6 @@ codi() {
 
 # notify-send --icon=~/.cache/notify-icons/terminal.png "bash settings reloaded" -a bash -t 2000
 
-(cat ~/.cache/wal/sequences &)
-
 # select tmux session
 if [[ ! -v TMUX ]]; then
 	tmux_startup && exit
@@ -182,3 +182,4 @@ fi
 
 # clear screen
 [[ -v TMUX ]] && clear
+. "$HOME/.cargo/env"
