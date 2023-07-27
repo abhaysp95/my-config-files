@@ -1,5 +1,7 @@
 function se () { du -a ~/.local/bin/* ~/.config/* | awk '{print $2}' | fzf --preview='pistol {}'| xargs -r $EDITOR ;}
-function vf () { ls -l | fzf --preview='pistol {}'| xargs -r -I % $EDITOR % ;}
+function vf () {
+	fd --type f . | fzf --preview='pistol {}'| xargs -r -I % $EDITOR % ;
+}
 
 
 # get diff in vim
@@ -155,5 +157,19 @@ mkdf() {
 	esac
 
 }
+
+# aliases to quickly compile and run for competitive programming
+
+unalias co 2>/dev/null
+co() { g++ -std=c++14 -O2 -o "${1%.*}" $1 -Wall; }
+
+unalias cod 2>/dev/null
+cod() { g++ -std=c++14 -Wall -Wextra -Wshadow -Wconversion -Wfloat-equal -Wduplicated-cond -Wlogical-op -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG -g -o "${1%.*}" $1 -Wall; }
+
+unalias run 2>/dev/null
+run() { co $1 && ./${1%.*} & fg; }
+
+unalias rund 2>/dev/null
+rund() { co $1 && ./${1%.*} & fg; }
 
 # vim: filetype=sh
